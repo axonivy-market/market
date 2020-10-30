@@ -1,0 +1,25 @@
+{
+	"name": "Doc Factory",
+	"sort": 300,
+	"versionDisplay": "hide-snapshots",
+	"mavenArtifacts": [
+		{
+			"name": "Doc Factory",
+			"groupId": "ch.ivyteam.ivy.addons",
+			"artifactId": "doc-factory",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"name": "Doc Factory Demo",
+			"groupId": "ch.ivyteam.ivy.addons",
+			"artifactId": "doc-factory-demos"
+		},
+		{
+			"name": "Doc Factory Documentation",
+			"groupId": "ch.ivyteam.ivy.addons",
+			"artifactId": "doc-factory-doc",
+			"type": "zip",
+			"doc": true
+		}
+	]
+}

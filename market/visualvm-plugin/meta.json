@@ -1,0 +1,14 @@
+{
+	"name": "VisualVM Plugin",
+	"sort": 200,
+	"importWizard": false,
+	"versionDisplay": "hide-snapshots",
+	"mavenArtifacts": [
+		{
+			"name": "Visual VM Plugin",
+			"groupId": "ch.ivyteam.visualvm",
+			"artifactId": "visualvm-plugin",
+			"type": "nbm"			
+		}
+	]
+}

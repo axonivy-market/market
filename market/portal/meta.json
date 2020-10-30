@@ -1,0 +1,65 @@
+{
+	"name": "Portal",
+	"sort": 100,
+	"versionDisplay": "portal",
+	"mavenArtifacts": [
+		{
+			"key": "portal",
+			"name": "Portal App",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portal-app",
+			"type": "zip"
+		},
+		{
+			"key": "portal-template",
+			"name": "Portal Template",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portalTemplate",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"key": "portal-style",
+			"name": "Portal Style",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portalStyle"
+		},
+		{
+			"key": "portal-kit",
+			"name": "Portal Kit",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portalKit"
+		},
+		{
+			"key": "axonivy-express",
+			"name": "Axon.ivy Express",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "axonIvyExpress"
+		},
+		{
+			"__comment": "since 9.1",
+			"name": "Portal Developer Examples",
+			"groupId": "com.axonivy.portal",
+			"artifactId": "portal-developer-examples"
+		},
+		{
+			"__comment": "since 9.1",
+			"name": "Portal User Examples",
+			"groupId": "com.axonivy.portal",
+			"artifactId": "portal-user-examples"
+		},
+		{
+			"__comment": "legacy: prior to 9.1",
+			"key": "portal-examples",
+			"name": "Portal Examples",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portalExamples"
+		},
+		{
+			"name": "Portal Guide",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portal-guide",
+			"type" : "zip",
+			"doc": true
+		}
+	]
+}

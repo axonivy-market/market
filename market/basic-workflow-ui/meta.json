@@ -1,0 +1,12 @@
+{
+	"name": "Basic Workflow UI",
+	"sort": 999,
+	"listed": false,
+	"mavenArtifacts": [
+		{
+			"name": "Basic Workflow UI",
+			"groupId": "ch.ivyteam.ivy.project.wf",
+			"artifactId": "basic-workflow-ui"
+		}
+	]
+}
