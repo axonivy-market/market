@@ -56,7 +56,7 @@ pipeline {
             sh "ssh $host rm -f $targetFile"
   
             // symlink
-            sh "ssh $host ln -fns $targetFolder /home/axonivya/data/market"
+            sh "ssh $host ln -fns $targetFolder/market /home/axonivya/data/market"
           }
         }
       }
