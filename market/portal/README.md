@@ -1,4 +1,4 @@
-The portal is a complete worklfow user interface that fully exploits all the features of the Axon.ivy Platform
+The portal is a complete workflow user interface that fully exploits all the features of the Axon.ivy Platform
 with a web-based, modern interface the Portal provides you with key functionalities on all your devices:
 
 * Access your company’s applications and start new cases
