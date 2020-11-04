@@ -29,6 +29,9 @@ pipeline {
     }
 
     stage('deploy') {
+      when {
+        branch 'master'
+      }
       agent {
         docker {
           image 'axonivy/build-container:ssh-client-1.0'
