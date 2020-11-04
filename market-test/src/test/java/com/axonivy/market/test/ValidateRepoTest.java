@@ -29,8 +29,7 @@ class ValidateRepoTest
             .optionalIntegerPropertyWithMinValue("sort", 1)
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal", "hide-snapshots")
-            .optionalBooleanProperty("importWizard", true)
-            .optionalBooleanProperty("installable", false);
+            .optionalBooleanProperty("importWizard", true);
 
     if (json.has("mavenArtifacts"))
     {
@@ -47,6 +46,13 @@ class ValidateRepoTest
                 .optionalStringPropertyWithFixedValues("type", "zip", "nbm")
                 .optionalBooleanProperty("doc", false);
       }
+    }
+    
+    if (json.has("installer"))
+    {
+      var installer = json.getJSONObject("installer");
+      JSONObjectAssert.assertThat(installer, metaPath)
+              .requireStringPropertyWithMinLength("id", 5);
     }
   }
 
