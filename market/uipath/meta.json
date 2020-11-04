@@ -1,12 +1,13 @@
 {
 	"__comment": "prototype for first connector",
- 
+
 	"name": "UI Path RPA",
-	"installable": true,
 	"listed": false,
 
 	"installer": {
-		"generator": "OpenApiRestClientGenerator",
-		"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json"
+		"id": "open-api-rest-client",
+		"properties": {
+			"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json"
+		}
 	}
 }
