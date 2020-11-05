@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Genderize",
+    "description": "A simple API to predict the gender of a person given their name",
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about Genderize.io",
+    "url": "https://genderize.io/"
+  },
+  "servers": [
+    {
+      "url": "https://api.genderize.io"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "pet"
+        ],
+        "summary": "Predicts the gender",
+        "operationId": "get_gender",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "example": "Peter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country_id",
+            "in": "query",
+            "example": "US",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gender"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Gender": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "probability": {
+            "type": "number",
+            "format": "double"
+          },
+          "count": {
+            "type": "string",
+            "format": "int64"
+          }
+        }
+      }
+    }
+  }
+}
