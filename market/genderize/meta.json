@@ -7,7 +7,7 @@
 	"installer": {
 		"id": "open-api-rest-client",
 		"properties": {
-			"openApiUrl": "https://raw.githubusercontent.com/axonivy/market/master/market/genderize/openapi.json",
+			"openApiUrl": "openapi.json",
 			"namespace": "io.genderize"
 		}
 	}
