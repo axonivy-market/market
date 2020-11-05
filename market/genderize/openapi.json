@@ -18,7 +18,7 @@
     "/": {
       "get": {
         "tags": [
-          "pet"
+          "gender"
         ],
         "summary": "Predicts the gender",
         "operationId": "get_gender",
