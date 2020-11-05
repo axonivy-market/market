@@ -1,0 +1,14 @@
+{
+	"__comment": "prototype for first connector",
+
+	"name": "Genderize.io",
+	"listed": false,
+
+	"installer": {
+		"id": "open-api-rest-client",
+		"properties": {
+			"openApiUrl": "https://raw.githubusercontent.com/axonivy/market/master/market/genderize/openapi.json",
+			"namespace": "io.genderize"
+		}
+	}
+}
