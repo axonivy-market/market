@@ -8,7 +8,9 @@
 		"id": "open-api-rest-client",
 		"properties": {
 			"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
-			"namespace": "com.uipath.orchestrator"
+			"namespace": "com.uipath.orchestrator",
+			"features": "com.axonivy.connectivity.rest.client.auth.OAuth2Feature,com.axonivy.connectivity.rest.sample.uipath.TenantHeaderFeature,com.axonivy.connectivity.rest.json.OpenApiJsonFeature",
+			"properties": "jersey.config.client.followRedirects=false,tenant=AXONPRESALES"
 		}
 	}
 }
