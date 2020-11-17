@@ -1,16 +1,29 @@
 {
 	"__comment": "prototype for first connector",
-
 	"name": "UI Path RPA",
 	"listed": false,
-
-	"installer": {
-		"id": "open-api-rest-client",
-		"properties": {
-			"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
-			"namespace": "com.uipath.orchestrator",
-			"features": "com.axonivy.connectivity.rest.client.auth.OAuth2Feature,com.axonivy.connectivity.rest.sample.uipath.TenantHeaderFeature,com.axonivy.connectivity.rest.json.OpenApiJsonFeature",
-			"properties": "jersey.config.client.followRedirects=false,tenant=AXONPRESALES"
+	"installers": [
+		{
+			"id": "open-api-rest-client",
+			"data": {
+				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
+				"namespace": "com.uipath.orchestrator",
+				"features": [
+					"com.axonivy.connectivity.rest.client.auth.OAuth2Feature",
+					"com.axonivy.connectivity.rest.sample.uipath.TenantHeaderFeature",
+					"com.axonivy.connectivity.rest.json.OpenApiJsonFeature"
+				],
+				"properties": [
+					{
+						"name": "jersey.config.client.followRedirects",
+						"value": "false"
+					},
+					{
+						"name": "tenant",
+						"value": "AXONPRESALES"
+					}
+				]
+			}
 		}
-	}
+	]
 }
