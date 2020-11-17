@@ -1,14 +1,14 @@
 {
 	"__comment": "prototype for first connector",
-
 	"name": "Genderize.io",
 	"listed": false,
-
-	"installer": {
-		"id": "open-api-rest-client",
-		"properties": {
-			"openApiUrl": "openapi.json",
-			"namespace": "io.genderize"
+	"installers": [
+		{
+			"id": "open-api-rest-client",
+			"data": {
+				"openApiUrl": "openapi.json",
+				"namespace": "io.genderize"
+			}
 		}
-	}
+	]
 }
