@@ -1,7 +1,6 @@
 {
-	"id": "genderize",
-	"name": "Genderize.io",
-	"listed": false,
+	"id": "genderize-io-connector",
+	"name": "Genderize.io Connector",
 	"installers": [
 		{
 			"id": "open-api-rest-client",
