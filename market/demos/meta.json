@@ -1,4 +1,5 @@
 {
+	"id": "demos",
 	"name": "Demos",
 	"sort": 400,
 	"mavenArtifacts": [

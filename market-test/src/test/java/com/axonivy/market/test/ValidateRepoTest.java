@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,9 +16,9 @@ import org.junit.jupiter.api.Test;
 class ValidateRepoTest
 {
   @Test
-  void everyElementHasAValidJson()
+  void everyProductHasAValidJson()
   {
-    assertThat(elementDirs()).allSatisfy(path -> assertValidMetaJson(path));
+    assertThat(productDirs()).allSatisfy(path -> assertValidMetaJson(path));
   }
 
   private void assertValidMetaJson(Path path)
@@ -25,6 +26,7 @@ class ValidateRepoTest
     var metaPath = path.resolve("meta.json");
     var json = toJsonObject(metaPath);
     JSONObjectAssert.assertThat(json, metaPath)
+            .requireStringPropertyWithMinLength("id", 5)
             .requireStringPropertyWithMinLength("name", 5)
             .optionalIntegerPropertyWithMinValue("sort", 1)
             .optionalBooleanProperty("listed", true)
@@ -48,11 +50,14 @@ class ValidateRepoTest
       }
     }
     
-    if (json.has("installer"))
+    if (json.has("installers"))
     {
-      var installer = json.getJSONObject("installer");
-      JSONObjectAssert.assertThat(installer, metaPath)
-              .requireStringPropertyWithMinLength("id", 5);
+      var installers = json.getJSONArray("installers");
+      for (var i = 0; i < installers.length(); i++) {
+        var installer = installers.getJSONObject(i);
+        JSONObjectAssert.assertThat(installer, metaPath)
+                .requireStringPropertyWithMinLength("id", 5);
+      }
     }
   }
 
@@ -70,39 +75,52 @@ class ValidateRepoTest
   }
 
   @Test
-  void everyElementHasAMetaJson()
+  void everyProductHasAMetaJson()
   {
-    assertThat(elementDirs())
+    assertThat(productDirs())
             .extracting(path -> path.resolve("meta.json"))
             .allSatisfy(path -> assertThat(path).exists());
   }
   
   @Test
-  void everyElementHasAReadme()
+  void everyProductHasAUniqueId()
   {
-    assertThat(elementDirs())
+    var ids = productDirs().stream()
+            .map(dir -> dir.resolve("meta.json"))
+            .map(json -> toJsonObject(json))
+            .map(json -> json.getString("id"))
+            .collect(Collectors.toList());
+   
+    var uniqueIds = new HashSet<>(ids);
+    assertThat(uniqueIds).as("every product must have a unique ID").hasSameSizeAs(ids);
+  }
+  
+  @Test
+  void everyProductHasAReadme()
+  {
+    assertThat(productDirs())
             .extracting(path -> path.resolve("README.md"))
             .allSatisfy(path -> assertThat(path).exists());
   }
 
   @Test
-  void everyElementHasALogo()
+  void everyProductHasALogo()
   {
-    assertThat(elementDirs())
+    assertThat(productDirs())
             .extracting(path -> path.resolve("logo.png"))
             .allSatisfy(path -> assertThat(path).exists());
   }
 
   @Test
-  void elements()
+  void products()
   {
-    assertThat(elementDirs())
+    assertThat(productDirs())
             .extracting(path -> path.getName(path.getNameCount() - 1).toString())
-            .as("ensure that elementDirs finds something")
+            .as("ensure that productDirs finds something")
             .contains("doc-factory", "portal");
   }
 
-  private static List<Path> elementDirs()
+  private static List<Path> productDirs()
   {
     try
     {
@@ -120,18 +138,6 @@ class ValidateRepoTest
 
   private static Path marketRoot()
   {
-    return repoRoot().resolve("market");
-  }
-
-  private static Path repoRoot()
-  {
-    try
-    {
-      return Paths.get("..").toRealPath();
-    }
-    catch (IOException ex)
-    {
-      throw new RuntimeException(ex);
-    }
+    return Paths.get("target/market");
   }
 }
