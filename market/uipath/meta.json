@@ -11,16 +11,24 @@
 				"features": [
 					"com.axonivy.connectivity.rest.client.auth.OAuth2Feature",
 					"com.axonivy.connectivity.rest.sample.uipath.TenantHeaderFeature",
-					"com.axonivy.connectivity.rest.json.OpenApiJsonFeature"
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
 				],
 				"properties": [
+					{
+						"name": "tenant",
+						"value": "AXONPRESALES"
+					},
 					{
 						"name": "jersey.config.client.followRedirects",
 						"value": "false"
 					},
 					{
-						"name": "tenant",
-						"value": "AXONPRESALES"
+						"name": "JSON.Serialization.PROPERTY_INCLUSION",
+						"value": "NON_NULL"
+					},
+					{
+						"name": "JSON.Mapper.ACCEPT_CASE_INSENSITIVE_PROPERTIES",
+						"value": "true"
 					}
 				]
 			}
