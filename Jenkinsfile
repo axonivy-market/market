@@ -14,16 +14,19 @@ pipeline {
     stage('validate') { 
       steps {
         script {
-          docker.image('mstruebing/editorconfig-checker:2.0.4').inside {
-            sh 'ec -no-color'
-          }
+          docker.withRegistry('', 'docker.io') {
+            docker.image('mstruebing/editorconfig-checker:2.0.4').inside {
+              sh 'ec -no-color'
+            }
 
-          docker.build('maven-build', '.').inside {
-            maven cmd: '-f market-test verify'
+            docker.build('maven-build', '.').inside {
+              maven cmd: '-f market-test verify'
+            }
           }
           recordIssues tools: [eclipse()], unstableTotalAll: 1
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/surefire-reports/**/*.xml'
+          
         }
       }
     }
