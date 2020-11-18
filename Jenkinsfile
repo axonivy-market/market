@@ -47,7 +47,9 @@ pipeline {
         DIST_FILE = "market.tar"
       }
       steps {
-        sh "tar -cf ${env.DIST_FILE} market-test/target/market"
+        dir ('market-test/target') {
+          sh "tar -cf ../../${env.DIST_FILE} market"
+        }
         archiveArtifacts env.DIST_FILE
  
         sshagent(['zugprojenkins-ssh']) {
