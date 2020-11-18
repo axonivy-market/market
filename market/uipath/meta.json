@@ -1,5 +1,5 @@
 {
-	"__comment": "prototype for first connector",
+	"id": "uipath",
 	"name": "UI Path RPA",
 	"listed": false,
 	"installers": [

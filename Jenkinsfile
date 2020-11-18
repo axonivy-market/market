@@ -20,13 +20,15 @@ pipeline {
             }
 
             docker.build('maven-build', '.').inside {
-              maven cmd: '-f market-test verify'
+              dir ('market-test') {
+                maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
+                maven cmd: 'verify'
+              }
             }
           }
           recordIssues tools: [eclipse()], unstableTotalAll: 1
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/surefire-reports/**/*.xml'
-          
         }
       }
     }
@@ -38,13 +40,14 @@ pipeline {
       agent {
         docker {
           image 'axonivy/build-container:ssh-client-1.0'
+          reuseNode true
         }
       }
       environment {
         DIST_FILE = "market.tar"
       }
       steps {
-        sh "tar -cf ${env.DIST_FILE} market"
+        sh "tar -cf ${env.DIST_FILE} market-test/target/market"
         archiveArtifacts env.DIST_FILE
  
         sshagent(['zugprojenkins-ssh']) {
