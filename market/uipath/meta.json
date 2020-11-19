@@ -5,13 +5,24 @@
 	"tags": ["connector", "RPA"],
 	"installers": [
 		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "java/src/main/java/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
+						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
+					}
+				]
+			}
+		},
+		{
 			"id": "open-api-rest-client",
 			"data": {
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
 				"features": [
 					"com.axonivy.connectivity.rest.client.auth.OAuth2Feature",
-					"com.axonivy.connectivity.rest.sample.uipath.TenantHeaderFeature",
+					"com.uipath.orchestrator.feature.TenantHeaderFeature",
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
 				],
 				"properties": [
