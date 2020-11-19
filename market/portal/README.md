@@ -6,3 +6,12 @@ with a web-based, modern interface the Portal provides you with key functionalit
 * Understand what’s going on by using on-the-spot statistics and historic data on all your cases and tasks
 * Improve your Axon.ivy Portal experience and efficiency through the built-in customization options
 
+![Portal](portal.png)
+
+### Import
+
+You can use the import wizard in Axon.ivy Designer
+
+`File > Import > Axon.ivy > Ivy Projects`
+
+![Import Wizard](import-wizard.png)

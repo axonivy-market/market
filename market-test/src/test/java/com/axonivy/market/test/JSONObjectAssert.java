@@ -90,4 +90,25 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
     }
     return this;
   }
+
+  public JSONObjectAssert optionalStringArrayProperty(String name)
+  {
+    isNotNull();
+    if (actual.has(name))
+    {
+      try
+      {
+        var values = actual.getJSONArray(name).toList();
+        for (var value : values)
+        {
+          Assertions.assertThat(value).as(name + " property must be an array of only strings in " + path).isInstanceOf(String.class);
+        }
+      }
+      catch (JSONException ex)
+      {
+        failWithMessage(name + " property must be a array in " + path);
+      }
+    }
+    return this;
+  }
 }
