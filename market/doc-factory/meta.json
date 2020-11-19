@@ -3,6 +3,7 @@
 	"name": "Doc Factory",
 	"sort": 300,
 	"versionDisplay": "hide-snapshots",
+	"tags": ["util"],
 	"mavenArtifacts": [
 		{
 			"name": "Doc Factory",
