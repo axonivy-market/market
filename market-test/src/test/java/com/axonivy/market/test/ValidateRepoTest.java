@@ -31,7 +31,8 @@ class ValidateRepoTest
             .optionalIntegerPropertyWithMinValue("sort", 1)
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal", "hide-snapshots")
-            .optionalBooleanProperty("importWizard", true);
+            .optionalBooleanProperty("importWizard", true)
+            .optionalStringArrayProperty("tags");
 
     if (json.has("mavenArtifacts"))
     {
