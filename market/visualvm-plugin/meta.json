@@ -2,7 +2,6 @@
 	"id": "visualvm-plugin",
 	"name": "VisualVM Plugin",
 	"sort": 200,
-	"importWizard": false,
 	"tags": ["monitoring"],
 	"versionDisplay": "hide-snapshots",
 	"mavenArtifacts": [
