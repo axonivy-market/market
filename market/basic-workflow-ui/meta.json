@@ -3,6 +3,7 @@
 	"name": "Basic Workflow UI",
 	"sort": 999,
 	"listed": false,
+	"tags": ["workflow-ui"],
 	"mavenArtifacts": [
 		{
 			"name": "Basic Workflow UI",

@@ -2,6 +2,7 @@
 	"id": "demos",
 	"name": "Demos",
 	"sort": 400,
+	"tags": ["demo"],
 	"mavenArtifacts": [
 		{
 			"name": "Quick Start Tutorial",
