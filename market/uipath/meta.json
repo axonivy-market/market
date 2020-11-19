@@ -2,7 +2,7 @@
 	"id": "uipath",
 	"name": "UI Path RPA",
 	"listed": false,
-	"tags": ["connector"],
+	"tags": ["connector", "RPA"],
 	"installers": [
 		{
 			"id": "open-api-rest-client",
