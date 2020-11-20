@@ -11,6 +11,10 @@
 					{
 						"source": "java/src/main/java/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
 						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
+					},
+					{
+						"source": "java/src/main/java/com/uipath/orchestrator/feature/OAuth2Feature.java",
+						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
 					}
 				]
 			}
@@ -21,7 +25,7 @@
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
 				"features": [
-					"com.axonivy.connectivity.rest.client.auth.OAuth2Feature",
+					"com.uipath.orchestrator.feature.OAuth2Feature",
 					"com.uipath.orchestrator.feature.TenantHeaderFeature",
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
 				],
@@ -29,6 +33,14 @@
 					{
 						"name": "tenant",
 						"value": "AXONPRESALES"
+					},
+					{
+						"name": "clientId",
+						"value": ""
+					},
+					{
+						"name": "userKey",
+						"value": ""
 					},
 					{
 						"name": "jersey.config.client.followRedirects",

@@ -12,13 +12,13 @@ import javax.ws.rs.core.FeatureContext;
 
 public class TenantHeaderFeature implements Feature
 {
-  public static final String TOKEN_MISSING = "rest:client:token:missing";
+  public static final String PROPERTY_NAME = "tenant";
 
   @Override
   public boolean configure(FeatureContext context)
   {
     Map<String, Object> properties = context.getConfiguration().getProperties();
-    String tenant = readMandatory(properties, "tenant");
+    String tenant = readMandatory(properties, PROPERTY_NAME);
     context.register(new OrechstratorTenantFilter(tenant), Priorities.HEADER_DECORATOR);
     return true;
   }
