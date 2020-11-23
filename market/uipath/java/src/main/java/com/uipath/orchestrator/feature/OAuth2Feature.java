@@ -2,27 +2,37 @@ package com.uipath.orchestrator.feature;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.Objects;
 
 import javax.ws.rs.Priorities;
 import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.ClientRequestContext;
 import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.Configurable;
-import javax.ws.rs.core.Configuration;
 import javax.ws.rs.core.Feature;
 import javax.ws.rs.core.FeatureContext;
 import javax.ws.rs.core.GenericType;
 import javax.ws.rs.ext.Provider;
 
+/**
+ * Authentication feature that authorizes request against uipath orchestrator
+ * with a 'Bearer' token. 
+ * 
+ * https://docs.uipath.com/orchestrator/reference/consuming-cloud-api
+ * 
+ * @since 9.2
+ */
 public class OAuth2Feature implements Feature
 {
   public static final String TOKEN_MISSING = "rest:client:token:missing";
 
   public static interface Property
   {
+    // the given clientId+userKey combination is valid until revocation on the orchestrator web-ui.
+    // so refreshing the token after 24h hours should be possible without any restrictions.
     String CLIENT_ID = "clientId";
     String USER_KEY = "userKey";
+    
+    String ACCESS_TOKEN_URI = "accessTokenUri";
   }
 
   @Override
@@ -36,11 +46,19 @@ public class OAuth2Feature implements Feature
   private static class AuthorizationFilter implements javax.ws.rs.client.ClientRequestFilter
   {
     private static final String AUTHORIZATION = "Authorization";
+    private static final String DEFAULT_ACCESS_TOKEN_URI = "https://account.uipath.com/oauth/token";
 
     @Override
     public void filter(ClientRequestContext context) throws IOException
     {
-      var token = getNewAccessToken(context);
+      FeatureConfig config = new FeatureConfig(context.getConfiguration(), OAuth2Feature.class);
+      String accessUri = config.read(Property.ACCESS_TOKEN_URI).orElse(DEFAULT_ACCESS_TOKEN_URI);
+      if (Objects.equals(context.getUri().toASCIIString(), accessUri))
+      { // already in token request: avoid stackOverflow
+        return;
+      }
+      
+      var token = getNewAccessToken(context.getClient(), config, accessUri);
       String accessToken = (String) token.get("access_token");
       if (accessToken == null || accessToken.isBlank())
       {
@@ -52,46 +70,20 @@ public class OAuth2Feature implements Feature
       }
     }
 
-    private Map<String, Object> getNewAccessToken(ClientRequestContext context)
+    private static Map<String, Object> getNewAccessToken(Client client, FeatureConfig config, String accessUri)
     {
-      var client = newTenantClient();
-      copy(context.getConfiguration(), client, TenantHeaderFeature.PROPERTY_NAME);
       TokenRequest request = new TokenRequest(
-        readMandatory(context.getConfiguration(), Property.CLIENT_ID),
-        readMandatory(context.getConfiguration(), Property.USER_KEY)
+        config.readMandatory(Property.CLIENT_ID),
+        config.readMandatory(Property.USER_KEY)
       );
       
       GenericType<Map<String, Object>> map = new GenericType<>(Map.class);
       var result = client
-              .target("https://account.uipath.com/oauth/token")
-              .request()
-              .post(Entity.json(request))
-              .readEntity(map);
+        .target(accessUri)
+        .request()
+        .post(Entity.json(request))
+        .readEntity(map);
       return result;
-    }
-
-    private static String readMandatory(Configuration config, String key)
-    {
-      Object value = config.getProperty(key);
-      if (value instanceof String)
-      {
-        String tenant = (String) value;
-        if (!tenant.isBlank())
-        {
-          return tenant;
-        }
-      }
-      throw new IllegalStateException("Missing property '" + key + "' on for " + OAuth2Feature.class.getName() + ".");
-    }
-
-    private static void copy(Configuration source, Configurable<?> target, String name)
-    {
-      target.property(name, source.getProperty(name));
-    }
-
-    private Client newTenantClient()
-    {
-      return ClientBuilder.newClient().register(TenantHeaderFeature.class);
     }
 
     @SuppressWarnings("unused")
