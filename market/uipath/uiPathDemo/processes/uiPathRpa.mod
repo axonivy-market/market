@@ -27,7 +27,7 @@ uh0 f1 593 289 30 30 0 15 #rect
 uh0 f1 @|EndIcon #fIcon
 uh0 f3 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f3 path /odata/Settings/UiPath.Server.Configuration.OData.GetLicense #txt
-uh0 f3 resultType com.uipath.platform.client.LicenseDto #txt
+uh0 f3 resultType com.uipath.orchestrator.LicenseDto #txt
 uh0 f3 responseMapping 'out.license=result;
 ' #txt
 uh0 f3 clientErrorCode ivy:error:rest:client #txt
@@ -67,7 +67,7 @@ uh0 f9 @|StartRequestIcon #fIcon
 uh0 f10 111 64 248 64 #arcP
 uh0 f5 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f5 path /odata/Jobs #txt
-uh0 f5 resultType com.uipath.platform.client.ODataValueOfIEnumerableOfJobDto #txt
+uh0 f5 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
 uh0 f5 responseMapping 'out.jobs=result.value;
 ' #txt
 uh0 f5 responseCode 'ivy.log.info("found "+result.value.size()+" RPA jobs");' #txt
@@ -91,14 +91,14 @@ uh0 f0 path /odata/Robots #txt
 uh0 f0 queryParams '$$filter="Type eq ''UNATTENDED''";
 ' #txt
 uh0 f0 method GET #txt
-uh0 f0 clientCode 'import com.uipath.platform.client.RobotDto;
+uh0 f0 clientCode 'import com.uipath.orchestrator.RobotDto;
 import javax.ws.rs.core.GenericEntity;
 
 List<String> filters;
 filters.add("Type eq ''Unattended''");
 
 ivy.log.info("filtered:::: "+client.queryParam("$$filter", filters).request().get(String.class));' #txt
-uh0 f0 resultType com.uipath.platform.client.ODataValueOfIEnumerableOfRobotDto #txt
+uh0 f0 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfRobotDto #txt
 uh0 f0 responseMapping 'out.robots=result.value;
 ' #txt
 uh0 f0 responseCode 'ivy.log.info("found "+result.value.size()+" RPA robots");' #txt
@@ -136,7 +136,7 @@ uh0 f22 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f22 path /odata/Releases #txt
 uh0 f22 queryParams '$$filter="contains(ProcessKey, ''order'')";
 ' #txt
-uh0 f22 resultType com.uipath.platform.client.ODataValueOfIEnumerableOfReleaseDto #txt
+uh0 f22 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfReleaseDto #txt
 uh0 f22 responseMapping 'out.releases=result.value;
 ' #txt
 uh0 f22 responseCode 'ivy.log.info("found "+result.value.size()+" Process releases");' #txt
@@ -159,23 +159,23 @@ uh0 f24 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f24 path /odata/Jobs/UiPath.Server.Configuration.OData.StartJobs #txt
 uh0 f24 method POST #txt
 uh0 f24 bodyInputType ENTITY #txt
-uh0 f24 bodyObjectType com.uipath.platform.client.JobsStartJobsParameters #txt
+uh0 f24 bodyObjectType com.uipath.orchestrator.JobsStartJobsParameters #txt
 uh0 f24 bodyObjectMapping 'param.startInfo.inputArguments="";
-param.startInfo.jobPriority=StartProcessDto.JobPriorityEnum.NORMAL;
+param.startInfo.jobPriority=com.uipath.orchestrator.StartProcessDto.JobPriorityEnum.NORMAL;
 param.startInfo.jobsCount=0;
 param.startInfo.noOfRobots=0;
 param.startInfo.releaseKey=in.releases.get(0).key;
 param.startInfo.robotIds=[in.robots.get(0).id];
-param.startInfo.source=StartProcessDto.SourceEnum.MANUAL;
-param.startInfo.strategy=StartProcessDto.StrategyEnum.SPECIFIC;
+param.startInfo.source=com.uipath.orchestrator.StartProcessDto.SourceEnum.MANUAL;
+param.startInfo.strategy=com.uipath.orchestrator.StartProcessDto.StrategyEnum.SPECIFIC;
 ' #txt
-uh0 f24 bodyObjectCode 'for(com.uipath.platform.client.ReleaseDto rel : in.releases){
+uh0 f24 bodyObjectCode 'for(com.uipath.orchestrator.ReleaseDto rel : in.releases){
   if (rel.processKey == "getOrders"){
     ivy.log.info("release in use "+rel);
     param.startInfo.releaseKey = rel.key;
   }
 }' #txt
-uh0 f24 resultType com.uipath.platform.client.ODataValueOfIEnumerableOfJobDto #txt
+uh0 f24 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
 uh0 f24 responseCode 'ivy.log.info("started "+result);' #txt
 uh0 f24 clientErrorCode ivy:error:rest:client #txt
 uh0 f24 statusErrorCode ivy:error:rest:client #txt
