@@ -29,10 +29,10 @@ public class OAuth2Feature implements Feature
   {
     // the given clientId+userKey combination is valid until revocation on the orchestrator web-ui.
     // so refreshing the token after 24h hours should be possible without any restrictions.
-    String CLIENT_ID = "clientId";
-    String USER_KEY = "userKey";
+    String CLIENT_ID = "AUTH.clientId";
+    String USER_KEY = "AUTH.userKey";
     
-    String ACCESS_TOKEN_URI = "accessTokenUri";
+    String ACCESS_TOKEN_URI = "AUTH.accessTokenUri";
   }
 
   @Override
