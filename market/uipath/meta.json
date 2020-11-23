@@ -15,6 +15,10 @@
 					{
 						"source": "java/src/main/java/com/uipath/orchestrator/feature/OAuth2Feature.java",
 						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
+					},
+					{
+						"source": "java/src/main/java/com/uipath/orchestrator/feature/FeatureConfig.java",
+						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
 					}
 				]
 			}
