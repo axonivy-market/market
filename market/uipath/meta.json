@@ -57,6 +57,21 @@
 					}
 				]
 			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "uiPathDemo/dataclasses/com/uipath/connector/UiPathData.ivyClass",
+						"path": "dataclasses/com/uipath/connector/UiPathData.ivyClass"
+					},
+					{
+						"source": "uiPathDemo/processes/uiPathRpa.mod",
+						"path": "processes/uiPathRpa.mod"
+					}
+				]
+			}
 		}
 	]
 }
