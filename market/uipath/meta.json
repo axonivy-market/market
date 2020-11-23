@@ -31,15 +31,15 @@
 				],
 				"properties": [
 					{
-						"name": "tenant",
+						"name": "AUTH.tenant",
 						"value": "AXONPRESALES"
 					},
 					{
-						"name": "clientId",
+						"name": "AUTH.clientId",
 						"value": ""
 					},
 					{
-						"name": "userKey",
+						"name": "AUTH.userKey",
 						"value": ""
 					},
 					{

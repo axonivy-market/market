@@ -11,7 +11,7 @@ import javax.ws.rs.core.FeatureContext;
 
 public class TenantHeaderFeature implements Feature
 {
-  public static final String PROPERTY_NAME = "tenant";
+  public static final String PROPERTY_NAME = "AUTH.tenant";
 
   @Override
   public boolean configure(FeatureContext context)
