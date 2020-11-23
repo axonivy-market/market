@@ -23,8 +23,6 @@ import javax.ws.rs.ext.Provider;
  */
 public class OAuth2Feature implements Feature
 {
-  public static final String TOKEN_MISSING = "rest:client:token:missing";
-
   public static interface Property
   {
     // the given clientId+userKey combination is valid until revocation on the orchestrator web-ui.
