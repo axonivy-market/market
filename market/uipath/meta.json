@@ -24,7 +24,7 @@
 			}
 		},
 		{
-			"id": "open-api-rest-client",
+			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
