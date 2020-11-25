@@ -1,0 +1,6 @@
+UiPathData #class
+com.uipath.connector #namespace
+license com.uipath.orchestrator.LicenseDto #field
+jobs java.util.List<com.uipath.orchestrator.JobDto> #field
+robots java.util.List<com.uipath.orchestrator.RobotDto> #field
+releases List<com.uipath.orchestrator.ReleaseDto> #field

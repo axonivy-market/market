@@ -1,7 +1,6 @@
 {
 	"id": "uipath",
 	"name": "UI Path RPA",
-	"listed": false,
 	"tags": ["connector", "RPA"],
 	"installers": [
 		{
@@ -9,8 +8,20 @@
 			"data": {
 				"resources": [
 					{
-						"source": "java/src/main/java/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
 						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
+					},
+					{
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/OAuth2Feature.java",
+						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
+					},
+					{
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
+						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
+					},
+					{
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TokenStore.java",
+						"path": "src/com/uipath/orchestrator/feature/TokenStore.java"
 					}
 				]
 			}
@@ -20,15 +31,25 @@
 			"data": {
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
+				"clientId": "699e715f-63b1-4355-a974-ee3cac26985e", 
+				"baseUri": "https://platform.uipath.com/",
 				"features": [
-					"com.axonivy.connectivity.rest.client.auth.OAuth2Feature",
+					"com.uipath.orchestrator.feature.OAuth2Feature",
 					"com.uipath.orchestrator.feature.TenantHeaderFeature",
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
 				],
 				"properties": [
 					{
-						"name": "tenant",
+						"name": "AUTH.tenant",
 						"value": "AXONPRESALES"
+					},
+					{
+						"name": "AUTH.clientId",
+						"value": ""
+					},
+					{
+						"name": "AUTH.userKey",
+						"value": ""
 					},
 					{
 						"name": "jersey.config.client.followRedirects",
@@ -42,6 +63,29 @@
 						"name": "JSON.Mapper.ACCEPT_CASE_INSENSITIVE_PROPERTIES",
 						"value": "true"
 					}
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "uiPathDemo/dataclasses/com/uipath/connector/UiPathData.ivyClass",
+						"path": "dataclasses/com/uipath/connector/UiPathData.ivyClass"
+					},
+					{
+						"source": "uiPathDemo/processes/uiPathRpa.mod",
+						"path": "processes/uiPathRpa.mod"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/uiPathRpa.mod"
 				]
 			}
 		}
