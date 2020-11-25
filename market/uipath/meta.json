@@ -9,15 +9,15 @@
 			"data": {
 				"resources": [
 					{
-						"source": "java/src/main/java/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
 						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
 					},
 					{
-						"source": "java/src/main/java/com/uipath/orchestrator/feature/OAuth2Feature.java",
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/OAuth2Feature.java",
 						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
 					},
 					{
-						"source": "java/src/main/java/com/uipath/orchestrator/feature/FeatureConfig.java",
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
 						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
 					}
 				]
