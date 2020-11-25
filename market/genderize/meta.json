@@ -4,7 +4,7 @@
 	"tags": ["connector"],
 	"installers": [
 		{
-			"id": "open-api-rest-client",
+			"id": "rest-client",
 			"data": {
 				"openApiUrl": "openapi.json",
 				"namespace": "io.genderize"
