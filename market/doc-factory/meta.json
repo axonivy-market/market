@@ -23,5 +23,20 @@
 			"type": "zip",
 			"doc": true
 		}
+	],
+	"installers": [
+		{
+			"id": "maven-artifact",
+			"data": {
+				"dependencies": [
+					{
+						"groupId": "ch.ivyteam.ivy.addons",
+						"artifactId": "doc-factory",
+						"version": "${version}",
+						"type": "iar"
+					}
+				]
+			}
+		}
 	]
 }
