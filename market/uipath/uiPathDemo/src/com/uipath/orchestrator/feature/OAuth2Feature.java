@@ -3,6 +3,7 @@ package com.uipath.orchestrator.feature;
 import java.io.IOException;
 import java.util.Map;
 import java.util.Objects;
+import java.util.function.Function;
 
 import javax.ws.rs.Priorities;
 import javax.ws.rs.client.Client;
@@ -12,6 +13,9 @@ import javax.ws.rs.core.Feature;
 import javax.ws.rs.core.FeatureContext;
 import javax.ws.rs.core.GenericType;
 import javax.ws.rs.ext.Provider;
+
+import ch.ivyteam.ivy.bpm.error.BpmError;
+
 
 /**
  * Authentication feature that authorizes request against uipath orchestrator
@@ -70,9 +74,16 @@ public class OAuth2Feature implements Feature
 
     private static Map<String, Object> getNewAccessToken(Client client, FeatureConfig config, String accessUri)
     {
+      Function<String, String> read = prop -> config.read(prop).orElseThrow(()->
+        BpmError.create("uipath:login")
+          .withMessage("Missing property '" + prop + "' in RestClient.")
+          .withAttribute("authUri", "https://platform.uipath.com/account/login")
+          .build()
+      );
+      
       TokenRequest request = new TokenRequest(
-        config.readMandatory(Property.CLIENT_ID),
-        config.readMandatory(Property.USER_KEY)
+        read.apply(Property.CLIENT_ID),
+        read.apply(Property.USER_KEY)
       );
       
       GenericType<Map<String, Object>> map = new GenericType<>(Map.class);

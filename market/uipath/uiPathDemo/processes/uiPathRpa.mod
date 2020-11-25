@@ -22,6 +22,9 @@ uh0 @RestClientCall f24 '' #zField
 uh0 @PushWFArc f16 '' #zField
 uh0 @PushWFArc f4 '' #zField
 uh0 @PushWFArc f8 '' #zField
+uh0 @ProcessException f11 '' #zField
+uh0 @InfoButton f12 '' #zField
+uh0 @AnnotationArc f13 '' #zField
 >Proto uh0 uh0 uiPathRpa #zField
 uh0 f1 593 289 30 30 0 15 #rect
 uh0 f1 @|EndIcon #fIcon
@@ -130,7 +133,7 @@ on the UIPath orchestration platform</name>
     </language>
 </elementInfo>
 ' #txt
-uh0 f7 72 226 272 60 -129 -22 #rect
+uh0 f7 80 130 272 60 -129 -22 #rect
 uh0 f7 @|IBIcon #fIcon
 uh0 f22 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f22 path /odata/Releases #txt
@@ -196,6 +199,39 @@ uh0 f16 536 304 593 304 #arcP
 uh0 f16 0 0.14267180925666198 0 0 #arcLabel
 uh0 f4 472 166 472 202 #arcP
 uh0 f8 472 246 472 282 #arcP
+uh0 f11 actionTable 'out=in;
+' #txt
+uh0 f11 actionCode 'import ch.ivyteam.ivy.request.IHttpResponse;
+IHttpResponse.current().sendRedirect(error.getAttribute("authUri") as String);' #txt
+uh0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>uipath:login</name>
+    </language>
+</elementInfo>
+' #txt
+uh0 f11 81 273 30 30 -28 16 #rect
+uh0 f11 @|ExceptionIcon #fIcon
+uh0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>1. Authorize on account.uipath.com
+2. Navigate to Api Access
+3. Copy resolved ''ClientId'', ''UserToken'' and ''Tenant''
+     to Definitions/RestClients/UiPath -&gt; Properties</name>
+        <tool>
+            <toolName>docs</toolName>
+            <url>https://docs.uipath.com/orchestrator/reference/consuming-cloud-api</url>
+        </tool>
+    </language>
+</elementInfo>
+' #txt
+uh0 f12 72 346 336 60 -161 -30 #rect
+uh0 f12 @|IBIcon #fIcon
+uh0 f13 72 376 81 288 #arcP
+uh0 f13 1 56 376 #addKink
+uh0 f13 2 56 288 #addKink
+uh0 f13 0 0.7565309504609988 0 0 #arcLabel
 >Proto uh0 .type com.uipath.connector.UiPathData #txt
 >Proto uh0 .processKind NORMAL #txt
 >Proto uh0 0 0 32 24 18 0 #rect
@@ -212,3 +248,5 @@ uh0 f0 mainOut f4 tail #connect
 uh0 f4 head f22 mainIn #connect
 uh0 f22 mainOut f8 tail #connect
 uh0 f8 head f24 mainIn #connect
+uh0 f12 ao f13 tail #connect
+uh0 f13 head f11 @CG|ai #connect
