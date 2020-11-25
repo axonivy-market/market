@@ -28,7 +28,7 @@
 			"data": {
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
-				"id": "699e715f-63b1-4355-a974-ee3cac26985e", 
+				"clientId": "699e715f-63b1-4355-a974-ee3cac26985e", 
 				"baseUri": "https://platform.uipath.com/",
 				"features": [
 					"com.uipath.orchestrator.feature.OAuth2Feature",
