@@ -7,7 +7,10 @@
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "openapi.json",
-				"namespace": "io.genderize"
+				"namespace": "io.genderize",
+				"features": [
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				]
 			}
 		}
 	]
