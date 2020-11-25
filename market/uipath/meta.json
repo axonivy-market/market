@@ -19,6 +19,10 @@
 					{
 						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
 						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
+					},
+					{
+						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TokenStore.java",
+						"path": "src/com/uipath/orchestrator/feature/TokenStore.java"
 					}
 				]
 			}
