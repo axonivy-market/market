@@ -15,6 +15,9 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.ext.Provider;
 
 import ch.ivyteam.ivy.bpm.error.BpmError;
+import ch.ivyteam.ivy.environment.Ivy;
+import ch.ivyteam.ivy.security.ISession;
+import ch.ivyteam.log.Logger;
 
 
 /**
@@ -40,7 +43,7 @@ public class OAuth2Feature implements Feature
   @Override
   public boolean configure(FeatureContext context)
   {
-    context.register(new AuthorizationFilter(), Priorities.AUTHORIZATION);
+    context.register(new AuthorizationFilter(Ivy.session(), Ivy.log()), Priorities.AUTHORIZATION);
     return true;
   }
 
@@ -49,6 +52,13 @@ public class OAuth2Feature implements Feature
   {
     private static final String AUTHORIZATION = "Authorization";
     private static final String DEFAULT_ACCESS_TOKEN_URI = "https://account.uipath.com/oauth/token";
+
+    private Function<String, TokenStore> tokenStore;
+    
+    public AuthorizationFilter(ISession session, Logger log)
+    {
+      tokenStore = service -> new TokenStore(session, service, log);
+    }
 
     @Override
     public void filter(ClientRequestContext context) throws IOException
@@ -60,7 +70,14 @@ public class OAuth2Feature implements Feature
         return;
       }
       
-      var token = getNewAccessToken(context.getClient(), config, accessUri);
+      TokenStore store = tokenStore.apply(context.getUri().getHost());
+      var token = store.getToken();
+      if (token == null)
+      {
+        token = getNewAccessToken(context.getClient(), config, accessUri);
+        store.setToken(token); // keep for following requests
+      }
+      
       String accessToken = (String) token.get("access_token");
       if (accessToken == null || accessToken.isBlank())
       {
