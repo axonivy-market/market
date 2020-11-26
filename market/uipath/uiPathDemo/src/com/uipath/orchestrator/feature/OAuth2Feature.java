@@ -12,9 +12,13 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Feature;
 import javax.ws.rs.core.FeatureContext;
 import javax.ws.rs.core.GenericType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+import javax.ws.rs.core.Response.Status.Family;
 import javax.ws.rs.ext.Provider;
 
 import ch.ivyteam.ivy.bpm.error.BpmError;
+import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
 import ch.ivyteam.ivy.environment.Ivy;
 import ch.ivyteam.ivy.security.ISession;
 import ch.ivyteam.log.Logger;
@@ -81,7 +85,8 @@ public class OAuth2Feature implements Feature
       String accessToken = (String) token.get("access_token");
       if (accessToken == null || accessToken.isBlank())
       {
-        throw new IllegalStateException("Failed to read 'access_token' from " + token);
+        store.setToken(null);
+        authError().withMessage("Failed to read 'access_token' from " + token).throwError();
       }
       if (!context.getHeaders().containsKey(AUTHORIZATION))
       {
@@ -89,13 +94,11 @@ public class OAuth2Feature implements Feature
       }
     }
 
+    
     private static Map<String, Object> getNewAccessToken(Client client, FeatureConfig config, String accessUri)
     {
       Function<String, String> read = prop -> config.read(prop).orElseThrow(()->
-        BpmError.create("uipath:login")
-          .withMessage("Missing property '" + prop + "' in RestClient.")
-          .withAttribute("authUri", "https://platform.uipath.com/account/login")
-          .build()
+        authError().withMessage("Missing property '" + prop + "' in RestClient.").build()
       );
       
       TokenRequest request = new TokenRequest(
@@ -104,12 +107,17 @@ public class OAuth2Feature implements Feature
       );
       
       GenericType<Map<String, Object>> map = new GenericType<>(Map.class);
-      var result = client
+      var response = client
         .target(accessUri)
         .request()
-        .post(Entity.json(request))
-        .readEntity(map);
-      return result;
+        .post(Entity.json(request));
+      if (response.getStatusInfo().getFamily() == Family.SUCCESSFUL)
+      {
+        return response.readEntity(map);
+      }
+      throw authError()
+        .withMessage("Failed to refresh accessToken:"+ response)
+        .withAttribute("status", response.getStatus()).build();
     }
 
     @SuppressWarnings("unused")
@@ -125,6 +133,21 @@ public class OAuth2Feature implements Feature
         this.refresh_token = userKey;
       }
     }
+  }
+  
+  public static void analyzeAuth(Response response) throws BpmError
+  {
+    if (response.getStatus() == Status.FORBIDDEN.getStatusCode() ||
+        response.getStatus() == Status.UNAUTHORIZED.getStatusCode())
+    {
+      authError().withAttribute("status", response.getStatus()).throwError();
+    }
+  }
+  
+  private static BpmPublicErrorBuilder authError()
+  {
+    return BpmError.create("uipath:login")
+      .withAttribute("authUri", "https://platform.uipath.com/account/login");
   }
 
 }

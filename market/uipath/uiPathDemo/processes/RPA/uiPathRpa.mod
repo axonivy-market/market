@@ -8,10 +8,7 @@ uh0 @TextInP .type .type #zField
 uh0 @TextInP .processKind .processKind #zField
 uh0 @TextInP .xml .xml #zField
 uh0 @TextInP .responsibility .responsibility #zField
-uh0 @EndTask f1 '' #zField
 uh0 @RestClientCall f3 '' #zField
-uh0 @StartRequest f9 '' #zField
-uh0 @PushWFArc f10 '' #zField
 uh0 @RestClientCall f5 '' #zField
 uh0 @PushWFArc f6 '' #zField
 uh0 @RestClientCall f0 '' #zField
@@ -19,22 +16,23 @@ uh0 @PushWFArc f2 '' #zField
 uh0 @InfoButton f7 '' #zField
 uh0 @RestClientCall f22 '' #zField
 uh0 @RestClientCall f24 '' #zField
-uh0 @PushWFArc f16 '' #zField
 uh0 @PushWFArc f4 '' #zField
 uh0 @PushWFArc f8 '' #zField
-uh0 @ProcessException f11 '' #zField
-uh0 @InfoButton f12 '' #zField
-uh0 @AnnotationArc f13 '' #zField
+uh0 @StartSub f14 '' #zField
+uh0 @EndSub f15 '' #zField
+uh0 @PushWFArc f17 '' #zField
+uh0 @PushWFArc f9 '' #zField
 >Proto uh0 uh0 uiPathRpa #zField
-uh0 f1 593 289 30 30 0 15 #rect
-uh0 f1 @|EndIcon #fIcon
 uh0 f3 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f3 path /odata/Settings/UiPath.Server.Configuration.OData.GetLicense #txt
 uh0 f3 resultType com.uipath.orchestrator.LicenseDto #txt
 uh0 f3 responseMapping 'out.license=result;
 ' #txt
+uh0 f3 responseCode 'import com.uipath.orchestrator.feature.OAuth2Feature;
+
+OAuth2Feature.analyzeAuth(response);' #txt
 uh0 f3 clientErrorCode ivy:error:rest:client #txt
-uh0 f3 statusErrorCode ivy:error:rest:client #txt
+uh0 f3 statusErrorCode '>> Ignore status' #txt
 uh0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -50,24 +48,6 @@ Read License</name>
 ' #txt
 uh0 f3 248 42 128 44 -40 -15 #rect
 uh0 f3 @|RestClientCallIcon #fIcon
-uh0 f9 outLink startRPA.ivp #txt
-uh0 f9 inParamDecl '<> param;' #txt
-uh0 f9 requestEnabled true #txt
-uh0 f9 triggerEnabled false #txt
-uh0 f9 callSignature startRPA() #txt
-uh0 f9 startName '8.2 RPA integration with UIPath' #txt
-uh0 f9 caseData businessCase.attach=true #txt
-uh0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>startRPA.ivp</name>
-    </language>
-</elementInfo>
-' #txt
-uh0 f9 @C|.responsibility Everybody #txt
-uh0 f9 81 49 30 30 -29 17 #rect
-uh0 f9 @|StartRequestIcon #fIcon
-uh0 f10 111 64 248 64 #arcP
 uh0 f5 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f5 path /odata/Jobs #txt
 uh0 f5 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
@@ -125,15 +105,15 @@ uh0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>Robotics Process Automation (RPA)
-use OpenAPI calls to interact with robots 
+uses OpenAPI calls to interact with robots 
 on the UIPath orchestration platform</name>
         <nameStyle>33,5,0
-80,5
+81,5
 </nameStyle>
     </language>
 </elementInfo>
 ' #txt
-uh0 f7 80 130 272 60 -129 -22 #rect
+uh0 f7 80 130 272 60 -133 -22 #rect
 uh0 f7 @|IBIcon #fIcon
 uh0 f22 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f22 path /odata/Releases #txt
@@ -173,12 +153,14 @@ param.startInfo.source=com.uipath.orchestrator.StartProcessDto.SourceEnum.MANUAL
 param.startInfo.strategy=com.uipath.orchestrator.StartProcessDto.StrategyEnum.SPECIFIC;
 ' #txt
 uh0 f24 bodyObjectCode 'for(com.uipath.orchestrator.ReleaseDto rel : in.releases){
-  if (rel.processKey == "getOrders"){
+  if (rel.processKey.equals(in.jobToStart)){
     ivy.log.info("release in use "+rel);
     param.startInfo.releaseKey = rel.key;
   }
 }' #txt
 uh0 f24 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
+uh0 f24 responseMapping 'out.jobs=result.value;
+' #txt
 uh0 f24 responseCode 'ivy.log.info("started "+result);' #txt
 uh0 f24 clientErrorCode ivy:error:rest:client #txt
 uh0 f24 statusErrorCode ivy:error:rest:client #txt
@@ -195,58 +177,42 @@ Start Job</name>
 ' #txt
 uh0 f24 408 282 128 44 -40 -15 #rect
 uh0 f24 @|RestClientCallIcon #fIcon
-uh0 f16 536 304 593 304 #arcP
-uh0 f16 0 0.14267180925666198 0 0 #arcLabel
 uh0 f4 472 166 472 202 #arcP
 uh0 f8 472 246 472 282 #arcP
-uh0 f11 actionTable 'out=in;
+uh0 f14 inParamDecl '<String job> param;' #txt
+uh0 f14 inParamTable 'out.jobToStart=param.job;
 ' #txt
-uh0 f11 actionCode 'import ch.ivyteam.ivy.request.IHttpResponse;
-IHttpResponse.current().sendRedirect(error.getAttribute("authUri") as String);' #txt
-uh0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+uh0 f14 outParamDecl '<java.util.List<com.uipath.orchestrator.JobDto> jobs> result;' #txt
+uh0 f14 outParamTable 'result.jobs=in.jobs;
+' #txt
+uh0 f14 callSignature startJob(String) #txt
+uh0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>uipath:login</name>
+        <name>startJob(String)</name>
     </language>
 </elementInfo>
 ' #txt
-uh0 f11 81 273 30 30 -28 16 #rect
-uh0 f11 @|ExceptionIcon #fIcon
-uh0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>1. Authorize on account.uipath.com
-2. Navigate to Api Access
-3. Copy resolved ''ClientId'', ''UserToken'' and ''Tenant''
-     to Definitions/RestClients/UiPath -&gt; Properties</name>
-        <tool>
-            <toolName>docs</toolName>
-            <url>https://docs.uipath.com/orchestrator/reference/consuming-cloud-api</url>
-        </tool>
-    </language>
-</elementInfo>
-' #txt
-uh0 f12 72 346 336 60 -161 -30 #rect
-uh0 f12 @|IBIcon #fIcon
-uh0 f13 72 376 81 288 #arcP
-uh0 f13 1 56 376 #addKink
-uh0 f13 2 56 288 #addKink
-uh0 f13 0 0.7565309504609988 0 0 #arcLabel
+uh0 f14 73 49 30 30 -15 17 #rect
+uh0 f14 @|StartSubIcon #fIcon
+uh0 f15 593 289 30 30 0 15 #rect
+uh0 f15 @|EndSubIcon #fIcon
+uh0 f17 103 64 248 64 #arcP
+uh0 f9 536 304 593 304 #arcP
+uh0 f9 0 0.14267180925666198 0 0 #arcLabel
 >Proto uh0 .type com.uipath.connector.UiPathData #txt
->Proto uh0 .processKind NORMAL #txt
+>Proto uh0 .processKind CALLABLE_SUB #txt
 >Proto uh0 0 0 32 24 18 0 #rect
 >Proto uh0 @|BIcon #fIcon
-uh0 f9 mainOut f10 tail #connect
-uh0 f10 head f3 mainIn #connect
 uh0 f3 mainOut f6 tail #connect
 uh0 f6 head f5 mainIn #connect
 uh0 f5 mainOut f2 tail #connect
 uh0 f2 head f0 mainIn #connect
-uh0 f24 mainOut f16 tail #connect
-uh0 f16 head f1 mainIn #connect
 uh0 f0 mainOut f4 tail #connect
 uh0 f4 head f22 mainIn #connect
 uh0 f22 mainOut f8 tail #connect
 uh0 f8 head f24 mainIn #connect
-uh0 f12 ao f13 tail #connect
-uh0 f13 head f11 @CG|ai #connect
+uh0 f14 mainOut f17 tail #connect
+uh0 f17 head f3 mainIn #connect
+uh0 f24 mainOut f9 tail #connect
+uh0 f9 head f15 mainIn #connect
