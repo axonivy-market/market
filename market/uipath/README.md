@@ -24,7 +24,7 @@ Proceed as follows:
 1. If OAUTH credentials are not present, the browser will redirect you to the UiPath cloud login page.
   ![cloud-navigate](doc/img/authErrorHandling.png)
 1. Login and navigate to: Admin > Tenant > Orchestrator > API Access
-  ![cloud-navigate](doc/img/cloudApiAccess.png)
+  ![cloud-access](doc/img/cloudApiAccess.png)
 1. Copy the shown `clientId`, `userKey` and `tentant` to your Rest Client definition.
   ![copy-properties](doc/img/copyAuth_idKeyTenant.png)
 1. Start the process again. Now the AccessToken will be sent automatically within UiPath requests.
@@ -38,5 +38,5 @@ In fact, it all can be done in low-code manner. Just select service methods to c
 intuitive mapping tables to define your data flows.
 
 Use the Rest Client API browser to get a first outline on the UiPath orchestrator capabilities.
- ![copy-properties](doc/img/apiBrowserUiPath.png)
+ ![api-browser](doc/img/apiBrowserUiPath.png)
 
