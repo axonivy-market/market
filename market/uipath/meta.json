@@ -49,7 +49,8 @@
 					},
 					{
 						"name": "AUTH.userKey",
-						"value": ""
+						"value": "",
+						"password": true
 					},
 					{
 						"name": "jersey.config.client.followRedirects",
@@ -75,8 +76,16 @@
 						"path": "dataclasses/com/uipath/connector/UiPathData.ivyClass"
 					},
 					{
-						"source": "uiPathDemo/processes/uiPathRpa.mod",
-						"path": "processes/uiPathRpa.mod"
+						"source": "uiPathDemo/dataclasses/com/uipath/connector/UiPathDemoData.ivyClass",
+						"path": "dataclasses/com/uipath/connector/UiPathDemoData.ivyClass"
+					},
+					{
+						"source": "uiPathDemo/processes/RPA/uiPathRpa.mod",
+						"path": "processes/RPA/uiPathRpa.mod"
+					},
+					{
+						"source": "uiPathDemo/processes/RPA/uiPathDemo.mod",
+						"path": "processes/RPA/uiPathDemo.mod"
 					}
 				]
 			}
@@ -85,7 +94,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
-					"processes/uiPathRpa.mod"
+					"processes/RPA/uiPathDemo.mod"
 				]
 			}
 		}
