@@ -9,7 +9,7 @@ process Activities.
 
 ## Demo
 
-With the connector a Demo process will be installed and show you prominent use-cases for UiPath orchestrator interactions. E.g. 'startAJob' on an unattended robot.
+With the connector a Demo process will be installed to demonstrate prominent use-cases for UiPath orchestrator interactions. E.g. 'startAJob' on an unattended robot.
 
  ![copy-properties](doc/img/startJobSample.png)
 
