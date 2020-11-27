@@ -26,7 +26,7 @@
 	],
 	"installers": [
 		{
-			"id": "maven-artifact",
+			"id": "maven-dependency",
 			"data": {
 				"dependencies": [
 					{
@@ -42,6 +42,28 @@
 						"url":"http://repo.axonivy.rocks",
 						"snapshots":{"enabled":"true"}
 					}
+				]
+			}
+		},
+		{
+			"id": "maven-import",
+			"data": {
+				"projects":[
+					{
+						"groupId": "ch.ivyteam.ivy.addons",
+						"artifactId": "doc-factory-demos",
+						"version": "${version}",
+						"type": "iar"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"project": "DocFactoryDemos",
+				"resources": [
+					"processes/DocFactorySubprocessExamples.mod"
 				]
 			}
 		}
