@@ -55,6 +55,12 @@
 						"version": "${version}",
 						"type": "iar"
 					}
+				],
+				"repositories":[
+					{
+						"id":"axonivy.public",
+						"url":"http://repo.axonivy.rocks"
+					}
 				]
 			}
 		},
