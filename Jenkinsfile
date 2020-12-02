@@ -19,7 +19,7 @@ pipeline {
               sh 'ec -no-color'
             }
 
-            docker.build('maven-build', '.').inside {
+            docker.image('maven:3.6.3-jdk-11').inside {
               dir ('market-test') {
                 maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
                 maven cmd: 'verify'
