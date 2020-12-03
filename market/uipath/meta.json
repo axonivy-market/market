@@ -8,19 +8,19 @@
 			"data": {
 				"resources": [
 					{
-						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
+						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
 						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
 					},
 					{
-						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/OAuth2Feature.java",
+						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/OAuth2Feature.java",
 						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
 					},
 					{
-						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
+						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
 						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
 					},
 					{
-						"source": "uiPathDemo/src/com/uipath/orchestrator/feature/TokenStore.java",
+						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/TokenStore.java",
 						"path": "src/com/uipath/orchestrator/feature/TokenStore.java"
 					}
 				]
@@ -72,19 +72,19 @@
 			"data": {
 				"resources": [
 					{
-						"source": "uiPathDemo/dataclasses/com/uipath/connector/UiPathData.ivyClass",
+						"source": "demo/uiPathDemo/dataclasses/com/uipath/connector/UiPathData.ivyClass",
 						"path": "dataclasses/com/uipath/connector/UiPathData.ivyClass"
 					},
 					{
-						"source": "uiPathDemo/dataclasses/com/uipath/connector/UiPathDemoData.ivyClass",
+						"source": "demo/uiPathDemo/dataclasses/com/uipath/connector/UiPathDemoData.ivyClass",
 						"path": "dataclasses/com/uipath/connector/UiPathDemoData.ivyClass"
 					},
 					{
-						"source": "uiPathDemo/processes/RPA/uiPathRpa.mod",
+						"source": "demo/uiPathDemo/processes/RPA/uiPathRpa.mod",
 						"path": "processes/RPA/uiPathRpa.mod"
 					},
 					{
-						"source": "uiPathDemo/processes/RPA/uiPathDemo.mod",
+						"source": "demo/uiPathDemo/processes/RPA/uiPathDemo.mod",
 						"path": "processes/RPA/uiPathDemo.mod"
 					}
 				]
