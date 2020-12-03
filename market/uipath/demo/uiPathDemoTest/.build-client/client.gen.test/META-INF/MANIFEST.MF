@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OpenAPI codegen Test
+Bundle-SymbolicName: ch.ivyteam.ivy.webservice.client.openapi.codegen.test
+Bundle-Version: 9.2.0.qualifier
+Automatic-Module-Name: client.gen.test
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: ch.ivyteam.ivy.webservice.client.openapi.codegen,
+ org.eclipse.core.runtime,
+ ch.ivyteam.util
+Import-Package: org.junit;version="4.13.0",
+ org.junit.jupiter.api;version="5.5.1"
