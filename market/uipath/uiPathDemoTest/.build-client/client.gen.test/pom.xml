@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.ivyteam.ivy.market.test</groupId>
+  <artifactId>ch.ivyteam.ivy.webservice.client.openapi.codegen.test</artifactId>
+  <version>9.2.0-SNAPSHOT</version>
+  <packaging>eclipse-test-plugin</packaging>
+  
+  <properties>
+    <openapi.url>https://petstore3.swagger.io/api/v3/openapi.json</openapi.url>
+    <openapi.namespace>io.swagger.pet</openapi.namespace>
+
+    <tycho.version>2.0.0</tycho.version>
+    <java.version>11</java.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>ivy.nightly.release</id>
+      <layout>p2</layout>
+      <url>https://download.axonivy.rocks/p2/nightly/</url>
+    </repository>
+  </repositories>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+  
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-surefire-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <includes>
+            <include>EclipseCoreTest*</include>
+          </includes>
+          <systemProperties>
+            <org.osgi.framework.bootdelegation>javax.annotation</org.osgi.framework.bootdelegation>
+          </systemProperties>
+          <argLine>-Dosgi.parentClassloader=ext -Dopenapi.url=${openapi.url} -Dopenapi.namespace=${openapi.namespace}</argLine>
+          <dependencies combine.children="append">
+            <dependency>
+              <type>p2-installable-unit</type>
+              <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
+            </dependency>
+            <dependency>
+              <type>p2-installable-unit</type>
+              <artifactId>org.eclipse.jdt.compiler.tool</artifactId>
+            </dependency>
+          </dependencies>
+          <trimStackTrace>false</trimStackTrace>
+        </configuration>
+      </plugin>
+    </plugins>
+    
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-compiler-plugin</artifactId>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>target-platform-configuration</artifactId>
+          <version>${tycho.version}</version>
+          <configuration>
+            <dependency-resolution>
+              <extraRequirements>
+                <requirement>
+                  <!-- fixes OpenAPI client compilation failed: 
+                  Unable to load annotation processing manager org.eclipse.jdt.internal.compiler.apt.dispatch.BatchAnnotationProcessorManager from classpath. 
+                  -->
+                  <type>eclipse-plugin</type>
+                  <id>org.eclipse.jdt.compiler.apt</id>
+                  <versionRange>1.3.110</versionRange>
+                </requirement>
+              </extraRequirements>
+            </dependency-resolution>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-compiler-plugin</artifactId>
+                    <versionRange>[1.4.0,)</versionRange>
+                    <goals>
+                      <goal>compile</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action><ignore/></action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-packaging-plugin</artifactId>
+                    <versionRange>[1.4.0,)</versionRange>
+                    <goals>
+                      <goal>validate-version</goal>
+                      <goal>validate-id</goal>
+                      <goal>build-qualifier</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action><ignore/> </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
