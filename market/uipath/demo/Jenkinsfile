@@ -24,7 +24,8 @@ pipeline {
       steps {
           script {
             def mavenParameters = "-Divy.engine.list.url=${params.engineListUrl} " +
-              "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true"
+              "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true " +
+              "-f market/uipath/demo/pom.xml"
 
             maven cmd: "clean install " + mavenParameters
           }
