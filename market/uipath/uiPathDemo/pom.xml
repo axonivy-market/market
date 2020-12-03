@@ -14,6 +14,37 @@
         <version>9.1.0</version>
         <extensions>true</extensions>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-invoker-plugin</artifactId>
+        <version>2.0.0</version>
+        <executions>
+          <execution>
+            <id>build.jaxrsclient.jar</id>
+            <phase>generate-resources</phase>
+            <goals><goal>integration-test</goal></goals>
+            <configuration>
+              <pom>../uiPathDemoTest/.build-client/client.gen.test/pom.xml</pom>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <streamLogs>true</streamLogs>
+          <goals>
+            <goal>clean</goal>
+            <goal>verify</goal>
+          </goals>
+          <showErrors>true</showErrors>
+          <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
+          <properties>
+            <openapi.url>https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json</openapi.url>
+            <openapi.namespace>com.uipath.orchestrator</openapi.namespace>
+            <openapi.jar>${basedir}/lib_generated/client/jaxRsClient_699e715f-63b1-4355-a974-ee3cac26985e.jar</openapi.jar>
+          </properties>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 </project>

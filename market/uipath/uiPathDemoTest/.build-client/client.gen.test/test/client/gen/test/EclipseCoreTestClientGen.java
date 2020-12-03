@@ -20,7 +20,7 @@ public class EclipseCoreTestClientGen
     var generator = new OpenApiClientJarGenerator(openApi);
     generator.setModelPackage(property("openapi.namespace"));
     Path clientJar = generator.createJar(new SystemOutProgressMonitor());
-    Path builtJar = Path.of("target", "openapi.jar");
+    Path builtJar = Path.of(property("openapi.jar"));
     Files.move(clientJar, builtJar, StandardCopyOption.REPLACE_EXISTING);
     System.out.println(builtJar);
   }
