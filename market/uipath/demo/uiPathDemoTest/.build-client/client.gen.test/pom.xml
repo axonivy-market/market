@@ -50,7 +50,7 @@
           	<openapi.build>${openapi.build}</openapi.build>
 
             <org.osgi.framework.bootdelegation>javax.annotation</org.osgi.framework.bootdelegation>
-          	<osgi.parentClassloader>ext</osgi.parentClassloader>
+            <osgi.parentClassloader>ext</osgi.parentClassloader>
           </systemProperties>
           <dependencies combine.children="append">
             <dependency>
