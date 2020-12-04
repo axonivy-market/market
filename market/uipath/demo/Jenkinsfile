@@ -32,7 +32,6 @@ pipeline {
       }
       post {
         always {
-          checkVersions()
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/*-reports/**/*.xml'
         }
