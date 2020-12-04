@@ -27,6 +27,7 @@ public class EclipseCoreTestClientGen
 	
     Path clientJar = generator.createJar(new SystemOutProgressMonitor());
     Path builtJar = Path.of(property("openapi.jar"));
+    Files.createDirectories(builtJar.getParent());
     Files.move(clientJar, builtJar, StandardCopyOption.REPLACE_EXISTING);
     System.out.println(builtJar);
   }
