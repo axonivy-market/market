@@ -1,0 +1,41 @@
+pipeline {
+  agent {
+    docker {
+      image 'axonivy/build-container:web-1.0'
+    }
+  }
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '60', artifactNumToKeepStr: '10'))
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  parameters {
+    string(name: 'engineListUrl',
+      description: 'Engine to use for build',
+      defaultValue: 'https://jenkins.ivyteam.io/job/ivy-core_product/job/master/lastSuccessfulBuild/')
+  }
+
+  stages {
+    stage('build') {
+      steps {
+          dir('market/uipath/demo'){
+              script {
+                def mavenParameters = "-Divy.engine.list.url=${params.engineListUrl} " +
+                  "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true "
+                maven cmd: "clean verify " + mavenParameters
+              }
+          }
+      }
+      post {
+        always {
+          recordIssues tools: [mavenConsole()], unstableTotalAll: 1
+          junit '**/target/*-reports/**/*.xml'
+        }
+      }
+    }
+  }
+}
