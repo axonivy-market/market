@@ -10,6 +10,7 @@
     <openapi.url>https://petstore3.swagger.io/api/v3/openapi.json</openapi.url>
     <openapi.namespace>io.swagger.pet</openapi.namespace>
 	<openapi.jar>${project.build.directory}/openapi.jar</openapi.jar>
+	<openapi.build>${project.build.directory}/OpenAPIclient</openapi.build>
 
     <tycho.version>2.0.0</tycho.version>
     <java.version>11</java.version>
@@ -43,9 +44,14 @@
             <include>EclipseCoreTest*</include>
           </includes>
           <systemProperties>
+          	<openapi.url>${openapi.url}</openapi.url>
+          	<openapi.namespace>${openapi.namespace}</openapi.namespace>
+          	<openapi.jar>${openapi.jar}</openapi.jar>
+          	<openapi.build>${openapi.build}</openapi.build>
+
             <org.osgi.framework.bootdelegation>javax.annotation</org.osgi.framework.bootdelegation>
+          	<osgi.parentClassloader>ext</osgi.parentClassloader>
           </systemProperties>
-          <argLine>-Dosgi.parentClassloader=ext -Dopenapi.url=${openapi.url} -Dopenapi.namespace=${openapi.namespace} -Dopenapi.jar=${openapi.jar}</argLine>
           <dependencies combine.children="append">
             <dependency>
               <type>p2-installable-unit</type>
