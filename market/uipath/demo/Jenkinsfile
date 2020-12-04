@@ -22,12 +22,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-          script {
-            def mavenParameters = "-Divy.engine.list.url=${params.engineListUrl} " +
-              "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true " +
-              "-f market/uipath/demo/pom.xml"
-
-            maven cmd: "clean install " + mavenParameters
+          dir('market/uipath/demo'){
+              script {
+                def mavenParameters = "-Divy.engine.list.url=${params.engineListUrl} " +
+                  "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true "
+                maven cmd: "clean verify " + mavenParameters
+              }
           }
       }
       post {
