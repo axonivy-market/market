@@ -95,6 +95,13 @@
                 </requirement>
               </extraRequirements>
             </dependency-resolution>
+            <environments combine.children="append">
+              <environment>
+                <os>linux</os>
+                <ws>gtk</ws>
+                <arch>x86_64</arch>
+              </environment>
+            </environments>
           </configuration>
         </plugin>
 
