@@ -1,0 +1,18 @@
+{
+	"id": "docusign",
+	"name": "DocuSign eSignature",
+	"listed": false,
+	"tags": ["connector"],
+	"installers": [
+		{
+			"id": "rest-client",
+			"data": {
+				"openApiUrl": "https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json",
+				"namespace": "com.docusign.esignature",
+				"features": [
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				]
+			}
+		}
+	]
+}
