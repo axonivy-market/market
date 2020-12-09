@@ -7,7 +7,7 @@ Now you can steer robotic work from your workflow process. This connector
 makes the UiPath RPA API features easy and attractive to use in 
 process Activities.
 
-## Demo
+## Demo AB
 
 With the connector a Demo process will be installed to demonstrate prominent use-cases for UiPath orchestrator interactions. E.g. 'startAJob' on an unattended robot.
 
