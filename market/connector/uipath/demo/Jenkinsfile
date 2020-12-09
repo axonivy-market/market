@@ -32,7 +32,9 @@ pipeline {
       }
       post {
         always {
-          recordIssues tools: [mavenConsole()], unstableTotalAll: 1
+          recordIssues tools: [mavenConsole()], unstableTotalAll: 1, filters: [
+            excludeMessage('.*-illegal-access=warn.*'), // java11
+          ]
           junit '**/target/*-reports/**/*.xml'
         }
       }
