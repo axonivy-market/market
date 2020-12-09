@@ -16,21 +16,22 @@ ge0 @UserDialog f5 '' #zField
 ge0 @PushWFArc f6 '' #zField
 ge0 @PushWFArc f2 '' #zField
 >Proto ge0 ge0 genderizeDemo #zField
-ge0 f0 outLink start.ivp #txt
+ge0 f0 outLink salutationDemo.ivp #txt
 ge0 f0 inParamDecl '<> param;' #txt
 ge0 f0 requestEnabled true #txt
 ge0 f0 triggerEnabled false #txt
-ge0 f0 callSignature start() #txt
+ge0 f0 callSignature salutationDemo() #txt
+ge0 f0 startName 'Genderize.io Connector Demo' #txt
 ge0 f0 caseData businessCase.attach=true #txt
 ge0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>start.ivp</name>
+        <name>salutationDemo.ivp</name>
     </language>
 </elementInfo>
 ' #txt
 ge0 f0 @C|.responsibility Everybody #txt
-ge0 f0 81 49 30 30 -21 17 #rect
+ge0 f0 81 49 30 30 -52 23 #rect
 ge0 f0 @|StartRequestIcon #fIcon
 ge0 f1 497 49 30 30 0 15 #rect
 ge0 f1 @|EndIcon #fIcon
