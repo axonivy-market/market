@@ -8,8 +8,63 @@
 			"data": {
 				"openApiUrl": "openapi.json",
 				"namespace": "io.genderize",
+				"clientId": "2fefdb40-b37e-417d-a7b9-3c499183003b", 
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "demo/genderizeIoDemo/dataclasses/genderize/io/Data.ivyClass",
+						"path": "dataclasses/genderize/io/Data.ivyClass"
+					},
+					{
+						"source": "demo/genderizeIoDemo/processes/genderizeDemo.mod",
+						"path": "processes/genderizeDemo.mod"
+					}
+				],
+				"directories": [
+					{
+						"source": "demo/genderizeIoDemo/src_hd/genderize/io/enterForm",
+						"includes": [ 
+							"enterFormData.ivyClass", 
+							"enterForm.rddescriptor", 
+							"enterFormProcess.mod", 
+							"enterForm.xhtml"
+						],
+						"path": "src_hd/genderize/io/enterForm"
+					},
+					{
+						"source": "demo/genderizeIoDemo/src_hd/genderize/io/showSalutationForm",
+						"includes": [ 
+							"showSalutationFormData.ivyClass", 
+							"showSalutationForm.rddescriptor", 
+							"showSalutationFormProcess.mod", 
+							"showSalutationForm.xhtml"
+						],
+						"path": "src_hd/genderize/io/showSalutationForm"
+					},
+					{
+						"source": "demo/genderizeIoDemo/webContent/layouts",
+						"includes": [ 
+							"basic-8.xhtml", 
+							"styles/ivy-common-8.css", 
+							"images/axon_ivy_logo.svg"
+						],
+						"path": "webContent/layouts"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/genderizeDemo.mod"
 				]
 			}
 		}
