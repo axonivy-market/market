@@ -14,6 +14,7 @@
 
     <tycho.version>2.0.0</tycho.version>
     <java.version>11</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <repositories>
@@ -94,6 +95,13 @@
                 </requirement>
               </extraRequirements>
             </dependency-resolution>
+            <environments combine.children="append">
+              <environment>
+                <os>linux</os>
+                <ws>gtk</ws>
+                <arch>x86_64</arch>
+              </environment>
+            </environments>
           </configuration>
         </plugin>
 
