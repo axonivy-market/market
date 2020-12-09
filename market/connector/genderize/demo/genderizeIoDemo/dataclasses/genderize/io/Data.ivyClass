@@ -1,0 +1,6 @@
+Data #class
+genderize.io #namespace
+firstname String #field
+lastname String #field
+saluation String #field
+birthday Date #field
