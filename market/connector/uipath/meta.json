@@ -1,6 +1,6 @@
 {
 	"id": "uipath",
-	"name": "UiPath Robotic Process Automation (RPA)",
+	"name": "UiPath Robotic Process Automation",
 	"tags": ["connector", "RPA"],
 	"installers": [
 		{
