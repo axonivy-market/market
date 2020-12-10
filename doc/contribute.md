@@ -108,7 +108,7 @@ Heres the list of the installers (by id) that are provided by the Axon.ivy Digit
 - **project-resource** : copies single or multiple resources into a project. Example usages can be examined in [UiPath meta.json](../market/connector/uipath/meta.json)
 - **maven-dependency** : adds Maven dependencies to an existing project pom.xml. You may use it to integrate existing frameworks and drivers from the Maven ecosystem. Example usages can be examined in [DocFactory meta.json](../market/doc-factory/meta.json)
 - **maven-import** : imports IvyProjects into your workspace without actually adding dependencies to it into your project pom.xml. This is handy to integrate large DemoProjects into your workspace. Example usages can be examined in [DocFactory meta.json](../market/doc-factory/meta.json)
-- **rest-client** : integrates a Rest Client into the target project. In combination with an OpenAPI service descriptor this is a powerful leverage to integrate remote services into digitalization workflows. Example usages can be examined in [DocFactory meta.json](../market/doc-factory/meta.json)
+- **rest-client** : integrates a Rest Client into the target project. In combination with an OpenAPI service descriptor this is a powerful leverage to integrate remote services into digitalization workflows. Example usages can be examined in [UiPath meta.json](../market/connector/uipath/meta.json)
 - **open-resource** : open any resource in the workspace. Classically this is the finall installer to be added and opens a DemoProcess exposing your installed product to the user. Example usages can be examined in [UiPath meta.json](../market/connector/uipath/meta.json)
 
 ### REST service integration
