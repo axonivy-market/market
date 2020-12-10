@@ -39,7 +39,8 @@ The most important contents of a `meta.json` file are:
 			....
 		}
 	]
-}```
+}
+```
 
 ### Custom installation
 
@@ -62,7 +63,8 @@ One you have a minimal `meta.json` you are ready to fill it with actual function
             ...
 		}
 	]
-}```
+}
+```
 
 ### Developing installable features
 
@@ -90,7 +92,8 @@ The following meta.json sample snippet shows how a Java sources is copied into t
 			}
 		}
 	]
-}```
+}
+```
 
 The `source` property defines the path the your develope project (demo/uiPathDemo) and the `path` property expresses the path in the installation target project where the file is being copied to.
 
