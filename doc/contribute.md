@@ -128,7 +128,7 @@ Be aware that the output of such converter runs may also be provided by third-pa
 If the service to be communicated with, has nothing but a textual description of valid service resources and payload samples, you may write an OpenAPI spec for it on your own. It will greatly simplify the usage of these APIs in the Axon.ivy workflows since the user of it no longer has to generate valid data object structures and type paths to resources without tooling support.
 
 The [Swagger Editor](http://editor.swagger.io/) is a simple web frontend which allows you to write such OpenAPI specs. It's a good idea to with the 'petstore' example and adapt it until it matches your service interfaces. Once you have a valid OpenAPI json exported from the web editor. You can test it with the 'Class Generator' of the Axon.ivy Rest Client Defintion. If it works as expected, the openapi.json file can be into your market product and automatically installed. 
-Actually, the first [Genederize.io connector](../market/connector/genederize/meta.json)
+Actually, the first [Genederize.io connector](../market/connector/genderize/meta.json)
 was built just like that and you may inspect it to build your own OpenAPI installer procedure.
 
 ## Celebrate
