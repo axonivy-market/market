@@ -2,7 +2,7 @@
 
 You wan't to share your product in the Axon.ivy Market? Then this is guide is for you. It goes through the major steps that are required to create your own market product.
 
-## Initate
+## Initiate
 
 1. Create a private fork of this repository by pressing onto the 'Fork' button on the Github repository view. See the [Github Forking Guide](https://guides.github.com/activities/forking/) for a step by step guide.
 1. Clone the created private repository onto your computer.
