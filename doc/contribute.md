@@ -135,4 +135,4 @@ was built just like that and you may inspect it to build your own OpenAPI instal
 
 Once you arrive here, you very likely have already built your first market product. Please don't keep it private in your local fork, but fire us a pull request in order to integrate it into the official Axon.ivy Market.
 
-It's pure joy to share re-usable worklflow products with the community.
+It's pure joy to share re-usable workflow products with the community.
