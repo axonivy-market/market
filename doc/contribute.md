@@ -29,7 +29,8 @@ You may copy the `meta.json` from an existing product, such as the UiPath connec
 
 The most important contents of a `meta.json` file are:
 
-```{
+```
+{
 	"id": "mytechnicalproductid",
 	"name": "Product name under which it should occur in the market",
 	"listed": false,
@@ -51,14 +52,15 @@ Once you set the `id`, `name` of a product in a `meta.json` you can already simu
 
 One you have a minimal `meta.json` you are ready to fill it with actual functionality. This can be done by adding entries to the `installers` array. These installers will be executed in order and therefore defines the full installation procedure.
 
-```{
+```
+{
 	"id": "mytechnicalproductid",
 	...
 	"installers": [
 		{
 			"id": "first-installer-id",
 			"data": {},
-            "id": "second-installer-id",
+			"id": "second-installer-id",
 			"data": {},
             ...
 		}
@@ -78,7 +80,8 @@ must be copied into a installation target project. You can do so by using the `c
 The following meta.json sample snippet shows how a Java sources is copied into the installation target:
 
 
-```{
+```
+{
 	"installers": [
 		{
 			"id": "project-resource",
