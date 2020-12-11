@@ -8,10 +8,30 @@
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json",
-				"namespace": "com.docusign.esignature",
+				"namespace": "net.docusign.esignature",
+				"clientId": "17e5dc27-5699-4717-ae6c-e2c8f1e2a30f",
 				"ignoreCompileErrors": true,
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				],
+				"properties": [
+					{
+						"name": "AUTH.integrationKey",
+						"value": ""
+					},
+					{
+						"name": "AUTH.secretKey",
+						"value": "",
+						"password": true
+					},
+					{
+						"name": "AUTH.accessTokenUri",
+						"value": "https://account-d.docusign.com/oauth/token"
+					},
+					{
+						"name": "AUTH.userInfoUri",
+						"value": "https://account-d.docusign.com/oauth/userinfo"
+					}
 				]
 			}
 		}
