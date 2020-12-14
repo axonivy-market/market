@@ -5,6 +5,23 @@
 	"tags": ["connector"],
 	"installers": [
 		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/eSignatureDemo/src/net/docusign/auth",
+						"includes": [ 
+							"UserUriFilter.java", 
+							"OAuth2Feature.java", 
+							"FeatureConfig.java", 
+							"TokenStore.java"
+						],
+						"path": "src/net/docusign/auth"
+					}
+				]
+			}
+		},
+		{
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json",
