@@ -42,8 +42,7 @@ st0 f5 actionCode 'import ch.ivyteam.ivy.request.IHttpResponse;
 java.net.URI uri = error.getAttribute("authUri") as java.net.URI;
 ivy.log.info("redirecting to docuSign auth: "+uri.toASCIIString());
 IHttpResponse.current().sendRedirect(uri.toASCIIString());
-
-//IHttpResponse.current().sendRedirect("http://dev.axonivy.com");' #txt
+' #txt
 st0 f5 errorCode ivy:error:rest:client #txt
 st0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -62,6 +61,7 @@ st0 f2 requestEnabled true #txt
 st0 f2 triggerEnabled false #txt
 st0 f2 callSignature authenticated(String) #txt
 st0 f2 caseData businessCase.attach=true #txt
+st0 f2 showInStartList 0 #txt
 st0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -108,6 +108,8 @@ user_name=;
 st0 f6 templateParams 'accountId="placeholder";
 ' #txt
 st0 f6 resultType com.docusign.esignature.EnvelopesInformation #txt
+st0 f6 responseMapping 'out.envelopes=result.envelopes;
+' #txt
 st0 f6 clientErrorCode ivy:error:rest:client #txt
 st0 f6 statusErrorCode ivy:error:rest:client #txt
 st0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>

@@ -12,12 +12,13 @@
 				"clientId": "17e5dc27-5699-4717-ae6c-e2c8f1e2a30f",
 				"ignoreCompileErrors": true,
 				"features": [
-					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+					"net.docusign.auth.OAuth2Feature"
 				],
 				"properties": [
 					{
 						"name": "AUTH.integrationKey",
-						"value": ""
+						"value": "your-app-key"
 					},
 					{
 						"name": "AUTH.secretKey",
@@ -25,12 +26,8 @@
 						"password": true
 					},
 					{
-						"name": "AUTH.accessTokenUri",
-						"value": "https://account-d.docusign.com/oauth/token"
-					},
-					{
-						"name": "AUTH.userInfoUri",
-						"value": "https://account-d.docusign.com/oauth/userinfo"
+						"name": "AUTH.baseUri",
+						"value": "https://account-d.docusign.com/oauth"
 					}
 				]
 			}
