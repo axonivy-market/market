@@ -39,7 +39,7 @@ public class OAuth2Feature implements Feature
     String USER_KEY = "AUTH.secretKey";
     
     String CALLBACK = "AUTH.callback";
-    String AUTH_BASE_URI = "AUTH.oauthBaseUri";
+    String AUTH_BASE_URI = "AUTH.baseUri";
   }
   
   public static final String SESSION_TOKEN = "docu.sign.authCode";
