@@ -48,6 +48,29 @@
 					}
 				]
 			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "demo/eSignatureDemo/dataclasses/net/docusign/esignature/demo/Data.ivyClass",
+						"path": "dataclasses/net/docusign/esignature/demo/Data.ivyClass"
+					},
+					{
+						"source": "demo/eSignatureDemo/processes/start.mod",
+						"path": "processes/start.mod"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/start.mod"
+				]
+			}
 		}
 	]
 }
