@@ -26,6 +26,11 @@
                 <value>https://account-d.docusign.com/oauth</value>
                 <password>false</password>
             </property>
+            <property>
+                <name>JSON.Serialization.PROPERTY_INCLUSION</name>
+                <value>NON_NULL</value>
+                <password>false</password>
+            </property>
             <feature>
                 <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
             </feature>
