@@ -107,7 +107,7 @@ user_name=;
 ' #txt
 st0 f6 templateParams 'accountId="placeholder";
 ' #txt
-st0 f6 resultType com.docusign.esignature.EnvelopesInformation #txt
+st0 f6 resultType net.docusign.esignature.EnvelopesInformation #txt
 st0 f6 responseMapping 'out.envelopes=result.envelopes;
 ' #txt
 st0 f6 clientErrorCode ivy:error:rest:client #txt

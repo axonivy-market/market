@@ -54,7 +54,7 @@
                 </property>
                 <property>
                     <name>AUTH.baseUri</name>
-                    <value>http://localhost:8081/designer/api/docuSignMock/oauth</value>
+                    <value>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/docuSignMock/oauth</value>
                     <password>false</password>
                 </property>
                 <feature>
