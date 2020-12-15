@@ -19,6 +19,7 @@ import javax.ws.rs.core.UriBuilder;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import ch.ivyteam.ivy.application.IApplication;
 import io.swagger.v3.oas.annotations.Hidden;
 
 @Path("docuSignMock/oauth")
@@ -54,7 +55,7 @@ public class DocuSignOAuthMock
     String info = load("json/userinfo.json");
     URI myUri = ch.ivyteam.ivy.request.EngineUriResolver.instance().local();
     info = StringUtils.replace(info, "http://localhost:!port!/mock", 
-        myUri.toASCIIString()+"/designer/api/docuSignMock");
+        myUri.toASCIIString()+"/"+IApplication.current().getName()+"/api/docuSignMock");
     return info;
   }
   
