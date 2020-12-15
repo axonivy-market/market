@@ -30,7 +30,7 @@
             <phase>generate-resources</phase>
             <goals><goal>integration-test</goal></goals>
             <configuration>
-              <pom>../uiPathDemoTest/.build-client/client.gen.test/pom.xml</pom>
+              <pom>../../../.build-client/client.gen.test/pom.xml</pom>
             </configuration>
           </execution>
         </executions>
