@@ -20,9 +20,11 @@ import javax.ws.rs.ext.Provider;
 
 import org.apache.commons.lang3.StringUtils;
 
+import ch.ivyteam.ivy.application.IApplication;
 import ch.ivyteam.ivy.bpm.error.BpmError;
 import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
 import ch.ivyteam.ivy.environment.Ivy;
+import ch.ivyteam.ivy.request.EngineUriResolver;
 import ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature;
 import ch.ivyteam.ivy.security.ISession;
 import ch.ivyteam.log.Logger;
@@ -48,9 +50,14 @@ public class OAuth2Feature implements Feature
   {
     String DEV_BASE_URI = "https://account-d.docusign.com/oauth";
     
-    public static String get(FeatureConfig config)
+    public static URI get(FeatureConfig config)
     {
-      return config.read(Property.AUTH_BASE_URI).orElse(DEV_BASE_URI);
+      URI external = EngineUriResolver.instance().external();
+      return UriBuilder.fromUri(config.read(Property.AUTH_BASE_URI).orElse(DEV_BASE_URI))
+        .resolveTemplate("ivy.engine.host", external.getHost())
+        .resolveTemplate("ivy.engine.http.port", external.getPort())
+        .resolveTemplate("ivy.request.application", IApplication.current().getName())
+        .build();
     }
   }
   
@@ -178,6 +185,6 @@ public class OAuth2Feature implements Feature
   
   public static boolean isAuthRequest(FeatureConfig config, URI target)
   {
-    return StringUtils.startsWith(target.toASCIIString(), DocuSignAuthUri.get(config));
+    return StringUtils.startsWith(target.toASCIIString(), DocuSignAuthUri.get(config).toASCIIString());
   }
 }
