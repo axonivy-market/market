@@ -6,22 +6,16 @@
 		{
 			"id": "project-resource",
 			"data": {
-				"resources": [
+				"directories": [
 					{
-						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/TenantHeaderFeature.java",
-						"path": "src/com/uipath/orchestrator/feature/TenantHeaderFeature.java"
-					},
-					{
-						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/OAuth2Feature.java",
-						"path": "src/com/uipath/orchestrator/feature/OAuth2Feature.java"
-					},
-					{
-						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/FeatureConfig.java",
-						"path": "src/com/uipath/orchestrator/feature/FeatureConfig.java"
-					},
-					{
-						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature/TokenStore.java",
-						"path": "src/com/uipath/orchestrator/feature/TokenStore.java"
+						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature",
+						"includes": [ 
+							"TenantHeaderFeature.java", 
+							"OAuth2Feature.java", 
+							"FeatureConfig.java", 
+							"TokenStore.java"
+						],
+						"path": "src/com/uipath/orchestrator/feature"
 					}
 				]
 			}

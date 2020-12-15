@@ -1,0 +1,16 @@
+{
+  "sub": "111e53b6-4cf3-403c-a085-ddf0911e03f1",
+  "name": "Reguel Wermelinger",
+  "given_name": "Reguel",
+  "family_name": "Wermelinger",
+  "created": "2020-12-11T15:00:30.377",
+  "email": "r.w@axonivy.com",
+  "accounts": [
+    {
+      "account_id": "test-account-id",
+      "is_default": true,
+      "account_name": "AXON IVY AG",
+      "base_uri": "http://localhost:!port!/mock"
+    }
+  ]
+}
