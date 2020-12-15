@@ -24,7 +24,12 @@ public class EclipseCoreTestClientGen
     Path outDir = Path.of(property("openapi.build"));
     Files.createDirectories(outDir);
     generator.setClientBuildDir(outDir);
-	
+
+    if (Boolean.valueOf(property("openapi.ignoreCompileErrors")))
+    {
+      generator.setErrorHandler(result -> true);
+    }
+    
     Path clientJar = generator.createJar(new SystemOutProgressMonitor());
     Path builtJar = Path.of(property("openapi.jar"));
     Files.createDirectories(builtJar.getParent());
