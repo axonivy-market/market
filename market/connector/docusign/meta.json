@@ -5,12 +5,70 @@
 	"tags": ["connector"],
 	"installers": [
 		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/eSignatureDemo/src/net/docusign/auth",
+						"includes": [ 
+							"UserUriFilter.java", 
+							"OAuth2Feature.java", 
+							"FeatureConfig.java", 
+							"TokenStore.java"
+						],
+						"path": "src/net/docusign/auth"
+					}
+				]
+			}
+		},
+		{
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json",
-				"namespace": "com.docusign.esignature",
+				"namespace": "net.docusign.esignature",
+				"clientId": "17e5dc27-5699-4717-ae6c-e2c8f1e2a30f",
+				"ignoreCompileErrors": true,
 				"features": [
-					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+					"net.docusign.auth.OAuth2Feature"
+				],
+				"properties": [
+					{
+						"name": "AUTH.integrationKey",
+						"value": "your-app-key"
+					},
+					{
+						"name": "AUTH.secretKey",
+						"value": "",
+						"password": true
+					},
+					{
+						"name": "AUTH.baseUri",
+						"value": "https://account-d.docusign.com/oauth"
+					}
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "demo/eSignatureDemo/dataclasses/net/docusign/esignature/demo/Data.ivyClass",
+						"path": "dataclasses/net/docusign/esignature/demo/Data.ivyClass"
+					},
+					{
+						"source": "demo/eSignatureDemo/processes/start.mod",
+						"path": "processes/start.mod"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/start.mod"
 				]
 			}
 		}

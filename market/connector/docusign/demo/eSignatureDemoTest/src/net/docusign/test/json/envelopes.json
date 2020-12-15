@@ -1,0 +1,47 @@
+{
+  "resultSetSize": "1",
+  "startPosition": "0",
+  "endPosition": "0",
+  "totalSetSize": "1",
+  "nextUri": "",
+  "previousUri": "",
+  "envelopes": [
+    {
+      "status": "completed",
+      "documentsUri": "/envelopes/env-uuid/documents",
+      "recipientsUri": "/envelopes/env-uuid/recipients",
+      "attachmentsUri": "/envelopes/env-uuid/attachments",
+      "envelopeUri": "/envelopes/env-uuid",
+      "emailSubject": "Please DocuSign: tryGhost.docx",
+      "emailBlurb": "thanks",
+      "envelopeId": "env-uuid",
+      "signingLocation": "online",
+      "customFieldsUri": "/envelopes/env-uuid/custom_fields",
+      "notificationUri": "/envelopes/env-uuid/notification",
+      "allowMarkup": "false",
+      "createdDateTime": "2020-12-14T10:30:51.7500000Z",
+      "lastModifiedDateTime": "2020-12-14T10:31:27.0770000Z",
+      "deliveredDateTime": "2020-12-14T10:31:38.5170000Z",
+      "sentDateTime": "2020-12-14T10:32:50.1200000Z",
+      "completedDateTime": "2020-12-14T10:32:50.1200000Z",
+      "statusChangedDateTime": "2020-12-14T10:32:50.1200000Z",
+      "documentsCombinedUri": "/envelopes/env-uuid/documents/combined",
+      "certificateUri": "/envelopes/env-uuid/documents/certificate",
+      "templatesUri": "/envelopes/env-uuid/templates",
+      "expireEnabled": "true",
+      "expireAfter": "120",
+      "sender": {
+        "userName": "Reguel Wermelinger",
+        "userId": "111e53b6-4cf3-403c-a085-ddf0911e03f1",
+        "accountId": "111478c1-743e-48d7-b212-652f8cc3837e",
+        "email": "r.w@axonivy.com"
+      },
+      "purgeState": "unpurged",
+      "envelopeIdStamping": "false",
+      "autoNavigation": "false",
+      "isSignatureProviderEnvelope": "false",
+      "anySigner": null,
+      "envelopeLocation": "not_specified"
+    }
+  ]
+}
