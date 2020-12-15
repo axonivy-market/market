@@ -5,10 +5,13 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import javax.annotation.security.PermitAll;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import org.apache.commons.io.IOUtils;
 
@@ -25,6 +28,17 @@ public class DocuSignServiceMock
   public String envelopes()
   {
     return load("json/envelopes.json");
+  }
+  
+  @POST
+  @Path("envelopes")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Response createEnvelope(String payload)
+  {
+    return Response.status(201)
+      .entity(load("json/createDraft.json"))
+      .build();
   }
   
   private static String load(String path)
