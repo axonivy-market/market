@@ -15,3 +15,4 @@ Integrate eSignatures into your application in minutes. DocuSign's secure and aw
 1. Scroll to the **Additional settings** section and add the `Redirect URI` from the Rest Clients property `AUTH.callback` into the docusign admin frontend.
 ![integration-key](doc/images/configureRedirectUri.png)
 1. Save the changed application settings.
+
