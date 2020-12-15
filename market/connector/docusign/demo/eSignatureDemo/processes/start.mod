@@ -147,7 +147,7 @@ st0 f10 bodyInputType ENTITY #txt
 st0 f10 bodyObjectType net.docusign.esignature.EnvelopeDefinition #txt
 st0 f10 bodyObjectMapping 'param.documents=[ net.docusign.DocUtils.ofLocalFile("webContent/sampleDoc.rtf") ];
 param.emailSubject="Connecting Axon.ivy with DocuSign";
-param.status="sent";
+param.status="created";
 ' #txt
 st0 f10 resultType net.docusign.esignature.EnvelopeSummary #txt
 st0 f10 clientErrorCode ivy:error:rest:client #txt
