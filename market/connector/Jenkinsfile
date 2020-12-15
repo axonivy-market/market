@@ -22,7 +22,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-          dir('market/connector/uipath/demo'){
+          dir('market/connector'){
               script {
                 def mavenParameters = "-Divy.engine.list.url=${params.engineListUrl} " +
                   "-Divy.engine.version=[9.2.0,] -Dmaven.test.failure.ignore=true "
