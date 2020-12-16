@@ -15,7 +15,9 @@ st0 @StartRequest f2 '' #zField
 st0 @RestClientCall f6 '' #zField
 st0 @PushWFArc f9 '' #zField
 st0 @PushWFArc f8 '' #zField
+st0 @RestClientCall f10 '' #zField
 st0 @PushWFArc f3 '' #zField
+st0 @PushWFArc f4 '' #zField
 >Proto st0 st0 start #zField
 st0 f0 outLink start.ivp #txt
 st0 f0 inParamDecl '<> param;' #txt
@@ -33,16 +35,24 @@ st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 st0 f0 @C|.responsibility Everybody #txt
 st0 f0 81 49 30 30 -25 17 #rect
 st0 f0 @|StartRequestIcon #fIcon
-st0 f1 497 49 30 30 0 15 #rect
+st0 f1 529 145 30 30 0 15 #rect
 st0 f1 @|EndIcon #fIcon
 st0 f5 actionTable 'out=in;
 ' #txt
-st0 f5 actionCode 'import ch.ivyteam.ivy.request.IHttpResponse;
+st0 f5 actionCode 'import ch.ivyteam.ivy.bpm.error.BpmError;
 
-java.net.URI uri = error.getAttribute("authUri") as java.net.URI;
-ivy.log.info("redirecting to docuSign auth: "+uri.toASCIIString());
-IHttpResponse.current().sendRedirect(uri.toASCIIString());
-' #txt
+import ch.ivyteam.ivy.request.IHttpResponse;
+
+if (error.getAttributeNames().contains("authUri"))
+{
+  java.net.URI uri = error.getAttribute("authUri") as java.net.URI;
+  ivy.log.info("redirecting to docuSign auth: "+uri.toASCIIString());
+  IHttpResponse.current().sendRedirect(uri.toASCIIString());
+}
+else
+{
+  BpmError.create(error).withErrorCode("docusign:error").throwError();
+}' #txt
 st0 f5 errorCode ivy:error:rest:client #txt
 st0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -123,7 +133,36 @@ st0 f6 168 42 112 44 -48 -7 #rect
 st0 f6 @|RestClientCallIcon #fIcon
 st0 f9 111 64 168 64 #arcP
 st0 f8 182 146 224 86 #arcP
-st0 f3 280 64 497 64 #arcP
+st0 f10 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
+st0 f10 path /v2.1/accounts/{accountId}/envelopes #txt
+st0 f10 queryParams 'cdse_mode=;
+change_routing_order=;
+completed_documents_only=;
+merge_roles_on_draft=;
+' #txt
+st0 f10 templateParams 'accountId="placeholder";
+' #txt
+st0 f10 method POST #txt
+st0 f10 bodyInputType ENTITY #txt
+st0 f10 bodyObjectType net.docusign.esignature.EnvelopeDefinition #txt
+st0 f10 bodyObjectMapping 'param.documents=[ net.docusign.DocUtils.ofLocalFile("webContent/sampleDoc.rtf") ];
+param.emailSubject="Connecting Axon.ivy with DocuSign";
+param.status="created";
+' #txt
+st0 f10 resultType net.docusign.esignature.EnvelopeSummary #txt
+st0 f10 clientErrorCode ivy:error:rest:client #txt
+st0 f10 statusErrorCode ivy:error:rest:client #txt
+st0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>create envelope</name>
+    </language>
+</elementInfo>
+' #txt
+st0 f10 488 42 112 44 -51 -7 #rect
+st0 f10 @|RestClientCallIcon #fIcon
+st0 f3 544 86 544 145 #arcP
+st0 f4 280 64 488 64 #arcP
 >Proto st0 .type net.docusign.esignature.demo.Data #txt
 >Proto st0 .processKind NORMAL #txt
 >Proto st0 0 0 32 24 18 0 #rect
@@ -132,5 +171,7 @@ st0 f0 mainOut f9 tail #connect
 st0 f9 head f6 mainIn #connect
 st0 f2 mainOut f8 tail #connect
 st0 f8 head f6 mainIn #connect
-st0 f6 mainOut f3 tail #connect
+st0 f10 mainOut f3 tail #connect
 st0 f3 head f1 mainIn #connect
+st0 f6 mainOut f4 tail #connect
+st0 f4 head f10 mainIn #connect
