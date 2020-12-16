@@ -1,7 +1,7 @@
 [Ivy]
 17651A0FB6AFB366 9.2.0 #module
 >Proto >Proto Collection #zClass
-st0 start Big #zClass
+st0 eSign Big #zClass
 st0 B #cInfo
 st0 #process
 st0 @TextInP .type .type #zField
@@ -21,12 +21,13 @@ st0 @PushWFArc f4 '' #zField
 st0 @EndRequest f7 '' #zField
 st0 @StartRequest f11 '' #zField
 st0 @PushWFArc f12 '' #zField
->Proto st0 st0 start #zField
+>Proto st0 st0 eSign #zField
 st0 f0 outLink start.ivp #txt
 st0 f0 inParamDecl '<> param;' #txt
 st0 f0 requestEnabled true #txt
 st0 f0 triggerEnabled false #txt
 st0 f0 callSignature start() #txt
+st0 f0 startName '1. Initiate a digital document signing workflow' #txt
 st0 f0 caseData businessCase.attach=true #txt
 st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -175,6 +176,7 @@ st0 f11 inParamDecl '<> param;' #txt
 st0 f11 requestEnabled true #txt
 st0 f11 triggerEnabled false #txt
 st0 f11 callSignature visitSigningApp() #txt
+st0 f11 startName '2. digital document inbox overview' #txt
 st0 f11 caseData businessCase.attach=true #txt
 st0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
