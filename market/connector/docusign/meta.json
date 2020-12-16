@@ -46,6 +46,10 @@
 					{
 						"name": "AUTH.baseUri",
 						"value": "https://account-d.docusign.com/oauth"
+					},
+					{
+						"name": "JSON.Serialization.PROPERTY_INCLUSION",
+						"value": "NON_NULL"
 					}
 				]
 			}
