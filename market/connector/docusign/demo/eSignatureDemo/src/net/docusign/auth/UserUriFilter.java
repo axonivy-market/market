@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import ch.ivyteam.ivy.environment.Ivy;
+import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.security.ISession;
 import net.docusign.auth.OAuth2Feature.DocuSignAuthUri;
 

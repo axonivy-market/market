@@ -12,7 +12,6 @@
 						"includes": [ 
 							"TenantHeaderFeature.java", 
 							"OAuth2Feature.java", 
-							"FeatureConfig.java", 
 							"TokenStore.java"
 						],
 						"path": "src/com/uipath/orchestrator/feature"
