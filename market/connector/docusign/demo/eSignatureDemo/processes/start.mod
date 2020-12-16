@@ -117,7 +117,7 @@ user_name=;
 ' #txt
 st0 f6 templateParams 'accountId="placeholder";
 ' #txt
-st0 f6 resultType net.docusign.esignature.EnvelopesInformation #txt
+st0 f6 resultType com.docusign.esign.model.EnvelopesInformation #txt
 st0 f6 responseMapping 'out.envelopes=result.envelopes;
 ' #txt
 st0 f6 clientErrorCode ivy:error:rest:client #txt
@@ -144,7 +144,7 @@ st0 f10 templateParams 'accountId="placeholder";
 ' #txt
 st0 f10 method POST #txt
 st0 f10 bodyInputType ENTITY #txt
-st0 f10 bodyObjectType net.docusign.esignature.EnvelopeDefinition #txt
+st0 f10 bodyObjectType com.docusign.esign.model.EnvelopeDefinition #txt
 st0 f10 bodyObjectMapping 'param.documents=[ net.docusign.DocUtils.ofLocalFile("webContent/sampleDoc.rtf") ];
 param.emailSubject="Connecting Axon.ivy with DocuSign";
 param.status="created";
