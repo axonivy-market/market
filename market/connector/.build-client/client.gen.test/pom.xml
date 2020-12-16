@@ -12,6 +12,7 @@
     <openapi.jar>${project.build.directory}/openapi.jar</openapi.jar>
     <openapi.build>${project.build.directory}/OpenAPIclient</openapi.build>
     <openapi.ignoreCompileErrors>false</openapi.ignoreCompileErrors>
+    <openapi.skipCodegen>false</openapi.skipCodegen>
 
     <tycho.version>2.0.0</tycho.version>
     <java.version>11</java.version>
@@ -51,6 +52,7 @@
           	<openapi.jar>${openapi.jar}</openapi.jar>
           	<openapi.build>${openapi.build}</openapi.build>
             <openapi.ignoreCompileErrors>${openapi.ignoreCompileErrors}</openapi.ignoreCompileErrors>
+            <openapi.skipCodegen>${openapi.skipCodegen}</openapi.skipCodegen>
 
             <org.osgi.framework.bootdelegation>javax.annotation</org.osgi.framework.bootdelegation>
             <osgi.parentClassloader>ext</osgi.parentClassloader>
