@@ -35,6 +35,14 @@
 							"SignUtils.java"
 						],
 						"path": "src/net/docusign"
+					},
+					{
+						"source": "demo/eSignatureDemo/cms/redirect",
+						"includes": [ 
+							"co.meta",
+							"1766AE730F59FBF6.jsp"
+						],
+						"path": "cms/redirect"
 					}
 				]
 			}

@@ -167,7 +167,7 @@ st0 f10 344 42 112 44 -51 -7 #rect
 st0 f10 @|RestClientCallIcon #fIcon
 st0 f3 400 86 400 145 #arcP
 st0 f4 280 64 344 64 #arcP
-st0 f7 template "/ProcessPages/start/redirect.ivc" #txt
+st0 f7 template "/redirect.ivc" #txt
 st0 f7 209 273 30 30 0 15 #rect
 st0 f7 @|EndRequestIcon #fIcon
 st0 f11 outLink visitSigningApp.ivp #txt
