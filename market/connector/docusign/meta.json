@@ -31,7 +31,8 @@
 							"auth/OAuth2Feature.java", 
 							"auth/FeatureConfig.java", 
 							"auth/TokenStore.java",
-							"DocUtils.java"
+							"DocUtils.java",
+							"SignUtils.java"
 						],
 						"path": "src/net/docusign"
 					}

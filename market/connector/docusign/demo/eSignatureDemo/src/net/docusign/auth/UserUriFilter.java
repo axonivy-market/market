@@ -26,6 +26,8 @@ import net.docusign.auth.OAuth2Feature.DocuSignAuthUri;
 @Provider 
 public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
 {
+  private static final String USER_INFO = "docusign.userInfo";
+  
   private final ISession session;
   
   public UserUriFilter(ISession session)
@@ -42,7 +44,7 @@ public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
       return;
     }
     
-    JsonNode userInfo = (JsonNode)session.getAttribute("userInfo");
+    JsonNode userInfo = readUserInfo(session);
     if (userInfo == null)
     {
       userInfo = context.getClient()
@@ -51,11 +53,16 @@ public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
               .request()
               .headers(context.getHeaders()) // copy bearer token
               .get().readEntity(JsonNode.class);
-      session.setAttribute("userInfo", userInfo);
+      session.setAttribute(USER_INFO, userInfo);
     }
     
     URI userUri = routeToUserUri(context.getUri(), userInfo.get("accounts"));
     context.setUri(userUri);
+  }
+
+  public static JsonNode readUserInfo(ISession s)
+  {
+    return (JsonNode)s.getAttribute(USER_INFO);
   }
 
   private static URI routeToUserUri(URI uri, JsonNode accounts)
