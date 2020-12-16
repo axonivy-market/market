@@ -87,8 +87,8 @@
 						"path": "dataclasses/net/docusign/esignature/demo/Data.ivyClass"
 					},
 					{
-						"source": "demo/eSignatureDemo/processes/start.mod",
-						"path": "processes/start.mod"
+						"source": "demo/eSignatureDemo/processes/Demo/eSign.mod",
+						"path": "processes/Demo/eSign.mod"
 					}
 				]
 			}
@@ -97,7 +97,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
-					"processes/start.mod"
+					"processes/Demo/eSign.mod"
 				]
 			}
 		}
