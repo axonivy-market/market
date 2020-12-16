@@ -8,6 +8,8 @@ import javax.ws.rs.client.ClientRequestFilter;
 import javax.ws.rs.core.Feature;
 import javax.ws.rs.core.FeatureContext;
 
+import ch.ivyteam.ivy.rest.client.FeatureConfig;
+
 
 public class TenantHeaderFeature implements Feature
 {
