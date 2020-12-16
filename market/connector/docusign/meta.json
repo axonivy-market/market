@@ -9,14 +9,15 @@
 			"data": {
 				"directories": [
 					{
-						"source": "demo/eSignatureDemo/src/net/docusign/auth",
+						"source": "demo/eSignatureDemo/src/net/docusign",
 						"includes": [ 
-							"UserUriFilter.java", 
-							"OAuth2Feature.java", 
-							"FeatureConfig.java", 
-							"TokenStore.java"
+							"auth/UserUriFilter.java", 
+							"auth/OAuth2Feature.java", 
+							"auth/FeatureConfig.java", 
+							"auth/TokenStore.java",
+							"DocUtils.java"
 						],
-						"path": "src/net/docusign/auth"
+						"path": "src/net/docusign"
 					}
 				]
 			}
@@ -45,6 +46,10 @@
 					{
 						"name": "AUTH.baseUri",
 						"value": "https://account-d.docusign.com/oauth"
+					},
+					{
+						"name": "JSON.Serialization.PROPERTY_INCLUSION",
+						"value": "NON_NULL"
 					}
 				]
 			}
