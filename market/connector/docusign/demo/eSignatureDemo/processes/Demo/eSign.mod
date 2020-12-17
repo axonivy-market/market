@@ -1,7 +1,7 @@
 [Ivy]
 17651A0FB6AFB366 9.2.0 #module
 >Proto >Proto Collection #zClass
-st0 start Big #zClass
+st0 eSign Big #zClass
 st0 B #cInfo
 st0 #process
 st0 @TextInP .type .type #zField
@@ -18,12 +18,16 @@ st0 @PushWFArc f8 '' #zField
 st0 @RestClientCall f10 '' #zField
 st0 @PushWFArc f3 '' #zField
 st0 @PushWFArc f4 '' #zField
->Proto st0 st0 start #zField
+st0 @EndRequest f7 '' #zField
+st0 @StartRequest f11 '' #zField
+st0 @PushWFArc f12 '' #zField
+>Proto st0 st0 eSign #zField
 st0 f0 outLink start.ivp #txt
 st0 f0 inParamDecl '<> param;' #txt
 st0 f0 requestEnabled true #txt
 st0 f0 triggerEnabled false #txt
 st0 f0 callSignature start() #txt
+st0 f0 startName '1. Initiate a digital document signing workflow' #txt
 st0 f0 caseData businessCase.attach=true #txt
 st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -35,7 +39,7 @@ st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 st0 f0 @C|.responsibility Everybody #txt
 st0 f0 81 49 30 30 -25 17 #rect
 st0 f0 @|StartRequestIcon #fIcon
-st0 f1 529 145 30 30 0 15 #rect
+st0 f1 385 145 30 30 0 15 #rect
 st0 f1 @|EndIcon #fIcon
 st0 f5 actionTable 'out=in;
 ' #txt
@@ -117,7 +121,7 @@ user_name=;
 ' #txt
 st0 f6 templateParams 'accountId="placeholder";
 ' #txt
-st0 f6 resultType net.docusign.esignature.EnvelopesInformation #txt
+st0 f6 resultType com.docusign.esign.model.EnvelopesInformation #txt
 st0 f6 responseMapping 'out.envelopes=result.envelopes;
 ' #txt
 st0 f6 clientErrorCode ivy:error:rest:client #txt
@@ -144,12 +148,13 @@ st0 f10 templateParams 'accountId="placeholder";
 ' #txt
 st0 f10 method POST #txt
 st0 f10 bodyInputType ENTITY #txt
-st0 f10 bodyObjectType net.docusign.esignature.EnvelopeDefinition #txt
+st0 f10 bodyObjectType com.docusign.esign.model.EnvelopeDefinition #txt
 st0 f10 bodyObjectMapping 'param.documents=[ net.docusign.DocUtils.ofLocalFile("webContent/sampleDoc.rtf") ];
 param.emailSubject="Connecting Axon.ivy with DocuSign";
-param.status="created";
+param.recipients.signers=[ net.docusign.SignUtils.myself(ivy.session) ];
+param.status="sent";
 ' #txt
-st0 f10 resultType net.docusign.esignature.EnvelopeSummary #txt
+st0 f10 resultType com.docusign.esign.model.EnvelopeSummary #txt
 st0 f10 clientErrorCode ivy:error:rest:client #txt
 st0 f10 statusErrorCode ivy:error:rest:client #txt
 st0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -159,10 +164,31 @@ st0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-st0 f10 488 42 112 44 -51 -7 #rect
+st0 f10 344 42 112 44 -51 -7 #rect
 st0 f10 @|RestClientCallIcon #fIcon
-st0 f3 544 86 544 145 #arcP
-st0 f4 280 64 488 64 #arcP
+st0 f3 400 86 400 145 #arcP
+st0 f4 280 64 344 64 #arcP
+st0 f7 template "/redirect.ivc" #txt
+st0 f7 209 273 30 30 0 15 #rect
+st0 f7 @|EndRequestIcon #fIcon
+st0 f11 outLink visitSigningApp.ivp #txt
+st0 f11 inParamDecl '<> param;' #txt
+st0 f11 requestEnabled true #txt
+st0 f11 triggerEnabled false #txt
+st0 f11 callSignature visitSigningApp() #txt
+st0 f11 startName '2. digital document inbox overview' #txt
+st0 f11 caseData businessCase.attach=true #txt
+st0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>visitSigningApp.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+st0 f11 @C|.responsibility Everybody #txt
+st0 f11 81 273 30 30 -45 18 #rect
+st0 f11 @|StartRequestIcon #fIcon
+st0 f12 111 288 209 288 #arcP
 >Proto st0 .type net.docusign.esignature.demo.Data #txt
 >Proto st0 .processKind NORMAL #txt
 >Proto st0 0 0 32 24 18 0 #rect
@@ -175,3 +201,5 @@ st0 f10 mainOut f3 tail #connect
 st0 f3 head f1 mainIn #connect
 st0 f6 mainOut f4 tail #connect
 st0 f4 head f10 mainIn #connect
+st0 f11 mainOut f12 tail #connect
+st0 f12 head f7 mainIn #connect
