@@ -1,7 +1,6 @@
 {
 	"id": "docusign",
 	"name": "DocuSign eSignature",
-	"listed": true,
 	"tags": ["connector"],
 	"installers": [
 		{
