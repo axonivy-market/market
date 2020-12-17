@@ -1,3 +1,3 @@
 Data #class
 net.docusign.esignature.demo #namespace
-envelopes java.util.List<net.docusign.esignature.Envelope> #field
+envelopes java.util.List<com.docusign.esign.model.Envelope> #field

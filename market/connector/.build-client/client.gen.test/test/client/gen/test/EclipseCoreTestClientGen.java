@@ -16,20 +16,24 @@ public class EclipseCoreTestClientGen
   public void createClient() throws IOException
   {
     URI openApi = URI.create(property("openapi.url"));
-    System.out.println("creating client for "+openApi);
-    
+    System.out.println("creating client for " + openApi);
+
     var generator = new OpenApiClientJarGenerator(openApi);
     generator.setModelPackage(property("openapi.namespace"));
-    
+
     Path outDir = Path.of(property("openapi.build"));
     Files.createDirectories(outDir);
     generator.setClientBuildDir(outDir);
 
+    if (Boolean.valueOf(property("openapi.skipCodegen")))
+    {
+      generator.skipCodegen(true);
+    }
     if (Boolean.valueOf(property("openapi.ignoreCompileErrors")))
     {
       generator.setErrorHandler(result -> true);
     }
-    
+
     Path clientJar = generator.createJar(new SystemOutProgressMonitor());
     Path builtJar = Path.of(property("openapi.jar"));
     Files.createDirectories(builtJar.getParent());
@@ -42,7 +46,7 @@ public class EclipseCoreTestClientGen
     String url = System.getProperty(key);
     if (url == null)
     {
-      throw new IllegalStateException("mandatory property '"+key+"' is missing.");
+      throw new IllegalStateException("mandatory property '" + key + "' is missing.");
     }
     return url;
   }

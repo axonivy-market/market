@@ -10,8 +10,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 
+import com.docusign.esign.model.Document;
+
 import ch.ivyteam.ivy.application.IProcessModelVersion;
-import net.docusign.esignature.Document;
 
 public class DocUtils
 {

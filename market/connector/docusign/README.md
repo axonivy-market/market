@@ -1,6 +1,16 @@
 Integrate eSignatures into your application in minutes. DocuSign's secure and award-winning eSignature makes requesting signatures, automating forms, and tracking documents directly from your app easy.
 
+## Demo
+
+1. Upload a document and assign **signers** for it.
+![signing-process](doc/images/eSignDocumentProcess.png)
+
+1. Signers will be involved by an e-mail into the web-based signing flow.
+![place-signature](doc/images/docuSign_finish.png)
+
 ## Setup
+
+Before any signing interactions between the Axon.ivy Engine and the DocuSign eSignature services can be run, they have to be introducted to each other. This can be done as follows:
 
 1. Create a free DocuSign developer account: https://account-d.docusign.com/#/username
 1. Create a new `application`: https://admindemo.docusign.com/authenticate?goTo=apiIntegratorKey

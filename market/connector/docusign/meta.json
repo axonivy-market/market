@@ -1,9 +1,25 @@
 {
 	"id": "docusign",
 	"name": "DocuSign eSignature",
-	"listed": false,
+	"listed": true,
 	"tags": ["connector"],
 	"installers": [
+		{
+			"id": "maven-dependency",
+			"data": {
+				"dependencies": [
+					{
+						"groupId": "com.docusign",
+						"artifactId": "docusign-esign-java",
+						"version": "3.10.1",
+						"exclusions": [ { 
+							"groupId": "*", 
+							"artifactId": "*" 
+						} ]
+					}
+				]
+			}
+		},
 		{
 			"id": "project-resource",
 			"data": {
@@ -13,11 +29,19 @@
 						"includes": [ 
 							"auth/UserUriFilter.java", 
 							"auth/OAuth2Feature.java", 
-							"auth/FeatureConfig.java", 
 							"auth/TokenStore.java",
-							"DocUtils.java"
+							"DocUtils.java",
+							"SignUtils.java"
 						],
 						"path": "src/net/docusign"
+					},
+					{
+						"source": "demo/eSignatureDemo/cms/redirect",
+						"includes": [ 
+							"co.meta",
+							"1766AE730F59FBF6.jsp"
+						],
+						"path": "cms/redirect"
 					}
 				]
 			}
@@ -26,9 +50,9 @@
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json",
-				"namespace": "net.docusign.esignature",
+				"namespace": "com.docusign.esign.model",
 				"clientId": "17e5dc27-5699-4717-ae6c-e2c8f1e2a30f",
-				"ignoreCompileErrors": true,
+				"skipCodegen": true,
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
 					"net.docusign.auth.OAuth2Feature"
@@ -63,8 +87,8 @@
 						"path": "dataclasses/net/docusign/esignature/demo/Data.ivyClass"
 					},
 					{
-						"source": "demo/eSignatureDemo/processes/start.mod",
-						"path": "processes/start.mod"
+						"source": "demo/eSignatureDemo/processes/Demo/eSign.mod",
+						"path": "processes/Demo/eSign.mod"
 					}
 				]
 			}
@@ -73,7 +97,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
-					"processes/start.mod"
+					"processes/Demo/eSign.mod"
 				]
 			}
 		}

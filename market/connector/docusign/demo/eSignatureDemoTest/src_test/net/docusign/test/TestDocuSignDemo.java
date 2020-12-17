@@ -18,7 +18,7 @@ public class TestDocuSignDemo
     session.setActiveEnvironment("dev-axonivy");
     
     ExecutionResult result2 = bpmClient.start()
-      .process("start/authenticated.ivp")
+      .process("Demo/eSign/authenticated.ivp")
       .as().session(session)
       .withParam("code", "a-test-code")
       .execute();
