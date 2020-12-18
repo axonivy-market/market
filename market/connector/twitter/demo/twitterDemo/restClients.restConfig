@@ -28,5 +28,14 @@
                 <class>com.twitter.auth.OAuth2Feature</class>
             </feature>
         </configuration>
+        <environmentConfigurations>
+            <environment>dev-axonivy</environment>
+            <configuration>
+                <uri>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/twitterMock</uri>
+                <feature>
+                    <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+                </feature>
+            </configuration>
+        </environmentConfigurations>
     </restClient>
 </restClients>
