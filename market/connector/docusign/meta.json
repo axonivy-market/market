@@ -63,8 +63,11 @@
 					},
 					{
 						"name": "AUTH.secretKey",
-						"value": "",
 						"password": true
+					},
+					{
+						"name": "AUTH.callback",
+						"value": "http://localhost:8081/designer/pro/eSignatureDemo/17651A0FB6AFB366/authenticated.ivp"
 					},
 					{
 						"name": "AUTH.baseUri",
@@ -84,6 +87,10 @@
 					{
 						"source": "demo/eSignatureDemo/dataclasses/net/docusign/esignature/demo/Data.ivyClass",
 						"path": "dataclasses/net/docusign/esignature/demo/Data.ivyClass"
+					},
+					{
+						"source": "demo/eSignatureDemo/processes/Demo/eSign.mod",
+						"path": "processes/Demo/eSign.mod"
 					},
 					{
 						"source": "demo/eSignatureDemo/processes/Demo/eSign.mod",
