@@ -93,8 +93,8 @@
 						"path": "processes/Demo/eSign.mod"
 					},
 					{
-						"source": "demo/eSignatureDemo/processes/Demo/eSign.mod",
-						"path": "processes/Demo/eSign.mod"
+						"source": "demo/eSignatureDemo/webContent/sampleDoc.rtf",
+						"path": "webContent/sampleDoc.rtf"
 					}
 				]
 			}
