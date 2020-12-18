@@ -9,8 +9,18 @@
 			"data": {
 				"openApiUrl": "https://api.twitter.com/2/openapi.json",
 				"namespace": "com.twitter",
+				"clientId": "0b74edb8-5459-4ccc-aac7-505531e06398",
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				],
+				"properties": [
+					{
+						"name": "API.key"
+					},
+					{
+						"name": "API.secretKey",
+						"password": true
+					}
 				]
 			}
 		}
