@@ -16,7 +16,6 @@ import org.apache.commons.io.IOUtils;
 
 @Path("twitterMock")
 @PermitAll
-@SuppressWarnings("unused")
 public class TwitterMock
 {
   @GET
