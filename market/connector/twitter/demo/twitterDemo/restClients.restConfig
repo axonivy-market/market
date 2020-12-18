@@ -16,8 +16,16 @@
                 <value></value>
                 <password>true</password>
             </property>
+            <property>
+                <name>AUTH.baseUri</name>
+                <value>https://api.twitter.com/oauth2</value>
+                <password>false</password>
+            </property>
             <feature>
                 <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+            <feature>
+                <class>com.twitter.auth.OAuth2Feature</class>
             </feature>
         </configuration>
     </restClient>
