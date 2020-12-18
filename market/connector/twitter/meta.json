@@ -2,7 +2,6 @@
 	"id": "twitter",
 	"name": "Twitter",
 	"tags": ["connector"],
-	"listed": false,
 	"installers": [
 		{
 			"id": "project-resource",
