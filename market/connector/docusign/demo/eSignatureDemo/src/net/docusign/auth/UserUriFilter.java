@@ -12,9 +12,8 @@ import org.apache.commons.lang3.StringUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import ch.ivyteam.ivy.environment.Ivy;
-import ch.ivyteam.ivy.rest.client.FeatureConfig;
+import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 import ch.ivyteam.ivy.security.ISession;
-import net.docusign.auth.OAuth2Feature.DocuSignAuthUri;
 
 /**
  * Customizes the baseURI according the the 'userInfo'. 
@@ -30,17 +29,18 @@ public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
   private static final String USER_INFO = "docusign.userInfo";
   
   private final ISession session;
+  private final OAuth2UriProperty uriFactory;
   
-  public UserUriFilter(ISession session)
+  public UserUriFilter(ISession session, OAuth2UriProperty uriFactory)
   {
     this.session = session;
+    this.uriFactory = uriFactory;
   }
   
   @Override
   public void filter(ClientRequestContext context) throws IOException
   {
-    var config = new FeatureConfig(context.getConfiguration(), UserUriFilter.class);
-    if (OAuth2Feature.isAuthRequest(config, context.getUri()))
+    if (uriFactory.isAuthRequest(context.getUri()))
     { // do not intercept token request: avoid stackOverFlow!
       return;
     }
@@ -49,11 +49,10 @@ public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
     if (userInfo == null)
     {
       userInfo = context.getClient()
-              .target(DocuSignAuthUri.get(config))
-              .path("userinfo")
-              .request()
-              .headers(context.getHeaders()) // copy bearer token
-              .get().readEntity(JsonNode.class);
+        .target(uriFactory.getUri("userinfo"))
+        .request()
+        .headers(context.getHeaders()) // copy bearer token
+        .get().readEntity(JsonNode.class);
       session.setAttribute(USER_INFO, userInfo);
     }
     
