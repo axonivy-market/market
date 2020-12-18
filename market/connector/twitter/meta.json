@@ -2,7 +2,6 @@
 	"id": "twitter",
 	"name": "Twitter",
 	"tags": ["connector"],
-	"listed": false,
 	"installers": [
 		{
 			"id": "project-resource",
@@ -41,6 +40,29 @@
 						"name": "AUTH.baseUri",
 						"value": "https://api.twitter.com/oauth2"
 					}
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "demo/twitterDemo/dataclasses/com/twitter/demo/Data.ivyClass",
+						"path": "dataclasses/com/twitter/demo/Data.ivyClass"
+					},
+					{
+						"source": "demo/twitterDemo/processes/Demo/twitter.mod",
+						"path": "processes/Demo/twitter.mod"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/Demo/twitter.mod"
 				]
 			}
 		}
