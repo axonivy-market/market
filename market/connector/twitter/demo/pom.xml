@@ -2,13 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ch.ivyteam.ivy.market</groupId>
-  <artifactId>connector.modules</artifactId>
+  <artifactId>twitter.modules</artifactId>
   <version>9.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>uipath/demo</module>
-    <module>docusign/demo</module>
-    <module>twitter/demo</module>
+    <module>twitterDemo</module>
+    <module>twitterDemoTest</module>
   </modules>
 </project>
