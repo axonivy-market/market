@@ -77,7 +77,6 @@ public class OAuth2Feature implements Feature
     return response;
   }
   
-  @SuppressWarnings("unused")
   public static class DocuSignAuthRequest
   {
     public String grant_type;

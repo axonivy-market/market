@@ -66,7 +66,6 @@ public class OAuth2Feature implements Feature
     return response;
   }
   
-  @SuppressWarnings("unused")
   public static class TokenRequest
   {
     public final String grant_type = "refresh_token";
