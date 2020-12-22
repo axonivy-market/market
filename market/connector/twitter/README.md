@@ -7,6 +7,7 @@ See what’s happening in the world right now
 ## Demo
 
 1. Shows how to read recent tweets with a keyword.
+
 ![read-tweets](doc/img/demo_readTweets.png)
 ![recent-tweets](doc/img/demo_tweetQuery.png)
 
