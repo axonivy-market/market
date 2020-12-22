@@ -10,8 +10,7 @@
 					{
 						"source": "demo/twitterDemo/src/com/twitter/auth",
 						"includes": [ 
-							"OAuth2Feature.java", 
-							"TokenStore.java"
+							"OAuth2Feature.java"
 						],
 						"path": "src/com/twitter/auth"
 					}
