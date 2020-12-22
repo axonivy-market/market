@@ -66,6 +66,11 @@
                     <password>true</password>
                 </property>
                 <property>
+                    <name>AUTH.baseUri</name>
+                    <value>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/rpaMock</value>
+                    <password>false</password>
+                </property>
+                <property>
                     <name>jersey.config.client.followRedirects</name>
                     <value>false</value>
                     <password>false</password>
