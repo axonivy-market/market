@@ -45,6 +45,27 @@
 		{
 			"id": "project-resource",
 			"data": {
+				"directories": [
+					{
+						"source": "demo/twitterDemo/src_hd/com/twitter/demo/Tweets",
+						"includes": [ 
+							"TweetsData.ivyClass", 
+							"Tweets.rddescriptor", 
+							"TweetsProcess.mod", 
+							"Tweets.xhtml"
+						],
+						"path": "src_hd/com/twitter/demo/Tweets"
+					},
+					{
+						"source": "demo/twitterDemo/webContent/layouts",
+						"includes": [ 
+							"basic-8.xhtml", 
+							"styles/ivy-common-8.css", 
+							"images/axon_ivy_logo.svg"
+						],
+						"path": "webContent/layouts"
+					}
+				],
 				"resources": [
 					{
 						"source": "demo/twitterDemo/dataclasses/com/twitter/demo/Data.ivyClass",

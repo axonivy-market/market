@@ -1,3 +1,2 @@
 Data #class
 com.twitter.demo #namespace
-tweets java.util.List<com.twitter.Tweet> #field
