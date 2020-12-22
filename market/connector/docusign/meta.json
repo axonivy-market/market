@@ -28,7 +28,6 @@
 						"includes": [ 
 							"auth/UserUriFilter.java", 
 							"auth/OAuth2Feature.java", 
-							"auth/TokenStore.java",
 							"DocUtils.java",
 							"SignUtils.java"
 						],

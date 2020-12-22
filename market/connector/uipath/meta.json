@@ -11,8 +11,7 @@
 						"source": "demo/uiPathDemo/src/com/uipath/orchestrator/feature",
 						"includes": [ 
 							"TenantHeaderFeature.java", 
-							"OAuth2Feature.java", 
-							"TokenStore.java"
+							"OAuth2Feature.java"
 						],
 						"path": "src/com/uipath/orchestrator/feature"
 					}
