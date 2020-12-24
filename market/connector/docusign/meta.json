@@ -28,6 +28,7 @@
 						"includes": [ 
 							"auth/UserUriFilter.java", 
 							"auth/OAuth2Feature.java", 
+							"event/EnvelopeCompleted.java",
 							"DocUtils.java",
 							"SignUtils.java"
 						],

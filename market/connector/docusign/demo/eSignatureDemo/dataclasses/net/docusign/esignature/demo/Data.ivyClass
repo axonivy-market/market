@@ -1,3 +1,5 @@
 Data #class
 net.docusign.esignature.demo #namespace
 envelopes java.util.List<com.docusign.esign.model.Envelope> #field
+envelopeId String #field
+documents java.util.List<com.docusign.esign.model.EnvelopeDocument> #field
