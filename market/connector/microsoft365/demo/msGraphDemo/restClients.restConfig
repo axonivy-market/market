@@ -6,8 +6,36 @@
         <description>This OData service is located at https://graph.microsoft.com/v1.0</description>
         <configuration>
             <uri>https://graph.microsoft.com/v1.0</uri>
+            <property>
+                <name>AUTH.appId</name>
+                <value></value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>AUTH.clientSecret</name>
+                <value></value>
+                <password>true</password>
+            </property>
+            <property>
+                <name>AUTH.scope</name>
+                <value>user.read</value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>AUTH.baseUri</name>
+                <value>https://login.microsoftonline.com/common/oauth2/v2.0</value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>jersey.client.connectorProvider</name>
+                <value>org.glassfish.jersey.client.HttpUrlConnectorProvider</value>
+                <password>false</password>
+            </property>
             <feature>
                 <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+            <feature>
+                <class>com.microsoft.auth.OAuth2Feature</class>
             </feature>
         </configuration>
     </restClient>

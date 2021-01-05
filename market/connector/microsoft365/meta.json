@@ -5,13 +5,49 @@
 	"tags": ["connector", "office"],
 	"installers": [
 		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/msGraphDemo/src/com/microsoft",
+						"includes": [ 
+							"auth/OAuth2Feature.java"
+						],
+						"path": "src/com/microsoft"
+					}
+				]
+			}
+		},
+		{
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/v1.0.json",
 				"namespace": "com.microsoft.graph",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
-					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+					"com.microsoft.auth.OAuth2Feature"
+				],
+				"properties": [
+					{
+						"name": "AUTH.appId"
+					},
+					{
+						"name": "AUTH.secretKey",
+						"password": true
+					},
+					{
+						"name": "AUTH.scope",
+						"value": "user.read"
+					},
+					{
+						"name": "AUTH.baseUri",
+						"value": "https://login.microsoftonline.com/common/oauth2/v2.0"
+					},
+					{
+						"name": "jersey.client.connectorProvider",
+						"value": "org.glassfish.jersey.client.HttpUrlConnectorProvider"
+					}
 				]
 			}
 		}
