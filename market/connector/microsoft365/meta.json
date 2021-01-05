@@ -9,6 +9,7 @@
 			"data": {
 				"openApiUrl": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/v1.0.json",
 				"namespace": "com.microsoft.graph",
+				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
 				]

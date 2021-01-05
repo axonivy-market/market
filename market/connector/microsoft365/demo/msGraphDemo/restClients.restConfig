@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<restClients/>
+<restClients>
+    <restClient>
+        <uuid>007036dc-72d1-429f-88a7-ba5d5cf5ae58</uuid>
+        <name>Microsoft 365 (OData Service for namespace microsoft.graph)</name>
+        <description>This OData service is located at https://graph.microsoft.com/v1.0</description>
+        <configuration>
+            <uri>https://graph.microsoft.com/v1.0</uri>
+            <feature>
+                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+        </configuration>
+    </restClient>
+</restClients>
