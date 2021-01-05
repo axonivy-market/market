@@ -39,7 +39,15 @@ mo0 f3 responseMapping 'out.user=result;
 ' #txt
 mo0 f3 clientErrorCode ivy:error:rest:client #txt
 mo0 f3 statusErrorCode ivy:error:rest:client #txt
-mo0 f3 168 42 112 44 0 -7 #rect
+mo0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>My AD
+User Info</name>
+    </language>
+</elementInfo>
+' #txt
+mo0 f3 168 42 112 44 -28 -15 #rect
 mo0 f3 @|RestClientCallIcon #fIcon
 mo0 f4 111 64 168 64 #arcP
 mo0 f2 280 64 337 64 #arcP
