@@ -65,10 +65,6 @@
 						"password": true
 					},
 					{
-						"name": "AUTH.callback",
-						"value": "http://localhost:8081/designer/pro/eSignatureDemo/17651A0FB6AFB366/authenticated.ivp"
-					},
-					{
 						"name": "AUTH.baseUri",
 						"value": "https://account-d.docusign.com/oauth"
 					},
