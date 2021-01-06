@@ -1,0 +1,4 @@
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_DATA_CLASS=ms.graph.demo.Data
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_NAMESPACE=ms.graph.demo
+ch.ivyteam.ivy.project.preferences\:PROJECT_VERSION=80000
+eclipse.preferences.version=1
