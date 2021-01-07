@@ -1,0 +1,129 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c0e')/calendarView",
+    "value": [
+        {
+            "@odata.etag": "W/\"a0qtEtzIe0Knotmytag",
+            "id": "AAMkA_notaRealId",
+            "createdDateTime": "2020-11-09T13:07:25.1107691Z",
+            "lastModifiedDateTime": "2020-12-02T07:41:32.7208631Z",
+            "changeKey": "a0qtEtzIe0K47yEHXYUmyQADgFEq7Q==",
+            "categories": [],
+            "transactionId": null,
+            "originalStartTimeZone": "W. Europe Standard Time",
+            "originalEndTimeZone": "W. Europe Standard Time",
+            "iCalUId": "04000",
+            "reminderMinutesBeforeStart": 15,
+            "isReminderOn": true,
+            "hasAttachments": false,
+            "subject": "Workflow UI: Review",
+            "bodyPreview": "Hallo ...",
+            "importance": "normal",
+            "sensitivity": "normal",
+            "isAllDay": false,
+            "isCancelled": false,
+            "isOrganizer": false,
+            "responseRequested": true,
+            "seriesMasterId": "AAMkADJ_notmyId",
+            "showAs": "busy",
+            "type": "occurrence",
+            "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADJmM2MzNGNjLTnotmyid&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl": null,
+            "isOnlineMeeting": true,
+            "onlineMeetingProvider": "teamsForBusiness",
+            "allowNewTimeProposals": true,
+            "isDraft": false,
+            "hideAttendees": false,
+            "recurrence": null,
+            "responseStatus": {
+                "response": "accepted",
+                "time": "2020-11-30T07:53:35.6210071Z"
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<html><h1>mycal</h1></html>"
+            },
+            "start": {
+                "dateTime": "2021-01-12T08:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2021-01-12T09:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "location": {
+                "displayName": "",
+                "locationType": "default",
+                "uniqueIdType": "unknown",
+                "address": {},
+                "coordinates": {}
+            },
+            "locations": [],
+            "attendees": [
+                {
+                    "type": "required",
+                    "status": {
+                        "response": "none",
+                        "time": "0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress": {
+                        "name": "Christian Strebel",
+                        "address": "christian.strebel@mailinator.com"
+                    }
+                },
+                {
+                    "type": "required",
+                    "status": {
+                        "response": "accepted",
+                        "time": "0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress": {
+                        "name": "Lukas Lieb",
+                        "address": "lukas.lieb@mailinator.com"
+                    }
+                },
+                {
+                    "type": "required",
+                    "status": {
+                        "response": "none",
+                        "time": "0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress": {
+                        "name": "Bruno Bütler",
+                        "address": "bruno.buetler@mailinator.com"
+                    }
+                },
+                {
+                    "type": "required",
+                    "status": {
+                        "response": "accepted",
+                        "time": "0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress": {
+                        "name": "Reguel Wermelinger",
+                        "address": "reguel.wermelinger@mailinator.com"
+                    }
+                },
+                {
+                    "type": "required",
+                    "status": {
+                        "response": "accepted",
+                        "time": "0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress": {
+                        "name": "Jacek Lajdecki",
+                        "address": "jacek.lajdecki@mailinator.com"
+                    }
+                }
+            ],
+            "organizer": {
+                "emailAddress": {
+                    "name": "Christian Strebel",
+                    "address": "christian.strebel@mailinator.com"
+                }
+            },
+            "onlineMeeting": {
+                "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_notmyidthread.v2/0?context=%7b%22Tid%22%3a%2ctxt"
+            }
+        }
+    ]
+}
