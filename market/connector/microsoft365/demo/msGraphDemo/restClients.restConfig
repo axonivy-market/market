@@ -38,5 +38,45 @@
                 <class>com.microsoft.auth.OAuth2Feature</class>
             </feature>
         </configuration>
+        <environmentConfigurations>
+            <environment>dev-axonivy</environment>
+            <configuration>
+                <uri>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/graphMock</uri>
+                <property>
+                    <name>AUTH.appId</name>
+                    <value>notmyid</value>
+                    <password>false</password>
+                </property>
+                <property>
+                    <name>AUTH.clientSecret</name>
+                    <value>\u0054\u001D\u007D\u00A0\u0018\u00F5\u00B4\u00C9\u0073\u00E4\u0012\u0089\u00BC\u008F\u00B1\u00C6\u00DA\u00C9\u00CA\u000D\u004C\u002F\u00B5\u00E3\u00B0\u00D2\u00E3\u00BF\u005C\u0065\u0032\u00F5\u0082\u0005\u0028\u00EA\u0012\u00B1\u0076\u0052\u006B\u00EA\u005F\u00CE\u00A1\u00E0\u00CA\u004D\u0047\u0065\u0043\u004F\u00F4\u00DE\u0091\u003C\u0035\u0018\u005F\u00F2\u0066\u0026\u00F7\u0002\u00CE\u000E\u00B9\u00FF\u000B\u00FD\u00C3\u00AA\u000E\u0056\u004B\u00F8\u00AE\u00C9\u00E1\u0068</value>
+                    <password>true</password>
+                </property>
+                <property>
+                    <name>AUTH.scope</name>
+                    <value>user.read calendars.read</value>
+                    <password>false</password>
+                </property>
+                <property>
+                    <name>AUTH.baseUri</name>
+                    <value>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/graphAuthMock</value>
+                    <password>false</password>
+                </property>
+                <property>
+                    <name>jersey.client.connectorProvider</name>
+                    <value>org.glassfish.jersey.client.HttpUrlConnectorProvider</value>
+                    <password>false</password>
+                </property>
+                <feature>
+                    <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+                </feature>
+                <feature>
+                    <class>com.microsoft.auth.OAuth2Feature</class>
+                </feature>
+                <feature>
+                    <class>ch.ivyteam.ivy.rest.client.security.CsrfHeaderFeature</class>
+                </feature>
+            </configuration>
+        </environmentConfigurations>
     </restClient>
 </restClients>
