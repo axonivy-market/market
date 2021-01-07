@@ -21,7 +21,7 @@
 		{
 			"id": "rest-client",
 			"data": {
-				"openApiUrl": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/v1.0.json",
+				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.calendar,me.user,users.calendar&openApiVersion=2&graphVersion=v1.0&format=json",
 				"namespace": "com.microsoft.graph",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
@@ -38,7 +38,7 @@
 					},
 					{
 						"name": "AUTH.scope",
-						"value": "user.read"
+						"value": "user.read calendars.read"
 					},
 					{
 						"name": "AUTH.baseUri",
