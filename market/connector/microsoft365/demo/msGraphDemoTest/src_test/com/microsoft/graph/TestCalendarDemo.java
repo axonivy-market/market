@@ -33,7 +33,7 @@ public class TestCalendarDemo
       .as().session(session)
       .execute();
     
-    ms.graph.demo.Data cal = result2.data().last();
+    ms.graph.demo.CalendarDemo cal = result2.data().last();
     assertThat(cal.getEvents()).hasSize(1);
     MicrosoftGraphEvent wfUiReview = cal.getEvents().get(0);
     assertThat(wfUiReview.getSubject())
