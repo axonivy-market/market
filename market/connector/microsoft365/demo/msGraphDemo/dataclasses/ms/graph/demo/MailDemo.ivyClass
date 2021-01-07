@@ -1,0 +1,3 @@
+MailDemo #class
+ms.graph.demo #namespace
+mails java.util.List<com.microsoft.graph.MicrosoftGraphMessage> #field
