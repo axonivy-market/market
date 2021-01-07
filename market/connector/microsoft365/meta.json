@@ -50,6 +50,35 @@
 					}
 				]
 			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/msGraphDemo/processes/Demo",
+						"includes": [ 
+							"ms365Calendar.mod"
+						],
+						"path": "processes/Demo"
+					},
+					{
+						"source": "demo/msGraphDemo/dataclasses/ms/graph/demo",
+						"includes": [ 
+							"CalendarDemo.ivyClass"
+						],
+						"path": "dataclasses/ms/graph/demo"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/Demo/ms365Calendar.mod"
+				]
+			}
 		}
 	]
 }

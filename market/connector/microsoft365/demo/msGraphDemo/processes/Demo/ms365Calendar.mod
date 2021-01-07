@@ -100,7 +100,7 @@ to control amount of events</name>
 mo0 f7 288 138 192 60 -87 -22 #rect
 mo0 f7 @|IBIcon #fIcon
 mo0 f8 384 138 384 86 #arcP
->Proto mo0 .type ms.graph.demo.Data #txt
+>Proto mo0 .type ms.graph.demo.CalendarDemo #txt
 >Proto mo0 .processKind NORMAL #txt
 >Proto mo0 0 0 32 24 18 0 #rect
 >Proto mo0 @|BIcon #fIcon
