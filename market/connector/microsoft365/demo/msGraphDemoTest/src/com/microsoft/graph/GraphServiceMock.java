@@ -31,6 +31,14 @@ public class GraphServiceMock
   }
   
   @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Path("me/messages")
+  public String messages()
+  {
+    return load("json/messages.json");
+  }
+  
+  @GET
   @Path("users/{user-id}/calendar/calendarView")
   @Produces(MediaType.APPLICATION_JSON)
   public Response createEnvelope(
