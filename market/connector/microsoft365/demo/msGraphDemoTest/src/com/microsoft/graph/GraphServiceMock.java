@@ -5,7 +5,9 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import javax.annotation.security.PermitAll;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -15,6 +17,10 @@ import javax.ws.rs.core.Response;
 
 import org.apache.commons.io.IOUtils;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.google.common.base.Objects;
+
+import ch.ivyteam.ivy.bpm.error.BpmError;
 import io.swagger.v3.oas.annotations.Hidden;
 
 @Path("graphMock")
@@ -50,6 +56,24 @@ public class GraphServiceMock
       .entity(load("json/calendarView.json"))
       .build();
   }
+  
+  @POST
+  @Path("me/microsoft.graph.sendMail")
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Response sendMail(JsonNode json)
+  {
+    String mailSubject = json.get("Message").get("subject").asText();
+    String expect = "Meet for Lunch?";
+    if (!Objects.equal(mailSubject, expect))
+    {
+      BpmError.create("test:assertion")
+      .withAttribute("expected", "subject:"+mailSubject+" \n:toBe:"+expect)
+      .throwError();
+    }
+    return Response.status(202).build();
+  }
+  
+  public static JsonNode lastMessage;
   
   private static String load(String path)
   {

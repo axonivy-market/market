@@ -18,7 +18,7 @@
             </property>
             <property>
                 <name>AUTH.scope</name>
-                <value>user.read calendars.read</value>
+                <value>user.read calendars.read mail.readWrite mail.send</value>
                 <password>false</password>
             </property>
             <property>
@@ -29,6 +29,11 @@
             <property>
                 <name>jersey.client.connectorProvider</name>
                 <value>org.glassfish.jersey.client.HttpUrlConnectorProvider</value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>JSON.Serialization.PROPERTY_INCLUSION</name>
+                <value>NON_NULL</value>
                 <password>false</password>
             </property>
             <feature>

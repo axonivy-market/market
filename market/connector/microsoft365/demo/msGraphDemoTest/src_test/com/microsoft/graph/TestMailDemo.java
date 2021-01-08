@@ -28,7 +28,7 @@ public class TestMailDemo
 
     
     ExecutionResult result2 = bpmClient.start()
-      .webPage(result.workflow().executedTask(), "176DD02137AD2F50/176DD02137AD2F50-f3/resume.ivp")
+      .webPage(result.workflow().executedTask(), resume("f3"))
       .withParam("code", "a-test-code")
       .as().session(session)
       .execute();
@@ -37,5 +37,29 @@ public class TestMailDemo
     assertThat(mail.getMails()).hasSize(1);
     MicrosoftGraphMessage githubMail = mail.getMails().get(0);
     assertThat(githubMail.getSubject()).startsWith("Re:");
+  }
+  
+  @Test
+  public void writeMail(BpmClient bpmClient, ISession session, AppFixture fixture)
+  {
+    fixture.environment("dev-axonivy");
+    
+    System.err.println("test session: "+session);
+    ExecutionResult result = bpmClient.start()
+      .process("Demo/ms365Mail/writeMail.ivp")
+      .as().session(session)
+      .execute();
+    ExecutionResult result2 = bpmClient.start()
+      .webPage(result.workflow().executedTask(), resume("f7"))
+      .withParam("code", "a-test-code")
+      .as().session(session)
+      .execute();
+    
+    assertThat(result2.bpmError()).isNull();
+  }
+
+  private static String resume(String restActivityFieldId)
+  {
+    return "176DD02137AD2F50/176DD02137AD2F50-"+restActivityFieldId+"/resume.ivp";
   }
 }

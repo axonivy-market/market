@@ -1,0 +1,17 @@
+{
+  "Message": {
+    "body": {
+      "content": "The new cafeteria is open.",
+      "contentType": "text"
+    },
+    "subject": "Meet for Lunch?",
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "reguel.wermelinger@axonivy.com"
+        }
+      }
+    ]
+  },
+  "SaveToSentItems": false
+}
