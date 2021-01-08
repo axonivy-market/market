@@ -21,7 +21,7 @@
 		{
 			"id": "rest-client",
 			"data": {
-				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.calendar,me.user,users.calendar&openApiVersion=2&graphVersion=v1.0&format=json",
+				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions&openApiVersion=2&graphVersion=v1.0&format=json",
 				"namespace": "com.microsoft.graph",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
@@ -47,6 +47,10 @@
 					{
 						"name": "jersey.client.connectorProvider",
 						"value": "org.glassfish.jersey.client.HttpUrlConnectorProvider"
+					},
+					{
+						"name": "JSON.Serialization.PROPERTY_INCLUSION",
+						"value": "NON_NULL"
 					}
 				]
 			}
