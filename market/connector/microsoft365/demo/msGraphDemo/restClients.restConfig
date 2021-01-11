@@ -18,7 +18,7 @@
             </property>
             <property>
                 <name>AUTH.scope</name>
-                <value>user.read calendars.read mail.readWrite mail.send</value>
+                <value>user.read Calendars.ReadWrite mail.readWrite mail.send</value>
                 <password>false</password>
             </property>
             <property>

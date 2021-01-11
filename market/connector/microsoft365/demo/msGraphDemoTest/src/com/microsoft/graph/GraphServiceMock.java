@@ -73,7 +73,27 @@ public class GraphServiceMock
     return Response.status(202).build();
   }
   
-  public static JsonNode lastMessage;
+  @POST
+  @Path("me/microsoft.graph.findMeetingTimes")
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response suggestMeeting(JsonNode json)
+  {
+    return Response.ok()
+      .entity(load("json/suggestMeeting.json"))
+      .build();
+  }
+  
+  @POST
+  @Path("users/{user-id}/calendar/events")
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response newMeeting(@PathParam("user-id") String userId, JsonNode json)
+  {
+    return Response.ok()
+      .entity(load("json/newMeeting.json"))
+      .build();
+  }
   
   private static String load(String path)
   {

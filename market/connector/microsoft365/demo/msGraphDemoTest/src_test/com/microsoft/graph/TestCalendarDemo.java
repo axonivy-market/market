@@ -28,7 +28,7 @@ public class TestCalendarDemo
 
     
     ExecutionResult result2 = bpmClient.start()
-      .webPage(result.workflow().executedTask(), "176D21535A8FEE20/176D21535A8FEE20-f3/resume.ivp")
+      .webPage(result.workflow().executedTask(), resume("f3"))
       .withParam("code", "a-test-code")
       .as().session(session)
       .execute();
@@ -38,5 +38,33 @@ public class TestCalendarDemo
     MicrosoftGraphEvent wfUiReview = cal.getEvents().get(0);
     assertThat(wfUiReview.getSubject())
       .contains("Workflow UI: Review");
+  }
+  
+  @Test
+  public void createMeeting(BpmClient bpmClient, ISession session, AppFixture fixture)
+  {
+    fixture.environment("dev-axonivy");
+    
+    ExecutionResult result = bpmClient.start()
+      .process("Demo/ms365Calendar/meet.ivp")
+      .as().session(session)
+      .execute();
+    
+    ExecutionResult result2 = bpmClient.start()
+      .webPage(result.workflow().executedTask(), resume("f14"))
+      .withParam("code", "a-test-code")
+      .as().session(session)
+      .execute();
+    
+    ms.graph.demo.CalendarDemo cal = result2.data().last();
+    assertThat(cal.getEvents()).hasSize(1);
+    MicrosoftGraphEvent wfUiReview = cal.getEvents().get(0);
+    assertThat(wfUiReview.getSubject())
+      .isEqualTo("Define digitalization roadmap");
+  }
+
+  private static String resume(String restClientActivityFieldId)
+  {
+    return "176D21535A8FEE20/176D21535A8FEE20-"+restClientActivityFieldId+"/resume.ivp";
   }
 }
