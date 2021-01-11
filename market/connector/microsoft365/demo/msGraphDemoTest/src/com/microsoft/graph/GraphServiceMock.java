@@ -92,6 +92,40 @@ public class GraphServiceMock
   {
     return Response.ok()
       .entity(load("json/newMeeting.json"))
+      .header("userId", userId)
+      .build();
+  }
+  
+  @GET
+  @Path("me/todo/lists")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response getLists()
+  {
+    return Response.ok()
+      .entity(load("json/toDoLists.json"))
+      .build();
+  }
+  
+  @GET
+  @Path("me/todo/lists/{list-id}/tasks")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response getTasks(@PathParam("list-id") String id)
+  {
+    return Response.ok()
+      .entity(load("json/toDoTasks.json"))
+      .header("list-id", id)
+      .build();
+  }
+  
+  @POST
+  @Path("me/todo/lists/{list-id}/tasks")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Response getTasks(@PathParam("list-id") String id, JsonNode newTask)
+  {
+    return Response.ok()
+      .entity(newTask)
+      .header("id", id)
       .build();
   }
   

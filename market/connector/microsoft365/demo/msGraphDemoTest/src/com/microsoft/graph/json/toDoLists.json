@@ -1,0 +1,13 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c0e...')/todo/lists",
+  "value": [
+    {
+      "@odata.etag": "W/\"a0q....",
+      "displayName": "Aufgaben",
+      "isOwner": true,
+      "isShared": false,
+      "wellknownListName": "defaultList",
+      "id": "aufgaben"
+    }
+  ]
+}
