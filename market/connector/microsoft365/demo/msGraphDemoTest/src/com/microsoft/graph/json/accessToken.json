@@ -1,6 +1,7 @@
-{"token_type":"Bearer",
+{
+  "token_type":"Bearer",
   "scope":"Calendars.Read Chat.Read User.Read profile openid email",
   "expires_in":3599,
   "ext_expires_in":3599,
   "access_token":"not-a-valid-token-1234"
-  }
+}
