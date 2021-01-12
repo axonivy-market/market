@@ -13,19 +13,17 @@ pipeline {
   stages {
     stage('validate') { 
       steps {
-        script {
-          docker.withRegistry('', 'docker.io') {
-            docker.image('mstruebing/editorconfig-checker:2.0.4').inside {
-              sh 'ec -no-color'
-            }
-
-            docker.image('maven:3.6.3-jdk-11').inside {
-              dir ('market-test') {
-                maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
-                maven cmd: 'verify'
-              }
-            }
+        script {          
+          docker.image('mstruebing/editorconfig-checker:2.0.4').inside {
+            sh 'ec -no-color'
           }
+
+          docker.image('maven:3.6.3-jdk-11').inside {
+            dir ('market-test') {
+              maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
+              maven cmd: 'verify'
+            }
+          }          
           recordIssues tools: [eclipse()], unstableTotalAll: 1
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/surefire-reports/**/*.xml'

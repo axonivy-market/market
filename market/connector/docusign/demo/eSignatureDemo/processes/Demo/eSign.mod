@@ -150,7 +150,7 @@ st0 f6 @|RestClientCallIcon #fIcon
 st0 f9 103 136 160 136 #arcP
 st0 f8 174 218 216 158 #arcP
 st0 f7 template "/redirect.ivc" #txt
-st0 f7 201 433 30 30 0 15 #rect
+st0 f7 201 281 30 30 0 15 #rect
 st0 f7 @|EndRequestIcon #fIcon
 st0 f11 outLink visitSigningApp.ivp #txt
 st0 f11 inParamDecl '<> param;' #txt
@@ -167,9 +167,9 @@ st0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f11 @C|.responsibility Everybody #txt
-st0 f11 73 433 30 30 -45 18 #rect
+st0 f11 73 281 30 30 -45 18 #rect
 st0 f11 @|StartRequestIcon #fIcon
-st0 f12 103 448 201 448 #arcP
+st0 f12 103 296 201 296 #arcP
 st0 f13 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -225,11 +225,11 @@ and see their documents or adjust them.</name>
     </language>
 </elementInfo>
 ' #txt
-st0 f19 80 506 272 44 -129 -15 #rect
+st0 f19 80 354 272 44 -129 -15 #rect
 st0 f19 @|IBIcon #fIcon
-st0 f20 80 528 73 448 #arcP
-st0 f20 1 32 528 #addKink
-st0 f20 2 32 448 #addKink
+st0 f20 80 376 73 296 #arcP
+st0 f20 1 32 376 #addKink
+st0 f20 2 32 296 #addKink
 st0 f20 1 0.43132448115800415 0 0 #arcLabel
 st0 f21 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f21 path /v2.1/accounts/{accountId}/envelopes/{envelopeId}/documents #txt
@@ -359,7 +359,7 @@ st0 f1 272 136 336 136 #arcP
         <swimlaneLabel>DocuSign eSignature</swimlaneLabel>
     </language>
     <swimlaneOrientation>false</swimlaneOrientation>
-    <swimlaneSize>584</swimlaneSize>
+    <swimlaneSize>432</swimlaneSize>
     <swimlaneColor gradient="false">-1</swimlaneColor>
     <swimlaneType>POOL</swimlaneType>
     <swimlaneSpaceBefore>0</swimlaneSpaceBefore>
