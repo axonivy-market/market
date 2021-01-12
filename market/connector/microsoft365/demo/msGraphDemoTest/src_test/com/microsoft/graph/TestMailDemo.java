@@ -11,15 +11,15 @@ import ch.ivyteam.ivy.environment.AppFixture;
 import ch.ivyteam.ivy.security.ISession;
 
 @IvyProcessTest
-public class TestCalendarDemo
+public class TestMailDemo
 {
   @Test
-  public void readPersonal(BpmClient bpmClient, ISession session, AppFixture fixture)
+  public void readInbox(BpmClient bpmClient, ISession session, AppFixture fixture)
   {
     fixture.environment("dev-axonivy");
     
     ExecutionResult result = bpmClient.start()
-      .process("Demo/ms365Calendar/readCalendar.ivp")
+      .process("Demo/ms365Mail/inbox.ivp")
       .as().session(session)
       .execute();
     assertThat(result.http().redirectLocation()).containsSubsequence(
@@ -33,38 +33,33 @@ public class TestCalendarDemo
       .as().session(session)
       .execute();
     
-    ms.graph.demo.CalendarDemo cal = result2.data().last();
-    assertThat(cal.getEvents()).hasSize(1);
-    MicrosoftGraphEvent wfUiReview = cal.getEvents().get(0);
-    assertThat(wfUiReview.getSubject())
-      .contains("Workflow UI: Review");
+    ms.graph.demo.MailDemo mail = result2.data().last();
+    assertThat(mail.getMails()).hasSize(1);
+    MicrosoftGraphMessage githubMail = mail.getMails().get(0);
+    assertThat(githubMail.getSubject()).startsWith("Re:");
   }
   
   @Test
-  public void createMeeting(BpmClient bpmClient, ISession session, AppFixture fixture)
+  public void writeMail(BpmClient bpmClient, ISession session, AppFixture fixture)
   {
     fixture.environment("dev-axonivy");
     
+    System.err.println("test session: "+session);
     ExecutionResult result = bpmClient.start()
-      .process("Demo/ms365Calendar/meet.ivp")
+      .process("Demo/ms365Mail/writeMail.ivp")
       .as().session(session)
       .execute();
-    
     ExecutionResult result2 = bpmClient.start()
-      .webPage(result.workflow().executedTask(), resume("f14"))
+      .webPage(result.workflow().executedTask(), resume("f7"))
       .withParam("code", "a-test-code")
       .as().session(session)
       .execute();
     
-    ms.graph.demo.CalendarDemo cal = result2.data().last();
-    assertThat(cal.getEvents()).hasSize(1);
-    MicrosoftGraphEvent wfUiReview = cal.getEvents().get(0);
-    assertThat(wfUiReview.getSubject())
-      .isEqualTo("Define digitalization roadmap");
+    assertThat(result2.bpmError()).isNull();
   }
 
-  private static String resume(String restClientActivityFieldId)
+  private static String resume(String restActivityFieldId)
   {
-    return "176D21535A8FEE20/176D21535A8FEE20-"+restClientActivityFieldId+"/resume.ivp";
+    return "176DD02137AD2F50/176DD02137AD2F50-"+restActivityFieldId+"/resume.ivp";
   }
 }
