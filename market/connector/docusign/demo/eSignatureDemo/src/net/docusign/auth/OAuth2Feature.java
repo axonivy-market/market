@@ -15,7 +15,6 @@ import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
 import ch.ivyteam.ivy.environment.Ivy;
 import ch.ivyteam.ivy.request.IRequest;
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
-import ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2RedirectErrorBuilder;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenGet.AuthContext;
@@ -31,7 +30,9 @@ public class OAuth2Feature implements Feature
   {
     String CLIENT_ID = "AUTH.integrationKey";
     String USER_KEY = "AUTH.secretKey";
+    String SCOPE = "AUTH.scope";
     
+    String USER_ID = "AUTH.userId";
     String AUTH_BASE_URI = "AUTH.baseUri";
   }
   
@@ -88,7 +89,7 @@ public class OAuth2Feature implements Feature
     URI redirectUri = OAuth2CallbackUriBuilder.create().toUri();
     var uri = UriBuilder.fromUri(uriFactory.getUri("auth"))
         .queryParam("response_type", "code")
-        .queryParam("scope", "signature impersonation")
+        .queryParam("scope", getScope(config))
         .queryParam("client_id", config.readMandatory(Property.CLIENT_ID))
         .queryParam("redirect_uri", redirectUri)
         .build();
@@ -97,6 +98,11 @@ public class OAuth2Feature implements Feature
     return OAuth2RedirectErrorBuilder
         .create(uri)
         .withMessage("Missing permission from user to act in his name.");
+  }
+
+  static String getScope(FeatureConfig config)
+  {
+    return config.read(Property.SCOPE).orElse("signature impersonation");
   }
 
 }
