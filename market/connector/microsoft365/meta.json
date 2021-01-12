@@ -21,7 +21,7 @@
 		{
 			"id": "rest-client",
 			"data": {
-				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.calendar,me.user,users.calendar&openApiVersion=2&graphVersion=v1.0&format=json",
+				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell",
 				"namespace": "com.microsoft.graph",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
@@ -38,7 +38,7 @@
 					},
 					{
 						"name": "AUTH.scope",
-						"value": "user.read calendars.read"
+						"value": "User.Read Calendars.ReadWrite Mail.ReadWrite Mail.Send"
 					},
 					{
 						"name": "AUTH.baseUri",
@@ -47,6 +47,10 @@
 					{
 						"name": "jersey.client.connectorProvider",
 						"value": "org.glassfish.jersey.client.HttpUrlConnectorProvider"
+					},
+					{
+						"name": "JSON.Serialization.PROPERTY_INCLUSION",
+						"value": "NON_NULL"
 					}
 				]
 			}
@@ -58,14 +62,16 @@
 					{
 						"source": "demo/msGraphDemo/processes/Demo",
 						"includes": [ 
-							"ms365Calendar.mod"
+							"ms365Calendar.mod",
+							"ms365Mail.mod"
 						],
 						"path": "processes/Demo"
 					},
 					{
 						"source": "demo/msGraphDemo/dataclasses/ms/graph/demo",
 						"includes": [ 
-							"CalendarDemo.ivyClass"
+							"CalendarDemo.ivyClass",
+							"MailDemo.ivyClass"
 						],
 						"path": "dataclasses/ms/graph/demo"
 					}
@@ -76,6 +82,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
+					"processes/Demo/ms365Mail.mod",
 					"processes/Demo/ms365Calendar.mod"
 				]
 			}
