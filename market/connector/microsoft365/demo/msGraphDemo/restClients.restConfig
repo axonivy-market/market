@@ -12,7 +12,7 @@
                 <password>false</password>
             </property>
             <property>
-                <name>AUTH.clientSecret</name>
+                <name>AUTH.secretKey</name>
                 <value></value>
                 <password>true</password>
             </property>

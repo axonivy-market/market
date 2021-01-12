@@ -37,7 +37,7 @@ public class OAuth2Feature implements Feature
   public static interface Property
   {
     String APP_ID = "AUTH.appId";
-    String CLIENT_SECRET = "AUTH.clientSecret";
+    String CLIENT_SECRET = "AUTH.secretKey";
     String SCOPE = "AUTH.scope";
     String AUTH_BASE_URI = "AUTH.baseUri";
   }
