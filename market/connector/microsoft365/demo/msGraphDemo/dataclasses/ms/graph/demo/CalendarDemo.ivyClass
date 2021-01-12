@@ -1,0 +1,6 @@
+CalendarDemo #class
+ms.graph.demo #namespace
+user com.microsoft.graph.MicrosoftGraphUser #field
+events java.util.List<com.microsoft.graph.MicrosoftGraphEvent> #field
+attendee com.microsoft.graph.MicrosoftGraphAttendee #field
+meetTimes java.util.List<com.microsoft.graph.MicrosoftGraphMeetingTimeSuggestion> #field

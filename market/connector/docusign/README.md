@@ -25,13 +25,11 @@ Before any signing interactions between the Axon.ivy Engine and the DocuSign eSi
 1. Scroll to **Authentication** choose `Authorization Code Grant`.
 1. Click `Add Secrect Key` and copy the generated key into the Rest Clients property value called `AUTH.secretKey`
 
-1. Scroll to the **Additional settings** section in the docusing admin frontend:
-	1. Adjust the Rest Client Property `AUTH.callback` : replace 'eSignatureDemo' in the URI with the name of your project where the connector has been installed to. E.g.
-...localhost:8081/designer/pro/~~eSignatureDemo~~/17651A0FB6AFB366/authenticated.ivp
-...localhost:8081/designer/pro/++myCoolProject++/17651A0FB6AFB366/authenticated.ivp
+1. Scroll to **Additional settings** and configure a `Redirect URI` to Axon.ivy.
 
-	2. Copy the updated `AUTH.callback` URI also into the docusign admin frontend under `Redirect URIs`.
-![integration-key](doc/images/configureRedirectUri.png)
+	The redirect uri must point to the Axon.ivy authentication callback URI `.../<application-name>/auth/callback`. 
+	For the Axon.ivy Designer this is normally `http://localhost:8081/designer/auth/callback`. 
+	![integration-key](doc/images/configureRedirectUri.png)
 
 1. Save the changed application settings.
 

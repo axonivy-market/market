@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ms.graph.demo</groupId>
+  <artifactId>ms-graph-demo</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>iar</packaging>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.axonivy.ivy.ci</groupId>
+        <artifactId>project-build-plugin</artifactId>
+        <version>9.1.0</version>
+        <extensions>true</extensions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-invoker-plugin</artifactId>
+        <version>2.0.0</version>
+        <executions>
+          <execution>
+            <id>build.jaxrsclient.jar</id>
+            <phase>generate-resources</phase>
+            <goals><goal>integration-test</goal></goals>
+            <configuration>
+              <pom>../../../.build-client/client.gen.test/pom.xml</pom>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <streamLogs>true</streamLogs>
+          <goals>
+            <goal>clean</goal>
+            <goal>verify</goal>
+          </goals>
+          <showErrors>true</showErrors>
+          <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
+          <properties>
+            <openapi.url><![CDATA[
+              https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell
+            ]]></openapi.url>
+            <openapi.namespace>com.microsoft.graph</openapi.namespace>
+            <openapi.jar>${basedir}/lib_generated/client/jaxRsClient_007036dc-72d1-429f-88a7-ba5d5cf5ae58.jar</openapi.jar>
+            <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
+          </properties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

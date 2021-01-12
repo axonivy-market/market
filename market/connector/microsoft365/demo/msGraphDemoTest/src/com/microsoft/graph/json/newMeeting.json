@@ -1,0 +1,14 @@
+{
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "reguel.wermelinger@mailinator.com"
+      }
+    }
+  ],
+  "body": {
+    "content": "Let's identifiy weakly automated processes and plan their optimization.",
+    "contentType": "text"
+  },
+  "subject": "Define digitalization roadmap"
+}
