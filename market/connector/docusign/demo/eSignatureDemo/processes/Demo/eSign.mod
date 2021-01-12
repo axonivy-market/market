@@ -9,19 +9,14 @@ st0 @TextInP .processKind .processKind #zField
 st0 @TextInP .xml .xml #zField
 st0 @TextInP .responsibility .responsibility #zField
 st0 @StartRequest f0 '' #zField
-st0 @ProcessException f5 '' #zField
-st0 @StartRequest f2 '' #zField
 st0 @RestClientCall f6 '' #zField
 st0 @PushWFArc f9 '' #zField
-st0 @PushWFArc f8 '' #zField
 st0 @EndRequest f7 '' #zField
 st0 @StartRequest f11 '' #zField
 st0 @PushWFArc f12 '' #zField
 st0 @InfoButton f13 '' #zField
 st0 @AnnotationArc f14 '' #zField
 st0 @InfoButton f15 '' #zField
-st0 @InfoButton f17 '' #zField
-st0 @AnnotationArc f18 '' #zField
 st0 @InfoButton f19 '' #zField
 st0 @AnnotationArc f20 '' #zField
 st0 @RestClientCall f21 '' #zField
@@ -53,51 +48,6 @@ st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 st0 f0 @C|.responsibility Everybody #txt
 st0 f0 73 121 30 30 -25 17 #rect
 st0 f0 @|StartRequestIcon #fIcon
-st0 f5 actionTable 'out=in;
-' #txt
-st0 f5 actionCode 'import ch.ivyteam.ivy.bpm.error.BpmError;
-
-import ch.ivyteam.ivy.request.IHttpResponse;
-
-if (error.getAttributeNames().contains("authUri"))
-{
-  java.net.URI uri = error.getAttribute("authUri") as java.net.URI;
-  ivy.log.info("redirecting to docuSign auth: "+uri.toASCIIString());
-  IHttpResponse.current().sendRedirect(uri.toASCIIString());
-}
-else
-{
-  BpmError.create(error).withErrorCode("docusign:error").throwError();
-}' #txt
-st0 f5 errorCode ivy:error:rest:client #txt
-st0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>auth:error</name>
-    </language>
-</elementInfo>
-' #txt
-st0 f5 73 217 30 30 -25 19 #rect
-st0 f5 @|ExceptionIcon #fIcon
-st0 f2 outLink authenticated.ivp #txt
-st0 f2 inParamDecl '<String code> param;' #txt
-st0 f2 actionCode 'ivy.log.info("got authCode: "+param.code);
-ivy.session.setAttribute(net.docusign.auth.OAuth2Feature.SESSION_TOKEN, param.code);' #txt
-st0 f2 requestEnabled true #txt
-st0 f2 triggerEnabled false #txt
-st0 f2 callSignature authenticated(String) #txt
-st0 f2 caseData businessCase.attach=true #txt
-st0 f2 showInStartList 0 #txt
-st0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>authenticated.ivp</name>
-    </language>
-</elementInfo>
-' #txt
-st0 f2 @C|.responsibility Everybody #txt
-st0 f2 153 217 30 30 -33 19 #rect
-st0 f2 @|StartRequestIcon #fIcon
 st0 f6 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f6 path /v2.1/accounts/{accountId}/envelopes #txt
 st0 f6 queryParams 'ac_status=;
@@ -148,7 +98,6 @@ st0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 st0 f6 160 114 112 44 -48 -7 #rect
 st0 f6 @|RestClientCallIcon #fIcon
 st0 f9 103 136 160 136 #arcP
-st0 f8 174 218 216 158 #arcP
 st0 f7 template "/redirect.ivc" #txt
 st0 f7 201 281 30 30 0 15 #rect
 st0 f7 @|EndRequestIcon #fIcon
@@ -167,7 +116,7 @@ st0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f11 @C|.responsibility Everybody #txt
-st0 f11 73 281 30 30 -45 18 #rect
+st0 f11 73 281 30 30 -24 16 #rect
 st0 f11 @|StartRequestIcon #fIcon
 st0 f12 103 296 201 296 #arcP
 st0 f13 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -200,23 +149,6 @@ Just extend the ''recipient.signers'' attribute to do so.</name>
 ' #txt
 st0 f15 440 18 336 76 -164 -37 #rect
 st0 f15 @|IBIcon #fIcon
-st0 f17 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>Only users with a DocuSign
-account are able to start 
-signing workflows.
-So authorize yourself 
-in the Web Browser view.</name>
-    </language>
-</elementInfo>
-' #txt
-st0 f17 128 282 176 76 -84 -37 #rect
-st0 f17 @|IBIcon #fIcon
-st0 f18 128 320 73 232 #arcP
-st0 f18 1 48 320 #addKink
-st0 f18 2 48 232 #addKink
-st0 f18 1 0.6475890448723912 0 0 #arcLabel
 st0 f19 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -225,11 +157,11 @@ and see their documents or adjust them.</name>
     </language>
 </elementInfo>
 ' #txt
-st0 f19 80 354 272 44 -129 -15 #rect
+st0 f19 68 360 248 48 -113 -15 #rect
 st0 f19 @|IBIcon #fIcon
-st0 f20 80 376 73 296 #arcP
-st0 f20 1 32 376 #addKink
-st0 f20 2 32 296 #addKink
+st0 f20 68 384 73 296 #arcP
+st0 f20 1 56 384 #addKink
+st0 f20 2 56 296 #addKink
 st0 f20 1 0.43132448115800415 0 0 #arcLabel
 st0 f21 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f21 path /v2.1/accounts/{accountId}/envelopes/{envelopeId}/documents #txt
@@ -369,14 +301,10 @@ st0 f1 272 136 336 136 #arcP
 >Proto st0 @|BIcon #fIcon
 st0 f0 mainOut f9 tail #connect
 st0 f9 head f6 mainIn #connect
-st0 f2 mainOut f8 tail #connect
-st0 f8 head f6 mainIn #connect
 st0 f11 mainOut f12 tail #connect
 st0 f12 head f7 mainIn #connect
 st0 f13 ao f14 tail #connect
 st0 f14 head f0 @CG|ai #connect
-st0 f17 ao f18 tail #connect
-st0 f18 head f5 @CG|ai #connect
 st0 f19 ao f20 tail #connect
 st0 f20 head f11 @CG|ai #connect
 st0 f24 mainOut f29 tail #connect
