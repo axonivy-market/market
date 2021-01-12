@@ -39,7 +39,7 @@
           <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
           <properties>
             <openapi.url><![CDATA[
-              https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell
+              https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell
             ]]></openapi.url>
             <openapi.namespace>com.microsoft.graph</openapi.namespace>
             <openapi.jar>${basedir}/lib_generated/client/jaxRsClient_007036dc-72d1-429f-88a7-ba5d5cf5ae58.jar</openapi.jar>
