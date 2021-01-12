@@ -1,6 +1,8 @@
 package net.docusign.event;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -91,7 +93,15 @@ public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
       .request()
       .get()
       .readEntity(EnvelopesInformation.class);
-    return info.getEnvelopes().stream().map(Envelope::getEnvelopeId).collect(Collectors.toList());
+    List<Envelope> envelopes = info.getEnvelopes();
+    if (envelopes == null)
+    {
+      return Collections.emptyList();
+    }
+    return envelopes.stream()
+      .map(Envelope::getEnvelopeId)
+      .filter(Objects::nonNull)
+      .collect(Collectors.toList());
   }
 
 }
