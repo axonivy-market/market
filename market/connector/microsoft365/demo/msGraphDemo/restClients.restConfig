@@ -12,13 +12,13 @@
                 <password>false</password>
             </property>
             <property>
-                <name>AUTH.clientSecret</name>
+                <name>AUTH.secretKey</name>
                 <value></value>
                 <password>true</password>
             </property>
             <property>
                 <name>AUTH.scope</name>
-                <value>user.read Calendars.ReadWrite mail.readWrite mail.send</value>
+                <value>user.read Calendars.ReadWrite mail.readWrite mail.send Tasks.ReadWrite</value>
                 <password>false</password>
             </property>
             <property>
