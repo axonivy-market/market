@@ -38,7 +38,7 @@ Before any signing interactions between the Axon.ivy Engine and the DocuSign eSi
    Your setup was correct, if you are being asked to authorize yourself with a docuSign account.
    ![docusign-auth](doc/images/docuSign_auth.png)
 
-### Allow System Authentication (JWT)
+### Optional: Allow System Authentication (JWT)
 
 The Demo process contains a final service part, where the Axon.ivy platform acts in the name of a user.
 ![docusign-props](doc/images/systemDrivenProcess.png)
@@ -54,13 +54,13 @@ This interaction requires a JWT authentication setup:
 	1. Save the changed application settings
 	1. Create a new empty text file called `docusign.pem` in your Designer 'configuration' directory
 	1. Paste the contents of your clipboard into the `docusign.pem` file
-	1. You can use another storage location for the pem file. Adjust the Rest Client Property `AUTH.systemKeyFile` to refere it. It should be a relative path to the 'configuration' directory or an absolute path on your system.
+	1. You can use another storage location for the pem file. Adjust the Rest Client Property `AUTH.systemKeyFile` to refer it. It should be a relative path to the 'configuration' directory or an absolute path on your system.
 ![docusign-pem](doc/images/docuSignPem.png)
 ![docusign-props](doc/images/docuSignSystemProps.png)
 
-1. Define a user to act a service user:
-	1. Navigate to users overview and select your preferred service user.
-	2. Copy the 'userID' stated on the user detail page
+1. Define a user to acts service account:
+	1. Navigate to the `Users` overview and select your preferred service user
+	2. Copy the `API Username (id)` stated on the user detail page
 	3. Set it as value on the DocuSign Rest Clients property called `AUTH.systemUserId`
 ![docusign-props](doc/images/copyUserId.png)
 
