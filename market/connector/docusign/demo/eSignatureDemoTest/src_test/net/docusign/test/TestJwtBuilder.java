@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
 import java.security.PrivateKey;
 import java.util.Properties;
 
@@ -23,12 +25,14 @@ import net.docusign.auth.OAuth2Feature.Property;
 public class TestJwtBuilder
 {
   @Test
-  void build()
+  void build() throws URISyntaxException
   {
+    Path testKeyFile = Path.of(TestJwtBuilder.class.getResource("testKey.pem").toURI());
     Properties p = new Properties();
     p.setProperty(Property.AUTH_BASE_URI, "https://account-d.docusign.com/oauth");
     p.setProperty(Property.CLIENT_ID, "24adbf4f-");
     p.setProperty(Property.SYSTEM_USER_ID, "ee1e53b6-");
+    p.setProperty(Property.SYSTEM_KEY_FILE, testKeyFile.toAbsolutePath().toString());
     p.setProperty(Property.SCOPE, "signature impersonation");
     FeatureConfig config = new FeatureConfig(configMock(p), TestJwtBuilder.class);
     
@@ -46,7 +50,7 @@ public class TestJwtBuilder
     PrivateKey secret = JwtFactory.readPrivateKeyFromByteArray(raw, "RSA");
     assertThat(secret.getEncoded()).startsWith(48,-126);
   }
-
+  
   private static byte[] read(String resource) throws IOException
   {
     try(InputStream is = TestJwtBuilder.class.getResourceAsStream(resource);
@@ -55,6 +59,15 @@ public class TestJwtBuilder
       IOUtils.copy(is, bos);
       return bos.toByteArray();
     }
+  }
+  
+  @Test
+  void pemReadKeyFile() throws URISyntaxException
+  {
+    Path testKeyFile = Path.of(TestJwtBuilder.class.getResource("testKey.pem").toURI());
+    byte[] raw = JwtFactory.getKey(testKeyFile);
+    PrivateKey secret = JwtFactory.readPrivateKeyFromByteArray(raw, "RSA");
+    assertThat(secret.getEncoded()).startsWith(48,-126);
   }
 
   private static Configuration configMock(Properties props)
