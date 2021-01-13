@@ -62,7 +62,7 @@ public class JwtFactory
       .setHeaderParam("typ", "JWT");
   }
 
-  private static byte[] getKey(Path privateKeyPem)
+  public static byte[] getKey(Path privateKeyPem)
   {
     try(InputStream is = Files.newInputStream(privateKeyPem, StandardOpenOption.READ);
       ByteArrayOutputStream os = new ByteArrayOutputStream())
