@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -51,7 +54,7 @@ public class JwtFactory
     URI authUri = URI.create(conf.readMandatory(OAuth2Feature.Property.AUTH_BASE_URI));
     return Jwts.builder()
       .setIssuer(conf.readMandatory(OAuth2Feature.Property.CLIENT_ID))
-      .setSubject(conf.readMandatory(OAuth2Feature.Property.USER_ID))
+      .setSubject(conf.readMandatory(OAuth2Feature.Property.SYSTEM_USER_ID))
       .setAudience(authUri.getHost())
       .claim("scope", OAuth2Feature.getScope(conf))
       .setIssuedAt(Date.from(Instant.now()))
@@ -59,10 +62,10 @@ public class JwtFactory
       .setHeaderParam("typ", "JWT");
   }
 
-  private static byte[] getKey()
+  private static byte[] getKey(Path privateKeyPem)
   {
-    try(InputStream is = JwtFactory.class.getResourceAsStream("sign-rew.pem");
-        ByteArrayOutputStream os = new ByteArrayOutputStream())
+    try(InputStream is = Files.newInputStream(privateKeyPem, StandardOpenOption.READ);
+      ByteArrayOutputStream os = new ByteArrayOutputStream())
     {
       IOUtils.copy(is, os);
       return os.toByteArray();
@@ -106,8 +109,14 @@ public class JwtFactory
     }
   }
   
-  private static PrivateKey getPrivateKey() 
+  @SuppressWarnings("restriction")
+  private PrivateKey getPrivateKey() 
   {
-    return readPrivateKeyFromByteArray(getKey(), "RSA");
+    Path keyFile = Path.of(conf.readMandatory(OAuth2Feature.Property.SYSTEM_KEY_FILE));
+    if (!keyFile.isAbsolute())
+    {
+      keyFile = ch.ivyteam.ivy.config.IFileAccess.instance().getConfigFile(keyFile.toString());
+    }
+    return readPrivateKeyFromByteArray(getKey(keyFile), "RSA");
   }
 }

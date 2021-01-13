@@ -28,7 +28,7 @@ public class TestJwtBuilder
     Properties p = new Properties();
     p.setProperty(Property.AUTH_BASE_URI, "https://account-d.docusign.com/oauth");
     p.setProperty(Property.CLIENT_ID, "24adbf4f-");
-    p.setProperty(Property.USER_ID, "ee1e53b6-");
+    p.setProperty(Property.SYSTEM_USER_ID, "ee1e53b6-");
     p.setProperty(Property.SCOPE, "signature impersonation");
     FeatureConfig config = new FeatureConfig(configMock(p), TestJwtBuilder.class);
     

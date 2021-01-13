@@ -17,6 +17,21 @@
                 <password>true</password>
             </property>
             <property>
+                <name>AUTH.systemUserId</name>
+                <value>user-id-for-system-calls</value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>AUTH.systemKeyFile</name>
+                <value></value>
+                <password>false</password>
+            </property>
+            <property>
+                <name>AUTH.scope</name>
+                <value>signature impersonation</value>
+                <password>false</password>
+            </property>
+            <property>
                 <name>AUTH.baseUri</name>
                 <value>https://account-d.docusign.com/oauth</value>
                 <password>false</password>
