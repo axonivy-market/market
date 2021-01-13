@@ -15,6 +15,15 @@
 							"groupId": "*", 
 							"artifactId": "*" 
 						} ]
+					},
+					{
+						"groupId": "io.jsonwebtoken",
+						"artifactId": "jjwt",
+						"version": "0.9.1",
+						"exclusions": [ { 
+							"groupId": "*", 
+							"artifactId": "*" 
+						} ]
 					}
 				]
 			}
@@ -28,6 +37,8 @@
 						"includes": [ 
 							"auth/UserUriFilter.java", 
 							"auth/OAuth2Feature.java", 
+							"auth/JwtFactory.java",
+							"event/EnvelopeCompleted.java",
 							"DocUtils.java",
 							"SignUtils.java"
 						],
@@ -63,6 +74,17 @@
 					{
 						"name": "AUTH.secretKey",
 						"password": true
+					},
+					{
+						"name": "AUTH.systemUserId"
+					},
+					{
+						"name": "AUTH.systemKeyFile",
+						"value": "docusign.pem"
+					},
+					{
+						"name": "AUTH.scope",
+						"value": "signature impersonation"
 					},
 					{
 						"name": "AUTH.baseUri",
