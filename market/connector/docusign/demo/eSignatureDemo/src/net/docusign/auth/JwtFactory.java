@@ -109,7 +109,7 @@ public class JwtFactory
     }
   }
   
-  @SuppressWarnings("restriction")
+  @SuppressWarnings("all")
   private PrivateKey getPrivateKey() 
   {
     Path keyFile = Path.of(conf.readMandatory(OAuth2Feature.Property.SYSTEM_KEY_FILE));

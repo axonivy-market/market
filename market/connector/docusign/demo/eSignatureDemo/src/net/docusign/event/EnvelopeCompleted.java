@@ -51,7 +51,7 @@ public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
     List<String> completedIds = getDocuSignEnvelope(envelopes);
     if (!completedIds.isEmpty())
     {
-      getEventBeanRuntime().getRuntimeLogLogger().debug("juhuu: envelopes are done >> "+completedIds);
+      getEventBeanRuntime().getRuntimeLogLogger().debug("envelopes have been signed: "+completedIds);
       try
       {
         for(String envelopeId : completedIds)
@@ -61,16 +61,13 @@ public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
       }
       catch (PersistencyException ex)
       {
-        // ===> Add here your exception handling code if the event cannot be processed <===
       }
     }
   }
 
   private static List<String> getEnvelopeIdsOfPendingCases()
   {
-    @SuppressWarnings("restriction")
-    TaskQuery query = new ch.ivyteam.ivy.workflow.internal.query.TaskQueryExecutorProvider()
-      .get().createTaskQuery();
+    TaskQuery query = TaskQuery.create();
     CaseQuery withEnvelope = CaseQuery.create().where()
       .customField().stringField("envelopeId").isNotNull();
     query = query.where().state().isEqual(TaskState.WAITING_FOR_INTERMEDIATE_EVENT)
