@@ -70,7 +70,8 @@
 						"name": "AUTH.systemUserId"
 					},
 					{
-						"name": "AUTH.systemKeyFile"
+						"name": "AUTH.systemKeyFile",
+						"value": "docusign.pem"
 					},
 					{
 						"name": "AUTH.scope",
