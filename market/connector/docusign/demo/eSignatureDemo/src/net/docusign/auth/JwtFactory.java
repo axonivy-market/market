@@ -21,6 +21,7 @@ import java.util.Base64;
 import java.util.Date;
 
 import org.apache.commons.io.IOUtils;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import io.jsonwebtoken.JwtBuilder;
@@ -80,8 +81,8 @@ public class JwtFactory
   {
     try
     {
-      KeyFactory kf = KeyFactory.getInstance(algorithm);
       byte[] enyKey = readPemBody(rawPkcsKeyContent);
+      KeyFactory kf = KeyFactory.getInstance(algorithm, new BouncyCastleProvider());
       EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(enyKey);
       return kf.generatePrivate(keySpec);
     }
