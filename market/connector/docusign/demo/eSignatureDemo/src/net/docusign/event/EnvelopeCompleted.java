@@ -23,6 +23,8 @@ import ch.ivyteam.ivy.workflow.query.TaskQuery;
 
 public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
 {
+  public static UUID DOCU_SIGN_CLIENT_ID = UUID.fromString("17e5dc27-5699-4717-ae6c-e2c8f1e2a30f");
+  
   public EnvelopeCompleted()
   {
     super("WaitForEnvelope", "Waits until envelopes are completed (signed by all participants)", String.class);
@@ -81,13 +83,11 @@ public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
 
   private static List<String> getDocuSignEnvelope(List<String> envelopeIds)
   {
-    UUID docuSignClientId = UUID.fromString("17e5dc27-5699-4717-ae6c-e2c8f1e2a30f");
-    EnvelopesInformation info = Ivy.rest().client(docuSignClientId)
+    EnvelopesInformation info = Ivy.rest().client(DOCU_SIGN_CLIENT_ID)
       .path("/v2.1/accounts/{accountId}/envelopes")
       .resolveTemplate("accountId", "placeholder")
       .queryParam("status", "completed")
       .queryParam("envelope_ids", envelopeIds.stream().collect(Collectors.joining(",")))
-      .property("session", "system") // enforce uncached 'OAuth2Feature' instance
       .request()
       .get()
       .readEntity(EnvelopesInformation.class);

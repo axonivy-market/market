@@ -67,6 +67,11 @@
                     <value>http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.request.application}/api/docuSignMock/oauth</value>
                     <password>false</password>
                 </property>
+                <property>
+                    <name>AUTH.systemUserId</name>
+                    <value>test-user</value>
+                    <password>false</password>
+                </property>
                 <feature>
                     <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
                 </feature>
