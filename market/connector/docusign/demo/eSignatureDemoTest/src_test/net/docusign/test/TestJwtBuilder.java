@@ -5,15 +5,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.security.PrivateKey;
 import java.util.Properties;
-
-import javax.ws.rs.core.Configuration;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
@@ -34,7 +29,7 @@ public class TestJwtBuilder
     p.setProperty(Property.SYSTEM_USER_ID, "ee1e53b6-");
     p.setProperty(Property.SYSTEM_KEY_FILE, testKeyFile.toAbsolutePath().toString());
     p.setProperty(Property.SCOPE, "signature impersonation");
-    FeatureConfig config = new FeatureConfig(configMock(p), TestJwtBuilder.class);
+    FeatureConfig config = new FeatureConfig(key -> p.getProperty(key), TestJwtBuilder.class);
     
     String jwtToken = new JwtFactory(config).createToken();
     assertThat(jwtToken).isNotNull();
@@ -68,20 +63,5 @@ public class TestJwtBuilder
     byte[] raw = JwtFactory.getKey(testKeyFile);
     PrivateKey secret = JwtFactory.readPrivateKeyFromByteArray(raw, "RSA");
     assertThat(secret.getEncoded()).startsWith(48,-126);
-  }
-
-  private static Configuration configMock(Properties props)
-  {
-    Configuration proxyElement = (Configuration) Proxy.newProxyInstance(Configuration.class.getClassLoader(), 
-    new Class[]{Configuration.class}, 
-    new InvocationHandler()
-    {
-      @Override
-      public Object invoke(Object proxy, Method method, Object[] args) throws Throwable
-      {
-        return props.getProperty((String) args[0]);
-      }
-    });
-    return proxyElement;
   }
 }
