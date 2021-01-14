@@ -73,9 +73,9 @@ public class UserUriFilter implements javax.ws.rs.client.ClientRequestFilter
     
     JsonNode first = accounts.get(0);
     URI baseUri = URI.create(first.get("base_uri").asText());
-    URI userUri = UriBuilder.fromUri(baseUri).path("/restapi/v2.1/accounts/{myId}/{resource}")
+    URI userUri = UriBuilder.fromUri(baseUri).path("/restapi/v2.1/accounts/{myId}")
       .resolveTemplate("myId", first.get("account_id").asText())
-      .resolveTemplate("resource", resource)
+      .path(resource)
       .replaceQuery(rawQuery)
       .build();
     Ivy.log().debug("patched user URI: "+userUri);

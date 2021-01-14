@@ -19,6 +19,7 @@ import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
+import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 import net.docusign.auth.JwtFactory;
 import net.docusign.auth.OAuth2Feature.Property;
 
@@ -36,7 +37,9 @@ public class TestJwtBuilder
     p.setProperty(Property.SCOPE, "signature impersonation");
     FeatureConfig config = new FeatureConfig(configMock(p), TestJwtBuilder.class);
     
-    String jwtToken = new JwtFactory(config).createToken();
+    var docuSignUri = new OAuth2UriProperty(config, Property.AUTH_BASE_URI, "https://account-d.docusign.com/oauth");
+    docuSignUri.setResolveIvyUriTemplates(false);
+    String jwtToken = new JwtFactory(config, docuSignUri).createToken();
     assertThat(jwtToken).isNotNull();
     System.out.println(jwtToken);
   }

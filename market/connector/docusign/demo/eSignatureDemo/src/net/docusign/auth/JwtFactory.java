@@ -5,7 +5,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -24,6 +23,7 @@ import org.apache.commons.io.IOUtils;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
+import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -37,10 +37,12 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class JwtFactory
 {
   private final FeatureConfig conf;
+  private final OAuth2UriProperty uriFactory;
 
-  public JwtFactory(FeatureConfig conf)
+  public JwtFactory(FeatureConfig conf, OAuth2UriProperty uriFactory)
   {
     this.conf = conf;
+    this.uriFactory = uriFactory;
   }
   
   public String createToken()
@@ -52,11 +54,10 @@ public class JwtFactory
 
   private JwtBuilder build()
   {
-    URI authUri = URI.create(conf.readMandatory(OAuth2Feature.Property.AUTH_BASE_URI));
     return Jwts.builder()
       .setIssuer(conf.readMandatory(OAuth2Feature.Property.CLIENT_ID))
       .setSubject(conf.readMandatory(OAuth2Feature.Property.SYSTEM_USER_ID))
-      .setAudience(authUri.getHost())
+      .setAudience(uriFactory.getTokenUri().getHost())
       .claim("scope", OAuth2Feature.getScope(conf))
       .setIssuedAt(Date.from(Instant.now()))
       .setExpiration(Date.from(Instant.now().plus(1l, ChronoUnit.HOURS)))

@@ -48,21 +48,21 @@ public class OAuth2Feature implements Feature
   {
     var config = new FeatureConfig(context.getConfiguration(), OAuth2Feature.class);
     var docuSignUri = new OAuth2UriProperty(config, Property.AUTH_BASE_URI, "https://account-d.docusign.com/oauth");
-    ISession session = Ivy.session();
     var oauth2 = new OAuth2BearerFilter(
-      ctxt -> requestToken(ctxt, docuSignUri, session), 
+      ctxt -> requestToken(ctxt, docuSignUri), 
       docuSignUri
     );
     context.register(oauth2, Priorities.AUTHORIZATION);
-    context.register(new UserUriFilter(session, docuSignUri), Priorities.AUTHORIZATION+10);
+    context.register(new UserUriFilter(ISession.current(), docuSignUri), Priorities.AUTHORIZATION+10);
     return true;
   }
   
-  private static Response requestToken(AuthContext ctxt, OAuth2UriProperty uriFactory, ISession session)
+  private static Response requestToken(AuthContext ctxt, OAuth2UriProperty uriFactory)
   {
-    if (session.getIdentifier() == ISecurityConstants.SYSTEM_USER_SESSION_ID)
+    ISession current = ISession.current();
+    if (current.getIdentifier() == ISecurityConstants.SYSTEM_USER_SESSION_ID)
     {
-      return jwtGrantToken(ctxt);
+      return jwtGrantToken(ctxt, uriFactory);
     }
     return webUserGrantToken(ctxt, uriFactory);
   }
@@ -115,9 +115,9 @@ public class OAuth2Feature implements Feature
         .withMessage("Missing permission from user to act in his name.");
   }
 
-  private static Response jwtGrantToken(AuthContext ctxt)
+  private static Response jwtGrantToken(AuthContext ctxt, OAuth2UriProperty uriFactory)
   {
-    String token = new JwtFactory(ctxt.config).createToken();
+    String token = new JwtFactory(ctxt.config, uriFactory).createToken();
     var authRequest = new DocuSignJwtRequest(token);
     var response = ctxt.target
         .request()
