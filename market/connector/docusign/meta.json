@@ -24,6 +24,11 @@
 							"groupId": "*", 
 							"artifactId": "*" 
 						} ]
+					},
+					{
+						"groupId": "org.bouncycastle",
+						"artifactId": "bcprov-jdk15on",
+						"version": "1.60"
 					}
 				]
 			}

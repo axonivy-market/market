@@ -87,6 +87,7 @@ public class EnvelopeCompleted extends AbstractProcessIntermediateEventBean
       .resolveTemplate("accountId", "placeholder")
       .queryParam("status", "completed")
       .queryParam("envelope_ids", envelopeIds.stream().collect(Collectors.joining(",")))
+      .property("session", "system") // enforce uncached 'OAuth2Feature' instance
       .request()
       .get()
       .readEntity(EnvelopesInformation.class);
