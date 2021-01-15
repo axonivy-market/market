@@ -4,13 +4,16 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ## Outlook Demo
 
-Mail:
+Mail
+
 ![demo-mail](doc/img/demo_mail.png)
 
-Calendar:
+Calendar
+
 ![demo-cal](doc/img/demo_calendar.png)
 
-ToDo:
+ToDo
+
 ![demo-toDo](doc/img/demo_toDo.png)
 
 ## Setup
