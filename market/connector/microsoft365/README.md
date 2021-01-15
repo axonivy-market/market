@@ -12,5 +12,14 @@ tbd
     1. Create a new secret by pressing `New client secret`. And select any validity period.
     ![new-secret](doc/img/azure_createSecret.png)
 	1. copy the value of the generated secret into Rest Client Definition property `AUTH.secretKey`.
-	![new-secret](doc/img/azure_copySecret.png)
+	![copy-secret](doc/img/azure_copySecret.png)
+1. Navigate to `API Permissions` in the Azure App menu.
+Add permissions via `Add a permission` > `Microsoft Graph` > `Delegated permissions`
+The following permission must be granted:
+	- User.Read
+	- Calendars.ReadWrite
+	- Mail.ReadWrite
+	- Tasks.ReadWrite
+    ![add-perms](doc/img/azure_addPermission.png)
+
 1. Done. Start any process that connects with Microsoft 365.
