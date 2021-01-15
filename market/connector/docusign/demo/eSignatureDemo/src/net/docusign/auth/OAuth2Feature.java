@@ -9,11 +9,8 @@ import javax.ws.rs.core.FeatureContext;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 
-import org.apache.commons.lang3.StringUtils;
-
 import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
 import ch.ivyteam.ivy.environment.Ivy;
-import ch.ivyteam.ivy.request.IRequest;
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
@@ -69,8 +66,8 @@ public class OAuth2Feature implements Feature
 
   private static Response webUserGrantToken(AuthContext ctxt, OAuth2UriProperty uriFactory)
   {
-    String authCode = IRequest.current().getFirstParameter("code");
-    if (StringUtils.isBlank(authCode))
+    var authCode = ctxt.authCode();
+    if (authCode.isEmpty())
     {
       authRedirectError(ctxt.config, uriFactory).throwError();
     }
@@ -78,7 +75,7 @@ public class OAuth2Feature implements Feature
     var clientId = ctxt.config.readMandatory(Property.CLIENT_ID);
     var userKey = ctxt.config.readMandatory(Property.USER_KEY); 
     var basicAuth = HttpBasicAuthenticationFeature.basic(clientId, userKey); 
-    var authRequest = new DocuSignAuthRequest(authCode);
+    var authRequest = new DocuSignAuthRequest(authCode.get());
     
     var response = ctxt.target
         .register(basicAuth)
