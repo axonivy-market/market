@@ -1,7 +1,6 @@
 {
 	"id": "msgraph",
-	"name": "Microsoft 365",
-	"listed": false,
+	"name": "Microsoft 365 (Preview)",
 	"tags": ["connector", "outlook"],
 	"installers": [
 		{
