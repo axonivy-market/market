@@ -38,12 +38,13 @@ Before any signing interactions between the Axon.ivy Engine and the DocuSign eSi
    Your setup was correct, if you are being asked to authorize yourself with a docuSign account.
    ![docusign-auth](doc/images/docuSign_auth.png)
 
+
 ### Optional: Allow System Authentication (JWT)
 
 The Demo process contains a final service part, where the Axon.ivy platform acts in the name of a user.
 ![docusign-props](doc/images/systemDrivenProcess.png)
 
-This interaction requires a JWT authentication setup:
+This interaction requires a JSON Web Token (JWT) authentication setup:
 
 1. Edit the docuSign `application` as in step 3. of the general setup.
 1. In the section `Authentication` click on `Generate RSA` in order to create a secure key-pair.
@@ -58,7 +59,7 @@ This interaction requires a JWT authentication setup:
 ![docusign-pem](doc/images/docuSignPem.png)
 ![docusign-props](doc/images/docuSignSystemProps.png)
 
-1. Define a user to acts service account:
+1. Define a user to act as service account:
 	1. Navigate to the `Users` overview and select your preferred service user
 	2. Copy the `API Username (id)` stated on the user detail page
 	3. Set it as value on the DocuSign Rest Clients property called `AUTH.systemUserId`
