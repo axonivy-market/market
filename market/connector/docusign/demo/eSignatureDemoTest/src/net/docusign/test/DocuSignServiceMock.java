@@ -60,9 +60,9 @@ public class DocuSignServiceMock
   @GET
   @Produces(MediaType.APPLICATION_OCTET_STREAM)
   @Path("envelopes/{envId}/documents/{docId}")
-  public Response downloadDoc(@PathParam("envd") String envId, @PathParam("docId") String docId) throws IOException
+  public Response downloadDoc(@PathParam("envId") String envId, @PathParam("docId") String docId) throws IOException
   {
-    java.nio.file.Path signed = Files.createTempFile("signedDoc", ".rtf.txt");
+    java.nio.file.Path signed = Files.createTempFile("signedDoc", ".pdf.txt");
     Files.writeString(signed, "thanks for signing!", StandardOpenOption.CREATE);
     return Response.ok()
       .entity(signed.toFile())
