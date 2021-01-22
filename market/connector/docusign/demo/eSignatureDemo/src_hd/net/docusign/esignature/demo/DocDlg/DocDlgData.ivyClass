@@ -1,0 +1,4 @@
+DocDlgData #class
+net.docusign.esignature.demo.DocDlg #namespace
+file File #field
+file PERSISTENT #fieldModifier
