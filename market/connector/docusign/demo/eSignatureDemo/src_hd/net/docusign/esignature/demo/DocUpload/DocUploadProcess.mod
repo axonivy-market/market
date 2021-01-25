@@ -55,11 +55,11 @@ Ds0 f7 109 160 176 160 #arcP
 Ds0 f5 expr in #txt
 Ds0 f5 outCond in.file.isFile() #txt
 Ds0 f5 208 160 275 160 #arcP
-Ds0 f8 errorCode no_valid_pdf_document #txt
+Ds0 f8 errorCode not_valid_document #txt
 Ds0 f8 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>no_valid_pdf_document</name>
+        <name>not_valid_document</name>
     </language>
 </elementInfo>
 ' #txt

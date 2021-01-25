@@ -10,18 +10,18 @@
 		<ui:define name="title">DocUpload</ui:define>
 		<ui:define name="content">
 
-			<h3>Upload pdf document to be signed</h3>
+			<h3>Upload a document to be signed</h3>
 
 			<h:form id="form" enctype="multipart/form-data">
 				<p:messages />
 				<p:panelGrid columns="2" layout="grid" styleClass="ui-panelgrid-blank"
-					columnClasses="ui-g-12 ui-md-3 ui-lg-2, 
-						ui-g-12 ui-md-9 ui-lg-4, 
+					columnClasses="ui-g-12 ui-md-3 ui-lg-3, 
+						ui-g-12 ui-md-9 ui-lg-3, 
 						ui-g-12 ui-md-3 ui-lg-2, 
 						ui-g-12 ui-md-9 ui-lg-4">
-				<p:outputLabel  value="PDF Document" />
+				<p:outputLabel  value="Document (pdf, doc, docx, rtf)" />
 				<p:fileUpload id="file" value="#{data.file}" mode="simple"
-					skinSimple="true" label="Browse " allowTypes="/(\.|\/)(pdf|pdf)$/" />
+					skinSimple="true" label="Browse " allowTypes="/(\.|\/)(pdf|doc|docx|rtf)$/" />
 
 				<br />
 				</p:panelGrid>
