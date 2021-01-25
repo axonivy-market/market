@@ -72,6 +72,11 @@
                     <value>test-user</value>
                     <password>false</password>
                 </property>
+                <property>
+                    <name>AUTH.systemKeyFile</name>
+                    <value>testKey.pem</value>
+                    <password>false</password>
+                </property>
                 <feature>
                     <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
                 </feature>
