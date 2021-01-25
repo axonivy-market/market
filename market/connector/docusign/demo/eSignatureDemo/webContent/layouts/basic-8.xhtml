@@ -15,10 +15,8 @@
   <link rel="shortcut icon" href="#{resource['ivy-webcontent:layouts/images/ivy_favicon_48.png']}" />
   <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout" />
   <h:outputStylesheet name="layouts/styles/ivy-common-8.css" />
-  <h:outputStylesheet name="layouts/styles/progress-loader.css" />
 </h:head>
 <h:body>
-  <ui:include src="/layouts/includes/progress-loader.xhtml" />
   <ui:insert name="header">
     <div class="navbar navbar-top">
       <div class="container" id="headerdiv">
@@ -38,14 +36,10 @@
 
     <ui:insert name="footer">
       <hr />
-      <footer>
-        <ui:include src="/layouts/includes/footer.xhtml" />
-      </footer>
     </ui:insert>
   </div>
   
   <ui:insert name="exception">
-    <ui:include src="/layouts/includes/exception.xhtml" />
   </ui:insert>
 </h:body>
 </html>
