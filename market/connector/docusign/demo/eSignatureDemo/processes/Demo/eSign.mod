@@ -35,11 +35,11 @@ st0 @UserTask f10 '' #zField
 st0 @TkArc f16 '' #zField
 st0 @PushWFArc f17 '' #zField
 st0 @PushWFArc f18 '' #zField
-st0 @PushWFArc f3 '' #zField
 st0 @UserDialog f2 '' #zField
 st0 @PushWFArc f8 '' #zField
 st0 @PushWFArc f26 '' #zField
 st0 @PushWFArc f31 '' #zField
+st0 @PushWFArc f3 '' #zField
 >Proto st0 st0 eSign #zField
 st0 f0 outLink startWf.ivp #txt
 st0 f0 inParamDecl '<> param;' #txt
@@ -234,7 +234,7 @@ st0 f24 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-st0 f24 408 106 112 44 -51 -7 #rect
+st0 f24 416 106 112 44 -51 -7 #rect
 st0 f25 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f25 path /v2.1/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId} #txt
 st0 f25 queryParams 'documents_by_userid=;
@@ -253,7 +253,8 @@ documentId=in.documents.get(0).documentId;
 ' #txt
 st0 f25 resultType java.io.File #txt
 st0 f25 responseCode 'ivy.log.info("file: "+result);
-ivy.case.documents().add(in.documents.get(0).name).write().withContentFrom(result);
+String document = org.apache.commons.io.FilenameUtils.removeExtension(in.documents.get(0).name)+".pdf";
+ivy.case.documents().add(document).write().withContentFrom(result);
 result.delete();
 
 ' #txt
@@ -270,9 +271,9 @@ signed doc</name>
 st0 f25 680 298 112 44 -34 -15 #rect
 st0 f27 576 223 576 298 #arcP
 st0 f28 632 320 680 320 #arcP
-st0 f30 648 78 464 106 #arcP
+st0 f30 648 78 520 106 #arcP
 st0 f30 0 0.997157383802287 0 0 #arcLabel
-st0 f1 376 128 408 128 #arcP
+st0 f1 376 128 416 128 #arcP
 st0 f4 dialogId net.docusign.esignature.demo.DocUpload #txt
 st0 f4 startMethod start(File) #txt
 st0 f4 requestActionDecl '<File file> param;' #txt
@@ -308,7 +309,7 @@ st0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 st0 f5 560 112 32 32 4 24 #rect
 st0 f32 817 113 30 30 0 15 #rect
 st0 f9 var in1 #txt
-st0 f9 520 128 560 128 #arcP
+st0 f9 528 128 560 128 #arcP
 st0 f10 dialogId net.docusign.esignature.demo.DocDlg #txt
 st0 f10 startMethod start(File) #txt
 st0 f10 requestActionDecl '<File file> param;' #txt
@@ -333,7 +334,6 @@ st0 f17 952 320 977 320 #arcP
 st0 f18 expr data #txt
 st0 f18 outCond ivp=="TaskB.ivp" #txt
 st0 f18 576 144 576 193 #arcP
-st0 f3 232 128 264 128 #arcP
 st0 f2 dialogId net.docusign.esignature.demo.DocSign #txt
 st0 f2 startMethod start(File,String) #txt
 st0 f2 requestActionDecl '<File file,String envelopeId> param;' #txt
@@ -356,6 +356,7 @@ st0 f8 592 128 640 128 #arcP
 st0 f26 768 128 817 128 #arcP
 st0 f31 79 128 120 128 #arcP
 st0 f31 0 0.5168859649122807 0 0 #arcLabel
+st0 f3 232 128 264 128 #arcP
 >Proto st0 .type net.docusign.esignature.demo.Data #txt
 >Proto st0 .processKind NORMAL #txt
 >Proto st0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -386,8 +387,6 @@ st0 f15 ao f30 tail #connect
 st0 f30 head f24 @CG|ai #connect
 st0 f6 mainOut f1 tail #connect
 st0 f1 head f24 mainIn #connect
-st0 f4 mainOut f3 tail #connect
-st0 f3 head f6 mainIn #connect
 st0 f24 mainOut f9 tail #connect
 st0 f9 head f5 in #connect
 st0 f25 mainOut f16 tail #connect
@@ -402,3 +401,5 @@ st0 f2 mainOut f26 tail #connect
 st0 f26 head f32 mainIn #connect
 st0 f0 mainOut f31 tail #connect
 st0 f31 head f4 mainIn #connect
+st0 f4 mainOut f3 tail #connect
+st0 f3 head f6 mainIn #connect
