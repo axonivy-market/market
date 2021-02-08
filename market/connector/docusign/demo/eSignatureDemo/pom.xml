@@ -75,7 +75,7 @@
           <properties>
             <openapi.url>https://github.com/docusign/eSign-OpenAPI-Specification/raw/master/esignature.rest.swagger-v2.1.json</openapi.url>
             <openapi.namespace>com.docusign.esign.model</openapi.namespace>
-            <openapi.jar>${basedir}/lib_generated/client/jaxRsClient_17e5dc27-5699-4717-ae6c-e2c8f1e2a30f.jar</openapi.jar>
+            <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_17e5dc27-5699-4717-ae6c-e2c8f1e2a30f.jar</openapi.jar>
             <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
             <openapi.skipCodegen>true</openapi.skipCodegen>
           </properties>
