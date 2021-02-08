@@ -34,18 +34,7 @@
 						"genderize.io.enterForm", 
 						"genderize.io.showSalutationForm" 
 					]
-				},
-				"directories": [
-					{
-						"source": "demo/genderizeIoDemo/webContent/layouts",
-						"includes": [ 
-							"basic-8.xhtml", 
-							"styles/ivy-common-8.css", 
-							"images/axon_ivy_logo.svg"
-						],
-						"path": "webContent/layouts"
-					}
-				]
+				}
 			}
 		},
 		{
