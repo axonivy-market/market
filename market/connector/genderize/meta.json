@@ -27,27 +27,15 @@
 						"path": "processes/genderizeDemo.mod"
 					}
 				],
+				"dialog":
+				{
+					"source": "demo/genderizeIoDemo/src_hd",
+					"ids": [ 
+						"genderize.io.enterForm", 
+						"genderize.io.showSalutationForm" 
+					]
+				},
 				"directories": [
-					{
-						"source": "demo/genderizeIoDemo/src_hd/genderize/io/enterForm",
-						"includes": [ 
-							"enterFormData.ivyClass", 
-							"enterForm.rddescriptor", 
-							"enterFormProcess.mod", 
-							"enterForm.xhtml"
-						],
-						"path": "src_hd/genderize/io/enterForm"
-					},
-					{
-						"source": "demo/genderizeIoDemo/src_hd/genderize/io/showSalutationForm",
-						"includes": [ 
-							"showSalutationFormData.ivyClass", 
-							"showSalutationForm.rddescriptor", 
-							"showSalutationFormProcess.mod", 
-							"showSalutationForm.xhtml"
-						],
-						"path": "src_hd/genderize/io/showSalutationForm"
-					},
 					{
 						"source": "demo/genderizeIoDemo/webContent/layouts",
 						"includes": [ 
