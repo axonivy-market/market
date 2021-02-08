@@ -46,7 +46,7 @@
           <properties>
             <openapi.url>https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json</openapi.url>
             <openapi.namespace>com.uipath.orchestrator</openapi.namespace>
-            <openapi.jar>${basedir}/lib_generated/client/jaxRsClient_699e715f-63b1-4355-a974-ee3cac26985e.jar</openapi.jar>
+            <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_699e715f-63b1-4355-a974-ee3cac26985e.jar</openapi.jar>
             <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
           </properties>
         </configuration>
