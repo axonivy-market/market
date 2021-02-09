@@ -4,6 +4,7 @@
         <uuid>699e715f-63b1-4355-a974-ee3cac26985e</uuid>
         <name>UI Path RPA (UiPath.WebApi 11.0)</name>
         <description>Orchestrator API</description>
+        <icon>res:/icons/uipath.png</icon>
         <configuration>
             <uri>https://platform.uipath.com/</uri>
             <property>

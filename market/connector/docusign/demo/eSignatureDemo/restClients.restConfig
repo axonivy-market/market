@@ -4,6 +4,7 @@
         <uuid>17e5dc27-5699-4717-ae6c-e2c8f1e2a30f</uuid>
         <name>DocuSign eSignature (DocuSign REST API)</name>
         <description>The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign.</description>
+        <icon>res:/icons/docusign.png</icon>
         <configuration>
             <uri>https://www.docusign.net/restapi</uri>
             <property>
