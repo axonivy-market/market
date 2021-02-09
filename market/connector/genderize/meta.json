@@ -27,37 +27,14 @@
 						"path": "processes/genderizeDemo.mod"
 					}
 				],
-				"directories": [
-					{
-						"source": "demo/genderizeIoDemo/src_hd/genderize/io/enterForm",
-						"includes": [ 
-							"enterFormData.ivyClass", 
-							"enterForm.rddescriptor", 
-							"enterFormProcess.mod", 
-							"enterForm.xhtml"
-						],
-						"path": "src_hd/genderize/io/enterForm"
-					},
-					{
-						"source": "demo/genderizeIoDemo/src_hd/genderize/io/showSalutationForm",
-						"includes": [ 
-							"showSalutationFormData.ivyClass", 
-							"showSalutationForm.rddescriptor", 
-							"showSalutationFormProcess.mod", 
-							"showSalutationForm.xhtml"
-						],
-						"path": "src_hd/genderize/io/showSalutationForm"
-					},
-					{
-						"source": "demo/genderizeIoDemo/webContent/layouts",
-						"includes": [ 
-							"basic-8.xhtml", 
-							"styles/ivy-common-8.css", 
-							"images/axon_ivy_logo.svg"
-						],
-						"path": "webContent/layouts"
-					}
-				]
+				"dialog":
+				{
+					"source": "demo/genderizeIoDemo/src_hd",
+					"ids": [ 
+						"genderize.io.enterForm", 
+						"genderize.io.showSalutationForm" 
+					]
+				}
 			}
 		},
 		{
