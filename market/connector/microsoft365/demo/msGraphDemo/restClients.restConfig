@@ -4,6 +4,7 @@
         <uuid>007036dc-72d1-429f-88a7-ba5d5cf5ae58</uuid>
         <name>Microsoft 365 (Partial Graph API)</name>
         <description>This OData service is located at https://graph.microsoft.com/v1.0</description>
+        <icon>res:/icons/microsoft.png</icon>
         <configuration>
             <uri>https://graph.microsoft.com/v1.0/</uri>
             <property>

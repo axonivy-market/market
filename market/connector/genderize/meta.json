@@ -8,6 +8,7 @@
 			"data": {
 				"openApiUrl": "openapi.json",
 				"namespace": "io.genderize",
+				"icon": "res:/icons/genderize.png",
 				"clientId": "2fefdb40-b37e-417d-a7b9-3c499183003b", 
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
@@ -25,6 +26,10 @@
 					{
 						"source": "demo/genderizeIoDemo/processes/genderizeDemo.mod",
 						"path": "processes/genderizeDemo.mod"
+					},
+					{
+						"source": "demo/genderizeIoDemo/icons/genderize.png",
+						"path": "icons/genderize.png"
 					}
 				],
 				"directories": [

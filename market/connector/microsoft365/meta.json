@@ -14,6 +14,12 @@
 						],
 						"path": "src/com/microsoft"
 					}
+				],
+				"resources": [
+					{
+						"source": "demo/msGraphDemo/icons/microsoft.png",
+						"path": "icons/microsoft.png"
+					}
 				]
 			}
 		},
@@ -22,6 +28,7 @@
 			"data": {
 				"openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell",
 				"namespace": "com.microsoft.graph",
+				"icon": "res:/icons/microsoft.png",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
 					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",

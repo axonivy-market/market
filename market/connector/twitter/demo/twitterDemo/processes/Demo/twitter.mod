@@ -33,9 +33,7 @@ tr0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 tr0 f0 @C|.responsibility Everybody #txt
 tr0 f0 81 49 30 30 -45 21 #rect
-tr0 f0 @|StartRequestIcon #fIcon
 tr0 f1 561 49 30 30 0 15 #rect
-tr0 f1 @|EndIcon #fIcon
 tr0 f3 clientId 0b74edb8-5459-4ccc-aac7-505531e06398 #txt
 tr0 f3 path /2/users/by/username/{username} #txt
 tr0 f3 queryParams 'ids=;
@@ -58,7 +56,7 @@ tr0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 tr0 f3 168 42 112 44 -27 -7 #rect
-tr0 f3 @|RestClientCallIcon #fIcon
+tr0 f3 res:/icons/twitter.png #fDecoratorIcon
 tr0 f4 111 64 168 64 #arcP
 tr0 f7 dialogId com.twitter.demo.Tweets #txt
 tr0 f7 startMethod start(String) #txt
@@ -75,7 +73,6 @@ tr0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 tr0 f7 360 42 112 44 -22 -7 #rect
-tr0 f7 @|UserDialogIcon #fIcon
 tr0 f2 472 64 561 64 #arcP
 tr0 f5 280 64 360 64 #arcP
 tr0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -86,7 +83,6 @@ tr0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 tr0 f6 304 137 224 30 -103 -7 #rect
-tr0 f6 @|IBIcon #fIcon
 tr0 f8 416 137 416 86 #arcP
 >Proto tr0 .type com.twitter.demo.Data #txt
 >Proto tr0 .processKind NORMAL #txt
