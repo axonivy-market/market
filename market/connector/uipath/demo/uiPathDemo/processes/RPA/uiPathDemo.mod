@@ -18,7 +18,6 @@ uo0 @InfoButton f12 '' #zField
 uo0 @AnnotationArc f5 '' #zField
 >Proto uo0 uo0 uiPathDemo #zField
 uo0 f1 337 49 30 30 0 15 #rect
-uo0 f1 @|EndIcon #fIcon
 uo0 f9 outLink robotGetOrders.ivp #txt
 uo0 f9 inParamDecl '<> param;' #txt
 uo0 f9 requestEnabled true #txt
@@ -36,7 +35,6 @@ GetOrders.ivp</name>
 ' #txt
 uo0 f9 @C|.responsibility Everybody #txt
 uo0 f9 81 49 30 30 -30 19 #rect
-uo0 f9 @|StartRequestIcon #fIcon
 uo0 f0 processCall RPA/uiPathRpa:startJob(String) #txt
 uo0 f0 requestActionDecl '<String job> param;' #txt
 uo0 f0 requestMappingAction 'param.job="getOrders";
@@ -51,7 +49,7 @@ uo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uo0 f0 168 42 112 44 -47 -7 #rect
-uo0 f0 @|BpmnServiceTaskIcon #fIcon
+uo0 f0 res:/icons/uipath.png #fDecoratorIcon
 uo0 f3 280 64 337 64 #arcP
 uo0 f2 111 64 168 64 #arcP
 uo0 f4 actionTable 'out=in;
@@ -67,7 +65,6 @@ uo0 f4 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uo0 f4 81 241 30 30 -29 15 #rect
-uo0 f4 @|ExceptionIcon #fIcon
 uo0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -83,7 +80,6 @@ uo0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uo0 f12 160 216 336 80 -161 -30 #rect
-uo0 f12 @|IBIcon #fIcon
 uo0 f5 160 256 111 256 #arcP
 >Proto uo0 .type com.uipath.connector.UiPathDemoData #txt
 >Proto uo0 .processKind NORMAL #txt
