@@ -193,6 +193,7 @@ uh0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uh0 f14 73 49 30 30 -15 17 #rect
+uh0 f14 res:/icons/uipath.png?small #fDecoratorIcon
 uh0 f15 593 289 30 30 0 15 #rect
 uh0 f17 103 64 248 64 #arcP
 uh0 f9 536 304 593 304 #arcP
