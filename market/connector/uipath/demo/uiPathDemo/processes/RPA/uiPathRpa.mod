@@ -47,7 +47,7 @@ Read License</name>
 </elementInfo>
 ' #txt
 uh0 f3 248 42 128 44 -40 -15 #rect
-uh0 f3 @|RestClientCallIcon #fIcon
+uh0 f3 res:/icons/uipath.png #fDecoratorIcon
 uh0 f5 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f5 path /odata/Jobs #txt
 uh0 f5 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
@@ -67,7 +67,7 @@ Read Jobs</name>
 </elementInfo>
 ' #txt
 uh0 f5 408 42 128 44 -40 -15 #rect
-uh0 f5 @|RestClientCallIcon #fIcon
+uh0 f5 res:/icons/uipath.png #fDecoratorIcon
 uh0 f6 376 64 408 64 #arcP
 uh0 f0 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f0 path /odata/Robots #txt
@@ -99,7 +99,7 @@ Read Robots</name>
 </elementInfo>
 ' #txt
 uh0 f0 408 122 128 44 -40 -15 #rect
-uh0 f0 @|RestClientCallIcon #fIcon
+uh0 f0 res:/icons/uipath.png #fDecoratorIcon
 uh0 f2 472 86 472 122 #arcP
 uh0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -114,7 +114,6 @@ on the UIPath orchestration platform</name>
 </elementInfo>
 ' #txt
 uh0 f7 80 130 272 60 -133 -22 #rect
-uh0 f7 @|IBIcon #fIcon
 uh0 f22 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f22 path /odata/Releases #txt
 uh0 f22 queryParams '$$filter="contains(ProcessKey, ''order'')";
@@ -137,7 +136,7 @@ Read Releases</name>
 </elementInfo>
 ' #txt
 uh0 f22 408 202 128 44 -43 -15 #rect
-uh0 f22 @|RestClientCallIcon #fIcon
+uh0 f22 res:/icons/uipath.png #fDecoratorIcon
 uh0 f24 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f24 path /odata/Jobs/UiPath.Server.Configuration.OData.StartJobs #txt
 uh0 f24 method POST #txt
@@ -176,7 +175,7 @@ Start Job</name>
 </elementInfo>
 ' #txt
 uh0 f24 408 282 128 44 -40 -15 #rect
-uh0 f24 @|RestClientCallIcon #fIcon
+uh0 f24 res:/icons/uipath.png #fDecoratorIcon
 uh0 f4 472 166 472 202 #arcP
 uh0 f8 472 246 472 282 #arcP
 uh0 f14 inParamDecl '<String job> param;' #txt
@@ -194,9 +193,7 @@ uh0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uh0 f14 73 49 30 30 -15 17 #rect
-uh0 f14 @|StartSubIcon #fIcon
 uh0 f15 593 289 30 30 0 15 #rect
-uh0 f15 @|EndSubIcon #fIcon
 uh0 f17 103 64 248 64 #arcP
 uh0 f9 536 304 593 304 #arcP
 uh0 f9 0 0.14267180925666198 0 0 #arcLabel
