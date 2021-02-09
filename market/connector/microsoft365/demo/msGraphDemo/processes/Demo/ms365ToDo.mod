@@ -39,9 +39,7 @@ mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f0 @C|.responsibility Everybody #txt
 mo0 f0 81 49 30 30 -25 17 #rect
-mo0 f0 @|StartRequestIcon #fIcon
 mo0 f1 497 49 30 30 0 15 #rect
-mo0 f1 @|EndIcon #fIcon
 mo0 f3 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f3 path /me/todo/lists #txt
 mo0 f3 resultType com.microsoft.graph.CollectionOfTodoTaskList #txt
@@ -58,7 +56,7 @@ Lists</name>
 </elementInfo>
 ' #txt
 mo0 f3 168 42 112 44 -34 -15 #rect
-mo0 f3 @|RestClientCallIcon #fIcon
+mo0 f3 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f4 111 64 168 64 #arcP
 mo0 f5 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f5 path /me/todo/lists/{todoTaskList-id}/tasks #txt
@@ -86,7 +84,7 @@ mo0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 mo0 f5 328 42 112 44 -36 -7 #rect
-mo0 f5 @|RestClientCallIcon #fIcon
+mo0 f5 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f6 280 64 328 64 #arcP
 mo0 f2 440 64 497 64 #arcP
 mo0 f7 outLink createTask.ivp #txt
@@ -104,9 +102,7 @@ mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f7 @C|.responsibility Everybody #txt
 mo0 f7 81 209 30 30 -36 21 #rect
-mo0 f7 @|StartRequestIcon #fIcon
 mo0 f8 497 209 30 30 0 15 #rect
-mo0 f8 @|EndIcon #fIcon
 mo0 f10 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f10 path /me/todo/lists/{todoTaskList-id}/tasks #txt
 mo0 f10 templateParams 'todoTaskList-id=in.lists.get(0).id;
@@ -132,7 +128,7 @@ mo0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 mo0 f10 328 202 112 44 -29 -7 #rect
-mo0 f10 @|RestClientCallIcon #fIcon
+mo0 f10 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f9 440 224 497 224 #arcP
 mo0 f12 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f12 path /me/todo/lists #txt
@@ -150,7 +146,7 @@ Lists</name>
 </elementInfo>
 ' #txt
 mo0 f12 168 202 112 44 -34 -15 #rect
-mo0 f12 @|RestClientCallIcon #fIcon
+mo0 f12 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f13 111 224 168 224 #arcP
 mo0 f11 280 224 328 224 #arcP
 >Proto mo0 .type ms.graph.demo.ToDoDemo #txt

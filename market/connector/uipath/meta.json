@@ -15,6 +15,12 @@
 						],
 						"path": "src/com/uipath/orchestrator/feature"
 					}
+				],
+				"resources": [
+					{
+						"source": "demo/uiPathDemo/icons/uipath.png",
+						"path": "icons/uipath.png"
+					}
 				]
 			}
 		},
@@ -23,6 +29,7 @@
 			"data": {
 				"openApiUrl": "https://platform.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v11.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
+				"icon": "res:/icons/uipath.png",
 				"clientId": "699e715f-63b1-4355-a974-ee3cac26985e", 
 				"baseUri": "https://platform.uipath.com/",
 				"features": [
