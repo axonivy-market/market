@@ -122,37 +122,15 @@
 						"path": "processes/Demo/eSign.mod"
 					}
 				],
-				"directories": [
-					{
-						"source": "demo/eSignatureDemo/src_hd/net/docusign/esignature/demo",
-						"includes": [ 
-							"DocDlg/DocDlgData.ivyClass", 
-							"DocDlg/DocDlg.rddescriptor", 
-							"DocDlg/DocDlgProcess.mod", 
-							"DocDlg/DocDlg.xhtml",
-
-							"DocSign/DocSignData.ivyClass", 
-							"DocSign/DocSign.rddescriptor", 
-							"DocSign/DocSignProcess.mod", 
-							"DocSign/DocSign.xhtml",
-
-							"DocUpload/DocUploadData.ivyClass", 
-							"DocUpload/DocUpload.rddescriptor", 
-							"DocUpload/DocUploadProcess.mod", 
-							"DocUpload/DocUpload.xhtml"
-						],
-						"path": "src_hd/net/docusign/esignature/demo"
-					},
-					{
-						"source": "demo/eSignatureDemo/webContent/layouts",
-						"includes": [ 
-							"basic-8.xhtml", 
-							"styles/ivy-common-8.css", 
-							"images/axon_ivy_logo.svg"
-						],
-						"path": "webContent/layouts"
-					}
-				]
+				"dialog":
+				{
+					"source": "demo/eSignatureDemo/src_hd",
+					"ids": [ 
+						"net.docusign.esignature.demo.DocDlg", 
+						"net.docusign.esignature.demo.DocSign",
+						"net.docusign.esignature.demo.DocUpload"
+					]
+				}
 			}
 		},
 		{
