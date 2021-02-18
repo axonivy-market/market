@@ -56,7 +56,6 @@ tr0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 tr0 f3 168 42 112 44 -27 -7 #rect
-tr0 f3 res:/icons/twitter.png #fDecoratorIcon
 tr0 f4 111 64 168 64 #arcP
 tr0 f7 dialogId com.twitter.demo.Tweets #txt
 tr0 f7 startMethod start(String) #txt

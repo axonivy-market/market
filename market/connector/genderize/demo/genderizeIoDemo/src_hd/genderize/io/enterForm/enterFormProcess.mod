@@ -65,7 +65,6 @@ es0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f6 168 138 112 44 -29 -8 #rect
-es0 f6 res:/icons/genderize.png #fDecoratorIcon
 es0 f7 109 160 168 160 #arcP
 es0 f5 280 160 339 160 #arcP
 >Proto es0 .type genderize.io.enterForm.enterFormData #txt

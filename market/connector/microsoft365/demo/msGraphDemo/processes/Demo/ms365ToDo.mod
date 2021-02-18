@@ -56,7 +56,6 @@ Lists</name>
 </elementInfo>
 ' #txt
 mo0 f3 168 42 112 44 -34 -15 #rect
-mo0 f3 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f4 111 64 168 64 #arcP
 mo0 f5 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f5 path /me/todo/lists/{todoTaskList-id}/tasks #txt
@@ -84,7 +83,6 @@ mo0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 mo0 f5 328 42 112 44 -36 -7 #rect
-mo0 f5 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f6 280 64 328 64 #arcP
 mo0 f2 440 64 497 64 #arcP
 mo0 f7 outLink createTask.ivp #txt
@@ -128,7 +126,6 @@ mo0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 mo0 f10 328 202 112 44 -29 -7 #rect
-mo0 f10 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f9 440 224 497 224 #arcP
 mo0 f12 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f12 path /me/todo/lists #txt
@@ -146,7 +143,6 @@ Lists</name>
 </elementInfo>
 ' #txt
 mo0 f12 168 202 112 44 -34 -15 #rect
-mo0 f12 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f13 111 224 168 224 #arcP
 mo0 f11 280 224 328 224 #arcP
 >Proto mo0 .type ms.graph.demo.ToDoDemo #txt

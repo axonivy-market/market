@@ -4,7 +4,7 @@
         <uuid>0b74edb8-5459-4ccc-aac7-505531e06398</uuid>
         <name>Twitter (Early Access)</name>
         <description>API Reference — v2</description>
-        <icon>res:/icons/twitter.png</icon>
+        <icon>res:/webContent/icons/twitter.png</icon>
         <configuration>
             <uri>https://api.twitter.com</uri>
             <property>
