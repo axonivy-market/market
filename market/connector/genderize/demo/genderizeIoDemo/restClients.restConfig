@@ -4,7 +4,7 @@
         <uuid>2fefdb40-b37e-417d-a7b9-3c499183003b</uuid>
         <name>Genderize.io Connector (Genderize)</name>
         <description>A simple API to predict the gender of a person given their name</description>
-        <icon>res:/icons/genderize.png</icon>
+        <icon>res:/webContent/icons/genderize.png</icon>
         <configuration>
             <uri>https://api.genderize.io</uri>
             <feature>

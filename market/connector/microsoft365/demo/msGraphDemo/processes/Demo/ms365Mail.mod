@@ -53,7 +53,6 @@ ml0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 ml0 f3 168 42 112 44 -34 -7 #rect
-ml0 f3 res:/icons/microsoft.png #fDecoratorIcon
 ml0 f4 111 64 168 64 #arcP
 ml0 f2 280 64 337 64 #arcP
 ml0 f5 outLink writeMail.ivp #txt
@@ -90,7 +89,6 @@ on my behalf</name>
 </elementInfo>
 ' #txt
 ml0 f6 328 170 112 44 -31 -13 #rect
-ml0 f6 res:/icons/microsoft.png #fDecoratorIcon
 ml0 f9 497 177 30 30 0 15 #rect
 ml0 f10 440 192 497 192 #arcP
 ml0 f7 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
@@ -108,7 +106,6 @@ ml0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 ml0 f7 168 170 112 44 -38 -7 #rect
-ml0 f7 res:/icons/microsoft.png #fDecoratorIcon
 ml0 f11 111 192 168 192 #arcP
 ml0 f8 280 192 328 192 #arcP
 >Proto ml0 .type ms.graph.demo.MailDemo #txt

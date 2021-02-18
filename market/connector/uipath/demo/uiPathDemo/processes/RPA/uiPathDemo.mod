@@ -49,7 +49,6 @@ uo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uo0 f0 168 42 112 44 -47 -7 #rect
-uo0 f0 res:/icons/uipath.png #fDecoratorIcon
 uo0 f3 280 64 337 64 #arcP
 uo0 f2 111 64 168 64 #arcP
 uo0 f4 actionTable 'out=in;
