@@ -47,7 +47,6 @@ Read License</name>
 </elementInfo>
 ' #txt
 uh0 f3 248 42 128 44 -40 -15 #rect
-uh0 f3 res:/icons/uipath.png #fDecoratorIcon
 uh0 f5 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f5 path /odata/Jobs #txt
 uh0 f5 resultType com.uipath.orchestrator.ODataValueOfIEnumerableOfJobDto #txt
@@ -67,7 +66,6 @@ Read Jobs</name>
 </elementInfo>
 ' #txt
 uh0 f5 408 42 128 44 -40 -15 #rect
-uh0 f5 res:/icons/uipath.png #fDecoratorIcon
 uh0 f6 376 64 408 64 #arcP
 uh0 f0 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f0 path /odata/Robots #txt
@@ -99,7 +97,6 @@ Read Robots</name>
 </elementInfo>
 ' #txt
 uh0 f0 408 122 128 44 -40 -15 #rect
-uh0 f0 res:/icons/uipath.png #fDecoratorIcon
 uh0 f2 472 86 472 122 #arcP
 uh0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -136,7 +133,6 @@ Read Releases</name>
 </elementInfo>
 ' #txt
 uh0 f22 408 202 128 44 -43 -15 #rect
-uh0 f22 res:/icons/uipath.png #fDecoratorIcon
 uh0 f24 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f24 path /odata/Jobs/UiPath.Server.Configuration.OData.StartJobs #txt
 uh0 f24 method POST #txt
@@ -175,7 +171,6 @@ Start Job</name>
 </elementInfo>
 ' #txt
 uh0 f24 408 282 128 44 -40 -15 #rect
-uh0 f24 res:/icons/uipath.png #fDecoratorIcon
 uh0 f4 472 166 472 202 #arcP
 uh0 f8 472 246 472 282 #arcP
 uh0 f14 inParamDecl '<String job> param;' #txt
@@ -193,7 +188,7 @@ uh0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 uh0 f14 73 49 30 30 -15 17 #rect
-uh0 f14 res:/icons/uipath.png?small #fDecoratorIcon
+uh0 f14 res:/webContent/icons/uipath.png?small #fDecoratorIcon
 uh0 f15 593 289 30 30 0 15 #rect
 uh0 f17 103 64 248 64 #arcP
 uh0 f9 536 304 593 304 #arcP

@@ -62,7 +62,6 @@ User Info</name>
 </elementInfo>
 ' #txt
 mo0 f3 168 42 112 44 -28 -15 #rect
-mo0 f3 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f4 111 64 168 64 #arcP
 mo0 f5 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f5 path /users/{user-id}/calendar/calendarView #txt
@@ -94,7 +93,6 @@ Next week</name>
 </elementInfo>
 ' #txt
 mo0 f5 328 40 112 48 -32 -15 #rect
-mo0 f5 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f2 440 64 497 64 #arcP
 mo0 f6 280 64 328 64 #arcP
 mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -146,7 +144,6 @@ suggestions</name>
 </elementInfo>
 ' #txt
 mo0 f12 328 266 112 44 -38 -15 #rect
-mo0 f12 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f14 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f14 path /me #txt
 mo0 f14 resultType com.microsoft.graph.MicrosoftGraphUser #txt
@@ -164,7 +161,6 @@ as attendee</name>
 </elementInfo>
 ' #txt
 mo0 f14 168 266 112 44 -40 -15 #rect
-mo0 f14 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f15 111 288 168 288 #arcP
 mo0 f13 280 288 328 288 #arcP
 mo0 f16 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
@@ -192,7 +188,6 @@ mo0 f16 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 mo0 f16 488 266 112 44 -48 -7 #rect
-mo0 f16 res:/icons/microsoft.png #fDecoratorIcon
 mo0 f17 440 288 488 288 #arcP
 mo0 f11 600 288 657 288 #arcP
 mo0 f18 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>

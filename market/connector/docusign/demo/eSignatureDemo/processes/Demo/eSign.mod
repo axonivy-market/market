@@ -105,7 +105,6 @@ st0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f6 264 106 112 44 -48 -7 #rect
-st0 f6 res:/icons/docusign.png #fDecoratorIcon
 st0 f7 template "/redirect.ivc" #txt
 st0 f7 177 465 30 30 0 15 #rect
 st0 f11 outLink visitSigningApp.ivp #txt
@@ -188,7 +187,6 @@ documents</name>
 </elementInfo>
 ' #txt
 st0 f21 520 298 112 44 -35 -15 #rect
-st0 f21 res:/icons/docusign.png #fDecoratorIcon
 st0 f22 actionTable 'out=in;
 ' #txt
 st0 f22 eventIdConfig "in.envelopeId" #txt
@@ -205,7 +203,7 @@ st0 f22 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f22 561 193 30 30 19 -8 #rect
-st0 f22 res:/icons/docusign.png?small #fDecoratorIcon
+st0 f22 res:/webContent/icons/docusign.png?small #fDecoratorIcon
 st0 f23 977 305 30 30 0 15 #rect
 st0 f24 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f24 path /v2.1/accounts/{accountId}/envelopes #txt
@@ -238,7 +236,6 @@ st0 f24 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f24 416 106 112 44 -51 -7 #rect
-st0 f24 res:/icons/docusign.png #fDecoratorIcon
 st0 f25 clientId 17e5dc27-5699-4717-ae6c-e2c8f1e2a30f #txt
 st0 f25 path /v2.1/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId} #txt
 st0 f25 queryParams 'documents_by_userid=;
@@ -273,7 +270,6 @@ signed doc</name>
 </elementInfo>
 ' #txt
 st0 f25 680 298 112 44 -34 -15 #rect
-st0 f25 res:/icons/docusign.png #fDecoratorIcon
 st0 f27 576 223 576 298 #arcP
 st0 f28 632 320 680 320 #arcP
 st0 f30 648 78 520 106 #arcP
