@@ -74,7 +74,7 @@ ml0 f6 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 ml0 f6 path /me/microsoft.graph.sendMail #txt
 ml0 f6 method POST #txt
 ml0 f6 bodyInputType ENTITY #txt
-ml0 f6 bodyObjectType com.microsoft.graph.Body175 #txt
+ml0 f6 bodyObjectType com.microsoft.graph.Body219 #txt
 ml0 f6 bodyObjectMapping 'param.message.body.content="The new cafeteria is open.";
 param.message.body.contentType=com.microsoft.graph.MicrosoftGraphBodyType.TEXT;
 param.message.subject="Meet for Lunch?";
