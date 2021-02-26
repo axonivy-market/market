@@ -42,6 +42,11 @@
                 <value>NON_NULL</value>
                 <password>false</password>
             </property>
+            <property>
+                <name>PATH.accountId</name>
+                <value>placeholder</value>
+                <password>false</password>
+            </property>
             <feature>
                 <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
             </feature>
@@ -78,6 +83,11 @@
                     <value>testKey.pem</value>
                     <password>false</password>
                 </property>
+                <property>
+	                <name>PATH.accountId</name>
+	                <value>placeholder</value>
+	                <password>false</password>
+	            </property>
                 <feature>
                     <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
                 </feature>
