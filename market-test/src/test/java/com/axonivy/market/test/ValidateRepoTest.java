@@ -55,6 +55,12 @@ class ValidateRepoTest
       var installers = json.getJSONArray("installers");
       for (var i = 0; i < installers.length(); i++) {
         var installer = installers.getJSONObject(i);
+        if (installer.has("..."))
+        {
+          String include = installer.getString("...");
+          include = include.substring(1, include.length()-1);
+          installer = toJsonObject(path.resolve(include));
+        }
         JSONObjectAssert.assertThat(installer, metaPath)
                 .requireStringPropertyWithMinLength("id", 5);
       }
