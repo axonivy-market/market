@@ -1,5 +1,5 @@
 {
-	"id": "msgraph",
+	"id": "ms-todo",
 	"name": "Microsoft ToDo",
 	"tags": ["connector", "ToDo"],
 	"properties": {
