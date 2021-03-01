@@ -105,6 +105,10 @@
 					{
 						"name": "JSON.Serialization.PROPERTY_INCLUSION",
 						"value": "NON_NULL"
+					},
+					{
+						"name": "PATH.accountId",
+						"value": "placeholder"
 					}
 				]
 			}
