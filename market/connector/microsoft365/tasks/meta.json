@@ -5,14 +5,14 @@
 	"properties": {
 		"tags": "me.todo",
 		"scopes": "Tasks.ReadWrite",
-		"main": "../"
+		"main": "../msgraph/"
 	},
 	"installers": [
 		{
-			"...": "<../project-res.json>"
+			"...": "<../msgraph/project-res.json>"
 		},
 		{
-			"...": "<../rest-client.json>"
+			"...": "<../msgraph/rest-client.json>"
 		},
 		{
 			"id": "project-resource",

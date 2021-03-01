@@ -9,10 +9,10 @@
 	},
 	"installers": [
 		{
-			"...": "<../project-res.json>"
+			"...": "<project-res.json>"
 		},
 		{
-			"...": "<../rest-client.json>"
+			"...": "<rest-client.json>"
 		},
 		{
 			"id": "project-resource",
