@@ -26,7 +26,6 @@ st0 @RestClientCall f25 '' #zField
 st0 @PushWFArc f27 '' #zField
 st0 @PushWFArc f28 '' #zField
 st0 @AnnotationArc f30 '' #zField
-st0 @PushWFArc f1 '' #zField
 st0 @UserDialog f4 '' #zField
 st0 @TaskSwitch f5 '' #zField
 st0 @EndTask f32 '' #zField
@@ -40,6 +39,7 @@ st0 @PushWFArc f8 '' #zField
 st0 @PushWFArc f26 '' #zField
 st0 @PushWFArc f31 '' #zField
 st0 @PushWFArc f3 '' #zField
+st0 @PushWFArc f1 '' #zField
 >Proto st0 st0 eSign #zField
 st0 f0 outLink startWf.ivp #txt
 st0 f0 inParamDecl '<> param;' #txt
@@ -90,7 +90,7 @@ user_filter=;
 user_id=;
 user_name=;
 ' #txt
-st0 f6 templateParams 'accountId="placeholder";
+st0 f6 templateParams 'accountId=;
 ' #txt
 st0 f6 resultType com.docusign.esign.model.EnvelopesInformation #txt
 st0 f6 responseMapping 'out.envelopes=result.envelopes;
@@ -170,7 +170,7 @@ include_tabs=;
 recipient_id=;
 shared_user_id=;
 ' #txt
-st0 f21 templateParams 'accountId="placeholder";
+st0 f21 templateParams 'accountId=;
 envelopeId=in.envelopeId;
 ' #txt
 st0 f21 resultType com.docusign.esign.model.EnvelopeDocumentsResult #txt
@@ -212,7 +212,7 @@ change_routing_order=;
 completed_documents_only=;
 merge_roles_on_draft=;
 ' #txt
-st0 f24 templateParams 'accountId="placeholder";
+st0 f24 templateParams 'accountId=;
 ' #txt
 st0 f24 method POST #txt
 st0 f24 bodyInputType ENTITY #txt
@@ -248,7 +248,7 @@ language=;
 show_changes=;
 watermark=;
 ' #txt
-st0 f25 templateParams 'accountId="placeholder";
+st0 f25 templateParams 'accountId=;
 envelopeId=in.envelopeId;
 documentId=in.documents.get(0).documentId;
 ' #txt
@@ -274,7 +274,6 @@ st0 f27 576 223 576 298 #arcP
 st0 f28 632 320 680 320 #arcP
 st0 f30 648 78 520 106 #arcP
 st0 f30 0 0.997157383802287 0 0 #arcLabel
-st0 f1 376 128 416 128 #arcP
 st0 f4 dialogId net.docusign.esignature.demo.DocUpload #txt
 st0 f4 startMethod start(File) #txt
 st0 f4 requestActionDecl '<File file> param;' #txt
@@ -358,6 +357,7 @@ st0 f26 768 128 817 128 #arcP
 st0 f31 79 128 120 128 #arcP
 st0 f31 0 0.5168859649122807 0 0 #arcLabel
 st0 f3 232 128 264 128 #arcP
+st0 f1 376 128 416 128 #arcP
 >Proto st0 .type net.docusign.esignature.demo.Data #txt
 >Proto st0 .processKind NORMAL #txt
 >Proto st0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -386,8 +386,6 @@ st0 f21 mainOut f28 tail #connect
 st0 f28 head f25 mainIn #connect
 st0 f15 ao f30 tail #connect
 st0 f30 head f24 @CG|ai #connect
-st0 f6 mainOut f1 tail #connect
-st0 f1 head f24 mainIn #connect
 st0 f24 mainOut f9 tail #connect
 st0 f9 head f5 in #connect
 st0 f25 mainOut f16 tail #connect
@@ -404,3 +402,5 @@ st0 f0 mainOut f31 tail #connect
 st0 f31 head f4 mainIn #connect
 st0 f4 mainOut f3 tail #connect
 st0 f3 head f6 mainIn #connect
+st0 f6 mainOut f1 tail #connect
+st0 f1 head f24 mainIn #connect
