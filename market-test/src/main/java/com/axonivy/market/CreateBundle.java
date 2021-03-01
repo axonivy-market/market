@@ -13,21 +13,24 @@ import org.json.JSONObject;
 
 public class CreateBundle
 {
-  public static void main(String[] args) throws IOException
+  private final Path metaJson;
+
+  public CreateBundle(Path metaJson)
   {
-    var targetDir = new File("target/market/");
-    FileUtils.deleteDirectory(targetDir);
-    for (var metaJson : metaJsons())
-    {
-      var srcDir = metaJson.getParent().toFile();
-      var json = toJsonObject(metaJson);
-      var id = json.getString("id");
-      var destDir = new File(targetDir, id);  
-      System.out.println(srcDir);
-      FileUtils.copyDirectory(srcDir, destDir);
-    }
+    this.metaJson = metaJson;
   }
   
+  public void copyTo(Path targetDir) throws IOException
+  {
+    var json = toJsonObject(metaJson);
+    var id = json.getString("id");
+    
+    var destDir = targetDir.resolve(id);
+    var srcDir = metaJson.getParent().toFile();
+    System.out.println(srcDir);
+    FileUtils.copyDirectory(srcDir, destDir.toFile());
+  }
+
   private static JSONObject toJsonObject(Path path)
   {
     try
@@ -38,6 +41,16 @@ public class CreateBundle
     catch (IOException ex)
     {
       throw new RuntimeException(ex);
+    }
+  }
+  
+  public static void main(String[] args) throws IOException
+  {
+    var targetDir = new File("target/market/");
+    FileUtils.deleteDirectory(targetDir);
+    for (var metaJson : metaJsons())
+    {
+      new CreateBundle(metaJson).copyTo(targetDir.toPath());
     }
   }
   
