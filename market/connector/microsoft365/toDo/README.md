@@ -5,4 +5,4 @@
 
 ## Setup
 
-Follow the generic [Microsoft Graph setup](../msgraph/README.md) guide.
+Follow the generic [Microsoft Graph setup](../msgraph) guide.
