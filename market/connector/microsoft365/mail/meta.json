@@ -1,7 +1,7 @@
 {
 	"id": "ms-mail",
 	"name": "Microsoft Mail",
-	"tags": ["connector", "Outlook", "Mail"],
+	"tags": ["connector", "outlook"],
 	"properties": {
 		"tags": "me.user,me.message,me.Actions",
 		"scopes": "User.Read Mail.ReadWrite Mail.Send",
