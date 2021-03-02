@@ -1,7 +1,5 @@
 
-## Outlook Demo
-
-ToDo
+## Microsoft ToDo Demo
 
 ![demo-toDo](../doc/img/demo_toDo.png)
 
