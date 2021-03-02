@@ -1,0 +1,22 @@
+{
+    "id": "project-resource",
+    "data": {
+        "directories": [
+            {
+                "source": "@main@demo/msGraphDemo/processes/Demo",
+                "includes": [
+                    "ms365@demo@.mod"
+                ],
+                "path": "processes/Demo"
+            },
+            {
+                "source": "@main@demo/msGraphDemo/dataclasses/ms/graph/demo",
+                "includes": [
+                    "@demo@Demo.ivyClass"
+                ],
+                "path": "dataclasses/ms/graph/demo"
+            }
+        ]
+    }
+}
+        

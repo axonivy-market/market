@@ -1,0 +1,39 @@
+{
+    "id": "rest-client",
+    "data": {
+        "openApiUrl": "https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell",
+        "clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
+        "name": "Microsoft Graph",
+        "icon": "res:/webContent/icons/microsoft.png",
+        "namespace": "com.microsoft.graph",
+        "features": [
+            "ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+            "com.microsoft.auth.OAuth2Feature"
+        ],
+        "properties": [
+            {
+                "name": "AUTH.appId"
+            },
+            {
+                "name": "AUTH.secretKey",
+                "password": true
+            },
+            {
+                "name": "AUTH.scope",
+                "value": "User.Read Calendars.ReadWrite Mail.ReadWrite Mail.Send Tasks.ReadWrite"
+            },
+            {
+                "name": "AUTH.baseUri",
+                "value": "https://login.microsoftonline.com/common/oauth2/v2.0"
+            },
+            {
+                "name": "jersey.client.connectorProvider",
+                "value": "org.glassfish.jersey.client.HttpUrlConnectorProvider"
+            },
+            {
+                "name": "JSON.Serialization.PROPERTY_INCLUSION",
+                "value": "NON_NULL"
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+	"id": "ms-todo",
+	"name": "Microsoft ToDo",
+	"tags": ["connector", "ToDo"],
+	"properties": {
+		"tags": "me.todo",
+		"scopes": "Tasks.ReadWrite",
+		"demo": "ToDo",
+		"main": "../msgraph/"
+	},
+	"installers": [
+		{
+			"...": "<../msgraph/project-res.json>"
+		},
+		{
+			"...": "<../msgraph/rest-client.json>"
+		},
+		{
+			"...": "<../msgraph/demo-copy.json>"
+		},
+		{
+			"...": "<../msgraph/demo-open.json>"
+		}
+	]
+}
