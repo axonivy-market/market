@@ -5,6 +5,7 @@
 	"properties": {
 		"tags": "me.todo",
 		"scopes": "Tasks.ReadWrite",
+		"demo": "ToDo",
 		"main": "../msgraph/"
 	},
 	"installers": [
@@ -15,39 +16,10 @@
 			"...": "<../msgraph/rest-client.json>"
 		},
 		{
-			"id": "project-resource",
-			"data": {
-				"directories": [
-					{
-						"source": "@main@demo/msGraphDemo/processes/Demo",
-						"includes": [ 
-							"ms365ToDo.mod", 
-							"ms365Calendar.mod",
-							"ms365Mail.mod"
-						],
-						"path": "processes/Demo"
-					},
-					{
-						"source": "@main@demo/msGraphDemo/dataclasses/ms/graph/demo",
-						"includes": [ 
-							"ToDoDemo.ivyClass",
-							"CalendarDemo.ivyClass",
-							"MailDemo.ivyClass"
-						],
-						"path": "dataclasses/ms/graph/demo"
-					}
-				]
-			}
+			"...": "<../msgraph/demo-copy.json>"
 		},
 		{
-			"id": "open-resource",
-			"data": {
-				"resources": [
-					"processes/Demo/ms365ToDo.mod",
-					"processes/Demo/ms365Mail.mod",
-					"processes/Demo/ms365Calendar.mod"
-				]
-			}
+			"...": "<../msgraph/demo-open.json>"
 		}
 	]
 }
