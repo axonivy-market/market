@@ -1,6 +1,7 @@
 package com.microsoft.auth;
 
 import java.net.URI;
+import java.util.Optional;
 
 import javax.ws.rs.Priorities;
 import javax.ws.rs.client.Entity;
@@ -11,10 +12,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 
-import org.apache.commons.lang3.StringUtils;
-
 import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
-import ch.ivyteam.ivy.request.IRequest;
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2RedirectErrorBuilder;
@@ -59,29 +57,38 @@ public class OAuth2Feature implements Feature
   private static Response requestToken(AuthContext ctxt, OAuth2UriProperty uriFactory)
   {
     FeatureConfig config = ctxt.config;
-    String authCode = IRequest.current().getFirstParameter("code");
-    if (StringUtils.isBlank(authCode))
+    var authCode = ctxt.authCode();
+    var refreshToken = ctxt.refreshToken();
+    if (authCode.isEmpty() && refreshToken.isEmpty())
     {
       authError(config, uriFactory)
-        .withMessage("missing permission from user to act in his name.").throwError();
-      authError(config, uriFactory).throwError();
+        .withMessage("missing permission from user to act in his name.")
+        .throwError();
     }
     
-    Form form = createTokenPayload(config, authCode);
+    Form form = createTokenPayload(config, authCode, refreshToken);
     var response = ctxt.target.request()
       .accept(MediaType.WILDCARD)
       .post(Entity.form(form));
     return response;
   }
 
-  private static Form createTokenPayload(FeatureConfig config, String authCode)
+  private static Form createTokenPayload(FeatureConfig config, Optional<String> authCode, Optional<String> refreshToken)
   {
     Form form = new Form();
     form.param("client_id", config.readMandatory(Property.APP_ID));
     form.param("scope", getScope(config));
-    form.param("code", authCode);
+    if (authCode.isPresent())
+    {
+      form.param("code", authCode.get());
+      form.param("grant_type", "authorization_code");
+    }
+    if (refreshToken.isPresent())
+    {
+      form.param("refresh_token", refreshToken.get());
+      form.param("grant_type", "refresh_token");
+    }
     form.param("redirect_uri", OAuth2CallbackUriBuilder.create().toUri().toASCIIString());
-    form.param("grant_type", "authorization_code");
     form.param("client_secret", config.readMandatory(Property.CLIENT_SECRET));
     return form;
   }
