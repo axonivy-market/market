@@ -1,7 +1,7 @@
 {
 	"id": "ms-todo",
 	"name": "Microsoft ToDo",
-	"tags": ["connector", "ToDo"],
+	"tags": ["connector", "outlook"],
 	"properties": {
 		"tags": "me.todo",
 		"scopes": "Tasks.ReadWrite",
