@@ -1,0 +1,25 @@
+{
+	"id": "ms-mail",
+	"name": "Microsoft Mail",
+	"tags": ["connector", "Outlook", "Mail"],
+	"properties": {
+		"tags": "me.user,me.message,me.Actions",
+		"scopes": "User.Read Mail.ReadWrite Mail.Send",
+		"demo": "Mail",
+		"main": "../msgraph/"
+	},
+	"installers": [
+		{
+			"...": "<../msgraph/project-res.json>"
+		},
+		{
+			"...": "<../msgraph/rest-client.json>"
+		},
+		{
+			"...": "<../msgraph/demo-copy.json>"
+		},
+		{
+			"...": "<../msgraph/demo-open.json>"
+		}
+	]
+}
