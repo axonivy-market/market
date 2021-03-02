@@ -3,8 +3,6 @@
 	"name": "Microsoft 365 (Preview)",
 	"tags": ["connector", "outlook"],
 	"properties": {
-		"tags": "me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo",
-		"scopes": "User.Read Calendars.ReadWrite Mail.ReadWrite Mail.Send Tasks.ReadWrite",
 		"main": ""
 	},
 	"installers": [
