@@ -1,7 +1,7 @@
 {
 	"id": "ms-calendar",
 	"name": "Microsoft Calendar",
-	"tags": ["connector", "Outlook", "Calendar"],
+	"tags": ["connector", "outlook"],
 	"properties": {
 		"tags": "me.user,me.calendar,users.calendar,me.Actions",
 		"scopes": "User.Read Calendars.ReadWrite",
