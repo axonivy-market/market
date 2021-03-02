@@ -1,7 +1,7 @@
 
 ## Microsoft Calendar Demo
 
-![demo-calendar](../doc/img/demo_calendar.png)
+![demo-calendar](doc/img/demo_calendar.png)
 
 ## Setup
 
