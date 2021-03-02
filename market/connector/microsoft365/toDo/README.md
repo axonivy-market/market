@@ -1,8 +1,8 @@
 
 ## Microsoft ToDo Demo
 
-![demo-toDo](../doc/img/demo_toDo.png)
+![demo-toDo](doc/img/demo_toDo.png)
 
 ## Setup
 
-Follow the generic [Microsoft Graph setup](../msgraph/README.md) guide.
+Follow the generic [Microsoft Graph setup](../msgraph) guide.
