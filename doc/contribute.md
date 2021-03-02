@@ -1,6 +1,6 @@
 # Contributing to the Axon.ivy Market
 
-You wan't to share your product in the Axon.ivy Market? Then this is guide is for you. It goes through the major steps that are required to create your own market product.
+You wan't to share your product in the Axon.ivy Market? Then this guide is for you. It goes through the major steps that are required to create your own market product.
 
 ## Initiate
 
@@ -75,7 +75,7 @@ The functionality that defines your product must be developed in a simple IvyPro
 #### Using Installers
 
 The simplest install procedure is to define files from your developed project that 
-must be copied into a installation target project. You can do so by using the `copy-installer`. 
+must be copied into a installation target project. You can do so by using the `project-resource`. 
 
 The following meta.json sample snippet shows how a Java sources is copied into the installation target:
 
