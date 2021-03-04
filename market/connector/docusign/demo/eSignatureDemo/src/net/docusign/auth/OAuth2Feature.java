@@ -15,7 +15,7 @@ import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2RedirectErrorBuilder;
-import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenGet.AuthContext;
+import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenRequester.AuthContext;
 import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2CallbackUriBuilder;
 import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 import ch.ivyteam.ivy.security.ISecurityConstants;
