@@ -19,7 +19,7 @@
             </property>
             <property>
                 <name>AUTH.scope</name>
-                <value>user.read Calendars.ReadWrite mail.readWrite mail.send Tasks.ReadWrite</value>
+                <value>user.read Calendars.ReadWrite mail.readWrite mail.send Tasks.ReadWrite offline_access</value>
                 <password>false</password>
             </property>
             <property>
