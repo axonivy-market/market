@@ -67,15 +67,24 @@ public class OAuth2Feature implements Feature
   private static Response webUserGrantToken(AuthContext ctxt, OAuth2UriProperty uriFactory)
   {
     var authCode = ctxt.authCode();
-    if (authCode.isEmpty())
+    var refreshToken = ctxt.refreshToken();
+    if (authCode.isEmpty() && refreshToken.isEmpty())
     {
       authRedirectError(ctxt.config, uriFactory).throwError();
     }
     
     var clientId = ctxt.config.readMandatory(Property.CLIENT_ID);
     var userKey = ctxt.config.readMandatory(Property.USER_KEY); 
-    var basicAuth = HttpBasicAuthenticationFeature.basic(clientId, userKey); 
-    var authRequest = new DocuSignAuthRequest(authCode.get());
+    var basicAuth = HttpBasicAuthenticationFeature.basic(clientId, userKey);
+    Object authRequest;
+    if (authCode.isPresent())
+    {
+      authRequest = new DocuSignAuthRequest(authCode.get());
+    }
+    else
+    {
+      authRequest = new DocuSignRefreshTokenRequest(refreshToken.get());
+    }
     
     var response = ctxt.target
         .register(basicAuth)
@@ -96,6 +105,18 @@ public class OAuth2Feature implements Feature
     }
   }
   
+  public static class DocuSignRefreshTokenRequest
+  {
+    public String grant_type;
+    public String refresh_token;
+    
+    public DocuSignRefreshTokenRequest(String refreshToken)
+    {
+      this.grant_type = "refresh_token";
+      this.refresh_token = refreshToken;
+    }
+  }
+
   private static BpmPublicErrorBuilder authRedirectError(FeatureConfig config, OAuth2UriProperty uriFactory)
   {
     URI redirectUri = OAuth2CallbackUriBuilder.create().toUri();
