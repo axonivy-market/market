@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
-import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenGet.AuthContext;
+import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenRequester.AuthContext;
 import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 
 public class OAuth2Feature implements Feature
