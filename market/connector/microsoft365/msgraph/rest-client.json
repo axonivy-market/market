@@ -20,7 +20,7 @@
             },
             {
                 "name": "AUTH.scope",
-                "value": "User.Read Calendars.ReadWrite Mail.ReadWrite Mail.Send Tasks.ReadWrite"
+                "value": "User.Read Calendars.ReadWrite Mail.ReadWrite Mail.Send Tasks.ReadWrite offline_access"
             },
             {
                 "name": "AUTH.baseUri",
