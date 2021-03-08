@@ -13,7 +13,7 @@ import ch.ivyteam.ivy.bpm.error.BpmError;
 import ch.ivyteam.ivy.bpm.error.BpmPublicErrorBuilder;
 import ch.ivyteam.ivy.rest.client.FeatureConfig;
 import ch.ivyteam.ivy.rest.client.oauth2.OAuth2BearerFilter;
-import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenGet.AuthContext;
+import ch.ivyteam.ivy.rest.client.oauth2.OAuth2TokenRequester.AuthContext;
 import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 
 

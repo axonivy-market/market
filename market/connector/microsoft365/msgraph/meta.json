@@ -1,0 +1,51 @@
+{
+	"id": "msgraph",
+	"name": "Microsoft 365 (Preview)",
+	"tags": ["connector", "outlook"],
+	"properties": {
+		"main": ""
+	},
+	"installers": [
+		{
+			"...": "<project-res.json>"
+		},
+		{
+			"...": "<rest-client.json>"
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/msGraphDemo/processes/Demo",
+						"includes": [ 
+							"ms365ToDo.mod", 
+							"ms365Calendar.mod",
+							"ms365Mail.mod"
+						],
+						"path": "processes/Demo"
+					},
+					{
+						"source": "demo/msGraphDemo/dataclasses/ms/graph/demo",
+						"includes": [ 
+							"ToDoDemo.ivyClass",
+							"CalendarDemo.ivyClass",
+							"MailDemo.ivyClass"
+						],
+						"path": "dataclasses/ms/graph/demo"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/Demo/ms365ToDo.mod",
+					"processes/Demo/ms365Mail.mod",
+					"processes/Demo/ms365Calendar.mod"
+				]
+			}
+		}
+	]
+}

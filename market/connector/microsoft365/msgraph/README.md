@@ -2,20 +2,6 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ![ms-graph](https://docs.microsoft.com/en-us/graph/images/edugraph.png)
 
-## Outlook Demo
-
-Mail
-
-![demo-mail](doc/img/demo_mail.png)
-
-Calendar
-
-![demo-cal](doc/img/demo_calendar.png)
-
-ToDo
-
-![demo-toDo](doc/img/demo_toDo.png)
-
 ## Setup
 
 1. Register an application on Azure as desribed in the Microsoft's Java Tutorial https://docs.microsoft.com/en-us/graph/tutorials/java?tutorial-step=2
