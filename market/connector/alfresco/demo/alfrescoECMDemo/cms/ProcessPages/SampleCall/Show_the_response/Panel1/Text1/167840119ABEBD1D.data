@@ -1,0 +1,12 @@
+<P>
+filepath:
+</P>
+<P>
+<%=ivy.html.get("in.filepath")%>
+</P>
+<P>
+response:
+</P>
+<P>
+<%=ivy.html.get("in.result")%>
+</P>
