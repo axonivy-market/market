@@ -45,7 +45,7 @@ The most important contents of a `meta.json` file are:
 
 ### Custom installation
 
-Once you set the `id`, `name` of a product in a `meta.json` you can already simulate it's installation to a real Designer. Use the `CTRL+ALT+A` combo in the Axon.ivy Designer to start the product installation from a custom source. Provide the path to your `meta.json` in URI compatible format (e.g. `file:/home/myuser/dev/market/market/connector/myconnector/meta.json`) and proceed to the normal installation process by pressing `OK`.
+Once you set the `id`, `name` of a product in a `meta.json` you can already simulate it's installation to a real Designer. Use the `CTRL+ALT+I` combo in the Axon.ivy Designer to start the product installation from a custom source. Provide the path to your `meta.json` in URI compatible format (e.g. `file:/home/myuser/dev/market/market/connector/myconnector/meta.json`) and proceed to the normal installation process by pressing `OK`.
 
 
 ### Writing installers
@@ -98,7 +98,7 @@ The following meta.json sample snippet shows how a Java sources is copied into t
 }
 ```
 
-The `source` property defines the path the your develope project (demo/uiPathDemo) and the `path` property expresses the path in the installation target project where the file is being copied to.
+The `source` property defines the path in your developed project (demo/uiPathDemo) and the `path` property expresses the path in the installation target project where the file is being copied to.
 
 
 ## Product Installer Reference

@@ -1,0 +1,120 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<h:body>
+	<ui:composition template="/layouts/basic-8.xhtml">
+		<ui:define name="title">ECM</ui:define>
+		<ui:define name="content">
+			<style>
+.selectedFolder {
+	font-weight: bold;
+}
+</style>
+			<h:form id="form">
+				<div style="float: right">
+					<p:commandButton id="dynaButton" type="button" icon="fa fa-navicon" />
+					<p:menu overlay="true" trigger="dynaButton" my="left top"
+						at="left bottom">
+						<p:submenu>
+							<p:menuitem value="Create New Folder"
+								onclick="PF('newFolderDialog').show()" />
+							<p:menuitem value="Alfresco Admin UI" url="http://localhost:8080/share" target="_blank"/>
+						</p:submenu>
+					</p:menu>
+				</div>
+				<h3>Alfresco Enterprise Content Management</h3>
+
+				<p:panel rendered="#{data.connectionError.length() gt 0}"
+					styleClass="ui-messages ui-messages-error">
+					<i class="si si-alert-circle"></i>
+					<p:outputLabel value=" #{data.connectionError}" />
+				</p:panel>
+				<p:panel id="datapanel"
+					rendered="#{data.connectionError == null or data.connectionError.length() == 0}">
+					<p:repeat var="folder" value="#{data.folder}">
+						<p:commandLink actionListener="#{logic.openFolder(folder)}"
+							update=":form:datapanel">
+							<i class="si si-folder-empty" />
+							<p:outputLabel value=" #{folder.name}"
+								styleClass="#{folder.name eq data.foldername ? 'selectedFolder' : 'none'}"></p:outputLabel>
+							<p:spacer width="10"></p:spacer>
+						</p:commandLink>
+						<p:spacer />
+					</p:repeat>
+
+					<p:repeat value="#{data.documents}" var="node">
+						<div style="padding-left: 20px; padding-top: 10px;">
+							<i class="si si-common-file-text"></i>
+							<h:outputText value=" #{node.entry.name}" />
+							<div style="float: right;">
+								<h:outputText
+									value=" Created: #{node.entry.createdAt.toLocalDate()}" />
+								<h:outputText
+									value=" by: #{node.entry.createdByUser.displayName}" />
+							</div>
+						</div>
+					</p:repeat>
+					<br />
+					<p:outputLabel rendered="#{data.documents.size() eq 0}">
+						<br />No enties found</p:outputLabel>
+					<br />
+					<p:spacer height="10"></p:spacer>
+					<br />
+					<p:commandButton value="Add Document"
+						onclick="PF('addDialog').show()" />
+				</p:panel>
+			</h:form>
+			<p:dialog id="addDialog" widgetVar="addDialog"
+				header="Upload a Document to the ECM" modal="true"
+				appendTo="@(body)" width="600px">
+				<h:form enctype="multipart/form-data">
+					<p:messages />
+					<h:panelGrid columns="2" style="width:100%">
+						<p:outputLabel value="Choose a document" disabled="true" />
+						<p:spacer height="50"></p:spacer>
+						<p:fileUpload id="file" value="#{data.file}" mode="simple"
+							skinSimple="true" label="Choose file"
+							fileUploadListener="#{logic.upload}" />
+
+					</h:panelGrid>
+					<br />
+					<p:spacer height="50"></p:spacer>
+					<div style="float: right">
+						<p:commandLink value="Cancel " onclick="PF('addDialog').hide();"></p:commandLink>
+						<p:commandButton value="Upload" actionListener="#{logic.upload}"
+							ajax="false" process="@this" oncomplete="PF('addDialog').hide();"
+							update="@(body)" icon="si si-upload-bottom"></p:commandButton>
+					</div>
+				</h:form>
+			</p:dialog>
+			<p:dialog id="newFolderDialog" widgetVar="newFolderDialog"
+				header="Create new Folder to Root node" modal="true"
+				appendTo="@(body)" width="600px">
+				<h:form enctype="multipart/form-data">
+					<p:messages />
+					<h:panelGrid columns="2" style="width:100%">
+						<p:outputLabel value="Enter Folder Name" disabled="true"
+							for="foldernam" />
+						<p:spacer height="50"></p:spacer>
+						<p:inputText id="foldernam" value="#{data.newFoldername}"
+							required="true"></p:inputText>
+					</h:panelGrid>
+					<br />
+					<p:spacer height="50"></p:spacer>
+					<div style="float: right">
+						<p:commandLink value="Cancel "
+							onclick="PF('newFolderDialog').hide();"></p:commandLink>
+						<p:commandButton value=" Ok "
+							actionListener="#{logic.createFolder}" update=":form:datapanel"
+							oncomplete="PF('newFolderDialog').hide();"></p:commandButton>
+					</div>
+				</h:form>
+			</p:dialog>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>
