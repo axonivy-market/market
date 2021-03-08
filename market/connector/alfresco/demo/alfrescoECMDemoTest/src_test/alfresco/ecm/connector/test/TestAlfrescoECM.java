@@ -25,7 +25,7 @@ public class TestAlfrescoECM
 	  session.setActiveEnvironment("dev_axonivy");
 	  
 	  SubProcessCallResult result = bpmClient.start()
-	    .subProcess(CALL_READ_DOCUMENTS)
+	    .subProcess(CALL_READ_DOCUMENTS).as().session(session)
 	    .execute("-shared-").subResult();
 	  
 	  assertThat(result.param("connectionError", String.class)).isEmpty();
