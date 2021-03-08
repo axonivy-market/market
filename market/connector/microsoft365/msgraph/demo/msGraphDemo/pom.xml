@@ -8,6 +8,7 @@
   <packaging>iar</packaging>
   <properties>
     <project.build.plugin.version>9.2.1</project.build.plugin.version>
+    <graph.tags>me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo</graph.tags>
   </properties>
   <build>
     <plugins>
@@ -28,7 +29,7 @@
             <phase>generate-resources</phase>
             <goals><goal>integration-test</goal></goals>
             <configuration>
-              <pom>../../../.build-client/client.gen.test/pom.xml</pom>
+              <pom>../../../../.build-client/client.gen.test/pom.xml</pom>
             </configuration>
           </execution>
         </executions>
@@ -42,7 +43,7 @@
           <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
           <properties>
             <openapi.url><![CDATA[
-              https://graphexplorerapi.azurewebsites.net/openapi?tags=me.user,me.calendar,users.calendar,me.message,me.Actions,me.todo&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell
+              https://graphexplorerapi.azurewebsites.net/openapi?tags=${graph.tags}&openApiVersion=3&graphVersion=v1.0&format=json&style=PowerShell
             ]]></openapi.url>
             <openapi.namespace>com.microsoft.graph</openapi.namespace>
             <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_007036dc-72d1-429f-88a7-ba5d5cf5ae58.jar</openapi.jar>
@@ -51,5 +52,31 @@
         </configuration>
       </plugin>
     </plugins>
+    
+    <pluginManagement>
+    	<plugins>
+    		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+    		<plugin>
+    			<groupId>org.eclipse.m2e</groupId>
+    			<artifactId>lifecycle-mapping</artifactId>
+    			<version>1.0.0</version>
+    			<configuration>
+    				<lifecycleMappingMetadata>
+    					<pluginExecutions>
+    						<pluginExecution>
+    							<pluginExecutionFilter>
+    								<groupId>org.apache.maven.plugins</groupId>
+    								<artifactId>maven-invoker-plugin</artifactId>
+    								<versionRange>[2.0.0,)</versionRange>
+    								<goals><goal>integration-test</goal></goals>
+    							</pluginExecutionFilter>
+    							<action><ignore/></action>
+    						</pluginExecution>
+    					</pluginExecutions>
+    				</lifecycleMappingMetadata>
+    			</configuration>
+    		</plugin>
+    	</plugins>
+    </pluginManagement>
   </build>
 </project>

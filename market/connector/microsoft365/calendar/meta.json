@@ -1,0 +1,25 @@
+{
+	"id": "ms-calendar",
+	"name": "Microsoft Calendar",
+	"tags": ["connector", "outlook"],
+	"properties": {
+		"tags": "me.user,me.calendar,users.calendar,me.Actions",
+		"scopes": "User.Read Calendars.ReadWrite",
+		"demo": "Calendar",
+		"main": "../msgraph/"
+	},
+	"installers": [
+		{
+			"...": "<../msgraph/project-res.json>"
+		},
+		{
+			"...": "<../msgraph/rest-client.json>"
+		},
+		{
+			"...": "<../msgraph/demo-copy.json>"
+		},
+		{
+			"...": "<../msgraph/demo-open.json>"
+		}
+	]
+}
