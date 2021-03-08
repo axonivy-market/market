@@ -3,15 +3,14 @@ Alfresco Enterprise Content Management Connector
 - REST API to create folders and to post documents to Alfesco ECM
 
 ## Demo
-Shows how to create folders and post documents 
+Shows how to create folders and post documents.
 
-![demo-dialog](doc/imgages/alfrescoConnectorDemo.png)
-
-![demo-connector](doc/imgages/alfrescoDemoProcess.png)
+![demo-dialog](doc/images/alfrescoConnectorDemo.png)
+![demo-connector](doc/images/alfrescoDemoProcess.png)
 
 
 ## Setup
-The connector is preconfigured for the Community Edition for Docker running on localhost port 8080. 
-Adjust the alfresco Rest client to access your alfresco installation. 
+The connector is preconfigured for the Community Edition for Docker running on localhost port 8080. See: https://www.alfresco.com/de/thank-you/thank-you-downloading-alfresco-community-edition
+You may adjust the alfresco Rest client to access your alfresco installation.
 
-![rest-client-config](doc/imgages/alfrescoRESTClient_Config.png)
+![rest-client-config](doc/images/alfrescoRESTClient_Config.png)
