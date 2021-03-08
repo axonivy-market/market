@@ -7,6 +7,7 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>alfresco/demo</module>
     <module>uipath/demo</module>
     <module>docusign/demo</module>
     <module>twitter/demo</module>
