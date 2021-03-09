@@ -12,9 +12,9 @@ With this connector a demo process will be installed to demonstrate prominent us
 
 ## Authentication
 
-Security matters! Data flows between the UiPath Orchestrator and the Axon.ivy Engine are encrypted and protected by OAUTH access tokens.
+Security matters! Data flows between the UiPath Orchestrator and the Axon Ivy Engine are encrypted and protected by OAUTH access tokens.
 
-However, the systems must be introduced to each other. The Axon.ivy Engine needs a valid clientId and userKey that are allowed to connect to UiPath as substitute for your user account.
+However, the systems must be introduced to each other. The Axon Ivy Engine needs a valid clientId and userKey that are allowed to connect to UiPath as substitute for your user account.
 
 Proceed as follows:
 1. Start any process that contains an UiPath activity interaction.

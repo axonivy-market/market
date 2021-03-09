@@ -10,7 +10,7 @@ Integrate eSignatures into your application in minutes. DocuSign's secure and aw
 
 ## Setup
 
-Before any signing interactions between the Axon.ivy Engine and the DocuSign eSignature services can be run, they have to be introducted to each other. This can be done as follows:
+Before any signing interactions between the Axon Ivy Engine and the DocuSign eSignature services can be run, they have to be introducted to each other. This can be done as follows:
 
 1. Create a free DocuSign developer account: https://account-d.docusign.com/#/username
 1. Create a new `application`: https://admindemo.docusign.com/authenticate?goTo=apiIntegratorKey
@@ -25,10 +25,10 @@ Before any signing interactions between the Axon.ivy Engine and the DocuSign eSi
 1. Scroll to **Authentication** choose `Authorization Code Grant`.
 1. Click `Add Secrect Key` and copy the generated key into the Rest Clients property value called `AUTH.secretKey`
 
-1. Scroll to **Additional settings** and configure a `Redirect URI` to Axon.ivy.
+1. Scroll to **Additional settings** and configure a `Redirect URI` to Axon Ivy.
 
-	The redirect uri must point to the Axon.ivy authentication callback URI `.../<application-name>/auth/callback`. 
-	For the Axon.ivy Designer this is normally `http://localhost:8081/designer/auth/callback`. 
+	The redirect uri must point to the Axon Ivy authentication callback URI `.../<application-name>/auth/callback`. 
+	For the Axon Ivy Designer this is normally `http://localhost:8081/designer/auth/callback`. 
 	![integration-key](doc/images/configureRedirectUri.png)
 
 1. Save the changed application settings.
@@ -41,7 +41,7 @@ Before any signing interactions between the Axon.ivy Engine and the DocuSign eSi
 
 ### Optional: Allow System Authentication (JWT)
 
-The Demo process contains a final service part, where the Axon.ivy platform acts in the name of a user.
+The Demo process contains a final service part, where the Axon Ivy platform acts in the name of a user.
 ![docusign-props](doc/images/systemDrivenProcess.png)
 
 This interaction requires a JSON Web Token (JWT) authentication setup:
