@@ -218,7 +218,7 @@ st0 f24 method POST #txt
 st0 f24 bodyInputType ENTITY #txt
 st0 f24 bodyObjectType com.docusign.esign.model.EnvelopeDefinition #txt
 st0 f24 bodyObjectMapping 'param.documents=[net.docusign.DocUtils.ofIvyFile(in.file)];
-param.emailSubject="Connecting Axon.ivy with DocuSign";
+param.emailSubject="Connecting Axon Ivy with DocuSign";
 param.recipients.signers=[ net.docusign.SignUtils.myself(ivy.session) ];
 param.status="sent";
 ' #txt

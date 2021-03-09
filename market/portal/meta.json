@@ -33,7 +33,7 @@
 		},
 		{
 			"key": "axonivy-express",
-			"name": "Axon.ivy Express",
+			"name": "Axon Ivy Express",
 			"groupId": "ch.ivyteam.ivy.project.portal",
 			"artifactId": "axonIvyExpress"
 		},
