@@ -1,25 +1,25 @@
-# Contributing to the Axon.ivy Market
+# Contributing to the Axon Ivy Market
 
-You wan't to share your product in the Axon.ivy Market? Then this guide is for you. It goes through the major steps that are required to create your own market product.
+You wan't to share your product in the Axon Ivy Market? Then this guide is for you. It goes through the major steps that are required to create your own market product.
 
 ## Initiate
 
 1. Create a private fork of this repository by pressing onto the 'Fork' button on the Github repository view. See the [Github Forking Guide](https://guides.github.com/activities/forking/) for a step by step guide.
 1. Clone the created private repository onto your computer.
-1. Create a new directory, naming your product under the `market` directory of your local `Axon.ivy Market` repository copy. Within this directory the following files are essential and must exist.
+1. Create a new directory, naming your product under the `market` directory of your local `Axon Ivy Market` repository copy. Within this directory the following files are essential and must exist.
 
 ### Product Files
 
 - **README.md**: markdown formatted text to promote and describe the features of your product. This readme will be shown on your product detail page.
   You may refer to images, such as screenshots, within the file. Simply add such images into the product directory (e.g. under ``doc/img/myScreen.png``)
   and include it in your reamde with a relative link ```![myFancyFeature](doc/img/myScreen.png)```
-- **logo.png**: an image displaying your product or brand icon. It will be used on the market search overview page, in the header of the product detail page and in the Axon.ivy Designer install wizard.
+- **logo.png**: an image displaying your product or brand icon. It will be used on the market search overview page, in the header of the product detail page and in the Axon Ivy Designer install wizard.
 - **meta.json**: the product meta file to describe your product integration into the market and also the Designer install recipe. See the next section for details.
 
 
 ## Product meta.json
 
-This file defines how your product is being integrated into the [Axon.ivy market web](https://market.axonivy.com) interface and it's install procedure. 
+This file defines how your product is being integrated into the [Axon Ivy Market web](https://market.axonivy.com) interface and it's install procedure. 
 
 The meta.json must be written in JSON format. We recommend to use an editor, such as VS Code, for this.
 
@@ -45,7 +45,7 @@ The most important contents of a `meta.json` file are:
 
 ### Custom installation
 
-Once you set the `id`, `name` of a product in a `meta.json` you can already simulate it's installation to a real Designer. Use the `CTRL+ALT+I` combo in the Axon.ivy Designer to start the product installation from a custom source. Provide the path to your `meta.json` in URI compatible format (e.g. `file:/home/myuser/dev/market/market/connector/myconnector/meta.json`) and proceed to the normal installation process by pressing `OK`.
+Once you set the `id`, `name` of a product in a `meta.json` you can already simulate it's installation to a real Designer. Use the `CTRL+ALT+I` combo in the Axon Ivy Designer to start the product installation from a custom source. Provide the path to your `meta.json` in URI compatible format (e.g. `file:/home/myuser/dev/market/market/connector/myconnector/meta.json`) and proceed to the normal installation process by pressing `OK`.
 
 
 ### Writing installers
@@ -103,7 +103,7 @@ The `source` property defines the path in your developed project (demo/uiPathDem
 
 ## Product Installer Reference
 
-The available installers can be found in the product documentation of the Axon.ivy Digital Business Platform:
+The available installers can be found in the product documentation of the Axon Ivy Platform:
 https://developer.axonivy.com/doc/dev/market-installer-reference/
 
 
@@ -137,14 +137,14 @@ Be aware that the output of such converter runs may also be provided by third-pa
 
 #### Write OpenAPI
 
-If the service to be communicated with, has nothing but a textual description of valid service resources and payload samples, you may write an OpenAPI spec for it on your own. It will greatly simplify the usage of these APIs in the Axon.ivy workflows since the user of it no longer has to generate valid data object structures and type paths to resources without tooling support.
+If the service to be communicated with, has nothing but a textual description of valid service resources and payload samples, you may write an OpenAPI spec for it on your own. It will greatly simplify the usage of these APIs in the Axon Ivy workflows since the user of it no longer has to generate valid data object structures and type paths to resources without tooling support.
 
-The [Swagger Editor](http://editor.swagger.io/) is a simple web frontend which allows you to write such OpenAPI specs. It's a good idea to start with the given 'petstore' example and adapt it until it matches your service interfaces. Once you have a valid OpenAPI json exported from the web editor. You can test it with the 'Class Generator' of the Axon.ivy Rest Client Defintion. If it works as expected, the openapi.json file can be into your market product and automatically installed. 
+The [Swagger Editor](http://editor.swagger.io/) is a simple web frontend which allows you to write such OpenAPI specs. It's a good idea to start with the given 'petstore' example and adapt it until it matches your service interfaces. Once you have a valid OpenAPI json exported from the web editor. You can test it with the 'Class Generator' of the Axon Ivy Rest Client Defintion. If it works as expected, the openapi.json file can be into your market product and automatically installed. 
 Actually, the first [Genederize.io connector](../market/connector/genderize/meta.json)
 was built just like that and you may inspect it to build your own OpenAPI installer procedure.
 
 ## Celebrate
 
-Once you arrive here, you very likely have already built your first market product. Please don't keep it private in your local fork, but fire us a pull request in order to integrate it into the official Axon.ivy Market.
+Once you arrive here, you very likely have already built your first market product. Please don't keep it private in your local fork, but fire us a pull request in order to integrate it into the official Axon Ivy Market.
 
 It's pure joy to share re-usable workflow products with the community.
