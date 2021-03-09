@@ -1,4 +1,4 @@
-The Axon.ivy VisualVM plugin enables real-time monitoring of an Axon.ivy Engine for:
+The Axon Ivy VisualVM plugin enables real-time monitoring of an Axon Ivy Engine for:
 
 * HTTP requests
 * System database connections and transactions

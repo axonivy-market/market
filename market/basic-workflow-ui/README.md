@@ -4,8 +4,8 @@ The Basic Workflow UI is a smart worklow user interface with a minimal set of fe
 
 ### Import
 
-You can use the import wizard in Axon.ivy Designer
+You can use the import wizard in Axon Ivy Designer
 
-`File > Import > Axon.ivy > Ivy Projects`
+`File > Import > Axon Ivy > Ivy Projects`
 
 ![Import Wizard](import-wizard.png)
