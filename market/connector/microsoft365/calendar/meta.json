@@ -16,6 +16,18 @@
 			"...": "<../msgraph/rest-client.json>"
 		},
 		{
+			"id": "project-resource",
+    		"data": {
+				"dialog": 
+				{
+					"source": "@main@demo/msGraphDemo/src_hd",
+					"ids": [
+						"ms.graph.demo.Events"
+					]
+				}
+			}
+		},
+		{
 			"...": "<../msgraph/demo-copy.json>"
 		},
 		{

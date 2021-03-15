@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<h:body>
+  <ui:composition template="/layouts/frame-8.xhtml">
+    <ui:define name="title">Events</ui:define>
+    <ui:define name="content">
+
+      <h3>Your upcoming events</h3>
+
+      <h:form id="form">
+        <h:panelGroup id="data" layout="block">
+          <p>Live from your microsoft account</p><f:facet name="header">
+            <p:messages></p:messages>
+          </f:facet>
+
+          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.events}" var="event" rows="8"
+            selectionMode="single" rowKey="#{event.id}" draggableColumns="true"
+            draggableRows="true" style="width:900px">
+            <p:ajax event="rowSelect" oncomplete="PF('detailDialog').show()" />
+
+            <p:column style="width:16px">
+              <p:rowToggler />
+            </p:column>
+
+            <p:column headerText="Subject" id="subject">
+              <p:outputLabel value="#{event.subject}" />
+            </p:column>
+            
+            <p:column headerText="Preview" id="preview">
+              <p:outputLabel value="#{event.bodyPreview}" />
+            </p:column>
+            
+            <p:column headerText="Start">
+              <p:outputLabel value="#{event.start.dateTime}">
+              </p:outputLabel>
+            </p:column>
+          </p:dataTable>
+
+
+        </h:panelGroup>
+        <br />
+        <div class="command-btns">
+          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Proceed" update="form" icon="ui-icon-check" />
+        </div>
+      </h:form>
+
+    </ui:define>
+  </ui:composition>
+</h:body>
+</html>
