@@ -13,7 +13,6 @@ mo0 @EndTask f1 '' #zField
 mo0 @RestClientCall f3 '' #zField
 mo0 @PushWFArc f4 '' #zField
 mo0 @RestClientCall f5 '' #zField
-mo0 @PushWFArc f2 '' #zField
 mo0 @PushWFArc f6 '' #zField
 mo0 @InfoButton f7 '' #zField
 mo0 @AnnotationArc f8 '' #zField
@@ -28,6 +27,9 @@ mo0 @PushWFArc f17 '' #zField
 mo0 @PushWFArc f11 '' #zField
 mo0 @InfoButton f18 '' #zField
 mo0 @AnnotationArc f19 '' #zField
+mo0 @UserDialog f20 '' #zField
+mo0 @PushWFArc f21 '' #zField
+mo0 @PushWFArc f2 '' #zField
 >Proto mo0 mo0 ms365Calendar #zField
 mo0 f0 outLink readCalendar.ivp #txt
 mo0 f0 inParamDecl '<> param;' #txt
@@ -44,7 +46,7 @@ mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f0 @C|.responsibility Everybody #txt
 mo0 f0 81 49 30 30 -48 18 #rect
-mo0 f1 497 49 30 30 0 15 #rect
+mo0 f1 657 49 30 30 0 15 #rect
 mo0 f3 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mo0 f3 path /me #txt
 mo0 f3 resultType com.microsoft.graph.MicrosoftGraphUser #txt
@@ -93,7 +95,6 @@ Next week</name>
 </elementInfo>
 ' #txt
 mo0 f5 328 40 112 48 -32 -15 #rect
-mo0 f2 440 64 497 64 #arcP
 mo0 f6 280 64 328 64 #arcP
 mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -203,14 +204,29 @@ check your calendar!</name>
 ' #txt
 mo0 f18 448 346 192 44 -89 -15 #rect
 mo0 f19 544 346 544 310 #arcP
+mo0 f20 dialogId ms.graph.demo.Events #txt
+mo0 f20 startMethod start(java.util.List<com.microsoft.graph.MicrosoftGraphEvent>) #txt
+mo0 f20 requestActionDecl '<java.util.List<com.microsoft.graph.MicrosoftGraphEvent> events> param;' #txt
+mo0 f20 requestMappingAction 'param.events=in.events;
+' #txt
+mo0 f20 responseMappingAction 'out=in;
+' #txt
+mo0 f20 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>Events</name>
+    </language>
+</elementInfo>
+' #txt
+mo0 f20 488 42 112 44 -21 -7 #rect
+mo0 f21 440 64 488 64 #arcP
+mo0 f2 600 64 657 64 #arcP
 >Proto mo0 .type ms.graph.demo.CalendarDemo #txt
 >Proto mo0 .processKind NORMAL #txt
 >Proto mo0 0 0 32 24 18 0 #rect
 >Proto mo0 @|BIcon #fIcon
 mo0 f0 mainOut f4 tail #connect
 mo0 f4 head f3 mainIn #connect
-mo0 f5 mainOut f2 tail #connect
-mo0 f2 head f1 mainIn #connect
 mo0 f3 mainOut f6 tail #connect
 mo0 f6 head f5 mainIn #connect
 mo0 f7 ao f8 tail #connect
@@ -225,3 +241,7 @@ mo0 f16 mainOut f11 tail #connect
 mo0 f11 head f10 mainIn #connect
 mo0 f18 ao f19 tail #connect
 mo0 f19 head f16 @CG|ai #connect
+mo0 f5 mainOut f21 tail #connect
+mo0 f21 head f20 mainIn #connect
+mo0 f20 mainOut f2 tail #connect
+mo0 f2 head f1 mainIn #connect

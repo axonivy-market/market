@@ -1,0 +1,4 @@
+EventsData #class
+ms.graph.demo.Events #namespace
+events java.util.List<com.microsoft.graph.MicrosoftGraphEvent> #field
+events PERSISTENT #fieldModifier
