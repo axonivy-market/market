@@ -43,14 +43,14 @@
 						"path": "dataclasses/ms/graph/demo"
 					},
 					{
-						"source": "demo/msGraphDemo/processes/Connector",
+						"source": "@main@demo/msGraphDemo/processes/Connector",
 						"includes": [
 							"msCalendar.mod"
 						],
 						"path": "processes/Connector"
 					},
 					{
-						"source": "demo/msGraphDemo/dataclasses/ms/graph",
+						"source": "@main@demo/msGraphDemo/dataclasses/ms/graph",
 						"includes": [
 							"CalendarData.ivyClass",
 							"NewEvent.ivyClass"
