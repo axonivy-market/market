@@ -15,6 +15,14 @@
 		{
 			"id": "project-resource",
 			"data": {
+				"dialog": 
+				{
+					"source": "@main@demo/msGraphDemo/src_hd",
+					"ids": [
+						"ms.graph.demo.Events",
+						"ms.graph.demo.CreateEvent"
+					]
+				},
 				"directories": [
 					{
 						"source": "demo/msGraphDemo/processes/Demo",
@@ -33,6 +41,21 @@
 							"MailDemo.ivyClass"
 						],
 						"path": "dataclasses/ms/graph/demo"
+					},
+					{
+						"source": "@main@demo/msGraphDemo/processes/Connector",
+						"includes": [
+							"msCalendar.mod"
+						],
+						"path": "processes/Connector"
+					},
+					{
+						"source": "@main@demo/msGraphDemo/dataclasses/ms/graph",
+						"includes": [
+							"CalendarData.ivyClass",
+							"NewEvent.ivyClass"
+						],
+						"path": "dataclasses/ms/graph"
 					}
 				]
 			}
