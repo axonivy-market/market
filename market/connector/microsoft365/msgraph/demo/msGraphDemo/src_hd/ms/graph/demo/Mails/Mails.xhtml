@@ -10,7 +10,7 @@
     <ui:define name="title">Events</ui:define>
     <ui:define name="content">
 
-      <h3>Your upcoming events</h3>
+      <h3>Your Inbox</h3>
 
       <h:form id="form">
         <h:panelGroup id="data" layout="block">
@@ -18,28 +18,26 @@
             <p:messages></p:messages>
           </f:facet>
 
-          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.events}" var="event"
-            selectionMode="single" rowKey="#{event.id}" draggableColumns="true"
-            draggableRows="true" style="width:900px">
+          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.mails}" var="mail" 
+            selectionMode="single" rowKey="#{mail.id}" draggableColumns="true"
+            draggableRows="true">
 
             <p:column style="width:16px">
               <p:rowToggler />
             </p:column>
 
+            <p:column headerText="Sender" id="sender">
+              <p:outputLabel>#{mail.from.emailAddress.name}<br/>#{mail.from.emailAddress.address}</p:outputLabel>
+            </p:column>
+
             <p:column headerText="Subject" id="subject">
-              <p:outputLabel value="#{event.subject}" />
+              <p:outputLabel value="#{mail.subject}" />
             </p:column>
             
             <p:column headerText="Preview" id="preview">
-              <p:outputLabel value="#{event.bodyPreview}" />
-            </p:column>
-            
-            <p:column headerText="Start">
-              <p:outputLabel value="#{event.start.dateTime}">
-              </p:outputLabel>
+              <p:outputLabel value="#{mail.bodyPreview}" />
             </p:column>
           </p:dataTable>
-
 
         </h:panelGroup>
         <br />

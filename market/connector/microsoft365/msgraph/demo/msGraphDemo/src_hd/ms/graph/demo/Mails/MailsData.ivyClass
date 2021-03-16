@@ -1,0 +1,4 @@
+MailsData #class
+ms.graph.demo.Mails #namespace
+mails java.util.List<com.microsoft.graph.MicrosoftGraphMessage> #field
+mails PERSISTENT #fieldModifier
