@@ -29,7 +29,7 @@ Es0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-Es0 f0 83 51 26 26 -105 15 #rect
+Es0 f0 83 51 26 26 -34 21 #rect
 Es0 f1 211 51 26 26 0 12 #rect
 Es0 f2 109 64 211 64 #arcP
 Es0 f3 guid 178353D929FF88B8 #txt
