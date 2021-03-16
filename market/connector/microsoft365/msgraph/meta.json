@@ -20,7 +20,9 @@
 					"source": "@main@demo/msGraphDemo/src_hd",
 					"ids": [
 						"ms.graph.demo.Events",
-						"ms.graph.demo.CreateEvent"
+						"ms.graph.demo.CreateEvent",
+						"ms.graph.demo.Mails",
+						"ms.graph.demo.WriteMail"
 					]
 				},
 				"directories": [
@@ -45,7 +47,8 @@
 					{
 						"source": "@main@demo/msGraphDemo/processes/Connector",
 						"includes": [
-							"msCalendar.mod"
+							"msCalendar.mod",
+							"msMail.mod"
 						],
 						"path": "processes/Connector"
 					},
@@ -53,7 +56,9 @@
 						"source": "@main@demo/msGraphDemo/dataclasses/ms/graph",
 						"includes": [
 							"CalendarData.ivyClass",
-							"NewEvent.ivyClass"
+							"NewEvent.ivyClass",
+							"MailData.ivyClass",
+							"NewMail.ivyClass"
 						],
 						"path": "dataclasses/ms/graph"
 					}
