@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import ch.ivyteam.ivy.bpm.engine.client.BpmClient;
 import ch.ivyteam.ivy.bpm.engine.client.ExecutionResult;
+import ch.ivyteam.ivy.bpm.engine.client.element.BpmElement;
 import ch.ivyteam.ivy.bpm.exec.client.IvyProcessTest;
 import ch.ivyteam.ivy.environment.AppFixture;
 import ch.ivyteam.ivy.security.ISession;
@@ -26,7 +27,9 @@ public class TestCalendarDemo
       "http://localhost:",
       "scope=user.read");
 
-    
+    bpmClient.mock()
+      .element(BpmElement.pid("176D21535A8FEE20-f20"))
+      .withNoAction();
     ExecutionResult result2 = bpmClient.start()
       .webPage(result.workflow().executedTask(), resume("f3"))
       .withParam("code", "a-test-code")
