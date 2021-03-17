@@ -2,6 +2,8 @@ package com.microsoft.graph;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 import ch.ivyteam.ivy.bpm.engine.client.BpmClient;
@@ -10,6 +12,7 @@ import ch.ivyteam.ivy.bpm.engine.client.element.BpmElement;
 import ch.ivyteam.ivy.bpm.exec.client.IvyProcessTest;
 import ch.ivyteam.ivy.environment.AppFixture;
 import ch.ivyteam.ivy.security.ISession;
+import ms.graph.NewEvent;
 
 @IvyProcessTest
 public class TestCalendarDemo
@@ -48,10 +51,13 @@ public class TestCalendarDemo
   {
     fixture.environment("dev-axonivy");
     
+    mockMeetingUi(bpmClient);
+    
     ExecutionResult result = bpmClient.start()
       .process("Demo/ms365Calendar/meet.ivp")
       .as().session(session)
       .execute();
+    
     
     ExecutionResult result2 = bpmClient.start()
       .webPage(result.workflow().executedTask(), resume("f14"))
@@ -66,8 +72,30 @@ public class TestCalendarDemo
       .isEqualTo("Define digitalization roadmap");
   }
 
+  private void mockMeetingUi(BpmClient bpmClient)
+  {
+    NewEvent meet = new NewEvent();
+    meet.setParticipants(List.of("me@mailinator.com"));
+    meet.setSubject("Define digitalization roadmap");
+    meet.setDescription("go for more");
+    bpmClient.mock()
+    .element(BpmElement.pid("176D21535A8FEE20-f13"))
+    .with((in,out) -> { 
+      try
+      {
+        out.set("newEvent", meet);
+      }
+      catch (NoSuchFieldException ex)
+      {
+      }});
+    
+    
+    BpmElement calViewer = BpmElement.pid("176D21535A8FEE20-f11");
+    bpmClient.mock().element(calViewer).withNoAction();
+  }
+
   private static String resume(String restClientActivityFieldId)
   {
-    return "176D21535A8FEE20/176D21535A8FEE20-"+restClientActivityFieldId+"/resume.ivp";
+    return "1783A266998C4015/1783A266998C4015-"+restClientActivityFieldId+"/resume.ivp";
   }
 }
