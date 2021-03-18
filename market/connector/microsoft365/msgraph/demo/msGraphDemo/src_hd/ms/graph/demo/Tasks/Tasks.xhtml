@@ -11,6 +11,7 @@
     <ui:define name="content">
 
       <h3>Your ToDo's</h3>
+      <p>Live from your Microsoft account</p>
 
       <h:form id="form">
 
@@ -30,8 +31,7 @@
 
         <br />
         <div class="command-btns">
-          <p:commandButton id="proceed" actionListener="#{logic.close}"
-            value="Proceed" update="form" icon="ui-icon-check" />
+          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Close" update="form" icon="si si-close" />
         </div>
       </h:form>
       

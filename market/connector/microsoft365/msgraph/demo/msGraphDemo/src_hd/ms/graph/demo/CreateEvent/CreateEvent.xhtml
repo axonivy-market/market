@@ -1,58 +1,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:f="http://xmlns.jcp.org/jsf/core"
-	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:ic="http://ivyteam.ch/jsf/component"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:pe="http://primefaces.org/ui/extensions">
+  xmlns:f="http://xmlns.jcp.org/jsf/core"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  xmlns:ic="http://ivyteam.ch/jsf/component"
+  xmlns:p="http://primefaces.org/ui"
+  xmlns:pe="http://primefaces.org/ui/extensions">
 <h:body>
-	<ui:composition template="/layouts/frame-8.xhtml">
-		<ui:define name="title">CreateEvent</ui:define>
-		<ui:define name="content">
+  <ui:composition template="/layouts/frame-8.xhtml">
+    <ui:define name="title">CreateEvent</ui:define>
+    <ui:define name="content">
 
-			<h3>Create a new Event</h3>
+      <h3>Create a new Event</h3>
 
-			<h:form id="form">
-				<p:messages />
-				<p:panelGrid columns="2" layout="grid"
-					styleClass="ui-panelgrid-blank"
-					columnClasses="ui-g-12 ui-md-3 ui-lg-2, 
+      <h:form id="form">
+        <p:messages />
+        <p:panelGrid columns="2" layout="grid"
+          styleClass="ui-panelgrid-blank"
+          columnClasses="ui-g-12 ui-md-3 ui-lg-2, 
 						ui-g-12 ui-md-9 ui-lg-4, 
 						ui-g-12 ui-md-3 ui-lg-2, 
 						ui-g-12 ui-md-9 ui-lg-4">
 
-					<p:outputLabel for="eventSubject" value="Subject" />
-					<p:inputText id="eventSubject" value="#{data.event.subject}"></p:inputText>
+          <p:outputLabel for="eventSubject" value="Subject" />
+          <p:inputText id="eventSubject" value="#{data.event.subject}"></p:inputText>
 
-					<p:outputLabel for="eventDescription" value="Description" />
-					<p:inputText id="eventDescription"
-						value="#{data.event.description}"></p:inputText>
+          <p:outputLabel for="eventDescription" value="Description" />
+          <p:inputText id="eventDescription"
+            value="#{data.event.description}"></p:inputText>
 
 
-					<p:outputLabel for="newParticipant" value="Add Participant" />
-					<p:inputText id="newParticipant" value="#{data.participant}"></p:inputText>
-					<p:commandButton value="Add" actionListener="#{logic.add}"
-						update=":form"></p:commandButton>
+          <p:outputLabel for="newParticipant" value="Add Participant" />
+          <h:panelGroup>
+            <p:inputText id="newParticipant" value="#{data.participant}" style="width: calc(100% - 40px);" />
+            <p:commandButton icon="si si-add" actionListener="#{logic.add}" update=":form" style="margin-left: 5px;" />
+          </h:panelGroup>
 
-					<p:dataTable id="participants" var="participant"
-						value="#{data.event.participants}">
-						<p:headerRow>
-							<p:inputText></p:inputText>
-						</p:headerRow>
-						<p:column headerText="Participants">
-							<h:outputText value="#{participant}" />
-						</p:column>
-					</p:dataTable>
+          <p:outputLabel for="participants" value="Participants" />
+          <p:dataTable id="participants" var="participant" value="#{data.event.participants}" emptyMessage="Please add participants">
+            <p:column>
+              <h:outputText value="#{participant}" />
+            </p:column>
+            <p:column style="width: 55px;">
+              <p:commandButton icon="si si-remove" actionListener="#{logic.remove}" update=":form" styleClass="red-btn" />
+            </p:column>
+          </p:dataTable>
 
-				</p:panelGrid>
-				<br />
-				<div class="command-btns">
-					<p:commandButton id="proceed" actionListener="#{logic.close}"
-						value="Proceed" update="form" icon="ui-icon-check" />
-				</div>
-			</h:form>
+        </p:panelGrid>
+        <br />
+        <div class="command-btns">
+          <p:commandButton id="proceed" actionListener="#{logic.close}"
+            value="Create Event" update="form" icon="si si-add-circle" />
+        </div>
+      </h:form>
+      
+      <style>
+        thead {
+          display: none;
+        }
+      </style>
 
-		</ui:define>
-	</ui:composition>
+    </ui:define>
+  </ui:composition>
 </h:body>
 </html>

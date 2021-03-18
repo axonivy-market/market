@@ -18,33 +18,38 @@
             <p:messages></p:messages>
           </f:facet>
 
-          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.mails}" var="mail" 
-            selectionMode="single" rowKey="#{mail.id}" draggableColumns="true"
-            draggableRows="true">
-
-            <p:column style="width:16px">
-              <p:rowToggler />
-            </p:column>
-
-            <p:column headerText="Sender" id="sender">
+          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.mails}" var="mail">
+          
+            <p:column headerText="Sender" id="sender" style="width: 30%;">
               <p:outputLabel>#{mail.from.emailAddress.name}<br/>#{mail.from.emailAddress.address}</p:outputLabel>
             </p:column>
 
-            <p:column headerText="Subject" id="subject">
-              <p:outputLabel value="#{mail.subject}" />
-            </p:column>
-            
-            <p:column headerText="Preview" id="preview">
+            <p:column headerText="Mail" id="subject">
+              <h4>
+                <p:outputLabel value="#{mail.subject}" />
+              </h4>
               <p:outputLabel value="#{mail.bodyPreview}" />
             </p:column>
+            
           </p:dataTable>
 
         </h:panelGroup>
         <br />
         <div class="command-btns">
-          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Proceed" update="form" icon="ui-icon-check" />
+          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Close" update="form" icon="si si-close" />
         </div>
       </h:form>
+      
+      <style>
+        body .ui-widget-content {
+          border: none;
+        }
+        #form .ui-datatable thead tr th,
+        #form .ui-datatable tbody tr.ui-widget-content {
+          border-left: none;
+          border-right: none;
+        }
+      </style>
 
     </ui:define>
   </ui:composition>
