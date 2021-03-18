@@ -82,11 +82,6 @@ public class TestToDoDemo
       }});
   }
 
-  private static String resume(String restActivityFieldId)
-  {
-    return "176F208BF8721ECC/176F208BF8721ECC-"+restActivityFieldId+"/resume.ivp";
-  }
-  
   private static String resumeSub(String restActivityFieldId)
   {
     return "17844DC635AF15F4/17844DC635AF15F4-"+restActivityFieldId+"/resume.ivp";
