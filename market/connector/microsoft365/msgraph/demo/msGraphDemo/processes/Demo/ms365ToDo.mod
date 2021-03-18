@@ -11,18 +11,18 @@ mo0 @TextInP .xml .xml #zField
 mo0 @TextInP .responsibility .responsibility #zField
 mo0 @StartRequest f0 '' #zField
 mo0 @EndTask f1 '' #zField
-mo0 @RestClientCall f3 '' #zField
-mo0 @PushWFArc f4 '' #zField
-mo0 @RestClientCall f5 '' #zField
-mo0 @PushWFArc f6 '' #zField
-mo0 @PushWFArc f2 '' #zField
 mo0 @StartRequest f7 '' #zField
 mo0 @EndTask f8 '' #zField
-mo0 @RestClientCall f10 '' #zField
+mo0 @CallSub f14 '' #zField
+mo0 @PushWFArc f4 '' #zField
+mo0 @CallSub f2 '' #zField
+mo0 @PushWFArc f5 '' #zField
+mo0 @UserDialog f6 '' #zField
 mo0 @PushWFArc f9 '' #zField
-mo0 @RestClientCall f12 '' #zField
-mo0 @PushWFArc f13 '' #zField
-mo0 @PushWFArc f11 '' #zField
+mo0 @PushWFArc f10 '' #zField
+mo0 @UserDialog f11 '' #zField
+mo0 @PushWFArc f12 '' #zField
+mo0 @PushWFArc f3 '' #zField
 >Proto mo0 mo0 ms365ToDo #zField
 mo0 f0 outLink myToDo.ivp #txt
 mo0 f0 inParamDecl '<> param;' #txt
@@ -40,51 +40,6 @@ mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 mo0 f0 @C|.responsibility Everybody #txt
 mo0 f0 81 49 30 30 -25 17 #rect
 mo0 f1 497 49 30 30 0 15 #rect
-mo0 f3 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
-mo0 f3 path /me/todo/lists #txt
-mo0 f3 resultType com.microsoft.graph.CollectionOfTodoTaskList #txt
-mo0 f3 responseMapping 'out.lists=result.value;
-' #txt
-mo0 f3 clientErrorCode ivy:error:rest:client #txt
-mo0 f3 statusErrorCode ivy:error:rest:client #txt
-mo0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>Read ToDo
-Lists</name>
-    </language>
-</elementInfo>
-' #txt
-mo0 f3 168 42 112 44 -34 -15 #rect
-mo0 f4 111 64 168 64 #arcP
-mo0 f5 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
-mo0 f5 path /me/todo/lists/{todoTaskList-id}/tasks #txt
-mo0 f5 queryParams '$$top=;
-$$skip=;
-$$search=;
-$$filter=;
-$$count=;
-$$orderby=;
-$$select=;
-$$expand=;
-' #txt
-mo0 f5 templateParams 'todoTaskList-id=in.lists.get(0).id;
-' #txt
-mo0 f5 resultType com.microsoft.graph.CollectionOfTodoTask #txt
-mo0 f5 responseMapping 'out.todo=result.value;
-' #txt
-mo0 f5 clientErrorCode ivy:error:rest:client #txt
-mo0 f5 statusErrorCode ivy:error:rest:client #txt
-mo0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>Read Tasks</name>
-    </language>
-</elementInfo>
-' #txt
-mo0 f5 328 42 112 44 -36 -7 #rect
-mo0 f6 280 64 328 64 #arcP
-mo0 f2 440 64 497 64 #arcP
 mo0 f7 outLink createTask.ivp #txt
 mo0 f7 inParamDecl '<> param;' #txt
 mo0 f7 requestEnabled true #txt
@@ -101,63 +56,83 @@ mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 mo0 f7 @C|.responsibility Everybody #txt
 mo0 f7 81 209 30 30 -36 21 #rect
 mo0 f8 497 209 30 30 0 15 #rect
-mo0 f10 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
-mo0 f10 path /me/todo/lists/{todoTaskList-id}/tasks #txt
-mo0 f10 templateParams 'todoTaskList-id=in.lists.get(0).id;
+mo0 f14 processCall Connector/msToDo:allTasks() #txt
+mo0 f14 requestActionDecl '<> param;' #txt
+mo0 f14 responseMappingAction 'out=in;
+out.todo=result.tasks;
 ' #txt
-mo0 f10 method POST #txt
-mo0 f10 bodyInputType ENTITY #txt
-mo0 f10 bodyObjectType com.microsoft.graph.MicrosoftGraphTodoTask #txt
-mo0 f10 bodyObjectMapping 'param.body.content="It has never been easier to enroll onto a successful digitalization journey.\n Don''t miss this opportunity: https://www.axonivy.com";
-param.body.contentType=com.microsoft.graph.MicrosoftGraphBodyType.TEXT;
-param.importance=com.microsoft.graph.MicrosoftGraphImportance.HIGH;
-param.title="Digitalize your business";
-' #txt
-mo0 f10 resultType com.microsoft.graph.MicrosoftGraphTodoTask #txt
-mo0 f10 responseMapping 'out.todo=[ result ];
-' #txt
-mo0 f10 clientErrorCode ivy:error:rest:client #txt
-mo0 f10 statusErrorCode ivy:error:rest:client #txt
-mo0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+mo0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>new Task</name>
+        <name>Read All Tasks</name>
     </language>
 </elementInfo>
 ' #txt
-mo0 f10 328 202 112 44 -29 -7 #rect
-mo0 f9 440 224 497 224 #arcP
-mo0 f12 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
-mo0 f12 path /me/todo/lists #txt
-mo0 f12 resultType com.microsoft.graph.CollectionOfTodoTaskList #txt
-mo0 f12 responseMapping 'out.lists=result.value;
+mo0 f14 168 42 112 44 -45 -7 #rect
+mo0 f14 res:/webContent/icons/microsoft.png #fDecoratorIcon
+mo0 f4 111 64 168 64 #arcP
+mo0 f2 processCall Connector/msToDo:createNewTask(ms.graph.NewToDo) #txt
+mo0 f2 requestActionDecl '<ms.graph.NewToDo task> param;' #txt
+mo0 f2 requestMappingAction 'param.task=in.task;
 ' #txt
-mo0 f12 clientErrorCode ivy:error:rest:client #txt
-mo0 f12 statusErrorCode ivy:error:rest:client #txt
-mo0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+mo0 f2 responseMappingAction 'out=in;
+out.todo=[ result.todo ];
+' #txt
+mo0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>Read ToDo
-Lists</name>
+        <name>Create new Task</name>
     </language>
 </elementInfo>
 ' #txt
-mo0 f12 168 202 112 44 -34 -15 #rect
-mo0 f13 111 224 168 224 #arcP
-mo0 f11 280 224 328 224 #arcP
+mo0 f2 328 202 112 44 -52 -7 #rect
+mo0 f5 440 224 497 224 #arcP
+mo0 f6 dialogId ms.graph.demo.Tasks #txt
+mo0 f6 startMethod start(java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask>) #txt
+mo0 f6 requestActionDecl '<java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> todo> param;' #txt
+mo0 f6 requestMappingAction 'param.todo=in.todo;
+' #txt
+mo0 f6 responseMappingAction 'out=in;
+' #txt
+mo0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>Tasks</name>
+    </language>
+</elementInfo>
+' #txt
+mo0 f6 328 42 112 44 -18 -7 #rect
+mo0 f9 280 64 328 64 #arcP
+mo0 f10 440 64 497 64 #arcP
+mo0 f11 dialogId ms.graph.demo.CreateTask #txt
+mo0 f11 startMethod start() #txt
+mo0 f11 requestActionDecl '<> param;' #txt
+mo0 f11 responseMappingAction 'out=in;
+out.task=result.task;
+' #txt
+mo0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>CreateTask</name>
+    </language>
+</elementInfo>
+' #txt
+mo0 f11 168 202 112 44 -35 -7 #rect
+mo0 f12 111 224 168 224 #arcP
+mo0 f3 280 224 328 224 #arcP
 >Proto mo0 .type ms.graph.demo.ToDoDemo #txt
 >Proto mo0 .processKind NORMAL #txt
 >Proto mo0 0 0 32 24 18 0 #rect
 >Proto mo0 @|BIcon #fIcon
 mo0 f0 mainOut f4 tail #connect
-mo0 f4 head f3 mainIn #connect
-mo0 f3 mainOut f6 tail #connect
-mo0 f6 head f5 mainIn #connect
-mo0 f5 mainOut f2 tail #connect
-mo0 f2 head f1 mainIn #connect
-mo0 f10 mainOut f9 tail #connect
-mo0 f9 head f8 mainIn #connect
-mo0 f7 mainOut f13 tail #connect
-mo0 f13 head f12 mainIn #connect
-mo0 f12 mainOut f11 tail #connect
-mo0 f11 head f10 mainIn #connect
+mo0 f4 head f14 mainIn #connect
+mo0 f2 mainOut f5 tail #connect
+mo0 f5 head f8 mainIn #connect
+mo0 f14 mainOut f9 tail #connect
+mo0 f9 head f6 mainIn #connect
+mo0 f6 mainOut f10 tail #connect
+mo0 f10 head f1 mainIn #connect
+mo0 f7 mainOut f12 tail #connect
+mo0 f12 head f11 mainIn #connect
+mo0 f11 mainOut f3 tail #connect
+mo0 f3 head f2 mainIn #connect
