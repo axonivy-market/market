@@ -16,6 +16,36 @@
 			"...": "<../msgraph/rest-client.json>"
 		},
 		{
+			"id": "project-resource",
+			"data": {
+				"dialog": 
+				{
+					"source": "@main@demo/msGraphDemo/src_hd",
+					"ids": [
+						"ms.graph.demo.Tasks",
+						"ms.graph.demo.CreateTask"
+					]
+				},
+				"directories": [
+					{
+						"source": "@main@demo/msGraphDemo/processes/Connector",
+						"includes": [
+							"ms@demo@.mod"
+						],
+						"path": "processes/Connector"
+					},
+					{
+						"source": "@main@demo/msGraphDemo/dataclasses/ms/graph",
+						"includes": [
+							"@demo@Data.ivyClass",
+							"New@demo@.ivyClass"
+						],
+						"path": "dataclasses/ms/graph"
+					}
+				]
+			}
+		},
+		{
 			"...": "<../msgraph/demo-copy.json>"
 		},
 		{
