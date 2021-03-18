@@ -1,0 +1,8 @@
+ToDoData #class
+ms.graph #namespace
+lists java.util.List<com.microsoft.graph.MicrosoftGraphTodoTaskList> #field
+lists PERSISTENT #fieldModifier
+todo java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> #field
+todo PERSISTENT #fieldModifier
+task ms.graph.NewToDo #field
+task PERSISTENT #fieldModifier
