@@ -39,7 +39,7 @@ mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f0 @C|.responsibility Everybody #txt
 mo0 f0 81 49 30 30 -25 17 #rect
-mo0 f1 553 49 30 30 0 15 #rect
+mo0 f1 497 49 30 30 0 15 #rect
 mo0 f7 outLink createTask.ivp #txt
 mo0 f7 inParamDecl '<> param;' #txt
 mo0 f7 requestEnabled true #txt
@@ -55,7 +55,7 @@ mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f7 @C|.responsibility Everybody #txt
 mo0 f7 81 209 30 30 -36 21 #rect
-mo0 f8 553 209 30 30 0 15 #rect
+mo0 f8 497 209 30 30 0 15 #rect
 mo0 f14 processCall Connector/msToDo:allTasks() #txt
 mo0 f14 requestActionDecl '<> param;' #txt
 mo0 f14 responseMappingAction 'out=in;
@@ -68,14 +68,15 @@ mo0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-mo0 f14 172 40 168 48 -45 -7 #rect
+mo0 f14 168 42 112 44 -45 -7 #rect
 mo0 f14 res:/webContent/icons/microsoft.png #fDecoratorIcon
-mo0 f4 111 64 172 64 #arcP
+mo0 f4 111 64 168 64 #arcP
 mo0 f2 processCall Connector/msToDo:createNewTask(ms.graph.NewToDo) #txt
 mo0 f2 requestActionDecl '<ms.graph.NewToDo task> param;' #txt
 mo0 f2 requestMappingAction 'param.task=in.task;
 ' #txt
 mo0 f2 responseMappingAction 'out=in;
+out.todo=[ result.todo ];
 ' #txt
 mo0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -84,8 +85,8 @@ mo0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-mo0 f2 332 200 168 48 -52 -7 #rect
-mo0 f5 500 224 553 224 #arcP
+mo0 f2 328 202 112 44 -52 -7 #rect
+mo0 f5 440 224 497 224 #arcP
 mo0 f6 dialogId ms.graph.demo.Tasks #txt
 mo0 f6 startMethod start(java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask>) #txt
 mo0 f6 requestActionDecl '<java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> todo> param;' #txt
@@ -100,9 +101,9 @@ mo0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-mo0 f6 384 42 112 44 -18 -7 #rect
-mo0 f9 340 64 384 64 #arcP
-mo0 f10 496 64 553 64 #arcP
+mo0 f6 328 42 112 44 -18 -7 #rect
+mo0 f9 280 64 328 64 #arcP
+mo0 f10 440 64 497 64 #arcP
 mo0 f11 dialogId ms.graph.demo.CreateTask #txt
 mo0 f11 startMethod start() #txt
 mo0 f11 requestActionDecl '<> param;' #txt
@@ -118,7 +119,7 @@ mo0 f11 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 mo0 f11 168 202 112 44 -35 -7 #rect
 mo0 f12 111 224 168 224 #arcP
-mo0 f3 280 224 332 224 #arcP
+mo0 f3 280 224 328 224 #arcP
 >Proto mo0 .type ms.graph.demo.ToDoDemo #txt
 >Proto mo0 .processKind NORMAL #txt
 >Proto mo0 0 0 32 24 18 0 #rect

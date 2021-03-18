@@ -113,7 +113,8 @@ param.importance=com.microsoft.graph.MicrosoftGraphImportance.HIGH;
 param.title=in.task.title;
 ' #txt
 mo0 f10 resultType com.microsoft.graph.MicrosoftGraphTodoTask #txt
-mo0 f10 responseMapping 'out.todo=[ result ];
+mo0 f10 responseMapping 'out.createdToDo=result;
+out.todo=[ result ];
 ' #txt
 mo0 f10 clientErrorCode ivy:error:rest:client #txt
 mo0 f10 statusErrorCode ivy:error:rest:client #txt
@@ -129,7 +130,9 @@ mo0 f11 280 192 328 192 #arcP
 mo0 f7 inParamDecl '<ms.graph.NewToDo task> param;' #txt
 mo0 f7 inParamTable 'out.task=param.task;
 ' #txt
-mo0 f7 outParamDecl '<> result;' #txt
+mo0 f7 outParamDecl '<com.microsoft.graph.MicrosoftGraphTodoTask todo> result;' #txt
+mo0 f7 outParamTable 'result.todo=in.createdToDo;
+' #txt
 mo0 f7 callSignature createNewTask(ms.graph.NewToDo) #txt
 mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
