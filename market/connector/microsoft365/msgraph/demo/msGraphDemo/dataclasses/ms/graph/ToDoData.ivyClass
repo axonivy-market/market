@@ -1,0 +1,6 @@
+ToDoData #class
+ms.graph #namespace
+lists java.util.List<com.microsoft.graph.MicrosoftGraphTodoTaskList> #field
+todo java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> #field
+task ms.graph.NewToDo #field
+createdToDo com.microsoft.graph.MicrosoftGraphTodoTask #field

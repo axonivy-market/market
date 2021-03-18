@@ -18,6 +18,9 @@ Cs0 @PushWFArc f5 '' #zField
 Cs0 @UdEvent f6 '' #zField
 Cs0 @UdProcessEnd f7 '' #zField
 Cs0 @PushWFArc f8 '' #zField
+Cs0 @UdProcessEnd f9 '' #zField
+Cs0 @UdEvent f10 '' #zField
+Cs0 @PushWFArc f11 '' #zField
 >Proto Cs0 Cs0 WriteMailProcess #zField
 Cs0 f0 guid 1783A70466B1148A #txt
 Cs0 f0 method start() #txt
@@ -66,6 +69,20 @@ Cs0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 Cs0 f6 83 243 26 26 -12 15 #rect
 Cs0 f7 211 243 26 26 0 12 #rect
 Cs0 f8 109 256 211 256 #arcP
+Cs0 f9 211 339 26 26 0 12 #rect
+Cs0 f10 guid 1784565C2B710ABE #txt
+Cs0 f10 actionTable 'out=in;
+' #txt
+Cs0 f10 actionCode out.mail.receivers.remove(in.receiver); #txt
+Cs0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>remove</name>
+    </language>
+</elementInfo>
+' #txt
+Cs0 f10 83 339 26 26 -12 15 #rect
+Cs0 f11 109 352 211 352 #arcP
 >Proto Cs0 .type ms.graph.demo.WriteMail.WriteMailData #txt
 >Proto Cs0 .processKind HTML_DIALOG #txt
 >Proto Cs0 -8 -8 16 16 16 26 #rect
@@ -75,3 +92,5 @@ Cs0 f3 mainOut f5 tail #connect
 Cs0 f5 head f4 mainIn #connect
 Cs0 f6 mainOut f8 tail #connect
 Cs0 f8 head f7 mainIn #connect
+Cs0 f10 mainOut f11 tail #connect
+Cs0 f11 head f9 mainIn #connect

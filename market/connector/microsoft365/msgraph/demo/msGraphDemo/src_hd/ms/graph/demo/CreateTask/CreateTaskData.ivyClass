@@ -1,0 +1,4 @@
+CreateTaskData #class
+ms.graph.demo.CreateTask #namespace
+task ms.graph.NewToDo #field
+task PERSISTENT #fieldModifier
