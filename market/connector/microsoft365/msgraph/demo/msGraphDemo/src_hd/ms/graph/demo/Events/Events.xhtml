@@ -18,35 +18,39 @@
             <p:messages></p:messages>
           </f:facet>
 
-          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.events}" var="event"
-            selectionMode="single" rowKey="#{event.id}" draggableColumns="true"
-            draggableRows="true" style="width:900px">
-
-            <p:column style="width:16px">
-              <p:rowToggler />
-            </p:column>
+          <p:dataTable id="theTable" widgetVar="theTable" value="#{data.events}" var="event">
 
             <p:column headerText="Subject" id="subject">
-              <p:outputLabel value="#{event.subject}" />
-            </p:column>
-            
-            <p:column headerText="Preview" id="preview">
+              <h4>
+                <h:outputText value="#{event.subject}" />
+              </h4>
               <p:outputLabel value="#{event.bodyPreview}" />
             </p:column>
             
-            <p:column headerText="Start">
-              <p:outputLabel value="#{event.start.dateTime}">
-              </p:outputLabel>
+            <p:column headerText="Time">
+              <h:outputText value="From #{event.start.dateTime}" />
+              <br />
+              <h:outputText value="To #{event.end.dateTime}" />
             </p:column>
           </p:dataTable>
-
 
         </h:panelGroup>
         <br />
         <div class="command-btns">
-          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Proceed" update="form" icon="ui-icon-check" />
+          <p:commandButton id="proceed" actionListener="#{logic.close}" value="Close" update="form" icon="si si-close" />
         </div>
       </h:form>
+      
+      <style>
+        body .ui-widget-content {
+          border: none;
+        }
+        #form .ui-datatable thead tr th,
+        #form .ui-datatable tbody tr.ui-widget-content {
+          border-left: none;
+          border-right: none;
+        }
+      </style>
 
     </ui:define>
   </ui:composition>
