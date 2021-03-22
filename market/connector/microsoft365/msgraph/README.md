@@ -8,7 +8,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 1. Navigate to `Overview` in the menu and copy the 'Application (client) ID' into Rest Client Definition property `AUTH.appId`.
 1. Navigate to `Authentication` in the Azure App menu.
 	1. Add a `Redirect URI` in the `Web` Section.
-		- Axon Ivy has an authentication callback URI which follows the pattern `{scheme}://{host}:{port}/{application}/auth/callback`. This URI must be registered in the Azure App app.
+		- Axon Ivy has an authentication callback URI which follows the pattern `{scheme}://{host}:{port}/{application}/auth/callback`. This URI must be registered in the Azure App.
 		- Consequently, for the Axon Ivy Designer this URI can always be set to the following value: `http://localhost:8081/designer/auth/callback`
 		- For the Axon Ivy Engine, the URI must contain the full URI where your application is reachable plus the callback path. E.g.: `https://my.workflows.ch/myApp/auth/calllback`
  ![set-redirect](doc/img/azure_authCallback.png)
