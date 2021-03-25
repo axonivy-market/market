@@ -1,4 +1,4 @@
-AXON Ivy’s [genderize.io](https://genderize.io) connector helps you to accelerate process automation initiatives by predicting the gender of a person given their name. The connector gives you access to a powerful API which is for free up to 1000 names/day. This connector:
+Axon Ivy’s [genderize.io](https://genderize.io) connector helps you to accelerate process automation initiatives by predicting the gender of a person given their name. The connector gives you access to a powerful API which is for free up to 1000 names/day. This connector:
 
 - Provides a powerful solution to implement modern UI patterns.
 - Supports three different usages. A simple one-name determination, a batch usage for up to 10 names at a time and a classification of genders in the scope of a specific country.
