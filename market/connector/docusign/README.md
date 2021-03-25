@@ -1,4 +1,10 @@
-Integrate eSignatures into your application in minutes. DocuSign's secure and award-winning eSignature makes requesting signatures, automating forms, and tracking documents directly from your app easy.
+Axon Ivy’s [DocuSign](https://www.docusign.com/products/electronic-signature) connector helps you to accelerate process automation initiatives by integrating eSignatures into your process application within no time. DocuSign eSignature accelerates agreements, eliminates manual tasks, and makes it easy to connect with the tools and systems you’re already using. From sales contracts and offer letters to account openings and invoices, DocuSign eSignature is the world’s #1 way to send and sign from practically anywhere, at any time. This connector:
+
+-	Is based on REST webservice technologies.
+-	Provides access to the core features of DocuSign eSignature to virtually sign all kind of documents.
+-	Supports you with an easy-to-copy demo implementation to reduce your integration effort.
+-	Enables low code citizen developers to enhance existing business processes with electronic signature features.
+
 
 ## Demo
 
