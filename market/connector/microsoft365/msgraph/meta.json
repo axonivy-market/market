@@ -1,6 +1,6 @@
 {
 	"id": "msgraph",
-	"name": "Microsoft 365 (Preview)",
+	"name": "Microsoft 365",
 	"tags": ["connector", "outlook"],
 	"properties": {
 		"main": ""
