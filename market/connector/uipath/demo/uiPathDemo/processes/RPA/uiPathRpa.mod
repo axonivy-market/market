@@ -174,16 +174,20 @@ uh0 f24 408 282 128 44 -40 -15 #rect
 uh0 f4 472 166 472 202 #arcP
 uh0 f8 472 246 472 282 #arcP
 uh0 f14 inParamDecl '<String job> param;' #txt
+uh0 f14 inParamInfo 'job.description=The name of the job to start' #txt
 uh0 f14 inParamTable 'out.jobToStart=param.job;
 ' #txt
 uh0 f14 outParamDecl '<java.util.List<com.uipath.orchestrator.JobDto> jobs> result;' #txt
+uh0 f14 outParamInfo 'jobs.description=List of scheduled processes on a robot' #txt
 uh0 f14 outParamTable 'result.jobs=in.jobs;
 ' #txt
 uh0 f14 callSignature startJob(String) #txt
+uh0 f14 tags CONNECTOR #txt
 uh0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>startJob(String)</name>
+        <desc>Starts a UI Path RPA job.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -195,6 +199,13 @@ uh0 f9 536 304 593 304 #arcP
 uh0 f9 0 0.14267180925666198 0 0 #arcLabel
 >Proto uh0 .type com.uipath.connector.UiPathData #txt
 >Proto uh0 .processKind CALLABLE_SUB #txt
+>Proto uh0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <desc>Starts UI Path RPA jobs.</desc>
+    </language>
+</elementInfo>
+' #txt
 >Proto uh0 0 0 32 24 18 0 #rect
 >Proto uh0 @|BIcon #fIcon
 uh0 f3 mainOut f6 tail #connect
