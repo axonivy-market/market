@@ -32,13 +32,16 @@ mr0 @PushWFArc f19 '' #zField
 >Proto mr0 mr0 msCalendar #zField
 mr0 f0 inParamDecl '<> param;' #txt
 mr0 f0 outParamDecl '<java.util.List<com.microsoft.graph.MicrosoftGraphEvent> myEvents> result;' #txt
+mr0 f0 outParamInfo 'myEvents.description=List with upcoming events from your calendar' #txt
 mr0 f0 outParamTable 'result.myEvents=in.events;
 ' #txt
 mr0 f0 callSignature upcomingEvents() #txt
+mr0 f0 tags CONNECTOR #txt
 mr0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>upcomingEvents()</name>
+        <desc>Reads upcoming events from your calendar.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -185,6 +188,7 @@ mr0 f16 488 266 112 44 -48 -7 #rect
 mr0 f17 440 288 488 288 #arcP
 mr0 f13 280 288 328 288 #arcP
 mr0 f9 inParamDecl '<ms.graph.NewEvent evt> param;' #txt
+mr0 f9 inParamInfo 'evt.description=The new event that should be created in your calendar' #txt
 mr0 f9 inParamTable 'out.newEvent.body.content=param.evt.description;
 out.newEvent.body.contentType=com.microsoft.graph.MicrosoftGraphBodyType.TEXT;
 out.newEvent.subject=param.evt.subject;
@@ -196,13 +200,16 @@ mr0 f9 inParamCode 'for(String participant : param.evt.participants)
   out.newEvent.attendees.add(attendee);
 }' #txt
 mr0 f9 outParamDecl '<com.microsoft.graph.MicrosoftGraphEvent meeting> result;' #txt
+mr0 f9 outParamInfo 'meeting.description=The event that was created in your calendar' #txt
 mr0 f9 outParamTable 'result.meeting=in.newEvent;
 ' #txt
 mr0 f9 callSignature createMeeting(ms.graph.NewEvent) #txt
+mr0 f9 tags CONNECTOR #txt
 mr0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>createMeeting(NewEvent)</name>
+        <desc>Creates a new meeting in your your calendar.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -214,6 +221,13 @@ mr0 f15 657 273 30 30 0 15 #rect
 mr0 f19 600 288 657 288 #arcP
 >Proto mr0 .type ms.graph.CalendarData #txt
 >Proto mr0 .processKind CALLABLE_SUB #txt
+>Proto mr0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <desc>Reads events from your calendar and creates new ones.</desc>
+    </language>
+</elementInfo>
+' #txt
 >Proto mr0 0 0 32 24 18 0 #rect
 >Proto mr0 @|BIcon #fIcon
 mr0 f3 mainOut f6 tail #connect
