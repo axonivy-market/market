@@ -18,6 +18,7 @@ ml0 @PushWFArc f2 '' #zField
 ml0 @PushWFArc f3 '' #zField
 >Proto ml0 ml0 msMail #zField
 ml0 f0 inParamDecl '<ms.graph.NewMail mail> param;' #txt
+ml0 f0 inParamInfo 'mail.description=The mail to send' #txt
 ml0 f0 inParamTable 'out.mail=param.mail;
 out.message.body.content=param.mail.body;
 out.message.body.contentType=com.microsoft.graph.MicrosoftGraphBodyType.TEXT;
@@ -30,13 +31,16 @@ ml0 f0 inParamCode 'for(String recipient : param.mail.receivers)
   out.message.toRecipients.add(r);
 }' #txt
 ml0 f0 outParamDecl '<com.microsoft.graph.MicrosoftGraphMessage message> result;' #txt
+ml0 f0 outParamInfo 'message.description=The message that was sent' #txt
 ml0 f0 outParamTable 'result.message=in.message;
 ' #txt
 ml0 f0 callSignature writeMail(ms.graph.NewMail) #txt
+ml0 f0 tags CONNECTOR #txt
 ml0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>writeMail(NewMail)</name>
+        <desc>Sends a mail.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -81,6 +85,13 @@ ml0 f2 111 64 168 64 #arcP
 ml0 f3 440 64 497 64 #arcP
 >Proto ml0 .type ms.graph.MailData #txt
 >Proto ml0 .processKind CALLABLE_SUB #txt
+>Proto ml0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <desc>Sends mails.</desc>
+    </language>
+</elementInfo>
+' #txt
 >Proto ml0 0 0 32 24 18 0 #rect
 >Proto ml0 @|BIcon #fIcon
 ml0 f7 mainOut f8 tail #connect
