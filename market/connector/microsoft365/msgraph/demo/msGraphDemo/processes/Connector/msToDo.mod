@@ -26,13 +26,16 @@ mo0 @PushWFArc f13 '' #zField
 >Proto mo0 mo0 msToDo #zField
 mo0 f0 inParamDecl '<> param;' #txt
 mo0 f0 outParamDecl '<java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> tasks> result;' #txt
+mo0 f0 outParamInfo 'tasks.description=List with all todo tasks' #txt
 mo0 f0 outParamTable 'result.tasks=in.todo;
 ' #txt
 mo0 f0 callSignature allTasks() #txt
+mo0 f0 tags CONNECTOR #txt
 mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>allTasks()</name>
+        <desc>Reads all todo tasks.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -128,16 +131,20 @@ mo0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 mo0 f10 328 170 112 44 -29 -7 #rect
 mo0 f11 280 192 328 192 #arcP
 mo0 f7 inParamDecl '<ms.graph.NewToDo task> param;' #txt
+mo0 f7 inParamInfo 'task.description=The new todo task to create' #txt
 mo0 f7 inParamTable 'out.task=param.task;
 ' #txt
 mo0 f7 outParamDecl '<com.microsoft.graph.MicrosoftGraphTodoTask todo> result;' #txt
+mo0 f7 outParamInfo 'todo.description=The created todo task' #txt
 mo0 f7 outParamTable 'result.todo=in.createdToDo;
 ' #txt
 mo0 f7 callSignature createNewTask(ms.graph.NewToDo) #txt
+mo0 f7 tags CONNECTOR #txt
 mo0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>createNewTask(NewToDo)</name>
+        <desc>Creates a new todo task.</desc>
     </language>
 </elementInfo>
 ' #txt
@@ -148,6 +155,13 @@ mo0 f9 111 192 168 192 #arcP
 mo0 f13 440 192 497 192 #arcP
 >Proto mo0 .type ms.graph.ToDoData #txt
 >Proto mo0 .processKind CALLABLE_SUB #txt
+>Proto mo0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <desc>Reads and creates todo tasks.</desc>
+    </language>
+</elementInfo>
+' #txt
 >Proto mo0 0 0 32 24 18 0 #rect
 >Proto mo0 @|BIcon #fIcon
 mo0 f3 mainOut f6 tail #connect
