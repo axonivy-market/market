@@ -7,13 +7,13 @@ Axon Ivy’s Employee Onboarding solution gives HR the best practice guidance to
 - increases retention rates and finally
 - contributes to a good reputation for the company’s image
 
-## At a Glance
+### At a Glance
 You only have one chance to make a first impression. Failing to bring everyone up to speed immediately can result in high turnover rates and poor efficiency. A structured onboarding process guarantees employees have all necessary materials and information from the first day on ensuring employee satisfaction. Onboarding is not just an HR concern, but requires the collaboration of several departments and process owners.
 
-## YouTube Video
+### YouTube Video
 [![Employee Onboarding](https://img.youtube.com/vi/1WpfmeKhJyY/0.jpg)](https://www.youtube.com/watch?v=1WpfmeKhJyY)
 
-## Printscreens
+### Printscreens
 
 ![Screen 1](screen1.png "Screen 1")
 
@@ -21,6 +21,6 @@ You only have one chance to make a first impression. Failing to bring everyone u
 
 ![Screen 3](screen3.png "Screen 3")
 
-## Information
+### Information
 -   Industry: All Industries
 -   Compatible Version(s):  7.0.x, 8.0.x
