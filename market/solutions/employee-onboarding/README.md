@@ -1,19 +1,19 @@
-Axon Ivy’s Employee Onboarding solution gives HR the best practice guidance to coordinate responsibilities to ensure a smooth provision of work material and other arrangements. Moreover, HR manager and the superior can capture all relevant information which is necessary to automatically create the employee in the HR system. This solution:
+Axon Ivy’s Employee Onboarding solution provides best practice guidance to HR specialists, ensuring that provisioning and all other aspects of the employee onboarding process are handled quickly and efficiently. In addition, HR managers and their superiors can capture all the information required to automatically set up  employees in  HR systems. The solution:
 
-- ensures a warm welcome to new employees from day one (and even the days before)
-- guarantees no tasks left undone
-- promises new hires become productive much faster
-- makes sure that needed materials can be purchased in advance
-- increases retention rates and finally
-- contributes to a good reputation for the company’s image
+- ensures timely and personalized communication with new employees from their first day on the job (and even before)
+- guarantees no tasks are left undone
+- helps new hires become productive much faster
+- makes sure that required materials are procured and ready for employees in advance
+- increases employee retention rates
+- contributes to a positive company image
 
-### At a Glance
-You only have one chance to make a first impression. Failing to bring everyone up to speed immediately can result in high turnover rates and poor efficiency. A structured onboarding process guarantees employees have all necessary materials and information from the first day on ensuring employee satisfaction. Onboarding is not just an HR concern, but requires the collaboration of several departments and process owners.
+### Summary
+You only have one chance to make a first impression. Failing to deliver a smooth employee onboarding experience can contribute to high turnover rates and inefficiency. A structured onboarding process ensures that employees have all the necessary materials and information available when they start work, which increases employee satisfaction. Axon Ivy’s Employee Onboarding Solution not only coordinates processes within HR departments, it also automates functions across external departments and process owners.
 
-### YouTube Video
+### YouTube
 [![Employee Onboarding](https://img.youtube.com/vi/1WpfmeKhJyY/0.jpg)](https://www.youtube.com/watch?v=1WpfmeKhJyY)
 
-### Printscreens
+### Screenshots
 
 ![Screen 1](screen1.png "Screen 1")
 
