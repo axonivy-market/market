@@ -31,10 +31,6 @@
         <artifactId>project-build-plugin</artifactId>
         <version>${project.build.plugin.version}</version>
         <extensions>true</extensions>
-        <configuration>
-          <ivyVersion>9.2.0</ivyVersion>
-          <engineListPageUrl>https://developer.axonivy.com/permalink/nightly/axonivy-engine.zip</engineListPageUrl>
-        </configuration>
       </plugin>
     </plugins>
   </build>
