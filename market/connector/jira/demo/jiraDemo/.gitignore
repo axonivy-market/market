@@ -13,6 +13,7 @@ target/
 lib/mvn-deps/
 
 # ivy
+lib/
 classes/
 src_dataClasses/
 src_wsproc/

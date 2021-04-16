@@ -2,5 +2,38 @@
 	"id": "jira",
 	"name": "Jira",
 	"tags": ["connector"],
-	"listed": false
+	"listed": false,
+	"installers": [
+		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/jiraDemo/src/com/atlassian/jira",
+						"includes": [ 
+							"DynamicApiVersion.java"
+						],
+						"path": "src/com/atlassian/jira"
+					}
+				]
+			}
+		},
+		{
+			"id": "rest-client",
+			"data": {
+				"openApiUrl": "https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
+				"namespace": "com.atlassian.jira.client",
+				"features": [
+					"com.atlassian.jira.DynamicApiVersion",
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				],
+				"properties": [
+					{
+						"name": "API.version",
+						"value": "2"
+					}
+				]
+			}
+		}
+	]
 }
