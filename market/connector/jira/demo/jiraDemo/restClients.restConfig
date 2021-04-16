@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<restClients/>
+<restClients>
+    <restClient>
+        <uuid>639f7d97-ee60-4cc3-9645-8d67427eb1f0</uuid>
+        <name>jira (The Jira Cloud platform REST API)</name>
+        <description>Jira Cloud platform REST API documentation</description>
+        <configuration>
+            <uri>https://jira.axonivy.com/jira</uri>
+            <property>
+                <name>API.version</name>
+                <value>2</value>
+                <password>false</password>
+            </property>
+            <feature>
+                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+            <feature>
+                <class>com.atlassian.jira.DynamicApiVersion</class>
+            </feature>
+        </configuration>
+    </restClient>
+</restClients>
