@@ -2,17 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ch.ivyteam.ivy.market</groupId>
-  <artifactId>connector.modules</artifactId>
+  <artifactId>jira.modules</artifactId>
   <version>9.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>alfresco/demo</module>
-    <module>uipath/demo</module>
-    <module>docusign/demo</module>
-    <module>twitter/demo</module>
-    <module>jira/demo</module>
-    <module>microsoft365/msgraph/demo</module>
-    <module>genderize/demo/genderizeIoDemo</module>
+    <module>jiraDemo</module>
   </modules>
 </project>

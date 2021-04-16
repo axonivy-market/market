@@ -22,6 +22,7 @@
 			"id": "rest-client",
 			"data": {
 				"openApiUrl": "https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
+				"clientId": "639f7d97-ee60-4cc3-9645-8d67427eb1f0",
 				"namespace": "com.atlassian.jira.client",
 				"features": [
 					"com.atlassian.jira.DynamicApiVersion",
