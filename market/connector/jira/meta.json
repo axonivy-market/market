@@ -1,6 +1,6 @@
 {
-	"id": "jira",
-	"name": "Jira",
+	"id": "atlassian.jira",
+	"name": "Jira (preview)",
 	"tags": ["connector"],
 	"listed": false,
 	"installers": [
