@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restClients>
+    <restClient>
+        <uuid>f6097886-ec23-421a-8264-e8782f59723e</uuid>
+        <name>CurrencyConverter (CurrencyConverter)</name>
+        <description>Currency converter based on the Frankfurter.APP</description>
+        <icon>res:/webContent/icons/curConverter.png</icon>
+        <configuration>
+            <uri>https://api.frankfurter.app/</uri>
+            <feature>
+                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+        </configuration>
+    </restClient>
+</restClients>

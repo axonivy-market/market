@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"      
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<cc:interface componentType="IvyComponent">
+</cc:interface>
+
+<cc:implementation>
+	<p:selectOneMenu required="true" value="#{data.selectedCurrency}" placeholder="Currency">
+		<f:selectItem itemLabel="Australian Dollar (AUD)" itemValue="AUD" />
+		<f:selectItem itemLabel="Bulgarian Lev (BGN)" itemValue="BGN" />
+		<f:selectItem itemLabel="Brazilian Real (BRL)" itemValue="BRL" />
+		<f:selectItem itemLabel="Canadian Dollar (CAD)" itemValue="CAD" />
+		<f:selectItem itemLabel="Swiss Franc (CHF)" itemValue="CHF" />
+		<f:selectItem itemLabel="Chinese Renminbi Yuan(CNY)" itemValue="CNY" />
+		<f:selectItem itemLabel="Czech Koruna(CZK)" itemValue="CZK" />
+		<f:selectItem itemLabel="Danish Krone (DKK)" itemValue="DKK" />
+		<f:selectItem itemLabel="Euro (EUR)" itemValue="EUR" />
+		<f:selectItem itemLabel="British Pound (GBP)" itemValue="GBP" />
+		<f:selectItem itemLabel="Hong Kong Dollar (HKD)" itemValue="HKD" />
+		<f:selectItem itemLabel="Croatian Kuna (HRK)" itemValue="HRK" />
+		<f:selectItem itemLabel="Hungarian Forint (HUF)" itemValue="HUF" />
+		<f:selectItem itemLabel="Indonesian Rupiah (IDR)" itemValue="IDR" />
+		<f:selectItem itemLabel="Israeli New Sheqel (ILS)" itemValue="ILS" />
+		<f:selectItem itemLabel="Indian Rupee (INR)" itemValue="INR" />
+		<f:selectItem itemLabel="Icelandic Króna (ISK)" itemValue="ISK" />
+		<f:selectItem itemLabel="Japanese Yen (JPY)" itemValue="JPY" />
+		<f:selectItem itemLabel="South Korean Won (KRW)" itemValue="KRW" />
+		<f:selectItem itemLabel="Mexican Peso (MXN)" itemValue="MXN" />
+		<f:selectItem itemLabel="Malaysian Ringgit (MYR)" itemValue="MYR" />
+		<f:selectItem itemLabel="Norwegian Krone (NOK)" itemValue="NOK" />
+		<f:selectItem itemLabel="New Zealand Dollar (NZD)" itemValue="NZD" />
+		<f:selectItem itemLabel="Philippine Peso (PHP)" itemValue="PHP" />
+		<f:selectItem itemLabel="Polish Złoty (PLN)" itemValue="PLN" />
+		<f:selectItem itemLabel="Romanian Leu (RON)" itemValue="RON" />
+		<f:selectItem itemLabel="Russian Ruble (RUB)" itemValue="RUB" />
+		<f:selectItem itemLabel="Swedish Krona(SEK)" itemValue="SEK" />
+		<f:selectItem itemLabel="Singapore Dollar(SGD)" itemValue="SGD" />
+		<f:selectItem itemLabel="Thai Baht  (THB)" itemValue="THB" />
+		<f:selectItem itemLabel="Turkish Lira (TRY)" itemValue="TRY" />
+		<f:selectItem itemLabel="United States Dollar (USD)" itemValue="USD" />
+		<f:selectItem itemLabel="South African Rand (ZAR)" itemValue="ZAR" />
+	</p:selectOneMenu>
+	<!-- fields needs to be inside a h:form tag (which is normaly added by the outer page) -->
+
+
+</cc:implementation>
+</html>

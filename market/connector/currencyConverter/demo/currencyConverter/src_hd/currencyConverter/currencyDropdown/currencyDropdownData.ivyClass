@@ -1,0 +1,4 @@
+currencyDropdownData #class
+currencyConverter.currencyDropdown #namespace
+selectedCurrency String #field
+selectedCurrency PERSISTENT #fieldModifier

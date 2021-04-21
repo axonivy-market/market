@@ -1,0 +1,8 @@
+CurrencyConverterData #class
+currencyConverter #namespace
+FromAmount Number #field
+FromAmount PERSISTENT #fieldModifier
+FromCurrency String #field
+FromCurrency PERSISTENT #fieldModifier
+AmountInEuro Number #field
+AmountInEuro PERSISTENT #fieldModifier

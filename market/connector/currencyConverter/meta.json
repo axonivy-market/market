@@ -1,0 +1,58 @@
+{
+	"id": "currencyConverter-connector",
+	"name": "Currency Converter Connector",
+	"tags": ["connector"],
+	"installers": [
+		{
+			"id": "rest-client",
+			"data": {
+				"openApiUrl": "openapi.json",
+				"namespace": "app.frankfurter.api.client",
+				"icon": "res:/webContent/icons/curConverterSmall.png",
+				"clientId": "f6097886-ec23-421a-8264-e8782f59723e", 
+				"features": [
+					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature"
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"resources": [
+					{
+						"source": "demo/currencyConverter/dataclasses/currencyConverter/CurrencyConverterData.ivyClass",
+						"path": "dataclasses/currencyConverter/CurrencyConverterData.ivyClass"
+					},
+					{
+						"source": "demo/currencyConverter/processes/CurrencyConverter.mod",
+						"path": "processes/CurrencyConverter.mod"
+					},
+					{
+						"source": "demo/currencyConverter/webContent/icons/curConverterSmall.png",
+						"path": "webContent/icons/curConverterSmall.png"
+					},
+					{
+						"source": "demo/currencyConverter/webContent/icons/curConverter.png",
+						"path": "webContent/icons/curConverter.png"
+					}
+				],
+				"dialog":
+				{
+					"source": "demo/currencyConverter/src_hd",
+					"ids": [ 
+						"currencyConverter.CurrencyConverterInput", 
+						"currencyConverter.currencyDropdown" 
+					]
+				}
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/CurrencyConverter.mod"
+				]
+			}
+		}
+	]
+}
