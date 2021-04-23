@@ -11,8 +11,6 @@ function initMap() {
 }
 
 function doSearch() {
-	var map = new google.maps.Map(document.getElementById("map"), {});
-	var geocoder = new google.maps.Geocoder();
 	var houseNumber = $("#house-number").val();
 	var street = $("#street").val();
 	var city = $("#city").val();
@@ -20,6 +18,8 @@ function doSearch() {
 	if (!houseNumber || !street || !city) {
 		return;
 	}
+	var map = new google.maps.Map(document.getElementById("map"), {});
+	var geocoder = new google.maps.Geocoder();
 	geocoder.geocode(
 		{
 			address: houseNumber + " " + street + " " + city + " " + country,
