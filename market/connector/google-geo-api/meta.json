@@ -43,10 +43,6 @@
 						"path": "webContent/layouts/styles/ivy-common-8.css"
 					},
 					{
-						"source": "google-geo-api-demo/webContent/layouts/styles/progress-loader.css",
-						"path": "webContent/layouts/styles/progress-loader.css"
-					},
-					{
 						"source": "google-geo-api-demo/webContent/layouts/basic-8.xhtml",
 						"path": "webContent/layouts/basic-8.xhtml"
 					}
