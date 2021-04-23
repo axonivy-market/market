@@ -143,8 +143,30 @@ The [Swagger Editor](http://editor.swagger.io/) is a simple web frontend which a
 Actually, the first [Genederize.io connector](../market/connector/genderize/meta.json)
 was built just like that and you may inspect it to build your own OpenAPI installer procedure.
 
-## Celebrate
+
+
+## Publish & celebrate
 
 Once you arrive here, you very likely have already built your first market product. Please don't keep it private in your local fork, but fire us a pull request in order to integrate it into the official Axon Ivy Market.
 
 It's pure joy to share re-usable workflow products with the community.
+
+### Contribution guidelines
+
+We wan't to empower you to bring your product as fast as possible into the market. Nevertheless, we think that quality and consistency throughout the market matters, so we maintain here a list of things to check before contributing:
+
+<img src="img/docuSignNamespaces.png" width="150" style="float:right"/>
+
+1. **Separate Demo artifacts** from productive stuff by it's namespace. The target of this is, that users can quickly get rid of demo parts of the Product, once they choose to use the product for productive environments.
+	- [ ] Demo processes are marked as such by being located in namespace `Processes/Demo`
+	- [ ] Demo processes naturally come with a DataClass, it should live in a demo package (e.g. `com.acme.demo.DemoDeta`)
+	- [ ] Html Dialogs that are used only for demo purposes, are located in a `demo` sub-package (e.g. `com.acme.demo.MyViewer`)
+	- [ ] Java code that implements sharable connector functionality, does NOT contain `demo` in the package name  (e.g. `com.acme.MyUtil`).
+
+2. **Lean Html Dialogs** to allow easy migration to newer AxonIvy products
+    - [ ] Use *frame-8* (`template="/layouts/TaskTemplate-8.xhtml"`) as layout for your Html Dialogs. It simplifies inclusion of these dialogs with a coherent look in the Portal.
+    - [ ] Do not modify generated default files located in `webcontent/layouts` and it's children.
+    - [ ] Do not install generated files by using the project-resource installer. The generated layout supporting files will be automatically created if you use the project-resource/dialog installer to add your dialog.
+
+This is it. We'll be glad to review your product and help to get it into the market.
+
