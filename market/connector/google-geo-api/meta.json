@@ -1,0 +1,66 @@
+{
+	"id": "google-geo-api",
+	"name": "Google Map API",
+	"tags": ["connector", "map"],
+	"installers": [
+		{
+			"id": "project-resource",
+			"data": {
+				"dialog":
+				{
+					"source": "google-geo-api-demo/src_hd",
+					"ids": [ 
+						"google.getp.map"
+					]
+				},
+				"resources": [
+					{
+						"source": "google-geo-api-demo/dataclasses/google/getp/Data.ivyClass",
+						"path": "dataclasses/google/getp/Data.ivyClass"
+					},
+					{
+						"source": "google-geo-api-demo/processes/searchLocation.mod",
+						"path": "processes/searchLocation.mod"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/js/jquery-3.6.0.min.js",
+						"path": "webContent/layouts/js/jquery-3.6.0.min.js"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/js/map-dialog-handler.js",
+						"path": "webContent/layouts/js/map-dialog-handler.js"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/images/axon_ivy_logo.svg",
+						"path": "webContent/layouts/images/axon_ivy_logo.svg"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/images/ivy_favicon_48.png",
+						"path": "webContent/layouts/images/ivy_favicon_48.png"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/styles/ivy-common-8.css",
+						"path": "webContent/layouts/styles/ivy-common-8.css"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/styles/progress-loader.css",
+						"path": "webContent/layouts/styles/progress-loader.css"
+					},
+					{
+						"source": "google-geo-api-demo/webContent/layouts/basic-8.xhtml",
+						"path": "webContent/layouts/basic-8.xhtml"
+					}
+				]
+				
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"resources": [
+					"processes/searchLocation.mod"
+				]
+			}
+		}
+	]
+}
