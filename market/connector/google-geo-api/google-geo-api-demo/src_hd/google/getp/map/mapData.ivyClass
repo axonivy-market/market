@@ -1,0 +1,4 @@
+mapData #class
+google.getp.map #namespace
+apiKey String #field
+apiKey PERSISTENT #fieldModifier
