@@ -164,7 +164,7 @@ We want to empower you to bring your product as fast as possible into the market
 	- [ ] Java code that implements sharable connector functionality, does NOT contain `demo` in the package name  (e.g. `com.acme.MyUtil`).
 
 2. **Lean Html Dialogs** to allow easy migration to newer AxonIvy products
-    - [ ] Use *frame-8* (`template="/layouts/TaskTemplate-8.xhtml"`) as layout for your Html Dialogs. It simplifies inclusion of these dialogs with a coherent look in the Portal.
+    - [ ] Use *frame-8* (`template="/layouts/frame-8.xhtml"`) as layout for your Html Dialogs. It simplifies inclusion of these dialogs with a coherent look in the Portal.
     - [ ] Do not modify generated default files located in `webcontent/layouts` and its children.
     - [ ] Do not install generated files by using the project-resource installer. The generated layout supporting files will be automatically created if you use the project-resource/dialog installer to add your dialog.
 
