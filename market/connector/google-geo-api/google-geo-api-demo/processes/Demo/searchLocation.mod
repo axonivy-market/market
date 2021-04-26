@@ -1,5 +1,5 @@
 [Ivy]
-178C940D70614226 9.2.0 #module
+1790C4E5BB25B8AA 9.2.0 #module
 >Proto >Proto Collection #zClass
 sn0 searchLocation Big #zClass
 sn0 B #cInfo
@@ -31,7 +31,7 @@ sn0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 sn0 f0 @C|.responsibility Everybody #txt
 sn0 f0 81 49 30 30 -21 17 #rect
 sn0 f1 337 49 30 30 0 15 #rect
-sn0 f3 dialogId google.getp.map #txt
+sn0 f3 dialogId com.google.map.demo.MapDialog #txt
 sn0 f3 startMethod start() #txt
 sn0 f3 requestActionDecl '<> param;' #txt
 sn0 f3 responseMappingAction 'out=in;
@@ -39,14 +39,14 @@ sn0 f3 responseMappingAction 'out=in;
 sn0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>map</name>
+        <name>MapDialog</name>
     </language>
 </elementInfo>
 ' #txt
-sn0 f3 168 42 112 44 -12 -8 #rect
-sn0 f4 111 64 168 64 #arcP
-sn0 f2 280 64 337 64 #arcP
->Proto sn0 .type google.getp.Data #txt
+sn0 f3 160 42 112 44 -29 -8 #rect
+sn0 f4 111 64 160 64 #arcP
+sn0 f2 272 64 337 64 #arcP
+>Proto sn0 .type com.google.map.demo.Data #txt
 >Proto sn0 .processKind NORMAL #txt
 >Proto sn0 0 0 32 24 18 0 #rect
 >Proto sn0 @|BIcon #fIcon

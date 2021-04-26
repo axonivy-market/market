@@ -10,41 +10,38 @@
 				{
 					"source": "google-geo-api-demo/src_hd",
 					"ids": [ 
-						"google.getp.map"
+						"com.google.map.demo.MapDialog",
+						"com.google.map.Viewer"
 					]
 				},
 				"resources": [
 					{
-						"source": "google-geo-api-demo/dataclasses/google/getp/Data.ivyClass",
-						"path": "dataclasses/google/getp/Data.ivyClass"
+						"source": "google-geo-api-demo/config/variables.yaml",
+						"path": "config/variables.yaml"
 					},
 					{
-						"source": "google-geo-api-demo/processes/searchLocation.mod",
-						"path": "processes/searchLocation.mod"
+						"source": "google-geo-api-demo/dataclasses/com/google/map/demo/Data.ivyClass",
+						"path": "dataclasses/com/google/map/demo/Data.ivyClass"
+					},
+					{
+						"source": "google-geo-api-demo/processes/Demo/searchLocation.mod",
+						"path": "processes/Demo/searchLocation.mod"
 					},
 					{
 						"source": "google-geo-api-demo/webContent/layouts/js/jquery-3.6.0.min.js",
 						"path": "webContent/layouts/js/jquery-3.6.0.min.js"
 					},
 					{
-						"source": "google-geo-api-demo/webContent/layouts/js/map-dialog-handler.js",
-						"path": "webContent/layouts/js/map-dialog-handler.js"
-					},
-					{
-						"source": "google-geo-api-demo/webContent/layouts/images/axon_ivy_logo.svg",
-						"path": "webContent/layouts/images/axon_ivy_logo.svg"
-					},
-					{
-						"source": "google-geo-api-demo/webContent/layouts/images/ivy_favicon_48.png",
-						"path": "webContent/layouts/images/ivy_favicon_48.png"
+						"source": "google-geo-api-demo/src_hd/com/google/map/demo/MapDialog/resources/map-dialog-handler.js",
+						"path": "src_hd/com/google/map/demo/MapDialog/resources/map-dialog-handler.js"
 					},
 					{
 						"source": "google-geo-api-demo/webContent/layouts/styles/ivy-common-8.css",
 						"path": "webContent/layouts/styles/ivy-common-8.css"
 					},
 					{
-						"source": "google-geo-api-demo/webContent/layouts/basic-8.xhtml",
-						"path": "webContent/layouts/basic-8.xhtml"
+						"source": "google-geo-api-demo/webContent/layouts/frame-8.xhtml",
+						"path": "webContent/layouts/frame-8.xhtml"
 					}
 				]
 				
@@ -54,7 +51,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
-					"processes/searchLocation.mod"
+					"processes/Demo/searchLocation.mod"
 				]
 			}
 		}

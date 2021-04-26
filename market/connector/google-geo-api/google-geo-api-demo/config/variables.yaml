@@ -5,4 +5,6 @@
 # please add a 'variables.yaml' in the sub directory '_<environment>'.
 #
 Variables:
-  #myVariable: value
+  # Your google api key: https://developers.google.com/maps/documentation/javascript/examples/map-simple#all
+  # If api is wrong or null user only see the init location of the map, user can't search
+  google.map.api.key: ""
