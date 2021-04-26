@@ -4,5 +4,5 @@ Axon Ivy's [Google Map API] (https://developers.google.com/maps/documentation/ja
 
 ## Setup
 
-1. Copy 'Google Map API' into to mapProcess.mod
+1. Copy 'Google Map API' into to variables.yaml
 ![save-keys](doc/google-api-key.png)
