@@ -1,4 +1,4 @@
-Axon Ivy's [Google Maps API] (https://developers.google.com/maps/documentation/javascript/overview) connector lets you customize maps with your own content and imagery for display on web pages and mobile devices. The connector:
+Axon Ivy's [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) connector lets you customize maps with your own content and imagery for display on web pages and mobile devices. The connector:
 
 - Features four basic map types (roadmap, satellite, hybrid, and terrain) which you can modify using layers and styles, controls and events, and various services and libraries.
 - Provides access to the core API of Google Maps Platform
@@ -8,10 +8,10 @@ Axon Ivy's [Google Maps API] (https://developers.google.com/maps/documentation/j
 ## Demo
 
 1. This is a demo for Axon Ivy's Google Maps API connector
-
-![Document Generation](doc/expample.png)
+![Document Generation](doc/example.PNG)
 
 ## Setup
 
-1. Copy 'Google Map API' into to variables.yaml
-![save-keys](doc/google-api-key.png)
+1. Create a new [Google API key](https://developers.google.com/maps/documentation/javascript/get-api-key#creating-api-keys)
+2. Copy the `API Key` into to variables.yaml under `google.map.api.key`.
+![save-keys](doc/google-api-key.PNG)
