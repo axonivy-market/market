@@ -33,9 +33,10 @@ Vs0 f3 actionTable 'out=in;
 Vs0 f3 actionCode 'import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
-in.apiKey = ivy.var.google_map_api_key;
+in.apiKey = ivy.var.get("google_map_api_key");
 if(in.apiKey == "" || in.apiKey == null) {
-	FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error Message", "API key is missing"));
+	FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, 
+		"Google API.key missing", "register your personal maps API.key in configurations/variables.yaml to browse other locations."));
 }' #txt
 Vs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
