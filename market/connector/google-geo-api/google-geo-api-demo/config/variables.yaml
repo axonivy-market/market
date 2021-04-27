@@ -1,0 +1,10 @@
+# == Variables ==
+# 
+# You can define here your project Variables.
+# If you want to define/override a Variable for a specific Environment, 
+# please add a 'variables.yaml' in the sub directory '_<environment>'.
+#
+Variables:
+  # Your google api key: https://developers.google.com/maps/documentation/javascript/examples/map-simple#all
+  # If api is wrong or null user only see the init location of the map, user can't search
+  google.map.api.key: ""
