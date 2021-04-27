@@ -1,7 +1,7 @@
 {
 	"id": "google-geo-api",
 	"name": "Google Map API",
-	"tags": ["connector", "map"],
+	"tags": ["util", "map"],
 	"installers": [
 		{
 			"id": "project-resource",
