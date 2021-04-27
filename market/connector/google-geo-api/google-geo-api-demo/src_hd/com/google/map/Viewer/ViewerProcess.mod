@@ -32,9 +32,8 @@ Vs0 f3 actionTable 'out=in;
 ' #txt
 Vs0 f3 actionCode 'import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-in.apiKey = ivy.var.google_map_api_key;
 
-ivy.log.fatal(in.apiKey);
+in.apiKey = ivy.var.google_map_api_key;
 if(in.apiKey == "" || in.apiKey == null) {
 	FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error Message", "API key is missing"));
 }' #txt
