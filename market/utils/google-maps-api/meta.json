@@ -1,6 +1,6 @@
 {
-	"id": "google-geo-api",
-	"name": "Google Map API",
+	"id": "google-maps-api",
+	"name": "Google Maps API",
 	"tags": ["util", "map"],
 	"installers": [
 		{
@@ -9,7 +9,7 @@
 				"dialog":
 				{
 					"source": "google-geo-api-demo/src_hd",
-					"ids": [ 
+					"ids": [
 						"com.google.map.demo.MapDialog",
 						"com.google.map.Viewer"
 					]
@@ -36,7 +36,6 @@
 						"path": "src_hd/com/google/map/Viewer/resources/map-dialog-handler.js"
 					}
 				]
-				
 			}
 		},
 		{
