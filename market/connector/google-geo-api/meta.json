@@ -32,16 +32,8 @@
 						"path": "webContent/layouts/js/jquery-3.6.0.min.js"
 					},
 					{
-						"source": "google-geo-api-demo/src_hd/com/google/map/demo/MapDialog/resources/map-dialog-handler.js",
-						"path": "src_hd/com/google/map/demo/MapDialog/resources/map-dialog-handler.js"
-					},
-					{
-						"source": "google-geo-api-demo/webContent/layouts/styles/ivy-common-8.css",
-						"path": "webContent/layouts/styles/ivy-common-8.css"
-					},
-					{
-						"source": "google-geo-api-demo/webContent/layouts/frame-8.xhtml",
-						"path": "webContent/layouts/frame-8.xhtml"
+						"source": "google-geo-api-demo/src_hd/com/google/map/Viewer/resources/map-dialog-handler.js",
+						"path": "src_hd/com/google/map/Viewer/resources/map-dialog-handler.js"
 					}
 				]
 				
