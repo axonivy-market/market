@@ -30,7 +30,14 @@ Vs0 f0 83 51 26 26 -16 15 #rect
 Vs0 f1 403 51 26 26 0 12 #rect
 Vs0 f3 actionTable 'out=in;
 ' #txt
-Vs0 f3 actionCode 'in.apiKey = ivy.var.google_map_api_key;' #txt
+Vs0 f3 actionCode 'import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+in.apiKey = ivy.var.google_map_api_key;
+
+ivy.log.fatal(in.apiKey);
+if(in.apiKey == "" || in.apiKey == null) {
+	FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error Message", "API key is missing"));
+}' #txt
 Vs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
