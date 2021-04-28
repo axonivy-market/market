@@ -85,7 +85,7 @@ Cs0 f8 109 192 232 192 #arcP
 Cs0 f9 344 192 608 77 #arcP
 Cs0 f9 1 608 192 #addKink
 Cs0 f9 0 0.7392297504192251 0 0 #arcLabel
->Proto Cs0 .type app.frankfurkter.demo.CurrencyConverterInput.CurrencyConverterInputData #txt
+>Proto Cs0 .type app.frankfurter.demo.CurrencyConverterInput.CurrencyConverterInputData #txt
 >Proto Cs0 .processKind HTML_DIALOG #txt
 >Proto Cs0 -8 -8 16 16 16 26 #rect
 Cs0 f0 mainOut f2 tail #connect

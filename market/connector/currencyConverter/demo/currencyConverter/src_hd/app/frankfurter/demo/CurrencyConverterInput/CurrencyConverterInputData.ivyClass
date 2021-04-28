@@ -1,4 +1,4 @@
 CurrencyConverterInputData #class
-app.frankfurkter.demo.CurrencyConverterInput #namespace
+app.frankfurter.demo.CurrencyConverterInput #namespace
 currencyConverterData app.frankfurter.demo.CurrencyConverterData #field
 currencyConverterData PERSISTENT #fieldModifier
