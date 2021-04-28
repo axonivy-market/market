@@ -40,8 +40,8 @@
 				{
 					"source": "demo/currencyConverter/src_hd",
 					"ids": [ 
-						"app.frankfurkter.demo.CurrencyConverterInput", 
-						"app.frankfurkter.demo.currencyDropdown" 
+						"app.frankfurter.demo.CurrencyConverterInput", 
+						"app.frankfurter.demo.currencyDropdown" 
 					]
 				}
 			}
