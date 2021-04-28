@@ -37,18 +37,16 @@
           "description" : "quote against any Currency using the from parameter",
           "required" : true,
           "schema" : {
-            "type" : "string",
-            "enum" : [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
-          }
+				"$ref" : "#/components/schemas/CurCodes"
+			}
         }, {
           "name" : "to",
           "in" : "query",
           "description" : "limits returned rates to specified values",
           "required" : false,
-          "schema" : {
-            "type" : "string",
-            "enum" : [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
-          }
+           "schema" : {
+				"$ref" : "#/components/schemas/CurCodes"
+			}
         } ],
         "responses" : {
           "200" : {
@@ -226,7 +224,11 @@
             "$ref" : "#/components/schemas/Rates"
           }
         }
-      }
+      },
+	  "CurCodes" : {
+            "type" : "string",
+            "enum" : [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
+          }
     }
   }
 }
