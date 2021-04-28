@@ -1,0 +1,234 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "description" : "Currency converter based on the Frankfurter.APP",
+    "version" : "1.0.2",
+    "title" : "CurrencyConverter"
+  },
+  "externalDocs" : {
+    "description" : "Find out more about Frankfurter",
+    "url" : "https://www.frankfurter.app/docs/"
+  },
+  "servers" : [ {
+    "url" : "https://api.frankfurter.app/"
+  } ],
+  "tags" : [ {
+    "name" : "currency"
+  } ],
+  "paths" : {
+    "/latest" : {
+      "get" : {
+        "tags" : [ "currency" ],
+        "summary" : "returns the latest rates",
+        "description" : "Multiple status values can be provided with comma separated strings",
+        "operationId" : "convertAmount",
+        "parameters" : [ {
+          "name" : "amount",
+          "in" : "query",
+          "required" : true,
+          "example" : 100,
+          "schema" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "quote against any Currency using the from parameter",
+          "required" : true,
+          "schema" : {
+				"$ref" : "#/components/schemas/CurCodes"
+			}
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "limits returned rates to specified values",
+          "required" : false,
+           "schema" : {
+				"$ref" : "#/components/schemas/CurCodes"
+			}
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Rate"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Rates" : {
+        "type" : "object",
+        "properties" : {
+          "AUD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "BGN" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "BRL" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "CAD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "CHF" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "CNY" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "CZK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "DKK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "EUR" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "GBP" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "HKD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "HRK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "HUF" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "IDR" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "ILS" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "INR" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "ISK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "JPY" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "KRW" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "MXN" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "MYR" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "NOK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "NZD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "PHP" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "PLN" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "RON" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "RUB" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "SEK" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "SGD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "THB" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "TRY" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "USD" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "ZAR" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        }
+      },
+      "Rate" : {
+        "type" : "object",
+        "properties" : {
+          "amount" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "base" : {
+            "type" : "string",
+            "example" : "EUR"
+          },
+          "date" : {
+            "type" : "string",
+            "example" : "21.02.2021"
+          },
+          "rates" : {
+            "$ref" : "#/components/schemas/Rates"
+          }
+        }
+      },
+	  "CurCodes" : {
+            "type" : "string",
+            "enum" : [ "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR" ]
+          }
+    }
+  }
+}

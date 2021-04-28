@@ -10,6 +10,7 @@
     <module>alfresco/demo</module>
     <module>uipath/demo</module>
     <module>docusign/demo</module>
+    <module>currencyConverter/demo/currencyConverter</module>
     <module>twitter/demo</module>
     <module>jira/demo</module>
     <module>microsoft365/msgraph/demo</module>
