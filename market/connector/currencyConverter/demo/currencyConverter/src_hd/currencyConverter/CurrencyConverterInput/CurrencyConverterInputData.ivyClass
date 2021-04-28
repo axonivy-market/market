@@ -1,4 +1,0 @@
-CurrencyConverterInputData #class
-currencyConverter.CurrencyConverterInput #namespace
-currencyConverterData currencyConverter.CurrencyConverterData #field
-currencyConverterData PERSISTENT #fieldModifier
