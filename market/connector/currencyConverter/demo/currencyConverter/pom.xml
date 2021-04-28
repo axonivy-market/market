@@ -40,7 +40,7 @@
           <showErrors>true</showErrors>
           <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
           <properties>
-            <openapi.url>${basedir}/../openapi.json</openapi.url>
+            <openapi.url>${basedir}/../../openapi.json</openapi.url>
             <openapi.namespace>app.frankfurter.api.client</openapi.namespace>
             <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_f6097886-ec23-421a-8264-e8782f59723e.jar</openapi.jar>
             <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
