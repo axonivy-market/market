@@ -20,12 +20,12 @@
 			"data": {
 				"resources": [
 					{
-						"source": "demo/currencyConverter/dataclasses/currencyConverter/CurrencyConverterData.ivyClass",
-						"path": "dataclasses/currencyConverter/CurrencyConverterData.ivyClass"
+						"source": "demo/currencyConverter/dataclasses/app/frankfurter/demo/CurrencyConverterData.ivyClass",
+						"path": "dataclasses/app/frankfurter/demo/CurrencyConverterData.ivyClass"
 					},
 					{
-						"source": "demo/currencyConverter/processes/CurrencyConverter.mod",
-						"path": "processes/CurrencyConverter.mod"
+						"source": "demo/currencyConverter/processes/demo/CurrencyConverter.mod",
+						"path": "processes/demo/CurrencyConverter.mod"
 					},
 					{
 						"source": "demo/currencyConverter/webContent/icons/curConverterSmall.png",
@@ -40,8 +40,8 @@
 				{
 					"source": "demo/currencyConverter/src_hd",
 					"ids": [ 
-						"currencyConverter.CurrencyConverterInput", 
-						"currencyConverter.currencyDropdown" 
+						"app.frankfurkter.demo.CurrencyConverterInput", 
+						"app.frankfurkter.demo.currencyDropdown" 
 					]
 				}
 			}
@@ -50,7 +50,7 @@
 			"id": "open-resource",
 			"data": {
 				"resources": [
-					"processes/CurrencyConverter.mod"
+					"processes/demo/CurrencyConverter.mod"
 				]
 			}
 		}
