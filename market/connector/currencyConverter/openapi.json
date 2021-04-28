@@ -71,7 +71,8 @@
       "Rates" : {
         "type" : "object",
         "additionalProperties": {
-          "type": "string"
+          "type" : "number",
+          "format" : "double"
         }
       },
       "Rate" : {

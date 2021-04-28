@@ -69,7 +69,7 @@ from=app.frankfurter.api.client.CurCodes.valueOf(in.currencyConverterData.FromCu
 to=;
 ' #txt
 Cs0 f7 resultType app.frankfurter.api.client.Rate #txt
-Cs0 f7 responseMapping 'out.currencyConverterData.AmountInEuro=Double.parseDouble(result.rates.get(app.frankfurter.api.client.CurCodes.EUR.toString()) as String);
+Cs0 f7 responseMapping 'out.currencyConverterData.AmountInEuro=result.rates.get(app.frankfurter.api.client.CurCodes.EUR.toString()) as Double;
 ' #txt
 Cs0 f7 clientErrorCode ivy:error:rest:client #txt
 Cs0 f7 statusErrorCode ivy:error:rest:client #txt
