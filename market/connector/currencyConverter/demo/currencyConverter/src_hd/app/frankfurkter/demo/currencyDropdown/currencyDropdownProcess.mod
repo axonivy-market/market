@@ -47,7 +47,7 @@ cs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 cs0 f3 83 147 26 26 -15 15 #rect
 cs0 f4 211 147 26 26 0 12 #rect
 cs0 f5 109 160 211 160 #arcP
->Proto cs0 .type currencyConverter.currencyDropdown.currencyDropdownData #txt
+>Proto cs0 .type app.frankfurkter.demo.currencyDropdown.currencyDropdownData #txt
 >Proto cs0 .processKind HTML_DIALOG #txt
 >Proto cs0 -8 -8 16 16 16 26 #rect
 cs0 f0 mainOut f2 tail #connect

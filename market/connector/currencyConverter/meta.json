@@ -1,6 +1,6 @@
 {
-	"id": "currencyConverter-connector",
-	"name": "Currency Converter Connector",
+	"id": "currencyConverter",
+	"name": "Frankfurter Currency Data API",
 	"tags": ["connector"],
 	"installers": [
 		{

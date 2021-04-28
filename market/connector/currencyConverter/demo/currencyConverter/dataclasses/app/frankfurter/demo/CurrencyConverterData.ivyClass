@@ -1,0 +1,5 @@
+CurrencyConverterData #class
+app.frankfurter.demo #namespace
+FromAmount Number #field
+FromCurrency String #field
+AmountInEuro Number #field

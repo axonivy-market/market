@@ -21,11 +21,11 @@ Cs0 @PushWFArc f8 '' #zField
 Cs0 @PushWFArc f9 '' #zField
 >Proto Cs0 Cs0 CurrencyConverterInputProcess #zField
 Cs0 f0 guid 17801C4C34134211 #txt
-Cs0 f0 method start(currencyConverter.CurrencyConverterData) #txt
-Cs0 f0 inParameterDecl '<currencyConverter.CurrencyConverterData currencyConverterData> param;' #txt
+Cs0 f0 method start(app.frankfurter.demo.CurrencyConverterData) #txt
+Cs0 f0 inParameterDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> param;' #txt
 Cs0 f0 inParameterMapAction 'out.currencyConverterData=param.currencyConverterData;
 ' #txt
-Cs0 f0 outParameterDecl '<currencyConverter.CurrencyConverterData currencyConverterData> result;' #txt
+Cs0 f0 outParameterDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> result;' #txt
 Cs0 f0 outParameterMapAction 'result.currencyConverterData=in.currencyConverterData;
 ' #txt
 Cs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -85,7 +85,7 @@ Cs0 f8 109 192 232 192 #arcP
 Cs0 f9 344 192 608 77 #arcP
 Cs0 f9 1 608 192 #addKink
 Cs0 f9 0 0.7392297504192251 0 0 #arcLabel
->Proto Cs0 .type currencyConverter.CurrencyConverterInput.CurrencyConverterInputData #txt
+>Proto Cs0 .type app.frankfurkter.demo.CurrencyConverterInput.CurrencyConverterInputData #txt
 >Proto Cs0 .processKind HTML_DIALOG #txt
 >Proto Cs0 -8 -8 16 16 16 26 #rect
 Cs0 f0 mainOut f2 tail #connect
