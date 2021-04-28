@@ -9,6 +9,7 @@
   <modules>
     <module>uipath/demo</module>
     <module>docusign/demo</module>
+    <module>currencyConverter/demo/currencyConverter</module>
     <module>twitter/demo</module>
     <module>microsoft365/demo</module>
     <module>genderize/demo/genderizeIoDemo</module>
