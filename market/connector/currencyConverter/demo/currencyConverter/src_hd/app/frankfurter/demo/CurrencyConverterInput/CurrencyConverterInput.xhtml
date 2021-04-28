@@ -26,8 +26,12 @@
 
 					<p:outputLabel value="Input Currency" />
 					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.currencyConverterData.FromCurrency}"/>
+					
+					<p:outputLabel value="Output Currency" />
+					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.currencyConverterData.ToCurrency}"/>
+					
 					<p:outputLabel for="currencyConverterDataAmountInEuro"
-						value="Amount In Euro" />
+						value="Amount" />
 					<p:inputText id="currencyConverterDataAmountInEuro" value="#{data.currencyConverterData.AmountInEuro}"></p:inputText>
 
 				</p:panelGrid>

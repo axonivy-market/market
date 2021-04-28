@@ -66,10 +66,10 @@ Cs0 f7 clientId f6097886-ec23-421a-8264-e8782f59723e #txt
 Cs0 f7 path /latest #txt
 Cs0 f7 queryParams 'amount=in.currencyConverterData.FromAmount;
 from=app.frankfurter.api.client.CurCodes.valueOf(in.currencyConverterData.FromCurrency);
-to=;
+to=in.currencyConverterData.ToCurrency;
 ' #txt
 Cs0 f7 resultType app.frankfurter.api.client.Rate #txt
-Cs0 f7 responseMapping 'out.currencyConverterData.AmountInEuro=result.rates.get(app.frankfurter.api.client.CurCodes.EUR.toString()) as Double;
+Cs0 f7 responseMapping 'out.currencyConverterData.AmountInEuro=result.rates.get(in.currencyConverterData.ToCurrency.toString()) as Double;
 ' #txt
 Cs0 f7 clientErrorCode ivy:error:rest:client #txt
 Cs0 f7 statusErrorCode ivy:error:rest:client #txt
