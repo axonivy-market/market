@@ -3,3 +3,4 @@ app.frankfurter.demo #namespace
 FromAmount Number #field
 FromCurrency String #field
 AmountInEuro Number #field
+ToCurrency app.frankfurter.api.client.CurCodes #field
