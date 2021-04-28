@@ -65,7 +65,7 @@ Cs0 f6 83 179 26 26 -15 15 #rect
 Cs0 f7 clientId f6097886-ec23-421a-8264-e8782f59723e #txt
 Cs0 f7 path /latest #txt
 Cs0 f7 queryParams 'amount=in.currencyConverterData.FromAmount;
-from=in.currencyConverterData.FromCurrency;
+from=app.frankfurter.api.client.CurCodes.valueOf(in.currencyConverterData.FromCurrency);
 to=;
 ' #txt
 Cs0 f7 resultType app.frankfurter.api.client.Rate #txt
