@@ -22,17 +22,17 @@
 					<p:outputLabel for="currencyConverterDataFromAmount"
 						value="Input Amount" />
 					<p:inputText id="currencyConverterDataFromAmount"
-						value="#{data.currencyConverterData.FromAmount}" required="true"></p:inputText>
+						value="#{data.convert.FromAmount}" required="true"></p:inputText>
 
 					<p:outputLabel value="Input Currency" />
-					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.currencyConverterData.FromCurrency}"/>
+					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.convert.FromCurrency}"/>
 					
 					<p:outputLabel value="Output Currency" />
-					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.currencyConverterData.ToCurrency}"/>
+					<ic:app.frankfurter.demo.currencyDropdown currency="#{data.convert.ToCurrency}"/>
 					
 					<p:outputLabel for="currencyConverterDataAmountInEuro"
 						value="Amount" />
-					<p:inputText id="currencyConverterDataAmountInEuro" value="#{data.currencyConverterData.ToAmount}"></p:inputText>
+					<p:inputText id="currencyConverterDataAmountInEuro" value="#{data.convert.ToAmount}"></p:inputText>
 
 				</p:panelGrid>
 				<br />
