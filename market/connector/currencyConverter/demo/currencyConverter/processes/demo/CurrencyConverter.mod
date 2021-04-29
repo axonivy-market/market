@@ -39,10 +39,9 @@ Cr0 f1 433 49 30 30 0 15 #rect
 Cr0 f3 dialogId app.frankfurter.demo.CurrencyConverterInput #txt
 Cr0 f3 startMethod start(app.frankfurter.demo.CurrencyConverterData) #txt
 Cr0 f3 requestActionDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> param;' #txt
-Cr0 f3 requestMappingAction 'param.currencyConverterData=in;
+Cr0 f3 requestMappingAction 'param.convert=in;
 ' #txt
-Cr0 f3 responseMappingAction 'out=in;
-out=result.currencyConverterData;
+Cr0 f3 responseMappingAction 'out=result.convert;
 ' #txt
 Cr0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
