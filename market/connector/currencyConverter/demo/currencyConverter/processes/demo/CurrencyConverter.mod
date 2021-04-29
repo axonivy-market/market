@@ -12,8 +12,8 @@ Cr0 @TextInP .responsibility .responsibility #zField
 Cr0 @StartRequest f0 '' #zField
 Cr0 @EndTask f1 '' #zField
 Cr0 @UserDialog f3 '' #zField
-Cr0 @PushWFArc f4 '' #zField
 Cr0 @PushWFArc f2 '' #zField
+Cr0 @PushWFArc f7 '' #zField
 >Proto Cr0 Cr0 CurrencyConverter #zField
 Cr0 f0 outLink convertDemo.ivp #txt
 Cr0 f0 inParamDecl '<> param;' #txt
@@ -38,11 +38,8 @@ Cr0 f0 81 49 30 30 -21 17 #rect
 Cr0 f1 433 49 30 30 0 15 #rect
 Cr0 f3 dialogId app.frankfurter.demo.CurrencyConverterInput #txt
 Cr0 f3 startMethod start(app.frankfurter.demo.CurrencyConverterData) #txt
-Cr0 f3 requestActionDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> param;' #txt
-Cr0 f3 requestMappingAction 'param.currencyConverterData=in;
-' #txt
-Cr0 f3 responseMappingAction 'out=in;
-out=result.currencyConverterData;
+Cr0 f3 requestActionDecl '<app.frankfurter.demo.CurrencyConverterData convert> param;' #txt
+Cr0 f3 responseMappingAction 'out=result.convert;
 ' #txt
 Cr0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -52,13 +49,13 @@ Cr0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Cr0 f3 184 42 160 44 -72 -8 #rect
-Cr0 f4 111 64 184 64 #arcP
 Cr0 f2 344 64 433 64 #arcP
+Cr0 f7 111 64 184 64 #arcP
 >Proto Cr0 .type app.frankfurter.demo.CurrencyConverterData #txt
 >Proto Cr0 .processKind NORMAL #txt
 >Proto Cr0 0 0 32 24 18 0 #rect
 >Proto Cr0 @|BIcon #fIcon
-Cr0 f0 mainOut f4 tail #connect
-Cr0 f4 head f3 mainIn #connect
 Cr0 f3 mainOut f2 tail #connect
 Cr0 f2 head f1 mainIn #connect
+Cr0 f0 mainOut f7 tail #connect
+Cr0 f7 head f3 mainIn #connect
