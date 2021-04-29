@@ -7,7 +7,7 @@
   <version>9.2.0</version>
   <packaging>iar</packaging>
   <properties>
-    <project.build.plugin.version>9.2.1</project.build.plugin.version>
+    <project.build.plugin.version>9.2.2</project.build.plugin.version>
   </properties>
   <build>
     <plugins>
