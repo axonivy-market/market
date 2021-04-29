@@ -22,11 +22,11 @@ Cs0 @PushWFArc f9 '' #zField
 >Proto Cs0 Cs0 CurrencyConverterInputProcess #zField
 Cs0 f0 guid 17801C4C34134211 #txt
 Cs0 f0 method start(app.frankfurter.demo.CurrencyConverterData) #txt
-Cs0 f0 inParameterDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> param;' #txt
-Cs0 f0 inParameterMapAction 'out.currencyConverterData=param.currencyConverterData;
+Cs0 f0 inParameterDecl '<app.frankfurter.demo.CurrencyConverterData convert> param;' #txt
+Cs0 f0 inParameterMapAction 'out.convert=param.convert;
 ' #txt
-Cs0 f0 outParameterDecl '<app.frankfurter.demo.CurrencyConverterData currencyConverterData> result;' #txt
-Cs0 f0 outParameterMapAction 'result.currencyConverterData=in.currencyConverterData;
+Cs0 f0 outParameterDecl '<app.frankfurter.demo.CurrencyConverterData convert> result;' #txt
+Cs0 f0 outParameterMapAction 'result.convert=in.convert;
 ' #txt
 Cs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -64,12 +64,12 @@ Cs0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 Cs0 f6 83 179 26 26 -15 15 #rect
 Cs0 f7 clientId f6097886-ec23-421a-8264-e8782f59723e #txt
 Cs0 f7 path /latest #txt
-Cs0 f7 queryParams 'amount=in.currencyConverterData.FromAmount;
-from=in.currencyConverterData.FromCurrency;
-to=in.currencyConverterData.ToCurrency;
+Cs0 f7 queryParams 'amount=in.convert.FromAmount;
+from=in.convert.FromCurrency;
+to=in.convert.ToCurrency;
 ' #txt
 Cs0 f7 resultType app.frankfurter.api.client.Rate #txt
-Cs0 f7 responseMapping 'out.currencyConverterData.ToAmount=result.rates.get(in.currencyConverterData.ToCurrency.toString()) as Double;
+Cs0 f7 responseMapping 'out.convert.ToAmount=result.rates.get(in.convert.ToCurrency.toString()) as Double;
 ' #txt
 Cs0 f7 clientErrorCode ivy:error:rest:client #txt
 Cs0 f7 statusErrorCode ivy:error:rest:client #txt
