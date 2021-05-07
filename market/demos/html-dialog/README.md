@@ -13,6 +13,8 @@ solution:
 - gives access to front-end framework integration such as plain HTML5 or
   bootstrap
 
+Learn more about [user interface](https://developer.axonivy.com/doc/9/designer-guide/user-interface/index.html)
+in our documentation.
 
 ### Demo
 
