@@ -1,0 +1,37 @@
+
+{
+	"id": "quick-start-tutorial",
+	"name": "Quick Start Tutorial",
+	"sort": 400,
+	"listed": false,
+	"tags": ["demo"],
+	"mavenArtifacts": [
+		{
+			"name": "Quick Start Tutorial",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "quick-start-tutorial"
+		}
+	],
+	"installers": [
+		{
+			"id": "maven-import",
+			"data": {
+				"projects": [
+					{
+						"groupId": "ch.ivyteam.demo",
+						"artifactId": "quick-start-tutorial",
+						"version": "${version}",
+						"type": "iar"
+					}
+				],
+				"repositories": [
+					{
+						"id": "axonivy.public",
+						"url": "http://repo.axonivy.rocks",
+						"snapshots":{"enabled":"true"}
+					}
+				]
+			}
+		}
+	]
+}

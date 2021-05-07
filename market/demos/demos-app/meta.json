@@ -1,0 +1,17 @@
+
+{
+	"id": "demos-app",
+	"name": "Demos Application",
+	"sort": 400,
+	"listed": false,
+	"tags": ["demo"],
+	"mavenArtifacts": [
+		{
+			"key": "demos",
+			"name": "Demo App",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "ivy-demos-app",
+			"type": "zip"
+		}
+	]
+}
