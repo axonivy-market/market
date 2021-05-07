@@ -7,11 +7,3 @@ with a web-based, modern interface the Portal provides you with key functionalit
 * Improve your Axon Ivy Portal experience and efficiency through the built-in customization options
 
 ![Portal](portal.png)
-
-### Import
-
-You can use the import wizard in Axon Ivy Designer
-
-`File > Import > Axon Ivy > Ivy Projects`
-
-![Import Wizard](import-wizard.png)
