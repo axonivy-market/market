@@ -1,0 +1,35 @@
+{
+	"id": "html-dialog-demo",
+	"name": "Html Dialog Demos",
+	"sort": 400,
+	"tags": ["demo"],
+	"mavenArtifacts": [
+		{
+			"name": "Html Dialog Demos",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "html-dialog-demos"
+		}
+	],
+	"installers": [
+		{
+			"id": "maven-import",
+			"data": {
+				"projects": [
+					{
+						"groupId": "ch.ivyteam.demo",
+						"artifactId": "html-dialog-demos",
+						"version": "${version}",
+						"type": "iar"
+					}
+				],
+				"repositories": [
+					{
+						"id": "axonivy.public",
+						"url": "http://repo.axonivy.rocks",
+						"snapshots":{"enabled":"true"}
+					}
+				]
+			}
+		}
+	]
+}
