@@ -9,6 +9,7 @@ and ad-hoc work. The solution:
 - exemplifies the need of business data and its usage
 - includes many more examples in combination with workflow activities
 
+Learn more about [workflow](https://developer.axonivy.com/doc/9/designer-guide/how-to/workflow.html and [adaptive case management](https://developer.axonivy.com/doc/9/concepts/adaptive-case-management.html) in our documentation.
 
 ### Demo
 

@@ -13,6 +13,7 @@ business errors (e.g. approval declined). The solution:
 - exemplifies the use of global errors
 - gives access to ready-to-use templates such as cancelling a dialog
 
+Learn more about [error handling](https://developer.axonivy.com/doc/9/concepts/error-handling.html) in our documentation.
 
 ### Demo
 
