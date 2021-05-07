@@ -4,6 +4,7 @@
 	"sort": 100,
 	"tags": ["workflow-ui"],
 	"versionDisplay": "portal",
+	"installMatcher": "best-match",
 	"mavenArtifacts": [
 		{
 			"key": "portal",
