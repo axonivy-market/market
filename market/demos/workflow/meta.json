@@ -1,6 +1,6 @@
 {
 	"id": "demos",
-	"name": "Demos",
+	"name": "Workflow Demos",
 	"sort": 400,
 	"tags": ["demo"],
 	"mavenArtifacts": [
