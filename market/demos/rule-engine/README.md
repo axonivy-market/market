@@ -8,6 +8,8 @@ business rule engine, this is a no-brainer with Axon Ivy. The solution:
 - includes a ready-to-copy example featuring adjustable thresholds for business
   users
 
+Learn more about the [rule engine](https://developer.axonivy.com/doc/9.2/designer-guide/how-to/rule-engine.html)
+in our documentation.
 
 ### Demo
 

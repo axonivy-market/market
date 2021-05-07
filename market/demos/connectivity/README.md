@@ -11,6 +11,8 @@ solution:
 - demonstrates REST in combination with OpenAPI and OData
 - gives many examples of how to use SOAP service within the platform
 
+Learn more about [3rd party integration](https://developer.axonivy.com/doc/9/concepts/3rd-party-integration/index.html) in our documentation.
+
 
 ### Demo
 
