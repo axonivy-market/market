@@ -1,3 +1,4 @@
+# Workflow Demo
 Axon Ivy's Workflow Demo is a must-have for anyone embarking on the process
 automation journey. Accelerate time-to-market using a powerful digital process
 automation platform featuring processes, rules, adaptive case management (ACM)
@@ -11,7 +12,7 @@ and ad-hoc work. The solution:
 
 Learn more about [workflow](https://developer.axonivy.com/doc/9/designer-guide/how-to/workflow.html and [adaptive case management](https://developer.axonivy.com/doc/9/concepts/adaptive-case-management.html) in our documentation.
 
-### Demo
+## Demo
 
 ![Workflow Demo 1](screen1.png "Workflow Demo 1")
 ![Workflow Demo 2](screen2.png "Workflow Demo 2")

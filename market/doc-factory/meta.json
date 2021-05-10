@@ -1,6 +1,13 @@
 {
 	"id": "doc-factory",
 	"name": "Doc Factory",
+	"description": "placeholder",
+	"type": "util",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-addons/",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"sort": 300,
 	"versionDisplay": "hide-snapshots",
 	"tags": ["document"],

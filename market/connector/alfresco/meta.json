@@ -1,6 +1,13 @@
 {
 	"id": "alfrescoecm",
 	"name": "Alfresco Enterprise Content Management",
+	"description": "Integration for Alfresco ECM",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector", "ECM"],
 	"installers": [
 		{

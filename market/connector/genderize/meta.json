@@ -1,6 +1,13 @@
 {
 	"id": "genderize-io-connector",
 	"name": "Genderize.io Connector",
+	"description": "Predict gender based on given their name",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector"],
 	"installers": [
 		{
