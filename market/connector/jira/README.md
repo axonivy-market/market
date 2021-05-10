@@ -1,1 +1,1 @@
-Atlassian JIRA
+# Atlassian JIRA Connector

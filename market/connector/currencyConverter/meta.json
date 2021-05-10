@@ -1,6 +1,13 @@
 {
 	"id": "currencyConverter",
 	"name": "Frankfurter Currency Data API",
+	"description": "Convert any currency in any other currency",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector"],
 	"installers": [
 		{

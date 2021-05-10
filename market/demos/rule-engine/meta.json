@@ -1,7 +1,14 @@
 {
 	"id": "rule-engine-demo",
 	"name": "Rule Engine Demos",
+	"description": "placeholder",
+	"type": "solution",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
 	"sort": 400,
+	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["demo"],
 	"mavenArtifacts": [
 		{

@@ -1,6 +1,13 @@
 {
 	"id": "ms-todo",
 	"name": "Microsoft ToDo",
+	"description": "placeholder",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector", "outlook"],
 	"properties": {
 		"tags": "me.todo",

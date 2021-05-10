@@ -1,3 +1,4 @@
+# HTML Dialog Demo
 Axon Ivy's HTML Dialog Demo gives you all the power you need to make shiny,
 user-friendly forms. More than 100 widgets are ready and waiting to be used in
 your UIs. But this demo offers even more. Simply copy HTML Dialog with all the
@@ -16,7 +17,7 @@ solution:
 Learn more about [user interface](https://developer.axonivy.com/doc/9/designer-guide/user-interface/index.html)
 in our documentation.
 
-### Demo
+## Demo
 
 ![Html Dialog Demo 1](screen1.png "Html Dialog Demo 1")
 ![Html Dialog Demo 2](screen2.png "Html Dialog Demo 2")

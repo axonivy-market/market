@@ -1,7 +1,13 @@
-Axon Ivy’s [Twitter](https://twitter.com/) connector illustrates the power of integrating existing systems to your process automation initiatives. Social communication is a must and using Twitter in any business process supports an open communication strategy. See what's happening in the world right now! This connector:
+# Twitter Connector
+Axon Ivy’s [Twitter](https://twitter.com/) connector illustrates the power of
+integrating existing systems to your process automation initiatives. Social
+communication is a must and using Twitter in any business process supports an
+open communication strategy. See what's happening in the world right now! This
+connector:
 
 - Gives you full power to the OpenAPI Twitter services.
-- Supports you with an easy-to-copy demo implementation to reduce your integration effort.
+- Supports you with an easy-to-copy demo implementation to reduce your
+  integration effort.
 
 ## Demo
 
