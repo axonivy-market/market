@@ -1,7 +1,7 @@
 {
 	"id": "ms-calendar",
 	"name": "Microsoft Calendar",
-	"description": "Microsoft ",
+	"description": "Microsoft Calendar",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

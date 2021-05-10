@@ -1,7 +1,7 @@
 {
 	"id": "msgraph",
 	"name": "Microsoft 365",
-	"description": "placeholder",
+	"description": "Microsoft 365",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

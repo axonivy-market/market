@@ -1,7 +1,7 @@
 {
 	"id": "twitter",
 	"name": "Twitter",
-	"description": "placeholder",
+	"description": "Twitter",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

@@ -1,7 +1,7 @@
 {
 	"id": "ms-mail",
 	"name": "Microsoft Mail",
-	"description": "placeholder",
+	"description": "Microsoft Mail",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",
