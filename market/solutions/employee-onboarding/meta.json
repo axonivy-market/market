@@ -1,6 +1,12 @@
 {
 	"id": "employee-onboarding",
 	"name": "Employee Onboarding",
+	"description": "Employee Onboarding",
+	"type": "solution",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"language": "EN",
+	"industry": "Cross-Industry",
 	"sort": 400,
 	"tags": ["solution"]
 }

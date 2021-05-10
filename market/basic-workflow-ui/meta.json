@@ -1,6 +1,13 @@
 {
 	"id": "basic-workflow-ui",
 	"name": "Basic Workflow UI",
+	"description": "Small and smart workflow ui",
+	"type": "util",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-basic-workflow-ui",
+	"language": "EN/DE/FR",
+	"industry": "Cross-Industry",
 	"sort": 999,
 	"listed": false,
 	"tags": ["workflow-ui"],

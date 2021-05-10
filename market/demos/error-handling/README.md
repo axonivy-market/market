@@ -1,3 +1,4 @@
+# Error Handling Demo
 Axon Ivy's Error Handling Demo nicely showcases how easy it can be to react to
 exceptions during process automation. Errors are used to model exceptional
 process paths. With an error the happy path of a process is left. In Axon Ivy,
@@ -15,7 +16,7 @@ business errors (e.g. approval declined). The solution:
 
 Learn more about [error handling](https://developer.axonivy.com/doc/9/concepts/error-handling.html) in our documentation.
 
-### Demo
+## Demo
 
 ![Flight Cancelation](screen1.png "Flight Cancelation")
 ![Business Error](screen2.png "Business Error")

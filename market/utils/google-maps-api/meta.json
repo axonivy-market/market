@@ -1,6 +1,13 @@
 {
 	"id": "google-maps-api",
 	"name": "Google Maps API",
+	"description": "Google Maps API",
+	"type": "util",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["util", "map"],
 	"installers": [
 		{

@@ -2,6 +2,13 @@
 {
 	"id": "demos-app",
 	"name": "Demos Application",
+	"description": "Demos Application",
+	"type": "solution",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"sort": 400,
 	"listed": false,
 	"tags": ["demo"],

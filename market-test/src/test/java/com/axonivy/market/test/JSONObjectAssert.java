@@ -1,6 +1,8 @@
 package com.axonivy.market.test;
 
 import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import org.assertj.core.api.Assertions;
 import org.json.JSONException;
@@ -19,6 +21,18 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
   public static JSONObjectAssert assertThat(JSONObject json, Path path)
   {
     return new JSONObjectAssert(json, path);
+  }
+  
+  public JSONObjectAssert requireStringPropertyWithLength(String name, int minLength, int maxLength)
+  {
+    isNotNull();
+    Assertions.assertThat(actual.has(name)).as(name + " property must exist in " + path).isTrue();
+
+    var value = actual.getString(name);
+    Assertions.assertThat(value.length())
+      .as(name + " property value must have at least " + minLength + " characters in " + path).isGreaterThanOrEqualTo(minLength)
+      .as(name + " property value must have maximum " + maxLength + " characters in " + path).isLessThanOrEqualTo(maxLength);
+    return this;
   }
 
   public JSONObjectAssert requireStringPropertyWithMinLength(String name, int minLength)
@@ -69,13 +83,23 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
     return this;
   }
 
+  public JSONObjectAssert requireStringPropertyWithFixedValues(String name, String... fixedValues)
+  {
+    isNotNull();
+    Assertions.assertThat(actual.has(name)).as(name + " property must exist in " + path).isTrue();
+
+    var value = actual.getString(name);
+    Assertions.assertThat(fixedValues).as(name + " property value must be one of [" + Arrays.stream(fixedValues).collect(Collectors.joining(", ")) + "] in " + path).contains(value);
+    return this;
+  }
+  
   public JSONObjectAssert optionalStringPropertyWithFixedValues(String name, String... fixedValues)
   {
     isNotNull();
     if (actual.has(name))
     {
       var value = actual.getString(name);
-      Assertions.assertThat(fixedValues).as(name + " property value must be one of " + fixedValues + " in " + path).contains(value);
+      Assertions.assertThat(fixedValues).as(name + " property value must be one of [" + Arrays.stream(fixedValues).collect(Collectors.joining(", ")) + "] in " + path).contains(value);
     }
     return this;
   }

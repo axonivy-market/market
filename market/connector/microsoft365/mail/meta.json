@@ -1,6 +1,13 @@
 {
 	"id": "ms-mail",
 	"name": "Microsoft Mail",
+	"description": "Microsoft Mail",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector", "outlook"],
 	"properties": {
 		"tags": "me.user,me.message,me.Actions",

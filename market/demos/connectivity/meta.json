@@ -1,6 +1,13 @@
 {
 	"id": "connectivity-demo",
 	"name": "Connectivity Demos",
+	"description": "Connectivity Demos",
+	"type": "solution",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"sort": 400,
 	"tags": [
 		"demo"
