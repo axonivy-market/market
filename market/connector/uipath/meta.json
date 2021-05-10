@@ -1,7 +1,7 @@
 {
 	"id": "uipath",
 	"name": "UiPath Robotic Process Automation",
-	"description": "placeholder",
+	"description": "UiPath Robotic Process Automation",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

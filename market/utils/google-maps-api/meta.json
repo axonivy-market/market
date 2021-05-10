@@ -1,7 +1,7 @@
 {
 	"id": "google-maps-api",
 	"name": "Google Maps API",
-	"description": "placeholder",
+	"description": "Google Maps API",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

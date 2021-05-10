@@ -1,7 +1,7 @@
 {
 	"id": "alfrescoecm",
 	"name": "Alfresco Enterprise Content Management",
-	"description": "Integration for Alfresco ECM",
+	"description": "Alfresco Enterprise Content Management",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",
