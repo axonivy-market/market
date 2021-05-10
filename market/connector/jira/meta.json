@@ -1,6 +1,13 @@
 {
 	"id": "atlassian.jira",
 	"name": "Jira (preview)",
+	"description": "Connect Jira with your business processes",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector"],
 	"listed": false,
 	"installers": [

@@ -1,6 +1,13 @@
 {
 	"id": "msgraph",
 	"name": "Microsoft 365",
+	"description": "Microsoft 365",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"costs": "free",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
 	"tags": ["connector", "outlook"],
 	"properties": {
 		"main": ""

@@ -1,3 +1,4 @@
+# Connectivity Demo
 Axon Ivy's Connectivity (REST/SOAP) Demo nicely showcases how simple process
 automation can be. Using standard architecture principles to create interactive
 applications with web services is key to accelerate time-to-market. The
@@ -14,7 +15,7 @@ solution:
 Learn more about [3rd party integration](https://developer.axonivy.com/doc/9/concepts/3rd-party-integration/index.html) in our documentation.
 
 
-### Demo
+## Demo
 
 ![OpenAPI](screen1.png "OpenAPI")
 ![Restful Person Manager](screen2.png "Restful Person Manager")

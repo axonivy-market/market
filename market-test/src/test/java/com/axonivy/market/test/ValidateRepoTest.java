@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.imageio.ImageIO;
+
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
@@ -28,6 +30,11 @@ class ValidateRepoTest
     JSONObjectAssert.assertThat(json, metaPath)
             .requireStringPropertyWithMinLength("id", 5)
             .requireStringPropertyWithMinLength("name", 5)
+            .requireStringPropertyWithLength("description", 5, 200)
+            .requireStringPropertyWithLength("vendor", 2, 100)
+            .optionalStringPropertyWithMinLength("industry", 2)
+            .requireStringPropertyWithFixedValues("costs", "free", "paid")            
+            .requireStringPropertyWithFixedValues("type", "connector", "solution", "diagram", "util")
             .optionalIntegerPropertyWithMinValue("sort", 1)
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal", "hide-snapshots")
@@ -112,9 +119,29 @@ class ValidateRepoTest
   @Test
   void everyProductHasALogo()
   {
+    var logo = "logo.png";
     assertThat(productDirs())
-            .extracting(path -> path.resolve("logo.png"))
+            .extracting(path -> path.resolve(logo))
             .allSatisfy(path -> assertThat(path).exists());
+    
+    assertThat(productDirs())
+      .extracting(path -> path.resolve(logo))
+      .allSatisfy(path -> assertSquareImage(path));
+  }
+  
+  private static void assertSquareImage(Path path)
+  {
+    try
+    {
+      var image = ImageIO.read(path.toFile());
+      assertThat(image.getWidth())
+        .as("image " + path + " must have same height & width")
+        .isEqualTo(image.getHeight());
+    }
+    catch (IOException ex)
+    {
+      throw new RuntimeException(ex);
+    }
   }
 
   @Test
