@@ -1,7 +1,7 @@
 {
 	"id": "msgraph",
 	"name": "Microsoft 365",
-	"description": "Microsoft 365",
+	"description": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

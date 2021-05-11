@@ -1,7 +1,7 @@
 {
 	"id": "currencyConverter",
 	"name": "Frankfurter Currency Data API",
-	"description": "Convert any currency in any other currency",
+	"description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",
