@@ -1,12 +1,12 @@
 {
 	"id": "employee-onboarding",
 	"name": "Employee Onboarding",
-	"description": "Employee Onboarding",
+	"description": "This solution helps HR managers to accelerate time-to-market for employee onboarding.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"costs": "paid",
 	"language": "EN",
 	"industry": "Cross-Industry",
 	"sort": 400,
-	"tags": ["solution"]
+	"tags": ["hr"]
 }
