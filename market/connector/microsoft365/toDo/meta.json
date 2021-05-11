@@ -4,7 +4,6 @@
 	"description": "Microsoft To Do provides a simple way for people to manage their tasks and plan their day.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
