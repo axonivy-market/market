@@ -5,7 +5,6 @@
 	"description": "Demos Application",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
 	"language": "English",
 	"industry": "Cross-Industry",

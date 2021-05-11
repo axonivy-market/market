@@ -33,7 +33,7 @@ class ValidateRepoTest
             .requireStringPropertyWithLength("description", 5, 200)
             .requireStringPropertyWithLength("vendor", 2, 100)
             .optionalStringPropertyWithMinLength("industry", 2)
-            .requireStringPropertyWithFixedValues("costs", "free", "paid")            
+            .optionalStringPropertyWithFixedValues("costs", "paid") // free is default            
             .requireStringPropertyWithFixedValues("type", "connector", "solution", "diagram", "util")
             .optionalIntegerPropertyWithMinValue("sort", 1)
             .optionalBooleanProperty("listed", true)

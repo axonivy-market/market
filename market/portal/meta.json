@@ -4,7 +4,6 @@
 	"description": "Powerful workflow user interface",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/axonivyportal/src/master/",
 	"language": "EN/DE/FR/ES",
 	"industry": "Cross-Industry",
