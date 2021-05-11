@@ -1,13 +1,16 @@
 
 {
 	"id": "demos-app",
+	"version": "9.3",
 	"name": "Demos Application",
 	"description": "Demos Application",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
 	"listed": false,
 	"tags": ["demo"],
 	"mavenArtifacts": [

@@ -1,12 +1,15 @@
 {
 	"id": "html-dialog-demo",
+	"version": "9.3",
 	"name": "Html Dialog Demos",
 	"description": "User-friendly forms for all devices is key in  process automation. Learn more about nice GUIs.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
 	"tags": ["demo"],
 	"mavenArtifacts": [
 		{

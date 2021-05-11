@@ -1,5 +1,6 @@
 {
 	"id": "atlassian.jira",
+	"version": "1.0",
 	"name": "Jira (preview)",
 	"description": "Connect Jira with your business processes",
 	"type": "connector",
