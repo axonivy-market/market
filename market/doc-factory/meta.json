@@ -1,6 +1,6 @@
 {
 	"id": "doc-factory",
-	"version": "9.3",
+	"version": "9.2",
 	"name": "DocFactory",
 	"description": "Based on Aspose technology the DocFactory creates any type of docucment out of your process data.",
 	"type": "util",
