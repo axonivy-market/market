@@ -1,5 +1,6 @@
 {
 	"id": "connectivity-demo",
+	"version": "9.3",
 	"name": "Connectivity Demos",
 	"description": "3rd party integration based on web service technology such as REST and SOAP is a must.",
 	"type": "solution",

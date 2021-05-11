@@ -1,5 +1,6 @@
 {
 	"id": "ms-todo",
+	"version": "1.0",
 	"name": "Microsoft To Do",
 	"description": "Microsoft To Do provides a simple way for people to manage their tasks and plan their day.",
 	"type": "connector",

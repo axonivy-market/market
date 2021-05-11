@@ -29,9 +29,12 @@ class ValidateRepoTest
     var json = toJsonObject(metaPath);
     JSONObjectAssert.assertThat(json, metaPath)
             .requireStringPropertyWithMinLength("id", 5)
+            .requireStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
             .requireStringPropertyWithMinLength("name", 5)
             .requireStringPropertyWithLength("description", 5, 200)
             .requireStringPropertyWithLength("vendor", 2, 100)
+            .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
+            .optionalStringPropertyWithPattern("platformRating", "^([0-4])?(\\.[5])?$|^5$")
             .optionalStringPropertyWithMinLength("industry", 2)
             .optionalStringPropertyWithFixedValues("costs", "paid") // free is default            
             .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")

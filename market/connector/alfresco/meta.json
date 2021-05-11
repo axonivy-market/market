@@ -1,5 +1,6 @@
 {
 	"id": "alfrescoecm",
+	"version": "1.0",
 	"name": "Alfresco Enterprise Content Management",
 	"description": "Using Alfresco ECM it is easy to connect, manage and protect important company information.",
 	"type": "connector",

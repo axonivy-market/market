@@ -1,5 +1,6 @@
 {
 	"id": "visualvm-plugin",
+	"version": "8.0",
 	"name": "VisualVM Plugin",
 	"description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
 	"type": "util",

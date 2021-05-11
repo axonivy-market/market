@@ -1,5 +1,6 @@
 {
 	"id": "portal",
+	"version": "9.3",
 	"name": "Axon Ivy Portal",
 	"description": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform.",
 	"type": "util",
