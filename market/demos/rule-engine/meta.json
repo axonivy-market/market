@@ -1,6 +1,6 @@
 {
 	"id": "rule-engine-demo",
-	"version": "9.3",
+	"version": "9.2",
 	"name": "Rule Engine Demos",
 	"description": "The separation of process logic and business logic accelerates time-to-market significantly.",
 	"type": "solution",
