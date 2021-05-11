@@ -4,7 +4,6 @@
 	"description": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",

@@ -4,7 +4,6 @@
 	"description": "Microsoft Mail  is part of the Microsoft 365 API that lets you manage emails, schedule meetings and much more.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",

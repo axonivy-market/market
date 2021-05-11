@@ -4,7 +4,6 @@
 	"description": "DocuSign allows organizations to sign any document electronically on different systems.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
-	"costs": "free",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
