@@ -1,7 +1,7 @@
 {
 	"id": "doc-factory",
-	"name": "Doc Factory",
-	"description": "Doc Factory",
+	"name": "DocFactory",
+	"description": "Based on Aspose technology the DocFactory creates any type of docucment out of your process data.",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-addons/",
@@ -12,18 +12,18 @@
 	"tags": ["document"],
 	"mavenArtifacts": [
 		{
-			"name": "Doc Factory",
+			"name": "DocFactory",
 			"groupId": "ch.ivyteam.ivy.addons",
 			"artifactId": "doc-factory",
 			"makesSenseAsMavenDependency": true
 		},
 		{
-			"name": "Doc Factory Demo",
+			"name": "DocFactory Demo",
 			"groupId": "ch.ivyteam.ivy.addons",
 			"artifactId": "doc-factory-demos"
 		},
 		{
-			"name": "Doc Factory Documentation",
+			"name": "DocFactory Documentation",
 			"groupId": "ch.ivyteam.ivy.addons",
 			"artifactId": "doc-factory-doc",
 			"type": "zip",

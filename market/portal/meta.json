@@ -1,7 +1,7 @@
 {
 	"id": "portal",
-	"name": "Portal",
-	"description": "Powerful workflow user interface",
+	"name": "Axon Ivy Portal",
+	"description": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform.",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/axonivyportal/src/master/",
