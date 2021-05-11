@@ -8,6 +8,7 @@
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-visualvm",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
 	"tags": ["monitoring"],
 	"versionDisplay": "hide-snapshots",
 	"mavenArtifacts": [

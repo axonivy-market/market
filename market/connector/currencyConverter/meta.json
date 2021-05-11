@@ -5,9 +5,11 @@
 	"description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
 	"tags": ["converter"],
 	"installers": [
 		{

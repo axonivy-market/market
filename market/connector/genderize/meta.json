@@ -5,9 +5,11 @@
 	"description": "A simple API to predict the gender of a person given their name. 1000 names/day are free.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "3.5",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
 	"tags": ["helper"],
 	"installers": [
 		{
