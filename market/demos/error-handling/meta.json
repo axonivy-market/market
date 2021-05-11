@@ -1,7 +1,7 @@
 {
 	"id": "error-handling-demo",
 	"name": "Error Handling Demos",
-	"description": "Error Handling Demos",
+	"description": "Errors in process automation mean leaving the happy path. Learn more about business and technical errors.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"sort": 400,
