@@ -1,5 +1,6 @@
 {
 	"id": "error-handling-demo",
+	"version": "9.3",
 	"name": "Error Handling Demos",
 	"description": "Errors in process automation mean leaving the happy path. Learn more about business and technical errors.",
 	"type": "solution",

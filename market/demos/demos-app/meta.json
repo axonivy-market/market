@@ -1,6 +1,7 @@
 
 {
 	"id": "demos-app",
+	"version": "9.3",
 	"name": "Demos Application",
 	"description": "Demos Application",
 	"type": "solution",

@@ -1,5 +1,6 @@
 {
 	"id": "docusign",
+	"version": "1.0",
 	"name": "DocuSign",
 	"description": "DocuSign allows organizations to sign any document electronically on different systems.",
 	"type": "connector",

@@ -1,6 +1,7 @@
 
 {
 	"id": "quick-start-tutorial",
+	"version": "9.3",
 	"name": "Quick Start Tutorial",
 	"description": "Quick Start Tutorial",
 	"type": "solution",

@@ -93,6 +93,16 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
     return this;
   }
   
+  public JSONObjectAssert requireStringPropertyWithPattern(String name, String pattern)
+  {
+    isNotNull();
+    Assertions.assertThat(actual.has(name)).as(name + " property must exist in " + path).isTrue();
+    
+    var value = actual.getString(name);
+    Assertions.assertThat(value).as(name + " property value must match '" + pattern + "'").matches(pattern);
+    return this;
+  }
+  
   public JSONObjectAssert optionalStringPropertyWithFixedValues(String name, String... fixedValues)
   {
     isNotNull();
@@ -135,4 +145,16 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
     }
     return this;
   }
+  
+  public JSONObjectAssert optionalStringPropertyWithPattern(String name, String pattern)
+  {
+    isNotNull();
+    if (actual.has(name))
+    {
+      var value = actual.getString(name);
+      Assertions.assertThat(value).as(name + " property value must match '" + pattern + "'").matches(pattern);
+    }
+    return this;
+  }
+
 }

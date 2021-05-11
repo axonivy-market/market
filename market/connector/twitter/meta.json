@@ -1,5 +1,6 @@
 {
 	"id": "twitter",
+	"version": "1.0",
 	"name": "Twitter API",
 	"description": "Using the Twitter API users in Axon Ivy can post and interact with messages from the Twitter network.",
 	"type": "connector",

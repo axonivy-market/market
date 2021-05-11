@@ -1,5 +1,6 @@
 {
 	"id": "currencyConverter",
+	"version": "1.0",
 	"name": "Frankfurter Currency Data API",
 	"description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
 	"type": "connector",
