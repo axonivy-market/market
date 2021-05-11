@@ -7,7 +7,6 @@
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-basic-workflow-ui",
 	"language": "EN/DE/FR",
 	"industry": "Cross-Industry",
-	"sort": 999,
 	"listed": false,
 	"tags": ["workflow-ui"],
 	"mavenArtifacts": [
