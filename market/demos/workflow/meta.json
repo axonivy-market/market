@@ -1,7 +1,7 @@
 {
 	"id": "demos",
 	"name": "Workflow Demos",
-	"description": "Workflow Demos",
+	"description": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
