@@ -7,7 +7,7 @@
 	"sourceUrl": "https://github/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"tags": ["util", "map"],
+	"tags": ["location"],
 	"installers": [
 		{
 			"id": "project-resource",
