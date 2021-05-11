@@ -8,6 +8,7 @@
 	"sourceUrl": "https://github/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
 	"tags": ["location"],
 	"installers": [
 		{

@@ -5,9 +5,11 @@
 	"description": "3rd party integration based on web service technology such as REST and SOAP is a must.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
 	"tags": [
 		"demo"
 	],

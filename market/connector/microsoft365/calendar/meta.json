@@ -5,9 +5,11 @@
 	"description": "Mircosoft Calendar is part of the Microsoft 365 API that lets you manage emails and contacts.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy/market",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
 	"tags": ["office"],
 	"properties": {
 		"tags": "me.user,me.calendar,users.calendar,me.Actions",

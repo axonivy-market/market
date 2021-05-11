@@ -5,9 +5,11 @@
 	"description": "Based on Aspose technology the DocFactory creates any type of docucment out of your process data.",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-addons/",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "7.1+",
 	"versionDisplay": "hide-snapshots",
 	"tags": ["document"],
 	"mavenArtifacts": [
