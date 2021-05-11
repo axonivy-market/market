@@ -1,7 +1,7 @@
 {
 	"id": "connectivity-demo",
 	"name": "Connectivity Demos",
-	"description": "Connectivity Demos",
+	"description": "3rd party integration based on web service technology such as REST and SOAP is a must.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
