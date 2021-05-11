@@ -1,12 +1,15 @@
 {
 	"id": "demos",
+	"version": "9.3",
 	"name": "Workflow Demos",
 	"description": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/ivy-samples/ivy-project-demos",
 	"language": "English",
 	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
 	"tags": ["demo"],
 	"mavenArtifacts": [
 		{
