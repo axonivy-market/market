@@ -21,7 +21,9 @@ product.
   your product. This readme will be shown on your product detail page. You may
   refer to images, such as screenshots, within the file. Simply add such images
   into the product directory (e.g. under ``doc/img/myScreen.png``) and include
-  it in your reamde with a relative link ```![myFancyFeature](doc/img/myScreen.png)```
+  it in your readme with a relative link ```![myFancyFeature](doc/img/myScreen.png)```.
+  Demo (## Demo) and Setup (## Setup) section will handled and promote in seperate
+  tabs in the market.
 - **logo.png**: an image displaying your product or brand icon. It will be used
   on the market search overview page, in the header of the product detail page
   and in the Axon Ivy Designer install wizard. The logo must be square.
@@ -53,6 +55,11 @@ The most important contents of a `meta.json` file are:
 	"description": "Short nice description",
 	"listed": false,
 	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
 	"type": "connector",
 	"tags": ["list", "of", "search", "tags" ],
 	"installers": [
@@ -62,6 +69,8 @@ The most important contents of a `meta.json` file are:
 	]
 }
 ```
+
+For type you need to choose one of "connector", "process", "solution" or "util".
 
 ### Custom installation
 
