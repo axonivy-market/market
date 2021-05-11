@@ -1,7 +1,7 @@
 {
 	"id": "ms-todo",
-	"name": "Microsoft ToDo",
-	"description": "Microsoft ToDos",
+	"name": "Microsoft To Do",
+	"description": "Microsoft To Do provides a simple way for people to manage their tasks and plan their day.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",

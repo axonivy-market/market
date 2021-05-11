@@ -1,7 +1,7 @@
 {
 	"id": "google-maps-api",
 	"name": "Google Maps API",
-	"description": "Google Maps API",
+	"description": "Google Maps API lets you customize maps with your own content & imagery for display on web pages & mobile devices.",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
 	"costs": "free",
