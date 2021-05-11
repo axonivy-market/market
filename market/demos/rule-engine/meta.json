@@ -1,7 +1,7 @@
 {
 	"id": "rule-engine-demo",
 	"name": "Rule Engine Demos",
-	"description": "Rule Engine Demos",
+	"description": "The separation of process logic and business logic accelerates time-to-market significantly.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"sort": 400,
