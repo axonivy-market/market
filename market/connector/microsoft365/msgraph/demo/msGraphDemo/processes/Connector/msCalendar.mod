@@ -133,7 +133,7 @@ mr0 f12 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 mr0 f12 path /me/microsoft.graph.findMeetingTimes #txt
 mr0 f12 method POST #txt
 mr0 f12 bodyInputType ENTITY #txt
-mr0 f12 bodyObjectType com.microsoft.graph.Body227 #txt
+mr0 f12 bodyObjectType com.microsoft.graph.MeMicrosoftGraphFindMeetingTimesBody #txt
 mr0 f12 bodyObjectMapping 'param.attendees=in.attendees;
 ' #txt
 mr0 f12 resultType com.microsoft.graph.MicrosoftGraphMeetingTimeSuggestionsResult #txt
