@@ -67,7 +67,7 @@ ml0 f6 clientId 007036dc-72d1-429f-88a7-ba5d5cf5ae58 #txt
 ml0 f6 path /me/microsoft.graph.sendMail #txt
 ml0 f6 method POST #txt
 ml0 f6 bodyInputType ENTITY #txt
-ml0 f6 bodyObjectType com.microsoft.graph.Body231 #txt
+ml0 f6 bodyObjectType com.microsoft.graph.MeMicrosoftGraphSendMailBody #txt
 ml0 f6 bodyObjectMapping 'param.message=in.message;
 param.saveToSentItems=true;
 ' #txt
