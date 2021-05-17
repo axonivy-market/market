@@ -1,17 +1,17 @@
 {
-    "id": "atrust",
-    "name": "A-Trust Mobile phone signature",
+    "id": "a-trust",
+    "name": "A-Trust Mobile Phone Signature",
+    "description": "Clearly authenticate your customers with a mobile phone signature on the web.",
     "version": "1.0",
-    "description": "Clearly authenticate your customers with a mobile phone signature on the Internet.",
-	"type": "connector",
-	"vendor": "Axon Ivy AG",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy/market",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"compatibility": "9.2+",
+    "type": "connector",
+    "vendor": "Axon Ivy AG",
+    "platformReview": "4.5",
+    "sourceUrl": "https://github.com/axonivy/a-trust-connector",
+    "language": "English",
+    "industry": "Cross-Industry",
+    "compatibility": "9.2+",
     "listed": false,
-	"tags": ["authentication"],
+    "tags": [ "e-signature" ],
     "mavenArtifacts": [
         {
             "name": "A-Trust",
@@ -37,11 +37,13 @@
                         "type": "iar"
                     }
                 ],
-                "repositories":[
+                "repositories": [
                     {
-                        "id":"axonivy.public",
-                        "url":"http://repo.axonivy.rocks",
-                        "snapshots":{"enabled":"true"}
+                        "id": "axonivy.public",
+                        "url": "http://repo.axonivy.rocks",
+                        "snapshots": {
+                            "enabled": "true"
+                        }
                     }
                 ]
             }
@@ -49,7 +51,7 @@
         {
             "id": "maven-import",
             "data": {
-                "projects":[
+                "projects": [
                     {
                         "groupId": "ch.ivyteam.connector",
                         "artifactId": "atrust-connector-demo",
@@ -57,10 +59,10 @@
                         "type": "iar"
                     }
                 ],
-                "repositories":[
+                "repositories": [
                     {
-                        "id":"axonivy.public",
-                        "url":"http://repo.axonivy.rocks"
+                        "id": "axonivy.public",
+                        "url": "http://repo.axonivy.rocks"
                     }
                 ]
             }
