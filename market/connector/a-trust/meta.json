@@ -1,0 +1,78 @@
+{
+    "id": "atrust",
+    "name": "A-Trust Mobile phone signature",
+    "version": "1.0",
+    "description": "Clearly authenticate your customers with a mobile phone signature on the Internet.",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
+    "listed": false,
+	"tags": ["authentication"],
+    "mavenArtifacts": [
+        {
+            "name": "A-Trust",
+            "groupId": "ch.ivyteam.connector",
+            "artifactId": "atrust-connector",
+            "makesSenseAsMavenDependency": true
+        },
+        {
+            "name": "A-Trust Demo",
+            "groupId": "ch.ivyteam.connector",
+            "artifactId": "atrust-connector-demo"
+        }
+    ],
+    "installers": [
+        {
+            "id": "maven-dependency",
+            "data": {
+                "dependencies": [
+                    {
+                        "groupId": "ch.ivyteam.connector",
+                        "artifactId": "a-trust",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories":[
+                    {
+                        "id":"axonivy.public",
+                        "url":"http://repo.axonivy.rocks",
+                        "snapshots":{"enabled":"true"}
+                    }
+                ]
+            }
+        },
+        {
+            "id": "maven-import",
+            "data": {
+                "projects":[
+                    {
+                        "groupId": "ch.ivyteam.connector",
+                        "artifactId": "atrust-connector-demo",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories":[
+                    {
+                        "id":"axonivy.public",
+                        "url":"http://repo.axonivy.rocks"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "project": "ATrustDemos",
+                "resources": [
+                    "processes/ATrustIntegrationDemo/DemoStart.mod"
+                ]
+            }
+        }
+    ]
+}
