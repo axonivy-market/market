@@ -30,7 +30,7 @@ class ValidateRepoTest
     JSONObjectAssert.assertThat(json, metaPath)
             .requireStringPropertyWithLength("id", 5, 20)
             .requireStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
-            .requireStringPropertyWithLength("name", 5, 20)
+            .requireStringPropertyWithLength("name", 5, 22)
             .requireStringPropertyWithLength("description", 5, 200)
             .requireStringPropertyWithLength("vendor", 2, 100)
             .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
