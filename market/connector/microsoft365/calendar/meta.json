@@ -2,7 +2,7 @@
 	"id": "ms-calendar",
 	"version": "1.0",
 	"name": "Microsoft Calendar",
-	"description": "Mircosoft Calendar is part of the Microsoft 365 API that lets you manage emails and contacts.",
+	"description": "Microsoft Calendar is part of the Microsoft 365 API that lets you manage emails and contacts.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
