@@ -1,7 +1,7 @@
 {
 	"id": "uipath",
 	"version": "1.0",
-	"name": "UiPath Robotic Process Automation",
+	"name": "UiPath",
 	"description": "RPA and DPA together are the best and fastest way to start any digital transformation journey.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
