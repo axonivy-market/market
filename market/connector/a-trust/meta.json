@@ -10,19 +10,18 @@
     "language": "English",
     "industry": "Cross-Industry",
     "compatibility": "9.2+",
-    "listed": false,
     "tags": [ "e-signature" ],
     "mavenArtifacts": [
         {
             "name": "A-Trust",
-            "groupId": "ch.ivyteam.connector",
-            "artifactId": "atrust-connector",
+            "groupId": "com.axonivy.connector.atrust",
+            "artifactId": "a-trust-connector",
             "makesSenseAsMavenDependency": true
         },
         {
             "name": "A-Trust Demo",
-            "groupId": "ch.ivyteam.connector",
-            "artifactId": "atrust-connector-demo"
+            "groupId": "com.axonivy.connector.atrust",
+            "artifactId": "a-trust-connector-demo"
         }
     ],
     "installers": [
@@ -31,8 +30,8 @@
             "data": {
                 "dependencies": [
                     {
-                        "groupId": "ch.ivyteam.connector",
-                        "artifactId": "a-trust",
+                        "groupId": "com.axonivy.connector.atrust",
+                        "artifactId": "a-trust-connector",
                         "version": "${version}",
                         "type": "iar"
                     }
@@ -53,8 +52,8 @@
             "data": {
                 "projects": [
                     {
-                        "groupId": "ch.ivyteam.connector",
-                        "artifactId": "atrust-connector-demo",
+                        "groupId": "com.axonivy.connector.atrust",
+                        "artifactId": "a-trust-connector-demo",
                         "version": "${version}",
                         "type": "iar"
                     }
