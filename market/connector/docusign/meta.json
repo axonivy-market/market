@@ -10,7 +10,7 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "9.2+",
-	"tags": ["document"],
+	"tags": ["e-signature"],
 	"installers": [
 		{
 			"id": "maven-dependency",
