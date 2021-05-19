@@ -28,7 +28,7 @@ class ValidateRepoTest
     var metaPath = path.resolve("meta.json");
     var json = toJsonObject(metaPath);
     JSONObjectAssert.assertThat(json, metaPath)
-            .requireStringPropertyWithLength("id", 5, 20)
+            .requireStringPropertyWithLength("id", 5, 25)
             .requireStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
             .requireStringPropertyWithLength("name", 5, 22)
             .requireStringPropertyWithLength("description", 5, 200)
