@@ -5,6 +5,7 @@
     "version": "1.0",
     "type": "connector",
     "vendor": "Axon Ivy AG",
+    "listed": false,
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy/a-trust-connector",
     "language": "English",
