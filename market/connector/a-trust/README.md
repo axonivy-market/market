@@ -1,4 +1,4 @@
-Axon Ivy’s [A-Trust](https://www.a-trust.at) connector helps you to accelerate process automation initiatives by integrating A-Trust HandySignatur into your process application within no time. A-Trust with the mobile phone signature, you can clearly authenticate yourself on the Internet. It is your personal signature on the net, which is equivalent to the handwritten signature by law. This connector:
+Axon Ivy’s [A-Trust](https://www.a-trust.at) connector helps you to accelerate process automation initiatives by integrating **A-Trust HandySignatur** into your process application within no time. **A-Trust** with the mobile phone signature, you can clearly authenticate yourself on the Internet. It is your personal signature on the net, which is equivalent to the handwritten signature by law. This connector:
 
 *	Is based on **SOAP** web service technologies.
 *	Provides access to the core features of **A-Trust** to virtually sign all kinds of documents.
@@ -75,5 +75,5 @@ Before any signing interactions between the **Axon Ivy Engine** and the **A-Trus
 * Working **A-TRUST** `API Key` (set in the global variable) - Needed to call **SOAP** services.
 * You will also get the correct `ENDPOINT URL` from **A-TRUST** when checking their website!
 * You need to upload a **SignatureTemplate** to the **[A-Trust](https://www.a-trust.at)** service before calling **ATrust/StartSignature**.
-* **Handy Signatur** is only available for people with an Austrian mobile phone number as well as an address in Austria.
+* **HandySignatur** is only available for people with an Austrian mobile phone number as well as an address in Austria.
 * Check the latest API description on the **[A-Trust](https://www.a-trust.at)** webpage.
