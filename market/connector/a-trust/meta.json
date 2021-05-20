@@ -69,9 +69,9 @@
         {
             "id": "open-resource",
             "data": {
-                "project": "ATrustDemos",
+                "project": "a-trust-connector-demo",
                 "resources": [
-                    "processes/ATrustIntegrationDemo/DemoStart.mod"
+                    "processes/ATrustIntegration/ATrustDemo.mod"
                 ]
             }
         }
