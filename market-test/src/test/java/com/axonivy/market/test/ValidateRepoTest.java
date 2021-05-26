@@ -36,7 +36,7 @@ class ValidateRepoTest
             .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
             .optionalStringPropertyWithPattern("platformReview", "^([0-4])?(\\.[5])?$|^5$")
             .optionalStringPropertyWithMinLength("industry", 2)
-            .optionalStringPropertyWithFixedValues("costs", "paid") // free is default            
+            .optionalStringPropertyWithFixedValues("cost", "paid") // free is default            
             .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal", "hide-snapshots")
