@@ -3,6 +3,10 @@ package com.axonivy.market.test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -56,9 +60,13 @@ class ValidateRepoTest
                 .optionalStringPropertyWithMinLength("key", 5)
                 .optionalStringPropertyWithFixedValues("type", "zip", "nbm")
                 .optionalBooleanProperty("doc", false);
+        
+        var groupId = mavenArtifact.getString("groupId");
+        var artifactId = mavenArtifact.getString("artifactId");
+        checkArtifact("https://repo.axonivy.com/libs", groupId, artifactId);
       }
     }
-    
+
     if (json.has("installers"))
     {
       var installers = json.getJSONArray("installers");
@@ -71,11 +79,58 @@ class ValidateRepoTest
           installer = toJsonObject(path.resolve(include));
         }
         JSONObjectAssert.assertThat(installer, metaPath)
-                .requireStringPropertyWithMinLength("id", 5);
+          .requireStringPropertyWithMinLength("id", 5);
+
+        var id = installer.getString("id");
+        if ("maven-dependency".equals(id))
+        {
+          checkMavenArtifactsOfInstaller(installer, "dependencies");
+        }
+        if ("maven-import".equals(id))
+        {
+          checkMavenArtifactsOfInstaller(installer, "projects");
+        }
       }
     }
   }
+  
+  private void checkMavenArtifactsOfInstaller(JSONObject installer, String depsId)
+  {
+    var data = installer.getJSONObject("data");
+    var deps = data.getJSONArray(depsId);
+    
+    var repoUrl = "https://repo1.maven.org/maven2";
+    if (data.has("repositories"))
+    {
+      var repos = data.getJSONArray("repositories");
+      repoUrl = repos.getJSONObject(0).getString("url");
+    }
+    
+    for (var k = 0; k < deps.length(); k++)
+    {
+      var dep = deps.getJSONObject(k);
+      var groupId = dep.getString("groupId");
+      var artifactId = dep.getString("artifactId");
+      checkArtifact(repoUrl, groupId, artifactId);
+    }
+  }
 
+  private void checkArtifact(String repoBaseUri, String groupId, String artifactId)
+  {
+    var uri = repoBaseUri + "/" + groupId.replace(".", "/") + "/" + artifactId + "/" + "maven-metadata.xml";
+    try
+    {
+      var client = HttpClient.newHttpClient();
+      var request = HttpRequest.newBuilder(URI.create(uri)).build();
+      var response = client.send(request, BodyHandlers.discarding());
+      assertThat(response.statusCode()).as("maven artifact seems to not exist " + uri).isEqualTo(200);
+    }
+    catch (Exception ex)
+    {
+      throw new RuntimeException("could not send a request to " + uri, ex);
+    }
+  }
+  
   private JSONObject toJsonObject(Path path)
   {
     try

@@ -197,7 +197,7 @@ it on your own. It will greatly simplify the usage of these APIs in the Axon Ivy
 workflows since the user of it no longer has to generate valid data object
 structures and type paths to resources without tooling support.
 
-The [Swagger Editor](http://editor.swagger.io/) is a simple web frontend which
+The [Swagger Editor](https://editor.swagger.io/) is a simple web frontend which
 allows you to write such OpenAPI specs. It's a good idea to start with the given
 'petstore' example and adapt it until it matches your service interfaces. Once
 you have a valid OpenAPI json exported from the web editor. You can test it with

@@ -88,7 +88,7 @@
 				"repositories":[
 					{
 						"id":"axonivy.public",
-						"url":"http://repo.axonivy.rocks",
+						"url":"https://repo.axonivy.rocks",
 						"snapshots":{"enabled":"true"}
 					}
 				]
@@ -114,7 +114,7 @@
 				"repositories":[
 					{
 						"id":"axonivy.public",
-						"url":"http://repo.axonivy.rocks"
+						"url":"https://repo.axonivy.rocks"
 					}
 				]
 			}
