@@ -3,6 +3,10 @@ package com.axonivy.market.test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -56,9 +60,26 @@ class ValidateRepoTest
                 .optionalStringPropertyWithMinLength("key", 5)
                 .optionalStringPropertyWithFixedValues("type", "zip", "nbm")
                 .optionalBooleanProperty("doc", false);
+        
+        
+        var artifactId = mavenArtifact.getString("artifactId");
+        var groupId = mavenArtifact.getString("groupId");
+        var uri = "https://repo.axonivy.com/libs/" + groupId.replace(".", "/") + "/" + artifactId + "/" + "maven-metadata.xml";
+        
+        try
+        {
+          var client = HttpClient.newHttpClient();
+          var request = HttpRequest.newBuilder(URI.create(uri)).build();
+          var response = client.send(request, BodyHandlers.discarding());
+          assertThat(response.statusCode()).as("maven artifact seems to not exist " + uri).isEqualTo(200);
+        }
+        catch (Exception ex)
+        {
+          throw new RuntimeException(ex);
+        }
       }
     }
-    
+
     if (json.has("installers"))
     {
       var installers = json.getJSONArray("installers");
