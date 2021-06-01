@@ -19,11 +19,6 @@
 			"name": "Error Handling Demos",
 			"groupId": "ch.ivyteam.demo",
 			"artifactId": "error-handling-demos"
-		},
-		{
-			"name": "Error Handling Demos Test",
-			"groupId": "ch.ivyteam.demo",
-			"artifactId": "error-handling-demos-test"
 		}
 	],
 	"installers": [
@@ -34,12 +29,6 @@
 					{
 						"groupId": "ch.ivyteam.demo",
 						"artifactId": "error-handling-demos",
-						"version": "${version}",
-						"type": "iar"
-					},
-					{
-						"groupId": "ch.ivyteam.demo",
-						"artifactId": "error-handling-demos-test",
 						"version": "${version}",
 						"type": "iar"
 					}
