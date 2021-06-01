@@ -11,7 +11,9 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
-	"tags": ["demo"],
+	"tags": [
+		"demo"
+	],
 	"mavenArtifacts": [
 		{
 			"name": "Error Handling Demos",
@@ -35,7 +37,9 @@
 					{
 						"id": "axonivy.public",
 						"url": "https://repo.axonivy.rocks",
-						"snapshots":{"enabled":"true"}
+						"snapshots": {
+							"enabled": "true"
+						}
 					}
 				]
 			}
