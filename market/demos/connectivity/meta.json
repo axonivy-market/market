@@ -14,6 +14,9 @@
 	"tags": [
 		"demo"
 	],
+	"properties": {
+		"importTestProject": false
+	},
 	"mavenArtifacts": [
 		{
 			"name": "Connectivity Demos",
@@ -41,7 +44,8 @@
 						"groupId": "ch.ivyteam.demo",
 						"artifactId": "connectivity-demos-test",
 						"version": "${version}",
-						"type": "iar"
+						"type": "iar",
+						"skip": "@importTestProject@"
 					}
 				],
 				"repositories": [
