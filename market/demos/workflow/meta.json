@@ -45,7 +45,7 @@
 						"artifactId": "workflow-demos-test",
 						"version": "${version}",
 						"type": "iar",
-						"skip": "@importTestProject@"
+						"import": "@importTestProject@"
 					}
 				],
 				"repositories": [
