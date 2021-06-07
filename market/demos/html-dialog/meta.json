@@ -45,7 +45,7 @@
 						"artifactId": "html-dialog-demos-test",
 						"version": "${version}",
 						"type": "iar",
-						"skip": "@importTestProject@"
+						"importInWorkspace": "@importTestProject@"
 					}
 				],
 				"repositories": [
