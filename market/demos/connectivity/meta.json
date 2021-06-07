@@ -45,7 +45,7 @@
 						"artifactId": "connectivity-demos-test",
 						"version": "${version}",
 						"type": "iar",
-						"import": "@importTestProject@"
+						"importInWorkspace": "@importTestProject@"
 					}
 				],
 				"repositories": [
