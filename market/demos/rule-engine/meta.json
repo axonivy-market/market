@@ -45,7 +45,7 @@
 						"artifactId": "rule-engine-demos-test",
 						"version": "${version}",
 						"type": "iar",
-						"import": "@importTestProject@"
+						"importInWorkspace": "@importTestProject@"
 					}
 				],
 				"repositories": [
