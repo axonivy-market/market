@@ -14,6 +14,9 @@
 	"tags": [
 		"demo"
 	],
+	"properties": {
+		"importTestProject": false
+	},
 	"mavenArtifacts": [
 		{
 			"name": "Workflow Demos",
@@ -41,7 +44,8 @@
 						"groupId": "ch.ivyteam.demo",
 						"artifactId": "workflow-demos-test",
 						"version": "${version}",
-						"type": "iar"
+						"type": "iar",
+						"skip": "@importTestProject@"
 					}
 				],
 				"repositories": [
