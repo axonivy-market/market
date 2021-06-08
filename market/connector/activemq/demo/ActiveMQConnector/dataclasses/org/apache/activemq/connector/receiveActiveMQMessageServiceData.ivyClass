@@ -1,0 +1,5 @@
+receiveActiveMQMessageServiceData #class
+org.apache.activemq.connector #namespace
+message String #field
+queue String #field
+error ch.ivyteam.ivy.bpm.error.BpmError #field

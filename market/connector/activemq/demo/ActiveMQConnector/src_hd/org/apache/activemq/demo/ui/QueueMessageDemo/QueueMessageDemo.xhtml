@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<h:body>
+	<ui:composition template="/layouts/frame-8.xhtml">
+		<ui:define name="title">SendMessageDemo</ui:define>
+		<ui:define name="content">
+
+			<h3>Active MQ Connector Demo - Send Message	</h3>
+
+			<h:form id="form">
+				<p:messages showDetail="true"/>
+				<p:panelGrid columns="2" layout="grid" styleClass="ui-panelgrid-blank"
+					columnClasses="ui-g-12 ui-md-3 ui-lg-2, 
+						ui-g-12 ui-md-9 ui-lg-4, 
+						ui-g-12 ui-md-3 ui-lg-2, 
+						ui-g-12 ui-md-9 ui-lg-4">
+
+					<p:outputLabel for="queue" value="Queue"/>
+					<p:inputText id="queue" value="#{data.queue}" required="true"></p:inputText>
+					
+					<p:outputLabel for="message" value="Message"/>
+					<p:inputTextarea id="message" value="#{data.message}" required="true" rows="3"></p:inputTextarea>
+
+					<p:outputLabel value="Result from Queue"/>
+					<h:outputText value="#{data.resultFromQueue}"/>
+				</p:panelGrid>
+				<br />
+				<div class="command-btns">
+					<p:commandButton id="send" actionListener="#{logic.send}" value="Send Message to Queue" update="form" icon="ui-icon-check" />
+					<p:commandButton id="receive" actionListener="#{logic.receive}" value="Load message from queue" update="form" icon="ui-icon-check" />
+					<p:commandButton id="close" actionListener="#{logic.close}" value="Close" update="form" icon="ui-icon-check" />
+				</div>
+				
+				
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

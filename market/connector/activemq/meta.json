@@ -1,0 +1,84 @@
+{
+	"id": "apache.activemq",
+	"version": "1.0",
+	"name": "Active MQ",
+	"description": "Send and Receive Messages to Active MQ Message Broker from your processes",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"sourceUrl": "https://github.com/axonivy/market",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["activemq"],
+	"listed": false,
+	"installers": [
+		{
+			"id":"maven-dependency",
+			"data" : {
+				"dependencies": [ 
+					{
+						"groupId": "org.apache.activemq",
+						"artifactId": "activemq-all",
+						"version": "5.16.2"
+					}
+				]
+			}
+		},
+		{
+			"id": "project-resource",
+			"data": {
+				"directories": [
+					{
+						"source": "demo/ActiveMQConnector/src/org/apache/activemq/connector",
+						"includes": [ 
+							"SimpleMessageBaseService.java",
+							"SimpleMessageProducerService.java",
+							"SimpleMessageConsumerService.java"
+						],
+						"path": "src/org/apache/activemq/connector"
+					}
+				],
+				"resources": [
+					{
+						"source": "demo/ActiveMQConnector/webContent/icons/activemqlogo.png",
+						"path": "webContent/icons/activemqlogo.png"
+					},
+					{
+						"source": "demo/ActiveMQConnector/dataclasses/org/apache/activemq/connector/receiveActiveMQMessageServiceData.ivyClass",
+						"path": "dataclasses/org/apache/activemq/connector/receiveActiveMQMessageServiceData.ivyClass"
+					},
+					{
+						"source": "demo/ActiveMQConnector/dataclasses/org/apache/activemq/connector/sendActiveMQMessageServiceData.ivyClass",
+						"path": "dataclasses/org/apache/activemq/connector/sendActiveMQMessageServiceData.ivyClass"
+					},
+					{
+						"source": "demo/ActiveMQConnector/dataclasses/org/apache/activemq/demo/ActiveMQConnectorDemoData.ivyClass",
+						"path": "dataclasses/org/apache/activemq/demo/ActiveMQConnectorDemoData.ivyClass"
+					},
+					{
+						"source": "demo/ActiveMQConnector/processes/Connector/receiveActiveMQMessageService.mod",
+						"path": "processes/Connector/receiveActiveMQMessageService.mod"
+					},
+					{
+						"source": "demo/ActiveMQConnector/processes/Connector/sendActiveMQMessageService.mod",
+						"path": "processes/Connector/sendActiveMQMessageService.mod"
+					},
+					{
+						"source": "demo/ActiveMQConnector/processes/Demo/ActiveMQConnectorDemo.mod",
+						"path": "processes/Demo/ActiveMQConnectorDemo.mod"
+					},
+					{
+						"source": "demo/ActiveMQConnector/config/variables.yaml",
+						"path": "config/variables.yaml"
+					}
+				],
+				"dialog":
+				{
+					"source": "demo/ActiveMQConnector/src_hd",
+					"ids": [ 
+						"org.apache.activemq.demo.ui.SendAndReceiveMessageDemo" 
+					]
+				}
+			}
+		}
+]
+}

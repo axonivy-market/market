@@ -1,0 +1,4 @@
+ActiveMQConnectorDemoData #class
+org.apache.activemq.demo #namespace
+message String #field
+queue String #field

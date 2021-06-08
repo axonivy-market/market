@@ -1,0 +1,8 @@
+QueueMessageDemoData #class
+org.apache.activemq.demo.ui.QueueMessageDemo #namespace
+message String #field
+message PERSISTENT #fieldModifier
+queue String #field
+queue PERSISTENT #fieldModifier
+resultFromQueue String #field
+resultFromQueue PERSISTENT #fieldModifier
