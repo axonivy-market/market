@@ -75,7 +75,7 @@
 				{
 					"source": "demo/ActiveMQConnector/src_hd",
 					"ids": [ 
-						"org.apache.activemq.demo.ui.SendAndReceiveMessageDemo" 
+						"org.apache.activemq.demo.ui.QueueMessageDemo" 
 					]
 				}
 			}
