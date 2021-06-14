@@ -24,10 +24,6 @@
 				},
 				"resources": [
 					{
-						"source": "google-geo-api-demo/config/variables.yaml",
-						"path": "config/variables.yaml"
-					},
-					{
 						"source": "google-geo-api-demo/dataclasses/com/google/map/demo/Data.ivyClass",
 						"path": "dataclasses/com/google/map/demo/Data.ivyClass"
 					},
@@ -43,6 +39,14 @@
 						"source": "google-geo-api-demo/src_hd/com/google/map/Viewer/resources/map-dialog-handler.js",
 						"path": "src_hd/com/google/map/Viewer/resources/map-dialog-handler.js"
 					}
+				]
+			}
+		},
+		{
+			"id": "project-variable",
+			"data": {
+				"sources": [
+					"google-geo-api-demo/config/variables.yaml"
 				]
 			}
 		},
