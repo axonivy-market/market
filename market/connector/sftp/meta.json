@@ -68,6 +68,26 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "project-resource",
+            "data": {
+                "resources": [
+                    {
+                        "source": "sftp-connector/config/variables.yaml",
+                        "path": "config/variables.yaml"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "project": "sftp-connector-demo",
+                "resources": [
+                    "processes/SftpDemo/SftpClientDemo.mod"
+                ]
+            }
         }
     ]
 }
