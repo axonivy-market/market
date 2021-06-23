@@ -14,6 +14,7 @@ JSch allows you to connect to an sshd server and use port forwarding, X11 forwar
    Description: this operation will upload the file to the root path on the server.
 
    Parameters: 
+
                - fileToBeUploaded -> the file to upload as java.io.InputStream
 
                - filename -> the file name as String
@@ -29,9 +30,11 @@ JSch allows you to connect to an sshd server and use port forwarding, X11 forwar
    Description: this operation will download the file from the server.
 
    Parameters: 
+
                - remoteFileName -> the file name as String
 
    Result: 
+
                - toFile -> the File to download as java.io.File
 
 The **SftpClientDemo** HTML Dialog contains all the final operations to upload, list and download the file from/to the SFTP Server.
