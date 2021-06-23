@@ -1,8 +1,0 @@
-ReadDocumentsData #class
-com.alfresco.connector.demo #namespace
-connectionError String #field
-connectionError PERSISTENT #fieldModifier
-documents List<com.alfresco.api.explorer.NodeChildAssociationEntry> #field
-documents PERSISTENT #fieldModifier
-folderid String #field
-folderid PERSISTENT #fieldModifier

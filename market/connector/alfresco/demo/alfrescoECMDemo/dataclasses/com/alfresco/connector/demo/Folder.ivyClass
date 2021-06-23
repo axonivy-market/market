@@ -1,6 +1,0 @@
-Folder #class
-com.alfresco.connector.demo #namespace
-name String #field
-name PERSISTENT #fieldModifier
-id String #field
-id PERSISTENT #fieldModifier
