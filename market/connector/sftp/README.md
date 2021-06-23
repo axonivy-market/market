@@ -9,6 +9,7 @@ JSch allows you to connect to an sshd server and use port forwarding, X11 forwar
 1. Click on **Datei zum uploaden** and select one file from your local directory.
 
    ![Upload-File](doc/images/Upload-File.PNG)
+
    Path: Sftp/SftpUploadFile -> uploadFile(fileToBeUploaded, filename)
 
    Description: this operation will upload the file to the root path on the server.
@@ -25,6 +26,7 @@ JSch allows you to connect to an sshd server and use port forwarding, X11 forwar
    - Select one file from the list and click on **Download**.
 
    ![Download-File](doc/images/Download-File.PNG)
+
    Path: Sftp/SftpDownloadFile -> downloadFile(remoteFileName) Result: toFile
 
    Description: this operation will download the file from the server.
