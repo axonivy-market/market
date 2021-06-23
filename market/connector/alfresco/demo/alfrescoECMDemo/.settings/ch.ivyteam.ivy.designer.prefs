@@ -1,5 +1,0 @@
-ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_DATA_CLASS=com.alfresco.connector.demo.Data
-ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_NAMESPACE=com.alfresco.connector.demo
-ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:useProjectSettings=true
-ch.ivyteam.ivy.project.preferences\:PROJECT_VERSION=92000
-eclipse.preferences.version=1

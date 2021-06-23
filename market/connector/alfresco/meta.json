@@ -6,95 +6,77 @@
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy/market",
+	"sourceUrl": "https://github.com/axonivy-market/alfresco-connector",    
+	"statusBadgeUrl": "https://github.com/axonivy-market/alfresco-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "9.2+",
 	"tags": ["ECM"],
-	"installers": [
-		{
-			"id": "project-resource",
-			"data": {
-				"resources": [
-					{
-						"source": "demo/alfrescoECMDemo/webContent/icons/alfresco-logo.png",
-						"path": "webContent/icons/alfresco-logo.png"
-					}
-				]
-			}
-		},
-		{
-			"id": "rest-client",
-			"data": {
-				"name": "Alfresco (Alfresco Content Services)",
-				"openApiUrl": "https://api-explorer.alfresco.com/api-explorer/definitions/alfresco-core.json",
-				"namespace": "com.alfresco.api.explorer",
-				"icon": "res:/webContent/icons/alfresco-logo.png",
-				"clientId": "f0cc7209-7cdd-4a5d-9dde-72257a4bf963",
-				"baseUri": "http://localhost:8080/alfresco/api/-default-/public/alfresco/versions/1",
-				"features": [
-					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
-					"ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature",
-					"org.glassfish.jersey.media.multipart.MultiPartFeature"
-				],
-				"properties": [
-					{
-						"name": "username",
-						"value": "admin"
-					},
-					{
-						"name": "password",
-						"value": "admin",
-						"password": true
-					},
-					{
-						"name": "JSON.Deserialization.FAIL_ON_UNKNOWN_PROPERTIES",
-						"value": "false"
-					}
-				]
-			}
-		},
-		{
-			"id": "project-resource",
-			"data": {
-				"dialog":
-				{
-					"source": "demo/alfrescoECMDemo/src_hd",
-					"ids": [ 
-						"com.alfresco.connector.demo.ecm"
-					]
-				},
-				"resources": [
-					{
-						"source": "demo/alfrescoECMDemo/dataclasses/com/alfresco/connector/demo/Data.ivyClass",
-						"path": "dataclasses/com/alfresco/connector/demo/Data.ivyClass"
-					},
-					{
-						"source": "demo/alfrescoECMDemo/dataclasses/com/alfresco/connector/demo/ReadDocumentsData.ivyClass",
-						"path": "dataclasses/com/alfresco/connector/demo/ReadDocumentsData.ivyClass"
-					},					
-					{
-						"source": "demo/alfrescoECMDemo/dataclasses/com/alfresco/connector/demo/Folder.ivyClass",
-						"path": "dataclasses/com/alfresco/connector/demo/Folder.ivyClass"
-					},
-					{
-						"source": "demo/alfrescoECMDemo/processes/AlfrescoDemo/ecm.mod",
-						"path": "processes/AlfrescoDemo/ecm.mod"
-					},
-					{
-						"source": "demo/alfrescoECMDemo/processes/AlfrescoDemo/readDocuments.mod",
-						"path": "processes/AlfrescoDemo/readDocuments.mod"
-					}					
-				]
-			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"resources": [
-					"processes/AlfrescoDemo/ecm.mod"
-				]
-			}
-		}
-	]
+    "mavenArtifacts": [
+        {
+            "repoUrl": "https://maven.axonivy.com",
+            "name": "Alfresco ECM",
+            "groupId": "com.axonivy.connector.alfresco",
+            "artifactId": "alfresco-connector",
+            "makesSenseAsMavenDependency": true
+        },
+        {
+            "repoUrl": "https://maven.axonivy.com",
+            "name": "Alfresco Demo",
+            "groupId": "com.axonivy.connector.alfresco",
+            "artifactId": "alfresco-connector-demo"
+        }
+    ],	
+    "installers": [
+        {
+            "id": "maven-dependency",
+            "data": {
+                "dependencies": [
+                    {
+                        "groupId": "com.axonivy.connector.alfresco",
+                        "artifactId": "alfresco-connector",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com",
+                        "snapshots": {
+                            "enabled": "true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "maven-import",
+            "data": {
+                "projects": [
+                    {
+                        "groupId": "com.axonivy.connector.alfresco",
+                        "artifactId": "alfresco-connector-demo",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "project": "alfresco-connector-demo",
+                "resources": [
+                    "processes/AlfrescoDemo/ecm.mod"
+                ]
+            }
+        }
+    ]
 }
