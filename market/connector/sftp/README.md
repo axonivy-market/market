@@ -35,10 +35,7 @@ Before starting the demo, please make sure to have an SSH/SFTP server on your co
 Rebex Tiny SFTP Server (free): [https://www.rebex.net/tiny-sftp-server/]
 Small, minimalist, single-user SFTP server for testing purposes, free for commercial and non-commercial use
 1. Open the following settings in “RebexTinySftpServer.exe.config” with a text editor and update the following values:
-    <!-- user credentials and root directory -->
-    <add key="userName" value="usr" />
-    <add key="userPassword" value="pwd" />
-    <add key="userRootDir" value="c:\temp" />
+   ![RebexTinySftpServer.exe.config](doc/images/RebexTinySftpServer.exe.config.PNG)
 
 2. Open the `Configuration/variables.yaml` in your Designer and update the following global variables:
 
