@@ -1,7 +1,10 @@
-**SFTP Connector** is an SFTP client which uses the SFTP protocol to transfer files securely to and from a remote computer.
-SFTP Connector is based on JSch [http://www.jcraft.com/jsch/] to handle the SFTP Connections and Operations.
-JSch is a pure Java implementation of SSH2.
-JSch allows you to connect to an sshd server and use port forwarding, X11 forwarding, file transfer, etc., and you can integrate its functionality into your own Java programs. JSch is licensed under BSD style license.
+Axon Ivy's **SFTP Connector** helps you to accelerate process automation initiatives by integrating secure file transfer into your process work. With this SFTP client you can easily transfer files securely to and from a remote computer. This connector:
+
+* uses the SFTP protocol
+* is based on JSch [http://www.jcraft.com/jsch/] to handle the SFTP Connections and Operations
+* is a pure Java implementation of SSH2
+* allows you to connect to an sshd server and use port forwarding, X11 forwarding, file transfer, etc.
+* makes it easy to integrate secure file transfer into your process work
 
 
 ## Demo
