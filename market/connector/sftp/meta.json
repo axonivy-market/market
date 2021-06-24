@@ -74,7 +74,7 @@
             "data": {
                 "resources": [
                     {
-                        "source": "${sourceUrl}/master/sftp-connector/config/variables.yaml",
+                        "source": "https://raw.githubusercontent.com/axonivy-market/sftp-connector/master/sftp-connector/config/variables.yaml",
                         "path": "config/variables.yaml"
                     }
                 ]
