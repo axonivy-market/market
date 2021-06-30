@@ -30,8 +30,8 @@ public class JSONObjectAssert extends org.assertj.core.api.AbstractAssert<JSONOb
 
     var value = actual.getString(name);
     Assertions.assertThat(value.length())
-      .as(name + " property value must have at least " + minLength + " characters in " + path).isGreaterThanOrEqualTo(minLength)
-      .as(name + " property value must have maximum " + maxLength + " characters in " + path).isLessThanOrEqualTo(maxLength);
+      .as(name + " property value '"+value+"' must have at least " + minLength + " characters in " + path).isGreaterThanOrEqualTo(minLength)
+      .as(name + " property value '"+value+"' must have maximum " + maxLength + " characters in " + path).isLessThanOrEqualTo(maxLength);
     return this;
   }
 
