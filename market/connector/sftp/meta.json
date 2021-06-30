@@ -15,7 +15,7 @@
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
-            "name": "SFTP",
+            "name": "SFTP Connector",
             "groupId": "com.axonivy.connector.sftp",
             "artifactId": "sftp-connector",
             "makesSenseAsMavenDependency": true
