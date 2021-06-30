@@ -1,5 +1,5 @@
 {
-    "id": "sftp",
+    "id": "sftp-connector",
     "name": "SFTP",
     "description": "SFTP client which uses the SFTP protocol to transfer files securely to and from a remote computer.",
     "version": "1.0",
