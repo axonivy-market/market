@@ -1,7 +1,7 @@
 Axon Ivy's **SFTP Connector** helps you to accelerate process automation initiatives by integrating secure file transfer into your process work. With this SFTP client you can easily transfer files securely to and from a remote computer. This connector:
 
 * uses the SFTP protocol
-* is based on JSch [http://www.jcraft.com/jsch/] to handle the SFTP Connections and Operations
+* is based on [JSch](http://www.jcraft.com/jsch/) to handle the SFTP Connections and Operations
 * is a pure Java implementation of SSH2
 * allows you to connect to an sshd server and use port forwarding, X11 forwarding, file transfer, etc.
 * makes it easy to integrate secure file transfer into your process work
@@ -48,9 +48,8 @@ The **SftpClientDemo** HTML Dialog contains all the final operations to upload, 
 
 ## Setup
 
-Before starting the demo, please make sure to have an SSH/SFTP server on your computer (respective the computer you want to access). For testing, the following “Rebex Tiny SFTP Server (free)” was used.
-Rebex Tiny SFTP Server (free): [https://www.rebex.net/tiny-sftp-server/]
-Small, minimalist, single-user SFTP server for testing purposes, free for commercial and non-commercial use
+Before starting the demo, please make sure to have an SSH/SFTP server on your computer (respective the computer you want to access). For testing, the free
+ [Rebex Tiny SFTP Server](https://www.rebex.net/tiny-sftp-server/) is recommended.
 1. Open the following settings in “RebexTinySftpServer.exe.config” with a text editor and update the following values:
    ![RebexTinySftpServer.exe.config](doc/images/RebexTinySftpServer.exe.config.PNG)
 
