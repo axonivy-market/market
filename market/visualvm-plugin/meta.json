@@ -5,7 +5,8 @@
 	"description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
-	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-visualvm",
+	"sourceUrl": "https://github.com/axonivy-market/visualvm-plugin",
+    "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
@@ -13,6 +14,7 @@
 	"versionDisplay": "hide-snapshots",
 	"mavenArtifacts": [
 		{
+			"repoUrl": "https://maven.axonivy.com",
 			"name": "Visual VM Plugin",
 			"groupId": "ch.ivyteam.visualvm",
 			"artifactId": "visualvm-plugin",
