@@ -22,6 +22,7 @@
 			"type": "jar"
 		},
 		{
+			"repoUrl": "https://maven.axonivy.com",
 			"name": "Decision Table Demo",
 			"groupId": "com.axonivy.dmn.decisiontable",
 			"artifactId": "dmn-decision-table-demo"
