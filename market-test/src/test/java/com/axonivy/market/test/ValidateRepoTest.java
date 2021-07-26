@@ -58,7 +58,7 @@ class ValidateRepoTest
                 .requireStringPropertyWithMinLength("artifactId", 5)
                 .optionalBooleanProperty("makesSenseAsMavenDependency", false)
                 .optionalStringPropertyWithMinLength("key", 5)
-                .optionalStringPropertyWithFixedValues("type", "zip", "nbm")
+                .optionalStringPropertyWithFixedValues("type", "zip", "nbm", "jar")
                 .optionalBooleanProperty("doc", false);
         
         var groupId = mavenArtifact.getString("groupId");
