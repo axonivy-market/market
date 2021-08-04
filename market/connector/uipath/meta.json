@@ -36,7 +36,7 @@
 		{
 			"id": "rest-client",
 			"data": {
-				"openApiUrl": "https://cloud.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v12.0/swagger.json",
+				"openApiUrl": "https://cloud.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v13.0/swagger.json",
 				"namespace": "com.uipath.orchestrator",
 				"icon": "res:/webContent/icons/uipath.png",
 				"clientId": "699e715f-63b1-4355-a974-ee3cac26985e", 
