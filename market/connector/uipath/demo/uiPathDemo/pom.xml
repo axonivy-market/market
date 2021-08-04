@@ -44,7 +44,7 @@
           <showErrors>true</showErrors>
           <reportsDirectory>${java.io.tmpdir}</reportsDirectory>
           <properties>
-            <openapi.url>https://cloud.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v12.0/swagger.json</openapi.url>
+            <openapi.url>https://cloud.uipath.com/AXONPRESALES/AXONPRESALES/swagger/v13.0/swagger.json</openapi.url>
             <openapi.namespace>com.uipath.orchestrator</openapi.namespace>
             <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_699e715f-63b1-4355-a974-ee3cac26985e.jar</openapi.jar>
             <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
