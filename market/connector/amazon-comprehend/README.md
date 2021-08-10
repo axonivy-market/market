@@ -1,4 +1,4 @@
-Axon Ivy’s Amazon Comprehend API helps you to accelerate process automation
+Axon Ivy’s [Amazon Comprehend API](https://aws.amazon.com/comprehend/) helps you to accelerate process automation
 initiatives by introducing Natural Language Processing (NLP) and Machine
 Learning (ML) to your process work. Amazon Comprehend discovers insights and
 relationships in text. This connector:
