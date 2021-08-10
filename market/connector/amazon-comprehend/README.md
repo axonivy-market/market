@@ -1,4 +1,15 @@
-Axon Ivy's Amazon Comprehend Connector.
+Axon Ivy’s Amazon Comprehend API helps you to accelerate process automation
+initiatives by introducing Natural Language Processing (NLP) and Machine
+Learning (ML) to your process work. Amazon Comprehend discovers insights and
+relationships in text. This connector:
+
+- Is based on a freemium pricing model by AWS.
+- Provides Keyphrase Extraction, Sentiment Analysis, Entity Recognition, Topic
+  Modeling, and Language Detection APIs
+- Identifies critical elements in data, including references to language,
+  people, and places, and the text files can be categorized by relevant topics.
+- Supports you with an easy-to-copy demo implementation to reduce your
+  integration effort.
 
 ## Demo
 

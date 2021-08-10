@@ -1,7 +1,7 @@
 {
     "id": "amazon-comprehend",
-    "name": "Amazon Comprehend",
-    "description": "Gaining insight and recognizing relationships in texts.",
+    "name": "Amazon Comprehend API",
+    "description": "Amazon Comprehend is a NLP service that uses machine learning to uncover information in unstructured data.",
     "version": "1.0",
     "type": "connector",
     "vendor": "Axon Ivy AG",
@@ -11,7 +11,7 @@
     "language": "English",
     "industry": "Cross-Industry",
     "compatibility": "9.2+",
-    "tags": [ "NLP" ],
+    "tags": [ "AI" ],
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
