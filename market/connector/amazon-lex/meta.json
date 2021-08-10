@@ -1,7 +1,7 @@
 {
     "id": "amazon-lex",
     "name": "Amazon Lex Runtime API",
-    "description": "Amazon Lex is a NLP service to build sophisticated, natural language, conversational bots “chatbots”.",
+    "description": "Amazon Lex is a NLP service to build sophisticated, natural language, conversational bots (chatbots).",
     "version": "1.0",
     "type": "connector",
     "vendor": "Axon Ivy AG",

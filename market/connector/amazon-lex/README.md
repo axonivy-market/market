@@ -4,7 +4,7 @@ Learning (ML) to your process work. Amazon Lex builds sophisticated, natural lan
 
 - Is based on a freemium pricing model by AWS.
 - Provides APIs to send user message to bots and vice versa.
-- Identifies user itent and additional information collected by the bot.
+- Identifies user intent and additional information collected by the bot.
 - Supports you with an easy-to-copy demo implementation to reduce your
   integration effort.
 
