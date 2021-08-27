@@ -1,0 +1,83 @@
+{
+	"id": "html-dialog-utils",
+	"version": "9.2",
+	"name": "HTML Dialog Utils",
+	"description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
+	"type": "util",
+	"vendor": "Axon Ivy AG",
+	"platformReview": "4",
+	"sourceUrl": "https://github.com/axonivy-market/html-dialog-utils",
+	"statusBadgeUrl": "https://github.com/axonivy-market/html-dialog-utils/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"compatibility": "9.2+",
+	"versionDisplay": "hide-snapshots",
+	"tags": ["utils"],
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "HTML Dialog Utils",
+			"groupId": "com.axonivy.market.utils",
+			"artifactId": "html-dialog-utils",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "HTML Dialog Utils Demo",
+			"groupId": "com.axonivy.market.utils",
+			"artifactId": "html-dialog-utils-demo"
+		}
+	],
+	"installers": [
+		{
+			"id": "maven-dependency",
+			"data": {
+				"dependencies": [
+					{
+						"groupId": "com.axonivy.market.utils",
+						"artifactId": "html-dialog-utils",
+						"version": "${version}",
+						"type": "iar"
+					}
+				],
+				"repositories": [
+					{
+						"id": "axonivy.public",
+						"url": "https://maven.axonivy.com",
+						"snapshots": {
+							"enabled": "true"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "maven-import",
+			"data": {
+				"projects": [
+					{
+						"groupId": "com.axonivy.market.utils",
+						"artifactId": "html-dialog-utils-demo",
+						"version": "${version}",
+						"type": "iar"
+					}
+				],
+				"repositories": [
+					{
+						"id": "axonivy.public",
+						"url": "https://maven.axonivy.com"
+					}
+				]
+			}
+		},
+		{
+			"id": "open-resource",
+			"data": {
+				"project": "html-dialog-utils-demo",
+				"resources": [
+					"processes/Demo/ReadOnlyHtmlDialogDemo.mod"
+				]
+			}
+		}
+	]
+}
