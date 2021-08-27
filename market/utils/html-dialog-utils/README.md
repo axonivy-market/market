@@ -1,18 +1,17 @@
-# Html Dialog Utils
+Axon Ivy's **Html Dialog Utils** is a collection of useful utilities to help you implement HTML Dialogs. The following utilities are available:
 
-Axon Ivy's **Html Dialog Utils** is a collection of useful utilities to help you with the implementation of the HTML Dialogs.
+**ReadOnlyModeListener**
 
-# ReadOnlyModeListener
-This JSF PhaseListener can be used in any HTML Dialog to make parts or even all the form not editable without adding any extra control to the JSF UI components.
+This JSF PhaseListener can be used in any HTML Dialog to make parts or the entire form not editable without adding extra controls to the JSF UI components.
 
-For example in case of approval process, the first step will show the form as editable to fill in all the required information and in the next step, the same form will be displayed in read-only mode, so the user will only verify the entered information and then decide whether to approve or to decline the request.
+Imagine an everyday use case such as an approval process. The first step will show an editable form to fill in all the required information. In the next step, the same form appears in read-only mode, so the user will verify the entered information and then decide whether to approve or decline the request.
 
-**ReadOnlyModeListener** will loop through all the sub UI components included within the main parent component and apply the following:
-* all the input components and links will be disabled
-* all the buttons will not be rendered
-* all data tables will not be editable
-* all components having the style class `doNotRenderInReadOnlyMode` will not be rendered
-* all components having the style class `doNotDisable` will not be disabled
+The **ReadOnlyModeListener** will loop through all the included sub UI components within the main parent component and apply the following:
+* all input components and links will be disabled
+* all buttons won't be rendered
+* all data tables won't be editable
+* all components having the style class `doNotRenderInReadOnlyMode` won't be rendered
+* all components having the style class `doNotDisable` won't be disabled
 
 ## Demo
 
