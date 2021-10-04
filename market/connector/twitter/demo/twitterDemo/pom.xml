@@ -45,6 +45,7 @@
             <openapi.namespace>com.twitter</openapi.namespace>
             <openapi.jar>${basedir}/lib/generated/rest/jaxRsClient_0b74edb8-5459-4ccc-aac7-505531e06398.jar</openapi.jar>
             <openapi.build>${project.build.directory}/OpenAPIClient</openapi.build>
+            <openapi.ignoreCompileErrors>true</openapi.ignoreCompileErrors>
           </properties>
         </configuration>
       </plugin>
