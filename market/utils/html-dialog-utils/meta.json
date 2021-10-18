@@ -13,6 +13,7 @@
 	"compatibility": "9.2+",
 	"versionDisplay": "hide-snapshots",
 	"tags": ["utils"],
+	"validate": false,
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",

@@ -12,6 +12,7 @@
     "industry": "Cross-Industry",
     "compatibility": "9.2+",
     "tags": [ "e-signature" ],
+    "validate": false,
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
