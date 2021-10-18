@@ -10,7 +10,6 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "7.1+",
-	"versionDisplay": "hide-snapshots",
 	"tags": ["document"],
 	"mavenArtifacts": [
 		{
