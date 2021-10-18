@@ -43,7 +43,7 @@ class ValidateRepoTest
             .optionalStringPropertyWithFixedValues("cost", "paid") // free is default            
             .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")
             .optionalBooleanProperty("listed", true)
-            .optionalStringPropertyWithFixedValues("versionDisplay", "portal", "hide-snapshots")
+            .optionalStringPropertyWithFixedValues("versionDisplay", "portal")
             .optionalStringArrayProperty("tags");
 
     if (json.has("mavenArtifacts"))
