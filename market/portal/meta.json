@@ -13,6 +13,7 @@
 	"tags": ["workflow-ui"],
 	"versionDisplay": "portal",
 	"installMatcher": "best-match",
+	"validate": false,
 	"mavenArtifacts": [
 		{
 			"key": "portal",
