@@ -1,0 +1,39 @@
+{
+	"id": "web-tester",
+	"version": "9.2",
+	"name": "Web Tester",
+	"description": "Easy Web-Integrationtests with Ivy (PrimeFaces widgets + Selenium)",
+	"type": "util",
+	"vendor": "Axon Ivy AG",
+	"sourceUrl": "https://github.com/axonivy/web-tester",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
+	"listed": false,
+	"tags": ["testing"],
+	"mavenArtifacts": [
+		{
+			"name": "Web Tester",
+			"groupId": "com.axonivy.ivy.webtest",
+			"artifactId": "web-tester",
+			"type": "jar",
+			"repoUrl": "https://oss.sonatype.org/content/repositories/releases"
+		}
+	],
+	"installers": [
+		{
+			"id": "maven-dependency",
+			"data": {
+				"dependencies": [
+					{
+						"groupId": "com.axonivy.ivy.webtest",
+						"artifactId": "web-tester",
+						"version": "${version}",
+						"type": "jar",
+						"scope": "test"
+					}
+				]
+			}
+		}
+	]
+}
