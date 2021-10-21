@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
+import java.net.http.HttpClient.Redirect;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.file.Files;
@@ -40,7 +41,7 @@ class ValidateRepoTest
             .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
             .optionalStringPropertyWithPattern("platformReview", "^([0-4])?(\\.[5])?$|^5$")
             .optionalStringPropertyWithMinLength("industry", 2)
-            .optionalStringPropertyWithFixedValues("cost", "paid") // free is default            
+            .optionalStringPropertyWithFixedValues("cost", "paid") // free is default
             .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal")
@@ -60,7 +61,7 @@ class ValidateRepoTest
                 .optionalStringPropertyWithMinLength("key", 5)
                 .optionalStringPropertyWithFixedValues("type", "zip", "nbm", "jar")
                 .optionalBooleanProperty("doc", false);
-        
+
         var groupId = mavenArtifact.getString("groupId");
         var artifactId = mavenArtifact.getString("artifactId");
         var repoUrl = "https://repo.axonivy.com/libs";
@@ -98,19 +99,19 @@ class ValidateRepoTest
       }
     }
   }
-  
+
   private void checkMavenArtifactsOfInstaller(JSONObject installer, String depsId)
   {
     var data = installer.getJSONObject("data");
     var deps = data.getJSONArray(depsId);
-    
+
     var repoUrl = "https://repo1.maven.org/maven2";
     if (data.has("repositories"))
     {
       var repos = data.getJSONArray("repositories");
       repoUrl = repos.getJSONObject(0).getString("url");
     }
-    
+
     for (var k = 0; k < deps.length(); k++)
     {
       var dep = deps.getJSONObject(k);
@@ -125,7 +126,9 @@ class ValidateRepoTest
     var uri = repoBaseUri + "/" + groupId.replace(".", "/") + "/" + artifactId + "/" + "maven-metadata.xml";
     try
     {
-      var client = HttpClient.newHttpClient();
+      var client = HttpClient.newBuilder()
+              .followRedirects(Redirect.NORMAL)
+              .build();
       var request = HttpRequest.newBuilder(URI.create(uri)).build();
       var response = client.send(request, BodyHandlers.discarding());
       assertThat(response.statusCode()).as("maven artifact seems to not exist " + uri).isEqualTo(200);
@@ -135,7 +138,7 @@ class ValidateRepoTest
       throw new RuntimeException("could not send a request to " + uri, ex);
     }
   }
-  
+
   private JSONObject toJsonObject(Path path)
   {
     try
@@ -156,7 +159,7 @@ class ValidateRepoTest
             .extracting(path -> path.resolve("meta.json"))
             .allSatisfy(path -> assertThat(path).exists());
   }
-  
+
   @Test
   void everyProductHasAUniqueId()
   {
@@ -165,11 +168,11 @@ class ValidateRepoTest
             .map(json -> toJsonObject(json))
             .map(json -> json.getString("id"))
             .collect(Collectors.toList());
-   
+
     var uniqueIds = new HashSet<>(ids);
     assertThat(uniqueIds).as("every product must have a unique ID").hasSameSizeAs(ids);
   }
-  
+
   @Test
   void everyProductHasAReadme()
   {
@@ -185,12 +188,12 @@ class ValidateRepoTest
     assertThat(productDirs())
             .extracting(path -> path.resolve(logo))
             .allSatisfy(path -> assertThat(path).exists());
-    
+
     assertThat(productDirs())
       .extracting(path -> path.resolve(logo))
       .allSatisfy(path -> assertSquareImage(path));
   }
-  
+
   private static void assertSquareImage(Path path)
   {
     try
