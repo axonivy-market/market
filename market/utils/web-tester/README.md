@@ -1,8 +1,17 @@
 # Web Tester
 
-The `web-tester` artifact provides you an API which helps you to test your HTML-Dialogs.
-With this API it is easy to setup your test environment and send requests
-against your [Axon Ivy Engine](https://developer.axonivy.com/download).
+Axon Ivy's `web-tester` artifact helps you accelerate process automation
+initiatives by providing an API that allows you to test your HTML-Dialogs.
+
+This util:
+
+* Makes the setup of your web test environment as easy as possible.
+* Facilitates sending requests against your [Axon Ivy
+  Engine](https://developer.axonivy.com/download).
+* Supports you with step-by-step demo
+  [documentation](https://developer.axonivy.com/doc/9.2/concepts/testing/web-testing.html)
+  to reduce your integration effort.
+* Enables low code citizen developers to do powerful web testing easily.
 
 [![IvyWebTest](https://developer.axonivy.com/doc/9.2/_images/webtesting-run.gif)](https://developer.axonivy.com/doc/9.2/concepts/testing/web-testing.html)
 
@@ -10,4 +19,5 @@ against your [Axon Ivy Engine](https://developer.axonivy.com/download).
 
 To see how you can use this util please have a look at the official
 [README](https://github.com/axonivy/web-tester#how-to-use-in-your-project) or
-read our [documentation](https://developer.axonivy.com/doc/9.2/concepts/testing/web-testing.html).
+read our
+[documentation](https://developer.axonivy.com/doc/9.2/concepts/testing/web-testing.html).
