@@ -25,6 +25,7 @@ uo0 f9 triggerEnabled false #txt
 uo0 f9 callSignature robotGetOrders() #txt
 uo0 f9 startName 'DEMO: RPA integration with UIPath' #txt
 uo0 f9 caseData businessCase.attach=true #txt
+uo0 f9 @CG|tags demo #txt 
 uo0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

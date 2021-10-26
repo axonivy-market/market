@@ -31,6 +31,7 @@ mo0 f0 requestEnabled true #txt
 mo0 f0 triggerEnabled false #txt
 mo0 f0 callSignature readCalendar() #txt
 mo0 f0 caseData businessCase.attach=true #txt
+mo0 f0 @CG|tags demo #txt 
 mo0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

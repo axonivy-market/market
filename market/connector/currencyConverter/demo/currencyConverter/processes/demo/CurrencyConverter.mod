@@ -26,6 +26,7 @@ Cr0 f0 startCustomFields 'cssIcon=si si-monetization-approve' #txt
 Cr0 f0 taskData TaskTriggered.NAM=W\u00E4hrungsrechner #txt
 Cr0 f0 caseData 'businessCase.attach=true
 case.name=W\u00E4hrungsrechner' #txt
+Cr0 f0 @CG|tags demo #txt 
 Cr0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
