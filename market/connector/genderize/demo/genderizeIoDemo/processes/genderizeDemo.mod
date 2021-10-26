@@ -23,6 +23,7 @@ ge0 f0 triggerEnabled false #txt
 ge0 f0 callSignature salutationDemo() #txt
 ge0 f0 startName 'Genderize.io Connector Demo' #txt
 ge0 f0 caseData businessCase.attach=true #txt
+ge0 f0 @CG|tags demo #txt 
 ge0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

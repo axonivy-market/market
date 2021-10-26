@@ -24,6 +24,7 @@ tr0 f0 requestEnabled true #txt
 tr0 f0 triggerEnabled false #txt
 tr0 f0 callSignature recentTweets() #txt
 tr0 f0 caseData businessCase.attach=true #txt
+tr0 f0 @CG|tags demo #txt 
 tr0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
