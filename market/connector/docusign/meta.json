@@ -145,14 +145,6 @@
 					]
 				}
 			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"resources": [
-					"processes/Demo/eSign.mod"
-				]
-			}
 		}
 	]
 }

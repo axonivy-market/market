@@ -79,14 +79,6 @@
 					}
 				]
 			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"resources": [
-					"processes/Demo/twitter.mod"
-				]
-			}
 		}
 	]
 }

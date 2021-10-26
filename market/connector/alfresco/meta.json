@@ -69,15 +69,6 @@
                     }
                 ]
             }
-        },
-        {
-            "id": "open-resource",
-            "data": {
-                "project": "alfresco-connector-demo",
-                "resources": [
-                    "processes/AlfrescoDemo/ecm.mod"
-                ]
-            }
         }
     ]
 }

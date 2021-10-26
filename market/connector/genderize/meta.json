@@ -50,14 +50,6 @@
 					]
 				}
 			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"resources": [
-					"processes/genderizeDemo.mod"
-				]
-			}
 		}
 	]
 }

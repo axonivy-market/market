@@ -70,15 +70,6 @@
 					}
 				]
 			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"project": "DocFactoryDemos",
-				"resources": [
-					"processes/DocFactorySubprocessExamples.mod"
-				]
-			}
 		}
 	]
 }

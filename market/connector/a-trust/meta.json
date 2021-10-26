@@ -69,15 +69,6 @@
                     }
                 ]
             }
-        },
-        {
-            "id": "open-resource",
-            "data": {
-                "project": "a-trust-connector-demo",
-                "resources": [
-                    "processes/ATrustIntegration/ATrustDemo.mod"
-                ]
-            }
         }
     ]
 }

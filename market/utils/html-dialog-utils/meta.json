@@ -69,15 +69,6 @@
 					}
 				]
 			}
-		},
-		{
-			"id": "open-resource",
-			"data": {
-				"project": "html-dialog-utils-demo",
-				"resources": [
-					"processes/Demo/ReadOnlyHtmlDialogDemo.mod"
-				]
-			}
 		}
 	]
 }
