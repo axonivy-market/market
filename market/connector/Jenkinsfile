@@ -35,6 +35,7 @@ pipeline {
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1, filters: [
             excludeMessage('.*-illegal-access=warn.*'), // java11
             excludeMessage('.*Filtering of parent/child POMs.*'), // maven invoker
+            excludeMessage('.*removing unknown ids: \\[StartRequest\\|tags\\].*'), // pre 9.3
           ]
           junit '**/target/*-reports/**/*.xml'
         }
