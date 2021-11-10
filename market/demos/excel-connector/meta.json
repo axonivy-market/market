@@ -1,0 +1,63 @@
+{
+	"id": "html-dialog-demo",
+	"version": "9.2",
+	"name": "Html Dialog Demos",
+	"description": "User-friendly forms for all devices is key in  process automation. Learn more about nice GUIs.",
+	"type": "solution",
+	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy-market/demo-projects",
+	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"compatibility": "8.0+",
+	"tags": [
+		"demo"
+	],
+	"properties": {
+		"importTestProject": false
+	},
+	"mavenArtifacts": [
+		{
+			"name": "Html Dialog Demos",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "html-dialog-demos"
+		},
+		{
+			"name": "Html Dialog Demos Test",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "html-dialog-demos-test"
+		}
+	],
+	"installers": [
+		{
+			"id": "maven-import",
+			"data": {
+				"projects": [
+					{
+						"groupId": "ch.ivyteam.demo",
+						"artifactId": "html-dialog-demos",
+						"version": "${version}",
+						"type": "iar"
+					},
+					{
+						"groupId": "ch.ivyteam.demo",
+						"artifactId": "html-dialog-demos-test",
+						"version": "${version}",
+						"type": "iar",
+						"importInWorkspace": "@importTestProject@"
+					}
+				],
+				"repositories": [
+					{
+						"id": "axonivy.public",
+						"url": "https://repo.axonivy.rocks",
+						"snapshots": {
+							"enabled": "true"
+						}
+					}
+				]
+			}
+		}
+	]
+}
