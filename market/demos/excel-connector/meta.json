@@ -1,13 +1,13 @@
 {
-	"id": "html-dialog-demo",
-	"version": "9.2",
-	"name": "Html Dialog Demos",
-	"description": "User-friendly forms for all devices is key in  process automation. Learn more about nice GUIs.",
+	"id": "excel-connector-demo",
+	"version": "9.3",
+	"name": "Excel Connector Demo",
+	"description": "Simple demo that shows you how to import/export Ivy Recordsets using Excel.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/demo-projects",
-	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
+	"sourceUrl": "https://github.com/axonivy-market/excel-connector",
+	"statusBadgeUrl": "https://github.com/axonivy-market/excel-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
@@ -19,14 +19,9 @@
 	},
 	"mavenArtifacts": [
 		{
-			"name": "Html Dialog Demos",
-			"groupId": "ch.ivyteam.demo",
-			"artifactId": "html-dialog-demos"
-		},
-		{
-			"name": "Html Dialog Demos Test",
-			"groupId": "ch.ivyteam.demo",
-			"artifactId": "html-dialog-demos-test"
+			"name": "Excel Connector Demo",
+			"groupId": "com.axonivy.connector.excel",
+			"artifactId": "excel-connector-demo"
 		}
 	],
 	"installers": [
@@ -35,17 +30,32 @@
 			"data": {
 				"projects": [
 					{
-						"groupId": "ch.ivyteam.demo",
-						"artifactId": "html-dialog-demos",
+						"groupId": "com.axonivy.connector.excel",
+						"artifactId": "excel-connector-demo",
 						"version": "${version}",
 						"type": "iar"
-					},
+					}
+				],
+				"repositories": [
 					{
-						"groupId": "ch.ivyteam.demo",
-						"artifactId": "html-dialog-demos-test",
+						"id": "axonivy.public",
+						"url": "https://repo.axonivy.rocks",
+						"snapshots": {
+							"enabled": "true"
+						}
+					}
+				]
+			}
+		},
+				{
+			"id": "maven-dependency",
+			"data": {
+				"dependencies": [
+					{
+						"groupId": "com.axonivy.connector.excel",
+						"artifactId": "excel-connector",
 						"version": "${version}",
-						"type": "iar",
-						"importInWorkspace": "@importTestProject@"
+						"type": "iar"
 					}
 				],
 				"repositories": [
