@@ -1,9 +1,8 @@
-# Excel Connector Demo
-Axon Ivy's Excel Connector Demo nicely showcases how easily you can import and export data records. The solution illustrates how:
+# Excel Connector
+Axon Ivy's **Excel Connector** helps you to accelerate process automation initiatives by reading and writing Excel files in your process. This connector allows to:
 
-- to import a local Excel sheet and convert it into an Ivy Recordset
-- an imported Recordset can be extended using an Ivy Process
-- the resulting Ivy Recordset can be exported as an Excel Sheet
+- import a local Excel file and convert it into an Ivy Recordset
+- export Ivy Recordsets as an Excel file
 
 ## Demo
 

@@ -1,8 +1,8 @@
 {
-	"id": "excel-connector-demo",
+	"id": "excel-connector",
 	"version": "9.3",
-	"name": "Excel Connector Demo",
-	"description": "Simple demo that shows you how to import/export Ivy Recordsets using Excel.",
+	"name": "Excel Connector",
+	"description": "The connector allows you to read or write Excel files in your process.",
 	"type": "solution",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
@@ -12,7 +12,9 @@
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
 	"tags": [
-		"demo"
+		"util",
+		"excel",
+		"connector"
 	],
 	"properties": {
 		"importTestProject": false
