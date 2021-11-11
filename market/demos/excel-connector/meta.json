@@ -39,7 +39,7 @@
 				"repositories": [
 					{
 						"id": "axonivy.public",
-						"url": "https://repo.axonivy.rocks",
+						"url": "https://maven.axonivy.com",
 						"snapshots": {
 							"enabled": "true"
 						}
@@ -61,7 +61,7 @@
 				"repositories": [
 					{
 						"id": "axonivy.public",
-						"url": "https://repo.axonivy.rocks",
+						"url": "https://maven.axonivy.com",
 						"snapshots": {
 							"enabled": "true"
 						}
