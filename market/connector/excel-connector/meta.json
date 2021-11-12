@@ -1,7 +1,7 @@
 {
 	"id": "excel-connector",
 	"version": "9.3",
-	"name": "Microsoft Excel Connector",
+	"name": "Microsoft Excel",
 	"description": "It has never been easier to read and write Microsoft Excel files within your process automation projects.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
