@@ -1,9 +1,9 @@
 {
 	"id": "excel-connector",
 	"version": "9.3",
-	"name": "Excel Connector",
-	"description": "The connector allows you to read or write Excel files in your process.",
-	"type": "solution",
+	"name": "Microsoft Excel Connector",
+	"description": "It has never been easier to read and write Microsoft Excel files within your process automation projects.",
+	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/excel-connector",
