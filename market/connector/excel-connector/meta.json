@@ -11,11 +11,7 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
-	"tags": [
-		"util",
-		"excel",
-		"connector"
-	],
+	"tags": ["office"],
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
