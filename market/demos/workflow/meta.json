@@ -1,6 +1,5 @@
 {
 	"id": "workflow-demo",
-	"version": "9.2",
 	"name": "Workflow Demos",
 	"description": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage",
 	"type": "solution",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"tags": [
 		"demo"
 	],

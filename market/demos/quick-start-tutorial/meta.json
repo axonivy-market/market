@@ -1,7 +1,6 @@
 
 {
 	"id": "quick-start-tutorial",
-	"version": "9.2",
 	"name": "Quick Start Tutorial",
 	"description": "Quick Start Tutorial",
 	"type": "solution",
@@ -11,7 +10,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"listed": false,
 	"tags": ["demo"],
 	"mavenArtifacts": [
