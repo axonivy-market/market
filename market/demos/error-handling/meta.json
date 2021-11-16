@@ -1,6 +1,5 @@
 {
 	"id": "error-handling-demo",
-	"version": "9.2",
 	"name": "Error Handling Demos",
 	"description": "Errors in process automation mean leaving the happy path. Learn more about business and technical errors.",
 	"type": "solution",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"tags": [
 		"demo"
 	],

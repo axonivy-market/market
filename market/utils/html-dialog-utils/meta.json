@@ -1,6 +1,5 @@
 {
 	"id": "html-dialog-utils",
-	"version": "9.2",
 	"name": "HTML Dialog Utils",
 	"description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
 	"type": "util",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/html-dialog-utils/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "9.2+",
 	"tags": ["utils"],
 	"validate": false,
 	"mavenArtifacts": [

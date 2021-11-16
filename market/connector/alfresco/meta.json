@@ -1,6 +1,5 @@
 {
 	"id": "alfrescoecm",
-	"version": "1.0",
 	"name": "Alfresco ECM",
 	"description": "Using Alfresco ECM it is easy to connect, manage and protect important company information.",
 	"type": "connector",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/alfresco-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "9.2+",
 	"tags": ["ECM"],
     "validate": false,
     "mavenArtifacts": [

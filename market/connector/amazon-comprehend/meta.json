@@ -2,7 +2,6 @@
     "id": "amazon-comprehend",
     "name": "Amazon Comprehend API",
     "description": "Amazon Comprehend is a NLP service that uses machine learning to uncover information in unstructured data.",
-    "version": "1.0",
     "type": "connector",
     "vendor": "Axon Ivy AG",
     "platformReview": "4.5",
@@ -10,7 +9,6 @@
     "statusBadgeUrl": "https://github.com/axonivy-market/amazon-comprehend-connector/actions/workflows/ci.yml/badge.svg",
     "language": "English",
     "industry": "Cross-Industry",
-    "compatibility": "9.2+",
     "tags": [ "AI" ],
     "validate": false,
     "mavenArtifacts": [
