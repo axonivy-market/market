@@ -137,7 +137,7 @@ uh0 f24 clientId 699e715f-63b1-4355-a974-ee3cac26985e #txt
 uh0 f24 path /odata/Jobs/UiPath.Server.Configuration.OData.StartJobs #txt
 uh0 f24 method POST #txt
 uh0 f24 bodyInputType ENTITY #txt
-uh0 f24 bodyObjectType com.uipath.orchestrator.JobsStartJobsParameters #txt
+uh0 f24 bodyObjectType com.uipath.orchestrator.StartJobsRequest #txt
 uh0 f24 bodyObjectMapping 'param.startInfo.inputArguments="";
 param.startInfo.jobPriority=com.uipath.orchestrator.StartProcessDto.JobPriorityEnum.NORMAL;
 param.startInfo.jobsCount=0;
