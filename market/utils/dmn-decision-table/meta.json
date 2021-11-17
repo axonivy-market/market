@@ -1,6 +1,5 @@
 {
 	"id": "dmn-decision-table",
-	"version": "9.2",
 	"name": "DMN Decision Table",
 	"description": "Control your business processes with standardised DMN decision tables.",
 	"type": "util",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/dmn-decision-table/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "6.6+",
 	"tags": ["rule-engine"],
 	"mavenArtifacts": [
 		{

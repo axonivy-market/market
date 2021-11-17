@@ -2,7 +2,6 @@
     "id": "sftp-connector",
     "name": "SFTP",
     "description": "SFTP client which uses the SFTP protocol to transfer files securely to and from a remote computer.",
-    "version": "1.0",
     "type": "connector",
     "vendor": "Axon Ivy AG",
     "platformReview": "4.5",
@@ -10,7 +9,6 @@
     "statusBadgeUrl": "https://github.com/axonivy-market/sftp-connector/actions/workflows/ci.yml/badge.svg",
     "language": "English",
     "industry": "Cross-Industry",
-    "compatibility": "9.2+",
     "tags": [ "sftp" ],
     "validate": false,
     "mavenArtifacts": [

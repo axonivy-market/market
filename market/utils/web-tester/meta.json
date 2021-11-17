@@ -1,6 +1,5 @@
 {
 	"id": "web-tester",
-	"version": "9.2",
 	"name": "Web Tester",
 	"description": "Easy Web-Integration tests for your process automation projects (PrimeFaces widgets + Selenium)",
 	"type": "util",
@@ -8,7 +7,6 @@
 	"sourceUrl": "https://github.com/axonivy/web-tester",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"tags": ["testing"],
 	"mavenArtifacts": [
 		{
