@@ -1,7 +1,6 @@
 
 {
 	"id": "demos-app",
-	"version": "9.2",
 	"name": "Demos Application",
 	"description": "Demos Application",
 	"type": "solution",
@@ -11,7 +10,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"listed": false,
 	"tags": ["demo"],
 	"mavenArtifacts": [

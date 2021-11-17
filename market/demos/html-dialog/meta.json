@@ -1,6 +1,5 @@
 {
 	"id": "html-dialog-demo",
-	"version": "9.2",
 	"name": "Html Dialog Demos",
 	"description": "User-friendly forms for all devices is key in  process automation. Learn more about nice GUIs.",
 	"type": "solution",
@@ -10,7 +9,6 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"tags": [
 		"demo"
 	],

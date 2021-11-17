@@ -1,6 +1,5 @@
 {
-	"id": "basic-workflow-ui",
-	"version": "8.0",
+	"id": "basic-workflow-ui",	
 	"name": "Basic Workflow UI",
 	"description": "Small and smart workflow ui",
 	"type": "util",
@@ -8,7 +7,6 @@
 	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-basic-workflow-ui",
 	"language": "EN/DE/FR",
 	"industry": "Cross-Industry",
-	"compatibility": "8.0+",
 	"listed": false,
 	"tags": ["workflow-ui"],
 	"mavenArtifacts": [
