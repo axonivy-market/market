@@ -10,6 +10,7 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["office"],
+	"validate": false,
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
