@@ -1,8 +1,8 @@
 {
-	"id": "tel-search-connector",
+	"id": "tel-search-ch-connector",
 	"name": "tel.search.ch",
 	"description": "It has never been easier to retrieve phone directory entries via the tel.search.ch API.",
-	"type": "solution",
+	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/tel-search-connector",
@@ -10,21 +10,21 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "8.0+",
-	"tags": ["helper"],
+	"tags": ["utils"],
 	"validate": false,
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Tel Search Connector",
+			"name": "tel.search.ch Connector",
 			"groupId": "com.axonivy.connector.telsearch",
-			"artifactId": "tel-search-connector",
+			"artifactId": "tel-search-ch-connector",
 			"makesSenseAsMavenDependency": true
 		},
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Tel Search Connector Demo",
+			"name": "tel.search.ch Connector Demo",
 			"groupId": "com.axonivy.connector.telsearch",
-			"artifactId": "tel-search-connector-demo"
+			"artifactId": "tel-search-ch-connector-demo"
 		}
 	],
 	"installers": [
@@ -34,7 +34,7 @@
 				"projects": [
 					{
 						"groupId": "com.axonivy.connector.telsearch",
-						"artifactId": "tel-search-connector-demo",
+						"artifactId": "tel-search-ch-connector-demo",
 						"version": "${version}",
 						"type": "iar"
 					}
@@ -56,7 +56,7 @@
 				"dependencies": [
 					{
 						"groupId": "com.axonivy.connector.telsearch",
-						"artifactId": "tel-search-connector",
+						"artifactId": "tel-search-ch-connector",
 						"version": "${version}",
 						"type": "iar"
 					}
