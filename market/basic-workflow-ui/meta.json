@@ -15,27 +15,5 @@
 			"groupId": "ch.ivyteam.ivy.project.wf",
 			"artifactId": "basic-workflow-ui"
 		}
-	],
-	"installers": [
-		{
-			"id": "maven-import",
-			"data": {
-				"projects": [
-					{
-						"groupId": "ch.ivyteam.ivy.project.wf",
-						"artifactId": "basic-workflow-ui",
-						"version": "${version}",
-						"type": "iar"
-					}
-				],
-				"repositories": [
-					{
-						"id": "axonivy.public",
-						"url": "https://repo.axonivy.rocks",
-						"snapshots":{"enabled":"true"}
-					}
-				]
-			}
-		}
 	]
 }
