@@ -6,7 +6,7 @@
         {
             "id": "rest-client",
             "data": {
-                "openApiUrl": "@openApiUrl",
+                "openApiUrl": "@openApiUrl@",
                 "namespace": "io.genderize",
                 "icon": "res:/webContent/icons/genderize.png",
                 "clientId": "2fefdb40-b37e-417d-a7b9-3c499183003b",

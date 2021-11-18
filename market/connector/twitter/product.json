@@ -26,7 +26,7 @@
         {
             "id": "rest-client",
             "data": {
-                "openApiUrl": "@openApiUrl",
+                "openApiUrl": "@openApiUrl@",
                 "namespace": "com.twitter",
                 "icon": "res:/webContent/icons/twitter.png",
                 "clientId": "0b74edb8-5459-4ccc-aac7-505531e06398",
