@@ -73,7 +73,7 @@
         {
             "id": "rest-client",
             "data": {
-                "openApiUrl": "@openApiUrl",
+                "openApiUrl": "@openApiUrl@",
                 "namespace": "com.docusign.esign.model",
                 "icon": "res:/webContent/icons/docusign.png",
                 "clientId": "17e5dc27-5699-4717-ae6c-e2c8f1e2a30f",

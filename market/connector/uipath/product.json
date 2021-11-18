@@ -27,7 +27,7 @@
         {
             "id": "rest-client",
             "data": {
-                "openApiUrl": "@openApiUrl",
+                "openApiUrl": "@openApiUrl@",
                 "namespace": "com.uipath.orchestrator",
                 "icon": "res:/webContent/icons/uipath.png",
                 "clientId": "699e715f-63b1-4355-a974-ee3cac26985e",
