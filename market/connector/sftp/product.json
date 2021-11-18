@@ -1,0 +1,65 @@
+{
+    "installers": [
+        {
+            "id": "maven-dependency",
+            "data": {
+                "dependencies": [
+                    {
+                        "groupId": "com.axonivy.connector.sftp",
+                        "artifactId": "sftp-connector",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com",
+                        "snapshots": {
+                            "enabled": "true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "maven-import",
+            "data": {
+                "projects": [
+                    {
+                        "groupId": "com.axonivy.connector.sftp",
+                        "artifactId": "sftp-connector-demo",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "project-resource",
+            "data": {
+                "resources": [
+                    {
+                        "source": "https://raw.githubusercontent.com/axonivy-market/sftp-connector/master/sftp-connector/config/variables.yaml",
+                        "path": "config/variables.yaml"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "project": "sftp-connector-demo",
+                "resources": [
+                    "processes/SftpDemo/SftpClientDemo.mod"
+                ]
+            }
+        }
+    ]
+}
