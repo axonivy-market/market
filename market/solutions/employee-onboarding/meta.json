@@ -8,5 +8,6 @@
 	"cost": "paid",
 	"language": "EN",
 	"industry": "Cross-Industry",
-	"tags": ["hr"]
+	"tags": ["hr"],
+	"contactUs": true
 }
