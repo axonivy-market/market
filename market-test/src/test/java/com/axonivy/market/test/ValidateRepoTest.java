@@ -23,7 +23,7 @@ import org.junit.jupiter.api.Test;
 class ValidateRepoTest
 {
   @Test
-  void everyProductHasAValidJson()
+  void everyProductHasAValidMetaJson()
   {
     assertThat(productDirs()).allSatisfy(path -> assertValidMetaJson(path));
   }
@@ -73,6 +73,23 @@ class ValidateRepoTest
       }
     }
 
+
+  }
+
+  @Test
+  void everyProductHasAValidProductJsonIfExists()
+  {
+    assertThat(productDirs()).allSatisfy(path -> assertValidProductJson(path));
+  }
+
+  private void assertValidProductJson(Path path)
+  {
+    var metaPath = path.resolve("product.json");
+    if (!Files.exists(metaPath)) {
+      return;
+    }
+
+    var json = toJsonObject(metaPath);
     if (json.has("installers"))
     {
       var installers = json.getJSONArray("installers");
@@ -171,14 +188,6 @@ class ValidateRepoTest
 
     var uniqueIds = new HashSet<>(ids);
     assertThat(uniqueIds).as("every product must have a unique ID").hasSameSizeAs(ids);
-  }
-
-  @Test
-  void everyProductHasAReadme()
-  {
-    assertThat(productDirs())
-            .extracting(path -> path.resolve("README.md"))
-            .allSatisfy(path -> assertThat(path).exists());
   }
 
   @Test

@@ -1,0 +1,54 @@
+{
+    "installers": [
+        {
+            "id": "maven-dependency",
+            "data": {
+                "dependencies": [
+                    {
+                        "groupId": "com.axonivy.connector.alfresco",
+                        "artifactId": "alfresco-connector",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com",
+                        "snapshots": {
+                            "enabled": "true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "maven-import",
+            "data": {
+                "projects": [
+                    {
+                        "groupId": "com.axonivy.connector.alfresco",
+                        "artifactId": "alfresco-connector-demo",
+                        "version": "${version}",
+                        "type": "iar"
+                    }
+                ],
+                "repositories": [
+                    {
+                        "id": "axonivy.public",
+                        "url": "https://maven.axonivy.com"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "project": "alfresco-connector-demo",
+                "resources": [
+                    "processes/AlfrescoDemo/ecm.mod"
+                ]
+            }
+        }
+    ]
+}
