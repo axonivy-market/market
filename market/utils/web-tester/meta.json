@@ -16,21 +16,5 @@
 			"type": "jar",
 			"repoUrl": "https://oss.sonatype.org/content/repositories/releases"
 		}
-	],
-	"installers": [
-		{
-			"id": "maven-dependency",
-			"data": {
-				"dependencies": [
-					{
-						"groupId": "com.axonivy.ivy.webtest",
-						"artifactId": "web-tester",
-						"version": "${version}",
-						"type": "jar",
-						"scope": "test"
-					}
-				]
-			}
-		}
 	]
 }

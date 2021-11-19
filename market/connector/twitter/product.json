@@ -1,0 +1,82 @@
+{
+    "properties": {
+        "openApiUrl": "https://api.twitter.com/2/openapi.json"
+    },
+    "installers": [
+        {
+            "id": "project-resource",
+            "data": {
+                "directories": [
+                    {
+                        "source": "demo/twitterDemo/src/com/twitter/auth",
+                        "includes": [
+                            "OAuth2Feature.java"
+                        ],
+                        "path": "src/com/twitter/auth"
+                    }
+                ],
+                "resources": [
+                    {
+                        "source": "demo/twitterDemo/webContent/icons/twitter.png",
+                        "path": "webContent/icons/twitter.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "rest-client",
+            "data": {
+                "openApiUrl": "@openApiUrl@",
+                "namespace": "com.twitter",
+                "icon": "res:/webContent/icons/twitter.png",
+                "clientId": "0b74edb8-5459-4ccc-aac7-505531e06398",
+                "features": [
+                    "ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+                    "com.twitter.auth.OAuth2Feature"
+                ],
+                "properties": [
+                    {
+                        "name": "API.key"
+                    },
+                    {
+                        "name": "API.secretKey",
+                        "password": true
+                    },
+                    {
+                        "name": "AUTH.baseUri",
+                        "value": "https://api.twitter.com/oauth2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "project-resource",
+            "data": {
+                "dialog": {
+                    "source": "demo/twitterDemo/src_hd",
+                    "ids": [
+                        "com.twitter.demo.Tweets"
+                    ]
+                },
+                "resources": [
+                    {
+                        "source": "demo/twitterDemo/dataclasses/com/twitter/demo/Data.ivyClass",
+                        "path": "dataclasses/com/twitter/demo/Data.ivyClass"
+                    },
+                    {
+                        "source": "demo/twitterDemo/processes/Demo/twitter.mod",
+                        "path": "processes/Demo/twitter.mod"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "open-resource",
+            "data": {
+                "resources": [
+                    "processes/Demo/twitter.mod"
+                ]
+            }
+        }
+    ]
+}
