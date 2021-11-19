@@ -17,8 +17,7 @@
 			"name": "tel.search.ch Connector Product",
 			"groupId": "com.axonivy.connector.telsearch",
 			"artifactId": "tel-search-ch-connector-product",
-			"type": "zip",
-			"hide": true
+			"type": "zip"
 		},
 		{
 			"repoUrl": "https://maven.axonivy.com",
