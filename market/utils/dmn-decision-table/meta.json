@@ -13,6 +13,13 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
+			"name": "Decision Table Product",
+			"groupId": "com.axonivy.dmn.decisiontable",
+			"artifactId": "dmn-decision-table-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
 			"name": "Decision Table",
 			"groupId": "com.axonivy.dmn.decisiontable",
 			"artifactId": "dmn-decision-table",
