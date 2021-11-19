@@ -1,7 +1,7 @@
 {
 	"id": "tel-search-ch-connector",
-	"name": "tel.search.ch",
-	"description": "It has never been easier to retrieve phone directory entries via the tel.search.ch API.",
+	"name": "Swiss phone directory",
+	"description": "Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
@@ -15,6 +15,14 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
+			"name": "tel.search.ch Connector Product",
+			"groupId": "com.axonivy.connector.telsearch",
+			"artifactId": "tel-search-ch-connector-product",
+			"type": "zip",
+			"hide": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
 			"name": "tel.search.ch Connector",
 			"groupId": "com.axonivy.connector.telsearch",
 			"artifactId": "tel-search-ch-connector",
@@ -25,52 +33,6 @@
 			"name": "tel.search.ch Connector Demo",
 			"groupId": "com.axonivy.connector.telsearch",
 			"artifactId": "tel-search-ch-connector-demo"
-		}
-	],
-	"installers": [
-		{
-			"id": "maven-import",
-			"data": {
-				"projects": [
-					{
-						"groupId": "com.axonivy.connector.telsearch",
-						"artifactId": "tel-search-ch-connector-demo",
-						"version": "${version}",
-						"type": "iar"
-					}
-				],
-				"repositories": [
-					{
-						"id": "axonivy.public",
-						"url": "https://maven.axonivy.com",
-						"snapshots": {
-							"enabled": "true"
-						}
-					}
-				]
-			}
-		},
-				{
-			"id": "maven-dependency",
-			"data": {
-				"dependencies": [
-					{
-						"groupId": "com.axonivy.connector.telsearch",
-						"artifactId": "tel-search-ch-connector",
-						"version": "${version}",
-						"type": "iar"
-					}
-				],
-				"repositories": [
-					{
-						"id": "axonivy.public",
-						"url": "https://maven.axonivy.com",
-						"snapshots": {
-							"enabled": "true"
-						}
-					}
-				]
-			}
 		}
 	]
 }
