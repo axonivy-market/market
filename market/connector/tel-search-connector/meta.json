@@ -1,0 +1,37 @@
+{
+	"id": "tel-search-ch-connector",
+	"name": "Swiss phone directory",
+	"description": "Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API.",
+	"type": "connector",
+	"vendor": "Axon Ivy AG",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy-market/tel-search-ch-connector",
+	"statusBadgeUrl": "https://github.com/axonivy-market/tel-search-ch-connector/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["utils"],
+	"validate": false,
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "tel.search.ch Connector Product",
+			"groupId": "com.axonivy.connector.telsearch",
+			"artifactId": "tel-search-ch-connector-product",
+			"type": "zip",
+			"hide": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "tel.search.ch Connector",
+			"groupId": "com.axonivy.connector.telsearch",
+			"artifactId": "tel-search-ch-connector",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "tel.search.ch Connector Demo",
+			"groupId": "com.axonivy.connector.telsearch",
+			"artifactId": "tel-search-ch-connector-demo"
+		}
+	]
+}
