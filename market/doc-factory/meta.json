@@ -11,6 +11,12 @@
 	"tags": ["document"],
 	"mavenArtifacts": [
 		{
+			"name": "DocFactory Product",
+			"groupId": "ch.ivyteam.ivy.addons",
+			"artifactId": "doc-factory-product",
+			"type": "zip"
+		},
+		{
 			"name": "DocFactory",
 			"groupId": "ch.ivyteam.ivy.addons",
 			"artifactId": "doc-factory",
