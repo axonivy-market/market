@@ -12,9 +12,6 @@
 	"tags": [
 		"demo"
 	],
-	"properties": {
-		"importTestProject": false
-	},
 	"mavenArtifacts": [
 		{
 			"name": "Rule Engine Demos Product",
