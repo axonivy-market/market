@@ -14,6 +14,12 @@
 	"tags": ["demo"],
 	"mavenArtifacts": [
 		{
+			"name": "Demo App Product",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "ivy-demos-app-product",
+			"type": "zip"
+		},
+		{
 			"key": "demos",
 			"name": "Demo App",
 			"groupId": "ch.ivyteam.demo",
