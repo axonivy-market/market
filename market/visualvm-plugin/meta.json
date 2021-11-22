@@ -12,6 +12,13 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
+			"name": "Visual VM Plugin Plugin",
+			"groupId": "ch.ivyteam.visualvm",
+			"artifactId": "visualvm-plugin-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
 			"name": "Visual VM Plugin",
 			"groupId": "ch.ivyteam.visualvm",
 			"artifactId": "visualvm-plugin",
