@@ -17,6 +17,12 @@
 	},
 	"mavenArtifacts": [
 		{
+			"name": "Workflow Demos Product",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "workflow-demos-product",
+			"type": "zip"
+		},
+		{
 			"name": "Workflow Demos",
 			"groupId": "ch.ivyteam.demo",
 			"artifactId": "workflow-demos"
