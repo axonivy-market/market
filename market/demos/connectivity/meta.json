@@ -12,9 +12,6 @@
 	"tags": [
 		"demo"
 	],
-	"properties": {
-		"importTestProject": false
-	},
 	"mavenArtifacts": [
 		{
 			"name": "Connectivity Demos Product",
