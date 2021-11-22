@@ -12,10 +12,13 @@
 	"tags": [
 		"demo"
 	],
-	"properties": {
-		"importTestProject": false
-	},
 	"mavenArtifacts": [
+		{
+			"name": "Connectivity Demos Product",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "connectivity-demos-product",
+			"type": "zip"
+		},
 		{
 			"name": "Connectivity Demos",
 			"groupId": "ch.ivyteam.demo",
