@@ -16,6 +16,13 @@
 			"repoUrl": "https://maven.axonivy.com",
 			"name": "HTML Dialog Utils",
 			"groupId": "com.axonivy.market.utils",
+			"artifactId": "html-dialog-utils-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "HTML Dialog Utils",
+			"groupId": "com.axonivy.market.utils",
 			"artifactId": "html-dialog-utils",
 			"makesSenseAsMavenDependency": true
 		},

@@ -16,6 +16,13 @@
             "repoUrl": "https://maven.axonivy.com",
             "name": "SFTP Connector",
             "groupId": "com.axonivy.connector.sftp",
+            "artifactId": "sftp-connector-product",
+            "type": "zip"
+        },
+        {
+            "repoUrl": "https://maven.axonivy.com",
+            "name": "SFTP Connector",
+            "groupId": "com.axonivy.connector.sftp",
             "artifactId": "sftp-connector",
             "makesSenseAsMavenDependency": true
         },
