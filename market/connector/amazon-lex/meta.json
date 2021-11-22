@@ -16,7 +16,8 @@
             "repoUrl": "https://maven.axonivy.com",
             "name": "Amazon Lex Product",
             "groupId": "com.axonivy.connector.amazon.lex",
-            "artifactId": "amazon-lex-connector-product"
+            "artifactId": "amazon-lex-connector-product",
+            "type": "zip"
         },
         {
             "repoUrl": "https://maven.axonivy.com",
