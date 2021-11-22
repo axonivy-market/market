@@ -14,6 +14,13 @@
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
+            "name": "A-Trust Product",
+            "groupId": "com.axonivy.connector.atrust",
+            "artifactId": "a-trust-connector-product",
+            "type": "zip"
+        },
+        {
+            "repoUrl": "https://maven.axonivy.com",
             "name": "A-Trust",
             "groupId": "com.axonivy.connector.atrust",
             "artifactId": "a-trust-connector",
