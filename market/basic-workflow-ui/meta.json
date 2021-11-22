@@ -4,12 +4,18 @@
 	"description": "Small and smart workflow ui",
 	"type": "util",
 	"vendor": "Axon Ivy AG",
-	"sourceUrl": "https://bitbucket.org/axonivy-prod/ivy-basic-workflow-ui",
+	"sourceUrl": "https://github.com/axonivy-market/basic-workflow-ui",
 	"language": "EN/DE/FR",
 	"industry": "Cross-Industry",
 	"listed": false,
 	"tags": ["workflow-ui"],
 	"mavenArtifacts": [
+		{
+			"name": "Basic Workflow UI Product",
+			"groupId": "ch.ivyteam.ivy.project.wf",
+			"artifactId": "basic-workflow-ui-product",
+			"type": "zip"
+		},
 		{
 			"name": "Basic Workflow UI",
 			"groupId": "ch.ivyteam.ivy.project.wf",
