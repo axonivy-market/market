@@ -14,6 +14,12 @@
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
+            "name": "Amazon Comprehend Product",
+            "groupId": "com.axonivy.connector.amazon.comprehend",
+            "artifactId": "amazon-comprehend-connector-product"
+        },
+        {
+            "repoUrl": "https://maven.axonivy.com",
             "name": "Amazon Comprehend",
             "groupId": "com.axonivy.connector.amazon.comprehend",
             "artifactId": "amazon-comprehend-connector",
