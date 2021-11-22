@@ -14,6 +14,12 @@
 	],
 	"mavenArtifacts": [
 		{
+			"name": "Error Handling Demos Product",
+			"groupId": "ch.ivyteam.demo",
+			"artifactId": "error-handling-demos-product",
+			"type": "zip"
+		},
+		{
 			"name": "Error Handling Demos",
 			"groupId": "ch.ivyteam.demo",
 			"artifactId": "error-handling-demos"
