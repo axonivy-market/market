@@ -14,6 +14,12 @@
 	"validate": false,
 	"mavenArtifacts": [
 		{
+			"name": "Portal Product",
+			"groupId": "com.axonivy.portal",
+			"artifactId": "portal-product",
+			"type": "zip"
+		},
+		{
 			"key": "portal",
 			"name": "Portal App",
 			"groupId": "ch.ivyteam.ivy.project.portal",
