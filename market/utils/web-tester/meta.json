@@ -10,6 +10,13 @@
 	"tags": ["testing"],
 	"mavenArtifacts": [
 		{
+			"name": "Web Tester Product",
+			"groupId": "com.axonivy.ivy.webtest",
+			"artifactId": "web-tester-product",
+			"type": "zip",
+			"repoUrl": "https://oss.sonatype.org/content/repositories/releases"
+		},
+		{
 			"name": "Web Tester",
 			"groupId": "com.axonivy.ivy.webtest",
 			"artifactId": "web-tester",
