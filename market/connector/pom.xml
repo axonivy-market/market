@@ -11,7 +11,6 @@
     <module>docusign/demo</module>
     <module>currencyConverter/demo/currencyConverter</module>
     <module>twitter/demo</module>
-    <module>jira/demo</module>
     <module>microsoft365/msgraph/demo</module>
     <module>genderize/demo/genderizeIoDemo</module>
   </modules>
