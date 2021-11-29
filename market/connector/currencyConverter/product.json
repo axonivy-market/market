@@ -45,14 +45,6 @@
                     ]
                 }
             }
-        },
-        {
-            "id": "open-resource",
-            "data": {
-                "resources": [
-                    "processes/demo/CurrencyConverter.mod"
-                ]
-            }
         }
     ]
 }
