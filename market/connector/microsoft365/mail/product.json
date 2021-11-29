@@ -43,9 +43,6 @@
         },
         {
             "...": "<../msgraph/demo-copy.json>"
-        },
-        {
-            "...": "<../msgraph/demo-open.json>"
         }
     ]
 }
