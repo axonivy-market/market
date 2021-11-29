@@ -88,14 +88,6 @@
                     }
                 ]
             }
-        },
-        {
-            "id": "open-resource",
-            "data": {
-                "resources": [
-                    "processes/RPA/uiPathDemo.mod"
-                ]
-            }
         }
     ]
 }
