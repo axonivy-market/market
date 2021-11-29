@@ -65,16 +65,6 @@
                     }
                 ]
             }
-        },
-        {
-            "id": "open-resource",
-            "data": {
-                "resources": [
-                    "processes/Demo/ms365ToDo.mod",
-                    "processes/Demo/ms365Mail.mod",
-                    "processes/Demo/ms365Calendar.mod"
-                ]
-            }
         }
     ]
 }
