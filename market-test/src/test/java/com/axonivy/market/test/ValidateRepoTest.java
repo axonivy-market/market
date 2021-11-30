@@ -37,7 +37,7 @@ class ValidateRepoTest
             .optionalStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
             .requireStringPropertyWithLength("name", 4, 24)
             .requireStringPropertyWithLength("description", 5, 200)
-            .requireStringPropertyWithLength("vendor", 2, 100)
+            .optionalStringPropertyWithMinLength("vendor", 3)
             .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
             .optionalStringPropertyWithPattern("platformReview", "^([0-4])?(\\.[5])?$|^5$")
             .optionalStringPropertyWithMinLength("industry", 2)
@@ -46,6 +46,20 @@ class ValidateRepoTest
             .optionalBooleanProperty("listed", true)
             .optionalStringPropertyWithFixedValues("versionDisplay", "portal")
             .optionalStringArrayProperty("tags");
+
+    if (json.has("vendor")) {
+      assertThat(json.has("vendorUrl")).as("if vendor is specified vendorUrl must be also specified").isTrue();
+      assertThat(json.has("vendorImage")).as("if vendor is specified vendorImage must be also specified").isTrue();
+    }
+    if (json.has("vendorUrl")) {
+      var vendorUrl = json.getString("vendorUrl");
+      assertThat(checkUriExists(vendorUrl)).as("vendor url is not reachable " + vendorUrl).isTrue();
+    }
+    if (json.has("vendorImage")) {
+      var image = json.getString("vendorImage");
+      var vendorImage = path.resolve(image);
+      assertThat(vendorImage).exists();
+    }
 
     if (json.has("mavenArtifacts"))
     {
@@ -72,8 +86,19 @@ class ValidateRepoTest
         checkArtifact(repoUrl, groupId, artifactId);
       }
     }
+  }
 
-
+  private boolean checkUriExists(String uri) {
+    try {
+      var client = HttpClient.newBuilder()
+              .followRedirects(Redirect.NORMAL)
+              .build();
+      var request = HttpRequest.newBuilder(URI.create(uri)).build();
+      var response = client.send(request, BodyHandlers.discarding());
+      return response.statusCode() == 200;
+    } catch (Exception ex) {
+      return false;
+    }
   }
 
   @Test
