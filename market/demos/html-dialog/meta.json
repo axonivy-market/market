@@ -3,7 +3,6 @@
 	"name": "Html Dialog Demos",
 	"description": "User-friendly forms for all devices is key in  process automation. Learn more about nice GUIs.",
 	"type": "solution",
-	"vendor": "Axon Ivy AG",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/demo-projects",
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
