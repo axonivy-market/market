@@ -4,7 +4,11 @@
 	"description": "Atlassian's Jira Connector lets you track issues directly from your digital process automation platform.",
 	"type": "connector",
 	"platformReview": "4.5",
+
 	"vendor": "FROX AG",
+	"vendorImage": "frox.png",
+	"vendorUrl": "https://www.frox.ch",
+
 	"sourceUrl": "https://github.com/axonivy-market/jira-connector",
 	"statusBadgeUrl": "https://github.com/axonivy-market/jira-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
