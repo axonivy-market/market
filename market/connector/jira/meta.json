@@ -1,13 +1,36 @@
 {
-	"id": "atlassian.jira",
-	"version": "1.0",
-	"name": "Jira (preview)",
-	"description": "Connect Jira with your business processes",
+	"id": "jira-connector",
+	"name": "Atlassian Jira Connector",
+	"description": "Atlassian's Jira Connector lets you track issues directly from your digital process automation platform.",
 	"type": "connector",
-	"vendor": "Axon Ivy AG",
-	"sourceUrl": "https://github.com/axonivy/market",
+	"platformReview": "4.5",
+	"vendor": "FROX AG",
+	"sourceUrl": "https://github.com/axonivy-market/jira-connector",
+	"statusBadgeUrl": "https://github.com/axonivy-market/jira-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["helper"],
-	"listed": false	
+	"validate": false,
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Jira Connector Product",
+			"groupId": "com.axonivy.connector.jira",
+			"artifactId": "jira-connector-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Jira Connector",
+			"groupId": "com.axonivy.connector.jira",
+			"artifactId": "jira-connector",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Jira Connector Demo",
+			"groupId": "com.axonivy.connector.jira",
+			"artifactId": "jira-connector-demo"
+		}
+	]	
 }
