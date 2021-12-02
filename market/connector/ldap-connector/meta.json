@@ -17,8 +17,7 @@
 			"name": "Active Directory Connector Product",
 			"groupId": "com.axonivy.connector.ldap",
 			"artifactId": "ldap-connector-product",
-			"type": "zip",
-			"hide": true
+			"type": "zip"
 		},
 		{
 			"repoUrl": "https://maven.axonivy.com",
