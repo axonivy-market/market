@@ -1,4 +1,0 @@
-ViewerData #class
-com.google.map.Viewer #namespace
-apiKey String #field
-apiKey PERSISTENT #fieldModifier
