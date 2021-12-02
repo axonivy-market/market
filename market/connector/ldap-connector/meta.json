@@ -1,6 +1,6 @@
 {
 	"id": "ldap-connector",
-	"name": "Microsoft Active Directory",
+	"name": "Active Directory",
 	"description": "Read and write Active Directory entries easily using LDAP.",
 	"type": "connector",
 	"vendor": "Axon Ivy AG",
