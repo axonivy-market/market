@@ -1,0 +1,34 @@
+{
+	"id": "google-maps-connector",
+	"name": "Google Maps API",
+	"description": "Google Maps API lets you customize maps with your own content & imagery for display on web pages & mobile devices.",
+	"type": "connector",
+	"sourceUrl": "https://github/axonivy-market/google-maps-connector",
+	"statusBadgeUrl": "https://github.com/axonivy-market/google-maps-connector/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["location"],
+	"validate": false,
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Google Maps Connector Product",
+			"groupId": "com.axonivy.connector.google.maps",
+			"artifactId": "google-maps-connector-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Google Maps Connector",
+			"groupId": "com.axonivy.connector.google.maps",
+			"artifactId": "google-maps-connector",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Google Maps Connector Demo",
+			"groupId": "com.axonivy.connector.google.maps",
+			"artifactId": "google-maps-connector-demo"
+		}
+	]	
+}
