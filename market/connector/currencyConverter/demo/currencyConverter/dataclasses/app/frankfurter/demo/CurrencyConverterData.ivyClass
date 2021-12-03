@@ -1,6 +1,0 @@
-CurrencyConverterData #class
-app.frankfurter.demo #namespace
-FromAmount Number #field
-FromCurrency app.frankfurter.api.client.CurCodes #field
-ToAmount Number #field
-ToCurrency app.frankfurter.api.client.CurCodes #field
