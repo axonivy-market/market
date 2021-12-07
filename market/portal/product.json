@@ -1,31 +1,43 @@
 {
-    "installers": [      
+    "installers": [
         {
             "id": "maven-import",
             "data": {
                 "projects": [
-                    {
+					{
                         "groupId": "ch.ivyteam.ivy.project.portal",
-                        "artifactId": "portalTemplate",
-                        "version": "${version}",
+                        "artifactId": "portalKit",
+                        "version": "9.3.0-m217",
+                        "type": "iar"
+                    },
+					{
+                        "groupId": "ch.ivyteam.ivy.project.portal",
+                        "artifactId": "portalStyle",
+                        "version": "9.3.0-m217",
                         "type": "iar"
                     },
                     {
                         "groupId": "ch.ivyteam.ivy.project.portal",
-                        "artifactId": "axonIvyExpress",                        
-                        "version": "${version}",
+                        "artifactId": "portalTemplate",
+                        "version": "9.3.0-m217",
+                        "type": "iar"
+                    },
+                    {
+                        "groupId": "ch.ivyteam.ivy.project.portal",
+                        "artifactId": "axonIvyExpress",
+                        "version": "9.3.0-m217",
                         "type": "iar"
                     },
                     {
                         "groupId": "com.axonivy.portal",
                         "artifactId": "portal-user-examples",
-                        "version": "${version}",
+                        "version": "9.3.0-m217",
                         "type": "iar"
                     },
                     {
                         "groupId": "com.axonivy.portal",
                         "artifactId": "portal-developer-examples",
-                        "version": "${version}",
+                        "version": "9.3.0-m217",
                         "type": "iar"
                     }
                 ],
@@ -37,5 +49,6 @@
                 ]
             }
         }
-    ]
+    ],
+    "name": "Axon Ivy Portal"
 }
