@@ -4,18 +4,18 @@
             "id": "maven-import",
             "data": {
                 "projects": [
-					{
-                        "groupId": "ch.ivyteam.ivy.project.portal",
-                        "artifactId": "portalKit",
-                        "version": "${version}",
-                        "type": "iar"
-                    },
-					{
+		    {
                         "groupId": "ch.ivyteam.ivy.project.portal",
                         "artifactId": "portalStyle",
                         "version": "${version}",
                         "type": "iar"
                     },
+		    {
+                        "groupId": "ch.ivyteam.ivy.project.portal",
+                        "artifactId": "portalKit",
+                        "version": "${version}",
+                        "type": "iar"
+                    },		    
                     {
                         "groupId": "ch.ivyteam.ivy.project.portal",
                         "artifactId": "portalTemplate",
