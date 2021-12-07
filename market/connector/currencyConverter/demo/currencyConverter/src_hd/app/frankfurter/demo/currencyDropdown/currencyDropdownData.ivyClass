@@ -1,4 +1,0 @@
-currencyDropdownData #class
-app.frankfurter.demo.currencyDropdown #namespace
-selectedCurrency String #field
-selectedCurrency PERSISTENT #fieldModifier
