@@ -1,6 +1,0 @@
-TweetsData #class
-com.twitter.demo.Tweets #namespace
-query String #field
-query PERSISTENT #fieldModifier
-tweets java.util.List<com.twitter.Tweet> #field
-tweets PERSISTENT #fieldModifier

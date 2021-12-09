@@ -9,7 +9,6 @@
   <modules>
     <module>uipath/demo</module>
     <module>docusign/demo</module>
-    <module>twitter/demo</module>
     <module>microsoft365/msgraph/demo</module>
   </modules>
 </project>
