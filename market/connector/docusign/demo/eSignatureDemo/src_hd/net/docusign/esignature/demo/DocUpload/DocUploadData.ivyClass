@@ -1,4 +1,0 @@
-DocUploadData #class
-net.docusign.esignature.demo.DocUpload #namespace
-file File #field
-file PERSISTENT #fieldModifier

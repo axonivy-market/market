@@ -1,8 +1,0 @@
-DocSignData #class
-net.docusign.esignature.demo.DocSign #namespace
-file File #field
-file PERSISTENT #fieldModifier
-envelopeId String #field
-envelopeId PERSISTENT #fieldModifier
-uri String #field
-uri PERSISTENT #fieldModifier
