@@ -8,6 +8,7 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["document"],
+	"validate": true,
 	"mavenArtifacts": [
 		{
 			"name": "DocFactory Product",
