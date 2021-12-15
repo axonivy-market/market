@@ -1,5 +1,5 @@
 [Ivy]
-17651A0FB6AFB366 9.2.0 #module
+17651A0FB6AFB366 9.3.1 #module
 >Proto >Proto Collection #zClass
 st0 eSign Big #zClass
 st0 B #cInfo
@@ -48,7 +48,7 @@ st0 f0 triggerEnabled false #txt
 st0 f0 callSignature startWf() #txt
 st0 f0 startName '1. Initiate a digital document signing workflow' #txt
 st0 f0 caseData businessCase.attach=true #txt
-st0 f0 @CG|tags demo #txt 
+st0 f0 @CG|tags demo #txt
 st0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -106,7 +106,7 @@ st0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 st0 f6 264 106 112 44 -48 -7 #rect
-st0 f7 template "/redirect.ivc" #txt
+st0 f7 template "redirect.jsp" #txt
 st0 f7 177 465 30 30 0 15 #rect
 st0 f11 outLink visitSigningApp.ivp #txt
 st0 f11 inParamDecl '<> param;' #txt
