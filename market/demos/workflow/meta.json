@@ -8,9 +8,8 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"tags": [
-		"demo"
-	],
+	"tags": ["demo"],
+	"validate": true,	
 	"mavenArtifacts": [
 		{
 			"name": "Workflow Demos Product",

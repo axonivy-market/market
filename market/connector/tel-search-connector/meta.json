@@ -9,7 +9,6 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["utils"],
-	"validate": false,
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
