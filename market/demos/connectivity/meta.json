@@ -11,6 +11,7 @@
 	"tags": [
 		"demo"
 	],
+	"validate": true,
 	"mavenArtifacts": [
 		{
 			"name": "Connectivity Demos Product",
