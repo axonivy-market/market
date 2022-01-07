@@ -1,0 +1,34 @@
+{
+	"id": "docusign-connector",
+	"name": "DocuSign",
+	"description": "DocuSign allows organizations to sign any document electronically on different systems.",
+	"type": "connector",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy-market/docusign-connector",
+	"statusBadgeUrl": "https://github.com/axonivy-market/docusign-connector/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["e-signature"],
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "DocuSign Connector Product",
+			"groupId": "com.axonivy.connector.docusign",
+			"artifactId": "docusign-connector-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "DocuSign Connector",
+			"groupId": "com.axonivy.connector.docusign",
+			"artifactId": "docusign-connector",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "DocuSign Connector Demo",
+			"groupId": "com.axonivy.connector.docusign",
+			"artifactId": "docusign-connector-demo"
+		}
+	]	
+}
