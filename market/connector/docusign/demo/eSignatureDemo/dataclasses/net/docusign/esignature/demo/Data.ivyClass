@@ -1,8 +1,0 @@
-Data #class
-net.docusign.esignature.demo #namespace
-envelopes java.util.List<com.docusign.esign.model.Envelope> #field
-envelopeId String #field
-envelopeId PERSISTENT #fieldModifier
-documents java.util.List<com.docusign.esign.model.EnvelopeDocument> #field
-file File #field
-file PERSISTENT #fieldModifier

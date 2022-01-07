@@ -7,7 +7,6 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>docusign/demo</module>
     <module>microsoft365/msgraph/demo</module>
   </modules>
 </project>
