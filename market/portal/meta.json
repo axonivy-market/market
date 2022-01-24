@@ -70,7 +70,7 @@
 			"doc": true
 		},
 		{
-			"name": "Portal Guide",
+			"name": "Portal Product",
 			"groupId": "com.axonivy.portal",
 			"artifactId": "portal-product",
 			"type" : "zip"
