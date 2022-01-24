@@ -68,6 +68,12 @@
 			"artifactId": "portal-guide",
 			"type" : "zip",
 			"doc": true
+		},
+		{
+			"name": "Portal Guide",
+			"groupId": "com.axonivy.portal",
+			"artifactId": "portal-product",
+			"type" : "zip"
 		}
 	]	
 }
