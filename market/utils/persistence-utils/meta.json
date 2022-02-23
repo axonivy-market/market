@@ -1,0 +1,34 @@
+{
+	"id": "persistence-utils",
+	"name": "Persistence Utils",
+	"description": "Get started with Standard Persistency Library.",
+	"type": "util",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy-market/persistence-utils",
+	"statusBadgeUrl": "https://github.com/axonivy-market/persistence-utils/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["utils"],
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Persistence Utils Product",
+			"groupId": "com.axonivy.utils.persistence",
+			"artifactId": "persistence-utils-product",
+			"type": "zip"
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Persistence Utils",
+			"groupId": "com.axonivy.utils.persistence",
+			"artifactId": "persistence-utils",
+			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Persistence Utils Demo",
+			"groupId": "com.axonivy.utils.persistence",
+			"artifactId": "persistence-utils-demo"
+		}
+	]	
+}
