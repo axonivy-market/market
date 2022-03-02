@@ -1,7 +1,7 @@
 {
 	"id": "persistence-utils",
 	"name": "Persistence Utils",
-	"description": "Get started with Standard Persistency Library.",
+	"description": "Set up Axon Ivy projects even faster with the Standard Persistency Library.",
 	"type": "util",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/persistence-utils",
