@@ -1,5 +1,0 @@
-NewEvent #class
-ms.graph #namespace
-participants java.util.List<String> #field
-subject String #field
-description String #field

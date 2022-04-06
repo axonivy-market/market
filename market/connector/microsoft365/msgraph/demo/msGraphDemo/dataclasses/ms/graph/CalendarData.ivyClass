@@ -1,7 +1,0 @@
-CalendarData #class
-ms.graph #namespace
-events java.util.List<com.microsoft.graph.MicrosoftGraphEvent> #field
-user com.microsoft.graph.MicrosoftGraphUser #field
-attendees java.util.List<com.microsoft.graph.MicrosoftGraphAttendee> #field
-meetTimes java.util.List<com.microsoft.graph.MicrosoftGraphMeetingTimeSuggestion> #field
-newEvent com.microsoft.graph.MicrosoftGraphEvent #field
