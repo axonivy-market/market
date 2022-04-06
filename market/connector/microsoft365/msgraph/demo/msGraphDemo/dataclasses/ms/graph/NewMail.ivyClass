@@ -1,5 +1,0 @@
-NewMail #class
-ms.graph #namespace
-receivers java.util.List<String> #field
-subject String #field
-body String #field

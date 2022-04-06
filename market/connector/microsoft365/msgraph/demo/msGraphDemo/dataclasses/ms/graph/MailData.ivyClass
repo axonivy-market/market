@@ -1,4 +1,0 @@
-MailData #class
-ms.graph #namespace
-mail ms.graph.NewMail #field
-message com.microsoft.graph.MicrosoftGraphMessage #field
