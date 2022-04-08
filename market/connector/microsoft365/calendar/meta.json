@@ -13,9 +13,9 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Product",
+			"name": "Microsoft Calendar Product",
 			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-connector-product",
+			"artifactId": "msgraph-calendar-product",
 			"type": "zip"
 		},
 		{

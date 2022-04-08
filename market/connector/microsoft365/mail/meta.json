@@ -13,9 +13,9 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Product",
+			"name": "Microsoft Mail Product",
 			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-connector-product",
+			"artifactId": "msgraph-mail-product",
 			"type": "zip"
 		},
 		{
