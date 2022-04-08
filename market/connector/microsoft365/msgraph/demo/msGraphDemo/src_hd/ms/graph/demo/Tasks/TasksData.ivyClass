@@ -1,4 +1,0 @@
-TasksData #class
-ms.graph.demo.Tasks #namespace
-todo java.util.List<com.microsoft.graph.MicrosoftGraphTodoTask> #field
-todo PERSISTENT #fieldModifier
