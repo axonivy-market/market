@@ -1,6 +1,5 @@
 {
 	"id": "msgraph-todo",
-	"version": "1.0",
 	"name": "Microsoft To Do",
 	"description": "Microsoft To Do provides a simple way for people to manage their tasks and plan their day.",
 	"type": "connector",
@@ -13,9 +12,10 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph ToDo Demo",
+			"name": "Microsoft Graph Product",
 			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-todo-demo"
+			"artifactId": "msgraph-connector-product",
+			"type": "zip"
 		},
 		{
 			"repoUrl": "https://maven.axonivy.com",
@@ -23,6 +23,12 @@
 			"groupId": "com.axonivy.connector.office365",
 			"artifactId": "msgraph-connector",
 			"makesSenseAsMavenDependency": true
+		},
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Microsoft Graph ToDo Demo",
+			"groupId": "com.axonivy.connector.office365",
+			"artifactId": "msgraph-todo-demo"
 		}
 	]	
 }
