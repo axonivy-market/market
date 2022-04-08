@@ -12,9 +12,9 @@
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Product",
+			"name": "Microsoft ToDo Product",
 			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-connector-product",
+			"artifactId": "msgraph-todo-product",
 			"type": "zip"
 		},
 		{
