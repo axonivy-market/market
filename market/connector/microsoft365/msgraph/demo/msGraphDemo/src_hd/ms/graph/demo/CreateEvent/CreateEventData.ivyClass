@@ -1,6 +1,0 @@
-CreateEventData #class
-ms.graph.demo.CreateEvent #namespace
-event ms.graph.NewEvent #field
-event PERSISTENT #fieldModifier
-participant String #field
-participant PERSISTENT #fieldModifier
