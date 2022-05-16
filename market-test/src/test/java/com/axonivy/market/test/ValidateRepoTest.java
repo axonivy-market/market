@@ -78,7 +78,7 @@ class ValidateRepoTest
 
         var groupId = mavenArtifact.getString("groupId");
         var artifactId = mavenArtifact.getString("artifactId");
-        var repoUrl = "https://repo.axonivy.com/libs";
+        var repoUrl = "https://maven.axonivy.com";
         if (mavenArtifact.has("repoUrl"))
         {
           repoUrl = mavenArtifact.getString("repoUrl");

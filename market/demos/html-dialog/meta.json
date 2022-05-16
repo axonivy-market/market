@@ -13,18 +13,18 @@
 	"mavenArtifacts": [
 		{
 			"name": "Html Dialog Demos Product",
-			"groupId": "ch.ivyteam.demo",
+			"groupId": "com.axonivy.demo",
 			"artifactId": "html-dialog-demos-product",
 			"type": "zip"
 		},
 		{
 			"name": "Html Dialog Demos",
-			"groupId": "ch.ivyteam.demo",
+			"groupId": "com.axonivy.demo",
 			"artifactId": "html-dialog-demos"
 		},
 		{
 			"name": "Html Dialog Demos Test",
-			"groupId": "ch.ivyteam.demo",
+			"groupId": "com.axonivy.demo",
 			"artifactId": "html-dialog-demos-test"
 		}
 	]	

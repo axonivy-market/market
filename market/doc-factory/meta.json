@@ -12,24 +12,24 @@
 	"mavenArtifacts": [
 		{
 			"name": "DocFactory Product",
-			"groupId": "ch.ivyteam.ivy.addons",
+			"groupId": "com.axonivy.utils.docfactory",
 			"artifactId": "doc-factory-product",
 			"type": "zip"
 		},
 		{
 			"name": "DocFactory",
-			"groupId": "ch.ivyteam.ivy.addons",
+			"groupId": "com.axonivy.utils.docfactory",
 			"artifactId": "doc-factory",
 			"makesSenseAsMavenDependency": true
 		},
 		{
 			"name": "DocFactory Demo",
-			"groupId": "ch.ivyteam.ivy.addons",
+			"groupId": "com.axonivy.utils.docfactory",
 			"artifactId": "doc-factory-demos"
 		},
 		{
 			"name": "DocFactory Documentation",
-			"groupId": "ch.ivyteam.ivy.addons",
+			"groupId": "com.axonivy.utils.docfactory",
 			"artifactId": "doc-factory-doc",
 			"type": "zip",
 			"doc": true
