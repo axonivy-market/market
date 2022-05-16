@@ -14,13 +14,13 @@
 	"mavenArtifacts": [
 		{
 			"name": "Quick Start Tutorial Product",
-			"groupId": "ch.ivyteam.demo",
+			"groupId": "com.axonivy.demo",
 			"artifactId": "quick-start-tutorial-product",
 			"type": "zip"
 		},
 		{
 			"name": "Quick Start Tutorial",
-			"groupId": "ch.ivyteam.demo",
+			"groupId": "com.axonivy.demo",
 			"artifactId": "quick-start-tutorial"
 		}
 	]	
