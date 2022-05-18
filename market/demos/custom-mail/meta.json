@@ -9,7 +9,6 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["demo"],
-	"validate": true,
 	"mavenArtifacts": [
 		{
 			"name": "Custom Mail Demo Product",
