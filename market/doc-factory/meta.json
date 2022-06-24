@@ -1,7 +1,7 @@
 {
 	"id": "doc-factory",
 	"name": "DocFactory",
-	"description": "Based on Aspose technology the DocFactory creates any type of docucment out of your process data.",
+	"description": "Based on Aspose technology the DocFactory creates any type of document out of your process data.",
 	"type": "util",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/doc-factory",
