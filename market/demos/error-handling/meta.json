@@ -16,11 +16,6 @@
 			"groupId": "com.axonivy.demo",
 			"artifactId": "error-handling-demos-product",
 			"type": "zip"
-		},
-		{
-			"name": "Error Handling Demos",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "error-handling-demos"
 		}
 	]	
 }

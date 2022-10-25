@@ -16,19 +16,6 @@
             "groupId": "com.axonivy.connector.amazon.lex",
             "artifactId": "amazon-lex-connector-product",
             "type": "zip"
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Amazon Lex",
-            "groupId": "com.axonivy.connector.amazon.lex",
-            "artifactId": "amazon-lex-connector",
-            "makesSenseAsMavenDependency": true
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Amazon Lex Demo",
-            "groupId": "com.axonivy.connector.amazon.lex",
-            "artifactId": "amazon-lex-connector-demo"
         }
     ]    
 }

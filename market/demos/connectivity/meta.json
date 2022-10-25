@@ -18,16 +18,6 @@
 			"groupId": "com.axonivy.demo",
 			"artifactId": "connectivity-demos-product",
 			"type": "zip"
-		},
-		{
-			"name": "Connectivity Demos",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "connectivity-demos"
-		},
-		{
-			"name": "Connectivity Demos Test",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "connectivity-demos-test"
 		}
 	]	
 }
