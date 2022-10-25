@@ -16,19 +16,6 @@
             "groupId": "com.axonivy.connector.alfresco",
             "artifactId": "alfresco-connector-product",
             "type": "zip"
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Alfresco ECM",
-            "groupId": "com.axonivy.connector.alfresco",
-            "artifactId": "alfresco-connector",
-            "makesSenseAsMavenDependency": true
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Alfresco Demo",
-            "groupId": "com.axonivy.connector.alfresco",
-            "artifactId": "alfresco-connector-demo"
         }
     ]    
 }

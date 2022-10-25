@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.utils.htmldialog",
 			"artifactId": "html-dialog-utils-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "HTML Dialog Utils",
-			"groupId": "com.axonivy.utils.htmldialog",
-			"artifactId": "html-dialog-utils",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "HTML Dialog Utils Demo",
-			"groupId": "com.axonivy.utils.htmldialog",
-			"artifactId": "html-dialog-utils-demo"
 		}
-	]	
+	]
 }

@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.telsearch",
 			"artifactId": "tel-search-ch-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "tel.search.ch Connector",
-			"groupId": "com.axonivy.connector.telsearch",
-			"artifactId": "tel-search-ch-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "tel.search.ch Connector Demo",
-			"groupId": "com.axonivy.connector.telsearch",
-			"artifactId": "tel-search-ch-connector-demo"
 		}
 	]
 }

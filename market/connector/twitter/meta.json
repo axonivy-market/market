@@ -18,19 +18,6 @@
 			"groupId": "com.axonivy.connector.twitter",
 			"artifactId": "twitter-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Currency Converter Connector",
-			"groupId": "com.axonivy.connector.twitter",
-			"artifactId": "twitter-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Currency Converter Connector Demo",
-			"groupId": "com.axonivy.connector.twitter",
-			"artifactId": "twitter-connector-demo"
 		}
 	]
 }

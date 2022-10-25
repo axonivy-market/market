@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.uipath",
 			"artifactId": "ui-path-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "UiPath Connector",
-			"groupId": "com.axonivy.connector.uipath",
-			"artifactId": "ui-path-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "UiPath Connector Demo",
-			"groupId": "com.axonivy.connector.uipath",
-			"artifactId": "ui-path-connector-demo"
 		}
 	]	
 }

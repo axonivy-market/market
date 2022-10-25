@@ -16,16 +16,6 @@
 			"groupId": "com.axonivy.demo",
 			"artifactId": "html-dialog-demos-product",
 			"type": "zip"
-		},
-		{
-			"name": "Html Dialog Demos",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "html-dialog-demos"
-		},
-		{
-			"name": "Html Dialog Demos Test",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "html-dialog-demos-test"
 		}
 	]	
 }

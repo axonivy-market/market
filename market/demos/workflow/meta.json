@@ -16,16 +16,6 @@
 			"groupId": "com.axonivy.demo",
 			"artifactId": "workflow-demos-product",
 			"type": "zip"
-		},
-		{
-			"name": "Workflow Demos",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "workflow-demos"
-		},
-		{
-			"name": "Workflow Demos Test",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "workflow-demos-test"
 		}
 	]	
 }

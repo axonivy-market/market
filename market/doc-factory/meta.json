@@ -17,17 +17,6 @@
 			"type": "zip"
 		},
 		{
-			"name": "DocFactory",
-			"groupId": "com.axonivy.utils.docfactory",
-			"artifactId": "doc-factory",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"name": "DocFactory Demo",
-			"groupId": "com.axonivy.utils.docfactory",
-			"artifactId": "doc-factory-demos"
-		},
-		{
 			"name": "DocFactory Documentation",
 			"groupId": "com.axonivy.utils.docfactory",
 			"artifactId": "doc-factory-doc",

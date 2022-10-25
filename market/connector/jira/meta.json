@@ -21,19 +21,6 @@
 			"groupId": "com.axonivy.connector.jira",
 			"artifactId": "jira-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Jira Connector",
-			"groupId": "com.axonivy.connector.jira",
-			"artifactId": "jira-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Jira Connector Demo",
-			"groupId": "com.axonivy.connector.jira",
-			"artifactId": "jira-connector-demo"
 		}
 	]	
 }

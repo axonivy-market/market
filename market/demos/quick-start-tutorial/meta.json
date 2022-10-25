@@ -17,11 +17,6 @@
 			"groupId": "com.axonivy.demo",
 			"artifactId": "quick-start-tutorial-product",
 			"type": "zip"
-		},
-		{
-			"name": "Quick Start Tutorial",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "quick-start-tutorial"
 		}
 	]	
 }

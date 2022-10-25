@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.genderize",
 			"artifactId": "genderize-io-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Genderize.io API Connector",
-			"groupId": "com.axonivy.connector.genderize",
-			"artifactId": "genderize-io-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Genderize.io API Demo",
-			"groupId": "com.axonivy.connector.genderize",
-			"artifactId": "genderize-io-connector-demo"
 		}
 	]	
 }

@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.docusign",
 			"artifactId": "docusign-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "DocuSign Connector",
-			"groupId": "com.axonivy.connector.docusign",
-			"artifactId": "docusign-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "DocuSign Connector Demo",
-			"groupId": "com.axonivy.connector.docusign",
-			"artifactId": "docusign-connector-demo"
 		}
 	]	
 }
