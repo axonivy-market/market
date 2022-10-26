@@ -15,11 +15,6 @@
 			"groupId": "com.axonivy.demo.custom.mail",
 			"artifactId": "custom-mail-demo-product",
 			"type": "zip"
-		},
-		{
-			"name": "Custom Mail Demo",
-			"groupId": "com.axonivy.demo.custom.mail",
-			"artifactId": "custom-mail-demo"
 		}
 	]	
 }

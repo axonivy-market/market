@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.ldap",
 			"artifactId": "ldap-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Active Directory Connector",
-			"groupId": "com.axonivy.connector.ldap",
-			"artifactId": "ldap-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Active Directory Demo",
-			"groupId": "com.axonivy.connector.ldap",
-			"artifactId": "ldap-connector-demo"
 		}
 	]	
 }

@@ -16,19 +16,6 @@
             "groupId": "com.axonivy.connector.atrust",
             "artifactId": "a-trust-connector-product",
             "type": "zip"
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "A-Trust",
-            "groupId": "com.axonivy.connector.atrust",
-            "artifactId": "a-trust-connector",
-            "makesSenseAsMavenDependency": true
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "A-Trust Demo",
-            "groupId": "com.axonivy.connector.atrust",
-            "artifactId": "a-trust-connector-demo"
         }
     ]    
 }

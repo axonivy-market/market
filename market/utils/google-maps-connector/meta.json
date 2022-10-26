@@ -15,19 +15,6 @@
 			"groupId": "com.axonivy.connector.google.maps",
 			"artifactId": "google-maps-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Google Maps Connector",
-			"groupId": "com.axonivy.connector.google.maps",
-			"artifactId": "google-maps-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Google Maps Connector Demo",
-			"groupId": "com.axonivy.connector.google.maps",
-			"artifactId": "google-maps-connector-demo"
 		}
-	]	
+	]
 }

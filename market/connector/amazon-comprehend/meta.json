@@ -16,19 +16,6 @@
             "groupId": "com.axonivy.connector.amazon.comprehend",
             "artifactId": "amazon-comprehend-connector-product",
             "type": "zip"
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Amazon Comprehend",
-            "groupId": "com.axonivy.connector.amazon.comprehend",
-            "artifactId": "amazon-comprehend-connector",
-            "makesSenseAsMavenDependency": true
-        },
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "Amazon Comprehend Demo",
-            "groupId": "com.axonivy.connector.amazon.comprehend",
-            "artifactId": "amazon-comprehend-connector-demo"
         }
     ]    
 }

@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.utils.persistence",
 			"artifactId": "persistence-utils-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Persistence Utils",
-			"groupId": "com.axonivy.utils.persistence",
-			"artifactId": "persistence-utils",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Persistence Utils Demo",
-			"groupId": "com.axonivy.utils.persistence",
-			"artifactId": "persistence-utils-demo"
 		}
 	]	
 }

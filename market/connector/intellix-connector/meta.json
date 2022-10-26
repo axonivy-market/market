@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.intellix",
 			"artifactId": "axonivy-intellix-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Intellix Connector",
-			"groupId": "com.axonivy.connector.intellix",
-			"artifactId": "axonivy-intellix-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Intellix Connector Demo",
-			"groupId": "com.axonivy.connector.intellix",
-			"artifactId": "axonivy-intellix-demo"
 		}
 	]	
 }

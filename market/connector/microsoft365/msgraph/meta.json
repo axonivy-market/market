@@ -17,31 +17,6 @@
 			"groupId": "com.axonivy.connector.office365",
 			"artifactId": "msgraph-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Connector",
-			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph ToDo Demo",
-			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-todo-demo"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Calendar Demo",
-			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-calendar-demo"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Microsoft Graph Mail Demo",
-			"groupId": "com.axonivy.connector.office365",
-			"artifactId": "msgraph-mail-demo"
 		}
 	]	
 }
