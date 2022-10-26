@@ -16,19 +16,6 @@
 			"groupId": "com.axonivy.connector.docuware",
 			"artifactId": "docuware-connector-product",
 			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "DocuWare Connector",
-			"groupId": "com.axonivy.connector.docuware",
-			"artifactId": "docuware-connector",
-			"makesSenseAsMavenDependency": true
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "DocuWare Connector Demo",
-			"groupId": "com.axonivy.connector.docuware",
-			"artifactId": "docuware-connector-demo"
 		}
 	]	
 }
