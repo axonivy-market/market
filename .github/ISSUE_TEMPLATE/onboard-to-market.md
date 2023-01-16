@@ -7,7 +7,6 @@ assignees:
   - ivy-rew
   - alexsuter
   - ivy-lmu
-  - axonivy-market
   - andreasbalsiger
 
 ---
