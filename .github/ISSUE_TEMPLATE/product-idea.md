@@ -1,7 +1,7 @@
 ---
 name: product-idea
 about: Share a new market-produkt idea that would benefit you.
-title: craft [name] product
+title: craft [ECO-SYSTEM-X] product
 assignees:
   - ivy-rew
   - alexsuter
@@ -22,7 +22,7 @@ Potential customers, leads or projects that benefit from this product:
 
 ## Use Cases
 
-Which feature/functionalilty are most important for you. 
+Which feature/functionality are most important for you. 
 What should be demonstrated in the product-demo?
 What is your MVP?
 
