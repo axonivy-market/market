@@ -9,7 +9,6 @@ assignees:
   - ivy-lmu
   - weissreto
   - ivy-bb
-  - axonivy-market
   - andreasbalsiger
 
 ---
