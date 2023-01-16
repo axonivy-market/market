@@ -1,8 +1,7 @@
 ---
 name: product-idea
 about: Share a new market-produkt idea that would benefit you.
-title: [name] product
-labels: ''
+title: craft [name] product
 assignees:
   - ivy-rew
   - alexsuter
