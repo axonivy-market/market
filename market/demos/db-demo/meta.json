@@ -1,5 +1,5 @@
 {
-	"id": "db-demo",
+	"id": "db-demos",
 	"name": "db Demos",
 	"description": "learn more about databases how to create, read, update and delete data from database tables.",
 	"type": "solution",
@@ -14,7 +14,7 @@
 		{
 			"name": "db Demos Product",
 			"groupId": "com.axonivy.demo",
-			"artifactId": "db-demo-product",
+			"artifactId": "db-demos-product",
 			"type": "zip"
 		}
 	]	
