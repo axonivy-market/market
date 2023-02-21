@@ -4,7 +4,7 @@
 	"description": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform.",
 	"type": "util",
 	"platformReview": "5",
-	"sourceUrl": "https://bitbucket.org/axonivy-prod/axonivyportal/src/master/",
+	"sourceUrl": "https://github.com/axonivy-market/portal",
 	"language": "EN/DE/FR/ES",
 	"industry": "Cross-Industry",
 	"tags": ["workflow-ui"],
