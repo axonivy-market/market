@@ -12,7 +12,7 @@
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
-            "name": "Deepl connector",
+            "name": "DeepL connector",
             "groupId": "com.axonivy.connector.deepl",
             "artifactId": "deepl-connector-product",
             "type": "zip"
