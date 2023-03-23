@@ -10,21 +10,7 @@
 	"tags": ["workflow-ui"],
 	"versionDisplay": "portal",
 	"installMatcher": "best-match",
-	"mavenArtifacts": [
-		{
-			"key": "portal",
-			"name": "Portal App",
-			"groupId": "ch.ivyteam.ivy.project.portal",
-			"artifactId": "portal-app",
-			"type": "zip"
-		},
-		{
-			"name": "Portal Guide",
-			"groupId": "ch.ivyteam.ivy.project.portal",
-			"artifactId": "portal-guide",
-			"type" : "zip",
-			"doc": true
-		},
+	"mavenArtifacts": [	
 		{
 			"name": "Portal Product",
 			"groupId": "com.axonivy.portal",
