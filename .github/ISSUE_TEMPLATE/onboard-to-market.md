@@ -5,7 +5,6 @@ title: Onboard [name] to Axon-ivy market
 labels: ''
 assignees:
   - ivy-rew
-  - alexsuter
   - ivy-lmu
   - andreasbalsiger
 
