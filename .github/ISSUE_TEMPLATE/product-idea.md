@@ -4,10 +4,8 @@ about: Share a new market-produkt idea that would benefit you.
 title: craft [ECO-SYSTEM-X] product
 assignees:
   - ivy-rew
-  - alexsuter
-  - ivy-lmu
+  - ivy-sgi
   - weissreto
-  - ivy-bb
   - andreasbalsiger
 
 ---
