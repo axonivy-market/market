@@ -1,7 +1,7 @@
 {
 	"id": "master-detail-demo",
-	"name": "Master Detail",
-	"description": "A utility process with one master dialog(with detail view) and a stand-alone detail dialog to implement a master detail scenario with Ivy and Primefaces.",
+	"name": "Master-Detail interface",
+	"description": "Exemplary UI possibilities in Axon Ivy: Utilizing the Master-Detail pattern as a best practice.",
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/master-detail",
