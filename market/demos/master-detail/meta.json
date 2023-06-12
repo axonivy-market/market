@@ -13,7 +13,7 @@
 		{
 			"name": "Master Detail",
 			"groupId": "com.axonivy.demo.masterdetail",
-			"artifactId": "master-detail-demo",
+			"artifactId": "master-detail-product",
 			"type": "zip"
 		}
 	]	
