@@ -1,7 +1,7 @@
 {
     "id": "openai-assistant",
-    "name": "Chat GPT Assistant",
-    "description": "The Chat GPT assistant explains, maintains and extends code for you",
+    "name": "ChatGPT Assistant",
+    "description": "The ChatGPT assistant explains, maintains and extends code for you",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/openai-connector",
