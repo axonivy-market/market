@@ -1,6 +1,6 @@
 {
 	"id": "metaproc-connector",
-	"name": "meta:proc",
+	"name": "Axon Ivy RPA",
 	"description": "",
 	"type": "connector",
 	"platformReview": "4.5",
