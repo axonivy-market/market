@@ -1,7 +1,7 @@
 {
 	"id": "metaproc-connector",
 	"name": "Axon Ivy RPA",
-	"description": "",
+	"description": "Built-In Robotic Process Automation (RPA)",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/metaproc-connector",
