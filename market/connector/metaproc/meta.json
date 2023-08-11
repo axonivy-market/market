@@ -1,7 +1,7 @@
 {
 	"id": "metaproc-connector",
 	"name": "Axon Ivy RPA",
-	"description": "Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly. Powered by meta:proc.",
+	"description": "Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly.",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/metaproc-connector",
