@@ -18,15 +18,16 @@ pipeline {
             sh 'ec -no-color'
           }
 
-          docker.image('maven:3.6.3-jdk-11').inside {
+          docker.image('maven:3.9.3-eclipse-temurin-17').inside {
             dir ('market-test') {
-              maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
-              maven cmd: 'verify'
+              maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none'
+              maven cmd: 'verify -P json.schema -Dmaven.plugin.validation=none'
             }
           }          
           recordIssues tools: [eclipse()], unstableTotalAll: 1
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/surefire-reports/**/*.xml'
+          archiveArtifacts '**/target/schema/market/*/*.json'
         }
       }
     }
@@ -66,6 +67,12 @@ pipeline {
   
             // symlink
             sh "ssh $host ln -fns $targetFolder/market /home/axonivya/data/market"
+
+            // schema
+            def homeDir = '/home/axonivya'
+            def dir = "$homeDir/www/json-schema.ivyteam.ch"
+            echo "Upload market.meta.json.schemas to $host:$dir"
+            sh "rsync --mkpath -r `echo */target/schema/market` $host:$dir/"
           }
         }
       }

@@ -17,11 +17,43 @@ import java.util.stream.Collectors;
 
 import javax.imageio.ImageIO;
 
-import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
+
+import com.axonivy.market.MetaSchemaFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.networknt.schema.JsonSchema;
+import com.networknt.schema.ValidationMessage;
 
 class ValidateRepoTest
 {
+  private static final ObjectMapper MAPPER = new ObjectMapper();
+
+  @Test
+  void everyProductHasAValidMetaJson_schemaDriven()
+  {
+    assertThat(productDirs()).allSatisfy(path -> assertValidMetaJsonSchema(path));
+  }
+
+  private void assertValidMetaJsonSchema(Path path)
+  {
+    var metaPath = path.resolve("meta.json");
+    var metaImpl = load(metaPath);
+    ObjectNode rawSchema = MetaSchemaFactory.metaJsonSchema();
+    JsonSchema metaSchema = MetaSchemaFactory.validator(rawSchema);
+    List<String> messages = metaSchema.validate(metaImpl).stream().map(ValidationMessage::getMessage).toList();
+    assertThat(messages).as("meta.json must be valid for product "+path).isEmpty();
+  }
+
+  private JsonNode load(Path metaPath) {
+    try {
+      return MAPPER.readTree(metaPath.toFile());
+    } catch (IOException ex) {
+      throw new RuntimeException(ex);
+    }
+  }
+
   @Test
   void everyProductHasAValidMetaJson()
   {
@@ -31,60 +63,35 @@ class ValidateRepoTest
   private void assertValidMetaJson(Path path)
   {
     var metaPath = path.resolve("meta.json");
-    var json = toJsonObject(metaPath);
-    JSONObjectAssert.assertThat(json, metaPath)
-            .requireStringPropertyWithLength("id", 5, 25)
-            .optionalStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
-            .requireStringPropertyWithLength("name", 4, 24)
-            .requireStringPropertyWithLength("description", 5, 200)
-            .optionalStringPropertyWithMinLength("vendor", 3)
-            .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
-            .optionalStringPropertyWithPattern("platformReview", "^([0-4])?(\\.[5])?$|^5$")
-            .optionalStringPropertyWithMinLength("industry", 2)
-            .optionalStringPropertyWithFixedValues("cost", "paid") // free is default
-            .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")
-            .optionalBooleanProperty("listed", true)
-            .optionalStringPropertyWithFixedValues("versionDisplay", "portal")
-            .optionalStringArrayProperty("tags");
+    var json = load(metaPath);
 
     if (json.has("vendor")) {
       assertThat(json.has("vendorUrl")).as("if vendor is specified vendorUrl must be also specified").isTrue();
       assertThat(json.has("vendorImage")).as("if vendor is specified vendorImage must be also specified").isTrue();
     }
     if (json.has("vendorUrl")) {
-      var vendorUrl = json.getString("vendorUrl");
+      var vendorUrl = json.get("vendorUrl").asText();
       assertThat(checkUriExists(vendorUrl)).as("vendor url is not reachable " + vendorUrl).isTrue();
     }
     if (json.has("vendorImage")) {
-      var image = json.getString("vendorImage");
+      var image = json.get("vendorImage").asText();
       var vendorImage = path.resolve(image);
       assertThat(vendorImage).exists();
     }
 
     if (json.has("mavenArtifacts"))
     {
-      var array = json.getJSONArray("mavenArtifacts");
-      for (int i = 0; i < array.length(); i++)
-      {
-        var mavenArtifact = array.getJSONObject(i);
-        JSONObjectAssert.assertThat(mavenArtifact, metaPath)
-                .requireStringPropertyWithMinLength("name", 5)
-                .requireStringPropertyWithMinLength("groupId", 5)
-                .requireStringPropertyWithMinLength("artifactId", 5)
-                .optionalBooleanProperty("makesSenseAsMavenDependency", false)
-                .optionalStringPropertyWithMinLength("key", 5)
-                .optionalStringPropertyWithFixedValues("type", "zip", "nbm", "jar")
-                .optionalBooleanProperty("doc", false);
-
-        var groupId = mavenArtifact.getString("groupId");
-        var artifactId = mavenArtifact.getString("artifactId");
+      var array = json.get("mavenArtifacts");
+      array.forEach(mavenArtifact -> {
+        var groupId = mavenArtifact.get("groupId").asText();
+        var artifactId = mavenArtifact.get("artifactId").asText();
         var repoUrl = "https://maven.axonivy.com";
         if (mavenArtifact.has("repoUrl"))
         {
-          repoUrl = mavenArtifact.getString("repoUrl");
+          repoUrl = mavenArtifact.get("repoUrl").asText();
         }
         checkArtifact(repoUrl, groupId, artifactId);
-      }
+      });
     }
   }
 
@@ -111,25 +118,22 @@ class ValidateRepoTest
   {
     var metaPath = path.resolve("product.json");
     if (!Files.exists(metaPath)) {
+      System.out.println("skipping "+metaPath);
       return;
     }
 
-    var json = toJsonObject(metaPath);
+    var json = load(metaPath);
     if (json.has("installers"))
     {
-      var installers = json.getJSONArray("installers");
-      for (var i = 0; i < installers.length(); i++) {
-        var installer = installers.getJSONObject(i);
+      var installers = json.get("installers");
+      installers.forEach(installer -> {
         if (installer.has("..."))
         {
-          String include = installer.getString("...");
+          String include = installer.get("...").asText();
           include = include.substring(1, include.length()-1);
-          installer = toJsonObject(path.resolve(include));
+          installer = load(path.resolve(include));
         }
-        JSONObjectAssert.assertThat(installer, metaPath)
-          .requireStringPropertyWithMinLength("id", 5);
-
-        var id = installer.getString("id");
+        var id = installer.get("id").asText();
         if ("maven-dependency".equals(id))
         {
           checkMavenArtifactsOfInstaller(installer, "dependencies");
@@ -138,29 +142,28 @@ class ValidateRepoTest
         {
           checkMavenArtifactsOfInstaller(installer, "projects");
         }
-      }
+      });
     }
   }
 
-  private void checkMavenArtifactsOfInstaller(JSONObject installer, String depsId)
+  private void checkMavenArtifactsOfInstaller(JsonNode installer, String depsId)
   {
-    var data = installer.getJSONObject("data");
-    var deps = data.getJSONArray(depsId);
+    var data = installer.get("data");
+    var deps = data.get(depsId);
 
     var repoUrl = "https://repo1.maven.org/maven2";
     if (data.has("repositories"))
     {
-      var repos = data.getJSONArray("repositories");
-      repoUrl = repos.getJSONObject(0).getString("url");
+      var repos = data.get("repositories");
+      repoUrl = repos.get(0).get("url").asText();
     }
 
-    for (var k = 0; k < deps.length(); k++)
-    {
-      var dep = deps.getJSONObject(k);
-      var groupId = dep.getString("groupId");
-      var artifactId = dep.getString("artifactId");
-      checkArtifact(repoUrl, groupId, artifactId);
-    }
+    var uri = repoUrl;
+    deps.forEach(dep -> {
+      var groupId = dep.get("groupId").asText();
+      var artifactId = dep.get("artifactId").asText();
+      checkArtifact(uri, groupId, artifactId);
+    });
   }
 
   private void checkArtifact(String repoBaseUri, String groupId, String artifactId)
@@ -181,19 +184,6 @@ class ValidateRepoTest
     }
   }
 
-  private JSONObject toJsonObject(Path path)
-  {
-    try
-    {
-      var actual = Files.readString(path);
-      return new JSONObject(actual);
-    }
-    catch (IOException ex)
-    {
-      throw new RuntimeException(ex);
-    }
-  }
-
   @Test
   void everyProductHasAMetaJson()
   {
@@ -207,8 +197,8 @@ class ValidateRepoTest
   {
     var ids = productDirs().stream()
             .map(dir -> dir.resolve("meta.json"))
-            .map(json -> toJsonObject(json))
-            .map(json -> json.getString("id"))
+            .map(json -> load(json))
+            .map(json -> json.get("id").asText())
             .collect(Collectors.toList());
 
     var uniqueIds = new HashSet<>(ids);
