@@ -1,9 +1,8 @@
-package com.axonivy.market.test;
+package com.axonivy.market;
 
 import static com.github.victools.jsonschema.module.javax.validation.JavaxValidationOption.INCLUDE_PATTERN_EXPRESSIONS;
 import static com.github.victools.jsonschema.module.javax.validation.JavaxValidationOption.NOT_NULLABLE_FIELD_IS_REQUIRED;
 
-import com.axonivy.market.MarketMetaSchema;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.victools.jsonschema.generator.Option;
 import com.github.victools.jsonschema.generator.OptionPreset;
