@@ -21,9 +21,8 @@ import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.networknt.schema.JsonSchema;
-import com.networknt.schema.JsonSchemaFactory;
-import com.networknt.schema.SpecVersion.VersionFlag;
 import com.networknt.schema.ValidationMessage;
 
 class ValidateRepoTest
@@ -40,8 +39,8 @@ class ValidateRepoTest
   {
     var metaPath = path.resolve("meta.json");
     var metaImpl = load(metaPath);
-    URI metaSchemaUri = URI.create("https://jenkins.ivyteam.io/job/core_json-schema/job/cc23.marketSchema/lastSuccessfulBuild/artifact/workspace/ch.ivyteam.ivy.market.schema/target/schema/market/0.0.1/meta.json");
-    JsonSchema metaSchema = JsonSchemaFactory.getInstance(VersionFlag.V201909).getSchema(metaSchemaUri);
+    ObjectNode rawSchema = MetaSchemaFactory.metaJsonSchema();
+    JsonSchema metaSchema = MetaSchemaFactory.validator(rawSchema);
     List<String> messages = metaSchema.validate(metaImpl).stream().map(ValidationMessage::getMessage).toList();
     assertThat(messages).as("meta.json must be valid for product "+path).isEmpty();
   }

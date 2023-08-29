@@ -6,7 +6,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
+    <victools.version>4.31.1</victools.version>
   </properties>
 
   <dependencies>
@@ -28,9 +29,34 @@
       <version>2.7</version>
     </dependency>
     <dependency>
+      <groupId>com.github.victools</groupId>
+      <artifactId>jsonschema-generator</artifactId>
+      <version>${victools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.victools</groupId>
+      <artifactId>jsonschema-module-javax-validation</artifactId>
+      <version>${victools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.victools</groupId>
+      <artifactId>jsonschema-module-jackson</artifactId>
+      <version>${victools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>2.0.1.Final</version>
+    </dependency>
+    <dependency>
       <groupId>com.networknt</groupId>
       <artifactId>json-schema-validator</artifactId>
       <version>1.0.86</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.13.0</version>
     </dependency>
   </dependencies>
 
@@ -60,4 +86,47 @@
       </plugin>
     </plugins>
   </build>
+  
+  <profiles>
+    <profile>
+      <id>json.schema</id>
+      <build>
+        <plugins>
+            <plugin>
+              <groupId>com.github.victools</groupId>
+              <artifactId>jsonschema-maven-plugin</artifactId>
+              <version>4.31.1</version>
+              <executions>
+              <execution>
+                <id>market.meta.json.schema</id>
+                <goals><goal>generate</goal></goals>
+                <phase>process-classes</phase>
+              </execution>
+              </executions>
+              <configuration>
+                <schemaFilePath>${project.build.directory}/schema/market/0.0.1</schemaFilePath>
+                <schemaFileName>meta.json</schemaFileName>
+                <classNames>com.axonivy.market.MarketMetaSchema</classNames>
+                <schemaVersion>DRAFT_2019_09</schemaVersion>
+                <modules>
+                  <module><name>Jackson</name></module>
+                  <module>
+                    <name>JavaxValidation</name>
+                    <options>
+                      <option>INCLUDE_PATTERN_EXPRESSIONS</option>
+                      <option>NOT_NULLABLE_FIELD_IS_REQUIRED</option>
+                    </options>
+                  </module>
+                </modules>
+                <options>
+                  <enabled>
+                    <option>DEFINITIONS_FOR_ALL_OBJECTS</option>
+                  </enabled>
+                </options>
+              </configuration>
+            </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
