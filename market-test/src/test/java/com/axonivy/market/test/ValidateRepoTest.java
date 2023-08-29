@@ -20,8 +20,41 @@ import javax.imageio.ImageIO;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.networknt.schema.JsonSchema;
+import com.networknt.schema.JsonSchemaFactory;
+import com.networknt.schema.SpecVersion.VersionFlag;
+import com.networknt.schema.ValidationMessage;
+
 class ValidateRepoTest
 {
+  private static final ObjectMapper MAPPER = new ObjectMapper();
+
+  @Test
+  void everyProductHasAValidMetaJson_schemaDriven()
+  {
+    assertThat(productDirs()).allSatisfy(path -> assertValidMetaJsonSchema(path));
+  }
+
+  private void assertValidMetaJsonSchema(Path path)
+  {
+    var metaPath = path.resolve("meta.json");
+    var metaImpl = load(metaPath);
+    URI metaSchemaUri = URI.create("https://jenkins.ivyteam.io/job/core_json-schema/job/cc23.marketSchema/lastSuccessfulBuild/artifact/workspace/ch.ivyteam.ivy.market.schema/target/schema/market/0.0.1/meta.json");
+    JsonSchema metaSchema = JsonSchemaFactory.getInstance(VersionFlag.V201909).getSchema(metaSchemaUri);
+    List<String> messages = metaSchema.validate(metaImpl).stream().map(ValidationMessage::getMessage).toList();
+    assertThat(messages).as("meta.json must be valid for product "+path).isEmpty();
+  }
+
+  private JsonNode load(Path metaPath) {
+    try {
+      return MAPPER.readTree(metaPath.toFile());
+    } catch (IOException ex) {
+      throw new RuntimeException(ex);
+    }
+  }
+
   @Test
   void everyProductHasAValidMetaJson()
   {
@@ -32,20 +65,6 @@ class ValidateRepoTest
   {
     var metaPath = path.resolve("meta.json");
     var json = toJsonObject(metaPath);
-    JSONObjectAssert.assertThat(json, metaPath)
-            .requireStringPropertyWithLength("id", 5, 25)
-            .optionalStringPropertyWithPattern("version", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
-            .requireStringPropertyWithLength("name", 4, 24)
-            .requireStringPropertyWithLength("description", 5, 200)
-            .optionalStringPropertyWithMinLength("vendor", 3)
-            .optionalStringPropertyWithPattern("compatibility", "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
-            .optionalStringPropertyWithPattern("platformReview", "^([0-4])?(\\.[5])?$|^5$")
-            .optionalStringPropertyWithMinLength("industry", 2)
-            .optionalStringPropertyWithFixedValues("cost", "paid") // free is default
-            .requireStringPropertyWithFixedValues("type", "connector", "solution", "process", "util")
-            .optionalBooleanProperty("listed", true)
-            .optionalStringPropertyWithFixedValues("versionDisplay", "portal")
-            .optionalStringArrayProperty("tags");
 
     if (json.has("vendor")) {
       assertThat(json.has("vendorUrl")).as("if vendor is specified vendorUrl must be also specified").isTrue();
@@ -67,15 +86,6 @@ class ValidateRepoTest
       for (int i = 0; i < array.length(); i++)
       {
         var mavenArtifact = array.getJSONObject(i);
-        JSONObjectAssert.assertThat(mavenArtifact, metaPath)
-                .requireStringPropertyWithMinLength("name", 5)
-                .requireStringPropertyWithMinLength("groupId", 5)
-                .requireStringPropertyWithMinLength("artifactId", 5)
-                .optionalBooleanProperty("makesSenseAsMavenDependency", false)
-                .optionalStringPropertyWithMinLength("key", 5)
-                .optionalStringPropertyWithFixedValues("type", "zip", "nbm", "jar")
-                .optionalBooleanProperty("doc", false);
-
         var groupId = mavenArtifact.getString("groupId");
         var artifactId = mavenArtifact.getString("artifactId");
         var repoUrl = "https://maven.axonivy.com";
@@ -111,6 +121,7 @@ class ValidateRepoTest
   {
     var metaPath = path.resolve("product.json");
     if (!Files.exists(metaPath)) {
+      System.out.println("skipping "+metaPath);
       return;
     }
 
@@ -126,9 +137,6 @@ class ValidateRepoTest
           include = include.substring(1, include.length()-1);
           installer = toJsonObject(path.resolve(include));
         }
-        JSONObjectAssert.assertThat(installer, metaPath)
-          .requireStringPropertyWithMinLength("id", 5);
-
         var id = installer.getString("id");
         if ("maven-dependency".equals(id))
         {
