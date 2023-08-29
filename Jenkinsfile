@@ -67,6 +67,12 @@ pipeline {
   
             // symlink
             sh "ssh $host ln -fns $targetFolder/market /home/axonivya/data/market"
+
+            // schema
+            def homeDir = '/home/axonivya'
+            def dir = "$homeDir/www/json-schema.ivyteam.ch"
+            echo "Upload market.meta.json.schemas to $host:$dir"
+            sh "rsync --mkpath -r `echo */target/schema/market` $host:$dir/"
           }
         }
       }
