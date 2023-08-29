@@ -18,15 +18,16 @@ pipeline {
             sh 'ec -no-color'
           }
 
-          docker.image('maven:3.6.3-jdk-11').inside {
+          docker.image('maven:3.9.2-eclipse-temurin-17').inside {
             dir ('market-test') {
               maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle"'
-              maven cmd: 'verify'
+              maven cmd: 'verify -P json.schema'
             }
           }          
           recordIssues tools: [eclipse()], unstableTotalAll: 1
           recordIssues tools: [mavenConsole()], unstableTotalAll: 1
           junit '**/target/surefire-reports/**/*.xml'
+          archiveArtifacts '**/target/schema/market/*/*.json'
         }
       }
     }
