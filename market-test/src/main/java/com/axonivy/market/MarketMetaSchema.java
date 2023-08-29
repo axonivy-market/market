@@ -1,0 +1,89 @@
+package com.axonivy.market;
+
+import java.net.URI;
+import java.util.List;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+
+public class MarketMetaSchema {
+
+  @JsonProperty("$schema")
+  public String schemaRef; //self-ref
+
+  @NotNull @Size(min = 5, max = 25)
+  public String id;
+  @Pattern(regexp = "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
+  public String version;
+  @NotNull @Size(min = 4, max = 24)
+  public String name;
+  @NotNull @Size(min = 5, max = 200)
+  public String description;
+
+  @Size(min = 3)
+  public String vendor;
+  @JsonPropertyDescription("public accessible URI representating the vendor")
+  public URI vendorUrl;
+  @JsonPropertyDescription("relative path to a logo of the vendor, e.g. 'acme.png'")
+  public String vendorImage;
+
+  @JsonPropertyDescription("e.g. https://github.com/axonivy-market/acme-connector")
+  public URI sourceUrl;
+  @JsonPropertyDescription("e.g. https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg")
+  public URI statusBadgeUrl;
+
+  @JsonPropertyDescription("e.g. English")
+  public String language;
+  @Pattern(regexp = "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
+  public String compatibility;
+  @Pattern(regexp = "^([0-4])?(\\.[5])?$|^5$")
+  public String platformReview;
+  @JsonPropertyDescription("e.g. Cross-Industry") @Size(min = 2)
+  public String industry;
+
+  public static enum Cost { free, paid; }
+  public Cost cost;
+
+  public static enum Type { connector, solution, process, util }
+  @NotNull
+  public Type type;
+
+  @JsonProperty(defaultValue = "true")
+  public boolean listed;
+  @JsonPropertyDescription("shows the link to contact axonivy")
+  public boolean contactUs;
+
+  public boolean validate;
+
+  @JsonPropertyDescription("e.g. 'best-match'")
+  public String installMatcher;
+
+  public String versionDisplay;
+
+  public List<String> tags;
+
+  public static class MavenArtifact {
+    public String repoUrl;
+    @NotNull @Size(min = 5)
+    public String name;
+    @NotNull @Size(min = 5)
+    public String groupId;
+    @NotNull @Size(min = 5)
+    public String artifactId;
+    public boolean makesSenseAsMavenDependency;
+    public String key;
+
+    public static enum ArtifactType {
+      zip, nbm, jar;
+    }
+    public ArtifactType type;
+    public boolean doc;
+  }
+
+  public List<MavenArtifact> mavenArtifacts;
+
+}

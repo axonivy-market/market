@@ -9,41 +9,39 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
-import org.json.JSONObject;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CreateBundle
 {
+  private static final ObjectMapper MAPPER = new ObjectMapper();
   private final Path metaJson;
 
   public CreateBundle(Path metaJson)
   {
     this.metaJson = metaJson;
   }
-  
+
   public void copyTo(Path targetDir) throws IOException
   {
-    var json = toJsonObject(metaJson);
-    var id = json.getString("id");
-    
+    var json = load(metaJson);
+    var id = json.get("id").asText();
+
     var destDir = targetDir.resolve(id);
     var srcDir = metaJson.getParent().toFile();
     System.out.println(srcDir);
     FileUtils.copyDirectory(srcDir, destDir.toFile());
   }
 
-  private static JSONObject toJsonObject(Path path)
-  {
-    try
-    {
-      var actual = Files.readString(path);
-      return new JSONObject(actual);
-    }
-    catch (IOException ex)
-    {
+  private JsonNode load(Path metaPath) {
+    try {
+      return MAPPER.readTree(metaPath.toFile());
+    } catch (IOException ex) {
       throw new RuntimeException(ex);
     }
   }
-  
+
   public static void main(String[] args) throws IOException
   {
     var targetDir = new File("target/market/");
@@ -53,7 +51,7 @@ public class CreateBundle
       new CreateBundle(metaJson).copyTo(targetDir.toPath());
     }
   }
-  
+
   private static List<Path> metaJsons()
   {
     try
