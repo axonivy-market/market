@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "master-detail-demo",
 	"name": "Master-Detail interface",
 	"description": "Exemplary UI possibilities in Axon Ivy: Utilizing the Master-Detail pattern as a best practice.",

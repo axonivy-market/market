@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "cronjob",
 	"name": "Cron Job",
 	"description": "Cron Job is a job-firing schedule that recurs based on calendar-like notions.",

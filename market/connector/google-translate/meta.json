@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
     "id": "google-translate",
     "name": "Google Translate",
     "description": "Explore the wonders of smooth communication with our Google Translate AI service.",

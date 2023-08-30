@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "error-handling-demo",
 	"name": "Error Handling Demos",
 	"description": "Errors in process automation mean leaving the happy path. Learn more about business and technical errors.",

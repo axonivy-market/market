@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "basic-workflow-ui",	
 	"name": "Basic Workflow UI",
 	"description": "Small and smart workflow ui",

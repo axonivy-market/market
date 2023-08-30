@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "msgraph-calendar",
 	"version": "1.0",
 	"name": "Microsoft Calendar",
