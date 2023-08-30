@@ -10,7 +10,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-import io.github.rew.json.schema.annotations.Examples;
+import io.github.axonivy.json.schema.annotations.Examples;
 
 public class MarketMetaSchema {
 
