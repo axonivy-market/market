@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "jira-connector",
 	"name": "Atlassian Jira Connector",
 	"description": "Atlassian's Jira Connector lets you track issues directly from your digital process automation platform.",

@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "currencyConverter",
 	"name": "Currency Converter API",
 	"description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
