@@ -59,7 +59,7 @@
       <version>3.13.0</version>
     </dependency>
     <dependency>
-      <groupId>io.github.ivy-rew</groupId>
+      <groupId>io.github.axonivy</groupId>
       <artifactId>jsonschema-module-expressive-annotations</artifactId>
       <version>1.0.0</version>
       <exclusions>
@@ -117,11 +117,11 @@
               <artifactId>jsonschema-maven-plugin</artifactId>
               <version>4.31.1</version>
               <executions>
-              <execution>
-                <id>market.meta.json.schema</id>
-                <goals><goal>generate</goal></goals>
-                <phase>process-classes</phase>
-              </execution>
+                <execution>
+                  <id>market.meta.json.schema</id>
+                  <goals><goal>generate</goal></goals>
+                  <phase>process-classes</phase>
+                </execution>
               </executions>
               <configuration>
                 <schemaFilePath>${project.build.directory}/schema/market/10.0.0</schemaFilePath>
@@ -135,7 +135,7 @@
                 </options>
                 <modules>
                   <module><name>Jackson</name></module>
-                  <module><className>io.github.rew.json.schema.ExpressiveSchemaModule</className></module>
+                  <module><className>com.axonivy.market.MarketModule</className></module>
                   <module>
                     <name>JavaxValidation</name>
                     <options>
