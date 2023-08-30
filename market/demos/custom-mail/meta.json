@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "custom-mail-demo",
 	"name": "Custom Mail Demo",
 	"description": "Demonstrating how mails can be customized by providing mail processes.",

@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "persistence-utils",
 	"name": "Persistence Utils",
 	"description": "Set up Axon Ivy projects even faster with the Standard Persistency Library.",

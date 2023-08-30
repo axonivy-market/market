@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "email-encryption",
 	"name": "Email encryption",
 	"description": "Email encryption is a utility to send an encrypted email to a specific email address.",

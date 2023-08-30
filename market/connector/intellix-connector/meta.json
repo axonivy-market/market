@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "intellix-connector",
 	"name": "Axon Ivy IDP",
 	"description": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare.",
