@@ -58,6 +58,17 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.13.0</version>
     </dependency>
+    <dependency>
+      <groupId>io.github.ivy-rew</groupId>
+      <artifactId>jsonschema-module-expressive-annotations</artifactId>
+      <version>1.0.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
   </dependencies>
 
   <build>
@@ -117,8 +128,14 @@
                 <schemaFileName>meta.json</schemaFileName>
                 <classNames>com.axonivy.market.MarketMetaSchema</classNames>
                 <schemaVersion>DRAFT_2019_09</schemaVersion>
+                <options>
+                  <enabled>
+                    <option>DEFINITIONS_FOR_ALL_OBJECTS</option>
+                  </enabled>
+                </options>
                 <modules>
                   <module><name>Jackson</name></module>
+                  <module><className>io.github.rew.json.schema.ExpressiveSchemaModule</className></module>
                   <module>
                     <name>JavaxValidation</name>
                     <options>
@@ -127,11 +144,6 @@
                     </options>
                   </module>
                 </modules>
-                <options>
-                  <enabled>
-                    <option>DEFINITIONS_FOR_ALL_OBJECTS</option>
-                  </enabled>
-                </options>
               </configuration>
             </plugin>
         </plugins>

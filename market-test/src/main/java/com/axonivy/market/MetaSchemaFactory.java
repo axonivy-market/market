@@ -15,6 +15,8 @@ import com.networknt.schema.JsonSchema;
 import com.networknt.schema.JsonSchemaFactory;
 import com.networknt.schema.SpecVersion.VersionFlag;
 
+import io.github.rew.json.schema.ExpressiveSchemaModule;
+
 public class MetaSchemaFactory {
 
   public static ObjectNode metaJsonSchema() {
@@ -22,6 +24,7 @@ public class MetaSchemaFactory {
       .with(Option.DEFINITIONS_FOR_ALL_OBJECTS)
       .with(new JacksonModule())
       .with(new JavaxValidationModule(INCLUDE_PATTERN_EXPRESSIONS, NOT_NULLABLE_FIELD_IS_REQUIRED))
+      .with(new ExpressiveSchemaModule())
       .build();
     return new SchemaGenerator(config).generateSchema(MarketMetaSchema.class);
   }

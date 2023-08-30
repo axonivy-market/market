@@ -10,6 +10,8 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
+import io.github.rew.json.schema.annotations.Examples;
+
 public class MarketMetaSchema {
 
   @JsonProperty("$schema")
@@ -31,18 +33,18 @@ public class MarketMetaSchema {
   @JsonPropertyDescription("relative path to a logo of the vendor, e.g. 'acme.png'")
   public String vendorImage;
 
-  @JsonPropertyDescription("e.g. https://github.com/axonivy-market/acme-connector")
+  @Examples("https://github.com/axonivy-market/acme-connector")
   public URI sourceUrl;
-  @JsonPropertyDescription("e.g. https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg")
+  @Examples("https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg")
   public URI statusBadgeUrl;
 
-  @JsonPropertyDescription("e.g. English")
+  @Examples("English")
   public String language;
   @Pattern(regexp = "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$")
   public String compatibility;
   @Pattern(regexp = "^([0-4])?(\\.[5])?$|^5$")
   public String platformReview;
-  @JsonPropertyDescription("e.g. Cross-Industry") @Size(min = 2)
+  @Examples("Cross-Industry") @Size(min = 2)
   public String industry;
 
   public static enum Cost { free, paid; }
@@ -59,7 +61,7 @@ public class MarketMetaSchema {
 
   public boolean validate;
 
-  @JsonPropertyDescription("e.g. 'best-match'")
+  @Examples("best-match")
   public String installMatcher;
 
   public String versionDisplay;
