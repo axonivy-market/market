@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "msgraph-todo",
 	"name": "Microsoft To Do",
 	"description": "Microsoft To Do provides a simple way for people to manage their tasks and plan their day.",

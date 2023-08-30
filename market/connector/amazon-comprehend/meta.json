@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+    "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "amazon-comprehend",
     "name": "Amazon Comprehend API",
     "description": "Amazon Comprehend is a NLP service that uses machine learning to uncover information in unstructured data.",

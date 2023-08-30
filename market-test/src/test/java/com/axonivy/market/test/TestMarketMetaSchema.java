@@ -19,11 +19,11 @@ class TestMarketMetaSchema {
 
   private static final ObjectMapper MAPPER = new ObjectMapper();
 
+  ObjectNode schema = MetaSchemaFactory.metaJsonSchema();
+  JsonSchema validator = MetaSchemaFactory.validator(schema);
+
   @Test
   void validatesRealWorldModel() {
-    ObjectNode schema = MetaSchemaFactory.metaJsonSchema();
-    JsonSchema validator = MetaSchemaFactory.validator(schema);
-
     var meta = load("jira.meta.json");
 
     assertThat(validator.validate(meta))
@@ -33,8 +33,6 @@ class TestMarketMetaSchema {
 
   @Test
   void nonNull() {
-    ObjectNode schema = MetaSchemaFactory.metaJsonSchema();
-    JsonSchema validator = MetaSchemaFactory.validator(schema);
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
 
     List<String> messages = validator.validate(impl)
@@ -48,8 +46,6 @@ class TestMarketMetaSchema {
 
   @Test
   void lengthConstraints() {
-    ObjectNode schema = MetaSchemaFactory.metaJsonSchema();
-    JsonSchema validator = MetaSchemaFactory.validator(schema);
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
     impl.put("id", "mini"); // too short
 
@@ -60,6 +56,13 @@ class TestMarketMetaSchema {
       .isNotEmpty();
     assertThat(messages.toString())
       .contains("id: must be at least 5 characters");
+  }
+
+  @Test
+  void examplified() {
+    JsonNode sourceUrl = schema.get("properties").get("sourceUrl");
+    assertThat(sourceUrl.get("examples").toPrettyString())
+      .contains("github.com");
   }
 
   private JsonNode load(String resource) {

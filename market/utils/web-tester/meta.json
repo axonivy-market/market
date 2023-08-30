@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "web-tester",
 	"name": "Web Tester",
 	"description": "Easy Web-Integration tests for your process automation projects (PrimeFaces widgets + Selenium)",

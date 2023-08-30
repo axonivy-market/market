@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "excel-connector",
 	"name": "Microsoft Excel",
 	"description": "It has never been easier to read and write Microsoft Excel files within your process automation projects.",

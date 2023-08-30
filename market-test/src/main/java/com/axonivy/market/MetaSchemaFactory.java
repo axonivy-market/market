@@ -22,6 +22,7 @@ public class MetaSchemaFactory {
       .with(Option.DEFINITIONS_FOR_ALL_OBJECTS)
       .with(new JacksonModule())
       .with(new JavaxValidationModule(INCLUDE_PATTERN_EXPRESSIONS, NOT_NULLABLE_FIELD_IS_REQUIRED))
+      .with(new MarketModule())
       .build();
     return new SchemaGenerator(config).generateSchema(MarketMetaSchema.class);
   }

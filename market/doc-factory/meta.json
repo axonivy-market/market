@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "doc-factory",
 	"name": "DocFactory",
 	"description": "Based on Aspose technology the DocFactory creates any type of document out of your process data.",

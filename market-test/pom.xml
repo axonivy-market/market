@@ -58,6 +58,17 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.13.0</version>
     </dependency>
+    <dependency>
+      <groupId>io.github.axonivy</groupId>
+      <artifactId>jsonschema-module-expressive-annotations</artifactId>
+      <version>1.0.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
   </dependencies>
 
   <build>
@@ -106,19 +117,25 @@
               <artifactId>jsonschema-maven-plugin</artifactId>
               <version>4.31.1</version>
               <executions>
-              <execution>
-                <id>market.meta.json.schema</id>
-                <goals><goal>generate</goal></goals>
-                <phase>process-classes</phase>
-              </execution>
+                <execution>
+                  <id>market.meta.json.schema</id>
+                  <goals><goal>generate</goal></goals>
+                  <phase>process-classes</phase>
+                </execution>
               </executions>
               <configuration>
                 <schemaFilePath>${project.build.directory}/schema/market/10.0.0</schemaFilePath>
                 <schemaFileName>meta.json</schemaFileName>
                 <classNames>com.axonivy.market.MarketMetaSchema</classNames>
                 <schemaVersion>DRAFT_2019_09</schemaVersion>
+                <options>
+                  <enabled>
+                    <option>DEFINITIONS_FOR_ALL_OBJECTS</option>
+                  </enabled>
+                </options>
                 <modules>
                   <module><name>Jackson</name></module>
+                  <module><className>com.axonivy.market.MarketModule</className></module>
                   <module>
                     <name>JavaxValidation</name>
                     <options>
@@ -127,11 +144,6 @@
                     </options>
                   </module>
                 </modules>
-                <options>
-                  <enabled>
-                    <option>DEFINITIONS_FOR_ALL_OBJECTS</option>
-                  </enabled>
-                </options>
               </configuration>
             </plugin>
         </plugins>
