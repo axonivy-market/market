@@ -1,6 +1,6 @@
 
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "demos-app",
 	"name": "Demos Application",
 	"description": "Demos Application",
