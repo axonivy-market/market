@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "rule-engine-demo",
 	"name": "Rule Engine Demos",
 	"description": "The separation of process logic and business logic accelerates time-to-market significantly.",

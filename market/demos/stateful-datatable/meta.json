@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "stateful-datatable-demo",
 	"name": "Stateful Datatable Demo",
 	"description": "A utility Dialog to implement a stateful-datatable with Ivy and Primefaces.",
