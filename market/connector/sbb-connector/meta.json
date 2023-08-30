@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+    "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "sbb-connector",
     "name": "SBB Connector",
     "description": "Use the Swiss Mobility API to integrate timetables, fare details and bookings of Swiss public transport into your business processes.",

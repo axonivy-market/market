@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "html-dialog-utils",
 	"name": "HTML Dialog Utils",
 	"description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
