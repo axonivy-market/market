@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "docusign-connector",
 	"name": "DocuSign",
 	"description": "DocuSign allows organizations to sign any document electronically on different systems.",

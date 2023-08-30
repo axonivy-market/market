@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "alfrescoecm",
 	"name": "Alfresco ECM",
 	"description": "Using Alfresco ECM it is easy to connect, manage and protect important company information.",

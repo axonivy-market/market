@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "kafka-connector",
 	"name": "Apache Kafka",
 	"description": "Produce and consume Apache Kafka messages.",

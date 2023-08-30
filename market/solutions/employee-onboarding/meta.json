@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
 	"id": "employee-onboarding",
 	"version": "1.0",
 	"name": "Employee Onboarding",
