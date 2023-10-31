@@ -20,8 +20,8 @@ pipeline {
 
           docker.image('maven:3.9.5-eclipse-temurin-21').inside {
             dir ('market-test') {
-              maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none'
-              maven cmd: 'verify -P json.schema -Dmaven.plugin.validation=none'
+              maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp'
+              maven cmd: 'verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp'
             }
           }          
           recordIssues tools: [eclipse()], unstableTotalAll: 1
