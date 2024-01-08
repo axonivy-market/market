@@ -24,10 +24,10 @@ jobs:
           docker run --rm -v ${PWD}/market:/market -v ${PWD}/market-test:/market-test maven:3.9.5-eclipse-temurin-21 /bin/bash -c "cd market-test; mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp; mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp;"
 
       - name: Public test report
-        uses: mikepenz/action-junit-report@v4
-        if: success() || failure()
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        if: always()
         with:
-          report_paths: '**/target/surefire-reports/**/*.xml'
+          files: '**/target/surefire-reports/**/*.xml'
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
