@@ -17,11 +17,11 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Run EditorConfig Checker
-        run: docker run mstruebing/editorconfig-checker:2.0.4 ec -no-color
+        run: docker run --rm mstruebing/editorconfig-checker:2.0.4 ec -no-color
 
       - name: Run maven build
         run: |
-          docker run -v ${PWD}/market:/market -v ${PWD}/market-test:/market-test maven:3.9.5-eclipse-temurin-21 /bin/bash -c "mvn -f market-test/pom.xml compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp; mvn -f market-test/pom.xml verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp"
+          docker run --rm -v ${PWD}/market:/market -v ${PWD}/market-test:/market-test maven:3.9.5-eclipse-temurin-21 /bin/bash -c "cd market-test; mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp; mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp"
 
       - name: Public test report
         uses: mikepenz/action-junit-report@v4
