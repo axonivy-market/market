@@ -33,6 +33,7 @@ jobs:
         
       - name: Build project
         run: |
+          cd market-test
           mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
           mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
