@@ -27,10 +27,8 @@ Can you fork it and review my cool product?
 - [ ] product parts are marked as `Connector` or `Demo`
 - [ ] the product projects contains documentation to explain the functionality or use-case: 
    e.g. `Process-Notes`, `Input-Parameter` descriptions, Meta-Comments on `variables.yaml` definitions ...
-- [ ] the product readme fits into the market landscape (Andreas Balsinger)
-- [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` .
 
-## Technical Solution
+## First Pull request: Technical Solution
 
 ### Coherent
 
@@ -48,3 +46,7 @@ Can you fork it and review my cool product?
 - [ ] Uses latest ivy-environment: e.g. process-files and used project-build-plugin match the ivyProject version.
 - [ ] Product is re-usable without the need to unpack and customize it for standard use-cases: crucial settings can be overriden with well documented `config/variables.yaml`
 
+## Second Pull request: Description
+
+- [ ] the product readme fits into the market landscape (Andreas Balsinger)
+- [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` .
