@@ -27,7 +27,7 @@ Can you fork it and review my cool product?
 - [ ] product parts are marked as `Connector` or `Demo`
 - [ ] the product projects contains documentation to explain the functionality or use-case: 
    e.g. `Process-Notes`, `Input-Parameter` descriptions, Meta-Comments on `variables.yaml` definitions ...
-- [ ] the product readme fits into the market landscape @andreasbalsiger
+- [ ] the product readme fits into the market landscape (Andreas Balsinger)
 - [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` .
 
 ## Technical Solution
