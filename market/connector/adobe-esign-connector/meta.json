@@ -1,21 +1,21 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-    "id": "docker-connector",
-    "name": "Docker Connector",
-    "description": "Use this connector to create, start, stop, and remove Docker containers.",
+    "id": "adobe-esign-connector",
+    "name": "Adobe Esign Connector",
+    "description": "Use this connector to create, sign document with Adobe Sign.",
     "type": "connector",
     "platformReview": "4.5",
-    "sourceUrl": "https://github.com/axonivy-market/docker-connector",
-    "statusBadgeUrl": "https://github.com/axonivy-market/docker-connector/actions/workflows/ci.yml/badge.svg",
+    "sourceUrl": "https://github.com/axonivy-market/adobe-esign-connector",
+    "statusBadgeUrl": "https://github.com/axonivy-market/adobe-esign-connector/actions/workflows/ci.yml/badge.svg",
     "language": "English",
     "industry": "Cross-Industry",
     "tags": [ "container" ],
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
-            "name": "Docker Connector",
+            "name": "Adobe Esign Connector",
             "groupId": "com.axonivy.market",
-            "artifactId": "docker-connector-product",
+            "artifactId": "adobe-esign-connector-product",
             "type": "zip"
         }
     ]
