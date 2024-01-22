@@ -9,7 +9,7 @@
     "statusBadgeUrl": "https://github.com/axonivy-market/adobe-esign-connector/actions/workflows/ci.yml/badge.svg",
     "language": "English",
     "industry": "Cross-Industry",
-    "tags": [ "container" ],
+    "tags": [ "e-signature" ],
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
