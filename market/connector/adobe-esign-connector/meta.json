@@ -14,8 +14,8 @@
         {
             "repoUrl": "https://maven.axonivy.com",
             "name": "Adobe Esign Connector",
-            "groupId": "com.axonivy.market",
-            "artifactId": "adobe-esign-connector-product",
+            "groupId": "com.axonivy.connector.adobe.esign",
+            "artifactId": "adobe-esign-connector",
             "type": "zip"
         }
     ]
