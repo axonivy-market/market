@@ -10,7 +10,7 @@
 	"language": "English",
 	"industry": "Cross-Industry",
 	"compatibility": "9.4+",
-	"tags": ["cloud-platform"],
+	"tags": ["office"],
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
