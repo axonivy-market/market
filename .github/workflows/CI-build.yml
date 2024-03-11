@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate:
-    runs-on: [marketplace.axonivy.com]
+    runs-on: [market-runner]
     steps:
       - name: Checkout current branch
         uses: actions/checkout@v4
