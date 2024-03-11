@@ -53,6 +53,6 @@ jobs:
         run: |
           targetFolder="/home/axonivya/deployment/market-$(date +'%Y-%m-%d_%H-%M-%S')"
           mkdir ${targetFolder}
-          cp market-test/target/market ${targetFolder}
+          cp -r market-test/target/market ${targetFolder}
 
           ln -fns ${targetFolder}/market /home/axonivya/data/market
