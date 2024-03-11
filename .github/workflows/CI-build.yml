@@ -41,3 +41,12 @@ jobs:
         with:
           path: |
             **/target/schema/market/*/*.json
+
+      - name: Deploy
+        shell: sh
+        run: |
+          targetFolder="/home/axonivya/deployment/market-$(date +'%Y-%m-%d_%H-%M-%S')"
+          mkdir ${targetFoler}
+          cp market-test/target/market {$targetFoler}
+
+          ln -fns ${targetFolder}/market /home/axonivya/data/market
