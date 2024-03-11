@@ -31,10 +31,16 @@ jobs:
           mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
       - name: Public test report
-        uses: EnricoMi/publish-unit-test-result-action/composite@v2
-        if: always()
+        uses: mikepenz/action-junit-report@v4
+        if: success()
         with:
-          files: "**/target/surefire-reports/**/*.xml"
+          report_paths: "**/target/surefire-reports/**/*.xml"
+        
+      # - name: Public test report
+      #   uses: EnricoMi/publish-unit-test-result-action/composite@v2
+      #   if: always()
+      #   with:
+      #     files: "**/target/surefire-reports/**/*.xml"
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
