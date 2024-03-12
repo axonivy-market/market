@@ -56,3 +56,5 @@ jobs:
           cp -r market-test/target/market ${targetFolder}
 
           ln -fns ${targetFolder}/market /home/axonivya/data/market
+
+          rsync --mkpath -r market-test/target/schema/market /var/www/json-schema.ivyteam.ch
