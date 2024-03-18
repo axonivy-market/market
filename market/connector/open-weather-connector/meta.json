@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "open-weather-connector",
-    "name": "Open Weather Connector",
-    "description": "The Open Weather provides real-time and forecast weather data for locations worldwide.",
+    "name": "OpenWeather Connector",
+    "description": "The OpenWeather provides real-time and forecast weather data for locations worldwide.",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/open-weather-connector",
@@ -13,7 +13,7 @@
     "mavenArtifacts": [
         {
             "repoUrl": "https://maven.axonivy.com",
-            "name": "Open Weather Connector",
+            "name": "OpenWeather Connector",
             "groupId": "com.axonivy.connector.openweather",
             "artifactId": "open-weather-connector-product",
             "type": "zip"
