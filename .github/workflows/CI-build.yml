@@ -9,7 +9,7 @@ on:
 jobs:
   ci-build:
     name: CI Build
-    runs-on: [market-runner]
+    runs-on: [ubuntu-latest]
     strategy:
       fail-fast: true
     env:
