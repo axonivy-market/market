@@ -30,6 +30,7 @@ jobs:
           java-version: "21"
 
       - name: Build source
+        shell: bash
         run: |
           cd market-test
           mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
