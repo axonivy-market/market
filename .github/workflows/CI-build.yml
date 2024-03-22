@@ -34,7 +34,7 @@ jobs:
         run: |
           cd market-test
           mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-          mvn clean verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn clean verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp -DfailFast=true
           cd ../
 
       - name: Archive build artifact
