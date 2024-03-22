@@ -31,11 +31,12 @@ jobs:
 
       - name: Build source
         run: |
-          mvn clean compile -f $testDirectory exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
+          cd market-test
+          mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
 
       - name: Verify json schema
         run: |
-          mvn clean verify -f $testDirectory -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn clean verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
@@ -51,4 +52,5 @@ jobs:
 
       - name: Clean up
         run: |
+          cd ../
           rm -rf *
