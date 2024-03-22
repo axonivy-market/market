@@ -33,8 +33,8 @@ jobs:
         shell: bash
         run: |
           cd market-test
-          mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-          ls -l target/market/workflow-demo
+          mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
+          ls -l target/
           mvn clean verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp -DfailFast=true
           cd ../
 
