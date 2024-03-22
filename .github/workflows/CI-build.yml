@@ -10,6 +10,8 @@ jobs:
   validate:
     name: Validate
     runs-on: [ubuntu-latest]
+    strategy:
+      fail-fast: false
     env:
       testDirectory: market-test/pom.xml
     steps:
@@ -39,7 +41,7 @@ jobs:
 
       - name: Run test
         run: |
-          mvn test -f ${testDirectory}
+          mvn test -f ${testDirectory} -DfailFast=true
 
       - name: Public test report
         uses: EnricoMi/publish-unit-test-result-action/composite@v2
