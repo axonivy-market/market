@@ -2,13 +2,16 @@ name: CI Build
 run-name: Build on branch ${{github.ref_name}} triggered by ${{github.actor}}
 
 on:
+  workflow_call:
+  schedule:
+    - cron: '0 0 * * *'
   push:
     branches:
-      - MARP-60-Git-Hub-Actions-Build-for-Market-repo-to-build-and-test-artifact
+      - master
 
 jobs:
-  ci-build:
-    name: CI Build
+  validate:
+    name: Validate
     runs-on: [ubuntu-latest]
     strategy:
       fail-fast: true
