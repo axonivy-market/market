@@ -10,22 +10,16 @@ jobs:
   validate:
     name: Validate
     runs-on: [ubuntu-latest]
+    env:
+      testDirectory: market-test/pom.xml
     steps:
       - name: Checkout current branch
         uses: actions/checkout@v4
 
       - name: Editor checker
         uses: editorconfig-checker/action-editorconfig-checker@main
-        
-      - run: editorconfig-checker -verbose --no-color
 
-  build:
-    name: Buill
-    needs: validate
-    runs-on: [ubuntu-latest]
-    steps:
-      - name: Checkout current branch
-        uses: actions/checkout@v4
+      - run: editorconfig-checker -verbose --no-color
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -35,28 +29,21 @@ jobs:
       - name: Build project
         run: |
           cd market-test
-          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-          mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn compile -f ${testDirectory} exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn verify -f ${testDirectory} -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
         with:
           path: |
             **/target/schema/market/*/*.json
-  
-  test:
-    name: Run test
-    needs: build
-    runs-on: [ubuntu-latest]
-    steps:
-      - name: Checkout current branch
-        uses: actions/checkout@v4
-      
+
       - name: Run test
         run: |
-          mvn test -f market-test/pom.xml
+          mvn test -f ${testDirectory}
+
       - name: Public test report
         uses: EnricoMi/publish-unit-test-result-action/composite@v2
         if: success()
         with:
           files: "**/target/surefire-reports/**/*.xml"
-
