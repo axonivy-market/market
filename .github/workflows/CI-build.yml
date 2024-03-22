@@ -28,7 +28,6 @@ jobs:
           java-version: "21"
       - name: Build project
         run: |
-          cd market-test
           mvn compile -f ${testDirectory} exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
           mvn verify -f ${testDirectory} -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
