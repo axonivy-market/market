@@ -10,8 +10,6 @@ jobs:
   ci-build:
     name: CI Build
     runs-on: [ubuntu-latest]
-    strategy:
-      fail-fast: false
     env:
       testDirectory: market-test/pom.xml
     steps:
@@ -41,11 +39,10 @@ jobs:
 
       - name: Public test report
         uses: EnricoMi/publish-unit-test-result-action/composite@v2
-        if: success()
+        if: success() || failure()
         with:
           files: "**/target/surefire-reports/**/*.xml"
-      
+
       - name: Clean up
         run: |
           rm -rf *
-
