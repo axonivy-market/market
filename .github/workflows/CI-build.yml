@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - master
+      - MARP-60-Git-Hub-Actions-Build-for-Market-repo-to-build-and-test-artifact
 
 jobs:
   validate:
