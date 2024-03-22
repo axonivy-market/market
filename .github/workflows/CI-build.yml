@@ -33,10 +33,8 @@ jobs:
         run: |
           cd market-test
           mvn clean compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-
-      - name: Verify json schema
-        run: |
           mvn clean verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          cd ../
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
@@ -52,5 +50,4 @@ jobs:
 
       - name: Clean up
         run: |
-          cd ../
           rm -rf *
