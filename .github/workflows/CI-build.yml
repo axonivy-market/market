@@ -41,13 +41,13 @@ jobs:
           cd ../
 
       - name: Archive build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: |
             **/target/schema/market/*/*.json
 
       - name: Public test report
-        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        uses: EnricoMi/publish-unit-test-result-action/linux@v2
         if: success() || failure()
         with:
           files: "**/target/surefire-reports/**/*.xml"
