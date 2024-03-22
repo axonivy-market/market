@@ -7,7 +7,7 @@ on:
       - MARP-60-Git-Hub-Actions-Build-for-Market-repo-to-build-and-test-artifact
 
 jobs:
-  validate:
+  ci-build:
     name: Validate
     runs-on: [ubuntu-latest]
     strategy:
@@ -30,9 +30,8 @@ jobs:
           java-version: "21"
       - name: Build project
         run: |
-          cd market-test
-          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-          mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn compile -f {$testDirectory} exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn verify -f {$testDirectory} -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
           cd ../
 
       - name: Archive build artifact
@@ -46,3 +45,8 @@ jobs:
         if: success()
         with:
           files: "**/target/surefire-reports/**/*.xml"
+      
+      - name: Clean up
+        run: |
+          rm -rf *
+
