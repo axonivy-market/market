@@ -28,7 +28,7 @@ jobs:
   build:
     name: Buill
     needs: validate
-    runs-on: ["marketplace.axonivy.com"]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -49,7 +49,7 @@ jobs:
   test:
     name: Run test
     needs: build
-    runs-on: ["marketplace.axonivy.com"]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Run test
         run: |
