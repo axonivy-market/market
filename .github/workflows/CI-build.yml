@@ -35,7 +35,7 @@ jobs:
 
       - name: Verify json schema
         run: |
-          mvn clean verify -f $testDirectory -P json.schema
+          mvn clean verify -f $testDirectory -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
