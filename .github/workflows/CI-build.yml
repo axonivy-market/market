@@ -8,53 +8,55 @@ on:
 
 jobs:
   validate:
-    runs-on: [market-runner]
+    name: Validate
+    runs-on: [ubuntu-latest]
     steps:
       - name: Checkout current branch
         uses: actions/checkout@v3
 
       - name: Editor checker
         uses: editorconfig-checker/action-editorconfig-checker@main
-
+        
       - run: editorconfig-checker -verbose --no-color
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: "21"
-
-      - name: Build project
-        run: |
-          cd market-test
-          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
-          mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
 
       - name: Public test report
         uses: mikepenz/action-junit-report@v4
         if: success()
         with:
           report_paths: "**/target/surefire-reports/**/*.xml"
-        
-      # - name: Public test report
-      #   uses: EnricoMi/publish-unit-test-result-action/composite@v2
-      #   if: always()
-      #   with:
-      #     files: "**/target/surefire-reports/**/*.xml"
 
+  build:
+    name: Buill
+    needs: validate
+    runs-on: ["marketplace.axonivy.com"]
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+      - name: Build project
+        run: |
+          cd market-test
+          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
         with:
           path: |
             **/target/schema/market/*/*.json
-
-      - name: Deploy
-        shell: sh
+  
+  test:
+    name: Run test
+    needs: build
+    runs-on: ["marketplace.axonivy.com"]
+    steps:
+      - name: Run test
         run: |
-          targetFolder="/home/axonivya/deployment/market-$(date +'%Y-%m-%d_%H-%M-%S')"
-          mkdir ${targetFolder}
-          cp -r market-test/target/market ${targetFolder}
+          mvn test
+      - name: Public test report
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        if: success()
+        with:
+          files: "**/target/surefire-reports/**/*.xml"
 
-          ln -fns ${targetFolder}/market /home/axonivya/data/market
-
-          rsync --mkpath -r market-test/target/schema/market /var/www/json-schema.ivyteam.ch
