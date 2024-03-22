@@ -11,7 +11,7 @@ jobs:
     name: CI Build
     runs-on: [ubuntu-latest]
     strategy:
-      fail-fast: false
+      fail-fast: true
     env:
       testDirectory: market-test/pom.xml
     steps:
@@ -35,7 +35,7 @@ jobs:
 
       - name: Verify json schema
         run: |
-          mvn verify -f $testDirectory -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp
+          mvn verify -f $testDirectory -P json.schema
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v3
