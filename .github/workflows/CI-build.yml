@@ -12,24 +12,21 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Checkout current branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Editor checker
         uses: editorconfig-checker/action-editorconfig-checker@main
         
       - run: editorconfig-checker -verbose --no-color
 
-      - name: Public test report
-        uses: mikepenz/action-junit-report@v4
-        if: success()
-        with:
-          report_paths: "**/target/surefire-reports/**/*.xml"
-
   build:
     name: Buill
     needs: validate
     runs-on: [ubuntu-latest]
     steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
