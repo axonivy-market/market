@@ -11,7 +11,7 @@ jobs:
     name: CI Build
     runs-on: [ubuntu-latest]
     strategy:
-      fail-fast: true
+      fail-fast: false
     env:
       testDirectory: market-test/pom.xml
     steps:
