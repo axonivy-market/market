@@ -37,7 +37,7 @@ jobs:
           mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp -DfailFast=true
           cd ../
 
-      - name: Archive built artifact
+      - name: Archive build artifact
         uses: actions/upload-artifact@v4
         with:
           path: |
