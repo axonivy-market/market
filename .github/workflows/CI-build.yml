@@ -2,12 +2,9 @@ name: CI Build
 run-name: Build on branch ${{github.ref_name}} triggered by ${{github.actor}}
 
 on:
-  workflow_call:
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
-  push:
-    branches:
-      - master
+    - cron: "0 0 * * *"
 
 jobs:
   validate:
@@ -40,7 +37,7 @@ jobs:
           mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp -DfailFast=true
           cd ../
 
-      - name: Archive build artifact
+      - name: Archive built artifact
         uses: actions/upload-artifact@v4
         with:
           path: |
