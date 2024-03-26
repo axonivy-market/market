@@ -116,7 +116,7 @@ class ValidateRepoTest
 
   private void assertValidProductJson(Path path)
   {
-    var metaPath = path.resolve("product.json");
+    var metaPath = path.resolve("meta.json");
     if (!Files.exists(metaPath)) {
       System.out.println("skipping "+metaPath);
       return;
