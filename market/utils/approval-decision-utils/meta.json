@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+	"id": "approval-decision-utils",
+	"name": "Approval Decision Utils",
+	"description": "Empower applications with Approval Decision: Accelerate decision-making and streamline processes",
+	"type": "util",
+	"platformReview": "4.5",
+	"sourceUrl": "https://github.com/axonivy-market/approval-decision-utils",
+	"statusBadgeUrl": "https://github.com/axonivy-market/approval-decision-utils/actions/workflows/ci.yml/badge.svg",
+	"language": "English",
+	"industry": "Cross-Industry",
+	"tags": ["utils"],
+	"mavenArtifacts": [
+		{
+			"repoUrl": "https://maven.axonivy.com",
+			"name": "Approval Decision Utils",
+			"groupId": "com.axonivy.utils.approvaldecision",
+			"artifactId": "approval-desicion-utils-product",
+			"type": "zip"
+		}
+	]	
+}
