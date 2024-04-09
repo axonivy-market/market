@@ -15,7 +15,7 @@
             "repoUrl": "https://maven.axonivy.com",
             "name": "Adobe Acrobat Sign Connector",
             "groupId": "com.axonivy.connector.adobe.acrobat.sign",
-            "artifactId": "adobe-acrobat-sign-connector",
+            "artifactId": "adobe-acrobat-sign-connector-product",
             "type": "zip"
         }
     ]
