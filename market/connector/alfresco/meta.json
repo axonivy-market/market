@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "alfrescoecm",
 	"name": "Alfresco ECM",
-	"description": "Using Alfresco ECM it is easy to connect, manage and protect important company information.",
+	"description": "Alfresco is a platform offering ECM features for managing digital content.",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/alfresco-connector",    
