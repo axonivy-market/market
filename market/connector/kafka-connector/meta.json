@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "kafka-connector",
 	"name": "Apache Kafka",
-	"description": "Produce and consume Apache Kafka messages.",
+	"description": "API for facilitating distributed event streaming to automate real-time process workflows.",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/kafka-connector",
