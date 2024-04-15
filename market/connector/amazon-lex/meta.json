@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "amazon-lex",
     "name": "Amazon Lex Runtime API",
-    "description": "Amazon Lex is a NLP service to build sophisticated, natural language, conversational bots (chatbots).",
+    "description": "Amazon Lex is a AI service to build sophisticated, natural language, conversational bots (chatbots).",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/amazon-lex-connector",
