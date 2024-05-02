@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "docusign-connector",
-	"name": "DocuSign",
-	"description": "DocuSign allows organizations to sign any document electronically on different systems.",
+	"name": "Docusign eSignature",
+	"description": "Make your business processes faster, simpler and more cost-efficient with electronic agreements.",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/docusign-connector",
