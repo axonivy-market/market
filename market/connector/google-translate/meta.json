@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "google-translate",
     "name": "Google Translate",
-    "description": "Explore the wonders of smooth communication with our Google Translate AI service.",
+    "description": "Easily integrate and manage real-time language translation services within your business processes.",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/google-translate-connector",
