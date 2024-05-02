@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "genderize-io-connector",
-	"name": "Genderize.io API",
-	"description": "A simple API to predict the gender of a person given their name. 1000 names/day are free.",
+	"name": "Genderize.io",
+	"description": "Determine the gender of a person based on their name and location.",
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/genderize-io-connector",
