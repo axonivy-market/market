@@ -19,6 +19,18 @@
 			"groupId": "com.axonivy.connector.x",
 			"artifactId": "x-connector-product",
 			"type": "zip"
+		},
+		{
+			"name": "X Connector",
+			"groupId": "com.axonivy.connector.x",
+			"artifactId": "x-connector",
+			"archivedArtifacts": [
+				{
+					"lastVersion": "10.0.0",
+					"groupId": "com.axonivy.connector.twitter",
+					"artifactId": "twitter-connector"
+				}
+			]
 		}
 	]
 }

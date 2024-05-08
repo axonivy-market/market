@@ -17,6 +17,28 @@
             "groupId": "com.axonivy.connector.adobe.acrobat.sign",
             "artifactId": "adobe-acrobat-sign-connector-product",
             "type": "zip"
+        },
+        {
+            "name": "Adobe Acrobat Sign Connector",
+            "groupId": "com.axonivy.connector.adobe.acrobat.sign",
+            "artifactId": "adobe-acrobat-sign-connector",
+            "archivedArtifacts": [
+                {
+                    "lastVersion": "10.0.15",
+                    "groupId":"com.axonivy.connector.adobe.esign",
+                    "artifactId": "adobe-esign-connector"
+                },
+                {
+                    "lastVersion": "10.0.16",
+                    "groupId": "com.axonivy.connector.adobe.acrobat.sign",
+                    "artifactId": "adobe-acrobat-sign-connector"
+                },
+                {
+                    "lastVersion": "10.0.17",
+                    "groupId": "com.axonivy.connector.adobe",
+                    "artifactId": "adobe-acrobat-sign-connector"
+                }
+            ]
         }
     ]
 }
