@@ -15,7 +15,7 @@
       "repoUrl": "https://maven.axonivy.com",
       "name": "Approval Decision Utils",
       "groupId": "com.axonivy.utils.approvaldecision",
-      "artifactId": "approval-desicion-utils-product",
+      "artifactId": "approval-decision-utils-product",
       "type": "zip"
     }
   ]
