@@ -41,6 +41,18 @@
 			"doc": true
 		},
 		{
+			"name": "Portal Components Examples",
+			"groupId": "com.axonivy.portal",
+			"artifactId": "portal-components-examples",
+			"type": "iar"
+		},
+		{
+			"name": "Portal Examples",
+			"groupId": "ch.ivyteam.ivy.project.portal",
+			"artifactId": "portalExamples",
+			"type": "iar"
+		},
+		{
 			"name": "Portal Product",
 			"groupId": "com.axonivy.portal",
 			"artifactId": "portal-product",
