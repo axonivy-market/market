@@ -80,7 +80,7 @@ public class MarketMetaSchema {
     public String key;
 
     public static enum ArtifactType {
-      zip, nbm, jar;
+      zip, nbm, jar, iar;
     }
     public ArtifactType type;
     public boolean doc;
