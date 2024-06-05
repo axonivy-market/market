@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "salesforce-connector",
-    "name": "Salesforce Connector",
-    "description": "This connector builds the REST API and provides a way to access Salesforce resources. A client can use the REST API to manipulate Salesforce objects.",
+    "name": "Salesforce",
+    "description": "Use this REST API connector to access and modify Salesforce resources.",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/salesforce-connector",

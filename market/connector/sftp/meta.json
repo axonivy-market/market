@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "sftp-connector",
     "name": "SFTP",
-    "description": "SFTP client which uses the SFTP protocol to transfer files securely to and from a remote computer.",
+    "description": "An SFTP client that securely transfers files to and from a remote computer using the SFTP protocol.",
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/sftp-connector",
