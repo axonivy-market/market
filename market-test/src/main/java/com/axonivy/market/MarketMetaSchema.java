@@ -84,6 +84,7 @@ public class MarketMetaSchema {
     }
     public ArtifactType type;
     public boolean doc;
+
     public static class ArchivedArtifact{
       @NotNull @Size(min = 5)
       public String lastVersion;
@@ -92,6 +93,7 @@ public class MarketMetaSchema {
       @NotNull @Size(min = 5)
       public String artifactId;
     }
+    
     public List<ArchivedArtifact> archivedArtifacts;
   }
 
