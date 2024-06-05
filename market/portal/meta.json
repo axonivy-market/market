@@ -20,7 +20,7 @@
 			"archivedArtifacts": [
 				{
 				  "groupId": "ch.ivyteam.ivy.project.portal",
-				  "lastVersion": "10.0.19",
+				  "lastVersion": "10.1.0",
 				  "artifactId": "portal-app"
 				}
 			],
@@ -34,7 +34,7 @@
 			"archivedArtifacts": [
 				{
 				  "groupId": "ch.ivyteam.ivy.project.portal",
-				  "lastVersion": "10.0.19",
+				  "lastVersion": "10.1.0",
 				  "artifactId": "portal-guide"
 				}
 			],
