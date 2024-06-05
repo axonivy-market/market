@@ -84,6 +84,15 @@ public class MarketMetaSchema {
     }
     public ArtifactType type;
     public boolean doc;
+    public static class ArchivedArtifact{
+      @NotNull @Size(min = 5)
+      public String lastVersion;
+      @NotNull @Size(min = 5)
+      public String groupId;
+      @NotNull @Size(min = 5)
+      public String artifactId;
+    }
+    public List<ArchivedArtifact> archivedArtifacts;
   }
 
   public List<MavenArtifact> mavenArtifacts;
