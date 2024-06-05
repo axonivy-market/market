@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "sbb-connector",
-    "name": "Swiss Federal Railways (SBB)",
+    "name": "Swiss Federal Railways",
     "description": "Integrate timetables, fare details and bookings of Swiss public transport into your business processes.",
     "type": "connector",
     "platformReview": "5",
