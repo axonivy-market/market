@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "docker-connector",
-    "name": "Docker Connector",
+    "name": "Docker",
     "description": "Create, start, stop, remove Docker containers directly from your business processes.",
     "type": "connector",
     "platformReview": "4.5",

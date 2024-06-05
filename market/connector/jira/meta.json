@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "jira-connector",
-	"name": "Atlassian Jira Connector",
+	"name": "Atlassian Jira",
 	"description": "Atlassian's Jira connector lets you track issues directly from the Axon Ivy platform.",
 	"type": "connector",
 	"platformReview": "4.5",
