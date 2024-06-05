@@ -1,7 +1,7 @@
 {
   "id": "srf-weather-connector",
-  "name": "SRF Weatherforecast API",
-  "description": "The SRF Weather REST API allows you to get weather forecastst for over 100'000 locations within Switzerland.",
+  "name": "SRF Weatherforecast",
+  "description": "The SRF Weather REST API provides forecasts for over 100,000 locations in Switzerland.",
   "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/srf-weather-connector",
