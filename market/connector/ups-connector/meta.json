@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "ups-connector",
-    "name": "UPS",
+    "name": "UPS ",
     "description": "Integrates UPS services (tracking, rates, address validation) into workflows via a REST API.",
     "type": "connector",
     "platformReview": "4.5",
