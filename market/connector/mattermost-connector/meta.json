@@ -1,7 +1,7 @@
 {
   "id": "mattermost-connector",
   "name": "Mattermost",
-  "description": "Mattermost enhances team messaging for streamlined workflows and better collaboration.",
+  "description": "Seamlessly integrate real-time chat and automation with the Mattermost connector.",
   "type": "connector",
   "platformReview": "4",
   "sourceUrl": "https://github.com/axonivy-market/mattermost-connector",
