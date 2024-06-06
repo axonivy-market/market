@@ -88,7 +88,7 @@ public class MarketMetaSchema {
     public static class ArchivedArtifact{
       @NotNull @Size(min = 5)
       @JsonPropertyDescription("""
-    		  this is the 'max version' selector, and that all versions which are lower than or equal the defined value, will be treated as legacy artifact.
+    		  this is the 'max version' selector. All versions which are lower than or equal the defined value, will be treated as legacy artifact.
     		  Therefore supplying 'legacy' group-/artifact-id for download.
     		  """)
       public String lastVersion;
@@ -99,7 +99,7 @@ public class MarketMetaSchema {
     }
     
     @JsonPropertyDescription("archived artifacts using old (legacy) group ID and artifact ID with the last version they were being used.")
-     @Examples("""
+    @Examples("""
     		"archivedArtifacts": [
 				{
 					"lastVersion": "10.0.0",
