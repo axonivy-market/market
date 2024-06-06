@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
 	"id": "x-connector",
 	"version": "1.0",
 	"name": "X (formerly Twitter)",
