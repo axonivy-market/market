@@ -87,6 +87,7 @@ public class MarketMetaSchema {
 
     public static class ArchivedArtifact{
       @NotNull @Size(min = 5)
+      @JsonPropertyDescription("last version that still uses these group ID & artifact ID")
       public String lastVersion;
       @NotNull @Size(min = 5)
       public String groupId;
@@ -94,6 +95,7 @@ public class MarketMetaSchema {
       public String artifactId;
     }
     
+    @JsonPropertyDescription("archived artifacts which using old group id and artifact id")
     public List<ArchivedArtifact> archivedArtifacts;
   }
 
