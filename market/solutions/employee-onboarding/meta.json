@@ -9,5 +9,7 @@
 	"language": "EN",
 	"industry": "Cross-Industry",
 	"tags": ["hr"],
-	"contactUs": true
+	"hey": "you",
+	"contactUs": true,
+	"notAProperty": "oblivion"
 }
