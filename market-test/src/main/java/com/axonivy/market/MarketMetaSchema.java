@@ -87,7 +87,10 @@ public class MarketMetaSchema {
 
     public static class ArchivedArtifact{
       @NotNull @Size(min = 5)
-      @JsonPropertyDescription("last version that still uses these group ID & artifact ID")
+      @JsonPropertyDescription("""
+    		  this is the 'max version' selector, and that all versions which are lower than or equal the defined value, will be treated as legacy artifact.
+    		  Therefore supplying 'legacy' group-/artifact-id for download.
+    		  """)
       public String lastVersion;
       @NotNull @Size(min = 5)
       public String groupId;
@@ -95,7 +98,16 @@ public class MarketMetaSchema {
       public String artifactId;
     }
     
-    @JsonPropertyDescription("archived artifacts which using old group id and artifact id")
+    @JsonPropertyDescription("archived artifacts using old (legacy) group ID and artifact ID with the last version they were being used.")
+     @Examples("""
+    		"archivedArtifacts": [
+				{
+					"lastVersion": "10.0.0",
+					"groupId": "com.axonivy.connector.twitter",
+					"artifactId": "twitter-connector"
+				}
+			]
+    		""")
     public List<ArchivedArtifact> archivedArtifacts;
   }
 
