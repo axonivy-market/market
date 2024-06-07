@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "advanced-process-analyzer",
   "name": "Advanced Process Analyzer",
-  "description": "Advanced Process Analyzer util helps you to calculate duration to finish a workflow case",
+  "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/advanced-process-analyzer",
