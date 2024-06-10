@@ -1,7 +1,7 @@
 {
   "id": "s4hana-connector",
-  "name": "SAP 4 HANA REST",
-  "description": "Easily connects to a SAP S/4HANA database.",
+  "name": "SAP S/4HANA",
+  "description": "Easily connects the Axon Ivy Engine to a SAP S/4HANA database.",
   "type": "connector",
   "platformReview": "4",
   "sourceUrl": "https://github.com/axonivy-market/S4HANA-connector",
