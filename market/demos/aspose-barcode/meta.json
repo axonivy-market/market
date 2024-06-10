@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "aspose-barcode-demo",
 	"name": "Aspose.Barcode Demo",
-	"description": "See how to use the Aspose.Barcode library",
+	"description": "Create, & recognize barcodes of linear and 2D types within any business process.",
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/doc-fatcory",

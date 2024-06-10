@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "aspose-email-demo",
 	"name": "Aspose.Email Demo",
-	"description": "See how to use the Aspose.Email library",
+	"description": "Generate, send & parse emails from Outlook & Thunderbird within your business process.",
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/doc-fatcory",
