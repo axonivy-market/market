@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "aspose-barcode-demo",
-	"name": "Aspose.Barcode Demo",
+	"name": "Aspose.BarCode Demo",
 	"description": "Create, & recognize barcodes of linear and 2D types within any business process.",
 	"type": "solution",
 	"platformReview": "4.5",
