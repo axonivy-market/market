@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "openai-connector",
-    "name": "OpenAI's ChatGPT API",
+    "name": "OpenAI's ChatGPT",
     "description": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation.",
     "type": "connector",
     "platformReview": "4.5",
