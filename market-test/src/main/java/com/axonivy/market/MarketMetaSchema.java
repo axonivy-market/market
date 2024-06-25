@@ -21,10 +21,28 @@ public class MarketMetaSchema {
   public String id;
   @Pattern(regexp = "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
   public String version;
-  @NotNull @Size(min = 4, max = 24)
-  public String name;
-  @NotNull @Size(min = 5, max = 200)
-  public String description;
+
+  public static class DisplayName {
+    @NotNull
+    @Size(min = 2)
+    public String locale;
+
+    @NotNull
+    @NotNull @Size(min = 4, max = 24)
+    public String value;
+  }
+  public List<DisplayName> names;
+
+  public static class DisplayDescription {
+    @NotNull
+    @Size(min = 2)
+    public String locale;
+
+    @NotNull
+    @NotNull @Size(min = 5, max = 200)
+    public String value;
+  }
+  public List<DisplayDescription> descriptions;
 
   @Size(min = 3)
   public String vendor;

@@ -2,8 +2,26 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
 	"id": "x-connector",
 	"version": "1.0",
-	"name": "X (formerly Twitter)",
-	"description": "The X API enables seamless message posting and interaction within the X network.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "X (formerly Twitter)"
+    },
+    {
+      "locale": "de",
+      "value": "TODO X (formerly Twitter)"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "The X API enables seamless message posting and interaction within the X network."
+    },
+    {
+      "locale": "de",
+      "value": "TODO The X API enables seamless message posting and interaction within the X network."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/x-connector",

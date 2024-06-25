@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "metaproc-connector",
-	"name": "Axon Ivy RPA",
-	"description": "Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy RPA"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Axon Ivy RPA"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly."
+		},
+    {
+      "locale": "de",
+      "value": "TODO Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/metaproc-connector",

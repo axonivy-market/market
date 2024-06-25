@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "workflow-demo",
-	"name": "Workflow Demos",
-	"description": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Workflow Demos"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Workflow Demos"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage"
+    }
+  ],
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/demo-projects",

@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "cronjob",
-	"name": "Cron Job",
-	"description": "Cron Job Utility handles your scheduled jobs autonomously.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Cron Job"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Cron Job"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Cron Job Utility handles your scheduled jobs autonomously."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Cron Job Utility handles your scheduled jobs autonomously."
+    }
+  ],
 	"type": "util",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/cronjob",

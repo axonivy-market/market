@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "msgraph-todo",
-	"name": "Microsoft To Do",
-	"description": "Organize and track Mircosoft To Do task lists direclty within your business processes.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Microsoft To Do"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Microsoft To Do"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Organize and track Mircosoft To Do task lists direclty within your business processes."
+		},
+    {
+      "locale": "de",
+      "value": "TODO Organize and track Mircosoft To Do task lists direclty within your business processes."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/msgraph-connector",

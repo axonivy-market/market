@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "axonivy-express",
-	"name": "Axon Ivy Express",
-	"description": "Simple process app creation for business users - of course, no-code-based.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy Express"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Axon Ivy Express"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Simple process app creation for business users - of course, no-code-based."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Simple process app creation for business users - of course, no-code-based."
+    }
+  ],
 	"type": "util",
 	"platformReview": "5",
 	"sourceUrl": "https://github.com/axonivy-market/axonivy-express",

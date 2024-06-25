@@ -1,8 +1,26 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "sftp-connector",
-    "name": "SFTP",
-    "description": "An SFTP client that securely transfers files to and from a remote computer using the SFTP protocol.",
+    "names": [
+      {
+        "locale": "en",
+        "value": "SFTP"
+      },
+      {
+        "locale": "de",
+        "value": "TODO SFTP"
+      }
+    ],
+    "descriptions": [
+      {
+        "locale": "en",
+        "value": "An SFTP client that securely transfers files to and from a remote computer using the SFTP protocol."
+      },
+      {
+        "locale": "de",
+        "value": "TODO An SFTP client that securely transfers files to and from a remote computer using the SFTP protocol."
+      }
+    ],
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/sftp-connector",

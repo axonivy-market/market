@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
 	"id": "portal",
-	"name": "Axon Ivy Portal",
-	"description": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy Portal"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Axon Ivy Portal"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform."
+    },
+    {
+      "locale": "de",
+      "value": "TODO The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform."
+    }
+  ],
 	"type": "util",
 	"platformReview": "5",
 	"sourceUrl": "https://github.com/axonivy-market/portal",

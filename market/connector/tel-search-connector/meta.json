@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "tel-search-ch-connector",
-	"name": "Swiss phone directory",
-	"description": "Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Swiss phone directory"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Swiss phone directory"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/tel-search-ch-connector",

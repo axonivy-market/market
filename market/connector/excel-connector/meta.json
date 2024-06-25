@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "excel-connector",
-	"name": "Microsoft Excel",
-	"description": "Read and write Microsoft Excel files within your process automation projects.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Microsoft Excel"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Microsoft Excel"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Read and write Microsoft Excel files within your process automation projects."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Read and write Microsoft Excel files within your process automation projects."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/excel-connector",

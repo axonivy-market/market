@@ -1,8 +1,26 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "salesforce-connector",
-    "name": "Salesforce",
-    "description": "Use this REST API connector to access and modify Salesforce resources.",
+    "names": [
+      {
+        "locale": "en",
+        "value": "Salesforce"
+      },
+      {
+        "locale": "de",
+        "value": "TODO Salesforce"
+      }
+    ],
+    "descriptions": [
+      {
+        "locale": "en",
+        "value": "Use this REST API connector to access and modify Salesforce resources."
+          },
+      {
+        "locale": "de",
+        "value": "TODO Use this REST API connector to access and modify Salesforce resources."
+      }
+    ],
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/salesforce-connector",

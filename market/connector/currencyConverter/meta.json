@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "currencyConverter",
-	"name": "Currency Converter",
-	"description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Currency Converter"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Currency Converter"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/currency-converter-connector",

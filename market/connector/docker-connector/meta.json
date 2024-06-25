@@ -1,8 +1,26 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "docker-connector",
-    "name": "Docker",
-    "description": "Create, start, stop, remove Docker containers directly from your business processes.",
+    "names": [
+      {
+        "locale": "en",
+        "value": "Docker"
+      },
+      {
+        "locale": "de",
+        "value": "TODO Docker"
+      }
+    ],
+    "descriptions": [
+      {
+        "locale": "en",
+        "value": "Create, start, stop, remove Docker containers directly from your business processes."
+      },
+      {
+        "locale": "de",
+        "value": "TODO Create, start, stop, remove Docker containers directly from your business processes."
+      }
+    ],
     "type": "connector",
     "platformReview": "4.5",
     "sourceUrl": "https://github.com/axonivy-market/docker-connector",

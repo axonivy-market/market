@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "excel-importer",
-	"name": "Excel dialog importer",
-	"description": "Turns your Excel sheets into a full featured web application in seconds.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Excel dialog importer"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Excel dialog importer"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Turns your Excel sheets into a full featured web application in seconds."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Turns your Excel sheets into a full featured web application in seconds."
+    }
+  ],
 	"type": "util",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/excel-importer",

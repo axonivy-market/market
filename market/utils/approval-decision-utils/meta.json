@@ -1,8 +1,26 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "approval-decision-utils",
-  "name": "Approval Decision Utils",
-  "description": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Approval Decision Utils"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Approval Decision Utils"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements."
+    }
+  ],
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/approval-decision-utils",

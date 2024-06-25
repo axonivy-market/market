@@ -2,8 +2,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "demos-app",
-	"name": "Demos Application",
-	"description": "Demos Application",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Demos Application"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Demos Application"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Demos Application"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Demos Application"
+    }
+  ],
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/demo-projects",

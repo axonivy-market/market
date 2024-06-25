@@ -1,8 +1,26 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "process-analyzer",
-  "name": "Process Analyzer",
-  "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Process Analyzer"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Process Analyzer"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Use this tool to analyze your process model and calculate the expected case completion time."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Use this tool to analyze your process model and calculate the expected case completion time."
+    }
+  ],
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/advanced-process-analyzer",

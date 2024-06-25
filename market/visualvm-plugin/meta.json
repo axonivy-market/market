@@ -1,11 +1,29 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "visualvm-plugin",
-	"name": "VisualVM Plugin",
-	"description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "VisualVM Plugin"
+    },
+    {
+      "locale": "de",
+      "value": "TODO VisualVM Plugin"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine."
+    },
+    {
+      "locale": "de",
+      "value": "TODO VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine."
+    }
+  ],
 	"type": "util",
 	"sourceUrl": "https://github.com/axonivy-market/visualvm-plugin",
-    "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
+  "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
 	"tags": ["monitoring"],

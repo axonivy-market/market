@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "express-importer",
-	"name": "Express importer",
-	"description": "Integrates your No-Code initiatives into your Designer project.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Express importer"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Express importer"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Integrates your No-Code initiatives into your Designer project."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Integrates your No-Code initiatives into your Designer project."
+    }
+  ],
 	"type": "util",
 	"platformReview": "3.5",
 	"sourceUrl": "https://github.com/axonivy-market/express-importer",

@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "mailstore-connector",
-	"name": "Mailstore",
-	"description": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Mailstore"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Mailstore"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption."
+		},
+    {
+      "locale": "de",
+      "value": "TODO Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/mailstore-connector",

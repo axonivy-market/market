@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "email-encryption",
-	"name": "Email encryption",
-	"description": "Send encrypted emails directly from a business process using OpenSSL.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Email encryption"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Email encryption"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Send encrypted emails directly from a business process using OpenSSL."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Send encrypted emails directly from a business process using OpenSSL."
+    }
+  ],
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/email-encryption",

@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "custom-mail-demo",
-	"name": "Custom Mail Feature",
-	"description": "Customize Axon Ivy standard mail notification using your own processes.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Custom Mail Feature"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Custom Mail Feature"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Customize Axon Ivy standard mail notification using your own processes."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Customize Axon Ivy standard mail notification using your own processes."
+    }
+  ],
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/custom-mail-demo",

@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "connectivity-demo",
-	"name": "Connectivity Features",
-	"description": "Explore various 3rd party integrations based on web service technologies.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Connectivity Features"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Connectivity Features"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Explore various 3rd party integrations based on web service technologies."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Explore various 3rd party integrations based on web service technologies."
+    }
+  ],
 	"type": "solution",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/demo-projects",

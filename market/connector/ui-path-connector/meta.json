@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "ui-path-connector",
-	"name": "UiPath",
-	"description": "Enhance your business processes by integrating legacy systems with RPA robots.",
+	"names": [
+		{
+			"locale": "en",
+			"value": "UiPath"
+		},
+		{
+			"locale": "de",
+			"value": "TODO UiPath"
+		}
+	],
+	"descriptions": [
+		{
+			"locale": "en",
+			"value": "Enhance your business processes by integrating legacy systems with RPA robots."
+		},
+		{
+			"locale": "de",
+			"value": "TODO Enhance your business processes by integrating legacy systems with RPA robots."
+		}
+	],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/ui-path-connector",

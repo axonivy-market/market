@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "intellix-connector",
-	"name": "Axon Ivy IDP",
-	"description": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy IDP"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Axon Ivy IDP"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/intellix-connector",

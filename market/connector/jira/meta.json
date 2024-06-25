@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "jira-connector",
-	"name": "Atlassian Jira",
-	"description": "Atlassian's Jira connector lets you track issues directly from the Axon Ivy platform.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Atlassian Jira"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Atlassian Jira"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Atlassian's Jira connector lets you track issues directly from the Axon Ivy platform."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Atlassian's Jira connector lets you track issues directly from the Axon Ivy platform."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 

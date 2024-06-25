@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "docusign-connector",
-	"name": "Docusign eSignature",
-	"description": "Make your business processes faster, simpler and more cost-efficient with electronic agreements.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Docusign eSignature"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Docusign eSignature"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Make your business processes faster, simpler and more cost-efficient with electronic agreements."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Make your business processes faster, simpler and more cost-efficient with electronic agreements."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/docusign-connector",

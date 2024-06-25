@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "dmn-decision-table",
-	"name": "DMN Decision Table",
-	"description": "Control your business processes with standardised DMN decision tables.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "DMN Decision Table"
+    },
+    {
+      "locale": "de",
+      "value": "TODO DMN Decision Table"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Control your business processes with standardised DMN decision tables."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Control your business processes with standardised DMN decision tables."
+    }
+  ],
 	"type": "util",
 	"platformReview": "4",
 	"sourceUrl": "https://github.com/axonivy-market/dmn-decision-table",

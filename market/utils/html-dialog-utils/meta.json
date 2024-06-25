@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "html-dialog-utils",
-	"name": "HTML Dialog Utils",
-	"description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "HTML Dialog Utils"
+    },
+    {
+      "locale": "de",
+      "value": "TODO HTML Dialog Utils"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Collection of useful utilities to help you by the HTML Dialog implementation process."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Collection of useful utilities to help you by the HTML Dialog implementation process."
+    }
+  ],
 	"type": "util",
 	"platformReview": "4",
 	"sourceUrl": "https://github.com/axonivy-market/html-dialog-utils",

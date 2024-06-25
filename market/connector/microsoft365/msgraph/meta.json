@@ -1,8 +1,26 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "msgraph",
-	"name": "Microsoft 365",
-	"description": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Microsoft 365"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Microsoft 365"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365."
+		},
+    {
+      "locale": "de",
+      "value": "TODO The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365."
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
