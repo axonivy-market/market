@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO DeepL"
+      "value": "DeepL"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Easily integrate and manage real-time language translation services within your business processes."
+      "value": "Einfache Integration und Verwaltung von Echtzeit-Übersetzungsdiensten in Deinen Geschäftsprozessen."
     }
   ],
   "type": "connector",
