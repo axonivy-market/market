@@ -2,8 +2,26 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "employee-onboarding",
 	"version": "1.0",
-	"name": "Employee Onboarding",
-	"description": "This solution helps HR managers to accelerate time-to-market for employee onboarding.",
+	"names": [
+    {
+      "locale": "en",
+      "value": "Employee Onboarding"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Employee Onboarding"
+    }
+  ],
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This solution helps HR managers to accelerate time-to-market for employee onboarding."
+    },
+    {
+      "locale": "de",
+      "value": "TODO This solution helps HR managers to accelerate time-to-market for employee onboarding."
+    }
+  ],
 	"type": "solution",
 	"cost": "paid",
 	"language": "EN",
