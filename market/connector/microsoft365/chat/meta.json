@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft Teams"
+      "value": "Microsoft Teams"
     }
   ],
   "descriptions": [
@@ -19,7 +19,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Get notifications of new task asignments directly within Microsoft Teams."
+      "value": "Empfange Benachrichtigungen über neue Aufgaben direkt in Microsoft Teams."
     }
   ],
 	"type": "connector",
