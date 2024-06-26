@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Mailstore"
+      "value": "MailStore"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption."
+      "value": "MailStore - der Standard für rechtssichere E-Mail-Archivierung kann mühelos in Axon Ivy Prozesse integriert werden."
     }
   ],
 	"type": "connector",
