@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Google Translate"
+      "value": "Google Translate"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Easily integrate and manage real-time language translation services within your business processes."
+      "value": "Erleichtere die Integration und Verwaltung von Echtzeit-Übersetzungsdiensten in deine Geschäftsprozesse."
     }
   ],
   "type": "connector",
