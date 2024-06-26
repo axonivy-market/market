@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO DocFactory"
+      "value": "DocFactory"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Based on Aspose technology the DocFactory creates any type of document out of your process data."
+      "value": "DocFactory nutzt Aspose-Technologie, um aus deinen Prozessdaten beliebige Dokumente zu generieren."
     }
   ],
 	"type": "util",
