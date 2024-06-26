@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Connectivity Features"
+      "value": "Integration von Drittsystemen"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Explore various 3rd party integrations based on web service technologies."
+      "value": "Verschiedene Integrationen von Drittanbietern basierend auf Web-Service-Technologien in einer Demo zusammengefasst."
     }
   ],
 	"type": "solution",
