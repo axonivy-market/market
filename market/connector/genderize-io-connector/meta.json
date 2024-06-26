@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Genderize.io"
+      "value": "Genderize.io"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Determine the gender of a person based on their name and location."
+      "value": "Nutze Namen und Standort, um das Geschlecht einer Person zu bestimmen."
     }
   ],
 	"type": "connector",
