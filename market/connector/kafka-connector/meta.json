@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Apache Kafka"
+      "value": "Apache Kafka"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO API for facilitating distributed event streaming to automate real-time process workflows."
+      "value": "Diese API erleichtert das verteilte Event-Streaming bei der Automatisierung von Echtzeit-Prozess-Workflows."
     }
   ],
 	"type": "connector",
