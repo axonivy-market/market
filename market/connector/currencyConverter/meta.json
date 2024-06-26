@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Currency Converter"
+      "value": "Währungsrechner"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates."
+      "value": "Frankfurter ist eine einfache und kompakte Open-Source-API für aktuelle und historische Devisenkurse (Forex)."
     }
   ],
 	"type": "connector",
