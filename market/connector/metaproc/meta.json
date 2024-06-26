@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Axon Ivy RPA"
+      "value": "Axon Ivy RPA"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly."
+      "value": "Robotic Process Automation: Vermeide manuelle Fehler. Beschleunige Abläufe. Skaliere problemlos."
     }
   ],
 	"type": "connector",
