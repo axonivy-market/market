@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft Excel"
+      "value": "Microsoft Excel"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Read and write Microsoft Excel files within your process automation projects."
+      "value": "Lesen und Schreiben von Microsoft Excel-Dateien in deinen Axon Ivy Projekten leicht gemacht."
     }
   ],
 	"type": "connector",
