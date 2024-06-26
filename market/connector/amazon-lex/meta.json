@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Amazon Lex Runtime"
+      "value": "Amazon Lex Runtime"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Amazon Lex is a AI service to build sophisticated, natural language, conversational bots (chatbots)."
+      "value": " Amazon Lex ist ein KI-Service zur Erstellung ausgeklügelter, natürlichsprachlicher Chatbots."
     }
   ],
   "type": "connector",
