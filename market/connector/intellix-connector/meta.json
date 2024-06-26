@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Axon Ivy IDP"
+      "value": "Axon Ivy IDP"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare."
+      "value": "Das Eintippen von Daten ist langsam, fehleranfällig und lässt sich nicht effizient skalieren. Nicht mit Axon Ivy IDP, unterstützt von DocuWare."
     }
   ],
 	"type": "connector",
