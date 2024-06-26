@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft Mail"
+      "value": "Microsoft Mail"
     }
   ],
   "descriptions": [
@@ -19,7 +19,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Automate message organization and processing directly within your business processes."
+      "value": "Integriere die automatisierte Nachrichtenorganisation und -verarbeitung direkt in deine Geschäftsprozesse."
     }
   ],
 	"type": "connector",
