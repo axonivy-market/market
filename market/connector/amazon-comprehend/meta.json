@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Amazon Comprehend is a AI service that uses machine learning to uncover information in unstructured data."
+      "value": "Amazon Comprehend ist ein KI-Service, der maschinelles Lernen nutzt, um aus unstrukturierten Daten wertvolle Informationen zu generieren."
     }
   ],
   "type": "connector",
