@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO DocuWare DMS"
+      "value": "DocuWare DMS"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Easily upload and manage documents securly and compliantly within business processes."
+      "value": "Gestalte das Speichern und Verwalten von Dokumenten innerhalb von Geschäftsprozessen einfach, sicher und regelkonform."
     }
   ],
 	"type": "connector",
