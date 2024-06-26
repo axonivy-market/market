@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Docusign eSignature"
+      "value": "Docusign eSignature"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Make your business processes faster, simpler and more cost-efficient with electronic agreements."
+      "value": "Gestalte deine Geschäftsprozesse schneller, einfacher und kosteneffizienter mit eSignaturen."
     }
   ],
 	"type": "connector",
