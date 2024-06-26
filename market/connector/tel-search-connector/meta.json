@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Swiss phone directory"
+      "value": "Schweizer Telefonverzeichnis"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Retrieve phone directory entries from Switzerland within your process work using the tel.search.ch API."
+      "value": "Nutze die tel.search.ch API, um Telefonbuchdaten der Schweiz direkt in deine Axon Ivy Prozesse zu integrieren."
     }
   ],
 	"type": "connector",
