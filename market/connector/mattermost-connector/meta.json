@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Mattermost"
+      "value": "Mattermost"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Seamlessly integrate real-time chat and automation with the Mattermost connector."
+      "value": "Nutze den Mattermost Connector zur nahtlosen Integration von Echtzeit-Chats in Deine Automatisierung."
     }
   ],
   "type": "connector",
