@@ -8,7 +8,7 @@
       },
       {
         "locale": "de",
-        "value": "TODO OpenWeather"
+        "value": "OpenWeather"
       }
     ],
     "descriptions": [
@@ -18,7 +18,7 @@
           },
       {
         "locale": "de",
-        "value": "TODO The OpenWeather connector provides real-time and forecast weather data for locations worldwide."
+        "value": "Mit dem OpenWeather Connector erhältst du Echtzeit- und Wettervorhersagedaten für Standorte weltweit."
       }
     ],
     "type": "connector",
