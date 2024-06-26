@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Adobe Acrobat"
+      "value": "Adobe Acrobat"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Use this connector to send, sign, track, and manage signature processes in Axon Ivy."
+      "value": "Verwende diesen Connector, um PDF Dokumente mit Axon Ivy zu senden, zu signieren, zu verfolgen und zu verwalten."
     }
   ],
   "type": "connector",
