@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft Calendar"
+      "value": "Microsoft Kalender"
     }
   ],
   "descriptions": [
@@ -19,7 +19,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Automate appointment organization and calendaring directly within your business processes."
+      "value": "Automatisiere die Organisation von Terminen und Kalenderverwaltung direkt in deinen Geschäftsabläufen."
     }
   ],
 	"type": "connector",
