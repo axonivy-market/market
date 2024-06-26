@@ -8,7 +8,7 @@
       },
       {
         "locale": "de",
-        "value": "TODO OpenAI's ChatGPT"
+        "value": "OpenAI's ChatGPT"
       }
     ],
     "descriptions": [
@@ -18,7 +18,7 @@
           },
       {
         "locale": "de",
-        "value": "TODO OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation."
+        "value": "ChatGPT von OpenAI lässt sich nahtlos in die Prozessautomatisierung von Axon Ivy integrieren."
       }
     ],
     "type": "connector",
