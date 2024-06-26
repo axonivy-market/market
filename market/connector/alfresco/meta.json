@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Alfresco ECM"
+      "value": "Alfresco ECM"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Alfresco is a platform offering ECM features for managing digital content."
+      "value": "Alfresco bietet eine Plattform mit ECM-Funktionen zur effizienten Verwaltung von Inhalten innerhalb einer Organisation."
     }
   ],
   "type": "connector",
