@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-  "id": "process-analyzer",
+  "id": "process-inspector",
   "name": "Process Inspector",
   "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
   "type": "util",
   "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/advanced-process-analyzer",
-  "statusBadgeUrl": "https://github.com/axonivy-market/advanced-process-analyzer/actions/workflows/ci.yml/badge.svg",
+  "sourceUrl": "https://github.com/axonivy-market/process-inspector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/process-inspector/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
   "tags": [
@@ -15,9 +15,9 @@
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",
-      "name": "Process Analyzer Product",
-      "groupId": "com.axonivy.utils.process.analyzer",
-      "artifactId": "process-analyzer-product",
+      "name": "Process Inspector Product",
+      "groupId": "com.axonivy.utils.process.inspector",
+      "artifactId": "process-inspector-product",
       "type": "zip"
     }
   ]
