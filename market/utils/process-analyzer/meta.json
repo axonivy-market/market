@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "process-analyzer",
-  "name": "Process Analyzer",
+  "name": "Process Inspector",
   "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
   "type": "util",
   "platformReview": "4.5",
