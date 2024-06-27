@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Axon Ivy Portal"
+      "value": "Axon Ivy Portal"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform."
+      "value": "Das Axon Ivy Portal ist dein "single-point-of-contact" für die Nutzung der Axon Ivy Plattform."
     }
   ],
 	"type": "util",
