@@ -4,10 +4,8 @@ about: Introduce a new market-produkt into the axonivy-market
 title: Onboard [name] to Axon-ivy market
 labels: ''
 assignees:
-  - ivy-rew
   - ivy-sgi
-  - andreasbalsiger
-
+    
 ---
 
 Hi, I've just created a market-product that I'd like to publish into the official axonivy-market. 
