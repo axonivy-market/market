@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Cron Job"
+      "value": "Cron Job"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Cron Job Utility handles your scheduled jobs autonomously."
+      "value": "Das Cron-Job-Utility übernimmt die automatische Verwaltung deiner zeitgesteuerten Aufgaben."
     }
   ],
 	"type": "util",
