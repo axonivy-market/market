@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Database CRUD"
+      "value": "Datenbank CRUD"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Effortless setup for managing data in database tables with CRUD operations."
+      "value": "Mühelose Konfiguration für die Datenmanipulation in Datenbanktabellen mit CRUD-Operationen."
     }
   ],
 	"type": "solution",
