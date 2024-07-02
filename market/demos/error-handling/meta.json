@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Error Handling Demos"
+      "value": "Fehlermanagement-Demos"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Errors in process automation mean leaving the happy path. Learn more about business and technical errors."
+      "value": "Fehler bei der Prozessautomatisierung bedeuten das Verlassen des "happy path". Erfahren Sie mehr über die Handhabung solcher Fehler."
     }
   ],
 	"type": "solution",
