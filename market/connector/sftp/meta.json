@@ -8,7 +8,7 @@
       },
       {
         "locale": "de",
-        "value": "TODO SFTP"
+        "value": "SFTP"
       }
     ],
     "descriptions": [
@@ -18,7 +18,7 @@
       },
       {
         "locale": "de",
-        "value": "TODO An SFTP client that securely transfers files to and from a remote computer using the SFTP protocol."
+        "value": "Ein Client, der Dateien sicher zwischen Deinem lokalen und einem Remote-Computer, mit dem SFTP-Protokoll, überträgt."
       }
     ],
     "type": "connector",
