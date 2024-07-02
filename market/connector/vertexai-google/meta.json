@@ -1,7 +1,6 @@
 {
 	"id": "vertexai-google",
-	"version": "1.0",
-	"name": "VertexAi Google",
+	"name": "VertexAI Google",
 	"description": "Chat directly with Gemini 1.5 and VertexAI Gemini 1.5 Pro by sending text and images",
 	"type": "connector",
 	"platformReview": "4.5",
@@ -9,7 +8,9 @@
 	"statusBadgeUrl": "https://github.com/axonivy-market/vertexai-google/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
-	"tags": ["connector"],
+	"tags": [
+		"connector"
+	],
 	"mavenArtifacts": [
 		{
 			"repoUrl": "https://maven.axonivy.com",
