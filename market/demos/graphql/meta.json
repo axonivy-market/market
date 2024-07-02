@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO GraphQL Demo"
+      "value": "GraphQL Demo"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
 		},
     {
       "locale": "de",
-      "value": "TODO Sample GraphQL endpoint that allows clients to query for tasks and users."
+      "value": "Demo eines GraphQL-Endpunkt, der die Abfrage von Aufgaben und Benutzern ermöglicht."
     }
   ],
 	"type": "solution",
