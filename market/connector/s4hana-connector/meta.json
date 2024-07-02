@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO SAP S/4HANA"
+      "value": "SAP S/4HANA"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
         },
     {
       "locale": "de",
-      "value": "TODO Easily connects the Axon Ivy Engine to a SAP S/4HANA database."
+      "value": "Ermöglicht eine einfache Anbindung der Axon Ivy Engine an eine SAP S/4HANA-Datenbank."
     }
   ],
   "type": "connector",
