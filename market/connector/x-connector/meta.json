@@ -2,27 +2,26 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
 	"id": "x-connector",
 	"version": "1.0",
-  "names": [
-    {
-      "locale": "en",
-      "value": "X"
-    },
-    {
-      "locale": "de",
-      "value": "X"
-    },
-
-  ],
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "The X API enables seamless message posting and interaction within the X network."
-    },
-    {
-      "locale": "de",
-      "value": "Die X API ermöglicht das Posten von Nachrichten und Interaktionen im X-Netzwerk direkt aus Ihren Geschäftsprozessen heraus."
-    }
-  ],
+        "names": [
+	    {
+	      "locale": "en",
+	      "value": "X"
+	    },
+	    {
+	      "locale": "de",
+	      "value": "X"
+	    }
+	  ],
+	  "descriptions": [
+	    {
+	      "locale": "en",
+	      "value": "The X API enables seamless message posting and interaction within the X network."
+	    },
+	    {
+	      "locale": "de",
+	      "value": "Die X API ermöglicht das Posten von Nachrichten und Interaktionen im X-Netzwerk direkt aus Ihren Geschäftsprozessen heraus."
+	    }
+	],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/x-connector",
