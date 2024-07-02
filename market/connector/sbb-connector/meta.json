@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Swiss Federal Railways"
+      "value": "Schweizer Bundesbahn"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Integrate timetables, fare details and bookings of Swiss public transport into your business processes."
+      "value": "Einbinden von Fahrplänen, Tarifdetails und Buchungen des öffentlichen Nahverkehrs der Schweiz (SBB) in deine Geschäftsprozesse"
     }
   ],
   "type": "connector",
