@@ -14,7 +14,7 @@
 
   ],
   "descriptions": [
-
+    {
       "locale": "en",
       "value": "The X API enables seamless message posting and interaction within the X network."
     },
