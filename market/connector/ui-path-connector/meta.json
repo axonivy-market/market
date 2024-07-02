@@ -8,7 +8,7 @@
 		},
 		{
 			"locale": "de",
-			"value": "TODO UiPath"
+			"value": "UiPath"
 		}
 	],
 	"descriptions": [
@@ -18,7 +18,7 @@
 		},
 		{
 			"locale": "de",
-			"value": "TODO Enhance your business processes by integrating legacy systems with RPA robots."
+			"value": "Modernisiere deine Geschäftsabläufe durch die Integration von Legacy-Systemen mit RPA-Robotern.."
 		}
 	],
 	"type": "connector",
