@@ -5,21 +5,21 @@
   "names": [
     {
       "locale": "en",
-      "value": "X (formerly Twitter)"
+      "value": "X"
     },
     {
       "locale": "de",
-      "value": "TODO X (formerly Twitter)"
-    }
+      "value": "X"
+
   ],
   "descriptions": [
-    {
+
       "locale": "en",
       "value": "The X API enables seamless message posting and interaction within the X network."
     },
     {
       "locale": "de",
-      "value": "TODO The X API enables seamless message posting and interaction within the X network."
+      "value": "Die X API ermöglicht das Posten von Nachrichten und Interaktionen im X-Netzwerk direkt aus Ihren Geschäftsprozessen heraus."
     }
   ],
 	"type": "connector",
