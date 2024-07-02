@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO UPS"
+      "value": "UPS"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Integrates UPS services (tracking, rates, address validation) into workflows via a REST API."
+      "value": "Integriert UPS-Services (Sendungsverfolgung, Tarife, Adressvalidierung) über eine REST-API direkt in eure Abläufe."
     }
   ],
   "type": "connector",
