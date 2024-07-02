@@ -8,7 +8,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO SRF Weatherforecast"
+      "value": "SRF Wettervorhersage"
     }
   ],
   "descriptions": [
@@ -18,7 +18,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO The SRF Weather REST API provides forecasts for over 100,000 locations in Switzerland."
+      "value": "Die SRF Wetter REST API stellt Wetterprognosen für mehr als 100.000 Orte in der Schweiz bereit."
     }
   ],
   "type": "connector",
