@@ -124,7 +124,7 @@
                 </execution>
               </executions>
               <configuration>
-                <schemaFilePath>${project.build.directory}/schema/market/10.0.1</schemaFilePath>
+                <schemaFilePath>${project.build.directory}/schema/market/10.0.2</schemaFilePath>
                 <schemaFileName>meta.json</schemaFileName>
                 <classNames>com.axonivy.market.MarketMetaSchema</classNames>
                 <schemaVersion>DRAFT_2019_09</schemaVersion>
