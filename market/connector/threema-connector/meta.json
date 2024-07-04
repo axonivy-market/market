@@ -1,6 +1,7 @@
 {
     "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
     "id": "threema-connector",
+    "name": "Threema",
     "names": [
       {
         "locale": "en",
@@ -11,6 +12,7 @@
         "value": "Threema"
       }
     ],
+    "description": "Use the Threema API to send secure messages directly from your business processes.",
     "descriptions": [
       {
         "locale": "en",

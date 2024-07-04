@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "db-demos",
+  "name": "Database CRUD",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Datenbank CRUD"
     }
   ],
+  "description": "Effortless setup for managing data in database tables with CRUD operations.",
   "descriptions": [
     {
       "locale": "en",

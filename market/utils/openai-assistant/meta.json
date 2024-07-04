@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "openai-assistant",
+  "name": "ChatGPT Assistant",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO ChatGPT Assistant"
     }
   ],
+  "description": "The ChatGPT assistant explains, maintains and extends code for you",
   "descriptions": [
     {
       "locale": "en",

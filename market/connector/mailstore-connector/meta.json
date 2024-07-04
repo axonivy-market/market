@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "mailstore-connector",
+  "name": "Mailstore",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "MailStore"
     }
   ],
+  "description": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption.",
   "descriptions": [
     {
       "locale": "en",

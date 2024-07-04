@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "deepl-connector",
+  "name": "DeepL",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "DeepL"
     }
   ],
+  "description": "Easily integrate and manage real-time language translation services within your business processes.",
   "descriptions": [
     {
       "locale": "en",

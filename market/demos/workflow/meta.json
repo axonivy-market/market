@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "workflow-demo",
+  "name": "Workflow Demos",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Workflow Demos"
     }
   ],
+  "description": "Learn more about human workflows, Adaptive Case Management (ACM) and Business Data usage",
   "descriptions": [
     {
       "locale": "en",

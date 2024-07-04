@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "amazon-comprehend",
+  "name": "Amazon Comprehend",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO Amazon Comprehend"
     }
   ],
+  "description": "Amazon Comprehend is a AI service that uses machine learning to uncover information in unstructured data.",
   "descriptions": [
     {
       "locale": "en",

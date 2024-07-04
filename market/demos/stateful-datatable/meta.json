@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "stateful-datatable-demo",
+  "name": "Stateful Datatable Demo",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO Stateful Datatable Demo"
     }
   ],
+  "description": "A utility Dialog to implement a stateful-datatable with Ivy and Primefaces.",
   "descriptions": [
     {
       "locale": "en",

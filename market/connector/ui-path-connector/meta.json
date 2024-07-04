@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "ui-path-connector",
+	"name": "UiPath",
 	"names": [
 		{
 			"locale": "en",
@@ -11,6 +12,7 @@
 			"value": "UiPath"
 		}
 	],
+	"description": "Enhance your business processes by integrating legacy systems with RPA robots.",
 	"descriptions": [
 		{
 			"locale": "en",

@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "custom-mail-demo",
+  "name": "Custom Mail Feature",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Standard Email"
     }
   ],
+  "description": "Customize Axon Ivy standard mail notification using your own processes.",
   "descriptions": [
     {
       "locale": "en",

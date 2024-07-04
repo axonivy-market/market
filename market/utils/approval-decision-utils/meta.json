@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "approval-decision-utils",
+	"name": "Approval Decision Utils",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO Approval Decision Utils"
     }
   ],
+	"description": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements.",
   "descriptions": [
     {
       "locale": "en",

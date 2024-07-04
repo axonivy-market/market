@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "metaproc-connector",
+  "name": "Axon Ivy RPA",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Axon Ivy RPA"
     }
   ],
+  "description": "Robotic Process Automation: Eliminate manual errors. Accelerate processes. Scale effortlessly.",
   "descriptions": [
     {
       "locale": "en",

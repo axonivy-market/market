@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "html-dialog-utils",
+  "name": "HTML Dialog Utils",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO HTML Dialog Utils"
     }
   ],
+  "description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
   "descriptions": [
     {
       "locale": "en",

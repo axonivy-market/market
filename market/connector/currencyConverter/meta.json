@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "currencyConverter",
+  "name": "Currency Converter",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Währungsrechner"
     }
   ],
+  "description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
   "descriptions": [
     {
       "locale": "en",

@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
   "id": "srf-weather-connector",
+  "name": "SRF Weatherforecast",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "SRF Wettervorhersage"
     }
   ],
+  "description": "The SRF Weather REST API provides forecasts for over 100,000 locations in Switzerland.",
   "descriptions": [
     {
       "locale": "en",

@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
   "id": "adobe-acrobat-connector",
+  "name": "Adobe Acrobat",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Adobe Acrobat"
     }
   ],
+  "description": "Use this connector to send, sign, track, and manage signature processes in Axon Ivy.",
   "descriptions": [
     {
       "locale": "en",

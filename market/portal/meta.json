@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
 	"id": "portal",
+	"name": "Axon Ivy Portal",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Axon Ivy Portal"
     }
   ],
+	"description": "The Axon Ivy Portal is the single point of contact for any end-user using the Axon Ivy platform.",
   "descriptions": [
     {
       "locale": "en",

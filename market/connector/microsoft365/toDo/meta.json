@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "msgraph-todo",
+  "name": "Microsoft To Do",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO Microsoft To Do"
     }
   ],
+  "description": "Organize and track Mircosoft To Do task lists direclty within your business processes.",
   "descriptions": [
     {
       "locale": "en",

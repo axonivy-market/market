@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "excel-importer",
+	"name": "Excel dialog importer",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO Excel dialog importer"
     }
   ],
+	"description": "Turns your Excel sheets into a full featured web application in seconds.",
   "descriptions": [
     {
       "locale": "en",

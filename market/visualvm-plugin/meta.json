@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "visualvm-plugin",
+	"name": "VisualVM Plugin",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "TODO VisualVM Plugin"
     }
   ],
+	"description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
   "descriptions": [
     {
       "locale": "en",

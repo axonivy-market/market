@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "genderize-io-connector",
+  "name": "Genderize.io",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Genderize.io"
     }
   ],
+  "description": "Determine the gender of a person based on their name and location.",
   "descriptions": [
     {
       "locale": "en",

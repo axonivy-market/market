@@ -2,6 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "msgraph-calendar",
 	"version": "1.0",
+	"name": "Microsoft Calendar",
   "names": [
     {
       "locale": "en",
@@ -12,6 +13,7 @@
       "value": "Microsoft Kalender"
     }
   ],
+	"description": "Automate appointment organization and calendaring directly within your business processes.",
   "descriptions": [
     {
       "locale": "en",

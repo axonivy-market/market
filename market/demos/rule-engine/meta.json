@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "rule-engine-demo",
+  "name": "Rule Engine Demos",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Rule Engine Demos"
     }
   ],
+  "description": "The separation of process logic and business logic accelerates time-to-market significantly.",
   "descriptions": [
     {
       "locale": "en",

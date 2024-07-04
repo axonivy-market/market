@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "cronjob",
+	"name": "Cron Job",
   "names": [
     {
       "locale": "en",
@@ -11,6 +12,7 @@
       "value": "Cron Job"
     }
   ],
+	"description": "Cron Job Utility handles your scheduled jobs autonomously.",
   "descriptions": [
     {
       "locale": "en",
