@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Process Inspector"
+      "value": "Prozess Inspektor"
     }
   ],
   "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Use this tool to analyze your process model and calculate the expected case completion time."
+      "value": "Benutze dieses Tool, um dein Prozessmodell zu inspizieren und die erwartete Bearbeitungszeit vorherzusagen."
     }
   ],
   "type": "util",
