@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Stateful Datatable Demo"
+      "value": "Stateful Table Demo"
     }
   ],
   "description": "A utility Dialog to implement a stateful-datatable with Ivy and Primefaces.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO A utility Dialog to implement a stateful-datatable with Ivy and Primefaces."
+      "value": "Entdecke unsere Demo einer Datenbanktabelle, die die verschiedenen Zustände der Anwendung speichert und verwaltet."
     }
   ],
 	"type": "solution",
