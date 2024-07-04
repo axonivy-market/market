@@ -10,7 +10,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Employee Onboarding"
+      "value": "Mitarbeiter Onboarding"
     }
   ],
   "description": "This solution helps HR managers to accelerate time-to-market for employee onboarding.",
@@ -21,7 +21,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO This solution helps HR managers to accelerate time-to-market for employee onboarding."
+      "value": "HR-Manager können mit dieser Lösung die Time-to-Market für die Einführung neuer Mitarbeiter effektiv reduzieren."
     }
   ],
 	"type": "solution",
