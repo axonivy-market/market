@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO DMN Decision Table"
+      "value": "DMN (Decision, Modell & Notation)"
     }
   ],
 	"description": "Control your business processes with standardised DMN decision tables.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Control your business processes with standardised DMN decision tables."
+      "value": "Optimiere deine Geschäftsprozesse mit standardisierten DMN-Entscheidungstabellen."
     }
   ],
 	"type": "util",
