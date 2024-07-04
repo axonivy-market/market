@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Web Tester"
+      "value": "Web Tester"
     }
   ],
 	"description": "Easy Web-Integration tests for your process automation projects (PrimeFaces widgets + Selenium)",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Easy Web-Integration tests for your process automation projects (PrimeFaces widgets + Selenium)"
+      "value": "Einfache Web-Integrationstests für deine Prozessautomatisierungsprojekte (PrimeFaces widgets + Selenium)"
     }
   ],
 	"type": "util",
