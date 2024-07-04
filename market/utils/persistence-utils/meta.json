@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Persistence Utils"
+      "value": "Persistenz Utilities"
     }
   ],
   "description": "Set up Axon Ivy projects even faster with the Standard Persistency Library.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Set up Axon Ivy projects even faster with the Standard Persistency Library."
+      "value": "Axon Ivys Persistence Lib Utility erleichtert die Automatisierung von Prozessen durch die Einführung einer DAO-Abstraktionsebene."
     }
   ],
 	"type": "util",
