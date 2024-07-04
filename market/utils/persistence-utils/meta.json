@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
 	"id": "persistence-utils",
 	"name": "Persistence Utils",
-	"description": "Set up Axon Ivy projects even faster with the Standard Persistency Library.",
+	"description": "Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer.",
 	"type": "util",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/persistence-utils",
