@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Google Maps"
+      "value": "Google Maps"
     }
   ],
   "description": "Customize maps with your own content and images for display in business processes.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Customize maps with your own content and images for display in business processes."
+      "value": "Individualisiere Google-Maps-Karten für die Integration in Geschäftsprozesse."
     }
   ],
 	"type": "connector",
