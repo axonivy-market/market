@@ -26,7 +26,7 @@ public class MarketMetaSchema {
   public static class DisplayName {
     @NotNull
     @Size(min = 2)
-    @Examples("{'en', 'de'}")
+    @Examples("{'de', 'en'}")
     public String locale;
 
     @NotNull
@@ -41,7 +41,7 @@ public class MarketMetaSchema {
   public static class DisplayDescription {
     @NotNull
     @Size(min = 2)
-    @Examples("{'en', 'de'}")
+    @Examples("{'de', 'en'}")
     public String locale;
 
     @NotNull
