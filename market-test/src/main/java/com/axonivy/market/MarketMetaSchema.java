@@ -23,8 +23,32 @@ public class MarketMetaSchema {
   public String version;
   @NotNull @Size(min = 4, max = 24)
   public String name;
+  public static class DisplayName {
+    @NotNull
+    @Size(min = 2)
+    @Examples("{'de', 'en'}")
+    public String locale;
+
+    @NotNull
+    @Size(min = 1, max = 30)
+    public String value;
+  }
+  public List<DisplayName> names;
+
   @NotNull @Size(min = 5, max = 200)
   public String description;
+
+  public static class DisplayDescription {
+    @NotNull
+    @Size(min = 2)
+    @Examples("{'de', 'en'}")
+    public String locale;
+
+    @NotNull
+    @Size(min = 5, max = 200)
+    public String value;
+  }
+  public List<DisplayDescription> descriptions;
 
   @Size(min = 3)
   public String vendor;
