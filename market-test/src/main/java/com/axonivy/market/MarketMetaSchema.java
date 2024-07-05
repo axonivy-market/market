@@ -26,10 +26,11 @@ public class MarketMetaSchema {
   public static class DisplayName {
     @NotNull
     @Size(min = 2)
+    @Examples("{'en', 'de'}")
     public String locale;
 
     @NotNull
-    @NotNull @Size(min = 1, max = 30)
+    @Size(min = 1, max = 30)
     public String value;
   }
   public List<DisplayName> names;
@@ -40,10 +41,11 @@ public class MarketMetaSchema {
   public static class DisplayDescription {
     @NotNull
     @Size(min = 2)
+    @Examples("{'en', 'de'}")
     public String locale;
 
     @NotNull
-    @NotNull @Size(min = 5, max = 200)
+    @Size(min = 5, max = 200)
     public String value;
   }
   public List<DisplayDescription> descriptions;
