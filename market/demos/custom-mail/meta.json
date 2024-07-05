@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "custom-mail-demo",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "custom-mail-demo",
   "name": "Custom Mail Feature",
   "names": [
     {
@@ -23,19 +23,19 @@
       "value": "In dieser Demo wird gezeigt, wie die Standard-Mailbenachrichtigung von Axon Ivy an deine eigenen Prozesse angepasst wird."
     }
   ],
-	"type": "solution",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/custom-mail-demo",
-	"statusBadgeUrl": "https://github.com/axonivy-market/custom-mail-demo/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["demo"],
-	"mavenArtifacts": [
-		{
-			"name": "Custom Mail Demo Product",
-			"groupId": "com.axonivy.demo.custom.mail",
-			"artifactId": "custom-mail-demo-product",
-			"type": "zip"
-		}
-	]	
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/custom-mail-demo",
+  "statusBadgeUrl": "https://github.com/axonivy-market/custom-mail-demo/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "mavenArtifacts": [
+    {
+      "name": "Custom Mail Demo Product",
+      "groupId": "com.axonivy.demo.custom.mail",
+      "artifactId": "custom-mail-demo-product",
+      "type": "zip"
+    }
+  ]
 }

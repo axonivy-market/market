@@ -1,8 +1,7 @@
-
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "demos-app",
-	"name": "Demos Application",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "demos-app",
+  "name": "Demos Application",
   "names": [
     {
       "locale": "en",
@@ -13,7 +12,7 @@
       "value": "Demos"
     }
   ],
-	"description": "Demos Application",
+  "description": "Demos Application",
   "descriptions": [
     {
       "locale": "en",
@@ -24,27 +23,27 @@
       "value": "Demos"
     }
   ],
-	"type": "solution",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/demo-projects",
-	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"listed": false,
-	"tags": ["demo"],
-	"mavenArtifacts": [
-		{
-			"name": "Demo App Product",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "ivy-demos-app-product",
-			"type": "zip"
-		},
-		{
-			"key": "demos",
-			"name": "Demo App",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "ivy-demos-app",
-			"type": "zip"
-		}
-	]
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/demo-projects",
+  "statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "listed": false,
+  "tags": ["demo"],
+  "mavenArtifacts": [
+    {
+      "name": "Demo App Product",
+      "groupId": "com.axonivy.demo",
+      "artifactId": "ivy-demos-app-product",
+      "type": "zip"
+    },
+    {
+      "key": "demos",
+      "name": "Demo App",
+      "groupId": "com.axonivy.demo",
+      "artifactId": "ivy-demos-app",
+      "type": "zip"
+    }
+  ]
 }

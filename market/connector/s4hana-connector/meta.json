@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "s4hana-connector",
   "name": "SAP S/4HANA",
   "names": [

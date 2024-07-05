@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "mattermost-connector",
   "name": "Mattermost",
   "names": [
@@ -17,7 +17,7 @@
     {
       "locale": "en",
       "value": "Seamlessly integrate real-time chat and automation with the Mattermost connector."
-		},
+    },
     {
       "locale": "de",
       "value": "Nutze den Mattermost Connector zur nahtlosen Integration von Echtzeit-Chats in Deine Automatisierung."
@@ -40,4 +40,3 @@
     }
   ]
 }
-

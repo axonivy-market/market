@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.1/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "adobe-acrobat-connector",
   "name": "Adobe Acrobat",
   "names": [

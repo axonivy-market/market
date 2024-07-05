@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "kafka-connector",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "kafka-connector",
   "name": "Apache Kafka",
   "names": [
     {
@@ -23,19 +23,19 @@
       "value": "Diese API erleichtert das verteilte Event-Streaming bei der Automatisierung von Echtzeit-Prozess-Workflows."
     }
   ],
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/kafka-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/kafka-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["messaging"],
-	"mavenArtifacts": [
-		{
-			"name": "Kafka Connector Product",
-			"groupId": "com.axonivy.connector.kafka",
-			"artifactId": "kafka-connector-product",
-			"type": "zip"
-		}
-	]	
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/kafka-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/kafka-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["messaging"],
+  "mavenArtifacts": [
+    {
+      "name": "Kafka Connector Product",
+      "groupId": "com.axonivy.connector.kafka",
+      "artifactId": "kafka-connector-product",
+      "type": "zip"
+    }
+  ]
 }

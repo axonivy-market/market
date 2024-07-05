@@ -1,42 +1,42 @@
 {
-    "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-    "id": "openai-connector",
-    "name": "OpenAI's ChatGPT",
-    "names": [
-      {
-        "locale": "en",
-        "value": "OpenAI's ChatGPT"
-      },
-      {
-        "locale": "de",
-        "value": "OpenAI's ChatGPT"
-      }
-    ],
-    "description": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation.",
-    "descriptions": [
-      {
-        "locale": "en",
-        "value": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation."
-          },
-      {
-        "locale": "de",
-        "value": "ChatGPT von OpenAI lässt sich nahtlos in die Prozessautomatisierung von Axon Ivy integrieren."
-      }
-    ],
-    "type": "connector",
-    "platformReview": "4.5",
-    "sourceUrl": "https://github.com/axonivy-market/openai-connector",
-    "statusBadgeUrl": "https://github.com/axonivy-market/openai-connector/actions/workflows/ci.yml/badge.svg",
-    "language": "English",
-    "industry": "Cross-Industry",
-    "tags": [ "AI" ],
-    "mavenArtifacts": [
-        {
-            "repoUrl": "https://maven.axonivy.com",
-            "name": "OpenAI connector",
-            "groupId": "com.axonivy.connector.openai",
-            "artifactId": "openai-connector-product",
-            "type": "zip"
-        }
-    ]    
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "openai-connector",
+  "name": "OpenAI's ChatGPT",
+  "names": [
+    {
+      "locale": "en",
+      "value": "OpenAI's ChatGPT"
+    },
+    {
+      "locale": "de",
+      "value": "OpenAI's ChatGPT"
+    }
+  ],
+  "description": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation."
+    },
+    {
+      "locale": "de",
+      "value": "ChatGPT von OpenAI lässt sich nahtlos in die Prozessautomatisierung von Axon Ivy integrieren."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/openai-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/openai-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["AI"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "OpenAI connector",
+      "groupId": "com.axonivy.connector.openai",
+      "artifactId": "openai-connector-product",
+      "type": "zip"
+    }
+  ]
 }

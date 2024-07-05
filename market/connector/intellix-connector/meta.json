@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "intellix-connector",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "intellix-connector",
   "name": "Axon Ivy IDP",
   "names": [
     {
@@ -23,20 +23,20 @@
       "value": "Das Eintippen von Daten ist langsam, fehleranfällig und lässt sich nicht effizient skalieren. Nicht mit Axon Ivy IDP, unterstützt von DocuWare."
     }
   ],
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/intellix-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/intellix-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["office"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Intellix Connector Product",
-			"groupId": "com.axonivy.connector.intellix",
-			"artifactId": "axonivy-intellix-product",
-			"type": "zip"
-		}
-	]	
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/intellix-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/intellix-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["office"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Intellix Connector Product",
+      "groupId": "com.axonivy.connector.intellix",
+      "artifactId": "axonivy-intellix-product",
+      "type": "zip"
+    }
+  ]
 }

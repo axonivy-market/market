@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "tel-search-ch-connector",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "tel-search-ch-connector",
   "name": "Swiss phone directory",
   "names": [
     {
@@ -23,20 +23,20 @@
       "value": "Nutze die tel.search.ch API, um Telefonbuchdaten der Schweiz direkt in deine Axon Ivy Prozesse zu integrieren."
     }
   ],
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/tel-search-ch-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/tel-search-ch-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["utils"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "tel.search.ch Connector Product",
-			"groupId": "com.axonivy.connector.telsearch",
-			"artifactId": "tel-search-ch-connector-product",
-			"type": "zip"
-		}
-	]
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/tel-search-ch-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/tel-search-ch-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "tel.search.ch Connector Product",
+      "groupId": "com.axonivy.connector.telsearch",
+      "artifactId": "tel-search-ch-connector-product",
+      "type": "zip"
+    }
+  ]
 }

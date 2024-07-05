@@ -1,6 +1,6 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "google-maps-connector",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "google-maps-connector",
   "name": "Google Maps",
   "names": [
     {
@@ -23,19 +23,19 @@
       "value": "TODO Customize maps with your own content and images for display in business processes."
     }
   ],
-	"type": "connector",
-	"sourceUrl": "https://github/axonivy-market/google-maps-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/google-maps-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["location"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Google Maps Connector Product",
-			"groupId": "com.axonivy.connector.google.maps",
-			"artifactId": "google-maps-connector-product",
-			"type": "zip"
-		}
-	]
+  "type": "connector",
+  "sourceUrl": "https://github/axonivy-market/google-maps-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/google-maps-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["location"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Google Maps Connector Product",
+      "groupId": "com.axonivy.connector.google.maps",
+      "artifactId": "google-maps-connector-product",
+      "type": "zip"
+    }
+  ]
 }
