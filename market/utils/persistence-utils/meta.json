@@ -12,15 +12,15 @@
       "value": "TODO Persistence Utils"
     }
   ],
-  "description": "Set up Axon Ivy projects even faster with the Standard Persistency Library.",
+  "description": "Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Set up Axon Ivy projects even faster with the Standard Persistency Library."
+      "value": "Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer."
     },
     {
       "locale": "de",
-      "value": "TODO Set up Axon Ivy projects even faster with the Standard Persistency Library."
+      "value": "TODO Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer."
     }
   ],
 	"type": "util",
