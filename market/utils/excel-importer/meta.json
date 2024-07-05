@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Excel dialog importer"
+      "value": "Excel Import-Manager"
     }
   ],
   "description": "Turns your Excel sheets into a full featured web application in seconds.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Turns your Excel sheets into a full featured web application in seconds."
+      "value": "Verwandelt Ihre Excel-Tabellen mühelos in eine voll funktionsfähige Webanwendung."
     }
   ],
   "type": "util",

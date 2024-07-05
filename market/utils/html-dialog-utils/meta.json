@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO HTML Dialog Utils"
+      "value": "HTML Dialoge"
     }
   ],
   "description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Collection of useful utilities to help you by the HTML Dialog implementation process."
+      "value": "Tools zur Unterstützung bei der Implementierung von HTML-Dialogen."
     }
   ],
   "type": "util",

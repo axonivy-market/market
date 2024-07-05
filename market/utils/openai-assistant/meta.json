@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO ChatGPT Assistant"
+      "value": "ChatGPT Assistent"
     }
   ],
   "description": "The ChatGPT assistant explains, maintains and extends code for you",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO The ChatGPT assistant explains, maintains and extends code for you"
+      "value": "Der ChatGPT Assistent erklärt und erweitert Axon Ivy Code für Dich."
     }
   ],
   "type": "connector",

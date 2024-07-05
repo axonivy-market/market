@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Express importer"
+      "value": "Express Importer"
     }
   ],
   "description": "Integrates your No-Code initiatives into your Designer project.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Integrates your No-Code initiatives into your Designer project."
+      "value": "Integriert deine no-code Initiative in Axon Ivy Designer."
     }
   ],
   "type": "util",

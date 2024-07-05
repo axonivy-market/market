@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Persistence Utils"
+      "value": "Persistenz Utilities"
     }
   ],
   "description": "Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Axon Ivy's Persistence Utility facilitates the automation of processes by introducing a DAO abstraction layer."
+      "value": "Axon Ivys Persistence Lib Utility erleichtert die Automatisierung von Prozessen durch die Einführung einer DAO-Abstraktionsebene."
     }
   ],
   "type": "util",

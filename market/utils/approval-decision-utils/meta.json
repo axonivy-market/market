@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Approval Decision Utils"
+      "value": "Entscheiden & Genehmigen"
     }
   ],
   "description": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements.",
@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "TODO Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements."
+      "value": "Etabliere standardisierte Entscheidungsprozesse in Geschäftsabläufen, um den Anforderungen an Compliance und Transparenz gerecht zu werden."
     }
   ],
   "type": "util",
