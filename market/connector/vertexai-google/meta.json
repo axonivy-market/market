@@ -1,7 +1,28 @@
 {
+	"$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
 	"id": "vertexai-google",
 	"name": "Vertex AI Google",
+	"names": [
+    {
+      "locale": "en",
+      "value": "Vertex AI Google "
+    },
+    {
+      "locale": "de",
+      "value": "TODO Vertex AI Google"
+    }
+  ],
 	"description": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing",
+	"descriptions": [
+    {
+      "locale": "en",
+      "value": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing"
+    }
+  ],
 	"type": "connector",
 	"platformReview": "4.5",
 	"sourceUrl": "https://github.com/axonivy-market/vertexai-google",
