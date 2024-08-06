@@ -29,7 +29,7 @@
   "statusBadgeUrl": "https://github.com/axonivy-market/ldap-connector/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
-  "tags": ["utils"],
+  "tags": ["office"],
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",

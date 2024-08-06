@@ -4,10 +4,7 @@ about: Introduce a new market-produkt into the axonivy-market
 title: Onboard [name] to Axon-ivy market
 labels: ''
 assignees:
-  - ivy-rew
   - ivy-sgi
-  - andreasbalsiger
-
 ---
 
 Hi, I've just created a market-product that I'd like to publish into the official axonivy-market. 
@@ -48,5 +45,5 @@ Can you fork it and review my cool product?
 
 ## Second Pull request: Description
 
-- [ ] the product readme fits into the market landscape (Andreas Balsinger)
+- [ ] the product readme fits into the market landscape
 - [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` .
