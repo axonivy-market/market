@@ -1,8 +1,8 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "cms-editor",
   "name": "CMS Editor",
-    "names": [
+  "names": [
     {
       "locale": "en",
       "value": "CMS Editor"
@@ -13,7 +13,7 @@
     }
   ],
   "description": "This streamlined tool enhances the delivery of CMS content within Axon Ivy across multiple languages.",
-    "descriptions": [
+  "descriptions": [
     {
       "locale": "en",
       "value": "This streamlined tool enhances the delivery of CMS content within Axon Ivy across multiple languages."
