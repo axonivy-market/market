@@ -1,8 +1,28 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "process-inspector",
   "name": "Process Inspector",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Process Analyzer"
+    },
+    {
+      "locale": "de",
+      "value": "Prozess Inspektor"
+    }
+  ],
   "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Use this tool to analyze your process model and calculate the expected case completion time."
+    },
+    {
+      "locale": "de",
+      "value": "Benutze dieses Tool, um dein Prozessmodell zu inspizieren und die erwartete Bearbeitungszeit vorherzusagen."
+    }
+  ],
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/process-inspector",
@@ -22,3 +42,4 @@
     }
   ]
 }
+

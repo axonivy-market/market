@@ -1,22 +1,42 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "genderize-io-connector",
-	"name": "Genderize.io",
-	"description": "Determine the gender of a person based on their name and location.",
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/genderize-io-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/genderize-io-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["helper"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Genderize.io API Product",
-			"groupId": "com.axonivy.connector.genderize",
-			"artifactId": "genderize-io-connector-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "genderize-io-connector",
+  "name": "Genderize.io",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Genderize.io"
+    },
+    {
+      "locale": "de",
+      "value": "Genderize.io"
+    }
+  ],
+  "description": "Determine the gender of a person based on their name and location.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Determine the gender of a person based on their name and location."
+    },
+    {
+      "locale": "de",
+      "value": "Nutze Namen und Standort, um das Geschlecht einer Person zu bestimmen."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/genderize-io-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/genderize-io-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["helper"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Genderize.io API Product",
+      "groupId": "com.axonivy.connector.genderize",
+      "artifactId": "genderize-io-connector-product",
+      "type": "zip"
+    }
+  ]
 }

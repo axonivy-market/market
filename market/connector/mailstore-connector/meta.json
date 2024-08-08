@@ -1,21 +1,41 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "mailstore-connector",
-	"name": "Mailstore",
-	"description": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption.",
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/mailstore-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/mailstore-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["office", "email"],
-	"mavenArtifacts": [
-		{
-			"name": "Mailstore Connector Product",
-			"groupId": "com.axonivy.connector.mailstore",
-			"artifactId": "mailstore-connector-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "mailstore-connector",
+  "name": "Mailstore",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Mailstore"
+    },
+    {
+      "locale": "de",
+      "value": "MailStore"
+    }
+  ],
+  "description": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Enhance business processes by streamlining email management, supporting both IMAP and POP3 with robust SSL encryption."
+    },
+    {
+      "locale": "de",
+      "value": "MailStore - der Standard für rechtssichere E-Mail-Archivierung kann mühelos in Axon Ivy Prozesse integriert werden."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/mailstore-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/mailstore-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["office", "email"],
+  "mavenArtifacts": [
+    {
+      "name": "Mailstore Connector Product",
+      "groupId": "com.axonivy.connector.mailstore",
+      "artifactId": "mailstore-connector-product",
+      "type": "zip"
+    }
+  ]
 }

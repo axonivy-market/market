@@ -1,24 +1,42 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "connectivity-demo",
-	"name": "Connectivity Features",
-	"description": "Explore various 3rd party integrations based on web service technologies.",
-	"type": "solution",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/demo-projects",
-	"statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": [
-		"demo"
-	],
-	"validate": true,
-	"mavenArtifacts": [
-		{
-			"name": "Connectivity Demos Product",
-			"groupId": "com.axonivy.demo",
-			"artifactId": "connectivity-demos-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "connectivity-demo",
+  "name": "Connectivity Features",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Connectivity Features"
+    },
+    {
+      "locale": "de",
+      "value": "Integration von Drittsystemen"
+    }
+  ],
+  "description": "Explore various 3rd party integrations based on web service technologies.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Explore various 3rd party integrations based on web service technologies."
+    },
+    {
+      "locale": "de",
+      "value": "Verschiedene Integrationen von Drittanbietern basierend auf Web-Service-Technologien in einer Demo zusammengefasst."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/demo-projects",
+  "statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "validate": true,
+  "mavenArtifacts": [
+    {
+      "name": "Connectivity Demos Product",
+      "groupId": "com.axonivy.demo",
+      "artifactId": "connectivity-demos-product",
+      "type": "zip"
+    }
+  ]
 }
