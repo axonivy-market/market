@@ -46,4 +46,4 @@ Can you fork it and review my cool product?
 ## Second Pull request: Description
 
 - [ ] the product readme fits into the market landscape
-- [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` .
+- [ ] all mandatory setup steps to run the Demo are documented in the setup section of the `[myProduct]/product/Readme.md` and a German translation for the description section are provided in `[myProduct]/product/Readme_DE.md` .
