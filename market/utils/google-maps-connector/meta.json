@@ -4,7 +4,7 @@
 	"name": "Google Maps",
 	"description": "Customize maps with your own content and images for display in business processes.",
 	"type": "connector",
-	"sourceUrl": "https://github/axonivy-market/google-maps-connector",
+	"sourceUrl": "https://github.com/axonivy-market/google-maps-connector",
 	"statusBadgeUrl": "https://github.com/axonivy-market/google-maps-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
 	"industry": "Cross-Industry",
