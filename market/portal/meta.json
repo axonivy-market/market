@@ -28,6 +28,7 @@
   "sourceUrl": "https://github.com/axonivy-market/portal",
   "language": "EN/DE/FR/ES",
   "industry": "Cross-Industry",
+  "compatibility": "7.3+",
   "tags": ["workflow-ui"],
   "versionDisplay": "portal",
   "installMatcher": "best-match",
