@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Nutze den Jira Connector von Atlassian, um Jira-Tickets direkt von der Axon Ivy Plattform aus zu verfolgen."
+      "value": "Nutze den Jira Connector von Atlassian, um Jira-Tickets direkt von der Axon Ivy Plattform aus zu managen."
     }
   ],
   "type": "connector",
