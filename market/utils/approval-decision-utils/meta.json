@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "Entscheiden & Genehmigen"
+      "value": "Genehmigs-Assistent"
     }
   ],
-  "description": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements.",
+  "description": "This tool supports users in the efficient and automated management of approval processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements."
+      "value": "This tool supports users in the efficient and automated management of approval processes."
     },
     {
       "locale": "de",
-      "value": "Etabliere standardisierte Entscheidungsprozesse in Geschäftsabläufen, um den Anforderungen an Compliance und Transparenz gerecht zu werden."
+      "value": "Dieses Tool unterstützt Benutzer bei der effizienten und automatisierten Verwaltung von Genehmigungsprozessen."
     }
   ],
   "type": "util",
