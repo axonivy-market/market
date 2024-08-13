@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Amazon Comprehend ist ein KI-Service der aus unstrukturierten Daten wertvolle Informationen generiert."
+      "value": "Amazon Comprehend ist ein KI-Service, der aus unstrukturierten Daten wertvolle Informationen generiert."
     }
   ],
   "type": "connector",
