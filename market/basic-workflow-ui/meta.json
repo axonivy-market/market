@@ -5,22 +5,22 @@
   "names": [
     {
       "locale": "en",
-      "value": "Basic Workflow UI"
+      "value": "Basic Workflow GUI"
     },
     {
       "locale": "de",
-      "value": "TODO Basic Workflow UI"
+      "value": "Basic Workflow GUI"
     }
   ],
-  "description": "Small and smart workflow ui",
+  "description": "Small and smart workflow GUI",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Small and smart workflow ui"
+      "value": "Small and smart workflow GUI"
     },
     {
       "locale": "de",
-      "value": "TODO Small and smart workflow ui"
+      "value": "Kompakte GUI für einen Axon Ivy Workflow"
     }
   ],
   "type": "util",
