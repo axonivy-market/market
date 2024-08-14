@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Nutze den Mattermost Connector zur nahtlosen Integration von Echtzeit-Chats in Deine Automatisierung."
+      "value": "Nutze den Mattermost Connector zur Integration von Echtzeit-Chats in Deine Automatisierung."
     }
   ],
   "type": "connector",

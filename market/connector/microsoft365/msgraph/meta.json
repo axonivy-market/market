@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft 365"
+      "value": "Microsoft 365"
     }
   ],
-  "description": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365.",
+  "description": "The Microsoft Graph API allows for quick and straightforward integration of any Microsoft 365 product.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365."
+      "value": "The Microsoft Graph API allows for quick and straightforward integration of any Microsoft 365 product."
     },
     {
       "locale": "de",
-      "value": "TODO The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365."
+      "value": "Die Microsoft Graph API ermöglicht eine schnelle und unkomplizierte Integration von jedem Microsoft 365-Produkt."
     }
   ],
   "type": "connector",

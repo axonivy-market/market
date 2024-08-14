@@ -5,22 +5,22 @@
   "names": [
     {
       "locale": "en",
-      "value": "Master-Detail interface"
+      "value": "Master-Detail View"
     },
     {
       "locale": "de",
-      "value": "TODO Master-Detail interface"
+      "value": "Master-Detail Layout"
     }
   ],
-  "description": "Exemplary UI possibilities in Axon Ivy: Utilizing the Master-Detail pattern as a best practice.",
+  "description": "Utilizing the Master-Detail pattern as a best practice.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Exemplary UI possibilities in Axon Ivy: Utilizing the Master-Detail pattern as a best practice."
+      "value": "Utilizing the Master-Detail pattern as a best practice for developping professional UI/UX."
     },
     {
       "locale": "de",
-      "value": "TODO Exemplary UI possibilities in Axon Ivy: Utilizing the Master-Detail pattern as a best practice."
+      "value": "Best-Practise für UI/UX Entwicklungen: Master-Detail Darstellung von Listeninformationen."
     }
   ],
   "type": "solution",

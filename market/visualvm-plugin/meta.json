@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "TODO VisualVM Plugin"
+      "value": "VisualVM Plugin"
     }
   ],
-  "description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
+  "description": "VisualVM a plugin that provides a monitoring interface for the Axon Ivy Engine in version 8.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine."
+      "value": "VisualVM a plugin that provides a monitoring interface for the Axon Ivy Engine in version 8."
     },
     {
       "locale": "de",
-      "value": "TODO VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine."
+      "value": "VisualVM ein Plugin, das eine Monitoring-Schnittstelle für die Axon Ivy Engine in Version 8."
     }
   ],
   "type": "util",

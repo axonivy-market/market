@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "TODO Vertex AI Google"
+      "value": "Vertex AI Google"
     }
   ],
-  "description": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing",
-  "descriptions": [
+	"description": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing.",
+	"descriptions": [
     {
       "locale": "en",
-      "value": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing"
+      "value": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing."
     },
     {
       "locale": "de",
-      "value": "TODO Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing"
+      "value": "Vertex AI Gemini ist Googles innovatives KI-Modell für intelligente Bild- und Textverarbeitung."
     }
   ],
   "type": "connector",

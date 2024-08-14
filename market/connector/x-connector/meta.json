@@ -21,7 +21,7 @@
     },
     {
       "locale": "de",
-      "value": "Die X API ermöglicht das Posten von Nachrichten und Interaktionen im X-Netzwerk direkt aus Ihren Geschäftsprozessen heraus."
+      "value": "Die X API ermöglicht Interaktionen in diesem sozialen Neztwerk direkt aus deinen Geschäftsprozessen heraus."
     }
   ],
   "type": "connector",

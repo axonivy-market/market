@@ -12,15 +12,15 @@
       "value": "OpenAI's ChatGPT"
     }
   ],
-  "description": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation.",
+  "description": "ChatGPT from OpenAI can be integrated quickly into your process automation of Axon Ivy.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "OpenAI’s ChatGPT is a text-based, general-purpose productivity application that perfectly fits to process automation."
+      "value": "ChatGPT from OpenAI can be integrated quickly into your process automation of Axon Ivy."
     },
     {
       "locale": "de",
-      "value": "ChatGPT von OpenAI lässt sich nahtlos in die Prozessautomatisierung von Axon Ivy integrieren."
+      "value": "ChatGPT von OpenAI lässt sich fix in die Prozessautomatisierung von Axon Ivy integrieren."
     }
   ],
   "type": "connector",
