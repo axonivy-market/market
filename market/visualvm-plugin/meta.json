@@ -1,28 +1,48 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "visualvm-plugin",
-	"name": "VisualVM Plugin",
-	"description": "VisualVM is a plugin that provides a visual interface for viewing information about the Axon Ivy Engine.",
-	"type": "util",
-	"sourceUrl": "https://github.com/axonivy-market/visualvm-plugin",
-    "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["monitoring"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Visual VM Plugin Plugin",
-			"groupId": "ch.ivyteam.visualvm",
-			"artifactId": "visualvm-plugin-product",
-			"type": "zip"
-		},
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Visual VM Plugin",
-			"groupId": "ch.ivyteam.visualvm",
-			"artifactId": "visualvm-plugin",
-			"type": "nbm"			
-		}
-	]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "visualvm-plugin",
+  "name": "VisualVM Plugin",
+  "names": [
+    {
+      "locale": "en",
+      "value": "VisualVM Plugin"
+    },
+    {
+      "locale": "de",
+      "value": "VisualVM Plugin"
+    }
+  ],
+  "description": "VisualVM a plugin that provides a monitoring interface for the Axon Ivy Engine in version 8.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "VisualVM a plugin that provides a monitoring interface for the Axon Ivy Engine in version 8."
+    },
+    {
+      "locale": "de",
+      "value": "VisualVM ein Plugin, das eine Monitoring-Schnittstelle für die Axon Ivy Engine in Version 8."
+    }
+  ],
+  "type": "util",
+  "sourceUrl": "https://github.com/axonivy-market/visualvm-plugin",
+  "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["monitoring"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Visual VM Plugin Plugin",
+      "groupId": "ch.ivyteam.visualvm",
+      "artifactId": "visualvm-plugin-product",
+      "type": "zip"
+    },
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Visual VM Plugin",
+      "groupId": "ch.ivyteam.visualvm",
+      "artifactId": "visualvm-plugin",
+      "type": "nbm"
+    }
+  ]
 }
