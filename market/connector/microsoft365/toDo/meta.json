@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "TODO Microsoft To Do"
+      "value": "Microsoft To Do"
     }
   ],
-  "description": "Organize and track Mircosoft To Do task lists direclty within your business processes.",
+  "description": "Organize and track Mircosoft To Do task lists directly within your business processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Organize and track Mircosoft To Do task lists direclty within your business processes."
+      "value": "Organize and track Mircosoft To Do task lists directly within your business processes."
     },
     {
       "locale": "de",
-      "value": "TODO Organize and track Mircosoft To Do task lists direclty within your business processes."
+      "value": "Integriere Microsoft To Do mühelos mit deinen Geschäftsprozessen, um Aufgaben zentral zu steuern und nachzuverfolgen."
     }
   ],
   "type": "connector",
