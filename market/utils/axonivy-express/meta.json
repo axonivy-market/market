@@ -1,23 +1,43 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "axonivy-express",
-	"name": "Axon Ivy Express",
-	"description": "Simple process app creation for business users - of course, no-code-based.",
-	"type": "util",
-	"platformReview": "5",
-	"sourceUrl": "https://github.com/axonivy-market/axonivy-express",
-	"language": "EN/DE/FR/ES",
-	"industry": "Cross-Industry",
-	"tags": ["no-code"],
-	"versionDisplay": "axonivy-express",
-	"installMatcher": "best-match",
-	"mavenArtifacts": [
-		{
-			"key": "axonivy-express-product",
-			"name": "Axon Ivy Express Product",
-			"groupId": "com.axonivy.portal",
-			"artifactId": "axonivy-express-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "axonivy-express",
+  "name": "Axon Ivy Express",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy Express"
+    },
+    {
+      "locale": "de",
+      "value": "Axon Ivy Express"
+    }
+  ],
+  "description": "Simple process app creation for business users - of course, no-code-based.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Simple process app creation for business users - of course, no-code-based."
+    },
+    {
+      "locale": "de",
+      "value": "Unkomplizierte no-code Erstellung automatisierter Prozesse für Businessanwender."
+    }
+  ],
+  "type": "util",
+  "platformReview": "5",
+  "sourceUrl": "https://github.com/axonivy-market/axonivy-express",
+  "language": "EN/DE/FR/ES",
+  "industry": "Cross-Industry",
+  "tags": ["no-code"],
+  "versionDisplay": "axonivy-express",
+  "installMatcher": "best-match",
+  "mavenArtifacts": [
+    {
+      "key": "axonivy-express-product",
+      "name": "Axon Ivy Express Product",
+      "groupId": "com.axonivy.portal",
+      "artifactId": "axonivy-express-product",
+      "type": "zip"
+    }
+  ]
 }

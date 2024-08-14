@@ -1,8 +1,28 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "cms-editor",
   "name": "CMS Editor",
+  "names": [
+    {
+      "locale": "en",
+      "value": "CMS Editor"
+    },
+    {
+      "locale": "de",
+      "value": "CMS Editor"
+    }
+  ],
   "description": "This streamlined tool enhances the delivery of CMS content within Axon Ivy across multiple languages.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This streamlined tool enhances the delivery of CMS content within Axon Ivy across multiple languages."
+    },
+    {
+      "locale": "de",
+      "value": "Dieses effiziente Tool erleichtert die Bereitstellung von CMS-gestützten Inhalten für mehrere Sprachen."
+    }
+  ],
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/cms-editor",

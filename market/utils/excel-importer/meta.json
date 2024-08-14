@@ -1,22 +1,42 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "excel-importer",
-	"name": "Excel dialog importer",
-	"description": "Turns your Excel sheets into a full featured web application in seconds.",
-	"type": "util",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/excel-importer",
-	"statusBadgeUrl": "https://github.com/axonivy-market/excel-importer/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["low-code"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Excel Importer Product",
-			"groupId": "com.axonivy.util.excel",
-			"artifactId": "excel-importer-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "excel-importer",
+  "name": "Excel dialog importer",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Excel dialog importer"
+    },
+    {
+      "locale": "de",
+      "value": "Excel Import-Manager"
+    }
+  ],
+  "description": "Turns your Excel sheets into a full featured web application in seconds.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Turns your Excel sheets into a full featured web application in seconds."
+    },
+    {
+      "locale": "de",
+      "value": "Verwandelt Ihre Excel-Tabellen mühelos in eine voll funktionsfähige Webanwendung."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/excel-importer",
+  "statusBadgeUrl": "https://github.com/axonivy-market/excel-importer/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["low-code"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Excel Importer Product",
+      "groupId": "com.axonivy.util.excel",
+      "artifactId": "excel-importer-product",
+      "type": "zip"
+    }
+  ]
 }

@@ -1,8 +1,28 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "approval-decision-utils",
   "name": "Approval Decision Utils",
-  "description": "Standardize decision-making in business processes to meet regulatory, compliance, and transparency requirements.",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Approval Decision Utils"
+    },
+    {
+      "locale": "de",
+      "value": "Genehmigungs-Assistent"
+    }
+  ],
+  "description": "This tool supports users in the efficient and automated management of approval processes.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This tool supports users in the efficient and automated management of approval processes."
+    },
+    {
+      "locale": "de",
+      "value": "Dieses Tool unterstützt Benutzer bei der effizienten und automatisierten Verwaltung von Genehmigungsprozessen."
+    }
+  ],
   "type": "util",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/approval-decision-utils",
