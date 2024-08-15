@@ -35,7 +35,7 @@
       "repoUrl": "https://maven.axonivy.com",
       "name": "Azure Blob Connector Product",
       "groupId": "com.axonivy.connector.azure.blob",
-      "artifactId": "azure-blob-product",
+      "artifactId": "azure-blob-connector-product",
       "type": "zip"
     }
   ]
