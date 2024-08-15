@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "axure-blob-storage",
+  "name": "Azure Blob Storage",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Azure Blob Storage"
+    },
+    {
+      "locale": "de",
+      "value": "Azure Blob Storage"
+    }
+  ],
+  "description": "Introducing our new connector for Azure Blob Storage, enabling seamless integration directly from your applications.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Introducing our new connector for Azure Blob Storage, enabling seamless integration directly from your applications."
+    },
+    {
+      "locale": "de",
+      "value": "Nutze unseren neuen Konnektor für Azure Blob Storage und integriere deine gespeicherten Daten mit wenigen Klicks."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/azure-blob-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/azure-blob-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["cloud storage"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Azure Blob Connector Product",
+      "groupId": "com.axonivy.connector.azure.blob",
+      "artifactId": "azure-blob-product",
+      "type": "zip"
+    }
+  ]
+}
