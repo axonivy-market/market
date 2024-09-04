@@ -21,8 +21,8 @@ von Axon Ivy koordiniert nicht nur die internen Abläufe in den Personalabteilun
 sondern automatisiert auch Aufgaben für externe Abteilungen und Prozessverantwortliche.
 
 ### Information
--   Branche: Alle Branchen
--   Kompatible Version(en):  8.0.x, 10.0.x
+- Branche: Alle Branchen
+- Kompatible Version(en):  8.0.x, 10.0.x
 
 ## Demo
 
