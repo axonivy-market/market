@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "axure-blob-storage",
+  "id": "azure-blob-storage",
   "name": "Azure Blob Storage",
   "names": [
     {
