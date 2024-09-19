@@ -34,8 +34,8 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Skribble Product",
-      "groupId": "com.axonivy.connector.skribble",
       "artifactId": "skribble-connector-product",
+      "groupId": "com.axonivy.connector.skribble",
       "type": "zip"
     }
   ]
