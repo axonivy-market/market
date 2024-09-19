@@ -12,15 +12,15 @@
       "value": "Skribble"
     }
   ],
-  "description": "The Skribble API allows businesses and teams of any size to fully integrate the e-signing solution of Skribble with any internal systems, software or SaaS solution.",
+  "description": "This connector makes it possible to quickly and easily integrate Skribble's modern e-signing solution into AxonIvy's processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "The Skribble API allows businesses and teams of any size to fully integrate the e-signing solution of Skribble with any internal systems, software or SaaS solution."
+      "value": "This connector makes it possible to quickly and easily integrate Skribble's modern e-signing solution into AxonIvy's processes."
     },
     {
       "locale": "de",
-      "value": "TODO The Skribble API allows businesses and teams of any size to fully integrate the e-signing solution of Skribble with any internal systems, software or SaaS solution."
+      "value": "Dieser Konnektor ermöglicht es, die moderne E-Signing-Lösung von Skribble schnell und unkompliziert in die Prozesse von AxonIvy zu integrieren."
     }
   ],
   "type": "connector",
