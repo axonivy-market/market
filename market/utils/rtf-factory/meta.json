@@ -12,15 +12,15 @@
       "value": "RTF Factory"
     }
   ],
-  "description": "The RTF Factory is an easy document generator that expands document templates in rft format with process data and ivy macro functions.",
+  "description": "The RTF Factory creates RTF documents that can be quickly and easily extended with process data and ivy macro functions.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "The RTF Factory is an easy document generator that expands document templates in rft format with process data and ivy macro functions."
+      "value": "The RTF Factory creates RTF documents that can be quickly and easily extended with process data and ivy macro functions."
     },
     {
       "locale": "de",
-      "value": "The RTF Factory is an easy document generator that expands document templates in rft format with process data and ivy macro functions."
+      "value": "Die RTF Factory erstellt RTF Dokumente, die im schnell und mühelos mit Prozessdaten und ivy-Makrofunktionen erweitert werden können."
     }
   ],
   "type": "util",
