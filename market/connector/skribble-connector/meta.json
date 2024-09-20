@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "skribble-connector",
+  "name": "Skribble",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Skribble"
+    },
+    {
+      "locale": "de",
+      "value": "Skribble"
+    }
+  ],
+  "description": "This connector makes it possible to quickly and easily integrate Skribble's modern e-signing solution into AxonIvy's processes.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This connector makes it possible to quickly and easily integrate Skribble's modern e-signing solution into AxonIvy's processes."
+    },
+    {
+      "locale": "de",
+      "value": "Dieser Konnektor ermöglicht es, die moderne E-Signing-Lösung von Skribble schnell und unkompliziert in die Prozesse von AxonIvy zu integrieren."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4",
+  "sourceUrl": "https://github.com/axonivy-market/skribble-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/skribble-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["connector"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Skribble Product",
+      "artifactId": "skribble-connector-product",
+      "groupId": "com.axonivy.connector.skribble",
+      "type": "zip"
+    }
+  ]
+}
