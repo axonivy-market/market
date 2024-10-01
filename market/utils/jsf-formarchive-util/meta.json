@@ -1,26 +1,26 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "jsf-formarchive-util",
-  "name": "JSF Form Archive Utility",
+  "name": "UI Archive Utility",
   "names": [
     {
       "locale": "en",
-      "value": "JSF Form Archive Utility"
+      "value": "UI Archive Utility"
     },
     {
       "locale": "de",
-      "value": "TODO JSF Form Archive Utility"
+      "value": "UI Archiv Utility"
     }
   ],
-  "description": "With this utility you can take snapshots of your JSF UIs and thus archive in a user-friendly way which (user) inputs were made at certain points in time.",
+  "description": "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "With this utility you can take snapshots of your JSF UIs and thus archive in a user-friendly way which (user) inputs were made at certain points in time."
+      "value": "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times."
     },
     {
       "locale": "de",
-      "value": "TODO With this utility you can take snapshots of your JSF UIs and thus archive in a user-friendly way which (user) inputs were made at certain points in time."
+      "value": "Archiviere Screenshots der Benutzeroberflächen und dokumentiere so die Eingaben deiner Nutzer zu bestimmten Zeitpunkten"
     }
   ],
   "type": "util",
