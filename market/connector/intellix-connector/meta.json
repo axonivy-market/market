@@ -24,7 +24,8 @@
     }
   ],
   "vendor": "DocuWare",
-  "vendorUrl": "https://start.docuware.com/docuware-intelligent-indexing",
+  "vendorUrl": "https://start.docuware.com",
+  "vendorImage": "vendor.png",
   "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/intellix-connector",
