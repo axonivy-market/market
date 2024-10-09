@@ -23,6 +23,9 @@
       "value": "Diese API erleichtert das verteilte Event-Streaming bei der Automatisierung von Echtzeit-Prozess-Workflows."
     }
   ],
+  "vendor": "FROX AG",
+  "vendorImage": "frox.png",
+  "vendorUrl": "https://www.frox.ch",
   "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/kafka-connector",
