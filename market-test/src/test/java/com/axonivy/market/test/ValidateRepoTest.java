@@ -68,6 +68,7 @@ class ValidateRepoTest
     if (json.has("vendor")) {
       assertThat(json.has("vendorUrl")).as("if vendor is specified vendorUrl must be also specified").isTrue();
       assertThat(json.has("vendorImage")).as("if vendor is specified vendorImage must be also specified").isTrue();
+      assertThat(json.has("vendorImageDarkMode")).as("if vendor is specified vendorImageDarkMode must be also specified").isTrue();
     }
     if (json.has("vendorUrl")) {
       var vendorUrl = json.get("vendorUrl").asText();
@@ -77,6 +78,11 @@ class ValidateRepoTest
       var image = json.get("vendorImage").asText();
       var vendorImage = path.resolve(image);
       assertThat(vendorImage).exists();
+    }
+    if (json.has("vendorImageDarkMode")) {
+      var image = json.get("vendorImageDarkMode").asText();
+      var vendorImageDarkMode = path.resolve(image);
+      assertThat(vendorImageDarkMode).exists();
     }
 
     if (json.has("mavenArtifacts"))

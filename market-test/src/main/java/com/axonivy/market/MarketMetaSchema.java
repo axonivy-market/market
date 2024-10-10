@@ -56,6 +56,8 @@ public class MarketMetaSchema {
   public URI vendorUrl;
   @JsonPropertyDescription("relative path to a logo of the vendor, e.g. 'acme.png'")
   public String vendorImage;
+  @JsonPropertyDescription("relative path to a logo of the vendor dark mode, e.g. 'acme-dark-mode.png'")
+  public String vendorImageDarkMode;
 
   @Examples("https://github.com/axonivy-market/acme-connector")
   public URI sourceUrl;
