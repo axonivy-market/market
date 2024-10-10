@@ -8,6 +8,7 @@
 
 	"vendor": "FROX AG",
 	"vendorImage": "frox.png",
+	"vendorImageDarkMode": "frox-dark-mode.png",
 	"vendorUrl": "https://www.frox.ch",
 
 	"sourceUrl": "https://github.com/axonivy-market/jira-connector",

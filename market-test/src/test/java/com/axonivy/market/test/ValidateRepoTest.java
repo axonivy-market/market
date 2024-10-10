@@ -78,6 +78,11 @@ class ValidateRepoTest
       var vendorImage = path.resolve(image);
       assertThat(vendorImage).exists();
     }
+    if (json.has("vendorImageDarkMode")) {
+      var image = json.get("vendorImageDarkMode").asText();
+      var vendorImageDarkMode = path.resolve(image);
+      assertThat(vendorImageDarkMode).exists();
+    }
 
     if (json.has("mavenArtifacts"))
     {
