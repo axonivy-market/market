@@ -30,6 +30,9 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["messaging"],
+  "vendor": "FROX AG",
+  "vendorImage": "frox.png",
+  "vendorUrl": "https://www.frox.ch",
   "mavenArtifacts": [
     {
       "name": "Kafka Connector Product",
