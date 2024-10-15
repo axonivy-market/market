@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.3/meta.json",
   "id": "jira-connector",
   "name": "Atlassian Jira",
   "names": [
