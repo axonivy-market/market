@@ -1,26 +1,26 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "html-dialog-utils",
-  "name": "HTML Dialog Utils",
+  "name": "HTML Dialog Util",
   "names": [
     {
       "locale": "en",
-      "value": "HTML Dialog Utils"
+      "value": "HTML Dialog Util"
     },
     {
       "locale": "de",
-      "value": "HTML Dialog-Tools"
+      "value": "HTML Dialog-Tool"
     }
   ],
-  "description": "Collection of useful utilities to help you by the HTML Dialog implementation process.",
+  "description": "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Collection of useful utilities to help you by the HTML Dialog implementation process."
+      "value": "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only."
     },
     {
       "locale": "de",
-      "value": "Tools zur Unterstützung bei der Implementierung von HTML-Dialogen."
+      "value": "Dieses Tool kann in jedem HTML-Dialog eingesetzt werden um Teile einer UI schreibgeschützt zu gestalten."
     }
   ],
   "type": "util",
