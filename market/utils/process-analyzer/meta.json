@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "process-analyzer",
+  "name": "Process Analyzer",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Process Analyzer"
+    },
+    {
+      "locale": "de",
+      "value": "TODO Process Analyzer"
+    }
+  ],
+  "description": "Use this tool to analyze your process data and gain some deep insight about process.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Use this tool to analyze your process data and gain some deep insight about process."
+    },
+    {
+      "locale": "de",
+      "value": "TODO Use this tool to analyze your process data and gain some deep insight about process."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/process-analyzer",
+  "statusBadgeUrl": "https://github.com/axonivy-market/process-analyzer/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": [
+    "utils"
+  ],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Process Analyzer Product",
+      "groupId": "com.axonivy.utils.process.analyzer",
+      "artifactId": "process-analyzer-product",
+      "type": "zip"
+    }
+  ]
+}
+
