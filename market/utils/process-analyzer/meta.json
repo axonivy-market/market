@@ -23,7 +23,7 @@
       "value": "TODO Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes."
     }
   ],
-  "type": "util",
+  "type": "solution",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/process-analyzer",
   "statusBadgeUrl": "https://github.com/axonivy-market/process-analyzer/actions/workflows/ci.yml/badge.svg",
