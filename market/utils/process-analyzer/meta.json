@@ -12,15 +12,15 @@
       "value": "TODO Process Analyzer"
     }
   ],
-  "description": "Use this tool to analyze your process data and gain some deep insight about process.",
+  "description": "Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Use this tool to analyze your process data and gain some deep insight about process."
+      "value": "Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes."
     },
     {
       "locale": "de",
-      "value": "TODO Use this tool to analyze your process data and gain some deep insight about process."
+      "value": "TODO Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes."
     }
   ],
   "type": "util",
