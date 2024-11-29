@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "process-analyser",
+  "name": "Process Analyser",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Process Analyser"
+    },
+    {
+      "locale": "de",
+      "value": "Process Analyser"
+    }
+  ],
+  "description": "Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Analyze usage data and visualize it in AxonIvy BPMN processes to gain deeper insights into processes."
+    },
+    {
+      "locale": "de",
+      "value": "Analysiere Nutzungsdaten und visualisiere sie in AxonIvy BPMN Prozessen."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/process-analyser",
+  "statusBadgeUrl": "https://github.com/axonivy-market/process-analyser/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": [
+    "utils"
+  ],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Process Analyser Product",
+      "groupId": "com.axonivy.utils.process.analyser",
+      "artifactId": "process-analyser-product",
+      "type": "zip"
+    }
+  ]
+}
+
