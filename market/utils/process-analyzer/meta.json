@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "TODO Process Analyser"
+      "value": "Process Analyser"
     }
   ],
   "description": "Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes."
+      "value": "Analyze usage data and visualize it in AxonIvy BPMN processes to gain deeper insights into processes."
     },
     {
       "locale": "de",
-      "value": "TODO Analyze historical data and visualize statistics through diagrams to gain deeper insights into processes."
+      "value": "Analysiere Nutzungsdaten und visualisiere sie in AxonIvy BPMN Prozessen."
     }
   ],
   "type": "solution",
