@@ -25,7 +25,7 @@ across external departments and process owners.
 
 ### Information
 -   Industry: All Industries
--   Compatible Version(s):  7.0.x, 8.0.x
+-   Compatible Version(s):  8.0.x, 10.0.x
 
 ## Demo
 

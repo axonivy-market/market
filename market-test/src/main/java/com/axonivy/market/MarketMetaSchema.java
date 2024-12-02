@@ -23,8 +23,32 @@ public class MarketMetaSchema {
   public String version;
   @NotNull @Size(min = 4, max = 24)
   public String name;
+  public static class DisplayName {
+    @NotNull
+    @Size(min = 2)
+    @Examples("{'de', 'en'}")
+    public String locale;
+
+    @NotNull
+    @Size(min = 1, max = 30)
+    public String value;
+  }
+  public List<DisplayName> names;
+
   @NotNull @Size(min = 5, max = 200)
   public String description;
+
+  public static class DisplayDescription {
+    @NotNull
+    @Size(min = 2)
+    @Examples("{'de', 'en'}")
+    public String locale;
+
+    @NotNull
+    @Size(min = 5, max = 200)
+    public String value;
+  }
+  public List<DisplayDescription> descriptions;
 
   @Size(min = 3)
   public String vendor;
@@ -32,6 +56,8 @@ public class MarketMetaSchema {
   public URI vendorUrl;
   @JsonPropertyDescription("relative path to a logo of the vendor, e.g. 'acme.png'")
   public String vendorImage;
+  @JsonPropertyDescription("relative path to a logo of the vendor dark mode, e.g. 'acme-dark-mode.png'")
+  public String vendorImageDarkMode;
 
   @Examples("https://github.com/axonivy-market/acme-connector")
   public URI sourceUrl;
@@ -84,6 +110,31 @@ public class MarketMetaSchema {
     }
     public ArtifactType type;
     public boolean doc;
+
+    public static class ArchivedArtifact{
+      @NotNull @Size(min = 5)
+      @JsonPropertyDescription("""
+    		  this is the 'max version' selector. All versions which are lower than or equal the defined value, will be treated as legacy artifact.
+    		  Therefore supplying 'legacy' group-/artifact-id for download.
+    		  """)
+      public String lastVersion;
+      @NotNull @Size(min = 5)
+      public String groupId;
+      @NotNull @Size(min = 5)
+      public String artifactId;
+    }
+    
+    @JsonPropertyDescription("archived artifacts using old (legacy) group ID and artifact ID with the last version they were being used.")
+    @Examples("""
+    		"archivedArtifacts": [
+				{
+					"lastVersion": "10.0.0",
+					"groupId": "com.axonivy.connector.twitter",
+					"artifactId": "twitter-connector"
+				}
+			]
+    		""")
+    public List<ArchivedArtifact> archivedArtifacts;
   }
 
   public List<MavenArtifact> mavenArtifacts;

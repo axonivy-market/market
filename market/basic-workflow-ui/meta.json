@@ -1,20 +1,40 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "basic-workflow-ui",	
-	"name": "Basic Workflow UI",
-	"description": "Small and smart workflow ui",
-	"type": "util",
-	"sourceUrl": "https://github.com/axonivy-market/basic-workflow-ui",
-	"language": "EN/DE/FR",
-	"industry": "Cross-Industry",
-	"listed": false,
-	"tags": ["workflow-ui"],
-	"mavenArtifacts": [
-		{
-			"name": "Basic Workflow UI Product",
-			"groupId": "ch.ivyteam.ivy.project.wf",
-			"artifactId": "basic-workflow-ui-product",
-			"type": "zip"
-		}
-	]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "basic-workflow-ui",
+  "name": "Basic Workflow UI",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Basic Workflow GUI"
+    },
+    {
+      "locale": "de",
+      "value": "Basic Workflow GUI"
+    }
+  ],
+  "description": "Small and smart workflow GUI",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Small and smart workflow GUI"
+    },
+    {
+      "locale": "de",
+      "value": "Kompakte GUI für einen Axon Ivy Workflow"
+    }
+  ],
+  "type": "util",
+  "sourceUrl": "https://github.com/axonivy-market/basic-workflow-ui",
+  "language": "EN/DE/FR",
+  "industry": "Cross-Industry",
+  "listed": false,
+  "tags": ["workflow-ui"],
+  "mavenArtifacts": [
+    {
+      "name": "Basic Workflow UI Product",
+      "groupId": "ch.ivyteam.ivy.project.wf",
+      "artifactId": "basic-workflow-ui-product",
+      "type": "zip"
+    }
+  ]
 }

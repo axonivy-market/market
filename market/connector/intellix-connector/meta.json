@@ -1,22 +1,45 @@
 {
-	"$schema": "https://json-schema.axonivy.com/market/10.0.0/meta.json",
-	"id": "intellix-connector",
-	"name": "Axon Ivy IDP",
-	"description": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Axon Ivy IDP powered by DocuWare.",
-	"type": "connector",
-	"platformReview": "4.5",
-	"sourceUrl": "https://github.com/axonivy-market/intellix-connector",
-	"statusBadgeUrl": "https://github.com/axonivy-market/intellix-connector/actions/workflows/ci.yml/badge.svg",
-	"language": "English",
-	"industry": "Cross-Industry",
-	"tags": ["office"],
-	"mavenArtifacts": [
-		{
-			"repoUrl": "https://maven.axonivy.com",
-			"name": "Intellix Connector Product",
-			"groupId": "com.axonivy.connector.intellix",
-			"artifactId": "axonivy-intellix-product",
-			"type": "zip"
-		}
-	]	
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "intellix-connector",
+  "name": "Intelligent Indexing",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Intelligent Indexing"
+    },
+    {
+      "locale": "de",
+      "value": "Intelligent Indexing"
+    }
+  ],
+  "description": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Intelligent Indexing powered by DocuWare.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Keying in data is slow, error-prone, and impossible to scale efficiently. Not with Intelligent Indexing powered by DocuWare."
+    },
+    {
+      "locale": "de",
+      "value": "Das Eintippen von Daten ist langsam, fehleranfällig und lässt sich nicht effizient skalieren. Nicht mit Intelligent Indexing, unterstützt von DocuWare."
+    }
+  ],
+  "vendor": "DocuWare",
+  "vendorUrl": "https://start.docuware.com",
+  "vendorImage": "vendor.png",
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/intellix-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/intellix-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["office"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Intellix Connector Product",
+      "groupId": "com.axonivy.connector.intellix",
+      "artifactId": "axonivy-intellix-product",
+      "type": "zip"
+    }
+  ]
 }

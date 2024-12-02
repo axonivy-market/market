@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "process-inspector",
+  "name": "Process Inspector",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Process Inspector"
+    },
+    {
+      "locale": "de",
+      "value": "Prozess Inspektor"
+    }
+  ],
+  "description": "Use this tool to analyze your process model and calculate the expected case completion time.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Use this tool to analyze your process model and calculate the expected case completion time."
+    },
+    {
+      "locale": "de",
+      "value": "Axon Ivy's Prozess Inspektor ist ein Tool, mit dem du die Fertigstellung eines Cases vorhersagen kannst."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/process-inspector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/process-inspector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": [
+    "utils"
+  ],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Process Inspector Product",
+      "groupId": "com.axonivy.utils.process.inspector",
+      "artifactId": "process-inspector-product",
+      "type": "zip"
+    }
+  ]
+}
+

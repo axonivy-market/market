@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "vertexai-google",
+  "name": "Vertex AI Google",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Vertex AI Google "
+    },
+    {
+      "locale": "de",
+      "value": "Vertex AI Google"
+    }
+  ],
+	"description": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing.",
+	"descriptions": [
+    {
+      "locale": "en",
+      "value": "Vertex AI Gemini is Google's cutting-edge AI model for seamless visual and text processing."
+    },
+    {
+      "locale": "de",
+      "value": "Vertex AI Gemini ist Googles innovatives KI-Modell für intelligente Bild- und Textverarbeitung."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/vertexai-google",
+  "statusBadgeUrl": "https://github.com/axonivy-market/vertexai-google/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["connector"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "VertexAi Google Product",
+      "groupId": "com.axonivy.connector.vertexai",
+      "artifactId": "vertexai-google-product",
+      "type": "zip"
+    }
+  ]
+}
