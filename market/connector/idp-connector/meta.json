@@ -35,7 +35,7 @@
             "repoUrl": "https://maven.axonivy.com",
             "name": "IDP Connector Product",
             "groupId": "com.axonivy.connector.idp",
-            "artifactId": "idp-connector-modules",
+            "artifactId": "idp-connector-product",
             "type": "zip"
         }
     ]
