@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Benutze dieses Tool, um dein Prozessmodell zu inspizieren und die erwartete Bearbeitungszeit vorherzusagen."
+      "value": "Axon Ivy's Prozess Inspektor ist ein Tool, mit dem du die Fertigstellung eines Cases vorhersagen kannst."
     }
   ],
   "type": "util",
