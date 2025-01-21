@@ -23,13 +23,3 @@ sondern automatisiert auch Aufgaben für externe Abteilungen und Prozessverantwo
 ### Information
 - Branche: Alle Branchen
 - Kompatible Version(en):  8.0.x, 10.0.x
-
-## Demo
-
-[![Employee Onboarding](https://img.youtube.com/vi/1WpfmeKhJyY/0.jpg)](https://www.youtube.com/watch?v=1WpfmeKhJyY)
-
-![Screen 1](screen1.png "Screen 1")
-
-![Screen 2](screen2.png "Screen 2")
-
-![Screen 3](screen3.png "Screen 3")
