@@ -1,51 +1,42 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "db-utils",
-    "name" : "DB-Utils",
-    "names" : [
-        {
-            "locale" : "en",
-            "value" : "DB-Utils"
-        },
-        {
-            "locale" : "de",
-            "value" : "DB-Utils"
-        }
-    ],
-    "description" : "Axon Ivy's Database Utilities help you with daily database related development.",
-    "descriptions" : [
-        {
-            "locale" : "en",
-            "value" : "Axon Ivy's Database Utilities help you with daily database related development."
-        },
-        {
-            "locale" : "de",
-            "value" : "Axon Ivy's Database Utilities unterstützen die tägliche Arbeit im Zusammenhang mit Datenbank Entwicklung."
-        }
-    ],
-    "type" : "util",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/db-utils",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/db-utils/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "utils"
-    ],
-    "mavenArtifacts" : [
-        {
-            "repoUrl" : "https://maven.axonivy.com",
-            "name" : "Database Utils Product",
-            "groupId" : "com.axonivy.utils.db",
-            "artifactId" : "db-utils-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "db-utils",
-            "name" : "DB-Utils Demo App",
-            "groupId" : "com.axonivy.utils.db",
-            "artifactId" : "db-utils-demo-app",
-            "type" : "zip"
-        }
-    ]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "db-utils",
+  "name": "DB-Utils",
+  "names": [
+    {
+      "locale": "en",
+      "value": "DB-Utils"
+    },
+    {
+      "locale": "de",
+      "value": "DB-Utils"
+    }
+  ],
+  "description": "Axon Ivy's Database Utilities help you with daily database related development.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy's Database Utilities help you with daily database related development."
+    },
+    {
+      "locale": "de",
+      "value": "Axon Ivy's Database Utilities unterstützen die tägliche Arbeit im Zusammenhang mit Datenbank Entwicklung."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/db-utils",
+  "statusBadgeUrl": "https://github.com/axonivy-market/db-utils/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Database Utils Product",
+      "groupId": "com.axonivy.utils.db",
+      "artifactId": "db-utils-product",
+      "type": "zip"
+    }
+  ]
 }
