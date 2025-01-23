@@ -1,56 +1,65 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "x-connector",
-  "version": "1.0",
-  "name": "X   ",
-  "names": [
-    {
-      "locale": "en",
-      "value": "X   "
-    },
-    {
-      "locale": "de",
-      "value": "X   "
-    }
-  ],
-  "description": "The X API enables seamless message posting and interaction within the X network.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "The X API enables seamless message posting and interaction within the X network."
-    },
-    {
-      "locale": "de",
-      "value": "Die X API ermöglicht Interaktionen in diesem sozialen Neztwerk direkt aus deinen Geschäftsprozessen heraus."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/x-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/x-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "compatibility": "9.2+",
-  "tags": ["social"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "X Connector Product",
-      "groupId": "com.axonivy.connector.x",
-      "artifactId": "x-connector-product",
-      "type": "zip"
-    },
-    {
-      "name": "X Connector",
-      "groupId": "com.axonivy.connector.x",
-      "artifactId": "x-connector",
-      "archivedArtifacts": [
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "x-connector",
+    "version" : "1.0",
+    "name" : "X   ",
+    "names" : [
         {
-          "lastVersion": "10.0.0",
-          "groupId": "com.axonivy.connector.twitter",
-          "artifactId": "twitter-connector"
+            "locale" : "en",
+            "value" : "X   "
+        },
+        {
+            "locale" : "de",
+            "value" : "X   "
         }
-      ]
-    }
-  ]
+    ],
+    "description" : "The X API enables seamless message posting and interaction within the X network.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "The X API enables seamless message posting and interaction within the X network."
+        },
+        {
+            "locale" : "de",
+            "value" : "Die X API ermöglicht Interaktionen in diesem sozialen Neztwerk direkt aus deinen Geschäftsprozessen heraus."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/x-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/x-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "compatibility" : "9.2+",
+    "tags" : [
+        "social"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "X Connector Product",
+            "groupId" : "com.axonivy.connector.x",
+            "artifactId" : "x-connector-product",
+            "type" : "zip"
+        },
+        {
+            "name" : "X Connector",
+            "groupId" : "com.axonivy.connector.x",
+            "artifactId" : "x-connector",
+            "archivedArtifacts" : [
+                {
+                    "lastVersion" : "10.0.0",
+                    "groupId" : "com.axonivy.connector.twitter",
+                    "artifactId" : "twitter-connector"
+                }
+            ]
+        },
+        {
+            "key" : "x-connector",
+            "name" : "X    Demo App",
+            "groupId" : "com.axonivy.connector.x",
+            "artifactId" : "x-connector-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

@@ -1,43 +1,52 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "msgraph-calendar",
-  "version": "1.0",
-  "name": "Microsoft Calendar",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Microsoft Calendar"
-    },
-    {
-      "locale": "de",
-      "value": "Microsoft Kalender"
-    }
-  ],
-  "description": "Automate appointment organization and calendaring directly within your business processes.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Automate appointment organization and calendaring directly within your business processes."
-    },
-    {
-      "locale": "de",
-      "value": "Automatisiere die Organisation von Terminen und Kalenderverwaltung direkt in deinen Geschäftsabläufen."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "compatibility": "9.4+",
-  "tags": ["office"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Microsoft Calendar Product",
-      "groupId": "com.axonivy.connector.office365",
-      "artifactId": "msgraph-calendar-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "msgraph-calendar",
+    "version" : "1.0",
+    "name" : "Microsoft Calendar",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Microsoft Calendar"
+        },
+        {
+            "locale" : "de",
+            "value" : "Microsoft Kalender"
+        }
+    ],
+    "description" : "Automate appointment organization and calendaring directly within your business processes.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Automate appointment organization and calendaring directly within your business processes."
+        },
+        {
+            "locale" : "de",
+            "value" : "Automatisiere die Organisation von Terminen und Kalenderverwaltung direkt in deinen Geschäftsabläufen."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/msgraph-connector",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "compatibility" : "9.4+",
+    "tags" : [
+        "office"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Microsoft Calendar Product",
+            "groupId" : "com.axonivy.connector.office365",
+            "artifactId" : "msgraph-calendar-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "msgraph-calendar",
+            "name" : "Microsoft Calendar Demo App",
+            "groupId" : "com.axonivy.connector.office365",
+            "artifactId" : "msgraph-calendar-demo-app",
+            "type" : "zip"
+        }
+    ]
 }
