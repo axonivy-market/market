@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "docuware-connector",
-  "name": "DocuWare DMS",
-  "names": [
-    {
-      "locale": "en",
-      "value": "DocuWare DMS"
-    },
-    {
-      "locale": "de",
-      "value": "DocuWare DMS"
-    }
-  ],
-  "description": "Easily upload and manage documents securly and compliantly within business processes.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Easily upload and manage documents securly and compliantly within business processes."
-    },
-    {
-      "locale": "de",
-      "value": "Gestalte das Speichern und Verwalten von Dokumenten innerhalb von Geschäftsprozessen einfach, sicher und regelkonform."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/docuware-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/docuware-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["office"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "DocuWare Connector Product",
-      "groupId": "com.axonivy.connector.docuware",
-      "artifactId": "docuware-connector-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "docuware-connector",
+    "name" : "DocuWare DMS",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "DocuWare DMS"
+        },
+        {
+            "locale" : "de",
+            "value" : "DocuWare DMS"
+        }
+    ],
+    "description" : "Easily upload and manage documents securly and compliantly within business processes.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Easily upload and manage documents securly and compliantly within business processes."
+        },
+        {
+            "locale" : "de",
+            "value" : "Gestalte das Speichern und Verwalten von Dokumenten innerhalb von Geschäftsprozessen einfach, sicher und regelkonform."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/docuware-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/docuware-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "office"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "DocuWare Connector Product",
+            "groupId" : "com.axonivy.connector.docuware",
+            "artifactId" : "docuware-connector-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "docuware-connector",
+            "name" : "DocuWare DMS Demo App",
+            "groupId" : "com.axonivy.connector.docuware",
+            "artifactId" : "docuware-connector-demo-app",
+            "type" : "zip"
+        }
+    ]
 }
