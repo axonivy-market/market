@@ -42,9 +42,9 @@
         },
         {
             "key" : "aspose-barcode-demo",
-            "name" : "Aspose.BarCode Demo Demo App",
+            "name" : "Aspose.BarCode  Demo App",
             "groupId" : "doc-factory-modules",
-            "artifactId" : "aspose-barcode-demo-demo-app",
+            "artifactId" : "aspose-barcode-demo-app",
             "type" : "zip"
         }
     ]
