@@ -9,7 +9,7 @@
         },
         {
             "locale" : "de",
-            "value" : "Stripe"
+            "value" : "TODO Stripe"
         }
     ],
     "description" : "Stripe is a comprehensive payment processing platform that enables businesses to accept payments online and in-person. It provides a seamless API for integrating various payment methods, including credit/debit cards, digital wallets, bank transfers, and more.",
@@ -20,7 +20,7 @@
         },
         {
             "locale" : "de",
-            "value" : "Stripe is a comprehensive payment processing platform that enables businesses to accept payments online and in-person. It provides a seamless API for integrating various payment methods, including credit/debit cards, digital wallets, bank transfers, and more."
+            "value" : "TODO Stripe is a comprehensive payment processing platform that enables businesses to accept payments online and in-person. It provides a seamless API for integrating various payment methods, including credit/debit cards, digital wallets, bank transfers, and more."
         }
     ],
     "type" : "connector",
