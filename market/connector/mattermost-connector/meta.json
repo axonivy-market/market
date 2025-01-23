@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "mattermost-connector",
-  "name": "Mattermost",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Mattermost"
-    },
-    {
-      "locale": "de",
-      "value": "Mattermost"
-    }
-  ],
-  "description": "Seamlessly integrate real-time chat and automation with the Mattermost connector.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Seamlessly integrate real-time chat and automation with the Mattermost connector."
-    },
-    {
-      "locale": "de",
-      "value": "Nutze den Mattermost Connector zur Integration von Echtzeit-Chats in Deine Automatisierung."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4",
-  "sourceUrl": "https://github.com/axonivy-market/mattermost-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/mattermost-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["connector"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Mattermost Connector Product",
-      "groupId": "com.axonivy.connector.mattermost",
-      "artifactId": "mattermost-connector-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "mattermost-connector",
+    "name" : "Mattermost",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Mattermost"
+        },
+        {
+            "locale" : "de",
+            "value" : "Mattermost"
+        }
+    ],
+    "description" : "Seamlessly integrate real-time chat and automation with the Mattermost connector.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Seamlessly integrate real-time chat and automation with the Mattermost connector."
+        },
+        {
+            "locale" : "de",
+            "value" : "Nutze den Mattermost Connector zur Integration von Echtzeit-Chats in Deine Automatisierung."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4",
+    "sourceUrl" : "https://github.com/axonivy-market/mattermost-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/mattermost-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "connector"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Mattermost Connector Product",
+            "groupId" : "com.axonivy.connector.mattermost",
+            "artifactId" : "mattermost-connector-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "mattermost-connector",
+            "name" : "Mattermost Demo App",
+            "groupId" : "com.axonivy.connector.mattermost",
+            "artifactId" : "mattermost-connector-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

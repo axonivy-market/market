@@ -1,43 +1,52 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "msgraph-chat",
-  "version": "1.0",
-  "name": "Microsoft Teams",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Microsoft Teams"
-    },
-    {
-      "locale": "de",
-      "value": "Microsoft Teams"
-    }
-  ],
-  "description": "Get notifications of new task asignments directly within Microsoft Teams.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Get notifications of new task asignments directly within Microsoft Teams."
-    },
-    {
-      "locale": "de",
-      "value": "Empfange Benachrichtigungen über neue Aufgaben direkt in Microsoft Teams."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "compatibility": "10.0+",
-  "tags": ["office"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Microsoft Chat Product",
-      "groupId": "com.axonivy.connector.office365",
-      "artifactId": "msgraph-teams-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "msgraph-chat",
+    "version" : "1.0",
+    "name" : "Microsoft Teams",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Microsoft Teams"
+        },
+        {
+            "locale" : "de",
+            "value" : "Microsoft Teams"
+        }
+    ],
+    "description" : "Get notifications of new task asignments directly within Microsoft Teams.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Get notifications of new task asignments directly within Microsoft Teams."
+        },
+        {
+            "locale" : "de",
+            "value" : "Empfange Benachrichtigungen über neue Aufgaben direkt in Microsoft Teams."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/msgraph-connector",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "compatibility" : "10.0+",
+    "tags" : [
+        "office"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Microsoft Chat Product",
+            "groupId" : "com.axonivy.connector.office365",
+            "artifactId" : "msgraph-teams-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "msgraph-chat",
+            "name" : "Microsoft Teams Demo App",
+            "groupId" : "com.axonivy.connector.office365",
+            "artifactId" : "msgraph-chat-demo-app",
+            "type" : "zip"
+        }
+    ]
 }
