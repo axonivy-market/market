@@ -42,9 +42,9 @@
         },
         {
             "key" : "aspose-email-demo",
-            "name" : "Aspose.Email Demo Demo App",
+            "name" : "Aspose.Email  Demo App",
             "groupId" : "doc-factory-modules",
-            "artifactId" : "aspose-email-demo-demo-app",
+            "artifactId" : "aspose-email-demo-app",
             "type" : "zip"
         }
     ]
