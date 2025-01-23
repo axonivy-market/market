@@ -1,51 +1,42 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "open-weather-connector",
-    "name" : "OpenWeather",
-    "names" : [
-        {
-            "locale" : "en",
-            "value" : "OpenWeather"
-        },
-        {
-            "locale" : "de",
-            "value" : "OpenWeather"
-        }
-    ],
-    "description" : "The OpenWeather connector provides real-time and forecast weather data for locations worldwide.",
-    "descriptions" : [
-        {
-            "locale" : "en",
-            "value" : "The OpenWeather connector provides real-time and forecast weather data for locations worldwide."
-        },
-        {
-            "locale" : "de",
-            "value" : "Mit dem OpenWeather Connector erhältst du Echtzeit- und Wettervorhersagedaten für Standorte weltweit."
-        }
-    ],
-    "type" : "connector",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/open-weather-connector",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/open-weather-connector/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "Weather"
-    ],
-    "mavenArtifacts" : [
-        {
-            "repoUrl" : "https://maven.axonivy.com",
-            "name" : "OpenWeather Connector",
-            "groupId" : "com.axonivy.connector.openweather",
-            "artifactId" : "open-weather-connector-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "open-weather-connector",
-            "name" : "OpenWeather Demo App",
-            "groupId" : "com.axonivy.connector.openweather",
-            "artifactId" : "open-weather-connector-demo-app",
-            "type" : "zip"
-        }
-    ]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "open-weather-connector",
+  "name": "OpenWeather",
+  "names": [
+    {
+      "locale": "en",
+      "value": "OpenWeather"
+    },
+    {
+      "locale": "de",
+      "value": "OpenWeather"
+    }
+  ],
+  "description": "The OpenWeather connector provides real-time and forecast weather data for locations worldwide.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "The OpenWeather connector provides real-time and forecast weather data for locations worldwide."
+    },
+    {
+      "locale": "de",
+      "value": "Mit dem OpenWeather Connector erhältst du Echtzeit- und Wettervorhersagedaten für Standorte weltweit."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/open-weather-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/open-weather-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["Weather"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "OpenWeather Connector",
+      "groupId": "com.axonivy.connector.openweather",
+      "artifactId": "open-weather-connector-product",
+      "type": "zip"
+    }
+  ]
 }

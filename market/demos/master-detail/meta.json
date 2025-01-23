@@ -1,50 +1,41 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "master-detail-demo",
-    "name" : "Master-Detail interface",
-    "names" : [
-        {
-            "locale" : "en",
-            "value" : "Master-Detail View"
-        },
-        {
-            "locale" : "de",
-            "value" : "Master-Detail Layout"
-        }
-    ],
-    "description" : "Utilizing the Master-Detail pattern as a best practice.",
-    "descriptions" : [
-        {
-            "locale" : "en",
-            "value" : "Utilizing the Master-Detail pattern as a best practice for developping professional UI/UX."
-        },
-        {
-            "locale" : "de",
-            "value" : "Best-Practise für UI/UX Entwicklungen: Master-Detail Darstellung von Listeninformationen."
-        }
-    ],
-    "type" : "solution",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/master-detail",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/master-detail/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "demo"
-    ],
-    "mavenArtifacts" : [
-        {
-            "name" : "Master Detail",
-            "groupId" : "com.axonivy.demo.masterdetail",
-            "artifactId" : "master-detail-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "master-detail-demo",
-            "name" : "Master-Detail interface Demo App",
-            "groupId" : "com.axonivy.demo.masterdetail",
-            "artifactId" : "master-detail-demo-app",
-            "type" : "zip"
-        }
-    ]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "master-detail-demo",
+  "name": "Master-Detail interface",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Master-Detail View"
+    },
+    {
+      "locale": "de",
+      "value": "Master-Detail Layout"
+    }
+  ],
+  "description": "Utilizing the Master-Detail pattern as a best practice.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Utilizing the Master-Detail pattern as a best practice for developping professional UI/UX."
+    },
+    {
+      "locale": "de",
+      "value": "Best-Practise für UI/UX Entwicklungen: Master-Detail Darstellung von Listeninformationen."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/master-detail",
+  "statusBadgeUrl": "https://github.com/axonivy-market/master-detail/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "mavenArtifacts": [
+    {
+      "name": "Master Detail",
+      "groupId": "com.axonivy.demo.masterdetail",
+      "artifactId": "master-detail-product",
+      "type": "zip"
+    }
+  ]
 }

@@ -1,51 +1,42 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "idp-connector",
-    "name" : "Axon Ivy IDP",
-    "names" : [
+    "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id": "idp-connector",
+    "name": "Axon Ivy IDP",
+    "names": [
         {
-            "locale" : "en",
-            "value" : "Axon Ivy IDP"
+            "locale": "en",
+            "value": "Axon Ivy IDP"
         },
         {
-            "locale" : "de",
-            "value" : "Axon Ivy IDP"
+            "locale": "de",
+            "value": "Axon Ivy IDP"
         }
     ],
-    "description" : "Axon Ivy IDP is an Intelligent Document Processing solution, transforming document-intensive processes into streamlined, efficient workflows.",
-    "descriptions" : [
+    "description": "Axon Ivy IDP is an Intelligent Document Processing solution, transforming document-intensive processes into streamlined, efficient workflows.",
+    "descriptions": [
         {
-            "locale" : "en",
-            "value" : "Axon Ivy IDP is an Intelligent Document Processing solution, transforming document-intensive processes into streamlined, efficient workflows."
+            "locale": "en",
+            "value": "Axon Ivy IDP is an Intelligent Document Processing solution, transforming document-intensive processes into streamlined, efficient workflows."
         },
         {
-            "locale" : "de",
-            "value" : "Eine umfassende Lösung für intelligente Dokumentenverarbeitung, die dokumentenintensive Prozesse in effiziente Workflows verwandelt."
+            "locale": "de",
+            "value": "Eine umfassende Lösung für intelligente Dokumentenverarbeitung, die dokumentenintensive Prozesse in effiziente Workflows verwandelt."
         }
     ],
-    "type" : "connector",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/idp-connector",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/idp-connector/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "AI"
-    ],
-    "mavenArtifacts" : [
+    "type": "connector",
+    "platformReview": "4.5",
+    "sourceUrl": "https://github.com/axonivy-market/idp-connector",
+    "statusBadgeUrl": "https://github.com/axonivy-market/idp-connector/actions/workflows/ci.yml/badge.svg",
+    "language": "English",
+    "industry": "Cross-Industry",
+    "tags": ["AI"],
+    "mavenArtifacts": [
         {
-            "repoUrl" : "https://maven.axonivy.com",
-            "name" : "IDP Connector Product",
-            "groupId" : "com.axonivy.connector.idp",
-            "artifactId" : "idp-connector-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "idp-connector",
-            "name" : "Axon Ivy IDP Demo App",
-            "groupId" : "com.axonivy.connector.idp",
-            "artifactId" : "idp-connector-demo-app",
-            "type" : "zip"
+            "repoUrl": "https://maven.axonivy.com",
+            "name": "IDP Connector Product",
+            "groupId": "com.axonivy.connector.idp",
+            "artifactId": "idp-connector-product",
+            "type": "zip"
         }
     ]
 }

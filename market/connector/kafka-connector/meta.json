@@ -1,50 +1,41 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "kafka-connector",
-    "name" : "Apache Kafka",
-    "names" : [
-        {
-            "locale" : "en",
-            "value" : "Apache Kafka"
-        },
-        {
-            "locale" : "de",
-            "value" : "Apache Kafka"
-        }
-    ],
-    "description" : "API for facilitating distributed event streaming to automate real-time process workflows.",
-    "descriptions" : [
-        {
-            "locale" : "en",
-            "value" : "API for facilitating distributed event streaming to automate real-time process workflows."
-        },
-        {
-            "locale" : "de",
-            "value" : "Diese API erleichtert das verteilte Event-Streaming bei der Automatisierung von Echtzeit-Prozess-Workflows."
-        }
-    ],
-    "type" : "connector",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/kafka-connector",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/kafka-connector/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "messaging"
-    ],
-    "mavenArtifacts" : [
-        {
-            "name" : "Kafka Connector Product",
-            "groupId" : "com.axonivy.connector.kafka",
-            "artifactId" : "kafka-connector-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "kafka-connector",
-            "name" : "Apache Kafka Demo App",
-            "groupId" : "com.axonivy.connector.kafka",
-            "artifactId" : "kafka-connector-demo-app",
-            "type" : "zip"
-        }
-    ]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "kafka-connector",
+  "name": "Apache Kafka",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Apache Kafka"
+    },
+    {
+      "locale": "de",
+      "value": "Apache Kafka"
+    }
+  ],
+  "description": "API for facilitating distributed event streaming to automate real-time process workflows.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "API for facilitating distributed event streaming to automate real-time process workflows."
+    },
+    {
+      "locale": "de",
+      "value": "Diese API erleichtert das verteilte Event-Streaming bei der Automatisierung von Echtzeit-Prozess-Workflows."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/kafka-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/kafka-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["messaging"],
+  "mavenArtifacts": [
+    {
+      "name": "Kafka Connector Product",
+      "groupId": "com.axonivy.connector.kafka",
+      "artifactId": "kafka-connector-product",
+      "type": "zip"
+    }
+  ]
 }
