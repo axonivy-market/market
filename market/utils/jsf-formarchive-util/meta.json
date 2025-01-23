@@ -1,51 +1,42 @@
 {
-    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-    "id" : "jsf-formarchive-util",
-    "name" : "UI Archive Utility",
-    "names" : [
-        {
-            "locale" : "en",
-            "value" : "UI Archive Utility"
-        },
-        {
-            "locale" : "de",
-            "value" : "UI Archiv Utility"
-        }
-    ],
-    "description" : "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times.",
-    "descriptions" : [
-        {
-            "locale" : "en",
-            "value" : "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times."
-        },
-        {
-            "locale" : "de",
-            "value" : "Archiviere Screenshots der Benutzeroberflächen und dokumentiere so die Eingaben deiner Nutzer zu bestimmten Zeitpunkten"
-        }
-    ],
-    "type" : "util",
-    "platformReview" : "4.5",
-    "sourceUrl" : "https://github.com/axonivy-market/jsf-formarchive-util",
-    "statusBadgeUrl" : "https://github.com/axonivy-market/jsf-formarchive-util/actions/workflows/ci.yml/badge.svg",
-    "language" : "English",
-    "industry" : "Cross-Industry",
-    "tags" : [
-        "utils"
-    ],
-    "mavenArtifacts" : [
-        {
-            "repoUrl" : "https://maven.axonivy.com",
-            "name" : "JSF Form Archive Utility",
-            "groupId" : "com.axonivy.utils.jsfformarchive",
-            "artifactId" : "jsf-form-archive-util-product",
-            "type" : "zip"
-        },
-        {
-            "key" : "jsf-formarchive-util",
-            "name" : "UI Archive Utility Demo App",
-            "groupId" : "com.axonivy.utils.jsfformarchive",
-            "artifactId" : "jsf-formarchive-util-demo-app",
-            "type" : "zip"
-        }
-    ]
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "jsf-formarchive-util",
+  "name": "UI Archive Utility",
+  "names": [
+    {
+      "locale": "en",
+      "value": "UI Archive Utility"
+    },
+    {
+      "locale": "de",
+      "value": "UI Archiv Utility"
+    }
+  ],
+  "description": "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This tool allows you to capture snapshots of your UIs, making it easy to save and track what inputs users made at specific times."
+    },
+    {
+      "locale": "de",
+      "value": "Archiviere Screenshots der Benutzeroberflächen und dokumentiere so die Eingaben deiner Nutzer zu bestimmten Zeitpunkten"
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/jsf-formarchive-util",
+  "statusBadgeUrl": "https://github.com/axonivy-market/jsf-formarchive-util/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "JSF Form Archive Utility",
+      "groupId": "com.axonivy.utils.jsfformarchive",
+      "artifactId": "jsf-form-archive-util-product",
+      "type": "zip"
+    }
+  ]
 }
