@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "alfrescoecm",
-  "name": "Alfresco ECM",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Alfresco ECM"
-    },
-    {
-      "locale": "de",
-      "value": "Alfresco ECM"
-    }
-  ],
-  "description": "Alfresco is a platform offering ECM features for managing digital content.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Alfresco is a platform offering ECM features for managing digital content."
-    },
-    {
-      "locale": "de",
-      "value": "Alfresco bietet eine Plattform mit ECM-Funktionen zur effizienten Verwaltung von Inhalten innerhalb einer Organisation."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/alfresco-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/alfresco-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["ECM"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Alfresco ECM Product",
-      "groupId": "com.axonivy.connector.alfresco",
-      "artifactId": "alfresco-connector-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "alfrescoecm",
+    "name" : "Alfresco ECM",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Alfresco ECM"
+        },
+        {
+            "locale" : "de",
+            "value" : "Alfresco ECM"
+        }
+    ],
+    "description" : "Alfresco is a platform offering ECM features for managing digital content.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Alfresco is a platform offering ECM features for managing digital content."
+        },
+        {
+            "locale" : "de",
+            "value" : "Alfresco bietet eine Plattform mit ECM-Funktionen zur effizienten Verwaltung von Inhalten innerhalb einer Organisation."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/alfresco-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/alfresco-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "ECM"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Alfresco ECM Product",
+            "groupId" : "com.axonivy.connector.alfresco",
+            "artifactId" : "alfresco-connector-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "alfrescoecm",
+            "name" : "Alfresco ECM Demo App",
+            "groupId" : "com.axonivy.connector.alfresco",
+            "artifactId" : "alfrescoecm-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

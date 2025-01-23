@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "aspose-email-demo",
-  "name": "Aspose.Email Demo",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Aspose.Email Demo"
-    },
-    {
-      "locale": "de",
-      "value": "Aspose.Email Demo"
-    }
-  ],
-  "description": "Generate, send & parse emails from Outlook & Thunderbird within your business process.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Generate, send & parse emails from Outlook & Thunderbird within your business process."
-    },
-    {
-      "locale": "de",
-      "value": "Nutze Outlook und Thunderbird für das Generieren, Versenden und Analysieren von E-Mails innerhalb deiner Geschäftsprozesse."
-    }
-  ],
-  "type": "solution",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/doc-factory",
-  "statusBadgeUrl": "https://github.com/axonivy-market/doc-factory/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["demo"],
-  "validate": true,
-  "mavenArtifacts": [
-    {
-      "name": "Aspose.Email Demo Product",
-      "groupId": "com.axonivy.utils.docfactory",
-      "artifactId": "aspose-email-demo-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "aspose-email-demo",
+    "name" : "Aspose.Email Demo",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Aspose.Email Demo"
+        },
+        {
+            "locale" : "de",
+            "value" : "Aspose.Email Demo"
+        }
+    ],
+    "description" : "Generate, send & parse emails from Outlook & Thunderbird within your business process.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Generate, send & parse emails from Outlook & Thunderbird within your business process."
+        },
+        {
+            "locale" : "de",
+            "value" : "Nutze Outlook und Thunderbird für das Generieren, Versenden und Analysieren von E-Mails innerhalb deiner Geschäftsprozesse."
+        }
+    ],
+    "type" : "solution",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/doc-factory",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/doc-factory/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "demo"
+    ],
+    "validate" : true,
+    "mavenArtifacts" : [
+        {
+            "name" : "Aspose.Email Demo Product",
+            "groupId" : "com.axonivy.utils.docfactory",
+            "artifactId" : "aspose-email-demo-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "aspose-email-demo",
+            "name" : "Aspose.Email Demo App",
+            "groupId" : "doc-factory-modules",
+            "artifactId" : "aspose-email-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

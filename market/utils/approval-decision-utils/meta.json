@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "approval-decision-utils",
-  "name": "Approval Decision Utils",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Approval Decision Utils"
-    },
-    {
-      "locale": "de",
-      "value": "Genehmigungs-Assistent"
-    }
-  ],
-  "description": "This tool supports users in the efficient and automated management of approval processes.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "This tool supports users in the efficient and automated management of approval processes."
-    },
-    {
-      "locale": "de",
-      "value": "Dieses Tool unterstützt Benutzer bei der effizienten und automatisierten Verwaltung von Genehmigungsprozessen."
-    }
-  ],
-  "type": "util",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/approval-decision-utils",
-  "statusBadgeUrl": "https://github.com/axonivy-market/approval-decision-utils/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["utils"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Approval Decision Utils",
-      "groupId": "com.axonivy.utils.approvaldecision",
-      "artifactId": "approval-decision-utils-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "approval-decision-utils",
+    "name" : "Approval Decision Utils",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Approval Decision Utils"
+        },
+        {
+            "locale" : "de",
+            "value" : "Genehmigungs-Assistent"
+        }
+    ],
+    "description" : "This tool supports users in the efficient and automated management of approval processes.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "This tool supports users in the efficient and automated management of approval processes."
+        },
+        {
+            "locale" : "de",
+            "value" : "Dieses Tool unterstützt Benutzer bei der effizienten und automatisierten Verwaltung von Genehmigungsprozessen."
+        }
+    ],
+    "type" : "util",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/approval-decision-utils",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/approval-decision-utils/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "utils"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Approval Decision Utils",
+            "groupId" : "com.axonivy.utils.approvaldecision",
+            "artifactId" : "approval-decision-utils-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "approval-decision-utils",
+            "name" : "Approval Decision Utils Demo App",
+            "groupId" : "com.axonivy.utils.approvaldecision",
+            "artifactId" : "approval-decision-utils-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

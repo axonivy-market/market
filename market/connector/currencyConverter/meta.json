@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "currencyConverter",
-  "name": "Currency Converter",
-  "names": [
-    {
-      "locale": "en",
-      "value": "Currency Converter"
-    },
-    {
-      "locale": "de",
-      "value": "Währungsrechner"
-    }
-  ],
-  "description": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates."
-    },
-    {
-      "locale": "de",
-      "value": "Frankfurter ist eine einfache und kompakte Open-Source-API für aktuelle und historische Devisenkurse (Forex)."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/currency-converter-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/currency-converter-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["converter"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "Currency Converter Connector Product",
-      "groupId": "com.axonivy.connector.currency",
-      "artifactId": "currency-converter-connector-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "currencyConverter",
+    "name" : "Currency Converter",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Currency Converter"
+        },
+        {
+            "locale" : "de",
+            "value" : "Währungsrechner"
+        }
+    ],
+    "description" : "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Frankfurter is an open-source, simple, and lightweight API for current and historical foreign exchange (forex) rates."
+        },
+        {
+            "locale" : "de",
+            "value" : "Frankfurter ist eine einfache und kompakte Open-Source-API für aktuelle und historische Devisenkurse (Forex)."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/currency-converter-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/currency-converter-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "converter"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Currency Converter Connector Product",
+            "groupId" : "com.axonivy.connector.currency",
+            "artifactId" : "currency-converter-connector-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "currencyConverter",
+            "name" : "Currency Converter Demo App",
+            "groupId" : "com.axonivy.connector.currency",
+            "artifactId" : "currencyConverter-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

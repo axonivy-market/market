@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "s4hana-connector",
-  "name": "SAP S/4HANA",
-  "names": [
-    {
-      "locale": "en",
-      "value": "SAP S/4HANA"
-    },
-    {
-      "locale": "de",
-      "value": "SAP S/4HANA"
-    }
-  ],
-  "description": "Easily connects the Axon Ivy Engine to a SAP S/4HANA database.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Easily connects the Axon Ivy Engine to a SAP S/4HANA database."
-    },
-    {
-      "locale": "de",
-      "value": "Ermöglicht eine einfache Anbindung der Axon Ivy Engine an eine SAP S/4HANA-Datenbank."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4",
-  "sourceUrl": "https://github.com/axonivy-market/S4HANA-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/S4HANA-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["connector"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "S4HANA Connector Product",
-      "groupId": "com.axonivy.connector.s4hana",
-      "artifactId": "s4-hana-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "s4hana-connector",
+    "name" : "SAP S/4HANA",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "SAP S/4HANA"
+        },
+        {
+            "locale" : "de",
+            "value" : "SAP S/4HANA"
+        }
+    ],
+    "description" : "Easily connects the Axon Ivy Engine to a SAP S/4HANA database.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Easily connects the Axon Ivy Engine to a SAP S/4HANA database."
+        },
+        {
+            "locale" : "de",
+            "value" : "Ermöglicht eine einfache Anbindung der Axon Ivy Engine an eine SAP S/4HANA-Datenbank."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4",
+    "sourceUrl" : "https://github.com/axonivy-market/S4HANA-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/S4HANA-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "connector"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "S4HANA Connector Product",
+            "groupId" : "com.axonivy.connector.s4hana",
+            "artifactId" : "s4-hana-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "s4hana-connector",
+            "name" : "SAP S/4HANA Demo App",
+            "groupId" : "com.axonivy.market",
+            "artifactId" : "s4hana-connector-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

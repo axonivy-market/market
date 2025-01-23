@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "openai-assistant",
-  "name": "ChatGPT Assistant",
-  "names": [
-    {
-      "locale": "en",
-      "value": "ChatGPT Assistant"
-    },
-    {
-      "locale": "de",
-      "value": "ChatGPT Assistent"
-    }
-  ],
-  "description": "The ChatGPT assistant explains, maintains and extends code for you",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "The ChatGPT assistant explains, maintains and extends code for you"
-    },
-    {
-      "locale": "de",
-      "value": "Der ChatGPT Assistent erklärt und erweitert Axon Ivy Code für Dich."
-    }
-  ],
-  "type": "util",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/openai-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/openai-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["AI"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "OpenAI Assistant",
-      "groupId": "com.axonivy.connector.openai",
-      "artifactId": "openai-assistant-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "openai-assistant",
+    "name" : "ChatGPT Assistant",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "ChatGPT Assistant"
+        },
+        {
+            "locale" : "de",
+            "value" : "ChatGPT Assistent"
+        }
+    ],
+    "description" : "The ChatGPT assistant explains, maintains and extends code for you",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "The ChatGPT assistant explains, maintains and extends code for you"
+        },
+        {
+            "locale" : "de",
+            "value" : "Der ChatGPT Assistent erklärt und erweitert Axon Ivy Code für Dich."
+        }
+    ],
+    "type" : "util",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/openai-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/openai-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "AI"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "OpenAI Assistant",
+            "groupId" : "com.axonivy.connector.openai",
+            "artifactId" : "openai-assistant-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "openai-assistant",
+            "name" : "ChatGPT Assistant Demo App",
+            "groupId" : "com.axonivy.connector.openai",
+            "artifactId" : "openai-assistant-demo-app",
+            "type" : "zip"
+        }
+    ]
 }

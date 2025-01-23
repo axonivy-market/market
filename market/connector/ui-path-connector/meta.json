@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "ui-path-connector",
-  "name": "UiPath",
-  "names": [
-    {
-      "locale": "en",
-      "value": "UiPath"
-    },
-    {
-      "locale": "de",
-      "value": "UiPath"
-    }
-  ],
-  "description": "Enhance your business processes by integrating legacy systems with RPA robots.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "Enhance your business processes by integrating legacy systems with RPA robots."
-    },
-    {
-      "locale": "de",
-      "value": "Modernisiere deine Geschäftsabläufe durch die Integration von Legacy-Systemen mit RPA-Robotern.."
-    }
-  ],
-  "type": "connector",
-  "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/ui-path-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/ui-path-connector/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["RPA"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "UiPath Connector Product",
-      "groupId": "com.axonivy.connector.uipath",
-      "artifactId": "ui-path-connector-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "ui-path-connector",
+    "name" : "UiPath",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "UiPath"
+        },
+        {
+            "locale" : "de",
+            "value" : "UiPath"
+        }
+    ],
+    "description" : "Enhance your business processes by integrating legacy systems with RPA robots.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Enhance your business processes by integrating legacy systems with RPA robots."
+        },
+        {
+            "locale" : "de",
+            "value" : "Modernisiere deine Geschäftsabläufe durch die Integration von Legacy-Systemen mit RPA-Robotern.."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "4.5",
+    "sourceUrl" : "https://github.com/axonivy-market/ui-path-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/ui-path-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "RPA"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "UiPath Connector Product",
+            "groupId" : "com.axonivy.connector.uipath",
+            "artifactId" : "ui-path-connector-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "ui-path-connector",
+            "name" : "UiPath Demo App",
+            "groupId" : "com.axonivy.connector.uipath",
+            "artifactId" : "ui-path-connector-demo-app",
+            "type" : "zip"
+        }
+    ]
 }
