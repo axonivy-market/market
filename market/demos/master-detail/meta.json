@@ -43,7 +43,7 @@
             "key" : "master-detail-demo",
             "name" : "Master-Detail interface Demo App",
             "groupId" : "com.axonivy.demo.masterdetail",
-            "artifactId" : "master-detail-demo-demo-app",
+            "artifactId" : "master-detail-demo-app",
             "type" : "zip"
         }
     ]
