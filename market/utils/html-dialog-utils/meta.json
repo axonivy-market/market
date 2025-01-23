@@ -1,42 +1,51 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "html-dialog-utils",
-  "name": "HTML Dialog Util",
-  "names": [
-    {
-      "locale": "en",
-      "value": "HTML Dialog Util"
-    },
-    {
-      "locale": "de",
-      "value": "HTML Dialog-Tool"
-    }
-  ],
-  "description": "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only.",
-  "descriptions": [
-    {
-      "locale": "en",
-      "value": "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only."
-    },
-    {
-      "locale": "de",
-      "value": "Dieses Tool kann in jedem HTML-Dialog eingesetzt werden um Teile einer UI schreibgeschützt zu gestalten."
-    }
-  ],
-  "type": "util",
-  "platformReview": "4",
-  "sourceUrl": "https://github.com/axonivy-market/html-dialog-utils",
-  "statusBadgeUrl": "https://github.com/axonivy-market/html-dialog-utils/actions/workflows/ci.yml/badge.svg",
-  "language": "English",
-  "industry": "Cross-Industry",
-  "tags": ["utils"],
-  "mavenArtifacts": [
-    {
-      "repoUrl": "https://maven.axonivy.com",
-      "name": "HTML Dialog Utils",
-      "groupId": "com.axonivy.utils.htmldialog",
-      "artifactId": "html-dialog-utils-product",
-      "type": "zip"
-    }
-  ]
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "html-dialog-utils",
+    "name" : "HTML Dialog Util",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "HTML Dialog Util"
+        },
+        {
+            "locale" : "de",
+            "value" : "HTML Dialog-Tool"
+        }
+    ],
+    "description" : "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "This tool can be used in any HTML dialog to easily and quickly make parts of a UI read-only."
+        },
+        {
+            "locale" : "de",
+            "value" : "Dieses Tool kann in jedem HTML-Dialog eingesetzt werden um Teile einer UI schreibgeschützt zu gestalten."
+        }
+    ],
+    "type" : "util",
+    "platformReview" : "4",
+    "sourceUrl" : "https://github.com/axonivy-market/html-dialog-utils",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/html-dialog-utils/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "utils"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "HTML Dialog Utils",
+            "groupId" : "com.axonivy.utils.htmldialog",
+            "artifactId" : "html-dialog-utils-product",
+            "type" : "zip"
+        },
+        {
+            "key" : "html-dialog-utils",
+            "name" : "HTML Dialog Util Demo App",
+            "groupId" : "com.axonivy.utils.htmldialog",
+            "artifactId" : "html-dialog-utils-demo-app",
+            "type" : "zip"
+        }
+    ]
 }
