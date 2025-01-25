@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id" : "asana-connector",
+  "name" : "Asana",
+  "names" : [
+    {
+      "locale" : "en",
+      "value" : "Asana"
+    },
+    {
+      "locale" : "de",
+      "value" : "Asana"
+    }
+  ],
+  "description" : "Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars.",
+  "descriptions" : [
+    {
+      "locale" : "en",
+      "value" : "Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars."
+    },
+    {
+      "locale" : "de",
+      "value" : "TODO Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars."
+    }
+  ],
+  "type" : "connector",
+  "platformReview" : "5",
+  "sourceUrl" : "https://github.com/axonivy-market/asana-connector",
+  "statusBadgeUrl" : "https://github.com/axonivy-market/asana-connector/actions/workflows/ci.yml/badge.svg",
+  "language" : "English",
+  "industry" : "Cross-Industry",
+  "tags" : [
+    "connector"
+  ],
+  "mavenArtifacts" : [
+    {
+      "repoUrl" : "https://maven.axonivy.com",
+      "name" : "Asana Connector",
+      "groupId" : "com.axonivy.connector.asana",
+      "artifactId" : "asana-connector-product",
+      "type" : "zip"
+    }
+  ]
+}
