@@ -12,15 +12,15 @@
       "value" : "Asana"
     }
   ],
-  "description" : "Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars.",
+  "description" : "Asana helps teams efficiently organize, track, and successfully manage their projects – thanks to our Axon Ivy Connector, access is effortless and seamless.",
   "descriptions" : [
     {
       "locale" : "en",
-      "value" : "Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars."
+      "value" : "Asana helps teams efficiently organize, track, and successfully manage their projects – thanks to our Axon Ivy Connector, access is effortless and seamless."
     },
     {
       "locale" : "de",
-      "value" : "Asana ist ein Projektmanagement-Tool, das Teams dabei hilft, Aufgaben zu verfolgen, Arbeiten zuzuweisen, Fristen festzulegen und den Fortschritt mithilfe von Boards, Zeitplänen und Kalendern zu überwachen"
+      "value" : "Asana hilft Teams, ihre Projekte effizient zu organisieren, zu verfolgen und erfolgreich zu steuern – dank unseres Axon Ivy Connectors ist der Zugriff mühelos und unkompliziert."
     }
   ],
   "type" : "connector",
