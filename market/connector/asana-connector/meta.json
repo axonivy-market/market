@@ -20,7 +20,7 @@
     },
     {
       "locale" : "de",
-      "value" : "TODO Asana is a project management tool that helps teams track tasks, assign work, set deadlines, and monitor progress using boards, timelines, and calendars."
+      "value" : "Asana ist ein Projektmanagement-Tool, das Teams dabei hilft, Aufgaben zu verfolgen, Arbeiten zuzuweisen, Fristen festzulegen und den Fortschritt mithilfe von Boards, Zeitplänen und Kalendern zu überwachen"
     }
   ],
   "type" : "connector",
