@@ -12,15 +12,15 @@
       "value" : "Asana"
     }
   ],
-  "description" : "Asana helps teams efficiently organize, track, and successfully manage their projects – thanks to our Axon Ivy Connector, access is effortless and seamless.",
+  "description" : "Asana helps teams efficiently organize, track, and successfully manage their projects.",
   "descriptions" : [
     {
       "locale" : "en",
-      "value" : "Asana helps teams efficiently organize, track, and successfully manage their projects – thanks to our Axon Ivy Connector, access is effortless and seamless."
+      "value" : "Asana helps teams efficiently organize, track, and successfully manage their projects."
     },
     {
       "locale" : "de",
-      "value" : "Asana hilft Teams, ihre Projekte effizient zu organisieren, zu verfolgen und erfolgreich zu steuern – dank unseres Axon Ivy Connectors ist der Zugriff mühelos und unkompliziert."
+      "value" : "Asana hilft Teams, Projekte effizient zu organisieren, zu verfolgen und erfolgreich zu steuern."
     }
   ],
   "type" : "connector",
