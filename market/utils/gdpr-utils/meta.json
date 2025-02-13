@@ -12,15 +12,15 @@
       "value": "GDPR"
     }
   ],
-  "description": "This tool automates the deletion of data older than a defined time interval to adapt the GDPR (General Data Protection Regulation) rule.",
+  "description": "This tool helps you delete data in a GDPR-compliant way - simple and hassle-free!",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This tool automates the deletion of data older than a defined time interval to adapt the GDPR (General Data Protection Regulation) rule."
+      "value": "This tool helps you delete data in a GDPR-compliant way - simple and hassle-free!"
     },
     {
       "locale": "de",
-      "value": "Dieses Tool automatisiert die Löschung von Daten, die älter als ein definiertes Zeitintervall sind, um die GDPR (General Data Protection Regulation) Regelung anzupassen."
+      "value": "Dieses Tool unterstützt die DSGVO-konforme Datenlöschung."
     }
   ],
   "type": "util",
