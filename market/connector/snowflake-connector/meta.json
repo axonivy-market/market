@@ -12,15 +12,15 @@
       "value": "Snowflake"
     }
   ],
-  "description": "Easily execute sql statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API.",
+  "description": "Easily execute SQL statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Easily execute sql statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API."
+      "value": "Easily execute SQL statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API."
     },
     {
       "locale": "de",
-      "value": "Easily execute sql statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API."
+      "value": "Integriere die Snowflake SQL API, um SQL-Anweisungen in Snowflake auszuführen, zu überprüfen und zu stoppen."
     }
   ],
   "type": "connector",
