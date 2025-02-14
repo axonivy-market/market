@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "snowflake-connector",
+  "name": "Snowflake",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Snowflake"
+    },
+    {
+      "locale": "de",
+      "value": "Snowflake"
+    }
+  ],
+  "description": "Easily execute SQL statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Easily execute SQL statement, check the execution's status and cancel the execution on cloud by integrating the Snowflake SQL API."
+    },
+    {
+      "locale": "de",
+      "value": "Integriere die Snowflake SQL API, um SQL-Anweisungen in Snowflake auszuführen, zu überprüfen und zu stoppen."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/snowflake-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/snowflake-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["cloud-platform"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Snowflake connector",
+      "groupId": "com.axonivy.connector.snowflake",
+      "artifactId": "snowflake-connector-product",
+      "type": "zip"
+    }
+  ]
+}
