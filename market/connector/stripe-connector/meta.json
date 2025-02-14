@@ -1,0 +1,44 @@
+{
+    "$schema" : "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+    "id" : "stripe-connector",
+    "name" : "Stripe",
+    "names" : [
+        {
+            "locale" : "en",
+            "value" : "Stripe"
+        },
+        {
+            "locale" : "de",
+            "value" : "Stripe"
+        }
+    ],
+    "description" : "Stripe is a comprehensive payment processing platform that enables businesses to accept payments online and in-person.",
+    "descriptions" : [
+        {
+            "locale" : "en",
+            "value" : "Stripe is a comprehensive payment processing platform that enables businesses to accept payments online and in-person."
+        },
+        {
+            "locale" : "de",
+            "value" : "Stripe ermöglicht es dir, Zahlungen über eine flexible Plattform sowohl online als auch im direkten Kontakt zu akzeptieren."
+        }
+    ],
+    "type" : "connector",
+    "platformReview" : "5",
+    "sourceUrl" : "https://github.com/axonivy-market/stripe-connector",
+    "statusBadgeUrl" : "https://github.com/axonivy-market/stripe-connector/actions/workflows/ci.yml/badge.svg",
+    "language" : "English",
+    "industry" : "Cross-Industry",
+    "tags" : [
+        "Payment"
+    ],
+    "mavenArtifacts" : [
+        {
+            "repoUrl" : "https://maven.axonivy.com",
+            "name" : "Stripe Connector",
+            "groupId" : "com.axonivy.connector.stripe",
+            "artifactId" : "stripe-connector-product",
+            "type" : "zip"
+        }
+    ]
+}
