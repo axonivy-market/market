@@ -31,6 +31,7 @@
   "language": "English",
   "industry": "Cross-Industry",
   "compatibility": "9.2+",
+  "listed": false,
   "tags": ["social"],
   "mavenArtifacts": [
     {
