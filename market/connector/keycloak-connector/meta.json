@@ -12,15 +12,17 @@
       "value": "Keycloak"
     }
   ],
-  "description": "Streamlines user registration, authentication management, and theme customization with seamless API integration.",
+  "description": "Expand the existing Keycloak integration by enabling data transfer from Axon Ivy to Keycloak
+  – unlocking advanced use cases like user approvals and dynamic identity management. Seamless, secure, and efficient.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Streamlines user registration, authentication management, and theme customization with seamless API integration."
+      "value": "Expand the existing Keycloak integration by enabling data transfer from Axon Ivy to Keycloak
+  – unlocking advanced use cases like user approvals and dynamic identity management. Seamless, secure, and efficient."
     },
     {
       "locale": "de",
-      "value": "TODO:Streamlines user registration, authentication management, and theme customization with seamless API integration."
+      "value": "Erweitere die bestehende Keycloak-Integration: Übertrage Daten von Axon Ivy an Keycloak mit diesem Konnektor – und ermögliche Use Cases wie Benutzerfreigaben und dynamisches Identitätsmanagement."
     }
   ],
   "type": "connector",
