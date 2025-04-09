@@ -33,7 +33,7 @@
   "validate": true,
   "mavenArtifacts": [
     {
-	  "repoUrl" : "https://maven.axonivy.com",
+      "repoUrl" : "https://maven.axonivy.com",
       "name": "Pattern Demos Product",
       "groupId": "com.axonivy.demo.patterndemos",
       "artifactId": "pattern-demos-product",
