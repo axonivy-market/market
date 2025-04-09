@@ -12,15 +12,15 @@
       "value": "Pattern Demos"
     }
   ],
-  "description": "This demo provides some patterns which can be useful in your project.",
+  "description": "This demo is a collection of patterns and solutions coming from real-world projects ready to copy into your own projects. Current solutions include locking, error-handling by administrators, scheduled jobs and others.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This demo provides some patterns which can be useful in your project."
+      "value": "This demo is a collection of patterns and solutions coming from real-world projects ready to copy into your own projects. Current solutions include locking, error-handling by administrators, scheduled jobs and others."
     },
     {
       "locale": "de",
-      "value": "Dieses Demo stellt einige Patterns zur Verfügung, die in Projekten hilfreich sein können."
+      "value": "Diese Demo ist eine Sammlung von Mustern und Lösungen, die aus realen Projekten stammen und die in eigene Projekte kopiert werden können. Die aktuellen Lösungen umfassen Locking, Fehlerbehandlung durch Administratoren, Jobausführung und anderes."
     }
   ],
   "type": "solution",
@@ -33,6 +33,7 @@
   "validate": true,
   "mavenArtifacts": [
     {
+	  "repoUrl" : "https://maven.axonivy.com",
       "name": "Pattern Demos Product",
       "groupId": "com.axonivy.demo.patterndemos",
       "artifactId": "pattern-demos-product",
