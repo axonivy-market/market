@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Erweitere die bestehende Keycloak-Integration: Übertrage Daten von Axon Ivy an Keycloak mit diesem Konnektor – und ermögliche Use Cases wie Benutzerfreigaben und dynamisches Identitätsmanagement."
+      "value": "Erweitere die bestehende Keycloak-Integration: Übertrage Daten von Axon Ivy an Keycloak – und ermögliche Use Cases wie Benutzerfreigaben und dynamisches Identitätsmanagement."
     }
   ],
   "type": "connector",
