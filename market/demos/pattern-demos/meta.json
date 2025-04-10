@@ -12,15 +12,15 @@
       "value": "Pattern Demos"
     }
   ],
-  "description": "This demo is a collection of patterns and solutions coming from real-world projects ready to copy into your own projects. Current solutions include locking, error-handling by administrators, scheduled jobs and others.",
+  "description": "This demo contains a collection of proven patterns and solutions from real projects that can be easily applied to your own implementations.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This demo is a collection of patterns and solutions coming from real-world projects ready to copy into your own projects. Current solutions include locking, error-handling by administrators, scheduled jobs and others."
+      "value": "This demo contains a collection of proven patterns and solutions from real projects that can be easily applied to your own implementations."
     },
     {
       "locale": "de",
-      "value": "Diese Demo ist eine Sammlung von Mustern und Lösungen, die aus realen Projekten stammen und die in eigene Projekte kopiert werden können. Die aktuellen Lösungen umfassen Locking, Fehlerbehandlung durch Administratoren, Jobausführung und anderes."
+      "value": "Diese Demo enthält eine Sammlung von erprobten Patterns und Lösungen aus realen Projekten, die sich leicht in eigene Vorhaben übernehmen lassen."
     }
   ],
   "type": "solution",
