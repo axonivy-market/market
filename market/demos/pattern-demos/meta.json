@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "pattern-demos",
+  "name": "Pattern Demos",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Pattern Demos"
+    },
+    {
+      "locale": "de",
+      "value": "Pattern Demos"
+    }
+  ],
+  "description": "This demo contains a collection of proven patterns and solutions from real projects that can be easily applied to your own implementations.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This demo contains a collection of proven patterns and solutions from real projects that can be easily applied to your own implementations."
+    },
+    {
+      "locale": "de",
+      "value": "Diese Demo enthält eine Sammlung von erprobten Patterns und Lösungen aus realen Projekten, die sich leicht in eigene Vorhaben übernehmen lassen."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/pattern-demos",
+  "statusBadgeUrl": "https://github.com/axonivy-market/pattern-demos/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "validate": true,
+  "mavenArtifacts": [
+    {
+      "repoUrl" : "https://maven.axonivy.com",
+      "name": "Pattern Demos Product",
+      "groupId": "com.axonivy.demo.patterndemos",
+      "artifactId": "pattern-demos-product",
+      "type": "zip"
+    }
+  ]
+}
