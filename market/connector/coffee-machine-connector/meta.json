@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "coffee-machine-connector",
+  "name": "Coffee Machine",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Coffee Machine"
+    },
+    {
+      "locale": "de",
+      "value": "Coffee Machine"
+    }
+  ],
+  "description": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers."
+    },
+    {
+      "locale": "de",
+      "value": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/coffee-machine-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/coffee-machine-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["tutorial"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Coffee Machine Connector",
+      "groupId": "com.axonivy.connector.coffeemachine",
+      "artifactId": "coffee-machine-connector-product",
+      "type": "zip"
+    }
+  ]
+}
