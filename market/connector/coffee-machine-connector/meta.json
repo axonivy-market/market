@@ -12,15 +12,15 @@
       "value": "Coffee Machine"
     }
   ],
-  "description": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers.",
+  "description": "This connector is part of our Onboarding Tutorial, which shows you how to use the Axon Ivy Designer.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers."
+      "value": "This connector is part of our Onboarding Tutorial, which shows you how to use the Axon Ivy Designer."
     },
     {
       "locale": "de",
-      "value": "This Connector is part of our Onboarding Tutorial that show you how to use the Axon Ivy Desigers."
+      "value": "Dieser Connector ist Teil unseres Onboarding-Tutorials, das Ihnen zeigt, wie Sie den Axon Ivy Designer verwenden."
     }
   ],
   "type": "connector",
