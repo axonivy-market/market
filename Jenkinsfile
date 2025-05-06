@@ -18,7 +18,7 @@ pipeline {
             sh 'ec -no-color'
           }
 
-          docker.image('maven:3.9.5-eclipse-temurin-21').inside {
+          docker.image('maven:3.9.9-eclipse-temurin-21').inside {
             dir ('market-test') {
               maven cmd: 'compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp'
               maven cmd: 'verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp'
