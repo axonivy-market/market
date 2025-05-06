@@ -35,23 +35,26 @@ pipeline {
       when {
         branch 'master'
       }
-      agent {
-        docker {
-          image 'axonivy/build-container:ssh-client-1'
-          reuseNode true
-        }
-      }
       steps {
-        sshagent(['zugprojenkins-ssh']) {
-          script {
+        script {
+          def deploy = {
             def host = 'axonivya@217.26.51.247'
             def homeDir = '/home/axonivya'
             def dir = "$homeDir/www/json-schema.ivyteam.ch"
             echo "Upload market.meta.json.schemas to $host:$dir"
             sh "rsync --mkpath -r `echo */target/schema/market` $host:$dir/"
           }
+          runSSH(deploy)
         }
       }
+    }
+  }
+}
+
+def runSSH(command) {
+  docker.image('axonivy/build-container:ssh-client-1').inside {
+    sshagent(['zugprojenkins-ssh']) {
+      command.call()
     }
   }
 }
