@@ -31,7 +31,6 @@ pipeline {
         }
       }
     }
-
     stage('deploy') {
       when {
         branch 'master'
@@ -42,33 +41,10 @@ pipeline {
           reuseNode true
         }
       }
-      environment {
-        DIST_FILE = "market.tar"
-      }
       steps {
-        dir ('market-test/target') {
-          sh "tar -cf ../../${env.DIST_FILE} market"
-        }
-        archiveArtifacts env.DIST_FILE
- 
         sshagent(['zugprojenkins-ssh']) {
           script {
-            def targetFolder = "/home/axonivya/deployment/market-" + new Date().format("yyyy-MM-dd_HH-mm-ss-SSS");
-            def targetFile =  targetFolder + ".tar"
             def host = 'axonivya@217.26.51.247'
-
-            // copy
-            sh "scp ${env.DIST_FILE} $host:$targetFile"
-
-            // untar
-            sh "ssh $host mkdir $targetFolder"
-            sh "ssh $host tar -xf $targetFile -C $targetFolder"
-            sh "ssh $host rm -f $targetFile"
-  
-            // symlink
-            sh "ssh $host ln -fns $targetFolder/market /home/axonivya/data/market"
-
-            // schema
             def homeDir = '/home/axonivya'
             def dir = "$homeDir/www/json-schema.ivyteam.ch"
             echo "Upload market.meta.json.schemas to $host:$dir"
