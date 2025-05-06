@@ -85,6 +85,8 @@ public class MarketMetaSchema {
   @JsonPropertyDescription("shows the link to contact axonivy")
   public boolean contactUs;
 
+  public boolean deprecated;
+
   public boolean validate;
 
   @Examples("best-match")

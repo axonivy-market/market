@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.ivyteam.ch/market/10.0.0/meta.json",
+	"$schema": "https://json-schema.ivyteam.ch/market/10.0.4/meta.json",
 	"id": "jira-connector",
 	"name": "Atlassian Jira Connector",
 	"description": "Atlassian's Jira Connector lets you track issues directly from your digital process automation platform.",
@@ -10,7 +10,7 @@
 	"vendorImage": "frox.png",
 	"vendorImageDarkMode": "frox-dark-mode.png",
 	"vendorUrl": "https://www.frox.ch",
-
+	"deprecated": false,
 	"sourceUrl": "https://github.com/axonivy-market/jira-connector",
 	"statusBadgeUrl": "https://github.com/axonivy-market/jira-connector/actions/workflows/ci.yml/badge.svg",
 	"language": "English",
