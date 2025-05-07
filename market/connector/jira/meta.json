@@ -30,8 +30,7 @@
   "vendorImage": "frox.png",
   "vendorImageDarkMode": "frox-dark-mode.png",
   "vendorUrl": "https://www.frox.ch",
-
-  "sourceUrl": "https://github.com/axonivy-market/jira-connector",
+  "sourceUrl": "https://github.com/axonivy-market/jira-connector2",
   "statusBadgeUrl": "https://github.com/axonivy-market/jira-connector/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
