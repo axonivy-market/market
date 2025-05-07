@@ -35,21 +35,21 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Decision Table Product",
-      "groupId": "com.axonivy.dmn.decisiontable",
+      "groupId": "com.axonivy.utils.dmn",
       "artifactId": "dmn-decision-table-product",
       "type": "zip"
     },
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Decision Table",
-      "groupId": "com.axonivy.dmn.decisiontable",
+      "groupId": "com.axonivy.utils.dmn",
       "artifactId": "dmn-decision-table",
       "type": "jar"
     },
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Decision Table Demo",
-      "groupId": "com.axonivy.dmn.decisiontable",
+      "groupId": "com.axonivy.utils.dmn",
       "artifactId": "dmn-decision-table-demo"
     }
   ]

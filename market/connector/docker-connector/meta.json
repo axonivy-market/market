@@ -34,7 +34,7 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Docker Connector",
-      "groupId": "com.axonivy.market",
+      "groupId": "com.axonivy.connector.docker",
       "artifactId": "docker-connector-product",
       "type": "zip"
     }

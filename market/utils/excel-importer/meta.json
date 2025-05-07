@@ -34,7 +34,7 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Excel Importer Product",
-      "groupId": "com.axonivy.util.excel",
+      "groupId": "com.axonivy.utils.excel",
       "artifactId": "excel-importer-product",
       "type": "zip"
     }
