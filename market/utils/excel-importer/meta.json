@@ -37,6 +37,18 @@
       "groupId": "com.axonivy.utils.excel",
       "artifactId": "excel-importer-product",
       "type": "zip"
+    },
+    {
+      "name": "Excel Importer",
+      "groupId": "com.axonivy.utils.excel",
+      "artifactId": "excel-importer",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "12.0.2",
+          "groupId": "com.axonivy.utils.excel",
+          "artifactId": "excel-importer"
+        }
+      ]
     }
   ]
 }
