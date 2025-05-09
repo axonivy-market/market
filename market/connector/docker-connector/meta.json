@@ -34,9 +34,21 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Docker Connector",
-      "groupId": "com.axonivy.market",
+      "groupId": "com.axonivy.connector.docker",
       "artifactId": "docker-connector-product",
       "type": "zip"
+    },
+    {
+      "name": "Docker Connector",
+      "groupId": "com.axonivy.connector.docker",
+      "artifactId": "docker-connector",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "12.0.0",
+          "groupId": "com.axonivy.market",
+          "artifactId": "docker-connector"
+        }
+      ]
     }
   ]
 }
