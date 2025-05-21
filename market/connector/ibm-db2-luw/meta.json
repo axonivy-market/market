@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "ibm-db2-luw",
+  "name": "A-Trust",
+  "names": [
+    {
+      "locale": "en",
+      "value": "IBM db2 luw"
+    },
+    {
+      "locale": "de",
+      "value": "IBM db2 luw"
+    }
+  ],
+  "description": "This product simplifies application integration with IBM Db2 LUW, offering secure, fast, and reliable database connectivity for enterprise solutions.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This product simplifies application integration with IBM Db2 LUW, offering secure, fast, and reliable database connectivity for enterprise solutions."
+    },
+    {
+      "locale": "de",
+      "value": "Dieses Produkt vereinfacht die Anbindung von Anwendungen an IBM Db2 LUW und bietet sichere, schnelle und zuverlässige Datenbankverbindungen."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/ibm-db2-luw",
+  "statusBadgeUrl": "https://github.com/axonivy-market/ibm-db2-luw/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "listed": true,
+  "tags": ["database"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "IBM db2 luw",
+      "groupId": "com.axonivy.connector",
+      "artifactId": "ibm-db2-luw-product",
+      "type": "zip"
+    }
+  ]
+}
