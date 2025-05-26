@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "ibm-db2-luw",
-  "name": "A-Trust",
+  "name": "IBM db2 luw",
   "names": [
     {
       "locale": "en",
@@ -35,7 +35,7 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "IBM db2 luw",
-      "groupId": "com.axonivy.connector",
+      "groupId": "com.axonivy.connector.ibmdb2luw",
       "artifactId": "ibm-db2-luw-product",
       "type": "zip"
     }
