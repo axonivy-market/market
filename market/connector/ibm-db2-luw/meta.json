@@ -36,7 +36,7 @@
       "repoUrl": "https://maven.axonivy.com",
       "name": "IBM db2 luw",
       "groupId": "com.axonivy.connector.ibmdb2luw",
-      "artifactId": "ibm-db2-luw-product",
+      "artifactId": "ibm-db2-luw-connector-product",
       "type": "zip"
     }
   ]
