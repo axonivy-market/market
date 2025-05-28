@@ -1,15 +1,15 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "ibm-db2-luw",
-  "name": "IBM db2 luw",
+  "name": "IBM DB2 for LUW",
   "names": [
     {
       "locale": "en",
-      "value": "IBM db2 luw"
+      "value": "IBM DB2 LUW"
     },
     {
       "locale": "de",
-      "value": "IBM db2 luw"
+      "value": "IBM DB2 für LUW"
     }
   ],
   "description": "This product simplifies application integration with IBM Db2 LUW, offering secure, fast, and reliable database connectivity for enterprise solutions.",
