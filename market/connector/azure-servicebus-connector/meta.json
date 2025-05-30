@@ -12,15 +12,15 @@
       "value": "Azure Service Bus"
     }
   ],
-  "description": "This connector gives you access to the Azure Service Bus. It allows to define multiple sending and receiving connections to queues and topics.",
+  "description": "This connector enables integration with Azure Service Bus, allowing you to configure multiple connections for sending and receiving messages via queues and topics.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This connector gives you access to the Azure Service Bus. It allows to define multiple sending and receiving connections to queues and topics."
+      "value": "This connector enables integration with Azure Service Bus, allowing you to configure multiple connections for sending and receiving messages via queues and topics."
     },
     {
       "locale": "de",
-      "value": "Dieser Connector verbindet den Azure Service Bus. Er unterstützt mehrere sendende und empfangende Verbindungen zu Queues und Topics."
+      "value": "Dieser Konnektor ermöglicht die Anbindung an den Azure Service Bus und die Konfiguration mehrerer Verbindungen zum Senden und Empfangen von Nachrichten über Queues und Topics."
     }
   ],
   "type": "connector",
