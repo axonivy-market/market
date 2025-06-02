@@ -12,15 +12,15 @@
       "value": "Azure Service Bus"
     }
   ],
-  "description": "This connector enables integration with Azure Service Bus, allowing you to configure multiple connections for sending and receiving messages via queues and topics.",
+  "description": "This connector integrates Azure Service Bus into your Axon Ivy application and supports connections for sending and receiving messages.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This connector enables integration with Azure Service Bus, allowing you to configure multiple connections for sending and receiving messages via queues and topics."
+      "value": "This connector integrates Azure Service Bus into your Axon Ivy application and supports connections for sending and receiving messages."
     },
     {
       "locale": "de",
-      "value": "Dieser Konnektor ermöglicht die Anbindung an den Azure Service Bus und die Konfiguration mehrerer Verbindungen zum Senden und Empfangen von Nachrichten über Queues und Topics."
+      "value": "Dieser Konnektor integriert den Azure Service Bus in Deine Axon Ivy Anwendung und unterstützt das Senden und Empfangen von Nachrichten."
     }
   ],
   "type": "connector",
