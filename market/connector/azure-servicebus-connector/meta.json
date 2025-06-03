@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "azure-servicebus-connector",
+  "name": "Azure Service Bus",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Azure Service Bus"
+    },
+    {
+      "locale": "de",
+      "value": "Azure Service Bus"
+    }
+  ],
+  "description": "This connector integrates Azure Service Bus into your Axon Ivy application and supports connections for sending and receiving messages.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This connector integrates Azure Service Bus into your Axon Ivy application and supports connections for sending and receiving messages."
+    },
+    {
+      "locale": "de",
+      "value": "Dieser Konnektor integriert den Azure Service Bus in Deine Axon Ivy Anwendung und unterstützt das Senden und Empfangen von Nachrichten."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/azure-servicebus-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/azure-servicebus-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["Cloud"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Azure Servicebus Connector Product",
+      "groupId": "com.axonivy.connector.azure.servicebus",
+      "artifactId": "azure-servicebus-connector-product",
+      "type": "zip"
+    }
+  ]
+}
