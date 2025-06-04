@@ -17,7 +17,7 @@ public class MarketMetaSchema {
   @JsonProperty("$schema")
   public String schemaRef; //self-ref
 
-  @NotNull @Size(min = 5, max = 25)
+  @NotNull @Size(min = 5, max = 30)
   public String id;
   @Pattern(regexp = "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$")
   public String version;

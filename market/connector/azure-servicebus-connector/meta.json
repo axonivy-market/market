@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "azure-service-bus",
+  "id": "azure-servicebus-connector",
   "name": "Azure Service Bus",
   "names": [
     {
