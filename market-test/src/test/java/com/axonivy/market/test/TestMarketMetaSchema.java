@@ -48,14 +48,23 @@ class TestMarketMetaSchema {
   void lengthConstraints() {
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
     impl.put("id", "mini"); // too short
+    assertMessage(impl, "id: must be at least 5 characters");
+  }
 
-    List<String> messages = validator.validate(impl)
-      .stream().map(ValidationMessage::getMessage).toList();
-    assertThat(messages)
-      .as("schema is strictly validated")
-      .isNotEmpty();
-    assertThat(messages.toString())
-      .contains("id: must be at least 5 characters");
+  @Test
+  void maximumLengthIdConstraints() {
+    ObjectNode impl = JsonNodeFactory.instance.objectNode();
+    impl.put("id", "azure-servicebus-product-connector"); // too long
+    assertMessage(impl, "id: may only be 30 characters long");
+  }
+
+  @Test
+  void validLengthOfIdConstraints() {
+    ObjectNode impl = JsonNodeFactory.instance.objectNode();
+    impl.put("id", "azure-servicebus-connector"); // too long
+    List<String> messages = validator.validate(impl).stream().map(ValidationMessage::getMessage).toList();
+    assertThat(messages.toString()).doesNotContain("id: may only be 30 characters long");
+    assertThat(messages.toString()).doesNotContain("id: must be at least 5 characters");
   }
 
   @Test
@@ -63,6 +72,12 @@ class TestMarketMetaSchema {
     JsonNode sourceUrl = schema.get("properties").get("sourceUrl");
     assertThat(sourceUrl.get("examples").toPrettyString())
       .contains("github.com");
+  }
+  
+  private void assertMessage(ObjectNode node, String neededContentMessage) {
+    List<String> messages = validator.validate(node).stream().map(ValidationMessage::getMessage).toList();
+    assertThat(messages).as("schema is strictly validated").isNotEmpty();
+    assertThat(messages.toString()).contains(neededContentMessage);
   }
 
   private JsonNode load(String resource) {
