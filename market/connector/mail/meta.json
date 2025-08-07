@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "mail-connector",
+  "name": "Mail Connector",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Mail"
+    },
+    {
+      "locale": "de",
+      "value": "Mail"
+    }
+  ],
+  "description": "Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management."
+    },
+    {
+      "locale": "de",
+      "value": "TODO - Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/mail-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/mail-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["office", "email"],
+  "mavenArtifacts": [
+    {
+      "name": "Mail Connector Product",
+      "groupId": "com.axonivy.connector.mail",
+      "artifactId": "mail-connector-product",
+      "type": "zip"
+    }
+  ]
+}
