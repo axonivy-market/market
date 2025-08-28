@@ -1,26 +1,26 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "mail-connector",
-  "name": "Mail Connector",
+  "name": "Email",
   "names": [
     {
       "locale": "en",
-      "value": "Mail"
+      "value": "Email"
     },
     {
       "locale": "de",
-      "value": "Mail"
+      "value": "E-Mail"
     }
   ],
-  "description": "Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management.",
+  "description": "Enables the full email lifecycle and links emails to Ivy cases, including email tracking, validation, retries, and admin task management.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management."
+      "value": "Enables the full email lifecycle and links emails to Ivy cases, including email tracking, validation, retries, and admin task management."
     },
     {
       "locale": "de",
-      "value": "TODO - Enables sending, receiving, replying, forwarding, and resending emails linked to Ivy cases with full tracking, validation, retry logic, and admin task management."
+      "value": "Ermöglicht den kompletten E-Mail-Lebenszyklus und verknüpft E-Mails mit Ivy Cases – inklusive E-Mail Nachverfolgung und Validierung sowie Administrationsaufgaben."
     }
   ],
   "type": "connector",
