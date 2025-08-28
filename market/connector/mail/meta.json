@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "mail-connector",
+  "name": "Email",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Email"
+    },
+    {
+      "locale": "de",
+      "value": "E-Mail"
+    }
+  ],
+  "description": "Enables the full email lifecycle and links emails to Ivy cases, including email tracking, validation, retries, and admin task management.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Enables the full email lifecycle and links emails to Ivy cases, including email tracking, validation, retries, and admin task management."
+    },
+    {
+      "locale": "de",
+      "value": "Ermöglicht den kompletten E-Mail-Lebenszyklus und verknüpft E-Mails mit Ivy Cases – inklusive E-Mail Nachverfolgung und Validierung sowie Administrationsaufgaben."
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/mail-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/mail-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["office", "email"],
+  "mavenArtifacts": [
+    {
+      "name": "Mail Connector Product",
+      "groupId": "com.axonivy.connector.mail",
+      "artifactId": "mail-connector-product",
+      "type": "zip"
+    }
+  ]
+}
