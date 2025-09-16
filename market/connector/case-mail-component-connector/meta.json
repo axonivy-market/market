@@ -1,15 +1,15 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "mail-connector",
-  "name": "Email",
+  "id": "case-mail-component-connector",
+  "name": "Case Mail Component",
   "names": [
     {
       "locale": "en",
-      "value": "Email"
+      "value": "Case Mail Component"
     },
     {
       "locale": "de",
-      "value": "E-Mail"
+      "value": "Case Mail Komponente"
     }
   ],
   "description": "Enables the full email lifecycle and links emails to Ivy cases, including email tracking, validation, retries, and admin task management.",
@@ -25,16 +25,23 @@
   ],
   "type": "connector",
   "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/mail-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/mail-connector/actions/workflows/ci.yml/badge.svg",
+  "sourceUrl": "https://github.com/axonivy-market/case-mail-component-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/case-mail-component/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["office", "email"],
   "mavenArtifacts": [
     {
-      "name": "Mail Connector Product",
-      "groupId": "com.axonivy.connector.mail",
-      "artifactId": "mail-connector-product",
+      "name": "Case Mail Component",
+      "groupId": "com.axonivy.connector.casemailcomponent",
+      "artifactId": "case-mail-component-connector-product",
+      "archivedArtifacts": [
+        {
+          "groupId": "com.axonivy.connector.mail",
+          "lastVersion": "12.0.0",
+          "artifactId": "mail-connector-product"
+        }
+      ],
       "type": "zip"
     }
   ]
