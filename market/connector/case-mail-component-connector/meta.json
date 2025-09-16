@@ -35,6 +35,13 @@
       "name": "Case Mail Component",
       "groupId": "com.axonivy.connector.casemailcomponent",
       "artifactId": "case-mail-component-connector-product",
+      "archivedArtifacts": [
+        {
+          "groupId": "com.axonivy.connector.mail",
+          "lastVersion": "12.0.0",
+          "artifactId": "mail-connector-product"
+        }
+      ],
       "type": "zip"
     }
   ]
