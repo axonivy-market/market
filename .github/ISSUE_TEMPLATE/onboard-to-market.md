@@ -3,7 +3,8 @@ name: onboard-to-market
 about: Introduce a new market-produkt into the axonivy-market
 title: Onboard [name] to Axon-ivy market
 labels: ''
-assignees: ivy-sgi
+assignees:
+  - ivy-sgi
 
 ---
 
@@ -11,7 +12,7 @@ Hi, I've just created a market-product that I'd like to publish into the officia
 Can you fork it and review my cool product?
 [link-to-your-product-repo]
 
-[Add your product logo. The logo size must be square]
+[Add your product logo. The logo must be perfectly square, with equal width and height.]
 
 [Provide a short product description. The description must not exceed two sentences and a maximum of 150 characters]
 
