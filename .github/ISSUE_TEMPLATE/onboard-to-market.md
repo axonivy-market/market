@@ -11,7 +11,9 @@ Hi, I've just created a market-product that I'd like to publish into the officia
 Can you fork it and review my cool product?
 [link-to-your-product-repo]
 
+[Add your product logo. The logo must be perfectly square, with equal width and height.]
 
+[Provide a short product description. The description must not exceed two sentences and a maximum of 150 characters]
 
 * * *
 ⚠️ do not remove this section, but leave it to track the reviewer's work.
@@ -48,4 +50,3 @@ Can you fork it and review my cool product?
 - [ ] The product `[myProduct]/product/Readme.md` contains an easy to understand description of the new product together with a short list of the main features.
 A demo section is included, as well as a clear explanation of the setup.
 - [ ] The product `[myProduct]/product/Readme_DE.md` contains a German translation of the README.md at least for the first part (see above - easy to understand description together with a short list of the main features). If you provide a translation of the demo-section and setup-section also, we are more than happy.
-
