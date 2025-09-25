@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "A comprehensive utility for generating and verifying image and audio CAPTCHAs to secure your application from bot and automated attacks."
+      "value": "Ein flexibles Tool, mit dem du Bild- und Audio-CAPTCHAs erstellen und prüfen kannst, um deine Anwendung wirksam vor Bots und automatisierten Angriffen zu schützen"
     }
   ],
   "type": "util",
