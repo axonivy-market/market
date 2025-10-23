@@ -30,8 +30,6 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["document", "spreadsheet"],
-  "versionDisplay": "axonivy-cells",
-  "installMatcher": "best-match",
   "mavenArtifacts": [
     {
       "key": "axonivy-cells-product",
