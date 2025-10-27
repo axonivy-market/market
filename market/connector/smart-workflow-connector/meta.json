@@ -36,8 +36,8 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Smart Workflow",
-      "artifactId": "missing",
-      "groupId": "missing",
+      "artifactId": "smart-workflow-product",
+      "groupId": "com.axonivy.utils.ai",
       "type": "zip"
     }
   ]
