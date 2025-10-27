@@ -1,15 +1,15 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "smart-workflows-connector",
-  "name": "smart-workflow",
+  "name": "Smart Workflow",
   "names": [
     {
       "locale": "en",
-      "value": "smart-workflow"
+      "value": "Smart Workflow"
     },
     {
       "locale": "de",
-      "value": "smart-workflow"
+      "value": "Smart Workflow"
     }
   ],
   "description": "This connector brings AI directly into Axon Ivy, allowing developers to build, run, and improve AI agents within existing Axon Ivy processes.",
