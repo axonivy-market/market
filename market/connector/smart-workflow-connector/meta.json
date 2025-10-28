@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
-  "id": "smart-workflows-connector",
+  "id": "smart-workflow",
   "name": "Smart Workflow",
   "names": [
     {
