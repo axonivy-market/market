@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "axonivy-words",
+  "name": "Axon Ivy Words",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy Words"
+    },
+    {
+      "locale": "de",
+      "value": "Axon Ivy Wörter"
+    }
+  ],
+  "description": "A lightweight utility that simplifies Words document processing tasks inside the Axon Ivy Platform.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "A lightweight utility that simplifies Words document processing tasks inside the Axon Ivy Platform."
+    },
+    {
+      "locale": "de",
+      "value": "Eine integrierte Lösung zur einfachen Bearbeitung von Word-Dokumenten in Axon Ivy."
+    }
+  ],
+  "type": "util",
+  "platformReview": "5",
+  "sourceUrl": "https://github.com/axonivy-market/axonivy-words",
+  "statusBadgeUrl": "https://github.com/axonivy-market/axonivy-words/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["document"],
+  "mavenArtifacts": [
+    {
+      "key": "axonivy-words-product",
+      "name": "Axon Ivy Words Product",
+      "groupId": "com.axonivy.utils.axonivywords",
+      "artifactId": "axonivy-words-product",
+      "type": "zip"
+    }
+  ]
+}
