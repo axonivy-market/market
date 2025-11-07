@@ -12,15 +12,15 @@
       "value": "Axon Ivy Wörter"
     }
   ],
-  "description": "A lightweight utility that simplifies Words document processing tasks inside the Axon Ivy Platform.",
+  "description": "A lightweight extension for processing and modifying Word documents inside Axon Ivy workflows.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "A lightweight utility that simplifies Words document processing tasks inside the Axon Ivy Platform."
+      "value": "A lightweight extension for processing and modifying Word documents inside Axon Ivy workflows."
     },
     {
       "locale": "de",
-      "value": "Eine integrierte Lösung zur einfachen Bearbeitung von Word-Dokumenten in Axon Ivy."
+      "value": "Eine Erweiterung zur Verarbeitung von Word-Dokumenten in Axon-Ivy-Workflows."
     }
   ],
   "type": "util",
