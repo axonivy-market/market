@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "case-process-viewer",
+  "name": "Case Process Viewer",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Case Process Viewer"
+    },
+    {
+      "locale": "de",
+      "value": "Fallprozess-Viewer"
+    }
+  ],
+  "description": "This Axon Ivy component highlights both the current active task and all completed tasks directly on the process diagram.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This Axon Ivy component highlights both the current active task and all completed tasks directly on the process diagram."
+    },
+    {
+      "locale": "de",
+      "value": "Diese Axon-Ivy-Komponente markiert sowohl die aktuell aktive Aufgabe als auch bereits abgeschlossene Schritte."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/case-process-viewer",
+  "statusBadgeUrl": "https://github.com/axonivy-market/case-process-viewer/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": [
+    "solution"
+  ],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Process Analyser Product",
+      "groupId": "com.axonivy.solutions.caseprocessviewer",
+      "artifactId": "case-process-viewer-product",
+      "type": "zip"
+    }
+  ]
+}
+
