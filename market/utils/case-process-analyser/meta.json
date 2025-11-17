@@ -9,18 +9,18 @@
     },
     {
       "locale": "de",
-      "value": "Fallprozess-Viewer"
+      "value": "Case Process Viewer"
     }
   ],
-  "description": "This Axon Ivy component highlights both the current active task and all completed tasks directly on the process diagram.",
+  "description": "This Axon Ivy component visualizes the current progress of a running process by highlighting the active task as well as all completed tasks directly within the process diagram.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This Axon Ivy component highlights both the current active task and all completed tasks directly on the process diagram."
+      "value": "This Axon Ivy component visualizes the current progress of a running process by highlighting the active task as well as all completed tasks directly within the process diagram."
     },
     {
       "locale": "de",
-      "value": "Diese Axon-Ivy-Komponente markiert sowohl die aktuell aktive Aufgabe als auch bereits abgeschlossene Schritte."
+      "value": "Diese Axon-Ivy-Komponente visualisiert den aktuellen Fortschritt eines laufenden Prozesses, indem sie die aktive, sowie alle abgeschlossenen Tasks direkt im Prozessdiagramm hervorhebt."
     }
   ],
   "type": "solution",
