@@ -9,7 +9,7 @@
     },
     {
       "locale": "de",
-      "value": "Axon Ivy Wörter"
+      "value": "Axon Ivy Words"
     }
   ],
   "description": "A lightweight extension for processing and modifying Word documents inside Axon Ivy workflows.",
