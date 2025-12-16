@@ -35,7 +35,7 @@
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",
-      "name": "Process Analyser Product",
+      "name": "Case Process Viewer Product",
       "groupId": "com.axonivy.solutions.caseprocessviewer",
       "artifactId": "case-process-viewer-product",
       "type": "zip"
