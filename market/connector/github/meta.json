@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "github",
+  "name": "GitHub",
+  "names": [
+    {
+      "locale": "en",
+      "value": "GitHub"
+    },
+    {
+      "locale": "de",
+      "value": "GitHub"
+    }
+  ],
+  "description": "An Axon Ivy REST API connector that integrates GitHub issues and workflows into your Ivy processes",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "An Axon Ivy REST API connector that integrates GitHub issues and workflows into your Ivy processes"
+    },
+    {
+      "locale": "de",
+      "value": "Ein Axon Ivy REST API-Konnektor, der GitHub-Issues und Workflows in Ihre Ivy-Prozesse integriert"
+    }
+  ],
+  "type": "connector",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/github-connector",
+  "statusBadgeUrl": "https://github.com/axonivy-market/github-connector/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "listed": true,
+  "tags": ["connector", "github", "rest api"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "GitHub Product",
+      "groupId": "com.axonivy.connector.github",
+      "artifactId": "github-connector-product",
+      "type": "zip"
+    }
+  ]
+}
