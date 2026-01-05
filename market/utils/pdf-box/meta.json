@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "pdfbox-utils",
+  "name": "PDFBox Utils",
+  "names": [
+    {
+      "locale": "en",
+      "value": "PDFBox Utils"
+    },
+    {
+      "locale": "de",
+      "value": "PDFBox Utils"
+    }
+  ],
+  "description": " a utility library for the Axon Ivy platform that builds on Apache PDFBox to simplify PDF manipulation and make PDF processing easy to integrate into business processes.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": " A utility library for the Axon Ivy platform that builds on Apache PDFBox to simplify PDF manipulation and make PDF processing easy to integrate into business processes."
+    },
+    {
+      "locale": "de",
+      "value": "Eine Dienstprogrammbibliothek für die Axon-Ivy-Plattform, die auf Apache PDFBox aufbaut, um die PDF-Bearbeitung zu vereinfachen und die Integration von PDF-Verarbeitung in Geschäftsprozesse zu erleichtern."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/pdf-box",
+  "statusBadgeUrl": "https://github.com/axonivy-market/pdf-box/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "name": "PDFBox Utils Product",
+      "groupId": "com.axonivy.utils.pdfbox",
+      "artifactId": "pdfbox-utils-product",
+      "type": "zip",
+      "repoUrl": "https://maven.axonivy.com"
+    }
+  ]
+}
