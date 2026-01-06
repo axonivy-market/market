@@ -12,15 +12,15 @@
       "value": "PDFBox Utils"
     }
   ],
-  "description": "A utility library that builds on Apache PDFBox to simplify PDF manipulation and make PDF processing easy to integrate into business processes.",
+  "description": "A lightweight PDF utility for Axon Ivy that simplifies PDF filling and PDF-to-image conversion.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "A utility library that builds on Apache PDFBox to simplify PDF manipulation and make PDF processing easy to integrate into business processes."
+      "value": "A lightweight PDF utility for Axon Ivy that simplifies PDF filling and PDF-to-image conversion."
     },
     {
       "locale": "de",
-      "value": "Eine Dienstprogrammbibliothek, die auf Apache PDFBox aufbaut, um die PDF-Bearbeitung zu vereinfachen und die Integration der PDF-Verarbeitung in Geschäftsprozesse zu erleichtern."
+      "value": "Ein kompaktes PDF-Werkzeug für Axon Ivy, das das Befüllen von PDFs sowie die Umwandlung von PDFs in Bildformate vereinfacht."
     }
   ],
   "type": "util",
