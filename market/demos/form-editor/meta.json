@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "form-editor-demo",
+  "name": "Form Editor Demos",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Axon Ivy Form Editor Demos"
+    },
+    {
+      "locale": "de",
+      "value": "Axon Ivy Form Editor Demos"
+    }
+  ],
+  "description": "Demo showcases the Axon Ivy Form Editor, demonstrating how to design and use forms visually within a process without coding",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Demo showcases the Axon Ivy Form Editor, demonstrating how to design and use forms visually within a process without coding."
+    },
+    {
+      "locale": "de",
+      "value": "Die Demo zeigt den Axon Ivy Form Editor und veranschaulicht, wie Benutzeroberflächen innerhalb eines Prozesses visuell und ohne Programmierung erstellt und verwendet werden."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/demo-projects",
+  "statusBadgeUrl": "https://github.com/axonivy-market/demo-projects/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "validate": true,
+  "mavenArtifacts": [
+    {
+      "name": "Axon Ivy Form Editor Demos Product",
+      "groupId": "com.axonivy.demo.formeditordemos",
+      "artifactId": "formeditor-demos-product",
+      "type": "zip"
+    }
+  ]
+}
