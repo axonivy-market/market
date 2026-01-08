@@ -34,7 +34,7 @@
     {
       "name": "PDFBox Utils Product",
       "groupId": "com.axonivy.utils.pdfbox",
-      "artifactId": "pdfbox-utils-product",
+      "artifactId": "pdf-box-product",
       "type": "zip",
       "repoUrl": "https://maven.axonivy.com"
     }
