@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "pdfbox-utils",
+  "name": "PDFBox Utils",
+  "names": [
+    {
+      "locale": "en",
+      "value": "PDFBox Utils"
+    },
+    {
+      "locale": "de",
+      "value": "PDFBox Utils"
+    }
+  ],
+  "description": "A lightweight PDF utility for Axon Ivy that simplifies PDF filling and PDF-to-image conversion.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "A lightweight PDF utility for Axon Ivy that simplifies PDF filling and PDF-to-image conversion."
+    },
+    {
+      "locale": "de",
+      "value": "Ein kompaktes PDF-Werkzeug für Axon Ivy, das das Befüllen von PDFs sowie die Umwandlung von PDFs in Bildformate vereinfacht."
+    }
+  ],
+  "type": "util",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/pdf-box",
+  "statusBadgeUrl": "https://github.com/axonivy-market/pdf-box/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "name": "PDFBox Utils Product",
+      "groupId": "com.axonivy.utils.pdfbox",
+      "artifactId": "pdf-box-product",
+      "type": "zip",
+      "repoUrl": "https://maven.axonivy.com"
+    }
+  ]
+}
