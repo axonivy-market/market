@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Eine Erweiterung zur Verarbeitung von PDF-Dokumenten in Axon-Ivy-Workflows."
+      "value": "Mit dieser Komponente lassen sich PDF-Dokumente effizient in Axon Ivy verarbeiten."
     }
   ],
   "type": "util",
