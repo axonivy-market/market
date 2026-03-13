@@ -40,8 +40,8 @@
     },
     {
       "name": "CMS Editor",
-      "groupId": "com.axonivy.utils.cmseditor",
-      "artifactId": "cms-editor",
+      "groupId": "com.axonivy.utils.cmsliveeditor",
+      "artifactId": "cms-live-editor",
       "archivedArtifacts": [
         {
           "lastVersion": "13.1.2",
