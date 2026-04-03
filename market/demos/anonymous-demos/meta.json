@@ -12,15 +12,15 @@
       "value": "Anonyme Demos"
     }
   ],
-  "description": "Demo uses emails and tokens to securely engage external users in Axon Ivy without registration.",
+  "description": "This demo shows you how to invite external users into Axon Ivy workflows using email and token-based authentication - no registration required.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Demo uses emails and tokens to securely engage external users in Axon Ivy without registration."
+      "value": "This demo shows you how to invite external users into Axon Ivy workflows using email and token-based authentication - no registration required."
     },
     {
       "locale": "de",
-      "value": "Die Demo nutzt E-Mails und Tokens, um externe Nutzer ohne Registrierung sicher in Axon Ivy einzubinden."
+      "value": "Möchtest du Benutzer einbinden, die noch kein Axon Ivy Konto haben? Diese Demo zeigt dir, wie du externe Teilnehmer sicher in deine Workflows einlädst - nur via E-Mail und einem Token."
     }
   ],
   "type": "solution",
