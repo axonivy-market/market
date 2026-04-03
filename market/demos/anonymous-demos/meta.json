@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "anonymous-demos",
+  "name": "Anonymous Demos",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Anonymous Demos"
+    },
+    {
+      "locale": "de",
+      "value": "Anonyme Demos"
+    }
+  ],
+  "description": "This demo shows you how to invite external users into Axon Ivy workflows using email and token-based authentication - no registration required.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This demo shows you how to invite external users into Axon Ivy workflows using email and token-based authentication - no registration required."
+    },
+    {
+      "locale": "de",
+      "value": "Möchtest du Benutzer einbinden, die noch kein Axon Ivy Konto haben? Diese Demo zeigt dir, wie du externe Teilnehmer sicher in deine Workflows einlädst - nur via E-Mail und einem Token."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/anonymous-demos",
+  "statusBadgeUrl": "https://github.com/axonivy-market/anonymous-demos/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "validate": true,
+  "mavenArtifacts": [
+    {
+      "name": "Anonymous Demos Product",
+      "groupId": "com.axonivy.demo.anonymous",
+      "artifactId": "anonymous-demos-product",
+      "type": "zip"
+    }
+  ]
+}
