@@ -2,11 +2,8 @@
 name: product-idea
 about: Share a new market-produkt idea that would benefit you.
 title: craft [ECO-SYSTEM-X] product
-assignees:
-  - ivy-rew
-  - ivy-sgi
-  - weissreto
-  - andreasbalsiger
+labels: ''
+assignees: ivy-rew, ivy-sgi, weissreto
 
 ---
 
