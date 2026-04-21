@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "id": "ivy-load-test",
+  "name": "Ivy Load Test",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Ivy Load Test"
+    },
+    {
+      "locale": "de",
+      "value": "Ivy Load Test"
+    }
+  ],
+  "description": "Demo performance tests as a reference for your Axon Ivy project using JMeter Java DSL.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "Demo performance tests as a reference for your Axon Ivy project using JMeter Java DSL."
+    },
+    {
+      "locale": "de",
+      "value": "Demo-Leistungstests als Referenz für dein Axon Ivy Projekt unter Verwendung von JMeter Java DSL."
+    }
+  ],
+  "type": "solution",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/ivy-load-test",
+  "statusBadgeUrl": "https://github.com/axonivy-market/ivy-load-test/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["demo"],
+  "validate": true,
+  "mavenArtifacts": [
+    {
+      "name": "Ivy Load Test Product",
+      "groupId": "com.axonivy.demo.loadtest",
+      "artifactId": "ivy-load-test-product",
+      "type": "zip"
+    }
+  ]
+}
