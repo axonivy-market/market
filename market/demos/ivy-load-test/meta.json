@@ -12,15 +12,15 @@
       "value": "Ivy Load Test"
     }
   ],
-  "description": "Demo performance tests as a reference for your Axon Ivy project using JMeter Java DSL.",
+  "description": "This demo shows how to run performance tests for Axon Ivy projects using the JMeter Java DSL.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "Demo performance tests as a reference for your Axon Ivy project using JMeter Java DSL."
+      "value": "This demo shows how to run performance tests for Axon Ivy projects using the JMeter Java DSL."
     },
     {
       "locale": "de",
-      "value": "Demo-Leistungstests als Referenz für dein Axon Ivy Projekt unter Verwendung von JMeter Java DSL."
+      "value": "Diese Demo zeigt die Umsetzung von Performance-Tests für Axon Ivy-Projekte mithilfe von JMeter Java DSL."
     }
   ],
   "type": "solution",
