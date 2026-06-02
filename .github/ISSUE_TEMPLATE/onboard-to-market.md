@@ -5,6 +5,7 @@ title: Onboard [name] to Axon-ivy market
 labels: ''
 assignees:
   - ivy-sgi
+  - team-octopus
 ---
 
 Hi, I've just created a market-product that I'd like to publish into the official axonivy-market. 
