@@ -12,15 +12,15 @@
       "value" : "Slack"
     }
   ],
-  "description" : "The Axon Ivy Slack Connector enables seamless integration between Slack conversations and Axon Ivy workflows.",
+  "description" : "The Axon Ivy Slack Connector connects Slack conversations directly with Axon Ivy workflows",
   "descriptions" : [
     {
       "locale" : "en",
-      "value" : "The Axon Ivy Slack Connector enables seamless integration between Slack conversations and Axon Ivy workflows."
+      "value" : "The Axon Ivy Slack Connector connects Slack conversations directly with Axon Ivy workflows"
     },
     {
       "locale" : "de",
-      "value" : "Der Axon Ivy Slack Connector ermöglicht eine nahtlose Integration zwischen Slack-Konversationen und Axon Ivy Workflows."
+      "value" : "Der Axon Ivy Slack Connector verbindet Slack-Konversationen direkt mit Axon Ivy Workflows"
     }
   ],
   "type" : "connector",
