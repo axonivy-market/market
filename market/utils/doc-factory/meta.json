@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "doc-factory",
   "name": "DocFactory",
   "names": [
@@ -23,7 +23,7 @@
       "value": "DocFactory nutzt Aspose-Technologie, um aus deinen Prozessdaten beliebige Dokumente zu generieren."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/doc-factory",
   "language": "English",

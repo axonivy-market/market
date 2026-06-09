@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.4/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "dmn-decision-table",
   "name": "DMN Decision Table",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Optimiere deine Geschäftsprozesse mit standardisierten DMN-Entscheidungstabellen."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "4",
   "sourceUrl": "https://github.com/axonivy-market/dmn-decision-table",
   "statusBadgeUrl": "https://github.com/axonivy-market/dmn-decision-table/actions/workflows/ci.yml/badge.svg",

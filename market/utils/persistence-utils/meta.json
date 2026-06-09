@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "persistence-utils",
   "name": "Persistence Utils",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Axon Ivys Persistence Lib Utility erleichtert die Automatisierung von Prozessen durch die Einführung einer DAO-Abstraktionsebene."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/persistence-utils",
   "statusBadgeUrl": "https://github.com/axonivy-market/persistence-utils/actions/workflows/ci.yml/badge.svg",

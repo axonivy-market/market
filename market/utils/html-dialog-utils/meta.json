@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "html-dialog-utils",
   "name": "HTML Dialog Util",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Dieses Tool kann in jedem HTML-Dialog eingesetzt werden um Teile einer UI schreibgeschützt zu gestalten."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "4",
   "sourceUrl": "https://github.com/axonivy-market/html-dialog-utils",
   "statusBadgeUrl": "https://github.com/axonivy-market/html-dialog-utils/actions/workflows/ci.yml/badge.svg",

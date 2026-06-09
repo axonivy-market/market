@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "visualvm-plugin",
   "name": "VisualVM Plugin",
   "names": [
@@ -23,7 +23,7 @@
       "value": "VisualVM ein Plugin, das eine Monitoring-Schnittstelle für die Axon Ivy Engine in Version 8."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "sourceUrl": "https://github.com/axonivy-market/visualvm-plugin",
   "statusBadgeUrl": "https://github.com/axonivy-market/visualvm-plugin/actions/workflows/ci.yml/badge.svg",
   "language": "English",

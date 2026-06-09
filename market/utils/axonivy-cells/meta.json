@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "axonivy-cells",
   "name": "Axon Ivy Cells",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Eine integrierte Lösung zur einfachen Bearbeitung von Tabellenkalkulationen in Axon Ivy."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "5",
   "sourceUrl": "https://github.com/axonivy-market/axonivy-cells",
   "statusBadgeUrl": "https://github.com/axonivy-market/axonivy-cells/actions/workflows/ci.yml/badge.svg",
