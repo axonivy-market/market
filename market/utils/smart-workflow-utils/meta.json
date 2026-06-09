@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "smart-workflow",
   "name": "Axon Ivy Smart Workflow",
   "names": [
@@ -12,25 +12,25 @@
       "value": "Axon Ivy Smart Workflow"
     }
   ],
-  "description": "This connector brings AI directly into Axon Ivy, allowing developers to build, run, and improve AI agents within existing Axon Ivy processes.",
+  "description": "This utility brings AI directly into Axon Ivy, allowing developers to build, run, and improve AI agents within existing Axon Ivy processes.",
   "descriptions": [
     {
       "locale": "en",
-      "value": "This connector brings AI directly into Axon Ivy, allowing developers to build, run, and improve AI agents within existing Axon Ivy processes."
+      "value": "This utility brings AI directly into Axon Ivy, allowing developers to build, run, and improve AI agents within existing Axon Ivy processes."
     },
     {
       "locale": "de",
-      "value": "Dieser Konnektor bringt KI direkt in Axon Ivy, sodass Entwickler KI-Agenten innerhalb bestehender Axon Ivy-Prozesse erstellen, ausführen und verbessern können."
+      "value": "Dieses Dienstprogramm bringt KI direkt in Axon Ivy, sodass Entwickler KI-Agenten innerhalb bestehender Axon Ivy-Prozesse erstellen, ausführen und verbessern können."
     }
   ],
-  "type": "connector",
+  "type": "utils",
   "platformReview": "1",
   "sourceUrl": "https://github.com/axonivy-market/smart-workflow",
   "statusBadgeUrl": "https://github.com/axonivy-market/smart-workflow/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
   "tags": [
-    "connector", "AI"
+    "utils", "AI"
   ],
   "mavenArtifacts": [
     {
