@@ -20,7 +20,7 @@
     },
     {
       "locale": "de",
-      "value": "Dieses Dienstprogramm bringt KI direkt in Axon Ivy, sodass Entwickler KI-Agenten innerhalb bestehender Axon Ivy-Prozesse erstellen, ausführen und verbessern können."
+      "value": "Dieses Utilities bringt KI direkt in Axon Ivy, sodass Entwickler KI-Agenten innerhalb bestehender Axon Ivy-Prozesse erstellen, ausführen und verbessern können."
     }
   ],
   "type": "utils",
