@@ -3,11 +3,11 @@ name: Feature request
 about: Suggest an idea for this project
 title: ''
 labels: ''
-assignees: ''
+assignees: Octopus-AxonIvy
 
 ---
 
-Dear @ivy-sgi, it would be cool to have the following feature in the market place:
+Dear @Octopus-AxonIvy, it would be cool to have the following feature in the market place:
  
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
