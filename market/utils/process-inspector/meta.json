@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "process-inspector",
   "name": "Process Inspector",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Axon Ivy's Prozess Inspektor ist ein Tool, mit dem du die Fertigstellung eines Cases vorhersagen kannst."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/process-inspector",
   "statusBadgeUrl": "https://github.com/axonivy-market/process-inspector/actions/workflows/ci.yml/badge.svg",

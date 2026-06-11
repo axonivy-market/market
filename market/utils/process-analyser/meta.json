@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "process-analyser",
   "name": "Process Analyser",
   "names": [
@@ -23,15 +23,13 @@
       "value": "Analysiere Nutzungsdaten und visualisiere sie in AxonIvy BPMN Prozessen."
     }
   ],
-  "type": "solution",
+  "type": "utils",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/process-analyser",
   "statusBadgeUrl": "https://github.com/axonivy-market/process-analyser/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
-  "tags": [
-    "solution"
-  ],
+  "tags": ["utils"],
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",

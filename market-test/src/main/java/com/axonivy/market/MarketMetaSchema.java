@@ -76,7 +76,7 @@ public class MarketMetaSchema {
   public static enum Cost { free, paid; }
   public Cost cost;
 
-  public static enum Type { connector, solution, process, util }
+  public static enum Type { connector, demo, utils }
   @NotNull
   public Type type;
 

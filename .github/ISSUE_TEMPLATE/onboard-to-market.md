@@ -32,7 +32,7 @@ Can you fork it and review my cool product?
 
 ### Coherent
 
-- [ ] Common group-id for all artifacts `<groupId>[org.arcme|com.axonivy].[util|connector].[product-name]<groupId>`
+- [ ] Common group-id for all artifacts `<groupId>[org.arcme|com.axonivy].[utils|connector|demo].[product-name]<groupId>`
 - [ ] Common artifact-id prefix: `<artifactId>msgraph[-product|test|demo]</artifactId>`
 - [ ] Html-Dalogs depend on suggested 'frame' template
 - [ ] Github actions + maven-build runs as outlined in market-product template
