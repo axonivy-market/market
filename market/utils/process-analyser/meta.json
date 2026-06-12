@@ -34,9 +34,16 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Process Analyser Product",
-      "groupId": "com.axonivy.solutions.process.analyser",
+      "groupId": "com.axonivy.utils.process.analyser",
       "artifactId": "process-analyser-product",
-      "type": "zip"
+      "type": "zip",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "13.2.5",
+          "groupId": "com.axonivy.solutions.process.analyser",
+          "artifactId": "process-analyser-product"
+        }
+      ]
     }
   ]
 }
