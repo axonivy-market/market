@@ -13,6 +13,7 @@ Can you fork it and review my cool product?
 [link-to-your-product-repo]
 
 [Add your product logos. All logos must be perfectly square, with equal width and height.]
+[If you've used a new connector, please use the logo of the connected third-party provider. In all other cases, we will provide you with a logo.]
 [Use logo.png for Light Mode.]
 [Use logo_dark.png for Dark Mode.]
 [If the same logo should be displayed in both modes, simply provide logo.png; logo_dark.png is optional.]
