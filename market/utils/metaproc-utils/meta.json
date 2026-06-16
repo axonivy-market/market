@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
-  "id": "metaproc-connector",
+  "id": "metaproc-utils",
   "name": "Axon Ivy RPA",
   "names": [
     {
@@ -25,18 +25,25 @@
   ],
   "type": "utils",
   "platformReview": "4.5",
-  "sourceUrl": "https://github.com/axonivy-market/metaproc-connector",
-  "statusBadgeUrl": "https://github.com/axonivy-market/metaproc-connector/actions/workflows/ci.yml/badge.svg",
+  "sourceUrl": "https://github.com/axonivy-market/metaproc-utils",
+  "statusBadgeUrl": "https://github.com/axonivy-market/metaproc-utils/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["RPA"],
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",
-      "name": "meta:proc Connector Product",
-      "groupId": "com.axonivy.connector.metaproc",
-      "artifactId": "metaproc-connector-product",
-      "type": "zip"
+      "name": "meta:proc Utils Product",
+      "groupId": "com.axonivy.utils.metaproc",
+      "artifactId": "metaproc-utils-product",
+      "type": "zip",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "13.2.0",
+          "groupId": "com.axonivy.connector.metaproc",
+          "artifactId": "metaproc-connector-product"
+        }
+      ]
     }
   ]
 }
