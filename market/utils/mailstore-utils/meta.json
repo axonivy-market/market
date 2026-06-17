@@ -42,6 +42,7 @@
           "groupId": "com.axonivy.connector.mailstore",
           "artifactId": "mailstore-connector-product"
         }
+      ]
     }
   ]
 }
