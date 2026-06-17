@@ -29,14 +29,21 @@
   "statusBadgeUrl": "https://github.com/axonivy-market/ivy-load-test/actions/workflows/ci.yml/badge.svg",
   "language": "English",
   "industry": "Cross-Industry",
-  "tags": ["demo"],
+  "tags": ["utils"],
   "validate": true,
   "mavenArtifacts": [
     {
       "name": "Ivy Load Test Product",
-      "groupId": "com.axonivy.demo.loadtest",
+      "groupId": "com.axonivy.utils.loadtest",
       "artifactId": "ivy-load-test-product",
-      "type": "zip"
+      "type": "zip",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "13.2.0",
+          "groupId": "com.axonivy.demo.loadtest",
+          "artifactId": "ivy-load-test-product"
+        }
+      ]
     }
   ]
 }
