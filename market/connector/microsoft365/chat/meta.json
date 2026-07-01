@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "msgraph-chat",
   "version": "1.0",
   "name": "Microsoft Teams",
@@ -24,7 +24,7 @@
       "value": "Empfange Benachrichtigungen über neue Aufgaben direkt in Microsoft Teams."
     }
   ],
-  "type": "utils",
+  "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
   "language": "English",

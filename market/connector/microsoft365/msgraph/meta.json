@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "msgraph",
   "name": "Microsoft 365",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Die Microsoft Graph API ermöglicht eine schnelle und unkomplizierte Integration von jedem Microsoft 365-Produkt."
     }
   ],
-  "type": "utils",
+  "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
   "statusBadgeUrl": "https://github.com/axonivy-market/msgraph-connector/actions/workflows/ci.yml/badge.svg",

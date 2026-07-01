@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
   "id": "msgraph-todo",
   "name": "Microsoft To Do",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Integriere Microsoft To Do mühelos mit deinen Geschäftsprozessen, um Aufgaben zentral zu steuern und nachzuverfolgen."
     }
   ],
-  "type": "utils",
+  "type": "connector",
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/msgraph-connector",
   "language": "English",
