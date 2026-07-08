@@ -12,15 +12,15 @@
       "value" : "IBM MQ Connector"
     }
   ],
-  "description" : "API for facilitating distributed event messages to automate real-time process workflows.",
+  "description" : "API for message-based data exchange between systems via IBM MQ.",
   "descriptions" : [
     {
       "locale" : "en",
-      "value" : "API for facilitating distributed event messages to automate real-time process workflows."
+      "value" : "API for message-based data exchange between systems via IBM MQ."
     },
     {
       "locale" : "de",
-      "value" : "API zur Vereinfachung des Versands verteilter Ereignisnachrichten zur Automatisierung von Echtzeit-Prozessabläufen."
+      "value" : "API für die nachrichtenbasierte Systemkommunikation über IBM MQ."
     }
   ],
   "type" : "connector",
