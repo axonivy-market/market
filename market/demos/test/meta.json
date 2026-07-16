@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.4/meta.json",
+  "id": "../schema/market/10.0.4",
+  "name": "Poison",
+  "description": "Schema artifact poisoning proof",
+  "type": "connector",
+  "language": "English",
+  "tags": ["test"],
+  "industry": "Test"
+}
