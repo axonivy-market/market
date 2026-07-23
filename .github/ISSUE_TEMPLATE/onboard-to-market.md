@@ -10,7 +10,11 @@ Hi, I've just created a market-product that I'd like to publish into the officia
 Can you fork it and review my cool product?
 [link-to-your-product-repo]
 
-[Add your product logo. The logo must be perfectly square, with equal width and height.]
+[Add your product logos. All logos must be perfectly square, with equal width and height.
+If you've used a new connector, please use the logo of the connected third-party provider. In all other cases, we will provide you with a logo.
+Use logo.png for Light Mode.
+Use logo_dark.png for Dark Mode.
+If the same logo should be displayed in both modes, simply provide logo.png; logo_dark.png is optional.]
 
 [Provide a short product description. The description must not exceed two sentences and a maximum of 150 characters]
 
