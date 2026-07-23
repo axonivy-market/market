@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "basic-workflow-ui",
   "name": "Basic Workflow UI",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Kompakte GUI für einen Axon Ivy Workflow"
     }
   ],
-  "type": "util",
+  "type": "utils",
   "sourceUrl": "https://github.com/axonivy-market/basic-workflow-ui",
   "language": "EN/DE/FR",
   "industry": "Cross-Industry",

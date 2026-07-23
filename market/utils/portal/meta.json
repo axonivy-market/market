@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "portal",
   "name": "Axon Ivy Portal",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Das Axon Ivy Portal ist dein 'single-point-of-contact' für die Nutzung der Axon Ivy Plattform."
     }
   ],
-  "type": "util",
+  "type": "utils",
   "platformReview": "5",
   "sourceUrl": "https://github.com/axonivy-market/portal",
   "language": "EN/DE/FR/ES",

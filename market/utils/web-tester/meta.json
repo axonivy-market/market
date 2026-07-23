@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.2/meta.json",
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "web-tester",
   "name": "Web Tester",
   "names": [
@@ -23,7 +23,7 @@
       "value": "Einfache Web-Integrationstests für deine Prozessautomatisierungsprojekte (PrimeFaces widgets + Selenium)"
     }
   ],
-  "type": "util",
+  "type": "utils",
   "sourceUrl": "https://github.com/axonivy/web-tester",
   "language": "English",
   "industry": "Cross-Industry",

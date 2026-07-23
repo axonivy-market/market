@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "id": "case-process-viewer-utils",
+  "name": "Case Process Viewer",
+  "names": [
+    {
+      "locale": "en",
+      "value": "Case Process Viewer"
+    },
+    {
+      "locale": "de",
+      "value": "Case Process Viewer"
+    }
+  ],
+  "description": "This Axon Ivy utility visualizes the current progress of a running process by highlighting the active task as well as all completed tasks directly within the process diagram.",
+  "descriptions": [
+    {
+      "locale": "en",
+      "value": "This Axon Ivy utility visualizes the current progress of a running process by highlighting the active task as well as all completed tasks directly within the process diagram."
+    },
+    {
+      "locale": "de",
+      "value": "Dieses Axon-Ivy-Utility visualisiert den aktuellen Fortschritt eines laufenden Prozesses, indem es die aktive, sowie alle abgeschlossenen Tasks direkt im Prozessdiagramm hervorhebt."
+    }
+  ],
+  "type": "utils",
+  "platformReview": "4.5",
+  "sourceUrl": "https://github.com/axonivy-market/case-process-viewer-utils",
+  "statusBadgeUrl": "https://github.com/axonivy-market/case-process-viewer-utils/actions/workflows/ci.yml/badge.svg",
+  "language": "English",
+  "industry": "Cross-Industry",
+  "tags": ["utils"],
+  "mavenArtifacts": [
+    {
+      "repoUrl": "https://maven.axonivy.com",
+      "name": "Case Process Viewer Utils Product",
+      "groupId": "com.axonivy.utils.caseprocessviewer",
+      "artifactId": "case-process-viewer-utils-product",
+      "type": "zip",
+      "archivedArtifacts": [
+        {
+          "lastVersion": "13.2.2",
+          "groupId": "com.axonivy.solutions.caseprocessviewer",
+          "artifactId": "case-process-viewer-product"
+        }
+      ]
+    }
+  ]
+}
+
