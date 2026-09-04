@@ -37,6 +37,7 @@ jobs:
           repository="${SOURCE_REPOSITORY%.git}"
           repository="${repository%/}"
           repository_name="${repository##*/}"
+          repository_owner="$(basename "$(dirname "${repository}")")"
 
           if [[ ! "${repository}" =~ ^https://github\.com/[^/]+/[^/]+$ ]] || [ -z "${repository_name}" ]; then
             echo "Source repository must be a GitHub repository URL, e.g. https://github.com/someuser/some-connector"
@@ -44,12 +45,13 @@ jobs:
           fi
 
           echo "name=${repository_name}" >> "${GITHUB_OUTPUT}"
+          echo "owner=${repository_owner}" >> "${GITHUB_OUTPUT}"
           echo "target=${MARKET_ORG}/${repository_name}" >> "${GITHUB_OUTPUT}"
 
       - name: Create repository
         shell: bash
         run: |
-          gh repo create "${{ steps.repository.outputs.target }}" --public --confirm
+          gh repo create "${{ steps.repository.outputs.target }}" --public
           git clone "${SOURCE_REPOSITORY}" source
 
       - name: Push master and onboard branches
@@ -67,10 +69,18 @@ jobs:
         shell: bash
         working-directory: source
         run: |
+          cat > pr-body.md <<EOF
+          Onboards ${SOURCE_REPOSITORY} into the Axon Ivy Market.
+
+          Source repository: ${SOURCE_REPOSITORY}
+          Source owner: ${{ steps.repository.outputs.owner }}
+          Triggered by: ${GITHUB_ACTOR}
+          EOF
+
           gh pr create \
             --repo "${{ steps.repository.outputs.target }}" \
             --base master \
             --head onboard \
             --title "Onboard ${{ steps.repository.outputs.name }}" \
-            --body "Onboards ${SOURCE_REPOSITORY} into the Axon Ivy Market." \
+            --body-file pr-body.md \
             --reviewer "${GITHUB_ACTOR}"
