@@ -1,0 +1,76 @@
+name: Onboard Product
+run-name: Onboard ${{ inputs.source-repository }} triggered by ${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      source-repository:
+        description: "Source repository URL"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  onboard:
+    name: Onboard product repository
+    runs-on: [ubuntu-latest]
+    environment: onboarding
+    env:
+      MARKET_ORG: axonivy-market
+      GH_TOKEN: ${{ secrets.MARKET_ORG_TOKEN }}
+      SOURCE_REPOSITORY: ${{ inputs.source-repository }}
+    steps:
+      - name: Validate token
+        shell: bash
+        run: |
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "Missing MARKET_ORG_TOKEN secret. The token must be able to create repositories in ${MARKET_ORG} and push branches."
+            exit 1
+          fi
+
+      - name: Parse source repository
+        id: repository
+        shell: bash
+        run: |
+          repository="${SOURCE_REPOSITORY%.git}"
+          repository="${repository%/}"
+          repository_name="${repository##*/}"
+
+          if [[ ! "${repository}" =~ ^https://github\.com/[^/]+/[^/]+$ ]] || [ -z "${repository_name}" ]; then
+            echo "Source repository must be a GitHub repository URL, e.g. https://github.com/someuser/some-connector"
+            exit 1
+          fi
+
+          echo "name=${repository_name}" >> "${GITHUB_OUTPUT}"
+          echo "target=${MARKET_ORG}/${repository_name}" >> "${GITHUB_OUTPUT}"
+
+      - name: Create repository
+        shell: bash
+        run: |
+          gh repo create "${{ steps.repository.outputs.target }}" --public --confirm
+          git clone "${SOURCE_REPOSITORY}" source
+
+      - name: Push master and onboard branches
+        shell: bash
+        working-directory: source
+        run: |
+          first_commit="$(git rev-list --max-parents=0 HEAD | tail -n 1)"
+          gh auth setup-git
+          target_url="https://github.com/${{ steps.repository.outputs.target }}.git"
+
+          git push "${target_url}" "${first_commit}:refs/heads/master"
+          git push "${target_url}" "HEAD:refs/heads/onboard"
+
+      - name: Create onboarding pull request
+        shell: bash
+        working-directory: source
+        run: |
+          gh pr create \
+            --repo "${{ steps.repository.outputs.target }}" \
+            --base master \
+            --head onboard \
+            --title "Onboard ${{ steps.repository.outputs.name }}" \
+            --body "Onboards ${SOURCE_REPOSITORY} into the Axon Ivy Market." \
+            --reviewer "${GITHUB_ACTOR}"
