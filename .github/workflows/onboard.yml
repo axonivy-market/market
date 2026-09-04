@@ -50,6 +50,7 @@ jobs:
           echo "name=${repository_name}" >> "${GITHUB_OUTPUT}"
           echo "owner=${repository_owner}" >> "${GITHUB_OUTPUT}"
           echo "target=${MARKET_ORG}/${repository_name}" >> "${GITHUB_OUTPUT}"
+          echo "url=${repository}" >> "${GITHUB_OUTPUT}"
 
       - name: Create repository
         shell: bash
@@ -69,6 +70,7 @@ jobs:
           git push "${target_url}" "HEAD:refs/heads/onboard"
 
       - name: Create onboarding pull request
+        id: pull-request
         shell: bash
         working-directory: source
         run: |
@@ -88,11 +90,32 @@ jobs:
 
           sed -n '/^# Review Tasks/,$p' ../.github/ISSUE_TEMPLATE/onboard-to-market.md >> pr-body.md
 
-          gh pr create \
+          pr_url="$(gh pr create \
             --repo "${{ steps.repository.outputs.target }}" \
             --base master \
             --head onboard \
             --title "Onboard ${{ steps.repository.outputs.name }}" \
             --body-file pr-body.md \
             --reviewer "${GITHUB_ACTOR}" \
-            --reviewer "@copilot"
+            --reviewer "@copilot")"
+
+          echo "${pr_url}"
+          echo "url=${pr_url}" >> "${GITHUB_OUTPUT}"
+
+      - name: Link onboarding issue
+        shell: bash
+        run: |
+          issue_url="$(gh issue list \
+            --repo "${GITHUB_REPOSITORY}" \
+            --state all \
+            --search "\"${{ steps.repository.outputs.url }}\" in:body" \
+            --json url \
+            --jq '.[0].url')"
+
+          if [ -n "${issue_url}" ]; then
+            gh pr comment "${{ steps.pull-request.outputs.url }}" \
+              --repo "${{ steps.repository.outputs.target }}" \
+              --body "Related onboarding issue: ${issue_url}"
+          else
+            echo "No onboarding issue found for ${{ steps.repository.outputs.url }}; continuing without issue link."
+          fi
