@@ -78,8 +78,8 @@ jobs:
           Onboards ${SOURCE_REPOSITORY} into the Axon Ivy Market.
 
           Source repository: ${SOURCE_REPOSITORY}
-          Source owner: ${{ steps.repository.outputs.owner }}
-          Triggered by: ${GITHUB_ACTOR}
+          Source owner: @${{ steps.repository.outputs.owner }}
+          Triggered by: @${GITHUB_ACTOR}
 
           @copilot review this onboarding pull request against the Axon Ivy Market onboarding checklist below.
           For each checklist item, report either PASS, FAIL, or NEEDS HUMAN REVIEW.
