@@ -80,6 +80,9 @@ jobs:
           Triggered by: ${GITHUB_ACTOR}
 
           @copilot review this onboarding pull request against the Axon Ivy Market onboarding checklist below.
+          For each checklist item, report either PASS, FAIL, or NEEDS HUMAN REVIEW.
+          Do not mark checklist boxes as completed unless the repository content clearly proves the item is satisfied.
+          Leave concrete review comments for each FAIL item and summarize all NEEDS HUMAN REVIEW items in your review overview.
 
           EOF
 
