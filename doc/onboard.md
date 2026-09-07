@@ -35,7 +35,7 @@ If the token is no longer valid, generate a new token as follows:
    Personal access tokens > Tokens (classic) > Generate new token.
 3. Configure the token:
    - Expiration: 30 days or less.
-   - Scope: `public_repo`.
+   - Scope: `workfklow`. (all 'repository' scopes will also be auto-selected)
 4. Generate the token and copy it to your clipboard.
 5. Go to the `market` repository settings on GitHub:
    Settings > Environments > `onboarding` > Environment secrets.
