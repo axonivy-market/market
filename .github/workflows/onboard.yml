@@ -29,7 +29,7 @@ jobs:
         shell: bash
         run: |
           if [ -z "${GH_TOKEN}" ]; then
-            echo "Missing MARKET_ORG_TOKEN secret. The token must be able to create repositories in ${MARKET_ORG} and push branches."
+            echo "Missing MARKET_ORG_TOKEN secret. The token must be able to create forks in ${MARKET_ORG} and push branches."
             exit 1
           fi
 
@@ -52,22 +52,27 @@ jobs:
           echo "target=${MARKET_ORG}/${repository_name}" >> "${GITHUB_OUTPUT}"
           echo "url=${repository}" >> "${GITHUB_OUTPUT}"
 
-      - name: Create repository
+      - name: Fork source repository
         shell: bash
         run: |
-          gh repo create "${{ steps.repository.outputs.target }}" --public
+          gh repo fork "${{ steps.repository.outputs.owner }}/${{ steps.repository.outputs.name }}" \
+            --org "${MARKET_ORG}" \
+            --clone=false
           git clone "${SOURCE_REPOSITORY}" source
 
-      - name: Push master and onboard branches
+      - name: Prepare Market pull request base
         shell: bash
         working-directory: source
         run: |
           first_commit="$(git rev-list --max-parents=0 HEAD | tail -n 1)"
+          source_branch="$(gh repo view "${{ steps.repository.outputs.owner }}/${{ steps.repository.outputs.name }}" --json defaultBranchRef --jq '.defaultBranchRef.name')"
           gh auth setup-git
           target_url="https://github.com/${{ steps.repository.outputs.target }}.git"
 
           git push "${target_url}" "${first_commit}:refs/heads/master"
-          git push "${target_url}" "HEAD:refs/heads/onboard"
+          gh api --method PATCH "repos/${{ steps.repository.outputs.target }}" -f default_branch=master
+
+          echo "source_branch=${source_branch}" >> "${GITHUB_OUTPUT}"
 
       - name: Create onboarding pull request
         id: pull-request
@@ -93,7 +98,7 @@ jobs:
           pr_url="$(gh pr create \
             --repo "${{ steps.repository.outputs.target }}" \
             --base master \
-            --head onboard \
+            --head "${{ steps.repository.outputs.owner }}:${{ steps.repository.outputs.source_branch }}" \
             --title "Onboard ${{ steps.repository.outputs.name }}" \
             --body-file pr-body.md \
             --reviewer "${GITHUB_ACTOR}" \
