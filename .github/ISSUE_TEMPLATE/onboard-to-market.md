@@ -27,8 +27,8 @@ If the same logo should be displayed in both modes, simply provide logo.png; log
 
 ## Product Domain
 
-- [ ] product is installable: product.json adheres to its schema definition and references valid artifacts from the same repo.
-- [ ] some processes are marked as tag=`connector` (kind=SUB_PROCESS only) 
+- [ ] product is installable: `product.json` adheres to its schema definition and references valid artifacts from the same repo.
+- [ ] some processes in the main-project are tagged with `connector` (kind=SUB_PROCESS only)
 - [ ] at least one process start in the demo-project is flagged with the tag=`demo`.
 - [ ] the product projects contains documentation to explain the functionality or use-case: 
    e.g. `Process-Notes`, `Input-Parameter` descriptions, Meta-Comments on `variables.yaml` definitions ...
@@ -37,21 +37,22 @@ If the same logo should be displayed in both modes, simply provide logo.png; log
 - [ ] all projects of the repository are included in the main pom.xml reactor build
 - [ ] projects use a common `groupId` for all artifacts `<groupId>[org.arcme|com.axonivy].[utils|connector|demo].[product-name]<groupId>`
 - [ ] artifact-ids use a common prefix: `<artifactId>msgraph[-product|test|demo]</artifactId>`
-- [ ] Github actions run sucessfully: no pipeline from the [template](https://github.com/axonivy-market/market-product) repository were removed.
+- [ ] dependencies to sibling artifacts of the same reactor use `<version>${project.version}</version>`.
 
-### Reproducible
+### CI/Actions
 
-- [ ] Tests were implemented, verifying that the product actually runs. Nature should be at least one of the [ivy-test-flavours](https://dev.axonivy.com/docs/14.0/en/getting-productive/ci-testing/): `@IvyTest`|`@IvyProcessTest`|`@IvyWebTest`.
+- [ ] GitHub Actions workflows run successfully: no workflows from the [template](https://github.com/axonivy-market/market-product) repository were removed.
+- [ ] Tests were implemented, verifying that the product actually runs. The nature should be at least one of the [ivy-test-flavours](https://dev.axonivy.com/docs/14.0/en/getting-productive/ci-testing/): `@IvyTest`|`@IvyProcessTest`|`@IvyWebTest`.
 - [ ] Dependent third-party infrastructure (e.g. Database, MavenRepos) is available: as public accessible instance or preferrably shared as code (e.g. Docker, docker-compose)
 - [ ] For rest-clients: Popular requests to the third-party services were recorded and used in a mock-service for testing purposes.
 
 ### Maintainable
 
-- [ ] Html-Dalogs must be re-usable: therefore, XHTML views shoudl depend on 'frame' template or use forms (f.json).
-- [ ] i18n: Labels on Dialogs and Forms are consumed from CMS, so that this product can be translated to another language.
-- [ ] Additional libraries (e.g. Maven dependencies) are lightweight: at any rate 'provided' dependencies for ivy-project-parent pom are preferred.
-- [ ] Depends on standard Axon Ivy features and does not light-heartedly re-introduce forks of existing solutions (e.g. Job-Framework). Our goal is to integrate also third-parties into existing: Enginge-Cockpit-View, Log-Channels, Monitoring features, ...
-- [ ] Product is re-usable without the need to unpack and customize it for standard use-cases: crucial settings can be overriden with well documented `config/variables.yaml`. The variables in the main product (e.g. connector) should be empty, in order that overriding from a consuming project is possible.
+- [ ] HTML dialogs must be re-usable: therefore, XHTML views should depend on the 'frame' template or use forms (f.json).
+- [ ] i18n: re-usable UI elements in the main project (Labels, Dialogs and Forms) are consumed from CMS, so that this product can be translated to another language.
+- [ ] Maven dependencies are lightweight: if possible only referring 'provided' dependencies from the ivy-project-parent pom. Run `mvn dependency:tree` in the main-project to see the dependency chain. If some libraries are already part of ivy-project-parent, write `<excludes>` for these.
+- [ ] Depends on standard Axon Ivy features and does not light-heartedly re-introduces forks of existing solutions (e.g. Job-Framework). Our goal is to integrate also third-parties into existing: Enginge-Cockpit-View, Log-Channels, Monitoring features, ...
+- [ ] Product is re-usable without the need to unpack and customize it for standard use-cases: crucial settings can be overriden with well documented `config/variables.yaml`. The variables in the main-project (e.g. connector) should be empty, in order that overriding from a consuming project is possible.
 
 ## Second Pull request: Description
 
