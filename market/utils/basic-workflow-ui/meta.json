@@ -32,7 +32,7 @@
   "mavenArtifacts": [
     {
       "name": "Basic Workflow UI Product",
-      "groupId": "ch.ivyteam.ivy.project.wf",
+      "groupId": "com.axonivy.utils.wf",
       "artifactId": "basic-workflow-ui-product",
       "type": "zip"
     }
