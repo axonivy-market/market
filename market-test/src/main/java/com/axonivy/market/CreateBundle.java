@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 public class CreateBundle
 {
@@ -26,7 +26,7 @@ public class CreateBundle
   public void copyTo(Path targetDir) throws IOException
   {
     var json = load(metaJson);
-    var id = json.get("id").asText();
+    var id = json.get("id").asString();
 
     var destDir = targetDir.resolve(id);
     var srcDir = metaJson.getParent().toFile();
@@ -37,7 +37,7 @@ public class CreateBundle
   private JsonNode load(Path metaPath) {
     try {
       return MAPPER.readTree(metaPath.toFile());
-    } catch (IOException ex) {
+    } catch (Exception ex) {
       throw new RuntimeException(ex);
     }
   }
