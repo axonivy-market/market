@@ -23,6 +23,7 @@
     }
   ],
   "type": "utils",
+  "featured": true,
   "platformReview": "5",
   "sourceUrl": "https://github.com/axonivy-market/portal",
   "documentationUrl": "https://axonivy-market.github.io/portal",
