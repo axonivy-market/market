@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "doc-factory",
   "name": "DocFactory",
   "names": [
@@ -24,6 +23,7 @@
     }
   ],
   "type": "utils",
+  "featured": true,
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/doc-factory",
   "language": "English",
