@@ -67,6 +67,9 @@ public class MarketMetaSchema {
 
   @Examples("https://github.com/axonivy-market/acme-connector")
   public URI sourceUrl;
+  @JsonPropertyDescription("public accessible URI pointing to the documentation of the market item")
+  @Examples("https://axonivy-market.github.io/myGeniusConnector")
+  public URI documentationUrl;
   @Examples("https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg")
   public URI statusBadgeUrl;
 

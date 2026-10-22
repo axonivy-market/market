@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "portal",
   "name": "Axon Ivy Portal",
   "names": [
@@ -26,6 +25,7 @@
   "type": "utils",
   "platformReview": "5",
   "sourceUrl": "https://github.com/axonivy-market/portal",
+  "documentationUrl": "https://axonivy-market.github.io/portal",
   "language": "EN/DE/FR/ES",
   "industry": "Cross-Industry",
   "compatibility": "7.3+",

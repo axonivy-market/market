@@ -173,6 +173,13 @@
         "$ref" : "#/$defs/DisplayDescription"
       }
     },
+    "documentationUrl" : {
+      "description" : "public accessible URI pointing to the documentation of the market item",
+      "additionalProperties" : false,
+      "type" : "string",
+      "format" : "uri",
+      "examples" : [ "https://axonivy-market.github.io/myGeniusConnector" ]
+    },
     "featured" : {
       "type" : "boolean",
       "description" : "marks the market item as featured project, that is populary listed on the market front page"
