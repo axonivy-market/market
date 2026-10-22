@@ -23,7 +23,7 @@ jobs:
       SOURCE_REPOSITORY: ${{ inputs.source-repository }}
     steps:
       - name: Checkout market repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Validate token
         shell: bash
