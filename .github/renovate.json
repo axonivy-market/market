@@ -4,6 +4,9 @@
     "local>axonivy/renovate-config",
     "schedule:weekends"
   ],
+  "baseBranchPatterns": [
+    "master"
+  ],
   "packageRules": [
     {
       "matchPackageNames": [
