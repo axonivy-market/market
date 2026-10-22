@@ -29,6 +29,21 @@
       "type" : "string",
       "enum" : [ "free", "paid" ]
     },
+    "Deprecation" : {
+      "type" : "object",
+      "properties" : {
+        "deprecated" : {
+          "type" : "boolean"
+        },
+        "finalVersion" : {
+          "type" : "string"
+        },
+        "successor" : {
+          "$ref" : "#/$defs/Successor"
+        }
+      },
+      "additionalProperties" : false
+    },
     "DisplayDescription" : {
       "type" : "object",
       "properties" : {
@@ -107,6 +122,22 @@
       "required" : [ "artifactId", "groupId", "name" ],
       "additionalProperties" : false
     },
+    "Successor" : {
+      "type" : "object",
+      "properties" : {
+        "description" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string",
+          "format" : "uri"
+        }
+      },
+      "additionalProperties" : false
+    },
     "Type" : {
       "type" : "string",
       "enum" : [ "connector", "demo", "utils", "solution" ]
@@ -141,6 +172,17 @@
       "items" : {
         "$ref" : "#/$defs/DisplayDescription"
       }
+    },
+    "documentationUrl" : {
+      "description" : "public accessible URI pointing to the documentation of the market item",
+      "additionalProperties" : false,
+      "type" : "string",
+      "format" : "uri",
+      "examples" : [ "https://axonivy-market.github.io/myGeniusConnector" ]
+    },
+    "featured" : {
+      "type" : "boolean",
+      "description" : "marks the market item as featured project, that is populary listed on the market front page"
     },
     "id" : {
       "type" : "string",
@@ -194,6 +236,9 @@
       "type" : "string",
       "format" : "uri",
       "examples" : [ "https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg" ]
+    },
+    "sunset" : {
+      "$ref" : "#/$defs/Deprecation"
     },
     "tags" : {
       "type" : "array",

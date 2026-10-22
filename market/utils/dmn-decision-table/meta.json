@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "dmn-decision-table",
   "name": "DMN Decision Table",
   "names": [
@@ -31,6 +30,13 @@
   "deprecated": true,
   "industry": "Cross-Industry",
   "tags": ["rule-engine"],
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "11.3",
+    "successor": {
+      "description": "Scripted rules and conditions in ivyscript."
+    }
+  },
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",

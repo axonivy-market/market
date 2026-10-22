@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "openai-connector",
   "name": "OpenAI's ChatGPT",
   "names": [
@@ -30,6 +29,15 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["AI"],
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "13.2",
+    "successor": {
+      "id": "smart-workflow",
+      "description": "Smart-Workflow provides AI Assistants as native Activity into processes.",
+      "url": "https://github.com/axonivy-market/smart-workflow/"
+    }
+  },
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",

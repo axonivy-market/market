@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "axonivy-express",
   "name": "Axon Ivy Express",
   "names": [
@@ -31,6 +30,14 @@
   "tags": ["no-code"],
   "versionDisplay": "axonivy-express",
   "installMatcher": "best-match",
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "12.0",
+    "successor": {
+      "description": "UserTasks + Form Editor in Axon Ivy Designer 14",
+      "url": "https://dev.axonivy.com/doc/14.0/en/reference/dialog/form-editor.html#form-editor"
+    }
+  },
   "mavenArtifacts": [
     {
       "key": "axonivy-express-product",
