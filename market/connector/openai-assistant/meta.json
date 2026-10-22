@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "openai-assistant",
   "name": "ChatGPT Assistant",
   "names": [
@@ -30,6 +29,14 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["AI"],
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "13.2",
+    "successor": {
+      "url": "https://dev.axonivy.com/doc/14.0/en/designer/ai-development.html",
+      "description": "Chat assisted development with AI is natively built into Axon Ivy Designer 14"
+    }
+  },
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",
