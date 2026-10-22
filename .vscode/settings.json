@@ -1,0 +1,14 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/meta.json"
+      ],
+      "url": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json"
+    }
+  ],
+  "json.schemaDownload.trustedDomains": {
+    "https://raw.githubusercontent.com/": true,
+    "https://json-schema.org/": true
+  }
+}
