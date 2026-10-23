@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
   "id": "excel-importer",
   "name": "Excel dialog importer",
   "names": [
@@ -30,6 +29,14 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["low-code"],
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "13.1",
+    "successor": {
+      "description": "Native Database to Entity-Class import in Axon Ivy 14 and newer",
+      "url": "https://dev.axonivy.com/doc/14.0/en/reference/configuration/databases.html#generator-wizard"
+    }
+  },
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",

@@ -8,19 +8,20 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 import com.axonivy.market.MetaSchemaFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.networknt.schema.JsonSchema;
-import com.networknt.schema.ValidationMessage;
+import com.networknt.schema.Schema;
+import com.networknt.schema.Error;
+
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.node.JsonNodeFactory;
+import tools.jackson.databind.node.ObjectNode;
 
 class TestMarketMetaSchema {
 
   private static final ObjectMapper MAPPER = new ObjectMapper();
 
   ObjectNode schema = MetaSchemaFactory.metaJsonSchema();
-  JsonSchema validator = MetaSchemaFactory.validator(schema);
+  Schema validator = MetaSchemaFactory.validator(schema);
 
   @Test
   void validatesRealWorldModel() {
@@ -36,33 +37,33 @@ class TestMarketMetaSchema {
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
 
     List<String> messages = validator.validate(impl)
-      .stream().map(ValidationMessage::getMessage).toList();
+      .stream().map(com.networknt.schema.Error::getMessage).toList();
     assertThat(messages)
       .as("schema is strictly validated")
       .isNotEmpty();
     assertThat(messages.toString())
-      .contains("id: is missing but it is required");
+      .contains("required property 'id' not found");
   }
 
   @Test
   void lengthConstraints() {
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
     impl.put("id", "mini"); // too short
-    assertMessage(impl, "id: must be at least 5 characters");
+    assertMessage(impl, "must be at least 5 characters long");
   }
 
   @Test
   void maximumLengthIdConstraints() {
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
     impl.put("id", "azure-servicebus-product-connector"); // too long
-    assertMessage(impl, "id: may only be 30 characters long");
+    assertMessage(impl, "must be at most 30 characters long");
   }
 
   @Test
   void validLengthOfIdConstraints() {
     ObjectNode impl = JsonNodeFactory.instance.objectNode();
     impl.put("id", "azure-servicebus-connector"); // too long
-    List<String> messages = validator.validate(impl).stream().map(ValidationMessage::getMessage).toList();
+    List<String> messages = validator.validate(impl).stream().map(Error::getMessage).toList();
     assertThat(messages.toString()).doesNotContain("id: may only be 30 characters long");
     assertThat(messages.toString()).doesNotContain("id: must be at least 5 characters");
   }
@@ -75,7 +76,7 @@ class TestMarketMetaSchema {
   }
   
   private void assertMessage(ObjectNode node, String neededContentMessage) {
-    List<String> messages = validator.validate(node).stream().map(ValidationMessage::getMessage).toList();
+    List<String> messages = validator.validate(node).stream().map(Error::getMessage).toList();
     assertThat(messages).as("schema is strictly validated").isNotEmpty();
     assertThat(messages.toString()).contains(neededContentMessage);
   }

@@ -1,0 +1,290 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$defs" : {
+    "ArchivedArtifact" : {
+      "type" : "object",
+      "properties" : {
+        "artifactId" : {
+          "type" : "string",
+          "minLength" : "5"
+        },
+        "groupId" : {
+          "type" : "string",
+          "minLength" : "5"
+        },
+        "lastVersion" : {
+          "type" : "string",
+          "description" : "this is the 'max version' selector. All versions which are lower than or equal the defined value, will be treated as legacy artifact.\nTherefore supplying 'legacy' group-/artifact-id for download.\n",
+          "minLength" : "5"
+        }
+      },
+      "required" : [ "artifactId", "groupId", "lastVersion" ],
+      "additionalProperties" : false
+    },
+    "ArtifactType" : {
+      "type" : "string",
+      "enum" : [ "zip", "nbm", "jar" ]
+    },
+    "Cost" : {
+      "type" : "string",
+      "enum" : [ "free", "paid" ]
+    },
+    "Deprecation" : {
+      "type" : "object",
+      "properties" : {
+        "deprecated" : {
+          "type" : "boolean"
+        },
+        "finalVersion" : {
+          "type" : "string"
+        },
+        "successor" : {
+          "$ref" : "#/$defs/Successor"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "DisplayDescription" : {
+      "type" : "object",
+      "properties" : {
+        "locale" : {
+          "minLength" : "2",
+          "additionalProperties" : false,
+          "type" : "string",
+          "examples" : [ "{'de', 'en'}" ]
+        },
+        "value" : {
+          "type" : "string",
+          "minLength" : "5",
+          "maxLength" : "200"
+        }
+      },
+      "required" : [ "locale", "value" ],
+      "additionalProperties" : false
+    },
+    "DisplayName" : {
+      "type" : "object",
+      "properties" : {
+        "locale" : {
+          "minLength" : "2",
+          "additionalProperties" : false,
+          "type" : "string",
+          "examples" : [ "{'de', 'en'}" ]
+        },
+        "value" : {
+          "type" : "string",
+          "minLength" : "1",
+          "maxLength" : "30"
+        }
+      },
+      "required" : [ "locale", "value" ],
+      "additionalProperties" : false
+    },
+    "MavenArtifact" : {
+      "type" : "object",
+      "properties" : {
+        "archivedArtifacts" : {
+          "description" : "archived artifacts using old (legacy) group ID and artifact ID with the last version they were being used.",
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/$defs/ArchivedArtifact"
+          },
+          "examples" : [ " \t\t\"archivedArtifacts\": [\n\t{\n\t\t\"lastVersion\": \"10.0.0\",\n\t\t\"groupId\": \"com.axonivy.connector.twitter\",\n\t\t\"artifactId\": \"twitter-connector\"\n\t}\n]\n" ]
+        },
+        "artifactId" : {
+          "type" : "string",
+          "minLength" : "5"
+        },
+        "doc" : {
+          "type" : "boolean"
+        },
+        "groupId" : {
+          "type" : "string",
+          "minLength" : "5"
+        },
+        "key" : {
+          "type" : "string"
+        },
+        "makesSenseAsMavenDependency" : {
+          "type" : "boolean"
+        },
+        "name" : {
+          "type" : "string",
+          "minLength" : "5"
+        },
+        "repoUrl" : {
+          "type" : "string"
+        },
+        "type" : {
+          "$ref" : "#/$defs/ArtifactType"
+        }
+      },
+      "required" : [ "artifactId", "groupId", "name" ],
+      "additionalProperties" : false
+    },
+    "Successor" : {
+      "type" : "object",
+      "properties" : {
+        "description" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string",
+          "format" : "uri"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "Type" : {
+      "type" : "string",
+      "enum" : [ "connector", "demo", "utils", "solution" ]
+    }
+  },
+  "type" : "object",
+  "properties" : {
+    "$schema" : {
+      "type" : "string"
+    },
+    "compatibility" : {
+      "type" : "string",
+      "pattern" : "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)[+]?$"
+    },
+    "contactUs" : {
+      "type" : "boolean",
+      "description" : "shows the link to contact axonivy"
+    },
+    "cost" : {
+      "$ref" : "#/$defs/Cost"
+    },
+    "deprecated" : {
+      "type" : "boolean"
+    },
+    "description" : {
+      "type" : "string",
+      "minLength" : "5",
+      "maxLength" : "200"
+    },
+    "descriptions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/$defs/DisplayDescription"
+      }
+    },
+    "documentationUrl" : {
+      "description" : "public accessible URI pointing to the documentation of the market item",
+      "additionalProperties" : false,
+      "type" : "string",
+      "format" : "uri",
+      "examples" : [ "https://axonivy-market.github.io/myGeniusConnector" ]
+    },
+    "featured" : {
+      "type" : "boolean",
+      "description" : "marks the market item as featured project, that is populary listed on the market front page"
+    },
+    "id" : {
+      "type" : "string",
+      "minLength" : "5",
+      "maxLength" : "30"
+    },
+    "industry" : {
+      "minLength" : "2",
+      "additionalProperties" : false,
+      "type" : "string",
+      "examples" : [ "Cross-Industry" ]
+    },
+    "installMatcher" : {
+      "type" : "string",
+      "examples" : [ "best-match" ]
+    },
+    "language" : {
+      "type" : "string",
+      "examples" : [ "English" ]
+    },
+    "listed" : {
+      "type" : "boolean"
+    },
+    "mavenArtifacts" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/$defs/MavenArtifact"
+      }
+    },
+    "name" : {
+      "type" : "string",
+      "minLength" : "4",
+      "maxLength" : "24"
+    },
+    "names" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/$defs/DisplayName"
+      }
+    },
+    "platformReview" : {
+      "type" : "string",
+      "pattern" : "^([0-4])?(\\.[5])?$|^5$"
+    },
+    "sourceUrl" : {
+      "type" : "string",
+      "format" : "uri",
+      "examples" : [ "https://github.com/axonivy-market/acme-connector" ]
+    },
+    "statusBadgeUrl" : {
+      "type" : "string",
+      "format" : "uri",
+      "examples" : [ "https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg" ]
+    },
+    "sunset" : {
+      "$ref" : "#/$defs/Deprecation"
+    },
+    "tags" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "type" : {
+      "$ref" : "#/$defs/Type"
+    },
+    "validate" : {
+      "type" : "boolean"
+    },
+    "vendor" : {
+      "type" : "string",
+      "minLength" : "3"
+    },
+    "vendorImage" : {
+      "type" : "string",
+      "description" : "relative path to a logo of the vendor, e.g. 'acme.png'"
+    },
+    "vendorImageDarkMode" : {
+      "type" : "string",
+      "description" : "relative path to a logo of the vendor dark mode, e.g. 'acme-dark-mode.png'"
+    },
+    "vendorLogo" : {
+      "type" : "string",
+      "description" : "relative path to a badge of the vendor, e.g. 'bagde.png'"
+    },
+    "vendorLogoDarkMode" : {
+      "type" : "string",
+      "description" : "relative path to a badge of the vendor dark mode, e.g. 'bagde-dark.png'"
+    },
+    "vendorUrl" : {
+      "type" : "string",
+      "format" : "uri",
+      "description" : "public accessible URI representating the vendor"
+    },
+    "version" : {
+      "type" : "string",
+      "pattern" : "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
+    },
+    "versionDisplay" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "description", "id", "name", "type" ],
+  "additionalProperties" : false
+}

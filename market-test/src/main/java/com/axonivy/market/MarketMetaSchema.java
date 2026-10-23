@@ -1,5 +1,6 @@
 package com.axonivy.market;
 
+import java.lang.Deprecated;
 import java.net.URI;
 import java.util.List;
 
@@ -66,6 +67,9 @@ public class MarketMetaSchema {
 
   @Examples("https://github.com/axonivy-market/acme-connector")
   public URI sourceUrl;
+  @JsonPropertyDescription("public accessible URI pointing to the documentation of the market item")
+  @Examples("https://axonivy-market.github.io/myGeniusConnector")
+  public URI documentationUrl;
   @Examples("https://github.com/axonivy-market/acme-connector/actions/workflows/ci.yml/badge.svg")
   public URI statusBadgeUrl;
 
@@ -89,8 +93,25 @@ public class MarketMetaSchema {
   public boolean listed;
   @JsonPropertyDescription("shows the link to contact axonivy")
   public boolean contactUs;
-
+  
+  @JsonPropertyDescription("marks the market item as featured project, that is populary listed on the market front page")
+  public boolean featured;
+  @Deprecated(since = "14.0", forRemoval = true)
   public boolean deprecated;
+
+  public Deprecation sunset;
+
+  public static class Deprecation {
+    public boolean deprecated;
+    public String finalVersion;
+    public Successor successor;
+
+    public static class Successor {
+      public String id;
+      public String description;
+      public URI url;
+    }
+  }
 
   public boolean validate;
 

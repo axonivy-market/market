@@ -20,11 +20,11 @@ import javax.imageio.ImageIO;
 import org.junit.jupiter.api.Test;
 
 import com.axonivy.market.MetaSchemaFactory;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.networknt.schema.JsonSchema;
-import com.networknt.schema.ValidationMessage;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.node.ObjectNode;
+import com.networknt.schema.Schema;
+import com.networknt.schema.Error;
 
 class ValidateRepoTest
 {
@@ -41,15 +41,15 @@ class ValidateRepoTest
     var metaPath = path.resolve("meta.json");
     var metaImpl = load(metaPath);
     ObjectNode rawSchema = MetaSchemaFactory.metaJsonSchema();
-    JsonSchema metaSchema = MetaSchemaFactory.validator(rawSchema);
-    List<String> messages = metaSchema.validate(metaImpl).stream().map(ValidationMessage::getMessage).toList();
+    Schema metaSchema = MetaSchemaFactory.validator(rawSchema);
+    List<String> messages = metaSchema.validate(metaImpl).stream().map(Error::getMessage).toList();
     assertThat(messages).as("meta.json must be valid for product "+path).isEmpty();
   }
 
   private JsonNode load(Path metaPath) {
     try {
       return MAPPER.readTree(metaPath.toFile());
-    } catch (IOException ex) {
+    } catch (Exception ex) {
       throw new RuntimeException(ex);
     }
   }
@@ -70,16 +70,16 @@ class ValidateRepoTest
       assertThat(json.has("vendorImage")).as("if vendor is specified vendorImage must be also specified").isTrue();
     }
     if (json.has("vendorUrl")) {
-      var vendorUrl = json.get("vendorUrl").asText();
+      var vendorUrl = json.get("vendorUrl").asString();
       assertThat(checkUriExists(vendorUrl)).as("vendor url is not reachable " + vendorUrl).isTrue();
     }
     if (json.has("vendorImage")) {
-      var image = json.get("vendorImage").asText();
+      var image = json.get("vendorImage").asString();
       var vendorImage = path.resolve(image);
       assertThat(vendorImage).exists();
     }
     if (json.has("vendorImageDarkMode")) {
-      var image = json.get("vendorImageDarkMode").asText();
+      var image = json.get("vendorImageDarkMode").asString();
       var vendorImageDarkMode = path.resolve(image);
       assertThat(vendorImageDarkMode).exists();
     }
@@ -88,12 +88,12 @@ class ValidateRepoTest
     {
       var array = json.get("mavenArtifacts");
       array.forEach(mavenArtifact -> {
-        var groupId = mavenArtifact.get("groupId").asText();
-        var artifactId = mavenArtifact.get("artifactId").asText();
+        var groupId = mavenArtifact.get("groupId").asString();
+        var artifactId = mavenArtifact.get("artifactId").asString();
         var repoUrl = "https://maven.axonivy.com";
         if (mavenArtifact.has("repoUrl"))
         {
-          repoUrl = mavenArtifact.get("repoUrl").asText();
+          repoUrl = mavenArtifact.get("repoUrl").asString();
         }
         checkArtifact(repoUrl, groupId, artifactId);
       });
@@ -134,11 +134,11 @@ class ValidateRepoTest
       installers.forEach(installer -> {
         if (installer.has("..."))
         {
-          String include = installer.get("...").asText();
+          String include = installer.get("...").asString();
           include = include.substring(1, include.length()-1);
           installer = load(path.resolve(include));
         }
-        var id = installer.get("id").asText();
+        var id = installer.get("id").asString();
         if ("maven-dependency".equals(id))
         {
           checkMavenArtifactsOfInstaller(installer, "dependencies");
@@ -160,13 +160,13 @@ class ValidateRepoTest
     if (data.has("repositories"))
     {
       var repos = data.get("repositories");
-      repoUrl = repos.get(0).get("url").asText();
+      repoUrl = repos.get(0).get("url").asString();
     }
 
     var uri = repoUrl;
     deps.forEach(dep -> {
-      var groupId = dep.get("groupId").asText();
-      var artifactId = dep.get("artifactId").asText();
+      var groupId = dep.get("groupId").asString();
+      var artifactId = dep.get("artifactId").asString();
       checkArtifact(uri, groupId, artifactId);
     });
   }
@@ -203,7 +203,7 @@ class ValidateRepoTest
     var ids = productDirs().stream()
             .map(dir -> dir.resolve("meta.json"))
             .map(json -> load(json))
-            .map(json -> json.get("id").asText())
+            .map(json -> json.get("id").asString())
             .collect(Collectors.toList());
 
     var uniqueIds = new HashSet<>(ids);

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "graphql-connector",
   "name": "GraphQL Connector",
   "names": [

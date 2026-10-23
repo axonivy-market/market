@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "process-analyser",
   "name": "Process Analyser",
   "names": [
@@ -34,7 +34,7 @@
     {
       "repoUrl": "https://maven.axonivy.com",
       "name": "Process Analyser Product",
-      "groupId": "com.axonivy.utils.process.analyser",
+      "groupId": "com.axonivy.solutions.process.analyser",
       "artifactId": "process-analyser-product",
       "type": "zip",
       "archivedArtifacts": [

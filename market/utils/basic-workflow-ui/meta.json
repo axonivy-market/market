@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.axonivy.com/market/10.0.5/meta.json",
+  "$schema": "https://raw.githubusercontent.com/axonivy-market/market/refs/heads/master/schema/meta.json",
   "id": "basic-workflow-ui",
   "name": "Basic Workflow UI",
   "names": [
@@ -32,7 +32,7 @@
   "mavenArtifacts": [
     {
       "name": "Basic Workflow UI Product",
-      "groupId": "ch.ivyteam.ivy.project.wf",
+      "groupId": "com.axonivy.utils.wf",
       "artifactId": "basic-workflow-ui-product",
       "type": "zip"
     }
