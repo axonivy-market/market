@@ -1,5 +1,4 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/market/10.0.3/meta.json",
   "id" : "onlyoffice-connector",
   "name" : "OnlyOffice Connector",
   "names" : [
