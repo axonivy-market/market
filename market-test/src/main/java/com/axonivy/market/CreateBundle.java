@@ -30,7 +30,7 @@ public class CreateBundle
 
     var destDir = targetDir.resolve(id);
     var srcDir = metaJson.getParent().toFile();
-    System.out.println(srcDir);
+    System.out.println("copying from " + srcDir);
     FileUtils.copyDirectory(srcDir, destDir.toFile());
   }
 
@@ -44,7 +44,8 @@ public class CreateBundle
 
   public static void main(String[] args) throws IOException
   {
-    var targetDir = new File("target/market/");
+    var targetDir = new File("target/market/products/");
+    System.out.println("bundling market to directory: " + targetDir);
     FileUtils.deleteDirectory(targetDir);
     for (var metaJson : metaJsons())
     {
