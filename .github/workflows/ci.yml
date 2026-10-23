@@ -48,7 +48,8 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           path: |
-            **/target/schema/market/*/*.json
+            market-test/target/market/*/*/*.json
+            market-test/target/market/*/*/logo*.png
 
       - name: Public test report
         uses: EnricoMi/publish-unit-test-result-action/linux@v2
@@ -56,6 +57,3 @@ jobs:
         with:
           files: "**/target/surefire-reports/**/*.xml"
 
-      - name: Clean up
-        run: |
-          rm -rf *
