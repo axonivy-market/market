@@ -40,8 +40,8 @@ jobs:
         shell: bash
         run: |
           cd market-test
-          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
-          mvn verify -P json.schema -Dmaven.plugin.validation=none -Duser.home=/tmp -DfailFast=true
+          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -DskipTests
+          mvn verify -P json.schema -Dmaven.plugin.validation=none -DfailFast=true
           cd ../
 
       - name: Archive build artifact
@@ -74,19 +74,18 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "25"
-          settings-path: /tmp/.m2
           server-id: github
           server-username-env-var: GITHUB_ACTOR
           server-password-env-var: GITHUB_TOKEN
 
       - name: Build market bundle
         working-directory: market-test
-        run: mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
+        run: mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -DskipTests
 
       - name: Deploy Maven package
         working-directory: market-test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mvn deploy -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
+          mvn deploy -Dmaven.plugin.validation=none -DskipTests
 
