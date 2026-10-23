@@ -57,3 +57,32 @@ jobs:
         with:
           files: "**/target/surefire-reports/**/*.xml"
 
+  publish-maven:
+    name: Publish Maven package
+    needs: validate
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v7
+
+      - name: Setup Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: "temurin"
+          java-version: "25"
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and publish market package
+        working-directory: market-test
+        run: |
+          mvn compile exec:java -Dexec.mainClass="com.axonivy.market.CreateBundle" -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
+          mvn deploy -Dmaven.plugin.validation=none -Duser.home=/tmp -DskipTests
+
