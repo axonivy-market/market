@@ -87,5 +87,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mvn deploy -Dmaven.plugin.validation=none -DskipTests
+          mvn deploy -P github-packages -Dmaven.plugin.validation=none -DskipTests
 
