@@ -265,6 +265,6 @@ class ValidateRepoTest
 
   private static Path marketRoot()
   {
-    return Paths.get("target/market");
+    return Paths.get("target/market/products");
   }
 }
