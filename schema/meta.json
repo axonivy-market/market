@@ -203,6 +203,10 @@
       "type" : "string",
       "examples" : [ "English" ]
     },
+    "listPriority" : {
+      "type" : "integer",
+      "description" : "priority of the market item in product list; lower values are displayed first. Stick to positive numbers."
+    },
     "listed" : {
       "type" : "boolean"
     },

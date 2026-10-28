@@ -91,11 +91,16 @@ public class MarketMetaSchema {
 
   @JsonProperty(defaultValue = "true")
   public boolean listed;
+
+  @JsonPropertyDescription("priority of the market item in product list; lower values are displayed first. Stick to positive numbers.")
+  public Integer listPriority;
+
   @JsonPropertyDescription("shows the link to contact axonivy")
   public boolean contactUs;
   
   @JsonPropertyDescription("marks the market item as featured project, that is populary listed on the market front page")
   public boolean featured;
+  
   @Deprecated(since = "14.0", forRemoval = true)
   public boolean deprecated;
 
