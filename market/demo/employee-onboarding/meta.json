@@ -29,5 +29,6 @@
   "language": "EN",
   "industry": "Cross-Industry",
   "tags": ["hr"],
-  "contactUs": true
+  "contactUs": true,
+  "listed": false
 }
