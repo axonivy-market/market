@@ -27,6 +27,7 @@
   "listPriority": 6,
   "platformReview": "4.5",
   "sourceUrl": "https://github.com/axonivy-market/doc-factory",
+  "documentationUrl": "https://axonivy-market.github.io/doc-factory",
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["document"],
@@ -37,13 +38,6 @@
       "groupId": "com.axonivy.utils.docfactory",
       "artifactId": "doc-factory-product",
       "type": "zip"
-    },
-    {
-      "name": "DocFactory Documentation",
-      "groupId": "com.axonivy.utils.docfactory",
-      "artifactId": "doc-factory-doc",
-      "type": "zip",
-      "doc": true
     }
   ]
 }
