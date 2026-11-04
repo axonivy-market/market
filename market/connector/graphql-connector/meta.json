@@ -31,6 +31,7 @@
   "industry": "Cross-Industry",
   "tags": ["connector"],
   "validate": true,
+  "listed": false,
   "mavenArtifacts": [
     {
       "name": "GraphQL Connector Product",
