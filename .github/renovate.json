@@ -12,7 +12,10 @@
       "matchPackageNames": [
         "org.apache.maven.*",
         "org.junit.jupiter:*",
-        "org.assertj:*"
+        "org.assertj:*",
+        "org.apache.maven.plugins:*",
+        "io.github.axonivy:*",
+        "com.networknt:*"
       ],
       "automerge": true
     }
