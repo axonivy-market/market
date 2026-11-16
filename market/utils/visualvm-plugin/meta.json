@@ -29,6 +29,14 @@
   "language": "English",
   "industry": "Cross-Industry",
   "tags": ["monitoring"],
+  "sunset": {
+    "deprecated": true,
+    "finalVersion": "8.0.0",
+    "successor": {
+      "url": "https://dev.axonivy.com/doc/14.0/en/engine-guide/reference/engine-cockpit/monitor.html#engine-cockpit-monitor",
+      "description": "Built-in monitoring capabilities of the Engine-Cockpit"
+    }
+  },
   "mavenArtifacts": [
     {
       "repoUrl": "https://maven.axonivy.com",
