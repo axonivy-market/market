@@ -160,7 +160,9 @@
       "$ref" : "#/$defs/Cost"
     },
     "deprecated" : {
-      "type" : "boolean"
+      "type" : "boolean",
+      "description" : "deprecated: use 'sunset' instead",
+      "deprecated" : true
     },
     "description" : {
       "type" : "string",

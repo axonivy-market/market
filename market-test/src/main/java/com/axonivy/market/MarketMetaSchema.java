@@ -101,6 +101,7 @@ public class MarketMetaSchema {
   @JsonPropertyDescription("marks the market item as featured project, that is populary listed on the market front page")
   public boolean featured;
   
+  @JsonPropertyDescription("deprecated: use 'sunset' instead")
   @Deprecated(since = "14.0", forRemoval = true)
   public boolean deprecated;
 
